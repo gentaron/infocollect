@@ -1,0 +1,15 @@
+{
+  "name": "infocollect",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily AI tools & news collector with an installable PWA front-end",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "icons": "node scripts/gen-icons.mjs",
+    "pack": "node scripts/pack.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+name: Deploy PWA to GitHub Pages
+
+# Opt-in: enable Pages with "GitHub Actions" as the source, then set the
+# repository variable ENABLE_PAGES=true. Without it this workflow no-ops so it
+# never shows up as a failing run.
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: ${{ vars.ENABLE_PAGES == 'true' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build the downloadable PWA bundle
+        run: node scripts/pack.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

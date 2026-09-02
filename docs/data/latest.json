@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "placeholder": true,
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "generatedAtLocal": "初回収集待ち",
+  "dateLocal": "初回収集待ち",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "未実行"
+  },
+  "digest": "まだ収集を実行していません。GitHub Actions の「Daily AI digest」を手動実行するか、毎朝9時（マレーシア時間）の自動実行をお待ちください。",
+  "tools": [],
+  "news": [],
+  "stats": {
+    "repoCandidates": 0,
+    "newsCandidates": 0,
+    "feedsFailed": []
+  }
+}

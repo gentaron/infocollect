@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>InfoCollect — 今日のAIツールとニュース</title>
+<meta name="description" content="毎朝9時（マレーシア時間）に、GitHubで伸びているAIツールとAIの新機能・新バージョンのニュースをまとめて配信するPWA。" />
+<meta name="theme-color" content="#0b1020" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="InfoCollect" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" href="./icons/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="./icons/icon-192.png" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div id="offline-banner" class="banner" hidden>オフラインです。保存済みの内容を表示しています。</div>
+
+<header class="app-header">
+  <div class="brand">
+    <img src="./icons/favicon.svg" alt="" width="34" height="34" />
+    <div>
+      <h1>InfoCollect</h1>
+      <p class="tagline">今日のAIツール &amp; ニュース</p>
+    </div>
+  </div>
+  <div class="header-actions">
+    <button id="install-btn" class="btn" hidden>アプリを追加</button>
+    <a id="download-btn" class="btn" href="./infocollect-pwa.zip" download>ZIPで保存</a>
+    <button id="refresh-btn" class="btn btn-primary" type="button">更新</button>
+  </div>
+</header>
+
+<main>
+  <section class="meta-bar" aria-live="polite">
+    <div>
+      <span class="meta-label">最終更新</span>
+      <strong id="updated-at">読み込み中…</strong>
+      <span id="timezone-note" class="meta-sub"></span>
+    </div>
+    <div class="meta-right">
+      <span id="ai-badge" class="badge"></span>
+      <label class="archive-picker">
+        <span class="meta-label">日付</span>
+        <select id="archive-select" aria-label="表示する日付"><option value="latest">最新</option></select>
+      </label>
+    </div>
+  </section>
+
+  <section id="digest-card" class="digest" hidden>
+    <h2>本日のダイジェスト</h2>
+    <p id="digest-text"></p>
+  </section>
+
+  <section aria-labelledby="tools-heading">
+    <div class="section-head">
+      <h2 id="tools-heading">GitHubで伸びているAIツール</h2>
+      <span id="tools-count" class="count"></span>
+    </div>
+    <div id="tools" class="tool-grid"></div>
+  </section>
+
+  <section aria-labelledby="news-heading">
+    <div class="section-head">
+      <h2 id="news-heading">AIニュース（新機能・新バージョン）</h2>
+      <span id="news-count" class="count"></span>
+    </div>
+    <div id="news-filters" class="filters" role="group" aria-label="ニュースの絞り込み"></div>
+    <ul id="news" class="news-list"></ul>
+  </section>
+
+  <section class="how">
+    <h2>このアプリについて</h2>
+    <ul>
+      <li>毎日 <strong>09:00（マレーシア時間 / UTC+8）</strong> に GitHub Actions が自動収集します。</li>
+      <li>ツールは「直近のスター増加ペース × 更新の新しさ」で順位付けしています。</li>
+      <li>要約は無料枠のAI（Gemini / Groq / OpenRouter / Cloudflare）。キーが無い場合はルールベースで動きます。</li>
+      <li>ホーム画面に追加するとオフラインでも最後に取得した内容を読めます。</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <span id="build-note"></span>
+  <a href="https://github.com/gentaron/infocollect" rel="noopener">ソース</a>
+</footer>
+
+<script src="./app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+name: Daily AI digest
+
+on:
+  schedule:
+    # 01:00 UTC = 09:00 Asia/Kuala_Lumpur (UTC+8, no DST).
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run offline checks
+        run: node scripts/selftest.mjs
+
+      - name: Collect AI tools and news
+        env:
+          # Raises the GitHub search rate limit; provided automatically.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # All optional — the collector falls back to rule-based summaries.
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
+        run: node scripts/collect.mjs
+
+      - name: Build the downloadable PWA bundle
+        run: node scripts/pack.mjs
+
+      - name: Commit the new digest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "変更なし: コミットをスキップします"
+            exit 0
+          fi
+          git commit -m "chore(data): daily AI digest $(TZ=Asia/Kuala_Lumpur date '+%Y-%m-%d %H:%M %Z')"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              exit 0
+            fi
+            echo "push に失敗しました。rebase して再試行します ($attempt/3)"
+            git pull --rebase origin ${{ github.ref_name }} || true
+            sleep $((attempt * 5))
+          done
+          exit 1
+
+      - name: Upload the PWA bundle as a run artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: infocollect-pwa
+          path: docs/infocollect-pwa.zip
+          if-no-files-found: error

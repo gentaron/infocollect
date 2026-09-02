@@ -1,0 +1,74 @@
+{
+  "timezone": "Asia/Kuala_Lumpur",
+  "tools": {
+    "take": 3,
+    "minStars": 100,
+    "activeWithinDays": 14,
+    "newRepoWindowDays": 120,
+    "queries": [
+      "topic:ai pushed:>={active} stars:>={minStars}",
+      "topic:llm pushed:>={active} stars:>={minStars}",
+      "topic:ai-agents pushed:>={active} stars:>={minStars}",
+      "topic:generative-ai pushed:>={active} stars:>={minStars}",
+      "topic:rag pushed:>={active} stars:>={minStars}",
+      "topic:mcp pushed:>={active} stars:>={minStars}",
+      "topic:agent created:>={recent} stars:>=50",
+      "llm OR agent OR \"ai tool\" in:name,description created:>={recent} stars:>=100"
+    ],
+    "excludePatterns": [
+      "awesome-",
+      "awesome list",
+      "curated list",
+      "roadmap",
+      "interview",
+      "free-programming",
+      "cheatsheet",
+      "papers",
+      "course",
+      "tutorial for beginners"
+    ],
+    "watchReleases": [
+      "ollama/ollama",
+      "ggml-org/llama.cpp",
+      "vllm-project/vllm",
+      "huggingface/transformers",
+      "langchain-ai/langchain",
+      "run-llama/llama_index",
+      "comfyanonymous/ComfyUI",
+      "openai/openai-python",
+      "anthropics/anthropic-sdk-python",
+      "modelcontextprotocol/servers",
+      "open-webui/open-webui",
+      "n8n-io/n8n"
+    ]
+  },
+  "news": {
+    "take": 12,
+    "maxAgeDays": 3,
+    "feeds": [
+      { "name": "OpenAI", "url": "https://openai.com/news/rss.xml", "weight": 18 },
+      { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "weight": 15 },
+      { "name": "Google (AI)", "url": "https://blog.google/technology/ai/rss/", "weight": 14 },
+      { "name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "weight": 14 },
+      { "name": "Meta AI", "url": "https://ai.meta.com/blog/rss/", "weight": 13 },
+      { "name": "Microsoft AI", "url": "https://blogs.microsoft.com/ai/feed/", "weight": 11 },
+      { "name": "AWS Machine Learning", "url": "https://aws.amazon.com/blogs/machine-learning/feed/", "weight": 10 },
+      { "name": "NVIDIA", "url": "https://blogs.nvidia.com/feed/", "weight": 9 },
+      { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "weight": 10 },
+      { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/", "weight": 8 },
+      { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "weight": 7 },
+      { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/", "weight": 6 },
+      { "name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "weight": 6 },
+      { "name": "MIT Technology Review AI", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "weight": 6 }
+    ],
+    "hackerNewsQueries": [
+      "AI release",
+      "LLM",
+      "open source model",
+      "AI agent"
+    ],
+    "sourceWeights": {
+      "GitHub Releases": 12
+    }
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+*.log
+# Built on demand by `npm run pack` / CI — not source.
+docs/infocollect-pwa.zip

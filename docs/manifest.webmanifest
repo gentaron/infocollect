@@ -1,0 +1,24 @@
+{
+  "name": "InfoCollect — 今日のAIツールとニュース",
+  "short_name": "InfoCollect",
+  "description": "毎朝9時（マレーシア時間）に、GitHubで伸びているAIツールとAIの新機能・新バージョン情報を自動収集して届けるアプリ。",
+  "lang": "ja",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "categories": ["news", "productivity", "developer"],
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "./icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "AIニュース", "short_name": "ニュース", "url": "./index.html#news-heading" }
+  ]
+}

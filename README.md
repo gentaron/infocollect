@@ -37,6 +37,7 @@ docs/                      PWA本体（GitHub Pages の配信ディレクトリ�
 .github/workflows/blog-*.yml     5枠のブログ執筆 Cron（下記）
 .github/workflows/pages.yml   GitHub Pages へのデプロイ（任意）
 .github/workflows/ci.yml      push / PR ごとの自己テスト
+vercel.json                   Vercel 配信設定（docs/ をサイトのルートとして配信）
 ```
 
 Node.js 20 以上があれば動きます。**npm install は不要**（依存パッケージゼロ）。
@@ -128,6 +129,21 @@ ZIP は解凍後、任意の静的サーバ（`npx serve`、`python3 -m http.ser
 `ENABLE_PAGES` が未設定の間は Pages ワークフローは何もしません（失敗表示になりません）。
 Pages の Source を「Deploy from a branch → /docs」にしても配信できますが、
 その場合 ZIP はビルドされないため「ZIPで保存」ボタンは自動的に隠れます。
+
+---
+
+## 公開（Vercel）
+
+リポジトリを Vercel にインポートすれば、ルート直下の `vercel.json` に従って自動配信されます。
+
+| 設定 | 値 |
+| --- | --- |
+| Framework Preset | Other（自動検出のままで可） |
+| Build Command | `node scripts/pack.mjs`（vercel.json で指定） |
+| Output Directory | `docs`（vercel.json で指定） |
+
+ビルドで `docs/infocollect-pwa.zip` も生成されるため、Vercel 配信でも「ZIPで保存」ボタンが使えます。
+Vercel 側の Project Settings で Build Command / Output Directory を上書き設定する必要はありません。
 
 ---
 

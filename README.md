@@ -37,7 +37,8 @@ docs/                      PWA本体（GitHub Pages の配信ディレクトリ�
 .github/workflows/blog-*.yml     5枠のブログ執筆 Cron（下記）
 .github/workflows/pages.yml   GitHub Pages へのデプロイ（任意）
 .github/workflows/ci.yml      push / PR ごとの自己テスト
-vercel.json                   Vercel 配信設定（docs/ をサイトのルートとして配信）
+vercel.json                   Vercel 設定（フレームワークなしの静的配信を強制）
+index.html                    Vercel 用フォールバック（/ から docs/ へリダイレクト）
 ```
 
 Node.js 20 以上があれば動きます。**npm install は不要**（依存パッケージゼロ）。
@@ -134,16 +135,19 @@ Pages の Source を「Deploy from a branch → /docs」にしても配信でき
 
 ## 公開（Vercel）
 
-リポジトリを Vercel にインポートすれば、ルート直下の `vercel.json` に従って自動配信されます。
+リポジトリを Vercel にインポートすれば、追加設定なしで配信されます。
 
-| 設定 | 値 |
-| --- | --- |
-| Framework Preset | Other（自動検出のままで可） |
-| Build Command | `node scripts/pack.mjs`（vercel.json で指定） |
-| Output Directory | `docs`（vercel.json で指定） |
+- `vercel.json` がフレームワークを「Other（静的）」に固定するため、ビルドは走らずリポジトリ直下がそのまま配信されます
+- ルートの `index.html` が「/」へのアクセスを PWA 本体（`docs/`）へ自動リダイレクトします
+- ビルドが不要な分、確実に配信されます（Vercel 側で Build Command / Output Directory / Root Directory を設定する必要はありません。設定済みなら空にしてください）
 
-ビルドで `docs/infocollect-pwa.zip` も生成されるため、Vercel 配信でも「ZIPで保存」ボタンが使えます。
-Vercel 側の Project Settings で Build Command / Output Directory を上書き設定する必要はありません。
+「ZIPで保存」ボタンは Vercel 配信では自動的に隠れます（ZIP は GitHub Pages ワークフローや `npm run pack` で生成されるため）。
+
+うまく表示されないときは:
+
+1. Vercel ダッシュボード → 該当プロジェクト → **Deployments** で最新のデプロイを確認
+2. 最新デプロイが Production になっていない場合は、デプロイの「⋯」メニューから **Promote to Production** を実行
+3. **Settings → General → Build & Output Settings** の Build Command / Output Directory / Root Directory に上書き設定が入っていないか確認（入っていれば空にする）
 
 ---
 

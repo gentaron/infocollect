@@ -12,6 +12,14 @@ import { parseFeed } from './lib/feeds.mjs';
 import { classify, rankNews } from './lib/rank.mjs';
 import { buildDigest, fallbackNewsSummary, fallbackToolSummary, toMarkdown } from './lib/render.mjs';
 import { canonicalUrl, dateInZone, stripHtml, timeInZone, truncate } from './lib/util.mjs';
+import {
+  SLOTS,
+  SLOT_ORDER,
+  appendLogLine,
+  dedupeParagraphs,
+  extractLogline,
+  sanitizeArticle,
+} from './blog/lib/core.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 let passed = 0;
@@ -152,6 +160,90 @@ test('latest.json matches the schema the app expects', () => {
     assert.ok(key in data, `latest.json is missing "${key}"`);
   }
   assert.ok(Array.isArray(data.tools) && Array.isArray(data.news));
+});
+
+console.log('blog');
+test('SLOTS cover the five MYT slots in order', () => {
+  assert.deepEqual(Object.keys(SLOTS).sort(), SLOT_ORDER.slice().sort());
+  assert.deepEqual(SLOT_ORDER, ['0700', '0900', '1100', '1400', '1800']);
+});
+test('prompt files exist for every slot plus the common rules', () => {
+  assert.ok(fs.existsSync(path.join(ROOT, 'prompts/blog/common.md')), 'common.md missing');
+  for (const slot of Object.values(SLOTS)) {
+    assert.ok(fs.existsSync(path.join(ROOT, 'prompts/blog', slot.prompt)), `${slot.prompt} missing`);
+  }
+});
+test('sanitizeArticle strips markdown but keeps hashtags and minus numbers', () => {
+  const out = sanitizeArticle('# タイトル\n\nこれは**強調**です。\n- 箇条書き\n-40%の表示\n末尾 #AI #LLM');
+  assert.equal(out.startsWith('タイトル'), true);
+  assert.ok(!out.includes('**'));
+  assert.ok(!out.includes('- 箇条書き'));
+  assert.ok(out.includes('-40%'));
+  assert.ok(out.includes('#AI #LLM'));
+});
+test('dedupeParagraphs drops looped paragraphs but keeps short lines', () => {
+  const sample = 'タイトル\n\nこの段落は同じ内容を二回繰り返してモデルがループしたときのものです。\n\n#AI #LLM\n\nこの段落は同じ内容を二回繰り返してモデルがループしたときのものです。\n\n-----\n補足です。';
+  const out = dedupeParagraphs(sample);
+  assert.equal(out.split('この段落は同じ内容').length - 1, 1, 'repeated paragraph removed');
+  assert.ok(out.includes('#AI #LLM'));
+  assert.ok(out.includes('-----'));
+  assert.ok(out.startsWith('タイトル'));
+});
+test('dedupeParagraphs catches loops with a single mutated word', () => {
+  const sample = 'そう考えると、Astraのようなモデルは、特に初心者エンジニアにとってはすごく助かる存在かもしれません。難しい部分をAIがカバーしてくれるので、より創造的な部分に集中できるようになるんですよね。逆に、ベテランエンジニアにとっては、面倒な定型作業から解放されて、より高度な設計に時間を使えるようになるかもしれません。\n\nそう考えると、Astraのようなモデルは、特に初心者エンジニアにとってはすごく助かる存在かもしれません。難しい部分をAIがカバーしてくれるので、より創造的な部分に集中できるようになるんですよね。逆に、ベテランエngineerにとっては、面倒な定型作業から解放されて、より高度な設計に時間を使えるようになるかもしれません。';
+  const out = dedupeParagraphs(sample);
+  assert.equal(out.split('そう考えると、Astraのようなモデルは').length - 1, 1, 'mutated loop removed');
+});
+test('extractLogline splits the machine block off the article', () => {
+  const sample = 'タイトル行\n\n本文です。\n-----\n補足\n===LOGLINE===\n2026-09-07 [7時枠／AIモデル] 何か — するもの／A／B';
+  const { article, logline } = extractLogline(sample);
+  assert.match(article, /補足/);
+  assert.equal(logline, '2026-09-07 [7時枠／AIモデル] 何か — するもの／A／B');
+});
+test('extractLogline survives a missing block', () => {
+  const { article, logline } = extractLogline('本文だけ');
+  assert.equal(article, '本文だけ');
+  assert.equal(logline, null);
+});
+test('appendLogLine inserts newest-first under the marker', () => {
+  const tmp = fs.mkdtempSync(path.join(path.join(ROOT, 'docs'), 'tmp-selftest-'));
+  try {
+    const file = path.join(tmp, 'log.md');
+    appendLogLine(file, '2026-09-07 [7時枠／AIモデル] A — B／C／D');
+    appendLogLine(file, '2026-09-07 [9時枠／ハーネス] E — F／G／H');
+    const text = fs.readFileSync(file, 'utf8');
+    const posA = text.indexOf('A — B');
+    const posE = text.indexOf('E — F');
+    assert.ok(posA > -1 && posE > -1);
+    assert.ok(posE < posA, 'newest line should sit above the older one');
+    assert.match(text, /## 扱った題材のログ/);
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+test('blog viewer and memory scaffolds exist', () => {
+  for (const file of [
+    'docs/blog/index.html',
+    'memory/topics/pc-setup.md',
+    'memory/topics/dev-environment.md',
+    'memory/people/humble-bobcat51.md',
+    'memory/areas/github-trending-blog.md',
+    'memory/areas/blog-log-archive.md',
+    'memory/note-titles.txt',
+    'scripts/blog/generate.mjs',
+  ]) {
+    assert.ok(fs.existsSync(path.join(ROOT, file)), `${file} missing`);
+  }
+});
+test('every slot has a scheduled workflow with the right cron', () => {
+  const crons = { '0700': '0 23 * * *', '0900': '0 1 * * *', '1100': '0 3 * * *', '1400': '0 6 * * *', '1800': '0 10 * * *' };
+  for (const [slotId, cron] of Object.entries(crons)) {
+    const file = path.join(ROOT, `.github/workflows/blog-${slotId}.yml`);
+    assert.ok(fs.existsSync(file), `blog-${slotId}.yml missing`);
+    const yaml = fs.readFileSync(file, 'utf8');
+    assert.ok(yaml.includes(`'${cron}'`), `blog-${slotId}.yml should schedule '${cron}' (MYT ${slotId.slice(0, 2)}:00)`);
+    assert.ok(yaml.includes(`--slot ${slotId}`), `blog-${slotId}.yml should run --slot ${slotId}`);
+  }
 });
 
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures)' : ''}`);

@@ -8,6 +8,9 @@
 を自動収集し、日本語で要約して **PWA（インストール可能なWebアプリ）** として配信します。
 要約に使う AI は **無料枠のみ**。API キーが 1 つも無くてもルールベース要約で動きます。
 
+さらに **毎日5枠（07:00 / 09:00 / 11:00 / 14:00 / 18:00 MYT）** で、
+定時トリガーによって AI がブログ記事を1本ずつ自動執筆し、このリポジトリにコミットしていきます（下記「自動ブログ生成」）。
+
 ---
 
 ## 構成
@@ -16,6 +19,11 @@
 config/sources.json        収集元（GitHub検索クエリ / RSS / HN / 監視リリース）
 scripts/collect.mjs        毎日の収集本体
 scripts/lib/               github・feeds・rank・ai・render・util
+scripts/blog/generate.mjs  ブログ生成本体（1枠 = 1記事）
+scripts/blog/lib/          core（純粋関数）・llm（プロバイダ）・search（任意検索）
+prompts/blog/              5枠の執筆ルール（common.md + slot-XXXX.md）
+memory/                    生成時に読み込むメモ（PC・環境・ログ）
+docs/blog/                 生成された記事とブログ一覧ページ
 scripts/selftest.mjs       ネットワーク不要の自己テスト
 scripts/gen-icons.mjs      PWAアイコン生成（依存パッケージ無し）
 scripts/pack.mjs           docs/ を infocollect-pwa.zip に固める
@@ -23,13 +31,68 @@ scripts/serve.mjs          ローカル確認用の静的サーバ
 docs/                      PWA本体（GitHub Pages の配信ディレクトリ）
   ├─ index.html / app.js / styles.css
   ├─ manifest.webmanifest / sw.js / icons/
+  ├─ blog/index.html + blog/index.json + blog/YYYY-MM-DD/*.txt
   └─ data/latest.json, data/index.json, data/archive/YYYY-MM-DD.json
-.github/workflows/daily.yml   Cron（0 1 * * * UTC = 09:00 MYT）
+.github/workflows/daily.yml      Cron（0 1 * * * UTC = 09:00 MYT）
+.github/workflows/blog-*.yml     5枠のブログ執筆 Cron（下記）
 .github/workflows/pages.yml   GitHub Pages へのデプロイ（任意）
 .github/workflows/ci.yml      push / PR ごとの自己テスト
 ```
 
 Node.js 20 以上があれば動きます。**npm install は不要**（依存パッケージゼロ）。
+
+---
+
+## 自動ブログ生成（毎日5枠）
+
+GitHub Actions の cron が、マレーシア時間の各枠に **自動で1本ずつ記事を執筆**し、このリポジトリにコミットします。
+
+| 枠 | MYT | UTC cron | 主に見るもの | 出力 |
+| --- | --- | --- | --- | --- |
+| 7時枠／AIモデル | 07:00 | `0 23 * * *` | 米国と中国のAIモデル | `docs/blog/YYYY-MM-DD/0700-ai-models.txt` |
+| 9時枠／ハーネス | 09:00 | `0 1 * * *` | エージェントの土台・CLI・MCP等 | `docs/blog/YYYY-MM-DD/0900-harness.txt` |
+| 11時枠／GitHub | 11:00 | `0 3 * * *` | GitHubで伸びてるAIリポジトリ | `docs/blog/YYYY-MM-DD/1100-github.txt` |
+| 14時枠／手法 | 14:00 | `0 6 * * *` | 最新のエンジニアリング手法 | `docs/blog/YYYY-MM-DD/1400-methods.txt` |
+| 18時枠／生命とものづくり | 18:00 | `0 10 * * *` | 生命科学・半導体等の最先端勉強 | `docs/blog/YYYY-MM-DD/1800-science.txt` |
+
+記事は記号なしのプレーンテキスト（note等にそのまま貼れる形）で、タイトル＋本文＋ハッシュタグ＋区切り線＋補足で構成されます。
+執筆ルールはすべて `prompts/blog/` に宣言的に置いてあるので、**そのファイルを編集するだけで文体や題材の向きを変えられます**（コードは触らなくてよい）。
+
+### 執筆の仕組み
+
+1. `prompts/blog/` の共通ルール＋その枠の指示を読み込む
+2. `memory/` のメモ（PC・開発環境・書き手メモ）と `memory/areas/github-trending-blog.md` の題材ログ（重複防止）を読み込む
+3. 題材候補を集める: 毎日のダイジェスト（`docs/data/latest.json`）＋ 任意のWeb検索（z-ai SDK / z-ai CLI があれば使う。無くても動く）
+4. 設定済みの無料AIプロバイダで記事本文を生成（ダイジェストと同じ Secret を共有）
+5. 記事を `docs/blog/` に保存、ログ行を `memory/areas/github-trending-blog.md` に追記、`docs/blog/index.json` を更新
+6. コミット＆プッシュ（競合時は rebase リトライ）
+
+### ブログの閲覧
+
+GitHub Pages が有効なら `https://<user>.github.io/infocollect/blog/` で一覧・閲覧できます（`docs/blog/index.html`）。
+ローカルなら `npm run serve` の後に `/blog/` を開くだけ（`serve.mjs` が `docs/` を配信します）。
+
+### 手動実行・ローカル実行
+
+```bash
+node scripts/blog/generate.mjs --slot 0700                 # 7時枠を1本書く（保存まで）
+node scripts/blog/generate.mjs --slot 1800 --no-search     # 検索なしで書く
+node scripts/blog/generate.mjs --slot 1100 --dry-run       # 保存せず本文だけ表示
+```
+
+Actions タブの「Blog 7時枠（AIモデル）」など → **Run workflow** でもいつでも手動実行できます。
+
+### AIキーの設定
+
+ブログ生成は「記事を書く」ことが目的なのでルールベースへのフォールバックはありません。
+ダイジェストと同じ Secret（`GEMINI_API_KEY` / `GROQ_API_KEY` / `OPENROUTER_API_KEY` / `CLOUDFLARE_ACCOUNT_ID`+`CLOUDFLARE_API_TOKEN` / `OPENAI_COMPATIBLE_*`）のいずれかを Settings → Secrets and variables → Actions に入れてください。
+記事は長文（4000字程度）のため、無料枠の中では Gemini / Groq / OpenRouter あたりが安定します。
+
+### メモとログの保守
+
+- `memory/areas/github-trending-blog.md` — 扱った題材のログ（スクリプトが自動追記、新しい行が上）。容量が増えたら古い行を `blog-log-archive.md` へ移す。アーカイブも重複チェックに使われる
+- `memory/people/humble-bobcat51.md` — 先に走っている書き手の関心・読者層のメモ。ここを埋めると「先回り選定」が効いてくる（記事に名前は出ない）
+- `memory/note-titles.txt` — システム導入前の記事タイトルがあれば1行ずつ追記（重複チェック用）
 
 ---
 
@@ -68,17 +131,26 @@ Pages の Source を「Deploy from a branch → /docs」にしても配信でき
 
 ---
 
-## Cron（マレーシア時間 9:00）
+## Cron（マレーシア時間）
 
-`.github/workflows/daily.yml`
+`daily.yml`（ダイジェスト収集）:
 
 ```yaml
 schedule:
   - cron: '0 1 * * *'   # 01:00 UTC = 09:00 Asia/Kuala_Lumpur
 ```
 
-マレーシアにサマータイムは無いため、通年 9:00 に固定されます。
-時刻を変えるときは「希望時刻 − 8時間」を UTC で書いてください（例: 21:00 MYT → `0 13 * * *`）。
+ブログ5枠（`blog-0700.yml` 〜 `blog-1800.yml`）:
+
+```yaml
+- cron: '0 23 * * *'  # 07:00 MYT（前日のUTC 23時）
+- cron: '0 1 * * *'   # 09:00 MYT
+- cron: '0 3 * * *'   # 11:00 MYT
+- cron: '0 6 * * *'   # 14:00 MYT
+- cron: '0 10 * * *'  # 18:00 MYT
+```
+
+マレーシアにサマータイムは無いため、通年で時刻は固定です。時刻を変えるときは「希望時刻 − 8時間」を UTC で書いてください（例: 21:00 MYT → `0 13 * * *`）。
 GitHub の共有 Cron は混雑時に数分〜十数分遅れることがあります。すぐ試すときは
 Actions タブから **Run workflow**（`workflow_dispatch`）で手動実行できます。
 

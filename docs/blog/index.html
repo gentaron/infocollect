@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自動生成ブログ | InfoCollect</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #faf9f7;
+    --card: #ffffff;
+    --ink: #2b2a27;
+    --sub: #7a756d;
+    --line: #e8e4dd;
+    --accent: #b4552d;
+    --badge: #f3e8e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1b19;
+      --card: #26241f;
+      --ink: #ece8e1;
+      --sub: #a39c90;
+      --line: #3a362f;
+      --accent: #e5865a;
+      --badge: #3a2e26;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", system-ui, sans-serif;
+    line-height: 1.8;
+  }
+  header {
+    padding: 2.2rem 1.2rem 1.4rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header h1 { font-size: 1.5rem; margin: 0 0 .3rem; }
+  header p { margin: 0; color: var(--sub); font-size: .85rem; }
+  main { max-width: 720px; margin: 0 auto; padding: 0 1.2rem 4rem; }
+  .list { display: flex; flex-direction: column; gap: .6rem; }
+  .item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: .9rem 1.1rem;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    transition: border-color .15s ease;
+  }
+  .item:hover, .item:focus-visible { border-color: var(--accent); }
+  .item .meta {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--sub);
+    font-size: .78rem;
+    margin-bottom: .25rem;
+  }
+  .badge {
+    background: var(--badge);
+    color: var(--accent);
+    border-radius: 999px;
+    padding: .05rem .6rem;
+    font-size: .72rem;
+  }
+  .item .title { font-weight: 600; font-size: .98rem; }
+  .empty { color: var(--sub); font-size: .9rem; padding: 1.5rem 0; }
+  .article {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.4rem 1.5rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: .95rem;
+  }
+  .article h2 {
+    font-size: 1.15rem;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    border: 0;
+  }
+  .back {
+    display: inline-block;
+    margin: 1.2rem 0;
+    color: var(--accent);
+    background: none;
+    border: 0;
+    font: inherit;
+    font-size: .88rem;
+    cursor: pointer;
+    padding: 0;
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1>自動生成ブログ</h1>
+  <p>毎日5枠、定時トリガーでAIが1本ずつ書いた記事。投稿は GitHub Actions の cron（マレーシア時間 07:00 / 09:00 / 11:00 / 14:00 / 18:00）で走ります。</p>
+</header>
+<main>
+  <section id="list-view">
+    <div class="list" id="list"></div>
+    <p class="empty" id="empty" hidden>まだ記事がありません。ワークフローが走るとここに並びます。</p>
+  </section>
+  <section id="article-view" hidden>
+    <button class="back" id="back" type="button">← 一覧に戻る</button>
+    <article class="article" id="article"></article>
+  </section>
+</main>
+<script>
+(function () {
+  'use strict';
+  var listEl = document.getElementById('list');
+  var emptyEl = document.getElementById('empty');
+  var listView = document.getElementById('list-view');
+  var articleView = document.getElementById('article-view');
+  var articleEl = document.getElementById('article');
+
+  function el(tag, cls, text) {
+    var node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text != null) node.textContent = text;
+    return node;
+  }
+
+  function renderList(entries) {
+    listEl.textContent = '';
+    if (!entries.length) {
+      emptyEl.hidden = false;
+      return;
+    }
+    emptyEl.hidden = true;
+    entries.forEach(function (entry) {
+      var item = el('button', 'item');
+      item.type = 'button';
+      var meta = el('div', 'meta');
+      meta.appendChild(el('span', null, entry.date));
+      meta.appendChild(el('span', 'badge', entry.label || entry.slot));
+      item.appendChild(meta);
+      item.appendChild(el('div', 'title', entry.title || '(タイトルなし)'));
+      item.addEventListener('click', function () { openArticle(entry); });
+      listEl.appendChild(item);
+    });
+  }
+
+  function openArticle(entry) {
+    fetch(entry.file, { cache: 'no-cache' })
+      .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.text(); })
+      .then(function (text) {
+        var lines = text.replace(/^\s*\n/, '').split('\n');
+        var title = (lines.shift() || '').trim();
+        var body = lines.join('\n').replace(/^\s*\n/, '');
+        articleEl.textContent = '';
+        articleEl.appendChild(el('h2', null, title));
+        articleEl.appendChild(document.createTextNode(body));
+        listView.hidden = true;
+        articleView.hidden = false;
+        window.scrollTo(0, 0);
+      })
+      .catch(function () {
+        articleEl.textContent = '記事の取得に失敗しました: ' + entry.file;
+        listView.hidden = true;
+        articleView.hidden = false;
+      });
+  }
+
+  document.getElementById('back').addEventListener('click', function () {
+    articleView.hidden = true;
+    listView.hidden = false;
+  });
+
+  fetch('index.json', { cache: 'no-cache' })
+    .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+    .then(renderList)
+    .catch(function () { emptyEl.hidden = false; });
+})();
+</script>
+</body>
+</html>

@@ -1,56 +1,53 @@
-# 2026-09-07 の AI ダイジェスト
+# 2026-09-08 の AI ダイジェスト
 
-2026-09-07 13:40 時点の収集結果です。GitHub で伸びている AI ツールは DietrichGebert/ponytail、affaan-m/ECC、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 5 件が新バージョン・新機能の発表でした。
+2026-09-08 13:35 時点の収集結果です。GitHub で伸びている AI ツールは heygen-com/hyperframes、DietrichGebert/ponytail、affaan-m/ECC の 3 件。AI ニュースは 12 件を収集し、うち 7 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ★129,779
+### 1. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) — ★46,514
+
+Write HTML. Render video. Built for agents.
+
+- 伸び: +2018 スター
+- 選定理由: 前回計測から +2018 スター。TypeScript 製。最終更新 2026-09-08。
+
+### 2. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ★131,236
 
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-- 伸び: +1571 スター
-- 選定理由: 前回計測から +1571 スター。JavaScript 製。最終更新 2026-09-04。
+- 伸び: +1457 スター
+- 選定理由: 前回計測から +1457 スター。JavaScript 製。最終更新 2026-09-07。
 
-### 2. [affaan-m/ECC](https://github.com/affaan-m/ECC) — ★251,744
+### 3. [affaan-m/ECC](https://github.com/affaan-m/ECC) — ★253,120
 
 The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor…
 
-- 伸び: +1608 スター
-- 選定理由: 前回計測から +1608 スター。JavaScript 製。最終更新 2026-09-07。
-
-### 3. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — ★214,308
-
-DeepSeek Harness: Everything is a Plugin.
-
-- 伸び: +1005 スター
-- 選定理由: 前回計測から +1005 スター。TypeScript 製。最終更新 2026-09-04。
+- 伸び: +1376 スター
+- 選定理由: 前回計測から +1376 スター。JavaScript 製。最終更新 2026-09-07。
 
 ## AI ニュース（新機能・新バージョン中心）
 
-- [anthropics/anthropic-sdk-python v1.4.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.4.0) — GitHub Releases｜## 1.4.0 (2026-09-04)
+- [n8n-io/n8n n8n@2.37.11](https://github.com/n8n-io/n8n/releases/tag/n8n%402.37.11) — GitHub Releases｜## [2.37.11](https://github.com/n8n-io/n8n/compare/n8n@2.37.10...n8n@2.37.11) (2026-09-07)
 
-Full Changelog: [v1.3.0...v1.4.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.3.0...v1.4.0)
 
-### Features
+### Bug Fixes
 
-* **api:**…
-- [langchain-ai/langchain langchain-core==1.6.2](https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.2) — GitHub Releases｜Changes since langchain-core==1.6.1
+* **core:** Ensure running job cleanup when a…
+- [llm 0.35](https://simonwillison.net/2026/Sep/7/llm) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/llm/releases/tag/0.35">llm 0.35</a></p> <blockquote> <ul> <li>New OpenAI model: <code>gpt-6-ast…
+- [n8n-io/n8n stable](https://github.com/n8n-io/n8n/releases/tag/stable) — GitHub Releases｜## [2.37.11](https://github.com/n8n-io/n8n/compare/n8n@2.37.10...n8n@2.37.11) (2026-09-07)
 
-release(core): 1.6.2 (#40209)
-feat(openai): support async tools (#40208)
-chore(deps): bump mistune from 3.3.0 to 3.3.3 in…
-- [Your intellectual fly is open when you use an LLM to author a post (2025)](https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open) — Hacker News｜Your intellectual fly is open when you use an LLM to author a post (2025)
-- [Global warming will exceed 1.5-degree limit, UN says](https://www.pbs.org/newshour/science/global-warming-will-exceed-1-5-degree-limit-un-says-in-report-that-maps-path-back-below-danger-zone) — Hacker News｜Global warming will exceed 1.5-degree limit, UN says
-- [An Alien Mind](https://openai.com/index/an-alien-mind) — OpenAI｜Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.
-- [There's No Limit to How Bad Code Can Get](https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get) — Simon Willison｜<p><a href="https://lobste.rs/s/rfn2mn/there_s_no_limit_how_bad_code_can_get#c_8kdtaw">My comment</a> on <a href="https://lobste.rs/s/rfn2mn/there_s_no_limit_h…
-- [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai) — OpenAI｜Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.
-- [LLMs as a Cognitive Virus](https://arxiv.org/abs/2609.03344) — Hacker News｜LLMs as a Cognitive Virus
-- [Seattle Times and Newsday sue OpenAI and Microsoft for infringement](https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft) — The Verge AI｜The Seattle Times and Newsday are just the latest plaintiffs to take OpenAI to court, alleging copyright infringement. The two outlets say the company used the…
-- [Authors push back as publishers and agents make claims on Anthropic settlement](https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement) — TechCrunch AI｜Authors say publishers seem to be claiming more than their fair share of settlement payments.
-- [The purpose of DNS is to spread scams](https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams) — Simon Willison｜<p><strong><a href="https://shkspr.mobi/blog/2026/09/the-purpose-of-dns-is-to-spread-scams/">The purpose of DNS is to spread scams</a></strong></p> Terence Ede…
-- [n8n-io/n8n n8n@2.37.10](https://github.com/n8n-io/n8n/releases/tag/n8n%402.37.10) — GitHub Releases｜## [2.37.10](https://github.com/n8n-io/n8n/compare/n8n@2.37.9...n8n@2.37.10) (2026-09-04)
 
-<!-- This is an auto-generated description by cubic. -->
-<a href="ht…
+### Bug Fixes
 
-_生成: 2026-09-07 13:40 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+* **core:** Ensure running job cleanup when a…
+- [Apparently CodePen 2.0 sends data to their servers as you type](https://news.ycombinator.com/item?id=49596976) — Hacker News｜They send all typed into editor input to codepen.dev almost immediately (you would see in 1-2 sec after you typed your secret that it appears in respective Net…
+- [Emacs Bedrock 2.0](https://lambdaland.org/posts/2026-09-06-bedrock-v2) — Hacker News｜Emacs Bedrock 2.0
+- [The complex corporate web behind a $3.2 billion AI data center](https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems) — Ars Technica AI｜When multiple companies are behind one project, who bears responsibility for problems?
+- [Video compressor](https://simonwillison.net/2026/Sep/7/video-compressor) — Simon Willison｜<p><strong>Tool:</strong> <a href="https://tools.simonwillison.net/video-compressor">Video compressor</a></p> <p>I recorded a short demo video of <a href="http…
+- [Supporting independent journalism in Ukraine](https://openai.com/index/supporting-independent-journalism-in-ukraine) — OpenAI｜OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.
+- [Creepy crawlies](https://simonwillison.net/2026/Sep/7/creepy-crawlies) — Simon Willison｜<p><strong><a href="https://people.kernel.org/monsieuricon/creepy-crawlies">Creepy crawlies</a></strong></p> Konstantin Ryabitsev discusses how bad the "backgr…
+- [Quoting Jakub Pachocki](https://simonwillison.net/2026/Sep/7/jakub-pachocki) — Simon Willison｜<blockquote cite="https://openai.com/index/an-alien-mind/#scalable-defense"><p>The strongest argument I see for continuing to train much smarter models quickly…
+- [Tell HN: OpenAI brings back 5 hour limit for plus and business standard users](https://news.ycombinator.com/item?id=49600233) — Hacker News｜In case you&#x27;re wondering why the limits behave so very different from last week. Also: this makes limit resets kind woth significantly less.
+- [Mercator ↔ Equal Earth](https://simonwillison.net/2026/Sep/7/equal-earth) — Simon Willison｜<p><strong>Tool:</strong> <a href="https://tools.simonwillison.net/equal-earth">Mercator ↔ Equal Earth</a></p> <p>I got curious about the Equal Earth map proje…
+
+_生成: 2026-09-08 13:35 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

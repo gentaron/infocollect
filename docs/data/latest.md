@@ -1,66 +1,88 @@
-# 2026-09-21 の AI ダイジェスト
+# 2026-09-22 の AI ダイジェスト
 
-2026-09-21 13:53 時点の収集結果です。GitHub で伸びている AI ツールは cloudflare/security-audit-skill、deepseek-ai/deepseek-harness、hypit-ai/hypit の 3 件。AI ニュースは 12 件を収集し、うち 8 件が新バージョン・新機能の発表でした。
+2026-09-22 13:50 時点の収集結果です。GitHub で伸びている AI ツールは zai-org/ZCode、browser-use/jev-ultrafast、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — ★18,269
+### 1. [zai-org/ZCode](https://github.com/zai-org/ZCode) — ★5,911
 
-A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings
+Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
-- 伸び: +1505 スター
-- 選定理由: 前回計測から +1505 スター。JavaScript 製。最終更新 2026-09-14。
+- 伸び: 約 2034.7 スター/日
+- 選定理由: 平均 2034.7 スター/日ペース。TypeScript 製。最終更新 2026-09-21。
 
-### 2. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — ★231,522
+### 2. [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) — ★16,497
+
+Fastest and cheapest web agent
+
+- 伸び: 約 1850.8 スター/日
+- 選定理由: 平均 1850.8 スター/日ペース。Python 製。最終更新 2026-09-18。
+
+### 3. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — ★232,607
 
 DeepSeek Harness: Everything is a Plugin.
 
-- 伸び: +1158 スター
-- 選定理由: 前回計測から +1158 スター。TypeScript 製。最終更新 2026-09-17。
-
-### 3. [hypit-ai/hypit](https://github.com/hypit-ai/hypit) — ★12,081
-
-Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get yo…
-
-- 伸び: +840 スター
-- 選定理由: 前回計測から +840 スター。TypeScript 製。最終更新 2026-09-21。
+- 伸び: +1085 スター
+- 選定理由: 前回計測から +1085 スター。TypeScript 製。最終更新 2026-09-17。
 
 ## AI ニュース（新機能・新バージョン中心）
 
-- [langchain-ai/langchain langchain-typesafe==0.0.1a3](https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a3) — GitHub Releases｜Initial release
+- [vllm-project/vllm v0.30.0](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) — GitHub Releases｜# v0.30.0
 
-release(typesafe): 0.0.1a3 (#40693)
-feat(typesafe): make classifier questions invocation-scoped (#40659)
-release(typesafe): bump to 0.0.1a2 (#…
-- [llm-keys-ui 0.1](https://simonwillison.net/2026/Sep/20/llm-keys-ui) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/llm-keys-ui/releases/tag/0.1">llm-keys-ui 0.1</a></p> <p>This plugin solves a very specific pro…
-- [datasette-explain 0.2.2](https://simonwillison.net/2026/Sep/20/datasette-explain) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette-explain/releases/tag/0.2.2">datasette-explain 0.2.2</a></p> <blockquote> <ul> <li>Exp…
-- [US Revokes Limits on Power Plants' Climate Pollution](https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution) — Hacker News｜US Revokes Limits on Power Plants' Climate Pollution
-- [Pirate Face Rescues LLM Models from Deletion](https://pirateface.co) — Hacker News｜Pirate Face Rescues LLM Models from Deletion
-- [ChatGPT now knows what you do on other websites via ad collector](https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector) — Hacker News｜ChatGPT now knows what you do on other websites via ad collector
-- [langchain-ai/langchain langchain==1.4.2](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.2) — GitHub Releases｜Changes since langchain==1.4.1
+## Highlights
 
-release(langchain): 1.4.2 (#40621)
-fix(langchain): preserve model-generated tool calls in HITL tool call edits and add notice t…
-- [anthropics/anthropic-sdk-python v1.7.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0) — GitHub Releases｜## 1.7.0 (2026-09-18)
+This release features 762 commits from 315 contributors (104 new)!
 
-Full Changelog: [v1.6.0...v1.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.6.0...v1.7.0)
+* **New models**: DeepSeek-V4.1-Flash (#56214, #56228, #562…
+- [open-webui/open-webui v0.11.4](https://github.com/open-webui/open-webui/releases/tag/v0.11.4) — GitHub Releases｜### Added
+
+- 📉 **Far smaller slim image.** A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the…
+- [langchain-ai/langchain langchain-deepseek==1.1.1](https://github.com/langchain-ai/langchain/releases/tag/langchain-deepseek%3D%3D1.1.1) — GitHub Releases｜Changes since langchain-deepseek==1.1.0
+
+fix(deepseek,infra): resolve compatible minimum OpenAI dependencies, bump min ver (#40738)
+release(deepseek): 1.1.1 (#…
+- [langchain-ai/langchain langchain-fireworks==1.6.2](https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2) — GitHub Releases｜Changes since langchain-fireworks==1.6.1
+
+fix(fireworks): use current completions model in LLM tests (#40740)
+hotfix(fireworks): use available model in LLM tes…
+- [langchain-ai/langchain langchain-openrouter==0.2.9](https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.2.9) — GitHub Releases｜Changes since langchain-openrouter==0.2.8
+
+release(openrouter): 0.2.9 (#40736)
+chore(model-profiles): refresh model profile data (#40705)
+chore(model-profiles)…
+- [run-llama/llama_index v0.14.25](https://github.com/run-llama/llama_index/releases/tag/v0.14.25) — GitHub Releases｜# Release Notes
+
+## [2026-09-21]
+
+### llama-index-agent-agentmesh [0.3.0]
+
+- fix: resolve a ton of security alerts ([#22855](https://github.com/run-llama/llama…
+- [openai/openai-python v3.17.0](https://github.com/openai/openai-python/releases/tag/v3.17.0) — GitHub Releases｜## [3.17.0](https://github.com/openai/openai-python/compare/v3.16.2...v3.17.0) (2026-09-22)
+
 
 ### Features
 
-* **api:**…
-- [openai/openai-python v3.16.2](https://github.com/openai/openai-python/releases/tag/v3.16.2) — GitHub Releases｜## [3.16.2](https://github.com/openai/openai-python/compare/v3.16.1...v3.16.2) (2026-09-18)
+* **api:** add external storage configuration manag…
+- [comfyanonymous/ComfyUI v0.37.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0) — GitHub Releases｜## What's Changed
+* Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pu…
+- [n8n-io/n8n n8n@2.39.10](https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.10) — GitHub Releases｜## [2.39.10](https://github.com/n8n-io/n8n/compare/n8n@2.39.9...n8n@2.39.10) (2026-09-21)
 
 
 ### Bug Fixes
 
-* **parsing:** drop TextFormatT parameterization i…
-- [datasette-auth-github 1.0](https://simonwillison.net/2026/Sep/19/datasette-auth-github) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette-auth-github/releases/tag/1.0">datasette-auth-github 1.0</a></p> <p>I run this GitHub…
-- [openai/openai-python v3.16.1](https://github.com/openai/openai-python/releases/tag/v3.16.1) — GitHub Releases｜## [3.16.1](https://github.com/openai/openai-python/compare/v3.16.0...v3.16.1) (2026-09-18)
+* Limit declarative routing during base URL ownershi…
+- [n8n-io/n8n n8n@2.39.9](https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.9) — GitHub Releases｜## [2.39.9](https://github.com/n8n-io/n8n/compare/n8n@2.39.8...n8n@2.39.9) (2026-09-21)
 
 
 ### Bug Fixes
 
-* **api:** avoid loading unrelated API resources o…
-- [Quoting voxium](https://simonwillison.net/2026/Sep/20/voxium) — Simon Willison｜<blockquote cite="https://twitter.com/v0xium/status/2101526107128529120"><p>It has been half a month since I started a new role at a big company. Nobody knows…
+* **API:** Resolve HTTP 405 error on PATCH /credential…
+- [xAI’s Grok 4.6 is now available in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock) — AWS Machine Learning｜xAI's Grok 4.6 is now available in Amazon Bedrock: a frontier model for long-running agents, coding, and knowledge work, with a 500K token context window and f…
+- [n8n-io/n8n stable](https://github.com/n8n-io/n8n/releases/tag/stable) — GitHub Releases｜## [2.39.10](https://github.com/n8n-io/n8n/compare/n8n@2.39.9...n8n@2.39.10) (2026-09-21)
 
-_生成: 2026-09-21 13:53 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+
+### Bug Fixes
+
+* Limit declarative routing during base URL ownershi…
+
+_生成: 2026-09-22 13:50 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

@@ -1,29 +1,29 @@
-# 2026-09-22 の AI ダイジェスト
+# 2026-09-23 の AI ダイジェスト
 
-2026-09-22 13:50 時点の収集結果です。GitHub で伸びている AI ツールは zai-org/ZCode、browser-use/jev-ultrafast、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
+2026-09-23 13:28 時点の収集結果です。GitHub で伸びている AI ツールは browser-use/jev-ultrafast、hypit-ai/hypit、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [zai-org/ZCode](https://github.com/zai-org/ZCode) — ★5,911
-
-Z.ai's coding agent harness. Powerful, intelligent, extensible.
-
-- 伸び: 約 2034.7 スター/日
-- 選定理由: 平均 2034.7 スター/日ペース。TypeScript 製。最終更新 2026-09-21。
-
-### 2. [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) — ★16,497
+### 1. [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) — ★18,343
 
 Fastest and cheapest web agent
 
-- 伸び: 約 1850.8 スター/日
-- 選定理由: 平均 1850.8 スター/日ペース。Python 製。最終更新 2026-09-18。
+- 伸び: +1846 スター
+- 選定理由: 前回計測から +1846 スター。Python 製。最終更新 2026-09-18。
 
-### 3. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — ★232,607
+### 2. [hypit-ai/hypit](https://github.com/hypit-ai/hypit) — ★14,545
+
+Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get yo…
+
+- 伸び: +1549 スター
+- 選定理由: 前回計測から +1549 スター。TypeScript 製。最終更新 2026-09-23。
+
+### 3. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — ★233,708
 
 DeepSeek Harness: Everything is a Plugin.
 
-- 伸び: +1085 スター
-- 選定理由: 前回計測から +1085 スター。TypeScript 製。最終更新 2026-09-17。
+- 伸び: +1101 スター
+- 選定理由: 前回計測から +1101 スター。TypeScript 製。最終更新 2026-09-22。
 
 ## AI ニュース（新機能・新バージョン中心）
 
@@ -37,10 +37,31 @@ This release features 762 commits from 315 contributors (104 new)!
 - [open-webui/open-webui v0.11.4](https://github.com/open-webui/open-webui/releases/tag/v0.11.4) — GitHub Releases｜### Added
 
 - 📉 **Far smaller slim image.** A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the…
-- [langchain-ai/langchain langchain-deepseek==1.1.1](https://github.com/langchain-ai/langchain/releases/tag/langchain-deepseek%3D%3D1.1.1) — GitHub Releases｜Changes since langchain-deepseek==1.1.0
+- [langchain-ai/langchain langchain-openai==1.6.4](https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.4) — GitHub Releases｜Changes since langchain-openai==1.6.3
 
-fix(deepseek,infra): resolve compatible minimum OpenAI dependencies, bump min ver (#40738)
-release(deepseek): 1.1.1 (#…
+release(openai): 1.6.4 (#40775)
+chore(model-profiles): refresh openai model profile data (#40774)
+- [anthropics/anthropic-sdk-python v1.8.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.8.0) — GitHub Releases｜## 1.8.0 (2026-09-22)
+
+Full Changelog: [v1.7.0...v1.8.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.7.0...v1.8.0)
+
+### Features
+
+* **api:**…
+- [openai/openai-python v3.19.0](https://github.com/openai/openai-python/releases/tag/v3.19.0) — GitHub Releases｜## [3.19.0](https://github.com/openai/openai-python/compare/v3.18.0...v3.19.0) (2026-09-22)
+
+
+### Features
+
+* **api:** add GCP external storage support ([#3943…
+- [Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war](https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna) — Simon Willison｜<p>Yesterday was <a href="https://x.ai/news/grok-4-7">Grok 4.7</a> (<a href="https://news.ycombinator.com/item?id=49788838#49790209">pelicans</a>) and <a href=…
+- [openai/openai-python v3.18.0](https://github.com/openai/openai-python/releases/tag/v3.18.0) — GitHub Releases｜## [3.18.0](https://github.com/openai/openai-python/compare/v3.17.0...v3.18.0) (2026-09-22)
+
+
+### Features
+
+* **api:** add GPT-6 Sol and Luna model identifiers…
+- [Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity](https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity) — The Verge AI｜Anthropic says its new Claude Opus 5.5 model comes with stronger safeguards in the wake of recent rogue AI hacking incidents. In an announcement on Tuesday, An…
 - [langchain-ai/langchain langchain-fireworks==1.6.2](https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2) — GitHub Releases｜Changes since langchain-fireworks==1.6.1
 
 fix(fireworks): use current completions model in LLM tests (#40740)
@@ -63,26 +84,5 @@ chore(model-profiles)…
 ### Features
 
 * **api:** add external storage configuration manag…
-- [comfyanonymous/ComfyUI v0.37.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0) — GitHub Releases｜## What's Changed
-* Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pu…
-- [n8n-io/n8n n8n@2.39.10](https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.10) — GitHub Releases｜## [2.39.10](https://github.com/n8n-io/n8n/compare/n8n@2.39.9...n8n@2.39.10) (2026-09-21)
 
-
-### Bug Fixes
-
-* Limit declarative routing during base URL ownershi…
-- [n8n-io/n8n n8n@2.39.9](https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.9) — GitHub Releases｜## [2.39.9](https://github.com/n8n-io/n8n/compare/n8n@2.39.8...n8n@2.39.9) (2026-09-21)
-
-
-### Bug Fixes
-
-* **API:** Resolve HTTP 405 error on PATCH /credential…
-- [xAI’s Grok 4.6 is now available in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock) — AWS Machine Learning｜xAI's Grok 4.6 is now available in Amazon Bedrock: a frontier model for long-running agents, coding, and knowledge work, with a 500K token context window and f…
-- [n8n-io/n8n stable](https://github.com/n8n-io/n8n/releases/tag/stable) — GitHub Releases｜## [2.39.10](https://github.com/n8n-io/n8n/compare/n8n@2.39.9...n8n@2.39.10) (2026-09-21)
-
-
-### Bug Fixes
-
-* Limit declarative routing during base URL ownershi…
-
-_生成: 2026-09-22 13:50 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+_生成: 2026-09-23 13:28 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

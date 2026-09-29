@@ -1,52 +1,62 @@
-# 2026-09-28 の AI ダイジェスト
+# 2026-09-29 の AI ダイジェスト
 
-2026-09-28 14:18 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/deepseek-harness、stablyai/orca、Human-Agent-Society/reef の 3 件。AI ニュースは 12 件を収集し、うち 5 件が新バージョン・新機能の発表でした。
+2026-09-29 14:34 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/deepseek-harness、stablyai/orca、VectifyAI/PageIndex の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — ★238,037
+### 1. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — ★239,072
 
 DeepSeek Harness: Everything is a Plugin.
 
-- 伸び: +953 スター
-- 選定理由: 前回計測から +953 スター。TypeScript 製。最終更新 2026-09-27。
+- 伸び: +1035 スター
+- 選定理由: 前回計測から +1035 スター。TypeScript 製。最終更新 2026-09-28。
 
-### 2. [stablyai/orca](https://github.com/stablyai/orca) — ★79,916
+### 2. [stablyai/orca](https://github.com/stablyai/orca) — ★80,969
 
 Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.
 
-- 伸び: +857 スター
-- 選定理由: 前回計測から +857 スター。TypeScript 製。最終更新 2026-09-28。
+- 伸び: +1053 スター
+- 選定理由: 前回計測から +1053 スター。TypeScript 製。最終更新 2026-09-29。
 
-### 3. [Human-Agent-Society/reef](https://github.com/Human-Agent-Society/reef) — ★6,642
+### 3. [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) — ★36,518
 
-Infrastructure for continually self‑improving agents
+📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG
 
-- 伸び: +504 スター
-- 選定理由: 前回計測から +504 スター。Python 製。最終更新 2026-09-28。
+- 伸び: +629 スター
+- 選定理由: 前回計測から +629 スター。Python 製。最終更新 2026-09-28。
 
 ## AI ニュース（新機能・新バージョン中心）
 
-- [There are no "rogue" AI agents](https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents) — Hacker News｜There are no "rogue" AI agents
-- [Engram is a sampler that turns broken AI hallucinations into music](https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music) — The Verge AI｜Music startup Thoughtful Things has just launched the Kickstarter campaign for its first instrument, Engram. It's a sampler and groovebox that uses AI to mangl…
-- [Quoting Muse AI Agent](https://simonwillison.net/2026/Sep/28/muse-ai-agent) — Simon Willison｜<blockquote cite="https://www.threads.com/share/_oWfPufYJ/"><p>Bad news on the MX Keys Mini pickup. Usman showed up at your building around 9:15 and waited, me…
-- [langchain-ai/langchain langchain-fireworks==1.6.3](https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.3) — GitHub Releases｜Changes since langchain-fireworks==1.6.2
+- [anthropics/anthropic-sdk-python v1.9.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0) — GitHub Releases｜## 1.9.0 (2026-09-28)
 
-release(fireworks): 1.6.3 (#40834)
-fix(fireworks): declare native PDF inputs unsupported (#40814)
-fix(fireworks): pre…
-- [2026 in LLMs (so far)](https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far) — Simon Willison｜<p>On Friday I gave the closing keynote at the <a href="https://www.wearedevelopers.com/world-congress-north-america">WeAreDevelopers World Congress North Amer…
-- [S3 Is the Future, S3 Is the Past](https://simonwillison.net/2026/Sep/27/hn-49871741) — Simon Willison｜<p><a href="https://news.ycombinator.com/item?id=49851693#49871741">My comment</a> on <a href="https://news.ycombinator.com/item?id=49851693">S3 Is the Future,…
-- [Can Muse overcome Meta’s trust issues?](https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues) — TechCrunch AI｜On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.
-- [Bluesky reply bot checker](https://simonwillison.net/2026/Sep/27/bluesky-bot-check) — Simon Willison｜<p><strong>Tool:</strong> <a href="https://tools.simonwillison.net/bluesky-bot-check">Bluesky reply bot checker</a></p> <p>Automated reply bots on Twitter are…
-- [Anthropic’s CEO is about to have dinner with President Trump](https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump) — TechCrunch AI｜This will be the first one-on-one meeting between Dario Amodei and Donald Trump
-- [Show HN: TinyAIArena watch AI agents battle it out](https://tinyaiarena.com) — Hacker News｜Did you ever click on an “AI Arena” expecting glorious battle and instead get a boring benchmark? If so, this project is for you: proper life-or-death fights b…
-- [Turning GLM-5.3-Flash into a Jev-like decision model](https://www.privatemode.ai/blog/system-one-from-glm-flash) — Hacker News｜We found an approach to get Jev-like properties from standard LLMs like GLM-5.3-Flash. The core idea is to craft the input prompt so that the first output toke…
-- [n8n-io/n8n n8n@2.40.7](https://github.com/n8n-io/n8n/releases/tag/n8n%402.40.7) — GitHub Releases｜## [2.40.7](https://github.com/n8n-io/n8n/compare/n8n@2.40.6...n8n@2.40.7) (2026-09-25)
+Full Changelog: [v1.8.0...v1.9.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.8.0...v1.9.0)
+
+### Features
+
+* **api:**…
+- [langchain-ai/langchain langchain-fireworks==1.7.0](https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.0) — GitHub Releases｜Changes since langchain-fireworks==1.6.3
+
+hotfix(fireworks): replace unavailable integration test model (#40890)
+release(fireworks): 1.7.0 (#40889)
+feat(firewo…
+- [langchain-ai/langchain langchain==1.4.3](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.3) — GitHub Releases｜Changes since langchain==1.4.2
+
+release(langchain): 1.4.3 (#40888)
+fix(langchain): sanitize cache settings for fallback models (#40886)
+feat(langchain): suppor…
+- [openai/openai-python v3.20.0](https://github.com/openai/openai-python/releases/tag/v3.20.0) — GitHub Releases｜## [3.20.0](https://github.com/openai/openai-python/compare/v3.19.2...v3.20.0) (2026-09-28)
 
 
-### Bug Fixes
+### Features
 
-* **core:** Propagate project span attributes to node…
+* **api:** add Agents credential and session option…
+- [Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner](https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner) — TechCrunch AI｜Anthropic has released the newest version of its mid-range model, boasting faster response times and less token burn.
+- [Introducing Claude Sonnet 5.5 on AWS](https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws) — AWS Machine Learning｜Claude Sonnet 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. It's a smarter, more efficient Sonnet model for focused coding and knowledge w…
+- [Grok 4.7 is now available on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock) — AWS Machine Learning｜xAI's Grok 4.7 is now available on Amazon Bedrock: a frontier model for coding, long-running agents, and knowledge work. It offers a 500K token context window…
+- [Claude Sonnet 5.5](https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5) — Simon Willison｜<p><strong><a href="https://www.anthropic.com/claude-sonnet-5-5">Claude Sonnet 5.5</a></strong></p> New Sonnet model from Anthropic today. They say it "runs 30…
+- [AMD is acquiring AI company World Labs in a deal worth more than $8 billion](https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal) — The Verge AI｜AMD announced today that it's acquiring World Labs, an AI research lab co-founded by the prominent researcher Dr. Fei-Fei Li, in an all-stock deal worth approx…
+- [How we will do better for Australia](https://openai.com/index/how-we-will-do-better-for-australia) — OpenAI｜OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.
+- [AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion](https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion) — TechCrunch AI｜The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist.
+- [ESP32S3 cluster running 1.58-bit (BitNet) Language model](https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster) — Hacker News｜ESP32S3 cluster running 1.58-bit (BitNet) Language model
 
-_生成: 2026-09-28 14:18 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+_生成: 2026-09-29 14:34 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

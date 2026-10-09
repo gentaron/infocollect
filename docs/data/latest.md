@@ -1,46 +1,72 @@
-# 2026-10-08 の AI ダイジェスト
+# 2026-10-09 の AI ダイジェスト
 
-2026-10-08 14:59 時点の収集結果です。GitHub で伸びている AI ツールは lexmount/moli、DietrichGebert/ponytail、yetone/magpie の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
+2026-10-09 15:07 時点の収集結果です。GitHub で伸びている AI ツールは lexmount/moli、DietrichGebert/ponytail、tt-a1i/archify の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [lexmount/moli](https://github.com/lexmount/moli) — ★12,942
+### 1. [lexmount/moli](https://github.com/lexmount/moli) — ★14,219
 
 Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust
 
-- 伸び: +1390 スター
-- 選定理由: 前回計測から +1390 スター。Rust 製。最終更新 2026-10-08。
+- 伸び: +1277 スター
+- 選定理由: 前回計測から +1277 スター。Rust 製。最終更新 2026-10-09。
 
-### 2. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ★157,864
+### 2. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ★158,864
 
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-- 伸び: +846 スター
-- 選定理由: 前回計測から +846 スター。JavaScript 製。最終更新 2026-10-08。
+- 伸び: +1000 スター
+- 選定理由: 前回計測から +1000 スター。JavaScript 製。最終更新 2026-10-08。
 
-### 3. [yetone/magpie](https://github.com/yetone/magpie) — ★6,284
+### 3. [tt-a1i/archify](https://github.com/tt-a1i/archify) — ★80,497
 
-Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.
+Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.
 
-- 伸び: +719 スター
-- 選定理由: 前回計測から +719 スター。Go 製。最終更新 2026-10-08。
+- 伸び: +1062 スター
+- 選定理由: 前回計測から +1062 スター。JavaScript 製。最終更新 2026-10-09。
 
 ## AI ニュース（新機能・新バージョン中心）
 
-- [langchain-ai/langchain langchain-huggingface==1.2.3](https://github.com/langchain-ai/langchain/releases/tag/langchain-huggingface%3D%3D1.2.3) — GitHub Releases｜Changes since langchain-huggingface==1.2.2
+- [ollama/ollama v0.40.2](https://github.com/ollama/ollama/releases/tag/v0.40.2) — GitHub Releases｜## Model upgrades
 
-fix(huggingface): use a supported Scaleway model in streaming test (#41095)
-chore(deps): bump langgraph-sdk from 0.…
+Models downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and c…
+- [langchain-ai/langchain langchain==1.4.4](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.4) — GitHub Releases｜Changes since langchain==1.4.3
+
+release(langchain): 1.4.4 (#41163)
+fix(langchain): (SummarizationMiddleware) retry summary step on context overflow (#41159)
+ch…
+- [langchain-ai/langchain langchain-core==1.6.9](https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.9) — GitHub Releases｜Changes since langchain-core==1.6.8
+
+release(core): 1.6.9 (#41160)
+feat(core): accept a callable in with_retry (#41158)
+- [langchain-ai/langchain langchain-openai==1.7.0](https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.0) — GitHub Releases｜Changes since langchain-openai==1.6.7
+
+release(openai): 1.7.0 (#41154)
+feat(openai): support decisions api (#41125)
+chore(deps): bump langgraph-sdk from 0.4.4…
+- [ttok 0.4](https://simonwillison.net/2026/Oct/8/ttok) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/ttok/releases/tag/0.4">ttok 0.4</a></p> <p><code>ttok</code> is my CLI tool for counting tokens…
 - [anthropics/anthropic-sdk-python v1.12.1](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1) — GitHub Releases｜### Chores
 
 * **ci:** check that pull requests update the changelog
 * **docs:** note that listing Claude Console spend limits is in early access
 * **internal:*…
-- [langchain-ai/langchain langchain-fireworks==1.7.1](https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.1) — GitHub Releases｜Changes since langchain-fireworks==1.7.0
+- [ttok 1.0](https://simonwillison.net/2026/Oct/9/ttok) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/ttok/releases/tag/1.0">ttok 1.0</a></p> <p>I released <a href="https://simonwillison.net/2026/O…
+- [openai/openai-python v3.26.1](https://github.com/openai/openai-python/releases/tag/v3.26.1) — GitHub Releases｜## [3.26.1](https://github.com/openai/openai-python/compare/v3.26.0...v3.26.1) (2026-10-08)
 
-release(fireworks): 1.7.1 (#41137)
-fix(fireworks): preserve reasoning in streaming and tool loops (#41093)
-chore(deps…
+
+### Bug Fixes
+
+* **api:** correct custom voice creation parameter…
+- [n8n-io/n8n n8n@1.123.84](https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.84) — GitHub Releases｜## [1.123.84](https://github.com/n8n-io/n8n/compare/n8n@1.123.83...n8n@1.123.84) (2026-10-08)
+
+<!-- This is an auto-generated description by cubic. -->
+<a href…
+- [n8n-io/n8n n8n@2.42.5](https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.5) — GitHub Releases｜## [2.42.5](https://github.com/n8n-io/n8n/compare/n8n@2.42.4...n8n@2.42.5) (2026-10-08)
+
+
+### Bug Fixes
+
+* **editor:** Show the Agent artifact while the builde…
 - [anthropics/anthropic-sdk-python v1.12.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0) — GitHub Releases｜## 1.12.0 (2026-10-07)
 
 Full Changelog: [v1.11.0...v1.12.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.11.0...v1.12.0)
@@ -56,23 +82,5 @@ Full Changelog: [v1.11.0...v1.12.0](https://github.com/anthropics/anthropic-sdk-
 ### EmbeddingGemma2
 
 <img width="2716" height="2308" alt="image" src="https://github.com/user-attachments/as…
-- [ollama/ollama v0.40.1](https://github.com/ollama/ollama/releases/tag/v0.40.1) — GitHub Releases｜## What's Changed
-* server: proxy cloud usage and balance APIs by @drifkin in https://github.com/ollama/ollama/pull/18829
-* llama: fix clef head reads past 2…
-- [Claude Haiku 5.5](https://simonwillison.net/2026/Oct/7/claude-haiku-5-5) — Simon Willison｜<p>As previously <a href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/">promised</a>, here's Anthropic's new fast, low cost model: <a href="https:/…
-- [n8n-io/n8n n8n@2.42.4](https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.4) — GitHub Releases｜## [2.42.4](https://github.com/n8n-io/n8n/compare/n8n@2.42.3...n8n@2.42.4) (2026-10-07)
 
-<!-- This is an auto-generated description by cubic. -->
-<a href="http…
-- [comfyanonymous/ComfyUI v0.39.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0) — GitHub Releases｜## What's Changed
-* Support LynnReal light Minimax-H3 vae by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/16657
-* Update embedded docs to v0.5.13 by @…
-- [Muse launches on the iPad](https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support) — The Verge AI｜After launching nearly a month ago and spending several weeks as the top free app in Apple's App Store, the latest update to Meta's Muse iOS app introduces nat…
-- [Introducing Claude Haiku 5.5 on AWS](https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws) — AWS Machine Learning｜Claude Haiku 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. According to Anthropic, it is the fastest, most efficient model in the Claude 5…
-- [langchain-ai/langchain langchain-core==1.6.7](https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.7) — GitHub Releases｜Changes since langchain-core==1.6.6
-
-release(core): 1.6.7 (#41087)
-fix(core): include openai redacted_content in v1 output for bedrock converse (#41086)
-fix(co…
-
-_生成: 2026-10-08 14:59 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+_生成: 2026-10-09 15:07 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

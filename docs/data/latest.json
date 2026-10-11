@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T06:40:20.983Z",
-  "generatedAtLocal": "2026-10-10 14:40",
-  "dateLocal": "2026-10-10",
+  "generatedAt": "2026-10-11T06:47:19.235Z",
+  "generatedAtLocal": "2026-10-11 14:47",
+  "dateLocal": "2026-10-11",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-10 14:40 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、lexmount/moli、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-11 14:47 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、yetone/magpie、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 53761,
-      "starsDelta": 22637,
-      "starsPerDay": 23069.6,
+      "stars": 79161,
+      "starsDelta": 25400,
+      "starsPerDay": 25277.5,
       "measured": true,
-      "forks": 10132,
+      "forks": 17080,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,43 +36,41 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-10T06:38:24Z",
-      "openIssues": 117,
-      "score": 23068.14,
+      "pushedAt": "2026-10-11T06:38:41Z",
+      "openIssues": 134,
+      "score": 25271.19,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +22637 スター。TypeScript 製。最終更新 2026-10-10。"
+      "why": "前回計測から +25400 スター。TypeScript 製。最終更新 2026-10-11。"
     },
     {
       "rank": 2,
-      "name": "lexmount/moli",
-      "url": "https://github.com/lexmount/moli",
-      "homepage": "https://browser.lexmount.com",
-      "description": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
-      "stars": 15092,
-      "starsDelta": 873,
-      "starsPerDay": 889.7,
+      "name": "yetone/magpie",
+      "url": "https://github.com/yetone/magpie",
+      "homepage": "https://usemagpie.ai",
+      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "stars": 8750,
+      "starsDelta": 1031,
+      "starsPerDay": 1026,
       "measured": true,
-      "forks": 375,
-      "language": "Rust",
+      "forks": 577,
+      "language": "Go",
       "topics": [
-        "ai-agents",
-        "ai-tools",
-        "browser",
-        "browser-automation",
-        "cloud-browser",
-        "kitesurf",
-        "playwright",
-        "puppeteer"
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "llm",
+        "macos"
       ],
-      "license": "Apache-2.0",
-      "createdAt": "2026-08-10T13:20:30Z",
-      "pushedAt": "2026-10-10T06:36:55Z",
-      "openIssues": 295,
-      "score": 1111.99,
-      "headline": "moli",
-      "summary": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
-      "why": "前回計測から +873 スター。Rust 製。最終更新 2026-10-10。"
+      "license": "MIT",
+      "createdAt": "2026-09-23T16:22:35Z",
+      "pushedAt": "2026-10-11T06:34:04Z",
+      "openIssues": 450,
+      "score": 1282.05,
+      "headline": "magpie",
+      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "why": "前回計測から +1031 スター。Go 製。最終更新 2026-10-11。"
     },
     {
       "rank": 3,
@@ -80,11 +78,11 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "homepage": "https://voicestudio.sh",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 56566,
-      "starsDelta": 1033,
-      "starsPerDay": 1052.7,
+      "stars": 57640,
+      "starsDelta": 1074,
+      "starsPerDay": 1068.8,
       "measured": true,
-      "forks": 6340,
+      "forks": 6469,
       "language": "Python",
       "topics": [
         "ai",
@@ -98,17 +96,85 @@
       ],
       "license": "AGPL-3.0",
       "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-10T04:37:34Z",
-      "openIssues": 54,
-      "score": 1049.16,
+      "pushedAt": "2026-10-10T20:59:32Z",
+      "openIssues": 98,
+      "score": 1051.71,
       "headline": "VoiceStudio",
       "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +1033 スター。Python 製。最終更新 2026-10-10。"
+      "why": "前回計測から +1074 スター。Python 製。最終更新 2026-10-10。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "open-webui/open-webui v0.12.0",
+      "titleJa": "open-webui/open-webui v0.12.0",
+      "summary": "### Added\r\n\r\n- ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-10T21:13:24.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 99.2
+    },
+    {
+      "rank": 2,
+      "title": "modelcontextprotocol/servers v1.0.0",
+      "titleJa": "modelcontextprotocol/servers v1.0.0",
+      "summary": "## Packages\r\n\r\n| Package | Version | Registry | In this release |\r\n| --- | --- | --- | --- |\r\n| `@modelcontextprotocol/server-everything` | `1.0.0` | npm | **p…",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v1.0.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-11T02:40:29.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 85.9
+    },
+    {
+      "rank": 3,
+      "title": "ollama/ollama v0.40.3",
+      "titleJa": "ollama/ollama v0.40.3",
+      "summary": "## What's Changed\r\n* `ollama launch claude` no longer shows a warning about Claude connectors by @hoyyeva in https://github.com/ollama/ollama/pull/18878\r\n* `ol…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-11T01:39:04.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 77.4
+    },
+    {
+      "rank": 4,
+      "title": "Python 3.15.0 added to actions/python-versions",
+      "titleJa": "Python 3.15.0 added to actions/python-versions",
+      "summary": "<p><strong><a href=\"https://github.com/actions/python-versions/commit/49858b91c92d27403416ee43117032e91d00ce24\">Python 3.15.0 added to actions/python-versions<…",
+      "url": "https://simonwillison.net/2026/Oct/10/python-actions",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-10T23:58:04.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 64.6
+    },
+    {
+      "rank": 5,
       "title": "openai/openai-python v3.28.0",
       "titleJa": "openai/openai-python v3.28.0",
       "summary": "## [3.28.0](https://github.com/openai/openai-python/compare/v3.27.0...v3.28.0) (2026-10-09)\n\n\n### Features\n\n* **api:** add agent environment suspension and exp…",
@@ -121,10 +187,10 @@
         "version",
         "feature"
       ],
-      "score": 75.1
+      "score": 63
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "anthropics/anthropic-sdk-python v1.13.0",
       "titleJa": "anthropics/anthropic-sdk-python v1.13.0",
       "summary": "### Features\n\n* **api:** add types for the Chat and Cowork unified analytics metrics\n* **api:** add workflows, multiagent configuration and thread status filte…",
@@ -137,10 +203,10 @@
         "version",
         "feature"
       ],
-      "score": 72.4
+      "score": 60.3
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "ollama/ollama v0.40.2",
       "titleJa": "ollama/ollama v0.40.2",
       "summary": "## Model upgrades\r\n\r\nModels downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and c…",
@@ -153,10 +219,10 @@
         "version",
         "model"
       ],
-      "score": 69.1
+      "score": 57.1
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "n8n-io/n8n n8n@2.42.6",
       "titleJa": "n8n-io/n8n n8n@2.42.6",
       "summary": "## [2.42.6](https://github.com/n8n-io/n8n/compare/n8n@2.42.5...n8n@2.42.6) (2026-10-09)\n\n\n### Features\n\n* **core:** Block create/update of workflows with depre…",
@@ -170,10 +236,10 @@
         "feature",
         "model"
       ],
-      "score": 68.4
+      "score": 56.3
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "openai/openai-python v3.27.0",
       "titleJa": "openai/openai-python v3.27.0",
       "summary": "## [3.27.0](https://github.com/openai/openai-python/compare/v3.26.1...v3.27.0) (2026-10-09)\n\n\n### Features\n\n* **api:** add prewarmed hosted environments ([#404…",
@@ -186,10 +252,10 @@
         "version",
         "feature"
       ],
-      "score": 67.5
+      "score": 55.5
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Deno is joining Cloudflare",
       "titleJa": "Deno is joining Cloudflare",
       "summary": "<p><strong><a href=\"https://deno.com/blog/cloudflare\">Deno is joining Cloudflare</a></strong></p> The Deno team released the first version of <a href=\"https://…",
@@ -202,10 +268,10 @@
         "release",
         "model"
       ],
-      "score": 66.1
+      "score": 54
     },
     {
-      "rank": 7,
+      "rank": 11,
       "title": "langchain-ai/langchain langchain==1.4.4",
       "titleJa": "langchain-ai/langchain langchain==1.4.4",
       "summary": "Changes since langchain==1.4.3\n\nrelease(langchain): 1.4.4 (#41163)\nfix(langchain): (SummarizationMiddleware) retry summary step on context overflow (#41159)\nch…",
@@ -217,91 +283,27 @@
       "tags": [
         "version"
       ],
-      "score": 63.8
-    },
-    {
-      "rank": 8,
-      "title": "langchain-ai/langchain langchain-core==1.6.9",
-      "titleJa": "langchain-ai/langchain langchain-core==1.6.9",
-      "summary": "Changes since langchain-core==1.6.8\n\nrelease(core): 1.6.9 (#41160)\nfeat(core): accept a callable in with_retry (#41158)",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.9",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-08T20:11:32.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 62.8
-    },
-    {
-      "rank": 9,
-      "title": "langchain-ai/langchain langchain-openai==1.7.0",
-      "titleJa": "langchain-ai/langchain langchain-openai==1.7.0",
-      "summary": "Changes since langchain-openai==1.6.7\n\nrelease(openai): 1.7.0 (#41154)\nfeat(openai): support decisions api (#41125)\nchore(deps): bump langgraph-sdk from 0.4.4…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-08T16:07:53.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 60.7
-    },
-    {
-      "rank": 10,
-      "title": "ttok 0.4",
-      "titleJa": "ttok 0.4",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/ttok/releases/tag/0.4\">ttok 0.4</a></p> <p><code>ttok</code> is my CLI tool for counting tokens…",
-      "url": "https://simonwillison.net/2026/Oct/8/ttok",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-08T23:34:28.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 60.4
-    },
-    {
-      "rank": 11,
-      "title": "anthropics/anthropic-sdk-python v1.12.1",
-      "titleJa": "anthropics/anthropic-sdk-python v1.12.1",
-      "summary": "### Chores\n\n* **ci:** check that pull requests update the changelog\n* **docs:** note that listing Claude Console spend limits is in early access\n* **internal:*…",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-08T03:41:38.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 58.5
+      "score": 51.7
     },
     {
       "rank": 12,
-      "title": "n8n-io/n8n stable",
-      "titleJa": "n8n-io/n8n stable",
-      "summary": "## [2.42.6](https://github.com/n8n-io/n8n/compare/n8n@2.42.5...n8n@2.42.6) (2026-10-09)\n\n\n### Features\n\n* **core:** Block create/update of workflows with depre…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/stable",
+      "title": "Dwarf Fortress uses version control now",
+      "titleJa": "Dwarf Fortress uses version control now",
+      "summary": "<p>I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I…",
+      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-09T07:25:34.000Z",
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-11T00:52:37.000Z",
       "tags": [
-        "version",
-        "feature",
-        "model"
+        "news"
       ],
-      "score": 58.4
+      "score": 51
     }
   ],
   "stats": {
-    "repoCandidates": 278,
-    "newsCandidates": 2431,
+    "repoCandidates": 279,
+    "newsCandidates": 2433,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T06:47:19.235Z",
-  "generatedAtLocal": "2026-10-11 14:47",
-  "dateLocal": "2026-10-11",
+  "generatedAt": "2026-10-12T06:57:17.321Z",
+  "generatedAtLocal": "2026-10-12 14:57",
+  "dateLocal": "2026-10-12",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-11 14:47 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、yetone/magpie、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-12 14:57 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、yetone/magpie の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 79161,
-      "starsDelta": 25400,
-      "starsPerDay": 25277.5,
+      "stars": 119484,
+      "starsDelta": 40323,
+      "starsPerDay": 40045.8,
       "measured": true,
-      "forks": 17080,
+      "forks": 26843,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,53 +36,24 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-11T06:38:41Z",
-      "openIssues": 134,
-      "score": 25271.19,
+      "pushedAt": "2026-10-12T06:56:51Z",
+      "openIssues": 196,
+      "score": 40044.95,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +25400 スター。TypeScript 製。最終更新 2026-10-11。"
+      "why": "前回計測から +40323 スター。TypeScript 製。最終更新 2026-10-12。"
     },
     {
       "rank": 2,
-      "name": "yetone/magpie",
-      "url": "https://github.com/yetone/magpie",
-      "homepage": "https://usemagpie.ai",
-      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-      "stars": 8750,
-      "starsDelta": 1031,
-      "starsPerDay": 1026,
-      "measured": true,
-      "forks": 577,
-      "language": "Go",
-      "topics": [
-        "claude-code",
-        "codex",
-        "deepseek",
-        "gemini-cli",
-        "llm",
-        "macos"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-09-23T16:22:35Z",
-      "pushedAt": "2026-10-11T06:34:04Z",
-      "openIssues": 450,
-      "score": 1282.05,
-      "headline": "magpie",
-      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-      "why": "前回計測から +1031 スター。Go 製。最終更新 2026-10-11。"
-    },
-    {
-      "rank": 3,
       "name": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "homepage": "https://voicestudio.sh",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 57640,
-      "starsDelta": 1074,
-      "starsPerDay": 1068.8,
+      "stars": 59215,
+      "starsDelta": 1575,
+      "starsPerDay": 1564.2,
       "measured": true,
-      "forks": 6469,
+      "forks": 6638,
       "language": "Python",
       "topics": [
         "ai",
@@ -96,12 +67,41 @@
       ],
       "license": "AGPL-3.0",
       "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-10T20:59:32Z",
-      "openIssues": 98,
-      "score": 1051.71,
+      "pushedAt": "2026-10-12T02:20:44Z",
+      "openIssues": 113,
+      "score": 1552.26,
       "headline": "VoiceStudio",
       "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +1074 スター。Python 製。最終更新 2026-10-10。"
+      "why": "前回計測から +1575 スター。Python 製。最終更新 2026-10-12。"
+    },
+    {
+      "rank": 3,
+      "name": "yetone/magpie",
+      "url": "https://github.com/yetone/magpie",
+      "homepage": "https://usemagpie.ai",
+      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "stars": 9792,
+      "starsDelta": 1042,
+      "starsPerDay": 1034.8,
+      "measured": true,
+      "forks": 645,
+      "language": "Go",
+      "topics": [
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "llm",
+        "macos"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-23T16:22:35Z",
+      "pushedAt": "2026-10-12T06:47:50Z",
+      "openIssues": 561,
+      "score": 1293.19,
+      "headline": "magpie",
+      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "why": "前回計測から +1042 スター。Go 製。最終更新 2026-10-12。"
     }
   ],
   "news": [
@@ -121,7 +121,7 @@
         "model",
         "business"
       ],
-      "score": 99.2
+      "score": 87.1
     },
     {
       "rank": 2,
@@ -139,10 +139,26 @@
         "model",
         "business"
       ],
-      "score": 85.9
+      "score": 73.9
     },
     {
       "rank": 3,
+      "title": "openai/openai-python v3.29.0",
+      "titleJa": "openai/openai-python v3.29.0",
+      "summary": "## [3.29.0](https://github.com/openai/openai-python/compare/v3.28.0...v3.29.0) (2026-10-11)\n\n\n### Features\n\n* **api:** add billing_not_active session error cod…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.29.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-11T17:38:54.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 73.3
+    },
+    {
+      "rank": 4,
       "title": "ollama/ollama v0.40.3",
       "titleJa": "ollama/ollama v0.40.3",
       "summary": "## What's Changed\r\n* `ollama launch claude` no longer shows a warning about Claude connectors by @hoyyeva in https://github.com/ollama/ollama/pull/18878\r\n* `ol…",
@@ -155,10 +171,26 @@
         "version",
         "model"
       ],
-      "score": 77.4
+      "score": 65.3
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "titleJa": "The gap in shared understanding of LLM capability is widening",
+      "summary": "The gap in shared understanding of LLM capability is widening",
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "discussion": "https://news.ycombinator.com/item?id=50047422",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-11T20:20:52Z",
+      "tags": [
+        "feature",
+        "model"
+      ],
+      "score": 54.7
+    },
+    {
+      "rank": 6,
       "title": "Python 3.15.0 added to actions/python-versions",
       "titleJa": "Python 3.15.0 added to actions/python-versions",
       "summary": "<p><strong><a href=\"https://github.com/actions/python-versions/commit/49858b91c92d27403416ee43117032e91d00ce24\">Python 3.15.0 added to actions/python-versions<…",
@@ -171,10 +203,10 @@
         "version",
         "model"
       ],
-      "score": 64.6
+      "score": 52.5
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "openai/openai-python v3.28.0",
       "titleJa": "openai/openai-python v3.28.0",
       "summary": "## [3.28.0](https://github.com/openai/openai-python/compare/v3.27.0...v3.28.0) (2026-10-09)\n\n\n### Features\n\n* **api:** add agent environment suspension and exp…",
@@ -187,10 +219,10 @@
         "version",
         "feature"
       ],
-      "score": 63
+      "score": 50.9
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "anthropics/anthropic-sdk-python v1.13.0",
       "titleJa": "anthropics/anthropic-sdk-python v1.13.0",
       "summary": "### Features\n\n* **api:** add types for the Chat and Cowork unified analytics metrics\n* **api:** add workflows, multiagent configuration and thread status filte…",
@@ -203,26 +235,25 @@
         "version",
         "feature"
       ],
-      "score": 60.3
+      "score": 48.3
     },
     {
-      "rank": 7,
-      "title": "ollama/ollama v0.40.2",
-      "titleJa": "ollama/ollama v0.40.2",
-      "summary": "## Model upgrades\r\n\r\nModels downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and c…",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2",
+      "rank": 9,
+      "title": "Will the HomeView be Apple’s first smart home success?",
+      "titleJa": "Will the HomeView be Apple’s first smart home success?",
+      "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a la…",
+      "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-08T16:53:47.000Z",
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-11T21:14:40.000Z",
       "tags": [
-        "version",
-        "model"
+        "release"
       ],
-      "score": 57.1
+      "score": 46.1
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "n8n-io/n8n n8n@2.42.6",
       "titleJa": "n8n-io/n8n n8n@2.42.6",
       "summary": "## [2.42.6](https://github.com/n8n-io/n8n/compare/n8n@2.42.5...n8n@2.42.6) (2026-10-09)\n\n\n### Features\n\n* **core:** Block create/update of workflows with depre…",
@@ -236,10 +267,25 @@
         "feature",
         "model"
       ],
-      "score": 56.3
+      "score": 44.2
     },
     {
-      "rank": 9,
+      "rank": 11,
+      "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+      "titleJa": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+      "summary": "When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-11T18:33:56.000Z",
+      "tags": [
+        "release"
+      ],
+      "score": 43.8
+    },
+    {
+      "rank": 12,
       "title": "openai/openai-python v3.27.0",
       "titleJa": "openai/openai-python v3.27.0",
       "summary": "## [3.27.0](https://github.com/openai/openai-python/compare/v3.26.1...v3.27.0) (2026-10-09)\n\n\n### Features\n\n* **api:** add prewarmed hosted environments ([#404…",
@@ -252,58 +298,12 @@
         "version",
         "feature"
       ],
-      "score": 55.5
-    },
-    {
-      "rank": 10,
-      "title": "Deno is joining Cloudflare",
-      "titleJa": "Deno is joining Cloudflare",
-      "summary": "<p><strong><a href=\"https://deno.com/blog/cloudflare\">Deno is joining Cloudflare</a></strong></p> The Deno team released the first version of <a href=\"https://…",
-      "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-09T22:48:37.000Z",
-      "tags": [
-        "release",
-        "model"
-      ],
-      "score": 54
-    },
-    {
-      "rank": 11,
-      "title": "langchain-ai/langchain langchain==1.4.4",
-      "titleJa": "langchain-ai/langchain langchain==1.4.4",
-      "summary": "Changes since langchain==1.4.3\n\nrelease(langchain): 1.4.4 (#41163)\nfix(langchain): (SummarizationMiddleware) retry summary step on context overflow (#41159)\nch…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.4",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-08T22:14:22.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 51.7
-    },
-    {
-      "rank": 12,
-      "title": "Dwarf Fortress uses version control now",
-      "titleJa": "Dwarf Fortress uses version control now",
-      "summary": "<p>I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I…",
-      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-11T00:52:37.000Z",
-      "tags": [
-        "news"
-      ],
-      "score": 51
+      "score": 43.4
     }
   ],
   "stats": {
-    "repoCandidates": 279,
-    "newsCandidates": 2433,
+    "repoCandidates": 278,
+    "newsCandidates": 2428,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

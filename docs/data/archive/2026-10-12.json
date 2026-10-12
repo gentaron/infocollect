@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-12T06:57:17.321Z",
+  "generatedAtLocal": "2026-10-12 14:57",
+  "dateLocal": "2026-10-12",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-10-12 14:57 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、yetone/magpie の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 119484,
+      "starsDelta": 40323,
+      "starsPerDay": 40045.8,
+      "measured": true,
+      "forks": 26843,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "binary-analysis",
+        "claude-code",
+        "cli",
+        "codex",
+        "cordis",
+        "ctf"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-10-12T06:56:51Z",
+      "openIssues": 196,
+      "score": 40044.95,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +40323 スター。TypeScript 製。最終更新 2026-10-12。"
+    },
+    {
+      "rank": 2,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "homepage": "https://voicestudio.sh",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "stars": 59215,
+      "starsDelta": 1575,
+      "starsPerDay": 1564.2,
+      "measured": true,
+      "forks": 6638,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "audiobook",
+        "cuda",
+        "dubbing",
+        "elevenlabs-alternative",
+        "huggingface",
+        "local-first",
+        "mlx"
+      ],
+      "license": "AGPL-3.0",
+      "createdAt": "2026-04-09T21:40:26Z",
+      "pushedAt": "2026-10-12T02:20:44Z",
+      "openIssues": 113,
+      "score": 1552.26,
+      "headline": "VoiceStudio",
+      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
+      "why": "前回計測から +1575 スター。Python 製。最終更新 2026-10-12。"
+    },
+    {
+      "rank": 3,
+      "name": "yetone/magpie",
+      "url": "https://github.com/yetone/magpie",
+      "homepage": "https://usemagpie.ai",
+      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "stars": 9792,
+      "starsDelta": 1042,
+      "starsPerDay": 1034.8,
+      "measured": true,
+      "forks": 645,
+      "language": "Go",
+      "topics": [
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "llm",
+        "macos"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-23T16:22:35Z",
+      "pushedAt": "2026-10-12T06:47:50Z",
+      "openIssues": 561,
+      "score": 1293.19,
+      "headline": "magpie",
+      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "why": "前回計測から +1042 スター。Go 製。最終更新 2026-10-12。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "open-webui/open-webui v0.12.0",
+      "titleJa": "open-webui/open-webui v0.12.0",
+      "summary": "### Added\r\n\r\n- ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-10T21:13:24.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 87.1
+    },
+    {
+      "rank": 2,
+      "title": "modelcontextprotocol/servers v1.0.0",
+      "titleJa": "modelcontextprotocol/servers v1.0.0",
+      "summary": "## Packages\r\n\r\n| Package | Version | Registry | In this release |\r\n| --- | --- | --- | --- |\r\n| `@modelcontextprotocol/server-everything` | `1.0.0` | npm | **p…",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v1.0.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-11T02:40:29.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 73.9
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.29.0",
+      "titleJa": "openai/openai-python v3.29.0",
+      "summary": "## [3.29.0](https://github.com/openai/openai-python/compare/v3.28.0...v3.29.0) (2026-10-11)\n\n\n### Features\n\n* **api:** add billing_not_active session error cod…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.29.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-11T17:38:54.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 73.3
+    },
+    {
+      "rank": 4,
+      "title": "ollama/ollama v0.40.3",
+      "titleJa": "ollama/ollama v0.40.3",
+      "summary": "## What's Changed\r\n* `ollama launch claude` no longer shows a warning about Claude connectors by @hoyyeva in https://github.com/ollama/ollama/pull/18878\r\n* `ol…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-11T01:39:04.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 65.3
+    },
+    {
+      "rank": 5,
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "titleJa": "The gap in shared understanding of LLM capability is widening",
+      "summary": "The gap in shared understanding of LLM capability is widening",
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "discussion": "https://news.ycombinator.com/item?id=50047422",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-11T20:20:52Z",
+      "tags": [
+        "feature",
+        "model"
+      ],
+      "score": 54.7
+    },
+    {
+      "rank": 6,
+      "title": "Python 3.15.0 added to actions/python-versions",
+      "titleJa": "Python 3.15.0 added to actions/python-versions",
+      "summary": "<p><strong><a href=\"https://github.com/actions/python-versions/commit/49858b91c92d27403416ee43117032e91d00ce24\">Python 3.15.0 added to actions/python-versions<…",
+      "url": "https://simonwillison.net/2026/Oct/10/python-actions",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-10T23:58:04.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 52.5
+    },
+    {
+      "rank": 7,
+      "title": "openai/openai-python v3.28.0",
+      "titleJa": "openai/openai-python v3.28.0",
+      "summary": "## [3.28.0](https://github.com/openai/openai-python/compare/v3.27.0...v3.28.0) (2026-10-09)\n\n\n### Features\n\n* **api:** add agent environment suspension and exp…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.28.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-09T20:49:22.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 50.9
+    },
+    {
+      "rank": 8,
+      "title": "anthropics/anthropic-sdk-python v1.13.0",
+      "titleJa": "anthropics/anthropic-sdk-python v1.13.0",
+      "summary": "### Features\n\n* **api:** add types for the Chat and Cowork unified analytics metrics\n* **api:** add workflows, multiagent configuration and thread status filte…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.13.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-09T15:28:52.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 48.3
+    },
+    {
+      "rank": 9,
+      "title": "Will the HomeView be Apple’s first smart home success?",
+      "titleJa": "Will the HomeView be Apple’s first smart home success?",
+      "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a la…",
+      "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-11T21:14:40.000Z",
+      "tags": [
+        "release"
+      ],
+      "score": 46.1
+    },
+    {
+      "rank": 10,
+      "title": "n8n-io/n8n n8n@2.42.6",
+      "titleJa": "n8n-io/n8n n8n@2.42.6",
+      "summary": "## [2.42.6](https://github.com/n8n-io/n8n/compare/n8n@2.42.5...n8n@2.42.6) (2026-10-09)\n\n\n### Features\n\n* **core:** Block create/update of workflows with depre…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.6",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-09T07:25:32.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 44.2
+    },
+    {
+      "rank": 11,
+      "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+      "titleJa": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+      "summary": "When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-11T18:33:56.000Z",
+      "tags": [
+        "release"
+      ],
+      "score": 43.8
+    },
+    {
+      "rank": 12,
+      "title": "openai/openai-python v3.27.0",
+      "titleJa": "openai/openai-python v3.27.0",
+      "summary": "## [3.27.0](https://github.com/openai/openai-python/compare/v3.26.1...v3.27.0) (2026-10-09)\n\n\n### Features\n\n* **api:** add prewarmed hosted environments ([#404…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.27.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-09T13:46:41.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 43.4
+    }
+  ],
+  "stats": {
+    "repoCandidates": 278,
+    "newsCandidates": 2428,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

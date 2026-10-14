@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-14T05:47:38.139Z",
+  "generatedAtLocal": "2026-10-14 13:47",
+  "dateLocal": "2026-10-14",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-10-14 13:47 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、wheresryan22/anatomy の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 216375,
+      "starsDelta": 41488,
+      "starsPerDay": 44345.3,
+      "measured": true,
+      "forks": 53397,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "binary-analysis",
+        "claude-code",
+        "cli",
+        "codex",
+        "cordis",
+        "ctf"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-10-14T05:44:43Z",
+      "openIssues": 593,
+      "score": 44341.32,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +41488 スター。TypeScript 製。最終更新 2026-10-14。"
+    },
+    {
+      "rank": 2,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "homepage": "https://voicestudio.sh",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "stars": 64022,
+      "starsDelta": 3086,
+      "starsPerDay": 3298.5,
+      "measured": true,
+      "forks": 7119,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "audiobook",
+        "cuda",
+        "dubbing",
+        "elevenlabs-alternative",
+        "huggingface",
+        "local-first",
+        "mlx"
+      ],
+      "license": "AGPL-3.0",
+      "createdAt": "2026-04-09T21:40:26Z",
+      "pushedAt": "2026-10-14T05:45:11Z",
+      "openIssues": 159,
+      "score": 3298.28,
+      "headline": "VoiceStudio",
+      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
+      "why": "前回計測から +3086 スター。Python 製。最終更新 2026-10-14。"
+    },
+    {
+      "rank": 3,
+      "name": "wheresryan22/anatomy",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "homepage": "https://skills.wheresryan.sh/anatomy",
+      "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
+      "stars": 8591,
+      "starsDelta": 1719,
+      "starsPerDay": 1837.4,
+      "measured": true,
+      "forks": 623,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "open-source",
+        "svg",
+        "vizualization"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-10-08T10:12:49Z",
+      "pushedAt": "2026-10-13T08:19:55Z",
+      "openIssues": 6,
+      "score": 2218.13,
+      "headline": "anatomy",
+      "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional Web…",
+      "why": "前回計測から +1719 スター。JavaScript 製。最終更新 2026-10-13。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "comfyanonymous/ComfyUI v0.40.0",
+      "titleJa": "comfyanonymous/ComfyUI v0.40.0",
+      "summary": "## What's Changed\r\n* [Server.py] Update CSP to allow `blob:` and `data:` by @S0yKaf in https://github.com/Comfy-Org/ComfyUI/pull/15565\r\n* Add comfy_attention a…",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-13T21:29:16.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 79.8
+    },
+    {
+      "rank": 2,
+      "title": "openai/openai-python v3.31.0",
+      "titleJa": "openai/openai-python v3.31.0",
+      "summary": "## [3.31.0](https://github.com/openai/openai-python/compare/v3.30.0...v3.31.0) (2026-10-14)\n\n\n### Features\n\n* add browser and computer toolsets (1/4) ([#4073](…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.31.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-14T05:38:46.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 75.9
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.30.0",
+      "titleJa": "openai/openai-python v3.30.0",
+      "summary": "## [3.30.0](https://github.com/openai/openai-python/compare/v3.29.0...v3.30.0) (2026-10-14)\n\n\n### Features\n\n* **api:** add beta session spending limits ([#4058…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.30.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-14T04:00:19.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 75.1
+    },
+    {
+      "rank": 4,
+      "title": "ollama/ollama v0.40.4",
+      "titleJa": "ollama/ollama v0.40.4",
+      "summary": "## Decision models in the CLI\r\nDecision models can now be used directly from the terminal with `ollama run` — ask yes/no questions, classify text into labels,…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-12T19:00:12.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 70.6
+    },
+    {
+      "rank": 5,
+      "title": "langchain-ai/langchain langchain==1.4.5",
+      "titleJa": "langchain-ai/langchain langchain==1.4.5",
+      "summary": "Changes since langchain==1.4.4\n\nrelease(langchain): 1.4.5 (#41226)\nfeat(langchain): accept `summarizer` in `SummarizationMiddleware` (#41225)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.5",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-12T19:28:41.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 62.8
+    },
+    {
+      "rank": 6,
+      "title": "llm-meta-ai 0.2",
+      "titleJa": "llm-meta-ai 0.2",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-meta-ai/releases/tag/0.2\">llm-meta-ai 0.2</a></p> <p>Meta AI release <a href=\"https://resea…",
+      "url": "https://simonwillison.net/2026/Oct/12/llm-meta-ai",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-12T23:58:46.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 61.1
+    },
+    {
+      "rank": 7,
+      "title": "langchain-ai/langchain langchain-openai==1.7.1",
+      "titleJa": "langchain-ai/langchain langchain-openai==1.7.1",
+      "summary": "Changes since langchain-openai==1.7.0\n\nrelease(openai): 1.7.1 (#41222)\nfeat(core,anthropic,openai): declare mid-conversation support in model profiles (#41180)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-12T14:33:09.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 60.4
+    },
+    {
+      "rank": 8,
+      "title": "llm-gemini 0.35",
+      "titleJa": "llm-gemini 0.35",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.35\">llm-gemini 0.35</a></p> <p>I added support to <a href=\"https://gi…",
+      "url": "https://simonwillison.net/2026/Oct/13/llm-gemini",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-13T22:28:54.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 60.3
+    },
+    {
+      "rank": 9,
+      "title": "langchain-ai/langchain langchain-core==1.6.10",
+      "titleJa": "langchain-ai/langchain langchain-core==1.6.10",
+      "summary": "Changes since langchain-core==1.6.9\n\nrelease(core): 1.6.10 (#41220)\nfeat(core,anthropic,openai): declare mid-conversation support in model profiles (#41180)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.10",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-12T14:14:03.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 60.2
+    },
+    {
+      "rank": 10,
+      "title": "Build long-horizon agents with Grok 4.7 on Amazon Bedrock",
+      "titleJa": "Build long-horizon agents with Grok 4.7 on Amazon Bedrock",
+      "summary": "Grok 4.7 is now available on Amazon Bedrock. In this post, we build a tool-calling agent on Grok 4.7 and evaluate it on three reasoning tasks at four reasoning…",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock",
+      "discussion": null,
+      "source": "AWS Machine Learning",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-13T15:52:20.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 57
+    },
+    {
+      "rank": 11,
+      "title": "Facebook will let you customize your feed algorithm using AI",
+      "titleJa": "Facebook will let you customize your feed algorithm using AI",
+      "summary": "Facebook's new \"Your Algorithm\" feature will let you directly add and manage topics you want to see in your feed and Facebook Reels. Meta says your recommendat…",
+      "url": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-13T17:01:31.000Z",
+      "tags": [
+        "release",
+        "feature"
+      ],
+      "score": 55.6
+    },
+    {
+      "rank": 12,
+      "title": "Google makes it easier to launch your vibe-coded apps",
+      "titleJa": "Google makes it easier to launch your vibe-coded apps",
+      "summary": "The next time you vibe-code a custom app with Google's AI Studio, you won't have to connect your phone to a computer to install it. On Tuesday, Google announce…",
+      "url": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "tags": [
+        "release",
+        "feature"
+      ],
+      "score": 55.6
+    }
+  ],
+  "stats": {
+    "repoCandidates": 275,
+    "newsCandidates": 2437,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

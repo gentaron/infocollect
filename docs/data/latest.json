@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T05:32:40.100Z",
-  "generatedAtLocal": "2026-10-15 13:32",
-  "dateLocal": "2026-10-15",
+  "generatedAt": "2026-10-16T05:25:53.711Z",
+  "generatedAtLocal": "2026-10-16 13:25",
+  "dateLocal": "2026-10-16",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-15 13:32 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、wheresryan22/anatomy の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-16 13:25 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、wheresryan22/anatomy、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 249146,
-      "starsDelta": 32771,
-      "starsPerDay": 33115.4,
+      "stars": 275756,
+      "starsDelta": 26610,
+      "starsPerDay": 26735.8,
       "measured": true,
-      "forks": 62541,
+      "forks": 69469,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,24 +36,51 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-15T05:30:58Z",
-      "openIssues": 814,
-      "score": 33113.57,
+      "pushedAt": "2026-10-16T05:13:17Z",
+      "openIssues": 1031,
+      "score": 26726.22,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +32771 スター。TypeScript 製。最終更新 2026-10-15。"
+      "why": "前回計測から +26610 スター。TypeScript 製。最終更新 2026-10-16。"
     },
     {
       "rank": 2,
+      "name": "wheresryan22/anatomy",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "homepage": "https://skills.wheresryan.sh/anatomy",
+      "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
+      "stars": 13082,
+      "starsDelta": 2117,
+      "starsPerDay": 2127,
+      "measured": true,
+      "forks": 954,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "open-source",
+        "svg",
+        "vizualization"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-10-08T10:12:49Z",
+      "pushedAt": "2026-10-15T14:14:32Z",
+      "openIssues": 20,
+      "score": 2593.52,
+      "headline": "anatomy",
+      "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional Web…",
+      "why": "前回計測から +2117 スター。JavaScript 製。最終更新 2026-10-15。"
+    },
+    {
+      "rank": 3,
       "name": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "homepage": "https://voicestudio.sh",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 67005,
-      "starsDelta": 2983,
-      "starsPerDay": 3014.4,
+      "stars": 69494,
+      "starsDelta": 2489,
+      "starsPerDay": 2500.8,
       "measured": true,
-      "forks": 7368,
+      "forks": 7608,
       "language": "Python",
       "topics": [
         "ai",
@@ -67,44 +94,54 @@
       ],
       "license": "AGPL-3.0",
       "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-15T05:27:26Z",
-      "openIssues": 197,
-      "score": 3013.89,
+      "pushedAt": "2026-10-16T01:13:32Z",
+      "openIssues": 186,
+      "score": 2483.37,
       "headline": "VoiceStudio",
       "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +2983 スター。Python 製。最終更新 2026-10-15。"
-    },
-    {
-      "rank": 3,
-      "name": "wheresryan22/anatomy",
-      "url": "https://github.com/wheresryan22/anatomy",
-      "homepage": "https://skills.wheresryan.sh/anatomy",
-      "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
-      "stars": 10965,
-      "starsDelta": 2374,
-      "starsPerDay": 2399,
-      "measured": true,
-      "forks": 788,
-      "language": "JavaScript",
-      "topics": [
-        "agent-skill",
-        "open-source",
-        "svg",
-        "vizualization"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-10-08T10:12:49Z",
-      "pushedAt": "2026-10-14T22:24:32Z",
-      "openIssues": 13,
-      "score": 2963.53,
-      "headline": "anatomy",
-      "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional Web…",
-      "why": "前回計測から +2374 スター。JavaScript 製。最終更新 2026-10-14。"
+      "why": "前回計測から +2489 スター。Python 製。最終更新 2026-10-16。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "huggingface/transformers v5.20.0",
+      "titleJa": "huggingface/transformers v5.20.0",
+      "summary": "# Release v5.20.0\r\n\r\n\r\n## New Model additions\r\n\r\n### Muse Spark Open\r\n\r\n<img width=\"2400\" height=\"1296\" alt=\"image\" src=\"https://github.com/user-attachments/as…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T18:05:36.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business",
+        "research"
+      ],
+      "score": 94.3
+    },
+    {
+      "rank": 2,
+      "title": "ggml-org/llama.cpp v0.7.0",
+      "titleJa": "ggml-org/llama.cpp v0.7.0",
+      "summary": "## Overview\r\n\r\nllama.cpp v0.7.0 adds the LiliCorr speculative decoding technique and MTP for GLM5-Next, a new GPU cache for MoE experts kept in host memory (`-…",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T17:13:19.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "research"
+      ],
+      "score": 93.9
+    },
+    {
+      "rank": 3,
       "title": "open-webui/open-webui v0.12.1",
       "titleJa": "open-webui/open-webui v0.12.1",
       "summary": "### Added\r\n\r\n- 🧱 **External apps in channels.** Administrators can now turn on Apps in Admin Settings > General, or with \"ENABLE_APPS\", and connect external a…",
@@ -119,10 +156,41 @@
         "model",
         "business"
       ],
-      "score": 89.3
+      "score": 77.3
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "title": "comfyanonymous/ComfyUI v0.41.0",
+      "titleJa": "comfyanonymous/ComfyUI v0.41.0",
+      "summary": "## What's Changed\r\n* Add ImageSDRToHDR node. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16990\r\n* feat: Add a core route for the default wo…",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T22:57:45.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 76.8
+    },
+    {
+      "rank": 5,
+      "title": "langchain-ai/langchain langchain-core==1.6.11",
+      "titleJa": "langchain-ai/langchain langchain-core==1.6.11",
+      "summary": "Changes since langchain-core==1.6.10\n\nrelease(core): 1.6.11 (#41260)\nfeat(core): accept address inside LangChainTracer (#41006)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.11",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T18:32:35.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 74.6
+    },
+    {
+      "rank": 6,
       "title": "open-webui/open-webui v0.12.2",
       "titleJa": "open-webui/open-webui v0.12.2",
       "summary": "### Added\n\n- 📑 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 becaus…",
@@ -135,10 +203,73 @@
         "version",
         "model"
       ],
-      "score": 83.8
+      "score": 71.8
     },
     {
-      "rank": 3,
+      "rank": 7,
+      "title": "ollama/ollama v0.40.5",
+      "titleJa": "ollama/ollama v0.40.5",
+      "summary": "## NVIDIA Nemotron 3.5 Super\r\n\r\n[NVIDIA Nemotron 3.5 Super](https://ollama.com/library/nemotron-3.5-super) is a vision-language model for coding, reasoning, to…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-14T19:45:22.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 71.2
+    },
+    {
+      "rank": 8,
+      "title": "anthropics/anthropic-sdk-python v1.15.0",
+      "titleJa": "anthropics/anthropic-sdk-python v1.15.0",
+      "summary": "### Features\n\n* **api:** add between_tools to thinking types in model capabilities\n* **api:** add the speed parameter and usage.speed to Messages\n* **api:** re…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.15.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T19:45:15.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 71.2
+    },
+    {
+      "rank": 9,
+      "title": "n8n-io/n8n n8n@2.43.6",
+      "titleJa": "n8n-io/n8n n8n@2.43.6",
+      "summary": "## [2.43.6](https://github.com/n8n-io/n8n/compare/n8n@2.43.5...n8n@2.43.6) (2026-10-15)\n\n\n### Bug Fixes\n\n* **core:** Create an XML parser for each webhook requ…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.43.6",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T07:26:03.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 65
+    },
+    {
+      "rank": 10,
+      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "titleJa": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "summary": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "discussion": null,
+      "source": "Hugging Face",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-16T01:44:47.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 62.2
+    },
+    {
+      "rank": 11,
       "title": "langchain-ai/langchain langchain==1.4.6",
       "titleJa": "langchain-ai/langchain langchain==1.4.6",
       "summary": "Changes since langchain==1.4.5\n\nrelease(langchain): 1.4.6 (#41247)\nfeat(langchain): add opt-in per-call interrupts to HITL middleware (#41062)",
@@ -150,10 +281,10 @@
       "tags": [
         "version"
       ],
-      "score": 74
+      "score": 62
     },
     {
-      "rank": 4,
+      "rank": 12,
       "title": "anthropics/anthropic-sdk-python v1.14.0",
       "titleJa": "anthropics/anthropic-sdk-python v1.14.0",
       "summary": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **api:** add organization_type_not_supported error to spend limit lists\n* **api:** a…",
@@ -167,141 +298,12 @@
         "feature",
         "model"
       ],
-      "score": 73.8
-    },
-    {
-      "rank": 5,
-      "title": "langchain-ai/langchain langchain-openai==1.7.2",
-      "titleJa": "langchain-ai/langchain langchain-openai==1.7.2",
-      "summary": "Changes since langchain-openai==1.7.1\n\nrelease(openai): 1.7.2 (#41245)\nfix(openai): keep Responses stream items on one block when output_index drifts (#41121)",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.2",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T13:51:15.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 72.2
-    },
-    {
-      "rank": 6,
-      "title": "comfyanonymous/ComfyUI v0.40.0",
-      "titleJa": "comfyanonymous/ComfyUI v0.40.0",
-      "summary": "## What's Changed\r\n* [Server.py] Update CSP to allow `blob:` and `data:` by @S0yKaf in https://github.com/Comfy-Org/ComfyUI/pull/15565\r\n* Add comfy_attention a…",
-      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-13T21:29:16.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 68
-    },
-    {
-      "rank": 7,
-      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-      "titleJa": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-      "summary": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-      "url": "https://typesafe.ai/blog/jev-1-14",
-      "discussion": "https://news.ycombinator.com/item?id=50095353",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-14T21:11:03Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 65.8
-    },
-    {
-      "rank": 8,
-      "title": "n8n-io/n8n n8n@1.123.85",
-      "titleJa": "n8n-io/n8n n8n@1.123.85",
-      "summary": "## [1.123.85](https://github.com/n8n-io/n8n/compare/n8n@1.123.84...n8n@1.123.85) (2026-10-14)\n\n<!-- This is an auto-generated description by cubic. -->\n<a href…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.85",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T08:38:57.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 65.5
-    },
-    {
-      "rank": 9,
-      "title": "n8n-io/n8n n8n@2.43.5",
-      "titleJa": "n8n-io/n8n n8n@2.43.5",
-      "summary": "## [2.43.5](https://github.com/n8n-io/n8n/compare/n8n@2.43.4...n8n@2.43.5) (2026-10-14)\n\n\n### Bug Fixes\n\n* **core:** Validate the size argument of the chunk()…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.43.5",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T08:15:51.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 65.4
-    },
-    {
-      "rank": 10,
-      "title": "openai/openai-python v3.31.0",
-      "titleJa": "openai/openai-python v3.31.0",
-      "summary": "## [3.31.0](https://github.com/openai/openai-python/compare/v3.30.0...v3.31.0) (2026-10-14)\n\n\n### Features\n\n* add browser and computer toolsets (1/4) ([#4073](…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.31.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T05:38:46.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 64
-    },
-    {
-      "rank": 11,
-      "title": "openai/openai-python v3.30.0",
-      "titleJa": "openai/openai-python v3.30.0",
-      "summary": "## [3.30.0](https://github.com/openai/openai-python/compare/v3.29.0...v3.30.0) (2026-10-14)\n\n\n### Features\n\n* **api:** add beta session spending limits ([#4058…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.30.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T04:00:19.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 63.2
-    },
-    {
-      "rank": 12,
-      "title": "ollama/ollama v0.40.4",
-      "titleJa": "ollama/ollama v0.40.4",
-      "summary": "## Decision models in the CLI\r\nDecision models can now be used directly from the terminal with `ollama run` — ask yes/no questions, classify text into labels,…",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-12T19:00:12.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 58.7
+      "score": 61.9
     }
   ],
   "stats": {
-    "repoCandidates": 273,
-    "newsCandidates": 2452,
+    "repoCandidates": 272,
+    "newsCandidates": 2455,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

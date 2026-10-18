@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-18T05:24:42.703Z",
+  "generatedAtLocal": "2026-10-18 13:24",
+  "dateLocal": "2026-10-18",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-10-18 13:24 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、wheresryan22/anatomy の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 310488,
+      "starsDelta": 16685,
+      "starsPerDay": 16614.5,
+      "measured": true,
+      "forks": 78613,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "binary-analysis",
+        "claude-code",
+        "cli",
+        "codex",
+        "cordis",
+        "decompiler"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-10-18T05:16:25Z",
+      "openIssues": 1188,
+      "score": 16610.48,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +16685 スター。TypeScript 製。最終更新 2026-10-18。"
+    },
+    {
+      "rank": 2,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "homepage": "https://voicestudio.sh",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "stars": 73711,
+      "starsDelta": 2130,
+      "starsPerDay": 2121,
+      "measured": true,
+      "forks": 8065,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "audiobook",
+        "cuda",
+        "dubbing",
+        "elevenlabs-alternative",
+        "huggingface",
+        "local-first",
+        "mlx"
+      ],
+      "license": "AGPL-3.0",
+      "createdAt": "2026-04-09T21:40:26Z",
+      "pushedAt": "2026-10-18T01:17:51Z",
+      "openIssues": 218,
+      "score": 2106.56,
+      "headline": "VoiceStudio",
+      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
+      "why": "前回計測から +2130 スター。Python 製。最終更新 2026-10-18。"
+    },
+    {
+      "rank": 3,
+      "name": "wheresryan22/anatomy",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "homepage": "https://skills.wheresryan.sh/anatomy",
+      "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
+      "stars": 15313,
+      "starsDelta": 1187,
+      "starsPerDay": 1182,
+      "measured": true,
+      "forks": 1174,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "open-source",
+        "svg",
+        "vizualization"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-10-08T10:12:49Z",
+      "pushedAt": "2026-10-15T14:14:32Z",
+      "openIssues": 49,
+      "score": 1340.7,
+      "headline": "anatomy",
+      "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional Web…",
+      "why": "前回計測から +1187 スター。JavaScript 製。最終更新 2026-10-15。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "openai/openai-python v3.35.1",
+      "titleJa": "openai/openai-python v3.35.1",
+      "summary": "## [3.35.1](https://github.com/openai/openai-python/compare/v3.35.0...v3.35.1) (2026-10-18)\n\n\n### Bug Fixes\n\n* preserve beta Realtime byte reads on websockets…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-18T01:05:46.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 73.8
+    },
+    {
+      "rank": 2,
+      "title": "openai/openai-python v3.35.0",
+      "titleJa": "openai/openai-python v3.35.0",
+      "summary": "## [3.35.0](https://github.com/openai/openai-python/compare/v3.34.0...v3.35.0) (2026-10-17)\n\n\n### Features\n\n* **api:** add typed Live sideband events ([#4099](…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T23:13:52.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 72.9
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.34.0",
+      "titleJa": "openai/openai-python v3.34.0",
+      "summary": "## [3.34.0](https://github.com/openai/openai-python/compare/v3.33.0...v3.34.0) (2026-10-17)\n\n\n### Features\n\n* **api:** add degraded external storage status ([#…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.34.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T20:34:04.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 71.6
+    },
+    {
+      "rank": 4,
+      "title": "huggingface/transformers v5.20.0",
+      "titleJa": "huggingface/transformers v5.20.0",
+      "summary": "# Release v5.20.0\r\n\r\n\r\n## New Model additions\r\n\r\n### Muse Spark Open\r\n\r\n<img width=\"2400\" height=\"1296\" alt=\"image\" src=\"https://github.com/user-attachments/as…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T18:05:36.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business",
+        "research"
+      ],
+      "score": 70.3
+    },
+    {
+      "rank": 5,
+      "title": "huggingface/transformers v5.20.1",
+      "titleJa": "huggingface/transformers v5.20.1",
+      "summary": "# Release v5.20.1\r\n\r\nSpecial surprise including the new model Beam from Reflection AI :partying_face: \r\n\r\n<img width=\"2912\" height=\"1440\" alt=\"Gemini_Generated…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-16T13:02:29.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 67.8
+    },
+    {
+      "rank": 6,
+      "title": "ollama/ollama v0.40.6",
+      "titleJa": "ollama/ollama v0.40.6",
+      "summary": "## What's Changed\r\n* win: prevent orphaned runners by @dhiltgen in https://github.com/ollama/ollama/pull/18500\r\n* gguf: add the q2_0 tensor and file types by @…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-16T22:00:46.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 64.3
+    },
+    {
+      "rank": 7,
+      "title": "open-webui/open-webui v0.12.3",
+      "titleJa": "open-webui/open-webui v0.12.3",
+      "summary": "### Added\n\n- 🔐 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks E…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-16T11:46:21.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "research"
+      ],
+      "score": 63.2
+    },
+    {
+      "rank": 8,
+      "title": "langchain-ai/langchain langchain-core==1.6.12",
+      "titleJa": "langchain-ai/langchain langchain-core==1.6.12",
+      "summary": "Changes since langchain-core==1.6.11\n\nrelease(core): 1.6.12 (#41277)\nfix(core): propagate extras on content-block-start events (#41272)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.12",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-16T19:28:44.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 63
+    },
+    {
+      "rank": 9,
+      "title": "n8n-io/n8n n8n@2.43.7",
+      "titleJa": "n8n-io/n8n n8n@2.43.7",
+      "summary": "## [2.43.7](https://github.com/n8n-io/n8n/compare/n8n@2.43.6...n8n@2.43.7) (2026-10-16)\n\n\n### Features\n\n* **core:** Suspend in-flight production executions at…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.43.7",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-16T07:23:56.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 53
+    },
+    {
+      "rank": 10,
+      "title": "comfyanonymous/ComfyUI v0.41.0",
+      "titleJa": "comfyanonymous/ComfyUI v0.41.0",
+      "summary": "## What's Changed\r\n* Add ImageSDRToHDR node. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16990\r\n* feat: Add a core route for the default wo…",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T22:57:45.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 52.8
+    },
+    {
+      "rank": 11,
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "titleJa": "Meta removes language that raised scraping and AI training concerns",
+      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "tags": [
+        "business"
+      ],
+      "score": 51.1
+    },
+    {
+      "rank": 12,
+      "title": "langchain-ai/langchain langchain-core==1.6.11",
+      "titleJa": "langchain-ai/langchain langchain-core==1.6.11",
+      "summary": "Changes since langchain-core==1.6.10\n\nrelease(core): 1.6.11 (#41260)\nfeat(core): accept address inside LangChainTracer (#41006)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.11",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T18:32:35.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 50.6
+    }
+  ],
+  "stats": {
+    "repoCandidates": 274,
+    "newsCandidates": 2447,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T05:18:35.719Z",
-  "generatedAtLocal": "2026-10-17 13:18",
-  "dateLocal": "2026-10-17",
+  "generatedAt": "2026-10-18T05:24:42.703Z",
+  "generatedAtLocal": "2026-10-18 13:24",
+  "dateLocal": "2026-10-18",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-17 13:18 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、xerj-org/xerj の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-18 13:24 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、wheresryan22/anatomy の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 293803,
-      "starsDelta": 18047,
-      "starsPerDay": 18139,
+      "stars": 310488,
+      "starsDelta": 16685,
+      "starsPerDay": 16614.5,
       "measured": true,
-      "forks": 74079,
+      "forks": 78613,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-17T05:18:13Z",
-      "openIssues": 1187,
-      "score": 18138.64,
+      "pushedAt": "2026-10-18T05:16:25Z",
+      "openIssues": 1188,
+      "score": 16610.48,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +18047 スター。TypeScript 製。最終更新 2026-10-17。"
+      "why": "前回計測から +16685 スター。TypeScript 製。最終更新 2026-10-18。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "homepage": "https://voicestudio.sh",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 71581,
-      "starsDelta": 2087,
-      "starsPerDay": 2097.6,
+      "stars": 73711,
+      "starsDelta": 2130,
+      "starsPerDay": 2121,
       "measured": true,
-      "forks": 7827,
+      "forks": 8065,
       "language": "Python",
       "topics": [
         "ai",
@@ -67,48 +67,91 @@
       ],
       "license": "AGPL-3.0",
       "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-17T04:29:21Z",
-      "openIssues": 190,
-      "score": 2094.75,
+      "pushedAt": "2026-10-18T01:17:51Z",
+      "openIssues": 218,
+      "score": 2106.56,
       "headline": "VoiceStudio",
       "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +2087 スター。Python 製。最終更新 2026-10-17。"
+      "why": "前回計測から +2130 スター。Python 製。最終更新 2026-10-18。"
     },
     {
       "rank": 3,
-      "name": "xerj-org/xerj",
-      "url": "https://github.com/xerj-org/xerj",
-      "homepage": "https://xerj.org",
-      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
-      "stars": 7092,
-      "starsDelta": 1192,
-      "starsPerDay": 1198.1,
+      "name": "wheresryan22/anatomy",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "homepage": "https://skills.wheresryan.sh/anatomy",
+      "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
+      "stars": 15313,
+      "starsDelta": 1187,
+      "starsPerDay": 1182,
       "measured": true,
-      "forks": 361,
-      "language": "Rust",
+      "forks": 1174,
+      "language": "JavaScript",
       "topics": [
-        "ai-search",
-        "ai-search-algorithms",
-        "ai-search-engine",
-        "ai-search-free",
-        "ai-search-module",
-        "ai-search-optimization",
-        "ai-searchengine",
-        "bm25-search"
+        "agent-skill",
+        "open-source",
+        "svg",
+        "vizualization"
       ],
-      "license": "Apache-2.0",
-      "createdAt": "2026-06-30T04:32:45Z",
-      "pushedAt": "2026-10-16T23:39:19Z",
-      "openIssues": 87,
-      "score": 1483.63,
-      "headline": "xerj",
-      "summary": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command ind…",
-      "why": "前回計測から +1192 スター。Rust 製。最終更新 2026-10-16。"
+      "license": "MIT",
+      "createdAt": "2026-10-08T10:12:49Z",
+      "pushedAt": "2026-10-15T14:14:32Z",
+      "openIssues": 49,
+      "score": 1340.7,
+      "headline": "anatomy",
+      "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional Web…",
+      "why": "前回計測から +1187 スター。JavaScript 製。最終更新 2026-10-15。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "openai/openai-python v3.35.1",
+      "titleJa": "openai/openai-python v3.35.1",
+      "summary": "## [3.35.1](https://github.com/openai/openai-python/compare/v3.35.0...v3.35.1) (2026-10-18)\n\n\n### Bug Fixes\n\n* preserve beta Realtime byte reads on websockets…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-18T01:05:46.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 73.8
+    },
+    {
+      "rank": 2,
+      "title": "openai/openai-python v3.35.0",
+      "titleJa": "openai/openai-python v3.35.0",
+      "summary": "## [3.35.0](https://github.com/openai/openai-python/compare/v3.34.0...v3.35.0) (2026-10-17)\n\n\n### Features\n\n* **api:** add typed Live sideband events ([#4099](…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T23:13:52.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 72.9
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.34.0",
+      "titleJa": "openai/openai-python v3.34.0",
+      "summary": "## [3.34.0](https://github.com/openai/openai-python/compare/v3.33.0...v3.34.0) (2026-10-17)\n\n\n### Features\n\n* **api:** add degraded external storage status ([#…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.34.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T20:34:04.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 71.6
+    },
+    {
+      "rank": 4,
       "title": "huggingface/transformers v5.20.0",
       "titleJa": "huggingface/transformers v5.20.0",
       "summary": "# Release v5.20.0\r\n\r\n\r\n## New Model additions\r\n\r\n### Muse Spark Open\r\n\r\n<img width=\"2400\" height=\"1296\" alt=\"image\" src=\"https://github.com/user-attachments/as…",
@@ -124,10 +167,10 @@
         "business",
         "research"
       ],
-      "score": 82.4
+      "score": 70.3
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "huggingface/transformers v5.20.1",
       "titleJa": "huggingface/transformers v5.20.1",
       "summary": "# Release v5.20.1\r\n\r\nSpecial surprise including the new model Beam from Reflection AI :partying_face: \r\n\r\n<img width=\"2912\" height=\"1440\" alt=\"Gemini_Generated…",
@@ -140,10 +183,26 @@
         "version",
         "model"
       ],
-      "score": 79.9
+      "score": 67.8
     },
     {
-      "rank": 3,
+      "rank": 6,
+      "title": "ollama/ollama v0.40.6",
+      "titleJa": "ollama/ollama v0.40.6",
+      "summary": "## What's Changed\r\n* win: prevent orphaned runners by @dhiltgen in https://github.com/ollama/ollama/pull/18500\r\n* gguf: add the q2_0 tensor and file types by @…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-16T22:00:46.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 64.3
+    },
+    {
+      "rank": 7,
       "title": "open-webui/open-webui v0.12.3",
       "titleJa": "open-webui/open-webui v0.12.3",
       "summary": "### Added\n\n- 🔐 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks E…",
@@ -158,10 +217,10 @@
         "model",
         "research"
       ],
-      "score": 75.2
+      "score": 63.2
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "langchain-ai/langchain langchain-core==1.6.12",
       "titleJa": "langchain-ai/langchain langchain-core==1.6.12",
       "summary": "Changes since langchain-core==1.6.11\n\nrelease(core): 1.6.12 (#41277)\nfix(core): propagate extras on content-block-start events (#41272)",
@@ -173,61 +232,10 @@
       "tags": [
         "version"
       ],
-      "score": 75.1
+      "score": 63
     },
     {
-      "rank": 5,
-      "title": "openai/openai-python v3.33.0",
-      "titleJa": "openai/openai-python v3.33.0",
-      "summary": "## [3.33.0](https://github.com/openai/openai-python/compare/v3.32.0...v3.33.0) (2026-10-16)\n\n\n### Features\n\n* **api:** add safety identifiers to image requests…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.33.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-17T00:29:04.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 73.6
-    },
-    {
-      "rank": 6,
-      "title": "openai/openai-python v3.32.0",
-      "titleJa": "openai/openai-python v3.32.0",
-      "summary": "## [3.32.0](https://github.com/openai/openai-python/compare/v3.31.0...v3.32.0) (2026-10-16)\n\n\n### Features\n\n* **api:** add cache settings and key options [2/2]…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.32.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-16T20:17:26.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 71.5
-    },
-    {
-      "rank": 7,
-      "title": "open-webui/open-webui v0.12.1",
-      "titleJa": "open-webui/open-webui v0.12.1",
-      "summary": "### Added\r\n\r\n- 🧱 **External apps in channels.** Administrators can now turn on Apps in Admin Settings > General, or with \"ENABLE_APPS\", and connect external a…",
-      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.1",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T16:06:35.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 65.4
-    },
-    {
-      "rank": 8,
+      "rank": 9,
       "title": "n8n-io/n8n n8n@2.43.7",
       "titleJa": "n8n-io/n8n n8n@2.43.7",
       "summary": "## [2.43.7](https://github.com/n8n-io/n8n/compare/n8n@2.43.6...n8n@2.43.7) (2026-10-16)\n\n\n### Features\n\n* **core:** Suspend in-flight production executions at…",
@@ -240,10 +248,10 @@
         "version",
         "feature"
       ],
-      "score": 65
+      "score": 53
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "comfyanonymous/ComfyUI v0.41.0",
       "titleJa": "comfyanonymous/ComfyUI v0.41.0",
       "summary": "## What's Changed\r\n* Add ImageSDRToHDR node. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16990\r\n* feat: Add a core route for the default wo…",
@@ -256,10 +264,25 @@
         "version",
         "model"
       ],
-      "score": 64.8
+      "score": 52.8
     },
     {
-      "rank": 10,
+      "rank": 11,
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "titleJa": "Meta removes language that raised scraping and AI training concerns",
+      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "tags": [
+        "business"
+      ],
+      "score": 51.1
+    },
+    {
+      "rank": 12,
       "title": "langchain-ai/langchain langchain-core==1.6.11",
       "titleJa": "langchain-ai/langchain langchain-core==1.6.11",
       "summary": "Changes since langchain-core==1.6.10\n\nrelease(core): 1.6.11 (#41260)\nfeat(core): accept address inside LangChainTracer (#41006)",
@@ -271,44 +294,12 @@
       "tags": [
         "version"
       ],
-      "score": 62.6
-    },
-    {
-      "rank": 11,
-      "title": "open-webui/open-webui v0.12.2",
-      "titleJa": "open-webui/open-webui v0.12.2",
-      "summary": "### Added\n\n- 📑 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 becaus…",
-      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.2",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T21:07:29.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 59.9
-    },
-    {
-      "rank": 12,
-      "title": "ollama/ollama v0.40.5",
-      "titleJa": "ollama/ollama v0.40.5",
-      "summary": "## NVIDIA Nemotron 3.5 Super\r\n\r\n[NVIDIA Nemotron 3.5 Super](https://ollama.com/library/nemotron-3.5-super) is a vision-language model for coding, reasoning, to…",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T19:45:22.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 59.2
+      "score": 50.6
     }
   ],
   "stats": {
     "repoCandidates": 274,
-    "newsCandidates": 2449,
+    "newsCandidates": 2447,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

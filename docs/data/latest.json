@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T05:42:32.192Z",
-  "generatedAtLocal": "2026-10-19 13:42",
-  "dateLocal": "2026-10-19",
+  "generatedAt": "2026-10-20T05:39:32.108Z",
+  "generatedAtLocal": "2026-10-20 13:39",
+  "dateLocal": "2026-10-20",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-19 13:42 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、stablyai/orca の 3 件。AI ニュースは 12 件を収集し、うち 10 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-20 13:39 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、xerj-org/xerj、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 10 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 325696,
-      "starsDelta": 15208,
-      "starsPerDay": 15022,
+      "stars": 339235,
+      "starsDelta": 13539,
+      "starsPerDay": 13567.2,
       "measured": true,
-      "forks": 82480,
+      "forks": 85623,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,24 +36,55 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-19T05:37:55Z",
-      "openIssues": 1224,
-      "score": 15019.97,
+      "pushedAt": "2026-10-20T05:33:04Z",
+      "openIssues": 1280,
+      "score": 13564.61,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +15208 スター。TypeScript 製。最終更新 2026-10-19。"
+      "why": "前回計測から +13539 スター。TypeScript 製。最終更新 2026-10-20。"
     },
     {
       "rank": 2,
+      "name": "xerj-org/xerj",
+      "url": "https://github.com/xerj-org/xerj",
+      "homepage": "https://xerj.org",
+      "description": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+      "stars": 10671,
+      "starsDelta": 2045,
+      "starsPerDay": 2049.3,
+      "measured": true,
+      "forks": 637,
+      "language": "Rust",
+      "topics": [
+        "agent-memory",
+        "ai-agents",
+        "bm25",
+        "claude-code",
+        "cli",
+        "code-search",
+        "cursor",
+        "elasticsearch"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2026-06-30T04:32:45Z",
+      "pushedAt": "2026-10-20T05:39:27Z",
+      "openIssues": 129,
+      "score": 2561.54,
+      "headline": "xerj",
+      "summary": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid sear…",
+      "why": "前回計測から +2045 スター。Rust 製。最終更新 2026-10-20。"
+    },
+    {
+      "rank": 3,
       "name": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "homepage": "https://voicestudio.sh",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 75979,
-      "starsDelta": 2268,
-      "starsPerDay": 2240.3,
+      "stars": 77851,
+      "starsDelta": 1872,
+      "starsPerDay": 1875.9,
       "measured": true,
-      "forks": 8316,
+      "forks": 8536,
       "language": "Python",
       "topics": [
         "ai",
@@ -67,48 +98,51 @@
       ],
       "license": "AGPL-3.0",
       "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-19T04:33:13Z",
-      "openIssues": 257,
-      "score": 2235.94,
+      "pushedAt": "2026-10-20T05:39:18Z",
+      "openIssues": 253,
+      "score": 1875.87,
       "headline": "VoiceStudio",
       "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +2268 スター。Python 製。最終更新 2026-10-19。"
-    },
-    {
-      "rank": 3,
-      "name": "stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "homepage": "https://orca.dev",
-      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "stars": 97042,
-      "starsDelta": 1420,
-      "starsPerDay": 1402.6,
-      "measured": true,
-      "forks": 6197,
-      "language": "TypeScript",
-      "topics": [
-        "ade",
-        "agent-ide",
-        "ai-agents",
-        "automation",
-        "bot",
-        "claude-code",
-        "codex",
-        "ghostty"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-03-17T03:28:57Z",
-      "pushedAt": "2026-10-19T05:42:13Z",
-      "openIssues": 8523,
-      "score": 1402.61,
-      "headline": "orca",
-      "summary": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobil…",
-      "why": "前回計測から +1420 スター。TypeScript 製。最終更新 2026-10-19。"
+      "why": "前回計測から +1872 スター。Python 製。最終更新 2026-10-20。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "modelcontextprotocol/servers v2.0.0",
+      "titleJa": "modelcontextprotocol/servers v2.0.0",
+      "summary": "## Servers refactored to modern era\r\nThis release refactors all the servers to support the modern era spec, while still answering legacy era clients as expecte…",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.0.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-19T06:46:48.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 80.6
+    },
+    {
+      "rank": 2,
+      "title": "huggingface/transformers v5.20.2",
+      "titleJa": "huggingface/transformers v5.20.2",
+      "summary": "# Patch release: v5.20.2\r\n\r\nThis patch notably solves an issue where some inputs could loose their original type inside `prepare_inputs_for_generation` in `gen…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-19T17:45:37.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 74
+    },
+    {
+      "rank": 3,
       "title": "vllm-project/vllm v0.32.0",
       "titleJa": "vllm-project/vllm v0.32.0",
       "summary": "# v0.32.0\r\n\r\n## Highlights\r\n\r\nThis release features 814 commits from 363 contributors (121 new)!\r\n\r\n* **Structured decisions and generic parsers**: the new `PO…",
@@ -124,10 +158,10 @@
         "business",
         "research"
       ],
-      "score": 80.6
+      "score": 68.6
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "comfyanonymous/ComfyUI v0.42.0",
       "titleJa": "comfyanonymous/ComfyUI v0.42.0",
       "summary": "## What's Changed\r\n* [Partner Nodes] feat(Krea): add Krea 3 Image node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17067\r\n* Update workflow templ…",
@@ -141,10 +175,25 @@
         "feature",
         "model"
       ],
-      "score": 80.2
+      "score": 68.3
     },
     {
-      "rank": 3,
+      "rank": 5,
+      "title": "n8n-io/n8n n8n@2.43.8",
+      "titleJa": "n8n-io/n8n n8n@2.43.8",
+      "summary": "## [2.43.8](https://github.com/n8n-io/n8n/compare/n8n@2.43.7...n8n@2.43.8) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Turn off expression spans by default ([#41…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.43.8",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-19T07:23:26.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.9
+    },
+    {
+      "rank": 6,
       "title": "comfyanonymous/ComfyUI v0.42.1",
       "titleJa": "comfyanonymous/ComfyUI v0.42.1",
       "summary": "Fix some crashing issues a few users experienced when running the MOSS image template workflow.",
@@ -156,10 +205,71 @@
       "tags": [
         "version"
       ],
-      "score": 73.9
+      "score": 61.9
     },
     {
-      "rank": 4,
+      "rank": 7,
+      "title": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+      "titleJa": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+      "summary": "TwelveLabs Pegasus 1.5 is now available in Amazon Bedrock. The video language model turns long-form video into structured, timestamped metadata: define the mom…",
+      "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
+      "discussion": null,
+      "source": "AWS Machine Learning",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-19T16:49:19.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 57.6
+    },
+    {
+      "rank": 8,
+      "title": "Europe EV sales rose 70.3% in September, 32.6% of market share",
+      "titleJa": "Europe EV sales rose 70.3% in September, 32.6% of market share",
+      "summary": "Europe EV sales rose 70.3% in September, 32.6% of market share",
+      "url": "https://www.reuters.com/business/europe-ev-sales-rose-70-september-almost-30-market-share-2026-10-19",
+      "discussion": "https://news.ycombinator.com/item?id=50155291",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-19T17:30:26Z",
+      "tags": [
+        "version"
+      ],
+      "score": 56.3
+    },
+    {
+      "rank": 9,
+      "title": "n8n-io/n8n stable",
+      "titleJa": "n8n-io/n8n stable",
+      "summary": "## [2.43.8](https://github.com/n8n-io/n8n/compare/n8n@2.43.7...n8n@2.43.8) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Turn off expression spans by default ([#41…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/stable",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-19T07:23:28.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 54.9
+    },
+    {
+      "rank": 10,
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "titleJa": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "summary": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "discussion": "https://news.ycombinator.com/item?id=50159341",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-19T23:22:18Z",
+      "tags": [
+        "model"
+      ],
+      "score": 53.6
+    },
+    {
+      "rank": 11,
       "title": "llm-echo 0.5",
       "titleJa": "llm-echo 0.5",
       "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-echo/releases/tag/0.5\">llm-echo 0.5</a></p> <p>I'm working towards a new <a href=\"https://l…",
@@ -172,139 +282,27 @@
         "version",
         "model"
       ],
-      "score": 64.8
-    },
-    {
-      "rank": 5,
-      "title": "openai/openai-python v3.35.1",
-      "titleJa": "openai/openai-python v3.35.1",
-      "summary": "## [3.35.1](https://github.com/openai/openai-python/compare/v3.35.0...v3.35.1) (2026-10-18)\n\n\n### Bug Fixes\n\n* preserve beta Realtime byte reads on websockets…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.1",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-18T01:05:46.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 61.7
-    },
-    {
-      "rank": 6,
-      "title": "llm-tools-datasette 0.1.1",
-      "titleJa": "llm-tools-datasette 0.1.1",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-tools-datasette/releases/tag/0.1.1\">llm-tools-datasette 0.1.1</a></p> <p>When I switched LL…",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-18T23:43:09.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 61
-    },
-    {
-      "rank": 7,
-      "title": "openai/openai-python v3.35.0",
-      "titleJa": "openai/openai-python v3.35.0",
-      "summary": "## [3.35.0](https://github.com/openai/openai-python/compare/v3.34.0...v3.35.0) (2026-10-17)\n\n\n### Features\n\n* **api:** add typed Live sideband events ([#4099](…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-17T23:13:52.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 60.8
-    },
-    {
-      "rank": 8,
-      "title": "openai/openai-python v3.34.0",
-      "titleJa": "openai/openai-python v3.34.0",
-      "summary": "## [3.34.0](https://github.com/openai/openai-python/compare/v3.33.0...v3.34.0) (2026-10-17)\n\n\n### Features\n\n* **api:** add degraded external storage status ([#…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.34.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-17T20:34:04.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 59.4
-    },
-    {
-      "rank": 9,
-      "title": "huggingface/transformers v5.20.1",
-      "titleJa": "huggingface/transformers v5.20.1",
-      "summary": "# Release v5.20.1\r\n\r\nSpecial surprise including the new model Beam from Reflection AI :partying_face: \r\n\r\n<img width=\"2912\" height=\"1440\" alt=\"Gemini_Generated…",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.1",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-16T13:02:29.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 55.7
-    },
-    {
-      "rank": 10,
-      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-      "titleJa": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-      "summary": "https:&#x2F;&#x2F;x.com&#x2F;Jiaru_Zou&#x2F;status&#x2F;2110400256647340476 https:&#x2F;&#x2F;github.com&#x2F;togethercomputer&#x2F;HybridAgent https:&#x2F;&#x…",
-      "url": "https://arxiv.org/abs/2610.18861",
-      "discussion": "https://news.ycombinator.com/item?id=50145337",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-18T20:48:14Z",
-      "tags": [
-        "model",
-        "business",
-        "research"
-      ],
-      "score": 55.5
-    },
-    {
-      "rank": 11,
-      "title": "ollama/ollama v0.40.6",
-      "titleJa": "ollama/ollama v0.40.6",
-      "summary": "## What's Changed\r\n* win: prevent orphaned runners by @dhiltgen in https://github.com/ollama/ollama/pull/18500\r\n* gguf: add the q2_0 tensor and file types by @…",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-16T22:00:46.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 52.1
+      "score": 52.8
     },
     {
       "rank": 12,
-      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-      "titleJa": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-      "summary": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it&#x27;ll throw up a questionnaire that checks if you unders…",
-      "url": "https://sphinx-six-theta.vercel.app",
-      "discussion": "https://news.ycombinator.com/item?id=50137950",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-18T04:33:49Z",
+      "title": "Amazon SageMaker JumpStart: 2026 year-to-date in review",
+      "titleJa": "Amazon SageMaker JumpStart: 2026 year-to-date in review",
+      "summary": "Amazon SageMaker JumpStart onboarded over 100 new models from 30 providers in the first three quarters of 2026. This recap covers the model-onboarding highligh…",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-jumpstart-2026-year-to-date-in-review",
+      "discussion": null,
+      "source": "AWS Machine Learning",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-19T21:14:44.000Z",
       "tags": [
-        "news"
+        "model"
       ],
-      "score": 51.4
+      "score": 49.8
     }
   ],
   "stats": {
-    "repoCandidates": 275,
-    "newsCandidates": 2447,
+    "repoCandidates": 274,
+    "newsCandidates": 2458,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

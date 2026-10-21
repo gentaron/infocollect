@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T05:39:32.108Z",
-  "generatedAtLocal": "2026-10-20 13:39",
-  "dateLocal": "2026-10-20",
+  "generatedAt": "2026-10-21T05:42:11.115Z",
+  "generatedAtLocal": "2026-10-21 13:42",
+  "dateLocal": "2026-10-21",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-20 13:39 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、xerj-org/xerj、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 10 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-21 13:42 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、xerj-org/xerj、DietrichGebert/ponytail の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 339235,
-      "starsDelta": 13539,
-      "starsPerDay": 13567.2,
+      "stars": 350219,
+      "starsDelta": 10984,
+      "starsPerDay": 10963.9,
       "measured": true,
-      "forks": 85623,
+      "forks": 88030,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-20T05:33:04Z",
-      "openIssues": 1280,
-      "score": 13564.61,
+      "pushedAt": "2026-10-21T05:38:35Z",
+      "openIssues": 1511,
+      "score": 10962.66,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +13539 スター。TypeScript 製。最終更新 2026-10-20。"
+      "why": "前回計測から +10984 スター。TypeScript 製。最終更新 2026-10-21。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/xerj-org/xerj",
       "homepage": "https://xerj.org",
       "description": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
-      "stars": 10671,
-      "starsDelta": 2045,
-      "starsPerDay": 2049.3,
+      "stars": 12499,
+      "starsDelta": 1828,
+      "starsPerDay": 1824.6,
       "measured": true,
-      "forks": 637,
+      "forks": 752,
       "language": "Rust",
       "topics": [
         "agent-memory",
@@ -67,48 +67,80 @@
       ],
       "license": "Apache-2.0",
       "createdAt": "2026-06-30T04:32:45Z",
-      "pushedAt": "2026-10-20T05:39:27Z",
-      "openIssues": 129,
-      "score": 2561.54,
+      "pushedAt": "2026-10-21T04:13:10Z",
+      "openIssues": 101,
+      "score": 2275.17,
       "headline": "xerj",
       "summary": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid sear…",
-      "why": "前回計測から +2045 スター。Rust 製。最終更新 2026-10-20。"
+      "why": "前回計測から +1828 スター。Rust 製。最終更新 2026-10-21。"
     },
     {
       "rank": 3,
-      "name": "debpalash/VoiceStudio",
-      "url": "https://github.com/debpalash/VoiceStudio",
-      "homepage": "https://voicestudio.sh",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 77851,
-      "starsDelta": 1872,
-      "starsPerDay": 1875.9,
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "homepage": "https://ponytail.dev",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "stars": 170139,
+      "starsDelta": 1853,
+      "starsPerDay": 1849.6,
       "measured": true,
-      "forks": 8536,
-      "language": "Python",
+      "forks": 9254,
+      "language": "JavaScript",
       "topics": [
-        "ai",
-        "audiobook",
-        "cuda",
-        "dubbing",
-        "elevenlabs-alternative",
-        "huggingface",
-        "local-first",
-        "mlx"
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "developer-tools",
+        "llm"
       ],
-      "license": "AGPL-3.0",
-      "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-20T05:39:18Z",
-      "openIssues": 253,
-      "score": 1875.87,
-      "headline": "VoiceStudio",
-      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +1872 スター。Python 製。最終更新 2026-10-20。"
+      "license": "MIT",
+      "createdAt": "2026-06-12T00:52:37Z",
+      "pushedAt": "2026-10-18T01:55:14Z",
+      "openIssues": 59,
+      "score": 1649.27,
+      "headline": "ponytail",
+      "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "why": "前回計測から +1853 スター。JavaScript 製。最終更新 2026-10-18。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "anthropics/anthropic-sdk-python v1.16.0",
+      "titleJa": "anthropics/anthropic-sdk-python v1.16.0",
+      "summary": "### Features\n\n* **api:** add data_refreshed_at and has_more to analytics report pages\n* **api:** add workspace rate-limit updates to the Admin API\n* **api:** m…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-20T17:49:46.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 78.1
+    },
+    {
+      "rank": 2,
+      "title": "anthropics/anthropic-sdk-python v1.17.0",
+      "titleJa": "anthropics/anthropic-sdk-python v1.17.0",
+      "summary": "### Features\n\n* **api:** add org webhook endpoints and user profile enforcement events\n* **api:** add RBAC Group owner-access error codes to the Admin API\n* **…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-20T22:13:01.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 72.3
+    },
+    {
+      "rank": 3,
       "title": "modelcontextprotocol/servers v2.0.0",
       "titleJa": "modelcontextprotocol/servers v2.0.0",
       "summary": "## Servers refactored to modern era\r\nThis release refactors all the servers to support the modern era spec, while still answering legacy era clients as expecte…",
@@ -123,10 +155,25 @@
         "model",
         "business"
       ],
-      "score": 80.6
+      "score": 68.5
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "title": "eMudhra Intermediate CA Compromise",
+      "titleJa": "eMudhra Intermediate CA Compromise",
+      "summary": "<p><strong><a href=\"https://emudhra.we-have-a-problem.com\">eMudhra Intermediate CA Compromise</a></strong></p> This is very, very bad news:</p> <blockquote> <p…",
+      "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-20T23:50:25.000Z",
+      "tags": [
+        "release"
+      ],
+      "score": 63.1
+    },
+    {
+      "rank": 5,
       "title": "huggingface/transformers v5.20.2",
       "titleJa": "huggingface/transformers v5.20.2",
       "summary": "# Patch release: v5.20.2\r\n\r\nThis patch notably solves an issue where some inputs could loose their original type inside `prepare_inputs_for_generation` in `gen…",
@@ -139,10 +186,27 @@
         "version",
         "model"
       ],
-      "score": 74
+      "score": 62
     },
     {
-      "rank": 3,
+      "rank": 6,
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "titleJa": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "url": "https://openai.com/index/terminal-x",
+      "discussion": null,
+      "source": "OpenAI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-20T07:00:00.000Z",
+      "tags": [
+        "version",
+        "model",
+        "business"
+      ],
+      "score": 56.6
+    },
+    {
+      "rank": 7,
       "title": "vllm-project/vllm v0.32.0",
       "titleJa": "vllm-project/vllm v0.32.0",
       "summary": "# v0.32.0\r\n\r\n## Highlights\r\n\r\nThis release features 814 commits from 363 contributors (121 new)!\r\n\r\n* **Structured decisions and generic parsers**: the new `PO…",
@@ -158,10 +222,10 @@
         "business",
         "research"
       ],
-      "score": 68.6
+      "score": 56.6
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "comfyanonymous/ComfyUI v0.42.0",
       "titleJa": "comfyanonymous/ComfyUI v0.42.0",
       "summary": "## What's Changed\r\n* [Partner Nodes] feat(Krea): add Krea 3 Image node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17067\r\n* Update workflow templ…",
@@ -175,134 +239,72 @@
         "feature",
         "model"
       ],
-      "score": 68.3
-    },
-    {
-      "rank": 5,
-      "title": "n8n-io/n8n n8n@2.43.8",
-      "titleJa": "n8n-io/n8n n8n@2.43.8",
-      "summary": "## [2.43.8](https://github.com/n8n-io/n8n/compare/n8n@2.43.7...n8n@2.43.8) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Turn off expression spans by default ([#41…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.43.8",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-19T07:23:26.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 64.9
-    },
-    {
-      "rank": 6,
-      "title": "comfyanonymous/ComfyUI v0.42.1",
-      "titleJa": "comfyanonymous/ComfyUI v0.42.1",
-      "summary": "Fix some crashing issues a few users experienced when running the MOSS image template workflow.",
-      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-19T01:33:54.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 61.9
-    },
-    {
-      "rank": 7,
-      "title": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
-      "titleJa": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
-      "summary": "TwelveLabs Pegasus 1.5 is now available in Amazon Bedrock. The video language model turns long-form video into structured, timestamped metadata: define the mom…",
-      "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
-      "discussion": null,
-      "source": "AWS Machine Learning",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-19T16:49:19.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 57.6
-    },
-    {
-      "rank": 8,
-      "title": "Europe EV sales rose 70.3% in September, 32.6% of market share",
-      "titleJa": "Europe EV sales rose 70.3% in September, 32.6% of market share",
-      "summary": "Europe EV sales rose 70.3% in September, 32.6% of market share",
-      "url": "https://www.reuters.com/business/europe-ev-sales-rose-70-september-almost-30-market-share-2026-10-19",
-      "discussion": "https://news.ycombinator.com/item?id=50155291",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-19T17:30:26Z",
-      "tags": [
-        "version"
-      ],
-      "score": 56.3
+      "score": 56.2
     },
     {
       "rank": 9,
       "title": "n8n-io/n8n stable",
       "titleJa": "n8n-io/n8n stable",
-      "summary": "## [2.43.8](https://github.com/n8n-io/n8n/compare/n8n@2.43.7...n8n@2.43.8) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Turn off expression spans by default ([#41…",
+      "summary": "## [2.44.4](https://github.com/n8n-io/n8n/compare/n8n@2.44.3...n8n@2.44.4) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Reuse connections in the log streaming web…",
       "url": "https://github.com/n8n-io/n8n/releases/tag/stable",
       "discussion": null,
       "source": "GitHub Releases",
       "sourceType": "release",
-      "publishedAt": "2026-10-19T07:23:28.000Z",
+      "publishedAt": "2026-10-20T09:19:58.000Z",
       "tags": [
         "version"
       ],
-      "score": 54.9
+      "score": 55.8
     },
     {
       "rank": 10,
-      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-      "titleJa": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-      "summary": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-      "discussion": "https://news.ycombinator.com/item?id=50159341",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-19T23:22:18Z",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "titleJa": "Southeast Asia’s digital economy to hit $368 billion",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/e-Conomy_SEA_hero.max-600x600.format-webp.webp\">Widespread AI adoption is propelling…",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
+      "discussion": null,
+      "source": "Google (AI)",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
       "tags": [
-        "model"
+        "news"
       ],
-      "score": 53.6
+      "score": 53.1
     },
     {
       "rank": 11,
-      "title": "llm-echo 0.5",
-      "titleJa": "llm-echo 0.5",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-echo/releases/tag/0.5\">llm-echo 0.5</a></p> <p>I'm working towards a new <a href=\"https://l…",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-echo",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-18T23:16:16.000Z",
+      "title": "Publish fake stats, get cited in LLMs",
+      "titleJa": "Publish fake stats, get cited in LLMs",
+      "summary": "Publish fake stats, get cited in LLMs",
+      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "discussion": "https://news.ycombinator.com/item?id=50165801",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-20T13:06:22Z",
       "tags": [
-        "version",
         "model"
       ],
-      "score": 52.8
+      "score": 51.7
     },
     {
       "rank": 12,
-      "title": "Amazon SageMaker JumpStart: 2026 year-to-date in review",
-      "titleJa": "Amazon SageMaker JumpStart: 2026 year-to-date in review",
-      "summary": "Amazon SageMaker JumpStart onboarded over 100 new models from 30 providers in the first three quarters of 2026. This recap covers the model-onboarding highligh…",
-      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-jumpstart-2026-year-to-date-in-review",
-      "discussion": null,
-      "source": "AWS Machine Learning",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-19T21:14:44.000Z",
+      "title": "Google Cloud outage affects almost all banking and other operations in Europe",
+      "titleJa": "Google Cloud outage affects almost all banking and other operations in Europe",
+      "summary": "Google Cloud outage affects almost all banking and other operations in Europe",
+      "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more",
+      "discussion": "https://news.ycombinator.com/item?id=50163961",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-20T10:26:02Z",
       "tags": [
-        "model"
+        "news"
       ],
-      "score": 49.8
+      "score": 50.4
     }
   ],
   "stats": {
-    "repoCandidates": 274,
-    "newsCandidates": 2458,
+    "repoCandidates": 273,
+    "newsCandidates": 2465,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

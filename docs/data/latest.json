@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T05:42:11.115Z",
-  "generatedAtLocal": "2026-10-21 13:42",
-  "dateLocal": "2026-10-21",
+  "generatedAt": "2026-10-22T05:44:40.939Z",
+  "generatedAtLocal": "2026-10-22 13:44",
+  "dateLocal": "2026-10-22",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-21 13:42 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、xerj-org/xerj、DietrichGebert/ponytail の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-22 13:44 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、DietrichGebert/ponytail、stablyai/orca の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 350219,
-      "starsDelta": 10984,
-      "starsPerDay": 10963.9,
+      "stars": 359612,
+      "starsDelta": 9393,
+      "starsPerDay": 9376.8,
       "measured": true,
-      "forks": 88030,
+      "forks": 90281,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,55 +36,24 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-21T05:38:35Z",
-      "openIssues": 1511,
-      "score": 10962.66,
+      "pushedAt": "2026-10-22T05:40:26Z",
+      "openIssues": 1644,
+      "score": 9375.56,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +10984 スター。TypeScript 製。最終更新 2026-10-21。"
+      "why": "前回計測から +9393 スター。TypeScript 製。最終更新 2026-10-22。"
     },
     {
       "rank": 2,
-      "name": "xerj-org/xerj",
-      "url": "https://github.com/xerj-org/xerj",
-      "homepage": "https://xerj.org",
-      "description": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
-      "stars": 12499,
-      "starsDelta": 1828,
-      "starsPerDay": 1824.6,
-      "measured": true,
-      "forks": 752,
-      "language": "Rust",
-      "topics": [
-        "agent-memory",
-        "ai-agents",
-        "bm25",
-        "claude-code",
-        "cli",
-        "code-search",
-        "cursor",
-        "elasticsearch"
-      ],
-      "license": "Apache-2.0",
-      "createdAt": "2026-06-30T04:32:45Z",
-      "pushedAt": "2026-10-21T04:13:10Z",
-      "openIssues": 101,
-      "score": 2275.17,
-      "headline": "xerj",
-      "summary": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid sear…",
-      "why": "前回計測から +1828 スター。Rust 製。最終更新 2026-10-21。"
-    },
-    {
-      "rank": 3,
       "name": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
       "homepage": "https://ponytail.dev",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 170139,
-      "starsDelta": 1853,
-      "starsPerDay": 1849.6,
+      "stars": 172033,
+      "starsDelta": 1894,
+      "starsPerDay": 1890.7,
       "measured": true,
-      "forks": 9254,
+      "forks": 9364,
       "language": "JavaScript",
       "topics": [
         "agent-skills",
@@ -99,32 +68,189 @@
       "license": "MIT",
       "createdAt": "2026-06-12T00:52:37Z",
       "pushedAt": "2026-10-18T01:55:14Z",
-      "openIssues": 59,
-      "score": 1649.27,
+      "openIssues": 74,
+      "score": 1633.37,
       "headline": "ponytail",
       "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "why": "前回計測から +1853 スター。JavaScript 製。最終更新 2026-10-18。"
+      "why": "前回計測から +1894 スター。JavaScript 製。最終更新 2026-10-18。"
+    },
+    {
+      "rank": 3,
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "homepage": "https://orca.dev",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "stars": 101666,
+      "starsDelta": 1602,
+      "starsPerDay": 1599.2,
+      "measured": true,
+      "forks": 6429,
+      "language": "TypeScript",
+      "topics": [
+        "ade",
+        "agent-ide",
+        "ai-agents",
+        "automation",
+        "bot",
+        "claude-code",
+        "codex",
+        "ghostty"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-03-17T03:28:57Z",
+      "pushedAt": "2026-10-22T05:37:21Z",
+      "openIssues": 8620,
+      "score": 1598.89,
+      "headline": "orca",
+      "summary": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobil…",
+      "why": "前回計測から +1602 スター。TypeScript 製。最終更新 2026-10-22。"
     }
   ],
   "news": [
     {
       "rank": 1,
-      "title": "anthropics/anthropic-sdk-python v1.16.0",
-      "titleJa": "anthropics/anthropic-sdk-python v1.16.0",
-      "summary": "### Features\n\n* **api:** add data_refreshed_at and has_more to analytics report pages\n* **api:** add workspace rate-limit updates to the Admin API\n* **api:** m…",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+      "title": "langchain-ai/langchain langchain==1.4.7",
+      "titleJa": "langchain-ai/langchain langchain==1.4.7",
+      "summary": "Changes since langchain==1.4.6\n\nchore(langchain): update lockfile (#41402)\nrelease(langchain): 1.4.7 (#41401)\nchore(deps): bump certifi from 2025.11.12 to 2026…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.7",
       "discussion": null,
       "source": "GitHub Releases",
       "sourceType": "release",
-      "publishedAt": "2026-10-20T17:49:46.000Z",
+      "publishedAt": "2026-10-21T21:39:16.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 80
+    },
+    {
+      "rank": 2,
+      "title": "langchain-ai/langchain langchain-perplexity==1.4.2",
+      "titleJa": "langchain-ai/langchain langchain-perplexity==1.4.2",
+      "summary": "Changes since langchain-perplexity==1.4.1\n\nrelease(perplexity): 1.4.2 (#41392)\nchore(model-profiles): refresh model profile data (#41354)\nchore(deps): bump cer…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-perplexity%3D%3D1.4.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-21T17:31:04.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 77.9
+    },
+    {
+      "rank": 3,
+      "title": "langchain-ai/langchain langchain-core==1.6.13",
+      "titleJa": "langchain-ai/langchain langchain-core==1.6.13",
+      "summary": "Changes since langchain-core==1.6.12\n\nrelease(core): 1.6.13 (#41397)\nchore(deps): bump certifi from 2025.11.12 to 2026.10.19 in /libs/core (#41373)\nfeat(core,l…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.13",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-21T20:43:48.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 75.5
+    },
+    {
+      "rank": 4,
+      "title": "openai/openai-python v3.36.1",
+      "titleJa": "openai/openai-python v3.36.1",
+      "summary": "## [3.36.1](https://github.com/openai/openai-python/compare/v3.36.0...v3.36.1) (2026-10-22)\n\n\n### Bug Fixes\n\n* **api:** honor per-call WebSocket query settings…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-22T03:32:31.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 74.9
+    },
+    {
+      "rank": 5,
+      "title": "ollama/ollama v0.40.8",
+      "titleJa": "ollama/ollama v0.40.8",
+      "summary": "<p align=\"center\"><img width=\"160\" alt=\"flint-logo\" src=\"https://github.com/user-attachments/assets/3c1741a5-710c-4bde-8ac7-096e40b495bb\" /></p>\r\n\r\n## Recursiv…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-21T16:20:30.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 73.3
+    },
+    {
+      "rank": 6,
+      "title": "openai/openai-python v3.36.0",
+      "titleJa": "openai/openai-python v3.36.0",
+      "summary": "## [3.36.0](https://github.com/openai/openai-python/compare/v3.35.1...v3.36.0) (2026-10-21)\n\n\n### Features\n\n* add Vertex AI support for the Responses API ([#41…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-21T15:53:22.000Z",
       "tags": [
         "version",
         "feature"
       ],
-      "score": 78.1
+      "score": 73.1
     },
     {
-      "rank": 2,
+      "rank": 7,
+      "title": "anthropics/anthropic-sdk-python v2.0.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.0.0",
+      "summary": "### ⚠ BREAKING CHANGES\n\n* **api:** add support for new API version 2026-10-21\n\n### Features\n\n* **api:** add a workspace_id filter and the usage_tier scope type…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-21T15:51:32.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 73.1
+    },
+    {
+      "rank": 8,
+      "title": "anthropics/anthropic-sdk-python v2.1.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.1.0",
+      "summary": "### Features\n\n* **api:** add enforcement status, actions and filter to user profiles",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-21T22:00:30.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 72.1
+    },
+    {
+      "rank": 9,
+      "title": "n8n-io/n8n n8n@2.44.5",
+      "titleJa": "n8n-io/n8n n8n@2.44.5",
+      "summary": "## [2.44.5](https://github.com/n8n-io/n8n/compare/n8n@2.44.4...n8n@2.44.5) (2026-10-21)\n\n\n### Bug Fixes\n\n* **core:** Key queue job outcomes by job on shutdown…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.5",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-21T07:26:46.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.8
+    },
+    {
+      "rank": 10,
       "title": "anthropics/anthropic-sdk-python v1.17.0",
       "titleJa": "anthropics/anthropic-sdk-python v1.17.0",
       "summary": "### Features\n\n* **api:** add org webhook endpoints and user profile enforcement events\n* **api:** add RBAC Group owner-access error codes to the Admin API\n* **…",
@@ -137,174 +263,44 @@
         "version",
         "feature"
       ],
-      "score": 72.3
-    },
-    {
-      "rank": 3,
-      "title": "modelcontextprotocol/servers v2.0.0",
-      "titleJa": "modelcontextprotocol/servers v2.0.0",
-      "summary": "## Servers refactored to modern era\r\nThis release refactors all the servers to support the modern era spec, while still answering legacy era clients as expecte…",
-      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.0.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-19T06:46:48.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 68.5
-    },
-    {
-      "rank": 4,
-      "title": "eMudhra Intermediate CA Compromise",
-      "titleJa": "eMudhra Intermediate CA Compromise",
-      "summary": "<p><strong><a href=\"https://emudhra.we-have-a-problem.com\">eMudhra Intermediate CA Compromise</a></strong></p> This is very, very bad news:</p> <blockquote> <p…",
-      "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-20T23:50:25.000Z",
-      "tags": [
-        "release"
-      ],
-      "score": 63.1
-    },
-    {
-      "rank": 5,
-      "title": "huggingface/transformers v5.20.2",
-      "titleJa": "huggingface/transformers v5.20.2",
-      "summary": "# Patch release: v5.20.2\r\n\r\nThis patch notably solves an issue where some inputs could loose their original type inside `prepare_inputs_for_generation` in `gen…",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.2",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-19T17:45:37.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 62
-    },
-    {
-      "rank": 6,
-      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-      "titleJa": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
-      "url": "https://openai.com/index/terminal-x",
-      "discussion": null,
-      "source": "OpenAI",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-20T07:00:00.000Z",
-      "tags": [
-        "version",
-        "model",
-        "business"
-      ],
-      "score": 56.6
-    },
-    {
-      "rank": 7,
-      "title": "vllm-project/vllm v0.32.0",
-      "titleJa": "vllm-project/vllm v0.32.0",
-      "summary": "# v0.32.0\r\n\r\n## Highlights\r\n\r\nThis release features 814 commits from 363 contributors (121 new)!\r\n\r\n* **Structured decisions and generic parsers**: the new `PO…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-18T06:50:48.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business",
-        "research"
-      ],
-      "score": 56.6
-    },
-    {
-      "rank": 8,
-      "title": "comfyanonymous/ComfyUI v0.42.0",
-      "titleJa": "comfyanonymous/ComfyUI v0.42.0",
-      "summary": "## What's Changed\r\n* [Partner Nodes] feat(Krea): add Krea 3 Image node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17067\r\n* Update workflow templ…",
-      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-18T22:10:38.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 56.2
-    },
-    {
-      "rank": 9,
-      "title": "n8n-io/n8n stable",
-      "titleJa": "n8n-io/n8n stable",
-      "summary": "## [2.44.4](https://github.com/n8n-io/n8n/compare/n8n@2.44.3...n8n@2.44.4) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Reuse connections in the log streaming web…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/stable",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-20T09:19:58.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 55.8
-    },
-    {
-      "rank": 10,
-      "title": "Southeast Asia’s digital economy to hit $368 billion",
-      "titleJa": "Southeast Asia’s digital economy to hit $368 billion",
-      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/e-Conomy_SEA_hero.max-600x600.format-webp.webp\">Widespread AI adoption is propelling…",
-      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
-      "discussion": null,
-      "source": "Google (AI)",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-21T04:00:00.000Z",
-      "tags": [
-        "news"
-      ],
-      "score": 53.1
+      "score": 60.2
     },
     {
       "rank": 11,
-      "title": "Publish fake stats, get cited in LLMs",
-      "titleJa": "Publish fake stats, get cited in LLMs",
-      "summary": "Publish fake stats, get cited in LLMs",
-      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
-      "discussion": "https://news.ycombinator.com/item?id=50165801",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-20T13:06:22Z",
+      "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+      "titleJa": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+      "summary": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itsel…",
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-21T20:27:41.000Z",
       "tags": [
-        "model"
+        "release",
+        "model",
+        "research"
       ],
-      "score": 51.7
+      "score": 58.4
     },
     {
       "rank": 12,
-      "title": "Google Cloud outage affects almost all banking and other operations in Europe",
-      "titleJa": "Google Cloud outage affects almost all banking and other operations in Europe",
-      "summary": "Google Cloud outage affects almost all banking and other operations in Europe",
-      "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more",
-      "discussion": "https://news.ycombinator.com/item?id=50163961",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-20T10:26:02Z",
+      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "titleJa": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "summary": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "discussion": null,
+      "source": "Hugging Face",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-21T14:58:18.000Z",
       "tags": [
-        "news"
+        "version"
       ],
-      "score": 50.4
+      "score": 56.6
     }
   ],
   "stats": {
-    "repoCandidates": 273,
-    "newsCandidates": 2465,
+    "repoCandidates": 270,
+    "newsCandidates": 2476,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

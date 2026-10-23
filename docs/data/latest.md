@@ -1,47 +1,71 @@
-# 2026-10-22 の AI ダイジェスト
+# 2026-10-23 の AI ダイジェスト
 
-2026-10-22 13:44 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、DietrichGebert/ponytail、stablyai/orca の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
+2026-10-23 13:43 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、DietrichGebert/ponytail の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [morluto/rea](https://github.com/morluto/rea) — ★359,612
+### 1. [morluto/rea](https://github.com/morluto/rea) — ★367,765
 
 Reverse engineer anything with agents, from app behavior down to native binaries.
 
-- 伸び: +9393 スター
-- 選定理由: 前回計測から +9393 スター。TypeScript 製。最終更新 2026-10-22。
+- 伸び: +8153 スター
+- 選定理由: 前回計測から +8153 スター。TypeScript 製。最終更新 2026-10-23。
 
-### 2. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ★172,033
+### 2. [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) — ★37,377
+
+在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…
+
+- 伸び: +2652 スター
+- 選定理由: 前回計測から +2652 スター。JavaScript 製。最終更新 2026-10-23。
+
+### 3. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ★173,834
 
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-- 伸び: +1894 スター
-- 選定理由: 前回計測から +1894 スター。JavaScript 製。最終更新 2026-10-18。
-
-### 3. [stablyai/orca](https://github.com/stablyai/orca) — ★101,666
-
-Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobil…
-
-- 伸び: +1602 スター
-- 選定理由: 前回計測から +1602 スター。TypeScript 製。最終更新 2026-10-22。
+- 伸び: +1801 スター
+- 選定理由: 前回計測から +1801 スター。JavaScript 製。最終更新 2026-10-18。
 
 ## AI ニュース（新機能・新バージョン中心）
 
+- [openai/openai-python v3.37.0](https://github.com/openai/openai-python/releases/tag/v3.37.0) — GitHub Releases｜## [3.37.0](https://github.com/openai/openai-python/compare/v3.36.1...v3.37.0) (2026-10-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api:** This minor release includes a…
+- [langchain-ai/langchain langchain-core==1.7.0](https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.0) — GitHub Releases｜Changes since langchain-core==1.6.13
+
+release(core): 1.7.0 (#41418)
+feat(core): emit `tool-call-delta` for streamed tool-call args (#41257)
+
+## Notes
+
+- Tool-c…
 - [langchain-ai/langchain langchain==1.4.7](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.7) — GitHub Releases｜Changes since langchain==1.4.6
 
 chore(langchain): update lockfile (#41402)
 release(langchain): 1.4.7 (#41401)
 chore(deps): bump certifi from 2025.11.12 to 2026…
+- [n8n-io/n8n n8n@1.123.86](https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.86) — GitHub Releases｜## [1.123.86](https://github.com/n8n-io/n8n/compare/n8n@1.123.85...n8n@1.123.86) (2026-10-22)
+
+
+### Bug Fixes
+
+* **deps:** bump sharp to 0.35.5 on 1.x (DEVP-12…
+- [ollama/ollama v0.40.9](https://github.com/ollama/ollama/releases/tag/v0.40.9) — GitHub Releases｜## Speech
+
+Ollama can now generate [speech](https://docs.ollama.com/capabilities/speech) with Phonon on Apple Silicon. `ollama run` plays text or a chat mode…
 - [langchain-ai/langchain langchain-perplexity==1.4.2](https://github.com/langchain-ai/langchain/releases/tag/langchain-perplexity%3D%3D1.4.2) — GitHub Releases｜Changes since langchain-perplexity==1.4.1
 
 release(perplexity): 1.4.2 (#41392)
 chore(model-profiles): refresh model profile data (#41354)
 chore(deps): bump cer…
-- [langchain-ai/langchain langchain-core==1.6.13](https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.13) — GitHub Releases｜Changes since langchain-core==1.6.12
+- [n8n-io/n8n n8n@2.44.6](https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.6) — GitHub Releases｜## [2.44.6](https://github.com/n8n-io/n8n/compare/n8n@2.44.5...n8n@2.44.6) (2026-10-22)
 
-release(core): 1.6.13 (#41397)
-chore(deps): bump certifi from 2025.11.12 to 2026.10.19 in /libs/core (#41373)
-feat(core,l…
+
+### Bug Fixes
+
+* **Postgres Node:** Prevent global pgtypes overwrite…
 - [openai/openai-python v3.36.1](https://github.com/openai/openai-python/releases/tag/v3.36.1) — GitHub Releases｜## [3.36.1](https://github.com/openai/openai-python/compare/v3.36.0...v3.36.1) (2026-10-22)
 
 
@@ -67,18 +91,5 @@ feat(core,l…
 - [anthropics/anthropic-sdk-python v2.1.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0) — GitHub Releases｜### Features
 
 * **api:** add enforcement status, actions and filter to user profiles
-- [n8n-io/n8n n8n@2.44.5](https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.5) — GitHub Releases｜## [2.44.5](https://github.com/n8n-io/n8n/compare/n8n@2.44.4...n8n@2.44.5) (2026-10-21)
 
-
-### Bug Fixes
-
-* **core:** Key queue job outcomes by job on shutdown…
-- [anthropics/anthropic-sdk-python v1.17.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0) — GitHub Releases｜### Features
-
-* **api:** add org webhook endpoints and user profile enforcement events
-* **api:** add RBAC Group owner-access error codes to the Admin API
-* **…
-- [Recursive launches Flint, a laptop coding model it says was largely built by AI](https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai) — TechCrunch AI｜Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itsel…
-- [Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster](https://huggingface.co/blog/ibm-granite/granite-speech-5) — Hugging Face｜Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster
-
-_生成: 2026-10-22 13:44 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+_生成: 2026-10-23 13:43 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

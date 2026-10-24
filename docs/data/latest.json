@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T05:43:19.469Z",
-  "generatedAtLocal": "2026-10-23 13:43",
-  "dateLocal": "2026-10-23",
+  "generatedAt": "2026-10-24T05:22:07.862Z",
+  "generatedAtLocal": "2026-10-24 13:22",
+  "dateLocal": "2026-10-24",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-23 13:43 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、DietrichGebert/ponytail の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-24 13:22 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 10 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 367765,
-      "starsDelta": 8153,
-      "starsPerDay": 8160.7,
+      "stars": 374099,
+      "starsDelta": 6334,
+      "starsPerDay": 6428.7,
       "measured": true,
-      "forks": 92148,
+      "forks": 93565,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-23T05:35:23Z",
-      "openIssues": 1616,
-      "score": 8158.82,
+      "pushedAt": "2026-10-24T05:19:03Z",
+      "openIssues": 1439,
+      "score": 6428.05,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +8153 スター。TypeScript 製。最終更新 2026-10-23。"
+      "why": "前回計測から +6334 スター。TypeScript 製。最終更新 2026-10-24。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 37377,
-      "starsDelta": 2652,
-      "starsPerDay": 2654.5,
+      "stars": 39647,
+      "starsDelta": 2270,
+      "starsPerDay": 2303.9,
       "measured": true,
-      "forks": 1077,
+      "forks": 1138,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -67,48 +67,98 @@
       ],
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-10-23T05:11:34Z",
-      "openIssues": 314,
-      "score": 3315.17,
+      "pushedAt": "2026-10-24T05:02:18Z",
+      "openIssues": 323,
+      "score": 2878.3,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +2652 スター。JavaScript 製。最終更新 2026-10-23。"
+      "why": "前回計測から +2270 スター。JavaScript 製。最終更新 2026-10-24。"
     },
     {
       "rank": 3,
-      "name": "DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "homepage": "https://ponytail.dev",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 173834,
-      "starsDelta": 1801,
-      "starsPerDay": 1802.7,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "homepage": "https://voicestudio.sh",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "stars": 83614,
+      "starsDelta": 1593,
+      "starsPerDay": 1616.8,
       "measured": true,
-      "forks": 9466,
-      "language": "JavaScript",
+      "forks": 9224,
+      "language": "Python",
       "topics": [
-        "agent-skills",
-        "ai-agents",
-        "claude",
-        "claude-code",
-        "claude-code-plugin",
-        "cursor-rules",
-        "developer-tools",
-        "llm"
+        "ai",
+        "audiobook",
+        "cuda",
+        "dubbing",
+        "elevenlabs-alternative",
+        "huggingface",
+        "local-first",
+        "mlx"
       ],
-      "license": "MIT",
-      "createdAt": "2026-06-12T00:52:37Z",
-      "pushedAt": "2026-10-18T01:55:14Z",
-      "openIssues": 97,
-      "score": 1512.09,
-      "headline": "ponytail",
-      "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "why": "前回計測から +1801 スター。JavaScript 製。最終更新 2026-10-18。"
+      "license": "AGPL-3.0",
+      "createdAt": "2026-04-09T21:40:26Z",
+      "pushedAt": "2026-10-24T04:32:46Z",
+      "openIssues": 340,
+      "score": 1614.58,
+      "headline": "VoiceStudio",
+      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
+      "why": "前回計測から +1593 スター。Python 製。最終更新 2026-10-24。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "anthropics/anthropic-sdk-python v2.3.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.3.0",
+      "summary": "### Features\n\n* **api:** add Claude Tag endpoints for Claude Enterprise organizations\n\n\n### Bug Fixes\n\n* **google-cloud:** send user profiles requests to the o…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T23:18:22.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 81
+    },
+    {
+      "rank": 2,
+      "title": "anthropics/anthropic-sdk-python v2.2.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.2.0",
+      "summary": "### Features\n\n* **api:** add support for message threads\n* **api:** add usage and cost reports by dimension, mark older reports legacy\n\n\n### Bug Fixes\n\n* **cli…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T13:10:10.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 79.9
+    },
+    {
+      "rank": 3,
+      "title": "ollama/ollama v0.40.10",
+      "titleJa": "ollama/ollama v0.40.10",
+      "summary": "## NVIDIA Nemotron 3.5 Bolt E4B\r\n\r\n[Nemotron 3.5 Bolt E4B](https://ollama.com/library/nemotron-3.5-bolt) is NVIDIA’s smaller, Gemma 4-based vision-language mod…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T15:03:59.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 68.8
+    },
+    {
+      "rank": 4,
       "title": "openai/openai-python v3.37.0",
       "titleJa": "openai/openai-python v3.37.0",
       "summary": "## [3.37.0](https://github.com/openai/openai-python/compare/v3.36.1...v3.37.0) (2026-10-22)\n\n\n### ⚠ BREAKING CHANGES\n\n* **api:** This minor release includes a…",
@@ -122,10 +172,25 @@
         "feature",
         "model"
       ],
-      "score": 79.2
+      "score": 67.3
     },
     {
-      "rank": 2,
+      "rank": 5,
+      "title": "n8n-io/n8n n8n@1.123.87",
+      "titleJa": "n8n-io/n8n n8n@1.123.87",
+      "summary": "## [1.123.87](https://github.com/n8n-io/n8n/compare/n8n@1.123.86...n8n@1.123.87) (2026-10-23)\n\n<!-- This is an auto-generated description by cubic. -->\n<a href…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.87",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T07:51:27.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 65.2
+    },
+    {
+      "rank": 6,
       "title": "langchain-ai/langchain langchain-core==1.7.0",
       "titleJa": "langchain-ai/langchain langchain-core==1.7.0",
       "summary": "Changes since langchain-core==1.6.13\n\nrelease(core): 1.7.0 (#41418)\nfeat(core): emit `tool-call-delta` for streamed tool-call args (#41257)\n\n## Notes\n\n- Tool-c…",
@@ -138,10 +203,27 @@
         "version",
         "model"
       ],
-      "score": 74
+      "score": 62.2
     },
     {
-      "rank": 3,
+      "rank": 7,
+      "title": "Introducing Kimi K3.1 Pro",
+      "titleJa": "Introducing Kimi K3.1 Pro",
+      "summary": "<p><strong><a href=\"https://www.kimi.ai/blog/kimi-k3-1-pro\">Introducing Kimi K3.1 Pro</a></strong></p> Kimi K3.1 Pro landed on the Kimi API today - it's not ye…",
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-23T19:40:54.000Z",
+      "tags": [
+        "release",
+        "model",
+        "research"
+      ],
+      "score": 61.2
+    },
+    {
+      "rank": 8,
       "title": "langchain-ai/langchain langchain==1.4.7",
       "titleJa": "langchain-ai/langchain langchain==1.4.7",
       "summary": "Changes since langchain==1.4.6\n\nchore(langchain): update lockfile (#41402)\nrelease(langchain): 1.4.7 (#41401)\nchore(deps): bump certifi from 2025.11.12 to 2026…",
@@ -153,25 +235,10 @@
       "tags": [
         "version"
       ],
-      "score": 68
+      "score": 56.1
     },
     {
-      "rank": 4,
-      "title": "n8n-io/n8n n8n@1.123.86",
-      "titleJa": "n8n-io/n8n n8n@1.123.86",
-      "summary": "## [1.123.86](https://github.com/n8n-io/n8n/compare/n8n@1.123.85...n8n@1.123.86) (2026-10-22)\n\n\n### Bug Fixes\n\n* **deps:** bump sharp to 0.35.5 on 1.x (DEVP-12…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.86",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-22T10:11:25.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 66.2
-    },
-    {
-      "rank": 5,
+      "rank": 9,
       "title": "ollama/ollama v0.40.9",
       "titleJa": "ollama/ollama v0.40.9",
       "summary": "## Speech\r\n\r\nOllama can now generate [speech](https://docs.ollama.com/capabilities/speech) with Phonon on Apple Silicon. `ollama run` plays text or a chat mode…",
@@ -184,10 +251,10 @@
         "version",
         "model"
       ],
-      "score": 65.9
+      "score": 54.1
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "langchain-ai/langchain langchain-perplexity==1.4.2",
       "titleJa": "langchain-ai/langchain langchain-perplexity==1.4.2",
       "summary": "Changes since langchain-perplexity==1.4.1\n\nrelease(perplexity): 1.4.2 (#41392)\nchore(model-profiles): refresh model profile data (#41354)\nchore(deps): bump cer…",
@@ -200,108 +267,42 @@
         "version",
         "model"
       ],
-      "score": 65.9
-    },
-    {
-      "rank": 7,
-      "title": "n8n-io/n8n n8n@2.44.6",
-      "titleJa": "n8n-io/n8n n8n@2.44.6",
-      "summary": "## [2.44.6](https://github.com/n8n-io/n8n/compare/n8n@2.44.5...n8n@2.44.6) (2026-10-22)\n\n\n### Bug Fixes\n\n* **Postgres Node:** Prevent global pgtypes overwrite…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.6",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-22T09:21:49.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 65.8
-    },
-    {
-      "rank": 8,
-      "title": "openai/openai-python v3.36.1",
-      "titleJa": "openai/openai-python v3.36.1",
-      "summary": "## [3.36.1](https://github.com/openai/openai-python/compare/v3.36.0...v3.36.1) (2026-10-22)\n\n\n### Bug Fixes\n\n* **api:** honor per-call WebSocket query settings…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.1",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-22T03:32:31.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 62.9
-    },
-    {
-      "rank": 9,
-      "title": "ollama/ollama v0.40.8",
-      "titleJa": "ollama/ollama v0.40.8",
-      "summary": "<p align=\"center\"><img width=\"160\" alt=\"flint-logo\" src=\"https://github.com/user-attachments/assets/3c1741a5-710c-4bde-8ac7-096e40b495bb\" /></p>\r\n\r\n## Recursiv…",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-21T16:20:30.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 61.3
-    },
-    {
-      "rank": 10,
-      "title": "openai/openai-python v3.36.0",
-      "titleJa": "openai/openai-python v3.36.0",
-      "summary": "## [3.36.0](https://github.com/openai/openai-python/compare/v3.35.1...v3.36.0) (2026-10-21)\n\n\n### Features\n\n* add Vertex AI support for the Responses API ([#41…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-21T15:53:22.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 61.1
+      "score": 54.1
     },
     {
       "rank": 11,
-      "title": "anthropics/anthropic-sdk-python v2.0.0",
-      "titleJa": "anthropics/anthropic-sdk-python v2.0.0",
-      "summary": "### ⚠ BREAKING CHANGES\n\n* **api:** add support for new API version 2026-10-21\n\n### Features\n\n* **api:** add a workspace_id filter and the usage_tier scope type…",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-21T15:51:32.000Z",
+      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+      "titleJa": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+      "summary": "https:&#x2F;&#x2F;www.kimi.com&#x2F;code&#x2F;docs&#x2F;en&#x2F;kimi-code&#x2F;models.html https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;models&#x2F;kimi-k3-1-p…",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "discussion": "https://news.ycombinator.com/item?id=50212065",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-23T16:59:08Z",
       "tags": [
-        "version",
-        "feature"
+        "model"
       ],
-      "score": 61.1
+      "score": 53.8
     },
     {
       "rank": 12,
-      "title": "anthropics/anthropic-sdk-python v2.1.0",
-      "titleJa": "anthropics/anthropic-sdk-python v2.1.0",
-      "summary": "### Features\n\n* **api:** add enforcement status, actions and filter to user profiles",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "titleJa": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-21T22:00:30.000Z",
+      "source": "OpenAI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-23T17:00:00.000Z",
       "tags": [
-        "version",
-        "feature"
+        "model"
       ],
-      "score": 60.1
+      "score": 51.8
     }
   ],
   "stats": {
     "repoCandidates": 269,
-    "newsCandidates": 2477,
+    "newsCandidates": 2480,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

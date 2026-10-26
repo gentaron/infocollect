@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T05:39:53.570Z",
-  "generatedAtLocal": "2026-10-25 13:39",
-  "dateLocal": "2026-10-25",
+  "generatedAt": "2026-10-26T05:45:44.409Z",
+  "generatedAtLocal": "2026-10-26 13:45",
+  "dateLocal": "2026-10-26",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-25 13:39 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-26 13:45 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 7 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 379726,
-      "starsDelta": 5627,
-      "starsPerDay": 5558.4,
+      "stars": 386010,
+      "starsDelta": 6284,
+      "starsPerDay": 6258.6,
       "measured": true,
-      "forks": 94909,
+      "forks": 96686,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-25T04:47:52Z",
-      "openIssues": 1041,
-      "score": 5550.32,
+      "pushedAt": "2026-10-25T19:21:28Z",
+      "openIssues": 1099,
+      "score": 6152.34,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +5627 スター。TypeScript 製。最終更新 2026-10-25。"
+      "why": "前回計測から +6284 スター。TypeScript 製。最終更新 2026-10-25。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 41661,
-      "starsDelta": 2014,
-      "starsPerDay": 1989.4,
+      "stars": 43400,
+      "starsDelta": 1739,
+      "starsPerDay": 1732,
       "measured": true,
-      "forks": 1191,
+      "forks": 1232,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -67,12 +67,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-10-25T05:23:01Z",
-      "openIssues": 329,
-      "score": 2485.61,
+      "pushedAt": "2026-10-26T05:02:49Z",
+      "openIssues": 335,
+      "score": 2162.37,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +2014 スター。JavaScript 製。最終更新 2026-10-25。"
+      "why": "前回計測から +1739 スター。JavaScript 製。最終更新 2026-10-26。"
     },
     {
       "rank": 3,
@@ -80,11 +80,11 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "homepage": "https://voicestudio.sh",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 85254,
-      "starsDelta": 1640,
-      "starsPerDay": 1620,
+      "stars": 87279,
+      "starsDelta": 2025,
+      "starsPerDay": 2016.8,
       "measured": true,
-      "forks": 9441,
+      "forks": 9652,
       "language": "Python",
       "topics": [
         "ai",
@@ -98,17 +98,35 @@
       ],
       "license": "AGPL-3.0",
       "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-25T05:33:00Z",
-      "openIssues": 246,
-      "score": 1619.68,
+      "pushedAt": "2026-10-26T04:34:02Z",
+      "openIssues": 194,
+      "score": 2012.79,
       "headline": "VoiceStudio",
       "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +1640 スター。Python 製。最終更新 2026-10-25。"
+      "why": "前回計測から +2025 スター。Python 製。最終更新 2026-10-26。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "open-webui/open-webui v0.12.4",
+      "titleJa": "open-webui/open-webui v0.12.4",
+      "summary": "### Added\n\n- 🎯 **Load selected skills on demand.** Administrators can turn on \"Load selected skills on demand\" under Admin Settings > General or set \"ENABLE_S…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.4",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-25T08:07:13.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 89.2
+    },
+    {
+      "rank": 2,
       "title": "modelcontextprotocol/servers v2.1.0",
       "titleJa": "modelcontextprotocol/servers v2.1.0",
       "summary": "## Security fixes\r\n\r\nv2.1.0 fixes eight vulnerabilities in three servers. Upgrade\r\n`@modelcontextprotocol/server-filesystem` and `@modelcontextprotocol/server-…",
@@ -121,10 +139,10 @@
         "version",
         "model"
       ],
-      "score": 85.2
+      "score": 73.1
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "anthropics/anthropic-sdk-python v2.3.0",
       "titleJa": "anthropics/anthropic-sdk-python v2.3.0",
       "summary": "### Features\n\n* **api:** add Claude Tag endpoints for Claude Enterprise organizations\n\n\n### Bug Fixes\n\n* **google-cloud:** send user profiles requests to the o…",
@@ -138,10 +156,10 @@
         "feature",
         "model"
       ],
-      "score": 68.8
+      "score": 56.8
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "anthropics/anthropic-sdk-python v2.2.0",
       "titleJa": "anthropics/anthropic-sdk-python v2.2.0",
       "summary": "### Features\n\n* **api:** add support for message threads\n* **api:** add usage and cost reports by dimension, mark older reports legacy\n\n\n### Bug Fixes\n\n* **cli…",
@@ -155,10 +173,40 @@
         "feature",
         "model"
       ],
-      "score": 67.7
+      "score": 55.7
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "titleJa": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "summary": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "url": "https://minimaxir.com/2026/10/cheap-llms",
+      "discussion": "https://news.ycombinator.com/item?id=50236102",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-25T21:11:31Z",
+      "tags": [
+        "model"
+      ],
+      "score": 55.1
+    },
+    {
+      "rank": 6,
+      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "titleJa": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "summary": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "discussion": "https://news.ycombinator.com/item?id=50233779",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-25T17:15:38Z",
+      "tags": [
+        "model"
+      ],
+      "score": 53.7
+    },
+    {
+      "rank": 7,
       "title": "ollama/ollama v0.40.11",
       "titleJa": "ollama/ollama v0.40.11",
       "summary": "## Speech\r\n\r\nOllama can now generate [speech](https://docs.ollama.com/capabilities/speech) on macOS. `ollama run` plays text or a chat model's reply aloud as t…",
@@ -171,10 +219,25 @@
         "version",
         "model"
       ],
-      "score": 61.4
+      "score": 49.4
     },
     {
-      "rank": 5,
+      "rank": 8,
+      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+      "titleJa": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-25T21:31:16.000Z",
+      "tags": [
+        "release"
+      ],
+      "score": 46.9
+    },
+    {
+      "rank": 9,
       "title": "ollama/ollama v0.40.10",
       "titleJa": "ollama/ollama v0.40.10",
       "summary": "## NVIDIA Nemotron 3.5 Bolt E4B\r\n\r\n[Nemotron 3.5 Bolt E4B](https://ollama.com/library/nemotron-3.5-bolt) is NVIDIA’s smaller, Gemma 4-based vision-language mod…",
@@ -187,123 +250,57 @@
         "version",
         "model"
       ],
-      "score": 56.7
-    },
-    {
-      "rank": 6,
-      "title": "openai/openai-python v3.37.0",
-      "titleJa": "openai/openai-python v3.37.0",
-      "summary": "## [3.37.0](https://github.com/openai/openai-python/compare/v3.36.1...v3.37.0) (2026-10-22)\n\n\n### ⚠ BREAKING CHANGES\n\n* **api:** This minor release includes a…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.37.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-22T20:03:54.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 55.2
-    },
-    {
-      "rank": 7,
-      "title": "n8n-io/n8n n8n@1.123.87",
-      "titleJa": "n8n-io/n8n n8n@1.123.87",
-      "summary": "## [1.123.87](https://github.com/n8n-io/n8n/compare/n8n@1.123.86...n8n@1.123.87) (2026-10-23)\n\n<!-- This is an auto-generated description by cubic. -->\n<a href…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.87",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T07:51:27.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 53.1
-    },
-    {
-      "rank": 8,
-      "title": "langchain-ai/langchain langchain-core==1.7.0",
-      "titleJa": "langchain-ai/langchain langchain-core==1.7.0",
-      "summary": "Changes since langchain-core==1.6.13\n\nrelease(core): 1.7.0 (#41418)\nfeat(core): emit `tool-call-delta` for streamed tool-call args (#41257)\n\n## Notes\n\n- Tool-c…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-22T17:47:38.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 50.1
-    },
-    {
-      "rank": 9,
-      "title": "Introducing Kimi K3.1 Pro",
-      "titleJa": "Introducing Kimi K3.1 Pro",
-      "summary": "<p><strong><a href=\"https://www.kimi.ai/blog/kimi-k3-1-pro\">Introducing Kimi K3.1 Pro</a></strong></p> Kimi K3.1 Pro landed on the Kimi API today - it's not ye…",
-      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-23T19:40:54.000Z",
-      "tags": [
-        "release",
-        "model",
-        "research"
-      ],
-      "score": 49
+      "score": 44.6
     },
     {
       "rank": 10,
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "titleJa": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
-      "discussion": null,
-      "source": "TechCrunch AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-24T19:00:00.000Z",
+      "title": "R/open source bans all solo projects and projects using LLMs",
+      "titleJa": "R/open source bans all solo projects and projects using LLMs",
+      "summary": "R/open source bans all solo projects and projects using LLMs",
+      "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
+      "discussion": "https://news.ycombinator.com/item?id=50231722",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-25T14:05:03Z",
       "tags": [
-        "release"
+        "model"
       ],
-      "score": 45.7
+      "score": 43.2
     },
     {
       "rank": 11,
-      "title": "battledrones v14: Compass Rose, a four player map",
-      "titleJa": "battledrones v14: Compass Rose, a four player map",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/battledrones/releases/tag/v14\">battledrones v14: Compass Rose, a four player map</a></p> <p>I a…",
-      "url": "https://simonwillison.net/2026/Oct/24/battledrones",
+      "title": "Seam Cutter",
+      "titleJa": "Seam Cutter",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/seam-cutter\">Seam Cutter</a></p> <p>I built this weird and very specific cropping tool - it…",
+      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter",
       "discussion": null,
       "source": "Simon Willison",
       "sourceType": "feed",
-      "publishedAt": "2026-10-24T03:59:57.000Z",
-      "tags": [
-        "release",
-        "model"
-      ],
-      "score": 45.2
-    },
-    {
-      "rank": 12,
-      "title": "Blue Planet III is keeping the rough edges in the age of AI",
-      "titleJa": "Blue Planet III is keeping the rough edges in the age of AI",
-      "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined b…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
-      "discussion": null,
-      "source": "The Verge AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-24T21:29:12.000Z",
+      "publishedAt": "2026-10-25T15:10:19.000Z",
       "tags": [
         "news"
       ],
-      "score": 41.9
+      "score": 42.7
+    },
+    {
+      "rank": 12,
+      "title": "r/opensource just banned AI, non-English speakers, and more",
+      "titleJa": "r/opensource just banned AI, non-English speakers, and more",
+      "summary": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-25T13:25:32.000Z",
+      "tags": [
+        "news"
+      ],
+      "score": 41.8
     }
   ],
   "stats": {
     "repoCandidates": 268,
-    "newsCandidates": 2471,
+    "newsCandidates": 2473,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

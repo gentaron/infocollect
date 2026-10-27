@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T05:45:44.409Z",
-  "generatedAtLocal": "2026-10-26 13:45",
-  "dateLocal": "2026-10-26",
+  "generatedAt": "2026-10-27T05:58:21.433Z",
+  "generatedAtLocal": "2026-10-27 13:58",
+  "dateLocal": "2026-10-27",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-26 13:45 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 7 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-27 13:58 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、debpalash/VoiceStudio、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 386010,
-      "starsDelta": 6284,
-      "starsPerDay": 6258.6,
+      "stars": 392980,
+      "starsDelta": 6970,
+      "starsPerDay": 6909.4,
       "measured": true,
-      "forks": 96686,
+      "forks": 98489,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,55 +36,24 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-25T19:21:28Z",
-      "openIssues": 1099,
-      "score": 6152.34,
+      "pushedAt": "2026-10-27T05:57:21Z",
+      "openIssues": 1210,
+      "score": 6909.15,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +6284 スター。TypeScript 製。最終更新 2026-10-25。"
+      "why": "前回計測から +6970 スター。TypeScript 製。最終更新 2026-10-27。"
     },
     {
       "rank": 2,
-      "name": "Ebony-Vinyl/dsh-our-free-model",
-      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-      "homepage": null,
-      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 43400,
-      "starsDelta": 1739,
-      "starsPerDay": 1732,
-      "measured": true,
-      "forks": 1232,
-      "language": "JavaScript",
-      "topics": [
-        "ai-agents",
-        "deepseek",
-        "deepseek-harness",
-        "developer-tools",
-        "dsh",
-        "dsh-plugin",
-        "free-model",
-        "llm"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-10-26T05:02:49Z",
-      "openIssues": 335,
-      "score": 2162.37,
-      "headline": "dsh-our-free-model",
-      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1739 スター。JavaScript 製。最終更新 2026-10-26。"
-    },
-    {
-      "rank": 3,
       "name": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "homepage": "https://voicestudio.sh",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "stars": 87279,
-      "starsDelta": 2025,
-      "starsPerDay": 2016.8,
+      "stars": 89766,
+      "starsDelta": 2487,
+      "starsPerDay": 2465.4,
       "measured": true,
-      "forks": 9652,
+      "forks": 9895,
       "language": "Python",
       "topics": [
         "ai",
@@ -98,17 +67,83 @@
       ],
       "license": "AGPL-3.0",
       "createdAt": "2026-04-09T21:40:26Z",
-      "pushedAt": "2026-10-26T04:34:02Z",
-      "openIssues": 194,
-      "score": 2012.79,
+      "pushedAt": "2026-10-27T05:33:24Z",
+      "openIssues": 66,
+      "score": 2463.65,
       "headline": "VoiceStudio",
       "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
-      "why": "前回計測から +2025 スター。Python 製。最終更新 2026-10-26。"
+      "why": "前回計測から +2487 スター。Python 製。最終更新 2026-10-27。"
+    },
+    {
+      "rank": 3,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 45314,
+      "starsDelta": 1914,
+      "starsPerDay": 1897.4,
+      "measured": true,
+      "forks": 1275,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-10-27T03:15:09Z",
+      "openIssues": 361,
+      "score": 2360.99,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1914 スター。JavaScript 製。最終更新 2026-10-27。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "huggingface/transformers v5.21",
+      "titleJa": "huggingface/transformers v5.21",
+      "summary": "# Release v5.21.0\r\n\r\n\r\n## New Model additions\r\n\r\n### MiniCPM-OCR\r\n\r\nMiniCPM-OCR is a document-understanding model from OpenBMB's MiniCPM-V family. It keeps the…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.21",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-26T18:17:42.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "research"
+      ],
+      "score": 90.2
+    },
+    {
+      "rank": 2,
+      "title": "comfyanonymous/ComfyUI v0.43.0",
+      "titleJa": "comfyanonymous/ComfyUI v0.43.0",
+      "summary": "## What's Changed\r\n* model_prefetch: syncrhonize all graph cleanups by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/17178\r\n* Add rope scaling suppor…",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-27T02:40:46.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 82.3
+    },
+    {
+      "rank": 3,
       "title": "open-webui/open-webui v0.12.4",
       "titleJa": "open-webui/open-webui v0.12.4",
       "summary": "### Added\n\n- 🎯 **Load selected skills on demand.** Administrators can turn on \"Load selected skills on demand\" under Admin Settings > General or set \"ENABLE_S…",
@@ -123,10 +158,105 @@
         "model",
         "business"
       ],
-      "score": 89.2
+      "score": 77.1
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "title": "langchain-ai/langchain langchain-openai==1.7.3",
+      "titleJa": "langchain-ai/langchain langchain-openai==1.7.3",
+      "summary": "Changes since langchain-openai==1.7.2\n\ntest(openai): use current lightweight model in integration tests (#41509)\nrelease(openai): 1.7.3 (#41506)\nchore(model-pr…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-26T23:08:48.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 76.6
+    },
+    {
+      "rank": 5,
+      "title": "GPT-6.1 Terra",
+      "titleJa": "GPT-6.1 Terra",
+      "summary": "<p><strong><a href=\"https://openai.com/index/introducing-gpt-6-1-terra/\">GPT-6.1 Terra</a></strong></p> It's always interesting to note which aspects of a new…",
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-26T23:53:07.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 73
+    },
+    {
+      "rank": 6,
+      "title": "n8n-io/n8n n8n@1.123.88",
+      "titleJa": "n8n-io/n8n n8n@1.123.88",
+      "summary": "## [1.123.88](https://github.com/n8n-io/n8n/compare/n8n@1.123.87...n8n@1.123.88) (2026-10-26)\n\n\n### Bug Fixes\n\n* **core:** Release the SQLite write lock when t…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.88",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-26T06:49:08.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 72.4
+    },
+    {
+      "rank": 7,
+      "title": "openai/openai-python v3.39.0",
+      "titleJa": "openai/openai-python v3.39.0",
+      "summary": "## [3.39.0](https://github.com/openai/openai-python/compare/v3.38.0...v3.39.0) (2026-10-26)\n\n\n### Features\n\n* **api:** add gpt-6.1-terra model identifier ([#41…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.39.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-26T19:14:00.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 70.6
+    },
+    {
+      "rank": 8,
+      "title": "openai/openai-python v3.38.0",
+      "titleJa": "openai/openai-python v3.38.0",
+      "summary": "## [3.38.0](https://github.com/openai/openai-python/compare/v3.37.0...v3.38.0) (2026-10-25)\n\n\n### Features\n\n* **api:** add delegation controls and prompt cache…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.38.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-26T16:35:03.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 69.3
+    },
+    {
+      "rank": 9,
+      "title": "n8n-io/n8n n8n@2.44.7",
+      "titleJa": "n8n-io/n8n n8n@2.44.7",
+      "summary": "## [2.44.7](https://github.com/n8n-io/n8n/compare/n8n@2.44.6...n8n@2.44.7) (2026-10-26)\n\n\n### Bug Fixes\n\n* **core:** Start sub-workflow error workflow when a p…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.7",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-26T06:22:00.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 68.2
+    },
+    {
+      "rank": 10,
       "title": "modelcontextprotocol/servers v2.1.0",
       "titleJa": "modelcontextprotocol/servers v2.1.0",
       "summary": "## Security fixes\r\n\r\nv2.1.0 fixes eight vulnerabilities in three servers. Upgrade\r\n`@modelcontextprotocol/server-filesystem` and `@modelcontextprotocol/server-…",
@@ -139,168 +269,43 @@
         "version",
         "model"
       ],
-      "score": 73.1
-    },
-    {
-      "rank": 3,
-      "title": "anthropics/anthropic-sdk-python v2.3.0",
-      "titleJa": "anthropics/anthropic-sdk-python v2.3.0",
-      "summary": "### Features\n\n* **api:** add Claude Tag endpoints for Claude Enterprise organizations\n\n\n### Bug Fixes\n\n* **google-cloud:** send user profiles requests to the o…",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T23:18:22.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 56.8
-    },
-    {
-      "rank": 4,
-      "title": "anthropics/anthropic-sdk-python v2.2.0",
-      "titleJa": "anthropics/anthropic-sdk-python v2.2.0",
-      "summary": "### Features\n\n* **api:** add support for message threads\n* **api:** add usage and cost reports by dimension, mark older reports legacy\n\n\n### Bug Fixes\n\n* **cli…",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T13:10:10.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 55.7
-    },
-    {
-      "rank": 5,
-      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-      "titleJa": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-      "summary": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-      "url": "https://minimaxir.com/2026/10/cheap-llms",
-      "discussion": "https://news.ycombinator.com/item?id=50236102",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-25T21:11:31Z",
-      "tags": [
-        "model"
-      ],
-      "score": 55.1
-    },
-    {
-      "rank": 6,
-      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-      "titleJa": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-      "summary": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-      "url": "https://lynchlab.net/llm-skin-cancer",
-      "discussion": "https://news.ycombinator.com/item?id=50233779",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-25T17:15:38Z",
-      "tags": [
-        "model"
-      ],
-      "score": 53.7
-    },
-    {
-      "rank": 7,
-      "title": "ollama/ollama v0.40.11",
-      "titleJa": "ollama/ollama v0.40.11",
-      "summary": "## Speech\r\n\r\nOllama can now generate [speech](https://docs.ollama.com/capabilities/speech) on macOS. `ollama run` plays text or a chat model's reply aloud as t…",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.11",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-24T00:30:13.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 49.4
-    },
-    {
-      "rank": 8,
-      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-      "titleJa": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
-      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey",
-      "discussion": null,
-      "source": "TechCrunch AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-25T21:31:16.000Z",
-      "tags": [
-        "release"
-      ],
-      "score": 46.9
-    },
-    {
-      "rank": 9,
-      "title": "ollama/ollama v0.40.10",
-      "titleJa": "ollama/ollama v0.40.10",
-      "summary": "## NVIDIA Nemotron 3.5 Bolt E4B\r\n\r\n[Nemotron 3.5 Bolt E4B](https://ollama.com/library/nemotron-3.5-bolt) is NVIDIA’s smaller, Gemma 4-based vision-language mod…",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T15:03:59.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 44.6
-    },
-    {
-      "rank": 10,
-      "title": "R/open source bans all solo projects and projects using LLMs",
-      "titleJa": "R/open source bans all solo projects and projects using LLMs",
-      "summary": "R/open source bans all solo projects and projects using LLMs",
-      "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
-      "discussion": "https://news.ycombinator.com/item?id=50231722",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-25T14:05:03Z",
-      "tags": [
-        "model"
-      ],
-      "score": 43.2
+      "score": 61
     },
     {
       "rank": 11,
-      "title": "Seam Cutter",
-      "titleJa": "Seam Cutter",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/seam-cutter\">Seam Cutter</a></p> <p>I built this weird and very specific cropping tool - it…",
-      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "titleJa": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
       "discussion": null,
-      "source": "Simon Willison",
+      "source": "OpenAI",
       "sourceType": "feed",
-      "publishedAt": "2026-10-25T15:10:19.000Z",
+      "publishedAt": "2026-10-26T13:45:00.000Z",
       "tags": [
-        "news"
+        "version",
+        "model"
       ],
-      "score": 42.7
+      "score": 59.9
     },
     {
       "rank": 12,
-      "title": "r/opensource just banned AI, non-English speakers, and more",
-      "titleJa": "r/opensource just banned AI, non-English speakers, and more",
-      "summary": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "title": "n8n-io/n8n stable",
+      "titleJa": "n8n-io/n8n stable",
+      "summary": "## [2.44.7](https://github.com/n8n-io/n8n/compare/n8n@2.44.6...n8n@2.44.7) (2026-10-26)\n\n\n### Bug Fixes\n\n* **core:** Start sub-workflow error workflow when a p…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/stable",
       "discussion": null,
-      "source": "The Verge AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-25T13:25:32.000Z",
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-26T06:22:02.000Z",
       "tags": [
-        "news"
+        "version"
       ],
-      "score": 41.8
+      "score": 58.2
     }
   ],
   "stats": {
-    "repoCandidates": 268,
-    "newsCandidates": 2473,
+    "repoCandidates": 269,
+    "newsCandidates": 2482,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

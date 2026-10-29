@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T06:36:40.950Z",
-  "generatedAtLocal": "2026-10-28 14:36",
-  "dateLocal": "2026-10-28",
+  "generatedAt": "2026-10-29T06:44:42.106Z",
+  "generatedAtLocal": "2026-10-29 14:44",
+  "dateLocal": "2026-10-29",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-28 14:36 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、HKUDS/DeepTutor の 3 件。AI ニュースは 12 件を収集し、うち 10 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-10-29 14:44 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、pbakaus/impeccable の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 398626,
-      "starsDelta": 5646,
-      "starsPerDay": 5499.6,
+      "stars": 404020,
+      "starsDelta": 5394,
+      "starsPerDay": 5364.2,
       "measured": true,
-      "forks": 100015,
+      "forks": 101258,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-28T06:31:18Z",
-      "openIssues": 1385,
-      "score": 5498.74,
+      "pushedAt": "2026-10-29T06:42:18Z",
+      "openIssues": 1309,
+      "score": 5363.75,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +5646 スター。TypeScript 製。最終更新 2026-10-28。"
+      "why": "前回計測から +5394 スター。TypeScript 製。最終更新 2026-10-29。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 47383,
-      "starsDelta": 2069,
-      "starsPerDay": 2015.4,
+      "stars": 49568,
+      "starsDelta": 2185,
+      "starsPerDay": 2172.9,
       "measured": true,
-      "forks": 1317,
+      "forks": 1361,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -67,48 +67,109 @@
       ],
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-10-28T03:00:15Z",
-      "openIssues": 364,
-      "score": 2504.14,
+      "pushedAt": "2026-10-29T04:02:35Z",
+      "openIssues": 373,
+      "score": 2703.95,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +2069 スター。JavaScript 製。最終更新 2026-10-28。"
+      "why": "前回計測から +2185 スター。JavaScript 製。最終更新 2026-10-29。"
     },
     {
       "rank": 3,
-      "name": "HKUDS/DeepTutor",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "homepage": "http://arxiv.org/abs/2604.26962",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-      "stars": 46552,
-      "starsDelta": 2281,
-      "starsPerDay": 2221.9,
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "homepage": "https://impeccable.style",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "stars": 93445,
+      "starsDelta": 2471,
+      "starsPerDay": 2457.3,
       "measured": true,
-      "forks": 5819,
-      "language": "Python",
+      "forks": 5516,
+      "language": "Rust",
       "topics": [
-        "ai-agents",
-        "ai-tutor",
-        "clawbot",
-        "cli-tool",
-        "deepresearch",
-        "interactive-learning",
-        "learning",
-        "multi-agent-systems"
+        "agent-skills",
+        "ai",
+        "anti-slop",
+        "design",
+        "slop"
       ],
       "license": "Apache-2.0",
-      "createdAt": "2025-12-28T15:35:54Z",
-      "pushedAt": "2026-10-28T04:28:33Z",
-      "openIssues": 218,
-      "score": 2213.97,
-      "headline": "DeepTutor",
-      "summary": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-      "why": "前回計測から +2281 スター。Python 製。最終更新 2026-10-28。"
+      "createdAt": "2025-11-16T01:52:04Z",
+      "pushedAt": "2026-10-29T04:51:37Z",
+      "openIssues": 48,
+      "score": 2449.62,
+      "headline": "impeccable",
+      "summary": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "why": "前回計測から +2471 スター。Rust 製。最終更新 2026-10-29。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "modelcontextprotocol/servers v2.2.0",
+      "titleJa": "modelcontextprotocol/servers v2.2.0",
+      "summary": "## Security: Node.js runtime and CA certificate updates (October 2026)\r\n\r\nOn October 20, 2026, eMudhra disclosed that the private keys for eight of its interme…",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-28T20:57:13.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 87.1
+    },
+    {
+      "rank": 2,
+      "title": "langchain-ai/langchain langchain-core==1.7.1",
+      "titleJa": "langchain-ai/langchain langchain-core==1.7.1",
+      "summary": "Changes since langchain-core==1.7.0\n\nrelease(core): version 1.7.1 (#41548)\nfix(core): preserve gateway tracing metadata in v3 streams (#41504)\nfix(core): escap…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-28T15:00:02.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 80.1
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.41.0",
+      "titleJa": "openai/openai-python v3.41.0",
+      "summary": "## [3.41.0](https://github.com/openai/openai-python/compare/v3.40.0...v3.41.0) (2026-10-28)\n\n\n### Features\n\n* **api:** accept typed references in Realtime resp…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-28T22:26:54.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 75.8
+    },
+    {
+      "rank": 4,
+      "title": "ollama/ollama v0.40.13",
+      "titleJa": "ollama/ollama v0.40.13",
+      "summary": "## LFM3 on Linux and Windows\r\n\r\nLiquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-28T19:55:04.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 70.6
+    },
+    {
+      "rank": 5,
       "title": "huggingface/transformers v5.21",
       "titleJa": "huggingface/transformers v5.21",
       "summary": "# Release v5.21.0\r\n\r\n\r\n## New Model additions\r\n\r\n### MiniCPM-OCR\r\n\r\nMiniCPM-OCR is a document-understanding model from OpenBMB's MiniCPM-V family. It keeps the…",
@@ -123,10 +184,10 @@
         "model",
         "research"
       ],
-      "score": 77.8
+      "score": 65.8
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "ollama/ollama v0.40.12",
       "titleJa": "ollama/ollama v0.40.12",
       "summary": "## Liquid AI LFM3\r\n\r\n[LFM3](https://ollama.com/library/lfm3) is Liquid AI's new family of small models built for local agents, tool calling, and structured out…",
@@ -140,10 +201,10 @@
         "feature",
         "model"
       ],
-      "score": 76.8
+      "score": 64.7
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "langchain-ai/langchain langchain-anthropic==1.7.7",
       "titleJa": "langchain-ai/langchain langchain-anthropic==1.7.7",
       "summary": "Changes since langchain-anthropic==1.7.6\n\nrelease(anthropic): 1.7.7 (#41538)\nfix(anthropic): trace resolved reasoning effort (#41536)\nchore(infra): relax third…",
@@ -155,10 +216,74 @@
       "tags": [
         "version"
       ],
-      "score": 76.6
+      "score": 64.5
     },
     {
-      "rank": 4,
+      "rank": 8,
+      "title": "n8n-io/n8n n8n@1.123.89",
+      "titleJa": "n8n-io/n8n n8n@1.123.89",
+      "summary": "## [1.123.89](https://github.com/n8n-io/n8n/compare/n8n@1.123.88...n8n@1.123.89) (2026-10-28)\n\n\n### Bug Fixes\n\n* **Google Drive Node:** Fix infinite pagination…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.89",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-28T07:28:11.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.4
+    },
+    {
+      "rank": 9,
+      "title": "n8n-io/n8n n8n@2.45.5",
+      "titleJa": "n8n-io/n8n n8n@2.45.5",
+      "summary": "## [2.45.5](https://github.com/n8n-io/n8n/compare/n8n@2.45.4...n8n@2.45.5) (2026-10-28)\n\n\n### Bug Fixes\n\n* **core:** Keep the ExpressionError name in minified…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.5",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-28T07:16:05.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 64.3
+    },
+    {
+      "rank": 10,
+      "title": "Quoting Ted Sanders",
+      "titleJa": "Quoting Ted Sanders",
+      "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=50248124#50249160\"><p>In general, LLM performance is incredibly multidimensional. There's no guarantee o…",
+      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-28T23:23:21.000Z",
+      "tags": [
+        "release",
+        "model"
+      ],
+      "score": 62.3
+    },
+    {
+      "rank": 11,
+      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "titleJa": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "summary": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on…",
+      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-28T20:03:00.000Z",
+      "tags": [
+        "release",
+        "model",
+        "research"
+      ],
+      "score": 60.6
+    },
+    {
+      "rank": 12,
       "title": "openai/openai-python v3.40.0",
       "titleJa": "openai/openai-python v3.40.0",
       "summary": "## [3.40.0](https://github.com/openai/openai-python/compare/v3.39.0...v3.40.0) (2026-10-27)\n\n\n### Features\n\n* **api:** add prompt cache breakpoint TTL options…",
@@ -171,143 +296,12 @@
         "version",
         "feature"
       ],
-      "score": 72.5
-    },
-    {
-      "rank": 5,
-      "title": "comfyanonymous/ComfyUI v0.43.0",
-      "titleJa": "comfyanonymous/ComfyUI v0.43.0",
-      "summary": "## What's Changed\r\n* model_prefetch: syncrhonize all graph cleanups by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/17178\r\n* Add rope scaling suppor…",
-      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-27T02:40:46.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 70
-    },
-    {
-      "rank": 6,
-      "title": "open-webui/open-webui v0.12.4",
-      "titleJa": "open-webui/open-webui v0.12.4",
-      "summary": "### Added\n\n- 🎯 **Load selected skills on demand.** Administrators can turn on \"Load selected skills on demand\" under Admin Settings > General or set \"ENABLE_S…",
-      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.4",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-25T08:07:13.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 64.8
-    },
-    {
-      "rank": 7,
-      "title": "langchain-ai/langchain langchain-openai==1.7.3",
-      "titleJa": "langchain-ai/langchain langchain-openai==1.7.3",
-      "summary": "Changes since langchain-openai==1.7.2\n\ntest(openai): use current lightweight model in integration tests (#41509)\nrelease(openai): 1.7.3 (#41506)\nchore(model-pr…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.3",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-26T23:08:48.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 64.3
-    },
-    {
-      "rank": 8,
-      "title": "GPT-6.1 Terra",
-      "titleJa": "GPT-6.1 Terra",
-      "summary": "<p><strong><a href=\"https://openai.com/index/introducing-gpt-6-1-terra/\">GPT-6.1 Terra</a></strong></p> It's always interesting to note which aspects of a new…",
-      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-26T23:53:07.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 60.6
-    },
-    {
-      "rank": 9,
-      "title": "openai/openai-python v3.39.0",
-      "titleJa": "openai/openai-python v3.39.0",
-      "summary": "## [3.39.0](https://github.com/openai/openai-python/compare/v3.38.0...v3.39.0) (2026-10-26)\n\n\n### Features\n\n* **api:** add gpt-6.1-terra model identifier ([#41…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.39.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-26T19:14:00.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 58.3
-    },
-    {
-      "rank": 10,
-      "title": "openai/openai-python v3.38.0",
-      "titleJa": "openai/openai-python v3.38.0",
-      "summary": "## [3.38.0](https://github.com/openai/openai-python/compare/v3.37.0...v3.38.0) (2026-10-25)\n\n\n### Features\n\n* **api:** add delegation controls and prompt cache…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.38.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-26T16:35:03.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 57
-    },
-    {
-      "rank": 11,
-      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-      "titleJa": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-      "summary": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-      "url": "https://www.brangus.io/survival-llm",
-      "discussion": "https://news.ycombinator.com/item?id=50264853",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-10-27T19:55:06Z",
-      "tags": [
-        "model"
-      ],
-      "score": 54.6
-    },
-    {
-      "rank": 12,
-      "title": "Retell uses OpenAI models to help power 100M monthly calls",
-      "titleJa": "Retell uses OpenAI models to help power 100M monthly calls",
-      "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
-      "url": "https://openai.com/index/retell-ai",
-      "discussion": null,
-      "source": "OpenAI",
-      "sourceType": "feed",
-      "publishedAt": "2026-10-27T15:00:00.000Z",
-      "tags": [
-        "model",
-        "research"
-      ],
-      "score": 50.2
+      "score": 60.4
     }
   ],
   "stats": {
-    "repoCandidates": 269,
-    "newsCandidates": 2486,
+    "repoCandidates": 270,
+    "newsCandidates": 2495,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

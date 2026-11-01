@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T06:36:37.673Z",
-  "generatedAtLocal": "2026-10-31 14:36",
-  "dateLocal": "2026-10-31",
+  "generatedAt": "2026-11-01T07:07:26.728Z",
+  "generatedAtLocal": "2026-11-01 15:07",
+  "dateLocal": "2026-11-01",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-10-31 14:36 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、thedotmack/claude-mem の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-01 15:07 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、deepseek-ai/dsh-superagent-prototype、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 10 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,42 +18,64 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 413057,
-      "starsDelta": 4015,
-      "starsPerDay": 4044.6,
+      "stars": 416264,
+      "starsDelta": 3207,
+      "starsPerDay": 3139.8,
       "measured": true,
-      "forks": 103328,
+      "forks": 104092,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
-        "ai-agents",
-        "binary-analysis",
+        "ai",
+        "android",
         "claude-code",
         "cli",
-        "codex",
-        "cordis",
-        "decompiler"
+        "cpp",
+        "dsh-plugin",
+        "html"
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-10-31T06:36:31Z",
-      "openIssues": 1394,
-      "score": 4044.59,
+      "pushedAt": "2026-11-01T06:54:31Z",
+      "openIssues": 1519,
+      "score": 3138.66,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +4015 スター。TypeScript 製。最終更新 2026-10-31。"
+      "why": "前回計測から +3207 スター。TypeScript 製。最終更新 2026-11-01。"
     },
     {
       "rank": 2,
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "homepage": null,
+      "description": "Towards a More Autonomous Agent System",
+      "stars": 4064,
+      "starsDelta": null,
+      "starsPerDay": 2438.4,
+      "measured": false,
+      "forks": 377,
+      "language": "TypeScript",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-10-31T09:32:46Z",
+      "pushedAt": "2026-10-31T12:05:51Z",
+      "openIssues": 0,
+      "score": 2955.05,
+      "headline": "dsh-superagent-prototype",
+      "summary": "Towards a More Autonomous Agent System",
+      "why": "平均 2438.4 スター/日ペース。TypeScript 製。最終更新 2026-10-31。"
+    },
+    {
+      "rank": 3,
       "name": "Ebony-Vinyl/dsh-our-free-model",
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 53221,
-      "starsDelta": 1705,
-      "starsPerDay": 1717.6,
+      "stars": 54837,
+      "starsDelta": 1616,
+      "starsPerDay": 1582.1,
       "measured": true,
-      "forks": 1456,
+      "forks": 1510,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -67,43 +89,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-10-31T04:39:48Z",
-      "openIssues": 90,
-      "score": 2140.02,
+      "pushedAt": "2026-11-01T04:38:23Z",
+      "openIssues": 103,
+      "score": 1969.52,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1705 スター。JavaScript 製。最終更新 2026-10-31。"
-    },
-    {
-      "rank": 3,
-      "name": "thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "homepage": "https://claude-mem.ai",
-      "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "stars": 106662,
-      "starsDelta": 1603,
-      "starsPerDay": 1614.8,
-      "measured": true,
-      "forks": 9384,
-      "language": "TypeScript",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-memory",
-        "anthropic",
-        "artificial-intelligence",
-        "chromadb",
-        "claude",
-        "claude-agent-sdk"
-      ],
-      "license": "Apache-2.0",
-      "createdAt": "2025-08-31T20:50:03Z",
-      "pushedAt": "2026-10-31T02:09:54Z",
-      "openIssues": 141,
-      "score": 1602.96,
-      "headline": "claude-mem",
-      "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context…",
-      "why": "前回計測から +1603 スター。TypeScript 製。最終更新 2026-10-31。"
+      "why": "前回計測から +1616 スター。JavaScript 製。最終更新 2026-11-01。"
     }
   ],
   "news": [
@@ -121,7 +112,7 @@
         "version",
         "feature"
       ],
-      "score": 76.9
+      "score": 64.7
     },
     {
       "rank": 2,
@@ -139,7 +130,7 @@
         "model",
         "research"
       ],
-      "score": 75.8
+      "score": 63.6
     },
     {
       "rank": 3,
@@ -154,7 +145,7 @@
       "tags": [
         "version"
       ],
-      "score": 69.5
+      "score": 57.2
     },
     {
       "rank": 4,
@@ -171,7 +162,7 @@
         "feature",
         "model"
       ],
-      "score": 69.3
+      "score": 57
     },
     {
       "rank": 5,
@@ -186,7 +177,7 @@
       "tags": [
         "version"
       ],
-      "score": 65.1
+      "score": 52.8
     },
     {
       "rank": 6,
@@ -201,7 +192,7 @@
       "tags": [
         "version"
       ],
-      "score": 64.9
+      "score": 52.6
     },
     {
       "rank": 7,
@@ -217,10 +208,25 @@
         "version",
         "feature"
       ],
-      "score": 64
+      "score": 51.7
     },
     {
       "rank": 8,
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "titleJa": "Malware uses LLMs to rank victims by how much they're worth",
+      "summary": "Malware uses LLMs to rank victims by how much they're worth",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+      "discussion": "https://news.ycombinator.com/item?id=50316531",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-31T14:29:03Z",
+      "tags": [
+        "model"
+      ],
+      "score": 51.7
+    },
+    {
+      "rank": 9,
       "title": "langchain-ai/langchain langchain-core==1.7.3",
       "titleJa": "langchain-ai/langchain langchain-core==1.7.3",
       "summary": "Changes since langchain-core==1.7.2\n\nrelease(core): 1.7.3 (#41564)",
@@ -232,26 +238,25 @@
       "tags": [
         "version"
       ],
-      "score": 63.2
-    },
-    {
-      "rank": 9,
-      "title": "modelcontextprotocol/servers v2.2.0",
-      "titleJa": "modelcontextprotocol/servers v2.2.0",
-      "summary": "## Security: Node.js runtime and CA certificate updates (October 2026)\r\n\r\nOn October 20, 2026, eMudhra disclosed that the private keys for eight of its interme…",
-      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-28T20:57:13.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 63.2
+      "score": 50.9
     },
     {
       "rank": 10,
+      "title": "How We Took Over ChatGPT Accounts",
+      "titleJa": "How We Took Over ChatGPT Accounts",
+      "summary": "<p><strong><a href=\"https://www.parameter.ai/labs/we-found-a-gap-at-openai\">How We Took Over ChatGPT Accounts</a></strong></p> Parameter Labs describe an explo…",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-31T23:15:22.000Z",
+      "tags": [
+        "model"
+      ],
+      "score": 50.1
+    },
+    {
+      "rank": 11,
       "title": "langchain-ai/langchain langchain-core==1.7.2",
       "titleJa": "langchain-ai/langchain langchain-core==1.7.2",
       "summary": "Changes since langchain-core==1.7.1\n\nrelease(core): 1.7.2 (#41562)\nfeat(core): add `add_notification_metadata` and `get_notification_metadata` (#41540)\nfix(cor…",
@@ -263,43 +268,28 @@
       "tags": [
         "version"
       ],
-      "score": 62.2
-    },
-    {
-      "rank": 11,
-      "title": "huggingface/transformers v5.21.1",
-      "titleJa": "huggingface/transformers v5.21.1",
-      "summary": "# Patch release v5.21.1 \r\n\r\n** Fix rope_scaling setter for configs that assign it during init (#50080 ) \r\n\r\nWe broke remote code loading in vllm, this fixes it…",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-29T08:35:02.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 57
+      "score": 50
     },
     {
       "rank": 12,
-      "title": "langchain-ai/langchain langchain-core==1.7.1",
-      "titleJa": "langchain-ai/langchain langchain-core==1.7.1",
-      "summary": "Changes since langchain-core==1.7.0\n\nrelease(core): version 1.7.1 (#41548)\nfix(core): preserve gateway tracing metadata in v3 streams (#41504)\nfix(core): escap…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.1",
+      "title": "datasette-llm 0.1a9",
+      "titleJa": "datasette-llm 0.1a9",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a9\">datasette-llm 0.1a9</a></p> <p>I have some big upgrades to…",
+      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-10-28T15:00:02.000Z",
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-31T22:10:01.000Z",
       "tags": [
-        "version"
+        "release",
+        "model"
       ],
-      "score": 56.2
+      "score": 49.5
     }
   ],
   "stats": {
-    "repoCandidates": 268,
-    "newsCandidates": 2512,
+    "repoCandidates": 269,
+    "newsCandidates": 2501,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

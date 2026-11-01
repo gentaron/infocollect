@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-01T07:07:26.728Z",
+  "generatedAtLocal": "2026-11-01 15:07",
+  "dateLocal": "2026-11-01",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-01 15:07 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、deepseek-ai/dsh-superagent-prototype、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 10 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 416264,
+      "starsDelta": 3207,
+      "starsPerDay": 3139.8,
+      "measured": true,
+      "forks": 104092,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-01T06:54:31Z",
+      "openIssues": 1519,
+      "score": 3138.66,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +3207 スター。TypeScript 製。最終更新 2026-11-01。"
+    },
+    {
+      "rank": 2,
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "homepage": null,
+      "description": "Towards a More Autonomous Agent System",
+      "stars": 4064,
+      "starsDelta": null,
+      "starsPerDay": 2438.4,
+      "measured": false,
+      "forks": 377,
+      "language": "TypeScript",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-10-31T09:32:46Z",
+      "pushedAt": "2026-10-31T12:05:51Z",
+      "openIssues": 0,
+      "score": 2955.05,
+      "headline": "dsh-superagent-prototype",
+      "summary": "Towards a More Autonomous Agent System",
+      "why": "平均 2438.4 スター/日ペース。TypeScript 製。最終更新 2026-10-31。"
+    },
+    {
+      "rank": 3,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 54837,
+      "starsDelta": 1616,
+      "starsPerDay": 1582.1,
+      "measured": true,
+      "forks": 1510,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-01T04:38:23Z",
+      "openIssues": 103,
+      "score": 1969.52,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1616 スター。JavaScript 製。最終更新 2026-11-01。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "openai/openai-python v3.42.0",
+      "titleJa": "openai/openai-python v3.42.0",
+      "summary": "## [3.42.0](https://github.com/openai/openai-python/compare/v3.41.0...v3.42.0) (2026-10-31)\n\n\n### Features\n\n* **api:** add agent context compaction settings ([…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.42.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-31T00:26:41.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 64.7
+    },
+    {
+      "rank": 2,
+      "title": "huggingface/transformers v5.22.0",
+      "titleJa": "huggingface/transformers v5.22.0",
+      "summary": "## New Models\r\n\r\n### Mistral Large 4 (Le Chonk)\r\n\r\n<img width=\"1329\" height=\"780\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1cff9ca7-19e3-462…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-29T14:15:39.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "research"
+      ],
+      "score": 63.6
+    },
+    {
+      "rank": 3,
+      "title": "huggingface/transformers v5.22.1",
+      "titleJa": "huggingface/transformers v5.22.1",
+      "summary": "# Patch release v5.22.1\r\n\r\nWe just had to fix the documentation! \r\n\r\n** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) f…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-30T09:36:03.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 57.2
+    },
+    {
+      "rank": 4,
+      "title": "open-webui/open-webui v0.12.5",
+      "titleJa": "open-webui/open-webui v0.12.5",
+      "summary": "### Added\n\n- 🧭 **Analytics session explorer.** Administrators can now open a Sessions tab in Admin Analytics that lists each chat with its tokens, responses,…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.5",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-29T09:08:03.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 57
+    },
+    {
+      "rank": 5,
+      "title": "n8n-io/n8n n8n@1.123.91",
+      "titleJa": "n8n-io/n8n n8n@1.123.91",
+      "summary": "## [1.123.91](https://github.com/n8n-io/n8n/compare/n8n@1.123.90...n8n@1.123.91) (2026-10-30)\n\n\n### Bug Fixes\n\n* **core:** Fix $('Node') expressions returning…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.91",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-30T08:44:27.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 52.8
+    },
+    {
+      "rank": 6,
+      "title": "n8n-io/n8n n8n@2.45.7",
+      "titleJa": "n8n-io/n8n n8n@2.45.7",
+      "summary": "## [2.45.7](https://github.com/n8n-io/n8n/compare/n8n@2.45.6...n8n@2.45.7) (2026-10-30)\n\n\n### Bug Fixes\n\n* **core:** Require execution:read when workflow-scope…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.7",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-30T08:24:56.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 52.6
+    },
+    {
+      "rank": 7,
+      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+      "titleJa": "Apple Intelligence is finally coming to China with iOS 27.3",
+      "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelli…",
+      "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-30T22:32:53.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 51.7
+    },
+    {
+      "rank": 8,
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "titleJa": "Malware uses LLMs to rank victims by how much they're worth",
+      "summary": "Malware uses LLMs to rank victims by how much they're worth",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+      "discussion": "https://news.ycombinator.com/item?id=50316531",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-31T14:29:03Z",
+      "tags": [
+        "model"
+      ],
+      "score": 51.7
+    },
+    {
+      "rank": 9,
+      "title": "langchain-ai/langchain langchain-core==1.7.3",
+      "titleJa": "langchain-ai/langchain langchain-core==1.7.3",
+      "summary": "Changes since langchain-core==1.7.2\n\nrelease(core): 1.7.3 (#41564)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-29T20:56:12.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 50.9
+    },
+    {
+      "rank": 10,
+      "title": "How We Took Over ChatGPT Accounts",
+      "titleJa": "How We Took Over ChatGPT Accounts",
+      "summary": "<p><strong><a href=\"https://www.parameter.ai/labs/we-found-a-gap-at-openai\">How We Took Over ChatGPT Accounts</a></strong></p> Parameter Labs describe an explo…",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-31T23:15:22.000Z",
+      "tags": [
+        "model"
+      ],
+      "score": 50.1
+    },
+    {
+      "rank": 11,
+      "title": "langchain-ai/langchain langchain-core==1.7.2",
+      "titleJa": "langchain-ai/langchain langchain-core==1.7.2",
+      "summary": "Changes since langchain-core==1.7.1\n\nrelease(core): 1.7.2 (#41562)\nfeat(core): add `add_notification_metadata` and `get_notification_metadata` (#41540)\nfix(cor…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-29T19:04:29.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 50
+    },
+    {
+      "rank": 12,
+      "title": "datasette-llm 0.1a9",
+      "titleJa": "datasette-llm 0.1a9",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a9\">datasette-llm 0.1a9</a></p> <p>I have some big upgrades to…",
+      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-10-31T22:10:01.000Z",
+      "tags": [
+        "release",
+        "model"
+      ],
+      "score": 49.5
+    }
+  ],
+  "stats": {
+    "repoCandidates": 269,
+    "newsCandidates": 2501,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

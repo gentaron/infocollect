@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-02T07:12:07.374Z",
+  "generatedAtLocal": "2026-11-02 15:12",
+  "dateLocal": "2026-11-02",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-02 15:12 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/dsh-superagent-prototype、morluto/rea、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 3 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "homepage": null,
+      "description": "Towards a More Autonomous Agent System",
+      "stars": 9880,
+      "starsDelta": 5816,
+      "starsPerDay": 5797.1,
+      "measured": true,
+      "forks": 1010,
+      "language": "TypeScript",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-10-31T09:32:46Z",
+      "pushedAt": "2026-10-31T12:05:51Z",
+      "openIssues": 0,
+      "score": 6769.82,
+      "headline": "dsh-superagent-prototype",
+      "summary": "Towards a More Autonomous Agent System",
+      "why": "前回計測から +5816 スター。TypeScript 製。最終更新 2026-10-31。"
+    },
+    {
+      "rank": 2,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 419938,
+      "starsDelta": 3674,
+      "starsPerDay": 3662.1,
+      "measured": true,
+      "forks": 104873,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-02T07:11:58Z",
+      "openIssues": 1634,
+      "score": 3662.02,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +3674 スター。TypeScript 製。最終更新 2026-11-02。"
+    },
+    {
+      "rank": 3,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 56260,
+      "starsDelta": 1423,
+      "starsPerDay": 1418.4,
+      "measured": true,
+      "forks": 1541,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-01T04:38:23Z",
+      "openIssues": 110,
+      "score": 1698.66,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1423 スター。JavaScript 製。最終更新 2026-11-01。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "openai/openai-python v3.42.1",
+      "titleJa": "openai/openai-python v3.42.1",
+      "summary": "## [3.42.1](https://github.com/openai/openai-python/compare/v3.42.0...v3.42.1) (2026-11-01)\n\n\n### Bug Fixes\n\n* **api:** preserve Responses WebSocket connection…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.42.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-01T20:56:19.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 70.9
+    },
+    {
+      "rank": 2,
+      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "titleJa": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "summary": "I have been researching what the ultimate diff tool would look like, based on actual diffs in open source repositories. OmniDiff can diff: code (25 languages),…",
+      "url": "https://github.com/ivankovic/omnidiff",
+      "discussion": "https://news.ycombinator.com/item?id=50325253",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-01T13:02:30Z",
+      "tags": [
+        "research"
+      ],
+      "score": 52.6
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.42.0",
+      "titleJa": "openai/openai-python v3.42.0",
+      "summary": "## [3.42.0](https://github.com/openai/openai-python/compare/v3.41.0...v3.42.0) (2026-10-31)\n\n\n### Features\n\n* **api:** add agent context compaction settings ([…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.42.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-31T00:26:41.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 52.6
+    },
+    {
+      "rank": 4,
+      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "titleJa": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "summary": "Saw Karpathy&#x27;s HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5). It&#x27;s ~16.5k books that at least two different HN…",
+      "url": "https://hackerbooks.org",
+      "discussion": "https://news.ycombinator.com/item?id=50326821",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-01T15:58:28Z",
+      "tags": [
+        "model"
+      ],
+      "score": 52.4
+    },
+    {
+      "rank": 5,
+      "title": "If in doubt, delete the uv.lock file",
+      "titleJa": "If in doubt, delete the uv.lock file",
+      "summary": "<p>I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:</p> <p><stron…",
+      "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-01T23:24:22.000Z",
+      "tags": [
+        "news"
+      ],
+      "score": 50.1
+    },
+    {
+      "rank": 6,
+      "title": "huggingface/transformers v5.22.1",
+      "titleJa": "huggingface/transformers v5.22.1",
+      "summary": "# Patch release v5.22.1\r\n\r\nWe just had to fix the documentation! \r\n\r\n** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) f…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-10-30T09:36:03.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 45.2
+    },
+    {
+      "rank": 7,
+      "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "titleJa": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "summary": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "discussion": "https://news.ycombinator.com/item?id=50325662",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-01T13:47:24Z",
+      "tags": [
+        "news"
+      ],
+      "score": 45
+    },
+    {
+      "rank": 8,
+      "title": "Quoting Kyle Kingsbury",
+      "titleJa": "Quoting Kyle Kingsbury",
+      "summary": "<blockquote cite=\"https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs\"><p>More broadly, the use of LLMs erodes trust in documentation, in software, and i…",
+      "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-01T16:49:04.000Z",
+      "tags": [
+        "model"
+      ],
+      "score": 42.8
+    },
+    {
+      "rank": 9,
+      "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+      "titleJa": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+      "summary": "Data centers are deeply unpopular. But what if we called them something else?",
+      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-01T21:55:23.000Z",
+      "tags": [
+        "news"
+      ],
+      "score": 42.4
+    },
+    {
+      "rank": 10,
+      "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
+      "titleJa": "AI can make tech CEOs’ lives easier. What about everyone else?",
+      "summary": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
+      "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-01T20:57:58.000Z",
+      "tags": [
+        "news"
+      ],
+      "score": 41.9
+    },
+    {
+      "rank": 11,
+      "title": "ChatGPT and Codex usage limits merging",
+      "titleJa": "ChatGPT and Codex usage limits merging",
+      "summary": "ChatGPT and Codex usage limits merging",
+      "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "discussion": "https://news.ycombinator.com/item?id=50320588",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-10-31T21:49:07Z",
+      "tags": [
+        "model"
+      ],
+      "score": 41.7
+    },
+    {
+      "rank": 12,
+      "title": "So I guess everyone uses LLMs to think now",
+      "titleJa": "So I guess everyone uses LLMs to think now",
+      "summary": "So I guess everyone uses LLMs to think now",
+      "url": "https://eva.ac/blog/llms",
+      "discussion": "https://news.ycombinator.com/item?id=50330253",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-01T21:49:04Z",
+      "tags": [
+        "model"
+      ],
+      "score": 41
+    }
+  ],
+  "stats": {
+    "repoCandidates": 269,
+    "newsCandidates": 2499,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

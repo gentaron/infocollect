@@ -1,57 +1,67 @@
-# 2026-11-02 の AI ダイジェスト
+# 2026-11-03 の AI ダイジェスト
 
-2026-11-02 15:12 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/dsh-superagent-prototype、morluto/rea、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 3 件が新バージョン・新機能の発表でした。
+2026-11-03 15:32 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/dsh-superagent-prototype、morluto/rea、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) — ★9,880
+### 1. [deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) — ★14,643
 
 Towards a More Autonomous Agent System
 
-- 伸び: +5816 スター
-- 選定理由: 前回計測から +5816 スター。TypeScript 製。最終更新 2026-10-31。
+- 伸び: +4763 スター
+- 選定理由: 前回計測から +4763 スター。TypeScript 製。最終更新 2026-10-31。
 
-### 2. [morluto/rea](https://github.com/morluto/rea) — ★419,938
+### 2. [morluto/rea](https://github.com/morluto/rea) — ★424,166
 
 Reverse engineer anything with agents, from app behavior down to native binaries.
 
-- 伸び: +3674 スター
-- 選定理由: 前回計測から +3674 スター。TypeScript 製。最終更新 2026-11-02。
+- 伸び: +4228 スター
+- 選定理由: 前回計測から +4228 スター。TypeScript 製。最終更新 2026-11-03。
 
-### 3. [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) — ★56,260
+### 3. [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) — ★57,943
 
 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…
 
-- 伸び: +1423 スター
-- 選定理由: 前回計測から +1423 スター。JavaScript 製。最終更新 2026-11-01。
+- 伸び: +1683 スター
+- 選定理由: 前回計測から +1683 スター。JavaScript 製。最終更新 2026-11-02。
 
 ## AI ニュース（新機能・新バージョン中心）
 
+- [vllm-project/vllm v0.33.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3) — GitHub Releases｜# v0.33.0
+
+## Highlights
+
+This release features 927 commits from 389 contributors (122 new)!
+
+* **New models**: Reflection Beam-1.0 (501B MoE, 23B active…
+- [langchain-ai/langchain langchain==1.4.8](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.8) — GitHub Releases｜> [!WARNING]
+> **Python 3.10 support will be dropped in `langchain-core` 1.8.0 and `langchain` 1.5.0.** The current minor versions are the last to support Pyth…
+- [anthropics/anthropic-sdk-python v2.4.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0) — GitHub Releases｜### Features
+
+* **api:** add GA methods for analytics, spend limits and RBAC
+* **api:** add named beta types for unified metrics and RBAC delete responses
+* **…
+- [ollama/ollama v0.40.14](https://github.com/ollama/ollama/releases/tag/v0.40.14) — GitHub Releases｜## What's Changed
+* `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap…
+- [langchain-ai/langchain langchain-core==1.7.4](https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.4) — GitHub Releases｜> [!WARNING]
+> **Python 3.10 support will be dropped in `langchain-core` 1.8.0 and `langchain` 1.5.0.** The current minor versions are the last to support Pyth…
+- [langchain-ai/langchain langchain-anthropic==1.7.9](https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.9) — GitHub Releases｜Changes since langchain-anthropic==1.7.8
+
+release(anthropic): 1.7.9 (#41644)
+fix(anthropic): report streamed content-block tokens to callbacks (#41643)
+- [n8n-io/n8n n8n@1.123.92](https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.92) — GitHub Releases｜## [1.123.92](https://github.com/n8n-io/n8n/compare/n8n@1.123.91...n8n@1.123.92) (2026-11-02)
+
+<!-- This is an auto-generated description by cubic. -->
+<a href…
+- [llm 0.37](https://simonwillison.net/2026/Nov/2/llm) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/llm/releases/tag/0.37">llm 0.37</a></p> <p>There's a <em>lot</em> of stuff in this new release…
+- [Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432) — Hacker News｜Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks
 - [openai/openai-python v3.42.1](https://github.com/openai/openai-python/releases/tag/v3.42.1) — GitHub Releases｜## [3.42.1](https://github.com/openai/openai-python/compare/v3.42.0...v3.42.1) (2026-11-01)
 
 
 ### Bug Fixes
 
 * **api:** preserve Responses WebSocket connection…
-- [Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust](https://github.com/ivankovic/omnidiff) — Hacker News｜I have been researching what the ultimate diff tool would look like, based on actual diffs in open source repositories. OmniDiff can diff: code (25 languages),…
-- [openai/openai-python v3.42.0](https://github.com/openai/openai-python/releases/tag/v3.42.0) — GitHub Releases｜## [3.42.0](https://github.com/openai/openai-python/compare/v3.41.0...v3.42.0) (2026-10-31)
+- [October sponsors-only newsletter](https://simonwillison.net/2026/Nov/3/october-newsletter) — Simon Willison｜<p>I sent out the October edition of my <a href="https://github.com/sponsors/simonw/">sponsors-only monthly newsletter</a>. If you are a sponsor (or start a sp…
+- [Rewarding defenders with bigger bug bounties](https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties) — OpenAI｜OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.
 
-
-### Features
-
-* **api:** add agent context compaction settings ([…
-- [Show HN: HackerBooks – HackerTube, but for books mentioned on HN](https://hackerbooks.org) — Hacker News｜Saw Karpathy&#x27;s HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5). It&#x27;s ~16.5k books that at least two different HN…
-- [If in doubt, delete the uv.lock file](https://simonwillison.net/2026/Nov/1/delete-uv-lock-first) — Simon Willison｜<p>I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:</p> <p><stron…
-- [huggingface/transformers v5.22.1](https://github.com/huggingface/transformers/releases/tag/v5.22.1) — GitHub Releases｜# Patch release v5.22.1
-
-We just had to fix the documentation! 
-
-** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) f…
-- [AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy](https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy) — Hacker News｜AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy
-- [Quoting Kyle Kingsbury](https://simonwillison.net/2026/Nov/1/kyle-kingsbury) — Simon Willison｜<blockquote cite="https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"><p>More broadly, the use of LLMs erodes trust in documentation, in software, and i…
-- [OpenAI might rebrand its data centers as ‘AI compute campuses’](https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses) — TechCrunch AI｜Data centers are deeply unpopular. But what if we called them something else?
-- [AI can make tech CEOs’ lives easier. What about everyone else?](https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else) — TechCrunch AI｜On Equity, we discuss why tech CEO statements can seem so tone deaf.
-- [ChatGPT and Codex usage limits merging](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits) — Hacker News｜ChatGPT and Codex usage limits merging
-- [So I guess everyone uses LLMs to think now](https://eva.ac/blog/llms) — Hacker News｜So I guess everyone uses LLMs to think now
-
-_生成: 2026-11-02 15:12 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+_生成: 2026-11-03 15:32 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

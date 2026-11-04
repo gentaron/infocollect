@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-04T07:14:35.370Z",
+  "generatedAtLocal": "2026-11-04 15:14",
+  "dateLocal": "2026-11-04",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-04 15:14 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、deepseek-ai/dsh-superagent-prototype、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 428186,
+      "starsDelta": 4020,
+      "starsPerDay": 4069.7,
+      "measured": true,
+      "forks": 106539,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-04T06:37:47Z",
+      "openIssues": 1731,
+      "score": 4065.53,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +4020 スター。TypeScript 製。最終更新 2026-11-04。"
+    },
+    {
+      "rank": 2,
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "homepage": null,
+      "description": "Towards a More Autonomous Agent System",
+      "stars": 17612,
+      "starsDelta": 2969,
+      "starsPerDay": 3005.7,
+      "measured": true,
+      "forks": 1905,
+      "language": "TypeScript",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-10-31T09:32:46Z",
+      "pushedAt": "2026-11-03T09:29:14Z",
+      "openIssues": 0,
+      "score": 3626.88,
+      "headline": "dsh-superagent-prototype",
+      "summary": "Towards a More Autonomous Agent System",
+      "why": "前回計測から +2969 スター。TypeScript 製。最終更新 2026-11-03。"
+    },
+    {
+      "rank": 3,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 59613,
+      "starsDelta": 1670,
+      "starsPerDay": 1690.7,
+      "measured": true,
+      "forks": 1623,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-04T05:41:27Z",
+      "openIssues": 119,
+      "score": 2107.85,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1670 スター。JavaScript 製。最終更新 2026-11-04。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "comfyanonymous/ComfyUI v0.44.0",
+      "titleJa": "comfyanonymous/ComfyUI v0.44.0",
+      "summary": "## What's Changed\r\n* [Partner Nodes] feat(Patina): add Patina texture nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17384\r\n* [Partner Nodes]…",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-04T01:12:27.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 85
+    },
+    {
+      "rank": 2,
+      "title": "open-webui/open-webui v0.13.0",
+      "titleJa": "open-webui/open-webui v0.13.0",
+      "summary": "### Added\n\n- 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, vo…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-03T12:23:16.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 82.6
+    },
+    {
+      "rank": 3,
+      "title": "vllm-project/vllm v0.33.0rc3",
+      "titleJa": "vllm-project/vllm v0.33.0rc3",
+      "summary": "# v0.33.0\r\n\r\n## Highlights\r\n\r\nThis release features 927 commits from 389 contributors (122 new)!\r\n\r\n* **New models**: Reflection Beam-1.0 (501B MoE, 23B active…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-02T10:10:05.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business",
+        "research"
+      ],
+      "score": 77.5
+    },
+    {
+      "rank": 4,
+      "title": "langchain-ai/langchain langchain-typesafe==0.0.1",
+      "titleJa": "langchain-ai/langchain langchain-typesafe==0.0.1",
+      "summary": "Initial release\n\nrelease(typesafe): 0.0.1 (#41650)\nchore(infra): relax third-party dependency upper bounds (#41407)\nchore(deps): bump certifi from 2026.7.22 to…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-04T00:11:25.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 76.5
+    },
+    {
+      "rank": 5,
+      "title": "openai/openai-python v3.45.0",
+      "titleJa": "openai/openai-python v3.45.0",
+      "summary": "## [3.45.0](https://github.com/openai/openai-python/compare/v3.44.0...v3.45.0) (2026-11-03)\n\n\n### Features\n\n* **api:** add 12-hour Responses caching and cache-…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.45.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-04T02:23:23.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 73.6
+    },
+    {
+      "rank": 6,
+      "title": "openai/openai-python v3.44.0",
+      "titleJa": "openai/openai-python v3.44.0",
+      "summary": "## [3.44.0](https://github.com/openai/openai-python/compare/v3.43.0...v3.44.0) (2026-11-03)\n\n\n### Features\n\n* **api:** add workload identity providers and fede…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.44.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-03T20:20:42.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 70.5
+    },
+    {
+      "rank": 7,
+      "title": "openai/openai-python v3.43.0",
+      "titleJa": "openai/openai-python v3.43.0",
+      "summary": "## [3.43.0](https://github.com/openai/openai-python/compare/v3.42.1...v3.43.0) (2026-11-03)\n\n\n### Features\n\n* **api:** expand Live Responses delegation tools (…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.43.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-03T18:05:44.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 69.4
+    },
+    {
+      "rank": 8,
+      "title": "langchain-ai/langchain langchain==1.4.8",
+      "titleJa": "langchain-ai/langchain langchain==1.4.8",
+      "summary": "> [!WARNING]\n> **Python 3.10 support will be dropped in `langchain-core` 1.8.0 and `langchain` 1.5.0.** The current minor versions are the last to support Pyth…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.8",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-02T15:45:02.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 68.2
+    },
+    {
+      "rank": 9,
+      "title": "anthropics/anthropic-sdk-python v2.4.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.4.0",
+      "summary": "### Features\n\n* **api:** add GA methods for analytics, spend limits and RBAC\n* **api:** add named beta types for unified metrics and RBAC delete responses\n* **…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-02T19:07:19.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 65.9
+    },
+    {
+      "rank": 10,
+      "title": "ollama/ollama v0.40.14",
+      "titleJa": "ollama/ollama v0.40.14",
+      "summary": "## What's Changed\r\n* `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-03T01:40:40.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 65.2
+    },
+    {
+      "rank": 11,
+      "title": "langchain-ai/langchain langchain-core==1.7.4",
+      "titleJa": "langchain-ai/langchain langchain-core==1.7.4",
+      "summary": "> [!WARNING]\n> **Python 3.10 support will be dropped in `langchain-core` 1.8.0 and `langchain` 1.5.0.** The current minor versions are the last to support Pyth…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.4",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-02T15:31:47.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.1
+    },
+    {
+      "rank": 12,
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "titleJa": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "summary": "<p>Yesterday's hot paper was <a href=\"https://rikiyat.github.io/blog/weight-space-programming/\">Sparks of Weight-Space Programming: LLMs can natively read &amp…",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-03T16:29:48.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 52.6
+    }
+  ],
+  "stats": {
+    "repoCandidates": 269,
+    "newsCandidates": 2526,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

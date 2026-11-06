@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T07:41:18.745Z",
-  "generatedAtLocal": "2026-11-05 15:41",
-  "dateLocal": "2026-11-05",
+  "generatedAt": "2026-11-06T07:38:43.945Z",
+  "generatedAtLocal": "2026-11-06 15:38",
+  "dateLocal": "2026-11-06",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-05 15:41 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-06 15:38 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 432060,
-      "starsDelta": 3874,
-      "starsPerDay": 3803.5,
+      "stars": 435530,
+      "starsDelta": 3470,
+      "starsPerDay": 3476.2,
       "measured": true,
-      "forks": 107359,
+      "forks": 108075,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-11-05T07:41:15Z",
-      "openIssues": 1638,
-      "score": 3803.45,
+      "pushedAt": "2026-11-06T07:38:30Z",
+      "openIssues": 1591,
+      "score": 3476.12,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +3874 スター。TypeScript 製。最終更新 2026-11-05。"
+      "why": "前回計測から +3470 スター。TypeScript 製。最終更新 2026-11-06。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 61320,
-      "starsDelta": 1707,
-      "starsPerDay": 1675.9,
+      "stars": 62903,
+      "starsDelta": 1583,
+      "starsPerDay": 1585.8,
       "measured": true,
-      "forks": 1657,
+      "forks": 1709,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -68,11 +68,11 @@
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
       "pushedAt": "2026-11-05T06:24:03Z",
-      "openIssues": 124,
-      "score": 2090.41,
+      "openIssues": 131,
+      "score": 1903.09,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1707 スター。JavaScript 製。最終更新 2026-11-05。"
+      "why": "前回計測から +1583 スター。JavaScript 製。最終更新 2026-11-05。"
     },
     {
       "rank": 3,
@@ -80,11 +80,11 @@
       "url": "https://github.com/deepseek-ai/deepseek-harness",
       "homepage": "https://deepseek.com/harness",
       "description": "DeepSeek Harness: Everything is a Plugin.",
-      "stars": 273079,
-      "starsDelta": 1454,
-      "starsPerDay": 1427.5,
+      "stars": 274241,
+      "starsDelta": 1162,
+      "starsPerDay": 1164.1,
       "measured": true,
-      "forks": 33279,
+      "forks": 33494,
       "language": "TypeScript",
       "topics": [
         "ai-agents",
@@ -96,15 +96,64 @@
       "createdAt": "2026-08-13T11:56:32Z",
       "pushedAt": "2026-11-04T13:06:39Z",
       "openIssues": 0,
-      "score": 1731.24,
+      "score": 1360.55,
       "headline": "deepseek-harness",
       "summary": "DeepSeek Harness: Everything is a Plugin.",
-      "why": "前回計測から +1454 スター。TypeScript 製。最終更新 2026-11-04。"
+      "why": "前回計測から +1162 スター。TypeScript 製。最終更新 2026-11-04。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "langchain-ai/langchain langchain-typesafe==0.0.2",
+      "titleJa": "langchain-ai/langchain langchain-typesafe==0.0.2",
+      "summary": "Changes since langchain-typesafe==0.0.1\n\nrelease(typesafe): 0.0.2 (#41720)\nfeat(typesafe): accept a `classifier` in experimental middleware (#41657)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T22:56:58.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 75.6
+    },
+    {
+      "rank": 2,
+      "title": "anthropics/anthropic-sdk-python v2.6.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.6.0",
+      "summary": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signin…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T18:58:47.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "business"
+      ],
+      "score": 69.7
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.47.0",
+      "titleJa": "openai/openai-python v3.47.0",
+      "summary": "## [3.47.0](https://github.com/openai/openai-python/compare/v3.46.0...v3.47.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add a model option for Responses ([#4249…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.47.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T18:04:10.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 69.2
+    },
+    {
+      "rank": 4,
       "title": "modelcontextprotocol/servers v2.3.0",
       "titleJa": "modelcontextprotocol/servers v2.3.0",
       "summary": "## Packages\r\n\r\n| Package | Version | Registry | In this release |\r\n| --- | --- | --- | --- |\r\n| `@modelcontextprotocol/server-everything` | `2.2.1` | npm | **p…",
@@ -119,10 +168,10 @@
         "model",
         "business"
       ],
-      "score": 78.9
+      "score": 66.9
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "anthropics/anthropic-sdk-python v2.5.0",
       "titleJa": "anthropics/anthropic-sdk-python v2.5.0",
       "summary": "### Features\n\n* **api:** add error details types and new error type values\n* **api:** add ids filter to list workspaces\n* **client:** add error classes for HTT…",
@@ -137,10 +186,10 @@
         "model",
         "business"
       ],
-      "score": 78.4
+      "score": 66.4
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "langchain-ai/langchain langchain-core==1.7.6",
       "titleJa": "langchain-ai/langchain langchain-core==1.7.6",
       "summary": "Changes since langchain-core==1.7.5\n\nrelease(core): 1.7.6 (#41698)\nperf(core): merge streamed `AIMessageChunk`s once when accumulating runnable streams (#41697…",
@@ -152,10 +201,10 @@
       "tags": [
         "version"
       ],
-      "score": 76.3
+      "score": 64.4
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "comfyanonymous/ComfyUI v0.44.0",
       "titleJa": "comfyanonymous/ComfyUI v0.44.0",
       "summary": "## What's Changed\r\n* [Partner Nodes] feat(Patina): add Patina texture nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17384\r\n* [Partner Nodes]…",
@@ -168,10 +217,10 @@
         "version",
         "model"
       ],
-      "score": 72.8
+      "score": 60.8
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "langchain-ai/langchain langchain==1.4.9",
       "titleJa": "langchain-ai/langchain langchain==1.4.9",
       "summary": "Changes since langchain==1.4.8\n\nrelease(langchain): 1.4.9 (#41684)\nchore(deps): require `langchain-core>=1.7.5` for refusal handling (#41682)\nfeat(core): stand…",
@@ -184,10 +233,10 @@
         "version",
         "model"
       ],
-      "score": 72.7
+      "score": 60.7
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "openai/openai-python v3.46.0",
       "titleJa": "openai/openai-python v3.46.0",
       "summary": "## [3.46.0](https://github.com/openai/openai-python/compare/v3.45.0...v3.46.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add Australia, India, and Japan residenc…",
@@ -201,10 +250,10 @@
         "feature",
         "model"
       ],
-      "score": 72.6
+      "score": 60.6
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "open-webui/open-webui v0.13.0",
       "titleJa": "open-webui/open-webui v0.13.0",
       "summary": "### Added\n\n- 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, vo…",
@@ -218,94 +267,44 @@
         "model",
         "research"
       ],
-      "score": 70.3
-    },
-    {
-      "rank": 8,
-      "title": "n8n-io/n8n n8n@2.46.6",
-      "titleJa": "n8n-io/n8n n8n@2.46.6",
-      "summary": "## [2.46.6](https://github.com/n8n-io/n8n/compare/n8n@2.46.5...n8n@2.46.6) (2026-11-04)\n\n\n### Bug Fixes\n\n* Make npm install of n8n work on all platforms again…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.46.6",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-04T13:10:07.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 66.7
-    },
-    {
-      "rank": 9,
-      "title": "vllm-project/vllm v0.33.0rc3",
-      "titleJa": "vllm-project/vllm v0.33.0rc3",
-      "summary": "# v0.33.0\r\n\r\n## Highlights\r\n\r\nThis release features 927 commits from 389 contributors (122 new)!\r\n\r\n* **New models**: Reflection Beam-1.0 (501B MoE, 23B active…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-02T10:10:05.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business",
-        "research"
-      ],
-      "score": 65.2
-    },
-    {
-      "rank": 10,
-      "title": "n8n-io/n8n n8n@2.46.5",
-      "titleJa": "n8n-io/n8n n8n@2.46.5",
-      "summary": "## [2.46.5](https://github.com/n8n-io/n8n/compare/n8n@2.46.4...n8n@2.46.5) (2026-11-04)\n\n\n### Bug Fixes\n\n* **AI Agent Node:** Point the deprecated agent type c…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.46.5",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-04T09:37:35.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 65
+      "score": 58.4
     },
     {
       "rank": 11,
-      "title": "langchain-ai/langchain langchain-typesafe==0.0.1",
-      "titleJa": "langchain-ai/langchain langchain-typesafe==0.0.1",
-      "summary": "Initial release\n\nrelease(typesafe): 0.0.1 (#41650)\nchore(infra): relax third-party dependency upper bounds (#41407)\nchore(deps): bump certifi from 2026.7.22 to…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "titleJa": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-04T00:11:25.000Z",
+      "source": "Google DeepMind",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-05T17:05:16.000Z",
       "tags": [
         "version",
         "model"
       ],
-      "score": 64.2
+      "score": 57.7
     },
     {
       "rank": 12,
-      "title": "openai/openai-python v3.45.0",
-      "titleJa": "openai/openai-python v3.45.0",
-      "summary": "## [3.45.0](https://github.com/openai/openai-python/compare/v3.44.0...v3.45.0) (2026-11-03)\n\n\n### Features\n\n* **api:** add 12-hour Responses caching and cache-…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.45.0",
+      "title": "ollama/ollama v0.40.15",
+      "titleJa": "ollama/ollama v0.40.15",
+      "summary": "## MiMo V2.6\r\n\r\nXiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama.…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
       "discussion": null,
       "source": "GitHub Releases",
       "sourceType": "release",
-      "publishedAt": "2026-11-04T02:23:23.000Z",
+      "publishedAt": "2026-11-03T22:52:31.000Z",
       "tags": [
         "version",
-        "feature"
+        "model"
       ],
-      "score": 61.3
+      "score": 55.6
     }
   ],
   "stats": {
-    "repoCandidates": 270,
-    "newsCandidates": 2538,
+    "repoCandidates": 272,
+    "newsCandidates": 2540,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

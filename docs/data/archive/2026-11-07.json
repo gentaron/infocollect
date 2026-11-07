@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-07T06:49:25.944Z",
+  "generatedAtLocal": "2026-11-07 14:49",
+  "dateLocal": "2026-11-07",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-07 14:49 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 438723,
+      "starsDelta": 3193,
+      "starsPerDay": 3306.3,
+      "measured": true,
+      "forks": 108702,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-07T06:17:45Z",
+      "openIssues": 1617,
+      "score": 3303.33,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +3193 スター。TypeScript 製。最終更新 2026-11-07。"
+    },
+    {
+      "rank": 2,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 64391,
+      "starsDelta": 1488,
+      "starsPerDay": 1540.8,
+      "measured": true,
+      "forks": 1739,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-05T06:24:03Z",
+      "openIssues": 136,
+      "score": 1785.21,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1488 スター。JavaScript 製。最終更新 2026-11-05。"
+    },
+    {
+      "rank": 3,
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "homepage": "https://deepseek.com/harness",
+      "description": "DeepSeek Harness: Everything is a Plugin.",
+      "stars": 275175,
+      "starsDelta": 934,
+      "starsPerDay": 967.1,
+      "measured": true,
+      "forks": 33640,
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "cordis",
+        "dsh",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13T11:56:32Z",
+      "pushedAt": "2026-11-04T13:06:39Z",
+      "openIssues": 0,
+      "score": 1093.08,
+      "headline": "deepseek-harness",
+      "summary": "DeepSeek Harness: Everything is a Plugin.",
+      "why": "前回計測から +934 スター。TypeScript 製。最終更新 2026-11-04。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "huggingface/transformers v5.22.2",
+      "titleJa": "huggingface/transformers v5.22.2",
+      "summary": "# Patch release v5.22.2\r\n\r\nSome in between patch for security and distributed fixes. See the included commits :hugs: \r\n\r\n- [Distributed] Set device_id only for…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-06T15:43:27.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 72.4
+    },
+    {
+      "rank": 2,
+      "title": "langchain-ai/langchain langchain-typesafe==0.0.2",
+      "titleJa": "langchain-ai/langchain langchain-typesafe==0.0.2",
+      "summary": "Changes since langchain-typesafe==0.0.1\n\nrelease(typesafe): 0.0.2 (#41720)\nfeat(typesafe): accept a `classifier` in experimental middleware (#41657)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T22:56:58.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.1
+    },
+    {
+      "rank": 3,
+      "title": "anthropics/anthropic-sdk-python v2.6.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.6.0",
+      "summary": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signin…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T18:58:47.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "business"
+      ],
+      "score": 58.1
+    },
+    {
+      "rank": 4,
+      "title": "openai/openai-python v3.47.0",
+      "titleJa": "openai/openai-python v3.47.0",
+      "summary": "## [3.47.0](https://github.com/openai/openai-python/compare/v3.46.0...v3.47.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add a model option for Responses ([#4249…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.47.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T18:04:10.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 57.6
+    },
+    {
+      "rank": 5,
+      "title": "modelcontextprotocol/servers v2.3.0",
+      "titleJa": "modelcontextprotocol/servers v2.3.0",
+      "summary": "## Packages\r\n\r\n| Package | Version | Registry | In this release |\r\n| --- | --- | --- | --- |\r\n| `@modelcontextprotocol/server-everything` | `2.2.1` | npm | **p…",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.3.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-04T21:28:41.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 55.3
+    },
+    {
+      "rank": 6,
+      "title": "anthropics/anthropic-sdk-python v2.5.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.5.0",
+      "summary": "### Features\n\n* **api:** add error details types and new error type values\n* **api:** add ids filter to list workspaces\n* **client:** add error classes for HTT…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-04T20:27:20.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 54.8
+    },
+    {
+      "rank": 7,
+      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "titleJa": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "summary": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "discussion": "https://news.ycombinator.com/item?id=50397429",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-06T19:48:51Z",
+      "tags": [
+        "news"
+      ],
+      "score": 54.5
+    },
+    {
+      "rank": 8,
+      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+      "titleJa": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+      "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-06T22:53:46.000Z",
+      "tags": [
+        "version",
+        "business"
+      ],
+      "score": 53
+    },
+    {
+      "rank": 9,
+      "title": "langchain-ai/langchain langchain-core==1.7.6",
+      "titleJa": "langchain-ai/langchain langchain-core==1.7.6",
+      "summary": "Changes since langchain-core==1.7.5\n\nrelease(core): 1.7.6 (#41698)\nperf(core): merge streamed `AIMessageChunk`s once when accumulating runnable streams (#41697…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T00:22:12.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 52.8
+    },
+    {
+      "rank": 10,
+      "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+      "titleJa": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+      "summary": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the wor…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-06T23:46:18.000Z",
+      "tags": [
+        "version",
+        "business"
+      ],
+      "score": 52.5
+    },
+    {
+      "rank": 11,
+      "title": "langchain-ai/langchain langchain==1.4.9",
+      "titleJa": "langchain-ai/langchain langchain==1.4.9",
+      "summary": "Changes since langchain==1.4.8\n\nrelease(langchain): 1.4.9 (#41684)\nchore(deps): require `langchain-core>=1.7.5` for refusal handling (#41682)\nfeat(core): stand…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.9",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-04T17:07:37.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 49.1
+    },
+    {
+      "rank": 12,
+      "title": "openai/openai-python v3.46.0",
+      "titleJa": "openai/openai-python v3.46.0",
+      "summary": "## [3.46.0](https://github.com/openai/openai-python/compare/v3.45.0...v3.46.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add Australia, India, and Japan residenc…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-05T00:55:06.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 49
+    }
+  ],
+  "stats": {
+    "repoCandidates": 272,
+    "newsCandidates": 2538,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

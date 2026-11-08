@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T06:49:25.944Z",
-  "generatedAtLocal": "2026-11-07 14:49",
-  "dateLocal": "2026-11-07",
+  "generatedAt": "2026-11-08T06:54:57.277Z",
+  "generatedAtLocal": "2026-11-08 14:54",
+  "dateLocal": "2026-11-08",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-07 14:49 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、deepseek-ai/deepseek-harness の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-08 14:54 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、google/elephant-goldfish-model の 3 件。AI ニュースは 12 件を収集し、うち 6 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 438723,
-      "starsDelta": 3193,
-      "starsPerDay": 3306.3,
+      "stars": 441656,
+      "starsDelta": 2933,
+      "starsPerDay": 2921.8,
       "measured": true,
-      "forks": 108702,
+      "forks": 109251,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-11-07T06:17:45Z",
-      "openIssues": 1617,
-      "score": 3303.33,
+      "pushedAt": "2026-11-08T06:42:55Z",
+      "openIssues": 1609,
+      "score": 2920.78,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +3193 スター。TypeScript 製。最終更新 2026-11-07。"
+      "why": "前回計測から +2933 スター。TypeScript 製。最終更新 2026-11-08。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 64391,
-      "starsDelta": 1488,
-      "starsPerDay": 1540.8,
+      "stars": 65732,
+      "starsDelta": 1341,
+      "starsPerDay": 1335.9,
       "measured": true,
-      "forks": 1739,
+      "forks": 1764,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -67,39 +67,43 @@
       ],
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-11-05T06:24:03Z",
-      "openIssues": 136,
-      "score": 1785.21,
+      "pushedAt": "2026-11-08T06:37:57Z",
+      "openIssues": 141,
+      "score": 1669.04,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1488 スター。JavaScript 製。最終更新 2026-11-05。"
+      "why": "前回計測から +1341 スター。JavaScript 製。最終更新 2026-11-08。"
     },
     {
       "rank": 3,
-      "name": "deepseek-ai/deepseek-harness",
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "homepage": "https://deepseek.com/harness",
-      "description": "DeepSeek Harness: Everything is a Plugin.",
-      "stars": 275175,
-      "starsDelta": 934,
-      "starsPerDay": 967.1,
+      "name": "google/elephant-goldfish-model",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "homepage": "https://egm.dev",
+      "description": "Open-source plugin for designing and reviewing software with agents",
+      "stars": 14163,
+      "starsDelta": 965,
+      "starsPerDay": 961.3,
       "measured": true,
-      "forks": 33640,
-      "language": "TypeScript",
+      "forks": 1042,
+      "language": "Python",
       "topics": [
+        "agent-skills",
         "ai-agents",
-        "cordis",
-        "dsh",
-        "dsh-plugin"
+        "antigravity",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "codex-plugin"
       ],
-      "license": "MIT",
-      "createdAt": "2026-08-13T11:56:32Z",
-      "pushedAt": "2026-11-04T13:06:39Z",
-      "openIssues": 0,
-      "score": 1093.08,
-      "headline": "deepseek-harness",
-      "summary": "DeepSeek Harness: Everything is a Plugin.",
-      "why": "前回計測から +934 スター。TypeScript 製。最終更新 2026-11-04。"
+      "license": "Apache-2.0",
+      "createdAt": "2026-09-13T16:31:06Z",
+      "pushedAt": "2026-11-08T01:58:36Z",
+      "openIssues": 88,
+      "score": 1191.84,
+      "headline": "elephant-goldfish-model",
+      "summary": "Open-source plugin for designing and reviewing software with agents",
+      "why": "前回計測から +965 スター。Python 製。最終更新 2026-11-08。"
     }
   ],
   "news": [
@@ -116,7 +120,7 @@
       "tags": [
         "version"
       ],
-      "score": 72.4
+      "score": 60.4
     },
     {
       "rank": 2,
@@ -131,10 +135,25 @@
       "tags": [
         "version"
       ],
-      "score": 64.1
+      "score": 52
     },
     {
       "rank": 3,
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "titleJa": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "summary": "<p><strong><a href=\"https://github.com/simonw/datasette/issues/3046\">datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages</a…",
+      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-07T23:57:46.000Z",
+      "tags": [
+        "news"
+      ],
+      "score": 46.5
+    },
+    {
+      "rank": 4,
       "title": "anthropics/anthropic-sdk-python v2.6.0",
       "titleJa": "anthropics/anthropic-sdk-python v2.6.0",
       "summary": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signin…",
@@ -148,10 +167,10 @@
         "feature",
         "business"
       ],
-      "score": 58.1
+      "score": 46
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "openai/openai-python v3.47.0",
       "titleJa": "openai/openai-python v3.47.0",
       "summary": "## [3.47.0](https://github.com/openai/openai-python/compare/v3.46.0...v3.47.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add a model option for Responses ([#4249…",
@@ -165,43 +184,22 @@
         "feature",
         "model"
       ],
-      "score": 57.6
-    },
-    {
-      "rank": 5,
-      "title": "modelcontextprotocol/servers v2.3.0",
-      "titleJa": "modelcontextprotocol/servers v2.3.0",
-      "summary": "## Packages\r\n\r\n| Package | Version | Registry | In this release |\r\n| --- | --- | --- | --- |\r\n| `@modelcontextprotocol/server-everything` | `2.2.1` | npm | **p…",
-      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.3.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-04T21:28:41.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 55.3
+      "score": 45.6
     },
     {
       "rank": 6,
-      "title": "anthropics/anthropic-sdk-python v2.5.0",
-      "titleJa": "anthropics/anthropic-sdk-python v2.5.0",
-      "summary": "### Features\n\n* **api:** add error details types and new error type values\n* **api:** add ids filter to list workspaces\n* **client:** add error classes for HTT…",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "titleJa": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-04T20:27:20.000Z",
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-07T22:07:22.000Z",
       "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
+        "news"
       ],
-      "score": 54.8
+      "score": 42.6
     },
     {
       "rank": 7,
@@ -216,10 +214,25 @@
       "tags": [
         "news"
       ],
-      "score": 54.5
+      "score": 42.4
     },
     {
       "rank": 8,
+      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "titleJa": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-07T21:17:08.000Z",
+      "tags": [
+        "news"
+      ],
+      "score": 42.2
+    },
+    {
+      "rank": 9,
       "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
       "titleJa": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
       "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
@@ -232,22 +245,7 @@
         "version",
         "business"
       ],
-      "score": 53
-    },
-    {
-      "rank": 9,
-      "title": "langchain-ai/langchain langchain-core==1.7.6",
-      "titleJa": "langchain-ai/langchain langchain-core==1.7.6",
-      "summary": "Changes since langchain-core==1.7.5\n\nrelease(core): 1.7.6 (#41698)\nperf(core): merge streamed `AIMessageChunk`s once when accumulating runnable streams (#41697…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-05T00:22:12.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 52.8
+      "score": 41
     },
     {
       "rank": 10,
@@ -263,45 +261,42 @@
         "version",
         "business"
       ],
-      "score": 52.5
+      "score": 40.4
     },
     {
       "rank": 11,
-      "title": "langchain-ai/langchain langchain==1.4.9",
-      "titleJa": "langchain-ai/langchain langchain==1.4.9",
-      "summary": "Changes since langchain==1.4.8\n\nrelease(langchain): 1.4.9 (#41684)\nchore(deps): require `langchain-core>=1.7.5` for refusal handling (#41682)\nfeat(core): stand…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.9",
+      "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+      "titleJa": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+      "summary": "Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, \"Chicke…",
+      "url": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-04T17:07:37.000Z",
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-07T15:50:00.000Z",
       "tags": [
-        "version",
-        "model"
+        "news"
       ],
-      "score": 49.1
+      "score": 38.5
     },
     {
       "rank": 12,
-      "title": "openai/openai-python v3.46.0",
-      "titleJa": "openai/openai-python v3.46.0",
-      "summary": "## [3.46.0](https://github.com/openai/openai-python/compare/v3.45.0...v3.46.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add Australia, India, and Japan residenc…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
+      "title": "The US let Nvidia sell chips to an empty office in China",
+      "titleJa": "The US let Nvidia sell chips to an empty office in China",
+      "summary": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handl…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-05T00:55:06.000Z",
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-07T15:43:45.000Z",
       "tags": [
-        "version",
-        "feature",
-        "model"
+        "business"
       ],
-      "score": 49
+      "score": 38.4
     }
   ],
   "stats": {
     "repoCandidates": 272,
-    "newsCandidates": 2538,
+    "newsCandidates": 2524,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

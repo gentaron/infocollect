@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T06:54:57.277Z",
-  "generatedAtLocal": "2026-11-08 14:54",
-  "dateLocal": "2026-11-08",
+  "generatedAt": "2026-11-09T07:38:20.607Z",
+  "generatedAtLocal": "2026-11-09 15:38",
+  "dateLocal": "2026-11-09",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-08 14:54 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、google/elephant-goldfish-model の 3 件。AI ニュースは 12 件を収集し、うち 6 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-09 15:38 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、google/elephant-goldfish-model、debpalash/VoiceStudio の 3 件。AI ニュースは 12 件を収集し、うち 5 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 441656,
-      "starsDelta": 2933,
-      "starsPerDay": 2921.8,
+      "stars": 444745,
+      "starsDelta": 3089,
+      "starsPerDay": 2998.6,
       "measured": true,
-      "forks": 109251,
+      "forks": 109823,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,55 +36,24 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-11-08T06:42:55Z",
-      "openIssues": 1609,
-      "score": 2920.78,
+      "pushedAt": "2026-11-09T07:03:35Z",
+      "openIssues": 1702,
+      "score": 2995.69,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +2933 スター。TypeScript 製。最終更新 2026-11-08。"
+      "why": "前回計測から +3089 スター。TypeScript 製。最終更新 2026-11-09。"
     },
     {
       "rank": 2,
-      "name": "Ebony-Vinyl/dsh-our-free-model",
-      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-      "homepage": null,
-      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 65732,
-      "starsDelta": 1341,
-      "starsPerDay": 1335.9,
-      "measured": true,
-      "forks": 1764,
-      "language": "JavaScript",
-      "topics": [
-        "ai-agents",
-        "deepseek",
-        "deepseek-harness",
-        "developer-tools",
-        "dsh",
-        "dsh-plugin",
-        "free-model",
-        "llm"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-11-08T06:37:57Z",
-      "openIssues": 141,
-      "score": 1669.04,
-      "headline": "dsh-our-free-model",
-      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1341 スター。JavaScript 製。最終更新 2026-11-08。"
-    },
-    {
-      "rank": 3,
       "name": "google/elephant-goldfish-model",
       "url": "https://github.com/google/elephant-goldfish-model",
       "homepage": "https://egm.dev",
       "description": "Open-source plugin for designing and reviewing software with agents",
-      "stars": 14163,
-      "starsDelta": 965,
-      "starsPerDay": 961.3,
+      "stars": 15580,
+      "starsDelta": 1417,
+      "starsPerDay": 1375.5,
       "measured": true,
-      "forks": 1042,
+      "forks": 1130,
       "language": "Python",
       "topics": [
         "agent-skills",
@@ -98,17 +67,159 @@
       ],
       "license": "Apache-2.0",
       "createdAt": "2026-09-13T16:31:06Z",
-      "pushedAt": "2026-11-08T01:58:36Z",
+      "pushedAt": "2026-11-09T02:35:53Z",
       "openIssues": 88,
-      "score": 1191.84,
+      "score": 1705.11,
       "headline": "elephant-goldfish-model",
       "summary": "Open-source plugin for designing and reviewing software with agents",
-      "why": "前回計測から +965 スター。Python 製。最終更新 2026-11-08。"
+      "why": "前回計測から +1417 スター。Python 製。最終更新 2026-11-09。"
+    },
+    {
+      "rank": 3,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "homepage": "https://voicestudio.sh",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "stars": 105349,
+      "starsDelta": 1227,
+      "starsPerDay": 1191.1,
+      "measured": true,
+      "forks": 11710,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "audiobook",
+        "cuda",
+        "dubbing",
+        "elevenlabs-alternative",
+        "huggingface",
+        "local-first",
+        "mlx"
+      ],
+      "license": "AGPL-3.0",
+      "createdAt": "2026-04-09T21:40:26Z",
+      "pushedAt": "2026-11-09T07:38:14Z",
+      "openIssues": 110,
+      "score": 1191.08,
+      "headline": "VoiceStudio",
+      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation…",
+      "why": "前回計測から +1227 スター。Python 製。最終更新 2026-11-09。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "open-webui/open-webui v0.13.1",
+      "titleJa": "open-webui/open-webui v0.13.1",
+      "summary": "### Added\n\n- 🦾 **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model pi…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-08T11:07:53.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 93.7
+    },
+    {
+      "rank": 2,
+      "title": "open-webui/open-webui v0.13.3",
+      "titleJa": "open-webui/open-webui v0.13.3",
+      "summary": "### Added\n\n- 🦾 **Agents in automations.** The automation editor now lets you choose a terminal and working folder, then select a coding agent available there.…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-08T23:48:24.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 80.1
+    },
+    {
+      "rank": 3,
+      "title": "open-webui/open-webui v0.13.2",
+      "titleJa": "open-webui/open-webui v0.13.2",
+      "summary": "### Fixed\n\n- 🔓 **Chat over plain HTTP.** Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-08T11:53:42.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 66.1
+    },
+    {
+      "rank": 4,
+      "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+      "titleJa": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+      "summary": "On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese g…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-08T22:54:50.000Z",
+      "tags": [
+        "release"
+      ],
+      "score": 49.6
+    },
+    {
+      "rank": 5,
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "titleJa": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "summary": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "discussion": "https://news.ycombinator.com/item?id=50411961",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-08T10:22:04Z",
+      "tags": [
+        "model"
+      ],
+      "score": 49.4
+    },
+    {
+      "rank": 6,
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "titleJa": "The Web Is More Than Enough, by Paul Ford",
+      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=50416456#50421091\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=50416456\">The Web Is More T…",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-09T04:32:33.000Z",
+      "tags": [
+        "model"
+      ],
+      "score": 48.4
+    },
+    {
+      "rank": 7,
+      "title": "Hide your slop PR descriptions behind <details><summary>",
+      "titleJa": "Hide your slop PR descriptions behind <details><summary>",
+      "summary": "<p>Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them t…",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-09T04:25:05.000Z",
+      "tags": [
+        "feature",
+        "model"
+      ],
+      "score": 48.4
+    },
+    {
+      "rank": 8,
       "title": "huggingface/transformers v5.22.2",
       "titleJa": "huggingface/transformers v5.22.2",
       "summary": "# Patch release v5.22.2\r\n\r\nSome in between patch for security and distributed fixes. See the included commits :hugs: \r\n\r\n- [Distributed] Set device_id only for…",
@@ -120,183 +231,73 @@
       "tags": [
         "version"
       ],
-      "score": 60.4
-    },
-    {
-      "rank": 2,
-      "title": "langchain-ai/langchain langchain-typesafe==0.0.2",
-      "titleJa": "langchain-ai/langchain langchain-typesafe==0.0.2",
-      "summary": "Changes since langchain-typesafe==0.0.1\n\nrelease(typesafe): 0.0.2 (#41720)\nfeat(typesafe): accept a `classifier` in experimental middleware (#41657)",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.2",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-05T22:56:58.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 52
-    },
-    {
-      "rank": 3,
-      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
-      "titleJa": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
-      "summary": "<p><strong><a href=\"https://github.com/simonw/datasette/issues/3046\">datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages</a…",
-      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-07T23:57:46.000Z",
-      "tags": [
-        "news"
-      ],
-      "score": 46.5
-    },
-    {
-      "rank": 4,
-      "title": "anthropics/anthropic-sdk-python v2.6.0",
-      "titleJa": "anthropics/anthropic-sdk-python v2.6.0",
-      "summary": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signin…",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-05T18:58:47.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "business"
-      ],
-      "score": 46
-    },
-    {
-      "rank": 5,
-      "title": "openai/openai-python v3.47.0",
-      "titleJa": "openai/openai-python v3.47.0",
-      "summary": "## [3.47.0](https://github.com/openai/openai-python/compare/v3.46.0...v3.47.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add a model option for Responses ([#4249…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.47.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-05T18:04:10.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 45.6
-    },
-    {
-      "rank": 6,
-      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
-      "titleJa": "After the midterms, things are looking rocky for Elon Musk and data centers",
-      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
-      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers",
-      "discussion": null,
-      "source": "TechCrunch AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-07T22:07:22.000Z",
-      "tags": [
-        "news"
-      ],
-      "score": 42.6
-    },
-    {
-      "rank": 7,
-      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-      "titleJa": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-      "summary": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
-      "discussion": "https://news.ycombinator.com/item?id=50397429",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-11-06T19:48:51Z",
-      "tags": [
-        "news"
-      ],
-      "score": 42.4
-    },
-    {
-      "rank": 8,
-      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
-      "titleJa": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
-      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
-      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo",
-      "discussion": null,
-      "source": "TechCrunch AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-07T21:17:08.000Z",
-      "tags": [
-        "news"
-      ],
-      "score": 42.2
+      "score": 48
     },
     {
       "rank": 9,
-      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
-      "titleJa": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
-      "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
-      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation",
+      "title": "Korea Advances Physical AI Across Industries With NVIDIA",
+      "titleJa": "Korea Advances Physical AI Across Industries With NVIDIA",
+      "summary": "Tapping into the country’s strengths in manufacturing and engineering, NVIDIA is helping advance Korea’s physical AI ecosystem. The country’s industry leaders…",
+      "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem",
       "discussion": null,
-      "source": "TechCrunch AI",
+      "source": "NVIDIA",
       "sourceType": "feed",
-      "publishedAt": "2026-11-06T22:53:46.000Z",
-      "tags": [
-        "version",
-        "business"
-      ],
-      "score": 41
-    },
-    {
-      "rank": 10,
-      "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
-      "titleJa": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
-      "summary": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the wor…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
-      "discussion": null,
-      "source": "The Verge AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-06T23:46:18.000Z",
-      "tags": [
-        "version",
-        "business"
-      ],
-      "score": 40.4
-    },
-    {
-      "rank": 11,
-      "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
-      "titleJa": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
-      "summary": "Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, \"Chicke…",
-      "url": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
-      "discussion": null,
-      "source": "The Verge AI",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-07T15:50:00.000Z",
+      "publishedAt": "2026-11-09T05:00:40.000Z",
       "tags": [
         "news"
       ],
-      "score": 38.5
+      "score": 47.7
+    },
+    {
+      "rank": 10,
+      "title": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
+      "titleJa": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
+      "summary": "As AI agents take on more work, they need capable open models and security that advances alongside them. Hyundai Motor Group is exploring NVIDIA NemoClaw bluep…",
+      "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai",
+      "discussion": null,
+      "source": "NVIDIA",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-09T05:00:39.000Z",
+      "tags": [
+        "model"
+      ],
+      "score": 47.7
+    },
+    {
+      "rank": 11,
+      "title": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
+      "titleJa": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
+      "summary": "NVIDIA and Korea’s Ministry of Science and ICT (MSIT) are expanding their collaboration across the country’s sovereign AI ecosystem, from AI semiconductors and…",
+      "url": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration",
+      "discussion": null,
+      "source": "NVIDIA",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-09T05:00:04.000Z",
+      "tags": [
+        "model"
+      ],
+      "score": 47.7
     },
     {
       "rank": 12,
-      "title": "The US let Nvidia sell chips to an empty office in China",
-      "titleJa": "The US let Nvidia sell chips to an empty office in China",
-      "summary": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handl…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "title": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+      "titleJa": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+      "summary": "NVIDIA is releasing Dynamo-optimized deployment recipes for Korea’s leading open models: A.X K2 from SK Telecom, K-EXAONE 2.0 from LG AI Research, Solar Open 2…",
+      "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models",
       "discussion": null,
-      "source": "The Verge AI",
+      "source": "NVIDIA",
       "sourceType": "feed",
-      "publishedAt": "2026-11-07T15:43:45.000Z",
+      "publishedAt": "2026-11-09T05:00:00.000Z",
       "tags": [
-        "business"
+        "model",
+        "research"
       ],
-      "score": 38.4
+      "score": 47.7
     }
   ],
   "stats": {
-    "repoCandidates": 272,
-    "newsCandidates": 2524,
+    "repoCandidates": 275,
+    "newsCandidates": 2523,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

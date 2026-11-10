@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-10T07:59:04.756Z",
+  "generatedAtLocal": "2026-11-10 15:59",
+  "dateLocal": "2026-11-10",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-10 15:59 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、amosblomqvist/learnharness の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 447963,
+      "starsDelta": 3218,
+      "starsPerDay": 3172.3,
+      "measured": true,
+      "forks": 110445,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-10T06:59:29Z",
+      "openIssues": 1719,
+      "score": 3167.03,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +3218 スター。TypeScript 製。最終更新 2026-11-10。"
+    },
+    {
+      "rank": 2,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 67878,
+      "starsDelta": 1258,
+      "starsPerDay": 1240.1,
+      "measured": true,
+      "forks": 1829,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-10T07:29:34Z",
+      "openIssues": 158,
+      "score": 1548.89,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1258 スター。JavaScript 製。最終更新 2026-11-10。"
+    },
+    {
+      "rank": 3,
+      "name": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "homepage": "learnharness.ai",
+      "description": "Agent harness for learning difficult things.",
+      "stars": 7924,
+      "starsDelta": 1187,
+      "starsPerDay": 1170.1,
+      "measured": true,
+      "forks": 1103,
+      "language": "TypeScript",
+      "topics": [],
+      "license": "AGPL-3.0",
+      "createdAt": "2026-10-16T19:35:33Z",
+      "pushedAt": "2026-11-09T18:55:21Z",
+      "openIssues": 454,
+      "score": 1431.68,
+      "headline": "learnharness",
+      "summary": "Agent harness for learning difficult things.",
+      "why": "前回計測から +1187 スター。TypeScript 製。最終更新 2026-11-09。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "ollama/ollama v0.40.16",
+      "titleJa": "ollama/ollama v0.40.16",
+      "summary": "## Ripple Preview\r\n\r\n[Ripple Preview](https://ollama.com/library/ripple-preview) from Ricursive Intelligence is a 65B dense model built for agentic coding.…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-09T18:21:19.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 85.2
+    },
+    {
+      "rank": 2,
+      "title": "open-webui/open-webui v0.13.1",
+      "titleJa": "open-webui/open-webui v0.13.1",
+      "summary": "### Added\n\n- 🦾 **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model pi…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-08T11:07:53.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 81.6
+    },
+    {
+      "rank": 3,
+      "title": "langchain-ai/langchain langchain-core==1.7.7",
+      "titleJa": "langchain-ai/langchain langchain-core==1.7.7",
+      "summary": "Changes since langchain-core==1.7.6\n\nrelease(core): 1.7.7 (#41776)\nfix(core): cap nesting depth in `load()` (#41742)\nchore(deps): patch newer-python security l…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.7",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-10T04:08:27.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 78.1
+    },
+    {
+      "rank": 4,
+      "title": "anthropics/anthropic-sdk-python v2.7.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.7.0",
+      "summary": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* *…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-09T18:52:17.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 77.4
+    },
+    {
+      "rank": 5,
+      "title": "openai/openai-python v3.49.0",
+      "titleJa": "openai/openai-python v3.49.0",
+      "summary": "## [3.49.0](https://github.com/openai/openai-python/compare/v3.48.0...v3.49.0) (2026-11-10)\n\n\n### Features\n\n* **api:** add typed async function tools ([#4264](…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.49.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-10T06:47:04.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 75.4
+    },
+    {
+      "rank": 6,
+      "title": "langchain-ai/langchain langchain-fireworks==1.7.3",
+      "titleJa": "langchain-ai/langchain langchain-fireworks==1.7.3",
+      "summary": "Changes since langchain-fireworks==1.7.2\n\nrelease(fireworks): 1.7.3 (#41773)\nfix(fireworks): default `max_tokens` from model profiles (#41772)\nchore(model-prof…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-09T20:54:19.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 74.5
+    },
+    {
+      "rank": 7,
+      "title": "openai/openai-python v3.48.0",
+      "titleJa": "openai/openai-python v3.48.0",
+      "summary": "## [3.48.0](https://github.com/openai/openai-python/compare/v3.47.0...v3.48.0) (2026-11-09)\n\n\n### Features\n\n* **api:** add stream options for agent sessions ([…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.48.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-09T16:12:58.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 72.1
+    },
+    {
+      "rank": 8,
+      "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+      "titleJa": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+      "summary": "Anthropic is announcing two new models today: Claude Fable 5.2 and Claude Mythos 5.2, which it says are designed to take on \"daunting\" technical challenges. Th…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+      "discussion": null,
+      "source": "The Verge AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-09T19:00:00.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 69.5
+    },
+    {
+      "rank": 9,
+      "title": "llm-anthropic 0.31",
+      "titleJa": "llm-anthropic 0.31",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-anthropic/releases/tag/0.31\">llm-anthropic 0.31</a></p> <p>Anthropic <a href=\"https://www.a…",
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-09T23:58:46.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 68
+    },
+    {
+      "rank": 10,
+      "title": "open-webui/open-webui v0.13.3",
+      "titleJa": "open-webui/open-webui v0.13.3",
+      "summary": "### Added\n\n- 🦾 **Agents in automations.** The automation editor now lets you choose a terminal and working folder, then select a coding agent available there.…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-08T23:48:24.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 67.9
+    },
+    {
+      "rank": 11,
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "titleJa": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "summary": "<p><strong><a href=\"https://research.meta.ai/blog/muse-ember\">Introducing Our Smallest, Most Efficient Model: Muse Ember</a></strong></p> Meta AI just launched…",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-10T07:28:21.000Z",
+      "tags": [
+        "release",
+        "model",
+        "research"
+      ],
+      "score": 65.7
+    },
+    {
+      "rank": 12,
+      "title": "n8n-io/n8n n8n@2.46.7",
+      "titleJa": "n8n-io/n8n n8n@2.46.7",
+      "summary": "## [2.46.7](https://github.com/n8n-io/n8n/compare/n8n@2.46.6...n8n@2.46.7) (2026-11-09)\n\n\n### Bug Fixes\n\n* **core:** Limit resume attempts for waiting and queu…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.46.7",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-09T08:25:28.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.2
+    }
+  ],
+  "stats": {
+    "repoCandidates": 277,
+    "newsCandidates": 2541,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

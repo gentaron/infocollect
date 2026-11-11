@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  # GitHub Models の無料枠（鍵の登録なしで書ける）
+  models: read
 
 concurrency:
   group: blog-0700
@@ -26,6 +28,8 @@ jobs:
 
       - name: Write one blog post
         env:
+          # 使用量の台帳を枠ごとの別ファイルに書く（並走しても git が衝突しない）
+          HARNESS_RUN: blog-0700
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AI_PROVIDER: ${{ vars.AI_PROVIDER }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -46,7 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/blog memory
+          git add docs/blog docs/slides memory
           if git diff --cached --quiet; then
             echo "変更なし: コミットをスキップします"
             exit 0

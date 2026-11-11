@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "forge": {
+      "command": "node",
+      "args": [
+        "forge/forge.mjs",
+        "mcp"
+      ]
+    },
+    "infocollect-kb": {
+      "command": "node",
+      "args": [
+        "scripts/mcp/server.mjs"
+      ]
+    }
+  }
+}

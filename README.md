@@ -24,6 +24,12 @@ scripts/blog/lib/          core（純粋関数）・llm（プロバイダ）・s
 prompts/blog/              5枠の執筆ルール（common.md + slot-XXXX.md）
 memory/                    生成時に読み込むメモ（PC・環境・ログ）
 docs/blog/                 生成された記事とブログ一覧ページ
+scripts/kb/                ナレッジベース（ingest / query / 広い網 / 埋め込み）
+scripts/mcp/server.mjs     MCP サーバー（stdio・依存ゼロ）
+scripts/harness/           AIハーネス（配車 router / 審査 review / Issueカンバン task / status）
+scripts/slides/build.mjs   記事やテーマから静的スライドを作る
+config/harness.json        tier ごとの配車表と1日の予算
+forge/                     手元の AI 開発カンバン（tmux × git worktree × 無料エージェント）
 scripts/selftest.mjs       ネットワーク不要の自己テスト
 scripts/gen-icons.mjs      PWAアイコン生成（依存パッケージ無し）
 scripts/pack.mjs           docs/ を infocollect-pwa.zip に固める
@@ -32,6 +38,7 @@ docs/                      PWA本体（GitHub Pages の配信ディレクトリ�
   ├─ index.html / app.js / styles.css
   ├─ manifest.webmanifest / sw.js / icons/
   ├─ blog/index.html + blog/index.json + blog/YYYY-MM-DD/*.txt
+  ├─ kb/index.html（検索）+ kb/kb-core.js + kb/manifest.json + kb/shards/YYYY-MM.jsonl
   └─ data/latest.json, data/index.json, data/archive/YYYY-MM-DD.json
 .github/workflows/daily.yml      Cron（0 1 * * * UTC = 09:00 MYT）
 .github/workflows/blog-*.yml     5枠のブログ執筆 Cron（下記）
@@ -95,6 +102,119 @@ Actions タブの「Blog 7時枠（AIモデル）」など → **Run workflow** 
 - `memory/areas/github-trending-blog.md` — 扱った題材のログ（スクリプトが自動追記、新しい行が上）。容量が増えたら古い行を `blog-log-archive.md` へ移す。アーカイブも重複チェックに使われる
 - `memory/people/humble-bobcat51.md` — 先に走っている書き手の関心・読者層のメモ。ここを埋めると「先回り選定」が効いてくる（記事に名前は出ない）
 - `memory/note-titles.txt` — システム導入前の記事タイトルがあれば1行ずつ追記（重複チェック用）
+
+---
+
+## ナレッジベース（RAG）と MCP
+
+毎日集めたものを **捨てずに溜めて、あとから引ける** ようにしてあります。設計の全体は [ARCHITECTURE.md](./ARCHITECTURE.md)。
+
+- `docs/kb/` に月ごとの JSONL で蓄積（ダイジェスト＋arXiv・HF 論文・Reddit・Zenn/Qiita・セキュリティ系などの“広い網”＋自分のブログ）
+- 検索は **BM25（日本語は bigram）＋任意のベクトル（RRF で融合）＋新しさ＋多様性**。中身は `docs/kb/kb-core.js` 1枚で、Node とブラウザが同じものを使う
+- ブログ5枠は、過去30日の関連資料を **文字数予算の中だけ** 同梱して書く（`--no-kb` で無効）
+- **MCP サーバー**で、Claude Code などの AI から直接たたける（`kb_search` / `kb_context` / `kb_get` / `kb_stats` / `digest_latest`）
+- PWA の **「検索」**（`/kb/`）は端末の中だけで検索。結果を「AIに渡す形でコピー」できる
+
+```bash
+node scripts/kb/ingest.mjs --backfill          # 既存アーカイブから一気に溜める
+node scripts/kb/query.mjs "ローカルLLM 量子化"   # ターミナルから検索
+node scripts/kb/query.mjs "MCP" --pack 3000     # AI に渡す文脈ブロックを作る
+claude mcp add infocollect-kb -- node scripts/mcp/server.mjs   # Claude Code から使う
+```
+
+ベクトルは任意です。`CLOUDFLARE_ACCOUNT_ID`+`CLOUDFLARE_API_TOKEN`（`@cf/baai/bge-m3`）か `GEMINI_API_KEY` があれば自動で使い、無ければ BM25 だけで動きます。自分の PC では `KB_EMBED_PROVIDER=ollama`（既定 `bge-m3`）でローカル埋め込みもできます。
+
+---
+
+## AIハーネス（仕事の重さでモデルを振り分ける）
+
+「鍵が入っている最初の1社だけを使う」のをやめて、**仕事の重さ（tier）で無料モデルを配車**します。配車表は [`config/harness.json`](./config/harness.json) 1枚。
+
+| tier | 何に使うか | 最初に試すもの |
+| --- | --- | --- |
+| `light` | 分類・見出し・短い要約 | 小さくて速いモデル（Cloudflare / Groq 8B） |
+| `standard` | 調査メモ・スライドの骨組み | Groq 70B → GitHub Models → Gemini Flash |
+| `heavy` | 4000字級の記事本文 | Gemini 2.5 Flash → Groq → OpenRouter(:free) → GitHub Models |
+| `review` | 審査役 | **書き手と別の会社のモデル**を優先 |
+
+- どこかが落ちたら次へ。鍵が無いもの・今日の予算を使い切ったものは飛ばす
+- **heavy 用の予約枠**があるので、軽い仕事が記事の分の無料枠を食い潰さない
+- 呼び出しは `memory/harness/usage/` の台帳に全部残る（`npm run harness` で残量と配車順が見える）
+- **GitHub Models の無料枠**に対応。Actions の `GITHUB_TOKEN` だけで動くので、**Secret を1つも入れなくてもブログが書ける**
+- OpenRouter は `:free` 以外のモデルを指定すると止まる（うっかり課金の防止）
+- 自分の PC では `LOCAL_LLM_MODEL=qwen3:8b`（Ollama など OpenAI 互換）でローカルLLMも配車に入る
+
+### 書き手と審査役（Worker / Supervisor）
+
+ブログは書いたものをそのまま出しません。
+
+1. **決定論の lint**（モデルなし）: 短すぎ・ハッシュタグ欠落・プレースホルダ残り・AIの地の声・過去記事とタイトルが被る、を機械で落とす
+2. **審査役**（別の会社のモデル）: 集めた資料と下書きを突き合わせ、根拠の無い断定や水増しを指摘
+3. 問題があれば**1回だけ差し戻し**て書き直し。審査の記録は `memory/harness/runs/` に残る
+
+審査役が呼べない日は lint だけで判定します（`--no-review` で無効化）。
+
+### 同じ原稿からスライド
+
+記事を保存すると、同じ原稿から**静的なスライド**（16:9・アニメーションなし・印刷で1枚1ページのPDF）が `docs/slides/` にできます。PWA の「スライド」から開けます。
+
+```bash
+node scripts/slides/build.mjs --from docs/blog/2026-11-11/0900-harness.txt
+node scripts/slides/build.mjs --topic "ローカルLLMの量子化"    # ナレッジベースから調べて資料化
+node scripts/slides/build.mjs --from <記事.txt> --no-llm       # モデルなし（ルールだけ）でも作れる
+```
+
+### Issue がカンバンになる
+
+スマホから Issue を1枚立ててラベルを付けるだけで、無料モデルがナレッジベースを資料にして仕事をし、結果をコメントで返します。
+
+| ラベル | 仕事 |
+| --- | --- |
+| `ai:research` | 出典つきの調査メモ |
+| `ai:draft` | 記事の下書き |
+| `ai:slides` | スライドを作って `docs/slides/` に置く |
+| `tier:light` / `tier:standard` / `tier:heavy` | 使うモデルの重さを上書き |
+
+リポジトリの持ち主が開いた Issue だけを処理します（公開リポジトリなので）。
+
+---
+
+## Forge（手元の AI 開発カンバン）
+
+[`forge/`](./forge/) は、tmux の上で AI コーディングエージェントを何体も並べて動かすカンバンです。InfoCollect に限らず、手元のどのリポジトリにも使えます（詳しくは [forge/README.md](./forge/README.md)）。
+
+- カードごとに git worktree と tmux セッションを作り、無料のエージェント（Qwen Code / Gemini CLI / OpenCode / Aider）から先に試す
+- テストが落ちたら一段上へ（最後は Claude Code）。通ったものは別のエージェントが審査し、マージは人が承認
+- Web のボード（スマホ対応）と MCP サーバー付き。Claude Code をリーダーにして、仕事を割って配らせることができる
+
+上の「Issue がカンバンになる」は**クラウドで調べ物や下書き**をする口、Forge は**手元でコードを書かせる**口です。`forge sync <repo>` で `forge` ラベルの Issue を Forge のカードに取り込めます。
+
+```bash
+node forge/forge.mjs repo scan ~/code
+node forge/forge.mjs add infocollect "直したいこと" -m "詳しい依頼" --tier light
+node forge/forge.mjs serve
+```
+
+---
+
+## エコシステム（全リポジトリのつなぎ）
+
+[`ecosystem/registry.json`](./ecosystem/registry.json) が、gentaron の公開リポジトリ全部の台帳です。役割、島（グループ）、何を渡して何を受け取るか、アーカイブの後継を書いてあります。地図は [ecosystem/README.md](./ecosystem/README.md)。
+
+`node scripts/ecosystem/propagate.mjs <repo-dir>...` を実行すると、各リポジトリに次のものが入ります（何度実行しても同じ結果になり、目印の外は触りません）。
+
+- `ecosystem.json`: そのリポジトリの上流・下流・ハブの入口（機械向け）
+- README の「つながり」節と AGENTS.md の「エコシステム」節: 人と AI が作業前に読む
+- `.mcp.json`: ナレッジベース（`infocollect-kb`）と Forge（`forge`）。`npx -p github:gentaron/infocollect` で起動するので、どのリポジトリで Claude Code を開いても同じ知識と同じカンバンにつながる
+
+残りのリポジトリ（アーカイブや非公開のもの）は、手元でまとめて流せます。未コミットの変更があるリポジトリは飛ばします。
+
+```bash
+node scripts/ecosystem/propagate.mjs --scan ~/code --commit --push                       # 公開の台帳にあるもの全部
+node scripts/ecosystem/propagate.mjs --scan ~/code --extra ~/private-repos.json --commit  # 非公開の台帳を足す（公開しない）
+```
+
+ナレッジベースにも台帳が入っているので、`kb_search "スライドを作るリポジトリ"` のように聞けば、どのリポジトリの担当かが返ります。
 
 ---
 
@@ -260,3 +380,15 @@ GitHub には「トレンド」API が無いため、次の方法で近似して
 ## ライセンス
 
 MIT
+
+<!-- ecosystem:begin (自動生成: gentaron/infocollect の ecosystem/registry.json から。手で直さない) -->
+
+## つながり
+
+gentaron のリポジトリ群のうち **ハブ** の一つ。毎朝の AI 情報収集、ナレッジベース（RAG・MCP）、無料モデルの配車ハーネス、手元の AI 開発カンバン Forge。
+
+- **渡す**: [IDEAZ](https://github.com/gentaron/IDEAZ)（ナレッジベース）、[genesisvault](https://github.com/gentaron/genesisvault)（ナレッジベース）、[Gentarog](https://github.com/gentaron/Gentarog)（ナレッジベース）、[VAIZ](https://github.com/gentaron/VAIZ)（ナレッジベース・記事）、[Mathematical-Physics-Lab-](https://github.com/gentaron/Mathematical-Physics-Lab-)（ナレッジベース）、[SAIZ](https://github.com/gentaron/SAIZ)（記事）、[genimage](https://github.com/gentaron/genimage)（記事）
+
+全体の地図 → [ecosystem](https://github.com/gentaron/infocollect/blob/HEAD/ecosystem/README.md)
+
+<!-- ecosystem:end -->

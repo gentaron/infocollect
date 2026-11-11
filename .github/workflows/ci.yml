@@ -15,5 +15,13 @@ jobs:
           node-version: '22'
       - name: Offline checks
         run: node scripts/selftest.mjs
+      - name: Ecosystem map matches the registry
+        run: |
+          node scripts/ecosystem/propagate.mjs --map
+          git diff --exit-code ecosystem/README.md || { echo "registry.json を変えたら node scripts/ecosystem/propagate.mjs --map を実行してコミットしてください"; exit 1; }
+      - name: Forge (tmux kanban) end-to-end
+        run: |
+          command -v tmux >/dev/null || sudo apt-get install -y tmux
+          node forge/test.mjs
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

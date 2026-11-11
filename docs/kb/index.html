@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>InfoCollect 検索</title>
+<meta name="description" content="InfoCollect が毎日集めた AI の情報を、ブラウザの中だけで検索する。" />
+<link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="../manifest.webmanifest" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  .kb-wrap { max-width: 880px; margin: 0 auto; padding: 16px; }
+  .kb-bar { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 8px; }
+  .kb-bar input[type=search] { flex: 1 1 260px; min-width: 0; padding: 12px 14px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg-soft); color: var(--text); font-size: 16px; }
+  .kb-bar select { padding: 10px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg-soft); color: var(--text); font-size: 14px; }
+  .kb-meta { color: var(--muted); font-size: 13px; margin: 4px 0 16px; }
+  .kb-hit { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin: 0 0 10px; }
+  .kb-hit a.t { color: var(--text); font-weight: 600; text-decoration: none; line-height: 1.45; overflow-wrap: anywhere; }
+  .kb-hit a.t:hover { color: var(--accent); }
+  .kb-hit .m { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .kb-hit .s { font-size: 14px; margin-top: 8px; line-height: 1.6; color: var(--text); opacity: .9; overflow-wrap: anywhere; }
+  .kb-chip { display: inline-block; padding: 1px 8px; border-radius: 999px; background: var(--card-2); margin-right: 6px; }
+  .kb-actions { display: flex; gap: 8px; margin: 0 0 14px; flex-wrap: wrap; }
+  .kb-empty { color: var(--muted); padding: 24px 0; }
+</style>
+</head>
+<body>
+<header class="app-header">
+  <div class="brand">
+    <img src="../icons/favicon.svg" alt="" width="34" height="34" />
+    <div>
+      <h1>InfoCollect 検索</h1>
+      <p class="tagline">集めたものを、あとから引ける</p>
+    </div>
+  </div>
+  <div class="header-actions">
+    <a class="btn" href="../">今日のダイジェスト</a>
+  </div>
+</header>
+
+<main class="kb-wrap">
+  <form class="kb-bar" id="f" role="search">
+    <input type="search" id="q" placeholder="例: ローカルLLM 量子化 / MCP サーバー / Qwen" autocomplete="off" aria-label="検索語" />
+    <select id="type" aria-label="種類">
+      <option value="">すべて</option>
+      <option value="repo">リポジトリ</option>
+      <option value="release">リリース</option>
+      <option value="paper">論文</option>
+      <option value="model">モデル</option>
+      <option value="feed">ブログ・ニュース</option>
+      <option value="hn">Hacker News</option>
+      <option value="community">コミュニティ</option>
+      <option value="own">自分の記事</option>
+    </select>
+    <select id="range" aria-label="期間">
+      <option value="0">全期間</option>
+      <option value="7">7日</option>
+      <option value="30" selected>30日</option>
+      <option value="90">90日</option>
+    </select>
+    <button class="btn btn-primary" type="submit">検索</button>
+  </form>
+  <p class="kb-meta" id="meta">読み込み中…</p>
+  <div class="kb-actions" id="actions" hidden>
+    <button class="btn" type="button" id="copy">AIに渡す形でコピー</button>
+  </div>
+  <div id="out"></div>
+</main>
+
+<script type="module">
+import { buildIndex, packContext, parseJsonl, search } from './kb-core.js';
+
+const $ = (id) => document.getElementById(id);
+let index = null;
+let lastHits = [];
+
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+async function load() {
+  const manifest = await (await fetch('manifest.json', { cache: 'no-cache' })).json();
+  const keys = manifest.shards.map((s) => s.key).sort().reverse().slice(0, 6);
+  const texts = await Promise.all(keys.map((k) => fetch(`shards/${k}.jsonl`).then((r) => (r.ok ? r.text() : ''))));
+  const docs = texts.flatMap(parseJsonl);
+  index = buildIndex(docs);
+  $('meta').textContent = `${docs.length.toLocaleString()} 件（直近 ${keys.length} か月・${Object.keys(manifest.sources).length} ソース）を端末内で検索します。更新 ${manifest.updatedAt.slice(0, 10)}`;
+  const q = new URLSearchParams(location.search).get('q');
+  if (q) { $('q').value = q; run(); }
+}
+
+function run() {
+  if (!index) return;
+  const q = $('q').value.trim();
+  const type = $('type').value;
+  const days = Number($('range').value);
+  const since = days ? new Date(Date.now() - days * 86400000).toISOString().slice(0, 10) : '';
+  history.replaceState(null, '', q ? `?q=${encodeURIComponent(q)}` : location.pathname);
+  if (!q) { $('out').innerHTML = ''; $('actions').hidden = true; return; }
+  const t0 = performance.now();
+  lastHits = search(index, q, { k: 30, filter: (d) => (!type || d.sourceType === type) && (!since || d.date >= since) });
+  const ms = Math.round(performance.now() - t0);
+  $('actions').hidden = !lastHits.length;
+  $('out').innerHTML = lastHits.length
+    ? lastHits.map(({ doc }) => `
+      <article class="kb-hit">
+        <a class="t" href="${esc(doc.url)}" target="_blank" rel="noopener">${esc(doc.titleJa || doc.title)}</a>
+        <div class="m"><span class="kb-chip">${esc(doc.source)}</span>${esc(doc.date)}${doc.seen > 1 ? ` · ${doc.seen}回観測` : ''}${doc.discussion ? ` · <a href="${esc(doc.discussion)}" target="_blank" rel="noopener">議論</a>` : ''}</div>
+        ${doc.summary || doc.body ? `<div class="s">${esc(String(doc.summary || doc.body).slice(0, 260))}</div>` : ''}
+      </article>`).join('')
+    : '<p class="kb-empty">見つからなかった。言い換えるか、期間を広げてみて。</p>';
+  $('meta').textContent = `${lastHits.length} 件 · ${ms}ms`;
+}
+
+$('f').addEventListener('submit', (e) => { e.preventDefault(); run(); });
+$('type').addEventListener('change', run);
+$('range').addEventListener('change', run);
+$('copy').addEventListener('click', async () => {
+  const { text } = packContext(lastHits, { budget: 6000 });
+  const prompt = `次の資料だけを根拠に、「${$('q').value.trim()}」について要点をまとめて。出典は番号で示して。\n\n${text}`;
+  try { await navigator.clipboard.writeText(prompt); $('copy').textContent = 'コピーした'; } catch { $('copy').textContent = 'コピーできなかった'; }
+  setTimeout(() => { $('copy').textContent = 'AIに渡す形でコピー'; }, 1800);
+});
+
+load().catch((e) => { $('meta').textContent = `読み込めなかった: ${e.message}`; });
+</script>
+</body>
+</html>

@@ -4,6 +4,7 @@
 //   node scripts/blog/generate.mjs --slot 0700
 //   node scripts/blog/generate.mjs --slot 1800 --no-search
 //   node scripts/blog/generate.mjs --slot 1100 --dry-run
+//   node scripts/blog/generate.mjs --slot 0900 --no-kb       # skip knowledge-base RAG
 //
 // Flow:
 //   1. load the slot's prompt (rules are verbatim in prompts/blog/)
@@ -35,6 +36,9 @@ import {
 } from './lib/core.mjs';
 import { generateArticleText } from './lib/llm.mjs';
 import { formatCandidates, searchCandidates } from './lib/search.mjs';
+import { openKb } from '../kb/lib/retrieve.mjs';
+import { supervise } from '../harness/review.mjs';
+import { buildDeckFromArticle } from '../slides/build.mjs';
 import { log, timeInZone, truncate, warn } from '../lib/util.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -42,7 +46,7 @@ const BLOG_DIR = path.join(ROOT, 'docs', 'blog');
 const MEMORY = path.join(ROOT, 'memory');
 
 function parseArgs(argv) {
-  const args = { slot: null, date: null, search: true, dryRun: false };
+  const args = { slot: null, date: null, search: true, dryRun: false, kb: true, review: true, slides: true };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
     if (arg === '--slot') args.slot = argv[++i];
@@ -50,6 +54,9 @@ function parseArgs(argv) {
     else if (arg === '--no-search') args.search = false;
     else if (arg === '--search') args.search = true;
     else if (arg === '--dry-run') args.dryRun = true;
+    else if (arg === '--no-kb') args.kb = false;
+    else if (arg === '--no-review') args.review = false;
+    else if (arg === '--no-slides') args.slides = false;
     else {
       console.error(`不明な引数: ${arg}`);
       process.exit(2);
@@ -124,7 +131,7 @@ async function main() {
 
   if (!slot) {
     console.error([
-      '使い方: node scripts/blog/generate.mjs --slot <id> [--date YYYY-MM-DD] [--no-search] [--dry-run]',
+      '使い方: node scripts/blog/generate.mjs --slot <id> [--date YYYY-MM-DD] [--no-search] [--no-kb] [--no-review] [--no-slides] [--dry-run]',
       `枠の指定は必須です。次のいずれか: ${SLOT_ORDER.join(', ')}`,
       ...SLOT_ORDER.map((id) => `  ${SLOTS[id].label}  →  --slot ${id}`),
     ].join('\n'));
@@ -162,7 +169,27 @@ async function main() {
   } else {
     log('blog: --no-search のため検索をスキップ');
   }
-  const candidates = formatCandidates({ tools: digest.tools, news: digest.news, search });
+  let candidates = formatCandidates({ tools: digest.tools, news: digest.news, search });
+
+  // 3b. RAG: pull related material from the knowledge base (docs/kb/) under a
+  // fixed character budget, plus our own similar past posts so the model can
+  // avoid repeating itself. Best effort — an empty or missing KB changes nothing.
+  if (args.kb) {
+    try {
+      const kb = await openKb();
+      const query = [slot.label, ...slot.queries].join(' ');
+      const since = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+      const related = await kb.query(query, { k: 10, filter: (d) => d.sourceType !== 'own' && d.date >= since });
+      const own = await kb.query(query, { k: 5, filter: (d) => d.sourceType === 'own' });
+      const relatedBlock = kb.pack(related, { budget: 2800, perDoc: 360 }).text;
+      const ownBlock = own.map(({ doc }) => `- ${doc.date} ${doc.title}`).join('\n');
+      if (relatedBlock) candidates += `\n▼ ナレッジベースから（過去30日・関連度順。番号つきの出典はURLごと信用してよい）\n${relatedBlock}`;
+      if (ownBlock) candidates += `\n▼ うちが前に書いた近い記事（同じ切り口を繰り返さない）\n${ownBlock}`;
+      log(`blog: KB ${kb.size} 件から関連 ${related.length} 件 / 過去記事 ${own.length} 件を追加`);
+    } catch (error) {
+      warn(`blog: KB を使えませんでした（続行） — ${error.message}`);
+    }
+  }
 
   // 4. Generate (one retry when the model hands back a stub).
   const system = buildSystemPrompt();
@@ -212,6 +239,33 @@ async function main() {
     }
   }
 
+  // 4b. Supervisor: deterministic lint + a second model from another provider.
+  // At most one revision. The decision record is kept as the audit trail.
+  let reviewRecord = null;
+  if (args.review) {
+    const titles = recentTitles.split('\n').map((line) => line.replace(/^\S+ \[[^\]]*\] /, '')).filter(Boolean);
+    const supervised = await supervise({
+      article,
+      provider,
+      model,
+      sources: candidates,
+      slotLabel: slot.label,
+      recentTitles: titles,
+      rewrite: async (feedback) => {
+        const again = await generateArticleText({ system, user: `${user}\n${feedback}` });
+        const parsed = extractLogline(again.text);
+        if (parsed.logline) logline = parsed.logline;
+        return { article: dedupeParagraphs(sanitizeArticle(parsed.article)), provider: again.provider, model: again.model };
+      },
+    });
+    article = supervised.article;
+    provider = supervised.provider;
+    model = supervised.model;
+    reviewRecord = supervised.record;
+    const last = reviewRecord.rounds[reviewRecord.rounds.length - 1];
+    log(`blog: 審査 ${reviewRecord.final}（${reviewRecord.rounds.length} 回 / lint ${last.lint.length} 件 / 審査役 ${last.review ? `${last.review.by} → ${last.review.verdict}` : 'なし'}）`);
+  }
+
   const title = extractTitle(article);
 
   if (!title || article.length < 300) {
@@ -248,6 +302,25 @@ async function main() {
 
     const entries = rebuildIndex(path.join(ROOT, 'docs'));
     log(`blog: index.json 更新（${entries.length} 本）`);
+
+    if (reviewRecord) {
+      const runDir = path.join(MEMORY, 'harness', 'runs');
+      fs.mkdirSync(runDir, { recursive: true });
+      fs.writeFileSync(
+        path.join(runDir, `${date}-${slot.fileBase}.json`),
+        `${JSON.stringify({ date, slot: slot.label, title, writer: `${provider}/${model}`, ...reviewRecord }, null, 2)}\n`,
+      );
+    }
+
+    // One manuscript, many shapes: the same article becomes a static deck.
+    if (args.slides) {
+      try {
+        const deck = await buildDeckFromArticle({ article, date, slug: `${date}-${slot.fileBase}`, label: slot.label });
+        log(`blog: スライド → docs/slides/${deck.file}（${deck.slides} 枚 / ${deck.outline}）`);
+      } catch (error) {
+        warn(`blog: スライド化に失敗（記事は保存済み） — ${error.message}`);
+      }
+    }
   }
 
   process.stdout.write(`\n${article}\n`);

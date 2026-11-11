@@ -43,6 +43,20 @@ jobs:
           CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
         run: node scripts/collect.mjs
 
+      - name: Grow the knowledge base (RAG / MCP / PWA search)
+        # Best effort: the digest above is already safe on disk. A KB failure
+        # must never block the daily commit.
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional dense vectors (free tiers). Without them the KB is BM25-only.
+          KB_EMBED_PROVIDER: ${{ vars.KB_EMBED_PROVIDER }}
+          KB_EMBED_MODEL: ${{ vars.KB_EMBED_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: node scripts/kb/ingest.mjs
+
       - name: Build the downloadable PWA bundle
         run: node scripts/pack.mjs
 
@@ -50,7 +64,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data
+          git add docs/data docs/kb
           if git diff --cached --quiet; then
             echo "変更なし: コミットをスキップします"
             exit 0

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-11-11T15:54:20.468Z",
+  "total": 531,
+  "shards": [
+    {
+      "key": "2026-01",
+      "count": 58
+    },
+    {
+      "key": "2026-09",
+      "count": 166
+    },
+    {
+      "key": "2026-10",
+      "count": 223
+    },
+    {
+      "key": "2026-11",
+      "count": 84
+    }
+  ],
+  "sources": {
+    "GitHub Releases": 235,
+    "Simon Willison": 61,
+    "Ecosystem": 58,
+    "Hacker News": 52,
+    "GitHub Trending": 29,
+    "TechCrunch AI": 23,
+    "The Verge AI": 23,
+    "OpenAI": 16,
+    "AWS Machine Learning": 12,
+    "NVIDIA": 6,
+    "Hugging Face": 6,
+    "Google (AI)": 5,
+    "Google DeepMind": 3,
+    "Ars Technica AI": 1,
+    "InfoCollect Blog": 1
+  },
+  "vectors": {
+    "count": 0,
+    "models": {}
+  }
+}

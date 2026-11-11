@@ -36,6 +36,16 @@ export function repoName(dir) {
 
 const read = (f) => { try { return fs.readFileSync(f, 'utf8'); } catch { return null; } };
 
+function sameJson(a, b) {
+  try {
+    const canon = (v) => (Array.isArray(v) ? v.map(canon) : v && typeof v === 'object'
+      ? Object.fromEntries(Object.keys(v).sort().map((k) => [k, canon(v[k])])) : v);
+    return JSON.stringify(canon(JSON.parse(a))) === JSON.stringify(canon(JSON.parse(b)));
+  } catch {
+    return false;
+  }
+}
+
 /** Compute the new contents for every file we own. Pure apart from reading. */
 export function plan(registry, dir, name = repoName(dir)) {
   const me = findRepo(registry, name);
@@ -45,7 +55,11 @@ export function plan(registry, dir, name = repoName(dir)) {
   const want = (file, next) => {
     const full = path.join(dir, file);
     const prev = read(full);
-    if (prev !== next) files.push({ file, full, next, created: prev === null });
+    if (prev === next) return;
+    // Repos run their own formatters (Biome, Prettier). For JSON, only the
+    // content matters, so a reformatted file is not "out of date".
+    if (prev !== null && file.endsWith('.json') && sameJson(prev, next)) return;
+    files.push({ file, full, next, created: prev === null });
   };
 
   want('ecosystem.json', `${JSON.stringify(manifest(registry, me.name), null, 2)}\n`);

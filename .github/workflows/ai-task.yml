@@ -1,0 +1,89 @@
+name: AI task (Issue カンバン)
+
+# Issue がカード。ラベルが指示。
+#   ai:research（調査メモ） / ai:draft（記事の下書き） / ai:slides（スライド）
+#   tier:light / tier:standard / tier:heavy で使うモデルの重さを上書きできる
+# 結果は Issue のコメントに返り、memory/harness/tasks/ にも残る。
+#
+# 公開リポジトリなので、リポジトリの持ち主が開いた Issue だけを処理する。
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+  models: read
+
+concurrency:
+  group: ai-task-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  work:
+    if: >-
+      github.event.issue.author_association == 'OWNER' &&
+      github.event.sender.login == github.repository_owner &&
+      (contains(github.event.issue.labels.*.name, 'ai:research') ||
+       contains(github.event.issue.labels.*.name, 'ai:draft') ||
+       contains(github.event.issue.labels.*.name, 'ai:slides')) &&
+      !contains(github.event.issue.labels.*.name, 'ai:done')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run the task with free models + the knowledge base
+        env:
+          # Issue text is passed as data through env, never interpolated into the shell.
+          TASK_TITLE: ${{ github.event.issue.title }}
+          TASK_BODY: ${{ github.event.issue.body }}
+          TASK_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+          TASK_NUMBER: ${{ github.event.issue.number }}
+          HARNESS_RUN: task-${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
+        run: node scripts/harness/task.mjs --out "$RUNNER_TEMP/result.md"
+
+      - name: Reply on the issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/result.md"
+          gh label create "ai:done" --repo "$GITHUB_REPOSITORY" --color 0e8a16 --description "AIが処理済み" 2>/dev/null || true
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "ai:done"
+
+      - name: Keep the result in the repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add memory docs/slides
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "task(#${{ github.event.issue.number }}): AI task result"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${{ github.event.repository.default_branch }}; then
+              exit 0
+            fi
+            git pull --rebase origin ${{ github.event.repository.default_branch }} || true
+            sleep $((attempt * 5))
+          done
+          exit 1

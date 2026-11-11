@@ -84,7 +84,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (url.pathname.includes('/data/') || url.pathname.includes('/kb/')) {
+  if (url.pathname.includes('/data/') || url.pathname.includes('/kb/') || url.pathname.includes('/slides/')) {
     event.respondWith(networkFirst(request, DATA_CACHE));
     return;
   }

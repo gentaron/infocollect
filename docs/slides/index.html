@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>InfoCollect スライド</title>
+<link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  .sl-wrap { max-width: 880px; margin: 0 auto; padding: 16px; }
+  .sl-item { display: block; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin: 0 0 10px; color: var(--text); text-decoration: none; }
+  .sl-item:hover { border-color: var(--accent); }
+  .sl-item b { display: block; line-height: 1.45; overflow-wrap: anywhere; }
+  .sl-item span { color: var(--muted); font-size: 12px; }
+  .sl-empty { color: var(--muted); padding: 24px 0; }
+</style>
+</head>
+<body>
+<header class="app-header">
+  <div class="brand">
+    <img src="../icons/favicon.svg" alt="" width="34" height="34" />
+    <div>
+      <h1>InfoCollect スライド</h1>
+      <p class="tagline">同じ原稿から作った資料。印刷でPDFにできる</p>
+    </div>
+  </div>
+  <div class="header-actions"><a class="btn" href="../">今日のダイジェスト</a></div>
+</header>
+<main class="sl-wrap" id="list"><p class="sl-empty">読み込み中…</p></main>
+<script>
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+fetch('index.json', { cache: 'no-cache' }).then((r) => r.json()).then((list) => {
+  document.getElementById('list').innerHTML = list.length
+    ? list.map((d) => `<a class="sl-item" href="${esc(d.file)}"><b>${esc(d.title)}</b><span>${esc([d.date, d.label, `${d.slides}枚`].filter(Boolean).join(' · '))}</span></a>`).join('')
+    : '<p class="sl-empty">まだスライドが無い。</p>';
+}).catch(() => { document.getElementById('list').innerHTML = '<p class="sl-empty">一覧を読み込めなかった。</p>'; });
+</script>
+</body>
+</html>

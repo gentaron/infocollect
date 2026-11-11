@@ -1,0 +1,72 @@
+{
+  "_comment": "AIハーネスの配車表。仕事の重さ（tier）ごとに、上から順に試す。鍵が無いもの・今日の予算を使い切ったもの・直前に落ちたものは飛ばす。全部無料枠。モデル名は各社の GEMINI_MODEL などの環境変数で上書きできる。",
+  "tiers": {
+    "light": {
+      "about": "分類・見出し・アウトライン・短い要約。速くて小さいモデルで足りる仕事",
+      "maxTokens": 2048,
+      "temperature": 0.4,
+      "routes": [
+        { "provider": "cloudflare", "model": "@cf/meta/llama-3.1-8b-instruct" },
+        { "provider": "groq", "model": "llama-3.1-8b-instant" },
+        { "provider": "github", "model": "openai/gpt-4o-mini" },
+        { "provider": "gemini", "model": "gemini-2.0-flash" },
+        { "provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free" },
+        { "provider": "local" },
+        { "provider": "custom" }
+      ]
+    },
+    "standard": {
+      "about": "調査メモ・スライド原稿・下書き。そこそこ賢くて無料枠が広いもの",
+      "maxTokens": 4096,
+      "temperature": 0.6,
+      "routes": [
+        { "provider": "groq", "model": "llama-3.3-70b-versatile" },
+        { "provider": "github", "model": "openai/gpt-4o-mini" },
+        { "provider": "gemini", "model": "gemini-2.0-flash" },
+        { "provider": "cloudflare", "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast" },
+        { "provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free" },
+        { "provider": "local" },
+        { "provider": "custom" }
+      ]
+    },
+    "heavy": {
+      "about": "4000字級の記事本文。いちばん強い無料モデルを最優先。ここだけは予算を温存しておく",
+      "maxTokens": 8192,
+      "temperature": 0.9,
+      "routes": [
+        { "provider": "gemini", "model": "gemini-2.5-flash" },
+        { "provider": "gemini", "model": "gemini-2.0-flash" },
+        { "provider": "groq", "model": "llama-3.3-70b-versatile" },
+        { "provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free" },
+        { "provider": "github", "model": "openai/gpt-4o-mini" },
+        { "provider": "cloudflare", "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast" },
+        { "provider": "custom" },
+        { "provider": "local" },
+        { "provider": "zai-cli" }
+      ]
+    },
+    "review": {
+      "about": "審査役（Supervisor）。書き手と別の会社のモデルを優先して、同じ癖で見逃すのを防ぐ",
+      "maxTokens": 1536,
+      "temperature": 0.1,
+      "routes": [
+        { "provider": "groq", "model": "llama-3.3-70b-versatile" },
+        { "provider": "github", "model": "openai/gpt-4o-mini" },
+        { "provider": "gemini", "model": "gemini-2.0-flash" },
+        { "provider": "cloudflare", "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast" },
+        { "provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free" },
+        { "provider": "local" },
+        { "provider": "custom" }
+      ]
+    }
+  },
+  "dailyBudget": {
+    "_comment": "1日あたりの呼び出し回数の上限（無料枠より少し手前で止める）。heavy 用に reserve 回ぶんは light/standard/review からは使わせない。",
+    "gemini": { "requests": 180, "reserve": 30 },
+    "groq": { "requests": 600, "reserve": 20 },
+    "github": { "requests": 120, "reserve": 10 },
+    "cloudflare": { "requests": 200, "reserve": 0 },
+    "openrouter": { "requests": 40, "reserve": 10 }
+  },
+  "usageKeepDays": 30
+}

@@ -24,18 +24,25 @@ import {
 import { spawnSync } from 'node:child_process';
 import { buildIndex, cosine, dequantize, docId, expandQuery, mergeDoc, packContext, parseJsonl, quantize, rrf, search, tokenize } from '../docs/kb/kb-core.js';
 import { plain, toDoc } from './kb/ingest.mjs';
+import { parseLooseJson, plan } from './harness/router.mjs';
+import { providerById } from './harness/providers.mjs';
+import { lintArticle, titleSimilarity } from './harness/review.mjs';
+import { classify as classifyTask } from './harness/task.mjs';
+import { normalizeOutline, outlineFromText, parseArticle, renderDeck } from './slides/build.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 let passed = 0;
 
+const pending = [];
 function test(name, fn) {
+  const ok = () => { passed++; console.log(`  ok  ${name}`); };
+  const fail = (error) => { console.error(`  FAIL ${name}\n       ${error.message}`); process.exitCode = 1; };
   try {
-    fn();
-    passed++;
-    console.log(`  ok  ${name}`);
+    const result = fn();
+    if (result && typeof result.then === 'function') pending.push(result.then(ok, fail));
+    else ok();
   } catch (error) {
-    console.error(`  FAIL ${name}\n       ${error.message}`);
-    process.exitCode = 1;
+    fail(error);
   }
 }
 
@@ -334,4 +341,90 @@ test('mcp server: initialize, tools/list, kb_search round-trip', () => {
   assert.equal(out[4].error.code, -32601);
 });
 
+// ---------------------------------------------------------------- harness
+const NOCLI = { HARNESS_NO_CLI: '1' };
+test('harness plan: no keys → nothing; GitHub token alone is enough', () => {
+  assert.equal(plan({ tier: 'heavy', env: { ...NOCLI } }).attempts.length, 0);
+  const p = plan({ tier: 'standard', env: { ...NOCLI, GITHUB_TOKEN: 'x' } });
+  assert.deepEqual(p.attempts.map((a) => a.provider.id), ['github']);
+});
+test('harness plan: importance decides the model', () => {
+  const env = { ...NOCLI, GEMINI_API_KEY: 'k', GROQ_API_KEY: 'k', CLOUDFLARE_ACCOUNT_ID: 'a', CLOUDFLARE_API_TOKEN: 't' };
+  const first = (tier) => { const a = plan({ tier, env }).attempts[0]; return `${a.provider.id}/${a.model}`; };
+  assert.equal(first('heavy'), 'gemini/gemini-2.5-flash');
+  assert.equal(first('light'), 'cloudflare/@cf/meta/llama-3.1-8b-instruct');
+  assert.equal(first('standard'), 'groq/llama-3.3-70b-versatile');
+});
+test('harness plan: light work cannot eat the budget reserved for heavy work', () => {
+  const env = { ...NOCLI, GEMINI_API_KEY: 'k' };
+  const usage = { gemini: { requests: 160 } }; // budget 180, reserve 30 → light limit 150
+  assert.equal(plan({ tier: 'light', env, usage }).attempts.length, 0);
+  assert.ok(plan({ tier: 'heavy', env, usage }).attempts.length > 0);
+  assert.equal(plan({ tier: 'heavy', env, usage: { gemini: { requests: 180 } } }).attempts.length, 0);
+});
+test('harness plan: reviewer prefers another provider, AI_PROVIDER pins, env model overrides', () => {
+  const env = { ...NOCLI, GEMINI_API_KEY: 'k', GROQ_API_KEY: 'k' };
+  const ids = plan({ tier: 'review', env, avoid: ['groq'] }).attempts.map((a) => a.provider.id);
+  assert.equal(ids[0], 'gemini');
+  assert.equal(ids[ids.length - 1], 'groq', 'avoided provider stays as last resort');
+  assert.deepEqual([...new Set(plan({ tier: 'heavy', env: { ...env, AI_PROVIDER: 'groq' } }).attempts.map((a) => a.provider.id))], ['groq']);
+  assert.equal(plan({ tier: 'heavy', env: { ...env, GEMINI_MODEL: 'gemini-x' } }).attempts[0].model, 'gemini-x');
+});
+test('harness: OpenRouter refuses non-free models unless explicitly allowed', async () => {
+  await assert.rejects(() => providerById('openrouter').call({ system: '', user: '' }, 'openai/gpt-5', { OPENROUTER_API_KEY: 'k' }, {}), /:free/);
+});
+test('harness parseLooseJson survives code fences and chatter', () => {
+  assert.deepEqual(parseLooseJson('```json\n{"verdict":"pass"}\n```'), { verdict: 'pass' });
+  assert.deepEqual(parseLooseJson('はい、こちらです: {"a":[1,2]} 以上です'), { a: [1, 2] });
+  assert.equal(parseLooseJson('no json here'), null);
+});
+test('supervisor lint: accepts a clean post, rejects stubs, repeats and placeholders', () => {
+  const para = (n) => `これは${n}番目の段落で、それぞれ違う内容をちゃんと書いているという体裁の文章だよ。`.repeat(8);
+  const good = ['新しいローカル推論サーバーを試した話', ...Array.from({ length: 12 }, (_, i) => para(i)), '#AI #ローカルLLM #推論 #個人開発', '-----', '補足だよ。'].join('\n\n');
+  assert.deepEqual(lintArticle(good).filter((i) => i.level === 'error'), []);
+  const codes = (text, opts) => lintArticle(text, opts).map((i) => i.code);
+  assert.ok(codes('短い').includes('too-short'));
+  assert.ok(codes(good.replace('#AI #ローカルLLM #推論 #個人開発', '')).includes('no-hashtags'));
+  assert.ok(codes(good, { recentTitles: ['新しいローカル推論サーバーを試した話'] }).includes('repeat-title'));
+  assert.ok(codes(`${good}\n\n詳しくは [URL] を見てね。`).includes('placeholder'));
+  assert.ok(titleSimilarity('Qwen4 を試した', '今日の晩ごはん') < 0.2);
+});
+test('kanban: labels decide the kind and the model tier', () => {
+  assert.deepEqual(classifyTask(['ai:research']), { kind: 'research', tier: 'standard' });
+  assert.deepEqual(classifyTask(['ai:draft']), { kind: 'draft', tier: 'heavy' });
+  assert.deepEqual(classifyTask(['AI:Slides', 'tier:light']), { kind: 'slides', tier: 'light' });
+  assert.deepEqual(classifyTask([]), { kind: 'research', tier: 'standard' });
+});
+test('ai-task workflow only serves the repository owner and passes issue text as data', () => {
+  const yaml = fs.readFileSync(path.join(ROOT, '.github/workflows/ai-task.yml'), 'utf8');
+  assert.ok(yaml.includes("author_association == 'OWNER'"));
+  assert.ok(yaml.includes('models: read'));
+  const runBlocks = yaml.split('\n').filter((l) => /^\s+(run:|gh |git |node )/.test(l)).join('\n');
+  assert.ok(!/issue\.(title|body)/.test(runBlocks), 'issue text must never be interpolated into a shell line');
+});
+
+// ---------------------------------------------------------------- slides
+test('slides: rule-based outline from a plain-text post, rendered as a static deck', () => {
+  const article = ['小さなモデルを回す話', ...Array.from({ length: 8 }, (_, i) => `${i}つめの要点はこれ。理由はこうで、うちのPCでも動いた。次に試すのはここだよ。`), '#AI #LLM #メモ #個人開発', '-----', '補足'].join('\n\n');
+  const parsed = parseArticle(article);
+  assert.equal(parsed.title, '小さなモデルを回す話');
+  assert.equal(parsed.paragraphs.length, 8);
+  assert.equal(parsed.hashtags.length, 4);
+  const outline = outlineFromText(article, { maxSlides: 5 });
+  assert.ok(outline.slides.length >= 2 && outline.slides.length <= 5);
+  assert.ok(outline.slides.every((s) => s.title && s.bullets.length >= 1 && s.bullets.length <= 3));
+  const html = renderDeck({ ...outline, title: '<b>x</b>' }, { date: '2026-11-11' });
+  assert.ok(html.includes('&lt;b&gt;x&lt;/b&gt;') && !html.includes('<b>x</b>'), 'titles are escaped');
+  assert.equal((html.match(/<section class="s/g) || []).length, outline.slides.length + 2);
+  assert.ok(html.includes('@media print') && !html.includes('<script'), 'static and printable');
+});
+test('slides: model outlines are validated before rendering', () => {
+  assert.equal(normalizeOutline({ slides: 'nope' }), null);
+  assert.equal(normalizeOutline({ slides: [{ title: 'only one', bullets: ['a'] }] }), null);
+  const ok = normalizeOutline({ title: 't', slides: [{ title: 'a', bullets: ['1', '2', '3', '4', '5'] }, { title: 'b', bullets: ['1'] }, { title: '', bullets: ['x'] }] });
+  assert.equal(ok.slides.length, 2);
+  assert.equal(ok.slides[0].bullets.length, 4);
+});
+
+await Promise.all(pending);
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures)' : ''}`);

@@ -26,6 +26,9 @@ memory/                    生成時に読み込むメモ（PC・環境・ログ
 docs/blog/                 生成された記事とブログ一覧ページ
 scripts/kb/                ナレッジベース（ingest / query / 広い網 / 埋め込み）
 scripts/mcp/server.mjs     MCP サーバー（stdio・依存ゼロ）
+scripts/harness/           AIハーネス（配車 router / 審査 review / Issueカンバン task / status）
+scripts/slides/build.mjs   記事やテーマから静的スライドを作る
+config/harness.json        tier ごとの配車表と1日の予算
 scripts/selftest.mjs       ネットワーク不要の自己テスト
 scripts/gen-icons.mjs      PWAアイコン生成（依存パッケージ無し）
 scripts/pack.mjs           docs/ を infocollect-pwa.zip に固める
@@ -119,6 +122,59 @@ claude mcp add infocollect -- node scripts/mcp/server.mjs   # Claude Code から
 ```
 
 ベクトルは任意です。`CLOUDFLARE_ACCOUNT_ID`+`CLOUDFLARE_API_TOKEN`（`@cf/baai/bge-m3`）か `GEMINI_API_KEY` があれば自動で使い、無ければ BM25 だけで動きます。自分の PC では `KB_EMBED_PROVIDER=ollama`（既定 `bge-m3`）でローカル埋め込みもできます。
+
+---
+
+## AIハーネス（仕事の重さでモデルを振り分ける）
+
+「鍵が入っている最初の1社だけを使う」のをやめて、**仕事の重さ（tier）で無料モデルを配車**します。配車表は [`config/harness.json`](./config/harness.json) 1枚。
+
+| tier | 何に使うか | 最初に試すもの |
+| --- | --- | --- |
+| `light` | 分類・見出し・短い要約 | 小さくて速いモデル（Cloudflare / Groq 8B） |
+| `standard` | 調査メモ・スライドの骨組み | Groq 70B → GitHub Models → Gemini Flash |
+| `heavy` | 4000字級の記事本文 | Gemini 2.5 Flash → Groq → OpenRouter(:free) → GitHub Models |
+| `review` | 審査役 | **書き手と別の会社のモデル**を優先 |
+
+- どこかが落ちたら次へ。鍵が無いもの・今日の予算を使い切ったものは飛ばす
+- **heavy 用の予約枠**があるので、軽い仕事が記事の分の無料枠を食い潰さない
+- 呼び出しは `memory/harness/usage/` の台帳に全部残る（`npm run harness` で残量と配車順が見える）
+- **GitHub Models の無料枠**に対応。Actions の `GITHUB_TOKEN` だけで動くので、**Secret を1つも入れなくてもブログが書ける**
+- OpenRouter は `:free` 以外のモデルを指定すると止まる（うっかり課金の防止）
+- 自分の PC では `LOCAL_LLM_MODEL=qwen3:8b`（Ollama など OpenAI 互換）でローカルLLMも配車に入る
+
+### 書き手と審査役（Worker / Supervisor）
+
+ブログは書いたものをそのまま出しません。
+
+1. **決定論の lint**（モデルなし）: 短すぎ・ハッシュタグ欠落・プレースホルダ残り・AIの地の声・過去記事とタイトルが被る、を機械で落とす
+2. **審査役**（別の会社のモデル）: 集めた資料と下書きを突き合わせ、根拠の無い断定や水増しを指摘
+3. 問題があれば**1回だけ差し戻し**て書き直し。審査の記録は `memory/harness/runs/` に残る
+
+審査役が呼べない日は lint だけで判定します（`--no-review` で無効化）。
+
+### 同じ原稿からスライド
+
+記事を保存すると、同じ原稿から**静的なスライド**（16:9・アニメーションなし・印刷で1枚1ページのPDF）が `docs/slides/` にできます。PWA の「スライド」から開けます。
+
+```bash
+node scripts/slides/build.mjs --from docs/blog/2026-11-11/0900-harness.txt
+node scripts/slides/build.mjs --topic "ローカルLLMの量子化"    # ナレッジベースから調べて資料化
+node scripts/slides/build.mjs --from <記事.txt> --no-llm       # モデルなし（ルールだけ）でも作れる
+```
+
+### Issue がカンバンになる
+
+スマホから Issue を1枚立ててラベルを付けるだけで、無料モデルがナレッジベースを資料にして仕事をし、結果をコメントで返します。
+
+| ラベル | 仕事 |
+| --- | --- |
+| `ai:research` | 出典つきの調査メモ |
+| `ai:draft` | 記事の下書き |
+| `ai:slides` | スライドを作って `docs/slides/` に置く |
+| `tier:light` / `tier:standard` / `tier:heavy` | 使うモデルの重さを上書き |
+
+リポジトリの持ち主が開いた Issue だけを処理します（公開リポジトリなので）。
 
 ---
 

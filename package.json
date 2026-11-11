@@ -17,7 +17,10 @@
     "kb:backfill": "node scripts/kb/ingest.mjs --backfill",
     "kb:query": "node scripts/kb/query.mjs",
     "mcp": "node scripts/mcp/server.mjs",
-    "test": "node scripts/selftest.mjs"
+    "test": "node scripts/selftest.mjs",
+    "slides": "node scripts/slides/build.mjs",
+    "harness": "node scripts/harness/status.mjs",
+    "task": "node scripts/harness/task.mjs"
   },
   "license": "MIT"
 }

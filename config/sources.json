@@ -238,6 +238,24 @@
           "agent",
           "podcast"
         ]
+      },
+      {
+        "name": "arXiv math-ph",
+        "url": "https://rss.arxiv.org/rss/math-ph",
+        "tags": [
+          "paper",
+          "math-ph"
+        ],
+        "limit": 40
+      },
+      {
+        "name": "arXiv hep-th",
+        "url": "https://rss.arxiv.org/rss/hep-th",
+        "tags": [
+          "paper",
+          "hep-th"
+        ],
+        "limit": 40
       }
     ],
     "huggingFace": {

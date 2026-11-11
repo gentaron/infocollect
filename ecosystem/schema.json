@@ -13,6 +13,7 @@
     "role": { "type": "string" },
     "stack": { "type": "string" },
     "site": { "type": "string", "format": "uri" },
+    "feed": { "type": "string", "format": "uri", "description": "このリポジトリが出す gentaron.feed/1 の URL。ハブの KB が毎日取り込む" },
     "produces": { "type": "array", "items": { "type": "string" } },
     "consumes": { "type": "array", "items": { "type": "string" } },
     "upstream": { "type": "array", "items": { "type": "object", "required": ["repo", "flows", "url"] } },

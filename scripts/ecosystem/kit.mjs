@@ -63,6 +63,7 @@ export function manifest(registry, name) {
     role: me.role,
     stack: me.stack || '',
     site: me.site || undefined,
+    feed: me.feed || undefined,
     produces: me.produces || [],
     consumes: me.consumes || [],
     upstream: byRepo(upstream).map((u) => ({ ...u, url: gh(owner, u.repo) })),
@@ -205,7 +206,7 @@ export function mapMarkdown(registry) {
     }
     lines.push('');
   }
-  lines.push('## 全リポジトリ共通の道具', '', '- **ナレッジベース**（MCP `infocollect-kb`）: 調べ物はまずここ。各リポジトリの役割もここに入っている', '- **Forge**（MCP `forge`）: 大きな作業をカードに割って無料のエージェントへ。マージは人', '- **AGENTS.md の「エコシステム」節**: AI が作業前に読む、そのリポジトリの上流・下流', '');
+  lines.push('## 全リポジトリ共通の道具', '', '- **ナレッジベース**（MCP `infocollect-kb`）: 調べ物はまずここ。各リポジトリの役割もここに入っている', '- **Forge**（MCP `forge`）: 大きな作業をカードに割って無料のエージェントへ。マージは人', '- **AGENTS.md の「エコシステム」節**: AI が作業前に読む、そのリポジトリの上流・下流', '- **ネットワーク（gentaron.feed/1）**: 結果を出すリポジトリは `feed.json` を置き、registry の `feed` に URL を書く。ハブの KB が毎日取り込むので、ほかのリポジトリから `kb_search` で引ける（形は `scripts/ecosystem/feed.mjs`）', '');
   return lines.join('\n');
 }
 

@@ -17,6 +17,7 @@ import { canonicalUrl, dateInZone, log, stripHtml, truncate, warn } from '../lib
 import { docId, docText, mergeDoc, quantize, shardOf } from '../../docs/kb/kb-core.js';
 import { pickEmbedder } from './lib/embed.mjs';
 import { collectWideNet } from './lib/sources.mjs';
+import { collectNetwork } from '../ecosystem/feed.mjs';
 import { KB_DIR, ROOT, loadLocal, saveLocal } from './lib/store.mjs';
 
 const args = new Set(process.argv.slice(2));
@@ -185,6 +186,11 @@ async function main() {
   items.push(...blogItems());
   items.push(...ecosystemItems());
   if (!OFFLINE) items.push(...(await collectWideNet(kbConfig)));
+  if (!OFFLINE) {
+    // What the other repositories just produced (gentaron.feed/1), so the network searches itself.
+    const registry = readJson(path.join(ROOT, 'ecosystem', 'registry.json'), null);
+    if (registry) items.push(...(await collectNetwork(registry, { log, warn })).items);
+  }
 
   let added = 0;
   for (const item of items) {

@@ -53,6 +53,8 @@ flowchart LR
   r_Gentarog -->|記事| r_genimage
   r_IDEAZ -->|書き方の型| r_Gentarog
   r_IDEAZ -->|書き方の型| r_genesisvault
+  r_Mathematical_Physics_Lab_ -->|研究ノート| r_VAIZ
+  r_QAIZ -->|相場の地形| r_VAIZ
   r_QAIZ -->|相場の地形| r_genesisvault
   r_edutext -->|EDU の原典| r_edu
   r_edutext -->|EDU の原典| r_edunft
@@ -97,7 +99,7 @@ flowchart LR
 | [IDEAZ](https://github.com/gentaron/IDEAZ) | 1日5枠のブログ・フォーマットと題材。コピーして AI に渡せば記事が立ち上がる | infocollect | genesisvault, Gentarog |
 | [genesisvault](https://github.com/gentaron/genesisvault) | Mina Eureka Ernst の日記ブログ。12体のエージェント（Liminal Forge）が毎日書く | infocollect, IDEAZ, QAIZ | VAIZ, SAIZ, genimage |
 | [Gentarog](https://github.com/gentaron/Gentarog) | 毎日自動で投稿されるブログ | infocollect, IDEAZ | VAIZ, SAIZ, genimage |
-| [VAIZ](https://github.com/gentaron/VAIZ) | 完全無料の動画生成ループ。企画 → 画像 → 音声 → 動画 | infocollect, genesisvault, Gentarog |  |
+| [VAIZ](https://github.com/gentaron/VAIZ) | 完全無料の動画生成ループ。企画 → 画像 → 音声 → 動画 | infocollect, genesisvault, Gentarog, Mathematical-Physics-Lab-, QAIZ |  |
 | [SAIZ](https://github.com/gentaron/SAIZ) | テキストからスライドを作るツール | infocollect, genesisvault, Gentarog |  |
 | [genimage](https://github.com/gentaron/genimage) | Eureka Thumb — 記事を貼るだけの文字サムネメーカー | infocollect, genesisvault, Gentarog |  |
 | [seo](https://github.com/gentaron/seo) | Suggest Radar — 日本語検索のキーワード探索 |  |  |
@@ -108,9 +110,9 @@ flowchart LR
 
 | リポジトリ | 役割 | 受け取る | 渡す |
 | --- | --- | --- | --- |
-| [QAIZ](https://github.com/gentaron/QAIZ) | 地域 × セクターの株式を一流の指標で横断分析するターミナル＋日本株クオンツ研究ラボ |  | genesisvault |
+| [QAIZ](https://github.com/gentaron/QAIZ) | 地域 × セクターの株式を一流の指標で横断分析するターミナル＋日本株クオンツ研究ラボ |  | genesisvault, VAIZ |
 | [hazerader](https://github.com/gentaron/hazerader) | Cyberjaya の大気汚染指数（US AQI）を AI アンサンブルで毎日予測する PWA |  |  |
-| [Mathematical-Physics-Lab-](https://github.com/gentaron/Mathematical-Physics-Lab-) | 無料の OSS で数理物理の構造を探索し、計算で候補を検証する研究ラボ | infocollect |  |
+| [Mathematical-Physics-Lab-](https://github.com/gentaron/Mathematical-Physics-Lab-) | 無料の OSS で数理物理の構造を探索し、計算で候補を検証する研究ラボ | infocollect | VAIZ |
 
 ## EDU 宇宙
 
@@ -192,3 +194,4 @@ Eternal Dominion Universe。edutext が原典、ほかはその表現
 - **ナレッジベース**（MCP `infocollect-kb`）: 調べ物はまずここ。各リポジトリの役割もここに入っている
 - **Forge**（MCP `forge`）: 大きな作業をカードに割って無料のエージェントへ。マージは人
 - **AGENTS.md の「エコシステム」節**: AI が作業前に読む、そのリポジトリの上流・下流
+- **ネットワーク（gentaron.feed/1）**: 結果を出すリポジトリは `feed.json` を置き、registry の `feed` に URL を書く。ハブの KB が毎日取り込むので、ほかのリポジトリから `kb_search` で引ける（形は `scripts/ecosystem/feed.mjs`）

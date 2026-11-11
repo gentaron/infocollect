@@ -30,6 +30,7 @@ import { lintArticle, titleSimilarity } from './harness/review.mjs';
 import { classify as classifyTask } from './harness/task.mjs';
 import { BEGIN, END, agentsBlock, manifest, mergeMcp, readmeBlock, relations, upsertBlock, validate as validateRegistry } from './ecosystem/kit.mjs';
 import { plan as planLinks } from './ecosystem/propagate.mjs';
+import { collectNetwork, feedItems, validateFeed } from './ecosystem/feed.mjs';
 import { normalizeOutline, outlineFromText, parseArticle, renderDeck } from './slides/build.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -463,6 +464,23 @@ test('ecosystem .mcp.json merge keeps the repo own servers', () => {
 test('ecosystem: the hub itself is linked and up to date', () => {
   const p = planLinks(REGISTRY, ROOT, 'infocollect');
   assert.deepEqual(p.files.map((f) => f.file), [], `stale: ${p.files.map((f) => f.file).join(', ')} — run node scripts/ecosystem/propagate.mjs .`);
+});
+
+test('network feed: valid feeds become KB items, broken ones are refused', async () => {
+  const feed = { schema: 'gentaron.feed/1', repo: 'Lab', generatedAt: '2026-11-11T00:00:00Z',
+    items: [{ title: 'f-vector n=6', url: 'https://example.com/a', date: '2026-11-10', kind: 'research', evidence: 'verified' }, { title: 'no url', url: 'http://x' }] };
+  assert.equal(validateFeed(feed).length, 1, 'the http item is reported');
+  const items = feedItems(feed);
+  assert.equal(items.length, 1);
+  assert.equal(items[0].source, 'Network · Lab');
+  assert.ok(items[0].tags.includes('verified'));
+  assert.ok(toDoc(items[0], { collectedAt: '2026-11-11T00:00:00Z', tz: 'UTC' }));
+  assert.deepEqual(feedItems({ schema: 'other', repo: 'x', items: feed.items }), []);
+  const registry = { repos: [{ name: 'Lab', feed: 'https://a', status: 'active' }, { name: 'Dead', feed: 'https://b', status: 'active' }, { name: 'Old', feed: 'https://c', status: 'archive' }] };
+  const fetchImpl = async (url) => url === 'https://a' ? { ok: true, json: async () => feed } : { ok: false, status: 404 };
+  const { items: got, status } = await collectNetwork(registry, { fetchImpl });
+  assert.equal(got.length, 1);
+  assert.deepEqual(status.map((x) => [x.repo, x.ok]), [['Dead', false], ['Lab', true]]);
 });
 
 await Promise.all(pending);

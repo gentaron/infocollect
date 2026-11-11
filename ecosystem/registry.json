@@ -104,7 +104,9 @@
       ],
       "consumes": [
         "blog",
-        "kb"
+        "kb",
+        "research",
+        "market"
       ]
     },
     {
@@ -153,7 +155,8 @@
       "produces": [
         "market"
       ],
-      "consumes": []
+      "consumes": [],
+      "feed": "https://raw.githubusercontent.com/gentaron/QAIZ/HEAD/research/feed.json"
     },
     {
       "name": "hazerader",
@@ -177,7 +180,8 @@
       ],
       "consumes": [
         "kb"
-      ]
+      ],
+      "feed": "https://raw.githubusercontent.com/gentaron/Mathematical-Physics-Lab-/HEAD/docs/feed.json"
     },
     {
       "name": "edutext",

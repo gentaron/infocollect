@@ -39,7 +39,9 @@
       "anthropics/anthropic-sdk-python",
       "modelcontextprotocol/servers",
       "open-webui/open-webui",
-      "n8n-io/n8n"
+      "n8n-io/n8n",
+      "Niko1221/Strata",
+      "RandoTeam/4gbVramStrata"
     ]
   },
   "news": {
@@ -256,12 +258,40 @@
           "hep-th"
         ],
         "limit": 40
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://feeds.feedburner.com/TheHackersNews",
+        "tags": [
+          "security"
+        ],
+        "limit": 30
+      },
+      {
+        "name": "MarkTechPost",
+        "url": "https://www.marktechpost.com/feed/",
+        "tags": [
+          "model",
+          "paper"
+        ],
+        "limit": 30
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "tags": [
+          "model"
+        ],
+        "limit": 20
       }
     ],
     "huggingFace": {
       "dailyPapers": true,
       "trendingModels": true,
-      "limit": 30
+      "limit": 60,
+      "trendingSpaces": true,
+      "trendingDatasets": true,
+      "extraLimit": 30
     },
     "reddit": {
       "subs": [
@@ -282,6 +312,30 @@
         "inference"
       ],
       "minPoints": 30
+    },
+    "githubRising": {
+      "_comment": "作られて2週間以内に急に星が付いているリポジトリ。ダイジェストの道具枠（★100以上・既存）では拾えない、出た当日に記事になる層",
+      "createdWithinDays": 14,
+      "minStars": 20,
+      "perQuery": 30,
+      "queries": [
+        "topic:llm",
+        "topic:ai-agents",
+        "topic:mcp",
+        "topic:local-llm",
+        "llm agent in:description",
+        "claude code in:description,readme"
+      ]
+    },
+    "openRouter": {
+      "_comment": "新しく呼べるようになったモデルと、その値段・文脈長・無料かどうか",
+      "enabled": true,
+      "newWithinDays": 10
+    },
+    "cisaKev": {
+      "_comment": "「実際に悪用されている」脆弱性の一次情報",
+      "enabled": true,
+      "addedWithinDays": 7
     }
   }
 }

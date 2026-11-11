@@ -31,6 +31,8 @@ import { classify as classifyTask } from './harness/task.mjs';
 import { BEGIN, END, agentsBlock, manifest, mergeMcp, readmeBlock, relations, upsertBlock, validate as validateRegistry } from './ecosystem/kit.mjs';
 import { plan as planLinks } from './ecosystem/propagate.mjs';
 import { collectNetwork, feedItems, validateFeed } from './ecosystem/feed.mjs';
+import { kevItem, openRouterItem, risingItem } from './kb/lib/sources.mjs';
+import { analyze as auditNotes, kindOf, linksOf } from './kb/note-audit.mjs';
 import { normalizeOutline, outlineFromText, parseArticle, renderDeck } from './slides/build.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -481,6 +483,38 @@ test('network feed: valid feeds become KB items, broken ones are refused', async
   const { items: got, status } = await collectNetwork(registry, { fetchImpl });
   assert.equal(got.length, 1);
   assert.deepEqual(status.map((x) => [x.repo, x.ok]), [['Dead', false], ['Lab', true]]);
+});
+
+test('wide net: rising repos, new OpenRouter models and KEV entries become KB docs', () => {
+  const now = Date.parse('2026-11-11T00:00:00Z');
+  const r = risingItem({ full_name: 'a/b', html_url: 'https://github.com/a/b', description: 'tiny agent', created_at: '2026-11-07T00:00:00Z', stargazers_count: 80, language: 'Rust', topics: ['mcp'] }, now);
+  assert.equal(r.source, 'GitHub Rising');
+  assert.match(r.body, /20\.0★\/日/);
+  const free = openRouterItem({ id: 'x/y:free', name: 'Y', created: 1762800000, pricing: { prompt: '0', completion: '0' }, context_length: 131072 });
+  assert.ok(free.tags.includes('free-tier') && free.body.includes('無料') && free.body.includes('131,072'));
+  const paid = openRouterItem({ id: 'x/z', created: 1762800000, pricing: { prompt: '0.0000003', completion: '0.0000012' } });
+  assert.match(paid.body, /入力 \$0\.30 \/ 出力 \$1\.20/);
+  const kev = kevItem({ cveID: 'CVE-2026-1', vendorProject: 'Microsoft', product: 'SQL Server', vulnerabilityName: 'RCE', dateAdded: '2026-11-10', dueDate: '2026-12-01', shortDescription: 'x', requiredAction: 'patch', knownRansomwareCampaignUse: 'Known' });
+  assert.equal(kev.url, 'https://nvd.nist.gov/vuln/detail/CVE-2026-1');
+  assert.match(kev.body, /悪用を確認.*ランサムウェア/);
+  for (const item of [r, free, paid, kev]) assert.ok(toDoc(item, { collectedAt: '2026-11-11T00:00:00Z', tz: 'UTC' }));
+});
+test('note audit: counts sources per post, drops PR links and note.com itself', () => {
+  const notes = [
+    { name: '【個人開発日記】今日の作業', publishAt: '2026-11-10T21:00:00+09:00', body: '<a href="https://www.green-japan.com/x">PR</a><a href="https://github.com/a/b">x</a><a href="https://github.com/a/c">y</a>' },
+    { name: 'Qwen4 27B を徹底解説', publishAt: '2026-11-11T09:00:00+09:00', body: '<a href="https://huggingface.co/Qwen/Q">m</a><a href="https://note.com/x/n/1">self</a><a href="http://127.0.0.1:3000">l</a>', embedded_contents: [{ url: 'https://www.youtube.com/watch?v=1' }] },
+    { name: 'SQL Server に 9.8 の穴（CVE-2026-1）', publishAt: '2026-11-11T12:00:00+09:00', body: 'no links' },
+  ];
+  assert.deepEqual(notes.map((n) => kindOf(n.name)), ['diary', 'model', 'security']);
+  assert.equal(linksOf(notes[1]).length, 2, 'note.com and localhost are not sources');
+  const r = auditNotes(notes);
+  assert.deepEqual(r.domains.find(([h]) => h === 'github.com'), ['github.com', 1], 'one post, counted once');
+  assert.deepEqual(r.adsExcluded, [['green-japan.com', 1]]);
+  assert.equal(r.firstCited[0][1], 1);
+  assert.equal(r.postsWithoutLinks, 1);
+  assert.equal(r.postsWithVideoEmbed, 1);
+  assert.equal(r.hoursLocal[21], 1);
+  assert.equal(r.span.perActiveDay, 1.5);
 });
 
 await Promise.all(pending);

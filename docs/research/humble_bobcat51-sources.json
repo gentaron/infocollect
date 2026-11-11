@@ -1,0 +1,445 @@
+{
+  "creator": "humble_bobcat51",
+  "checkedAt": "2026-11-11T23:48:00.169Z",
+  "posts": 240,
+  "span": {
+    "from": "2026-09-17",
+    "to": "2026-11-12",
+    "activeDays": 57,
+    "perActiveDay": 4.21
+  },
+  "kinds": {
+    "tool": 98,
+    "model": 78,
+    "diary": 34,
+    "security": 16,
+    "off-topic": 14
+  },
+  "hoursLocal": {
+    "0": 2,
+    "4": 2,
+    "5": 1,
+    "6": 1,
+    "7": 11,
+    "8": 18,
+    "9": 13,
+    "10": 16,
+    "11": 11,
+    "12": 42,
+    "13": 6,
+    "14": 4,
+    "15": 8,
+    "16": 3,
+    "17": 20,
+    "18": 21,
+    "19": 22,
+    "20": 11,
+    "21": 16,
+    "22": 10,
+    "23": 2
+  },
+  "domains": [
+    [
+      "github.com",
+      78
+    ],
+    [
+      "youtube.com",
+      63
+    ],
+    [
+      "huggingface.co",
+      48
+    ],
+    [
+      "x.com",
+      15
+    ],
+    [
+      "arxiv.org",
+      10
+    ],
+    [
+      "youtu.be",
+      9
+    ],
+    [
+      "t.co",
+      8
+    ],
+    [
+      "artificialanalysis.ai",
+      6
+    ],
+    [
+      "benchlm.ai",
+      6
+    ],
+    [
+      "openrouter.ai",
+      5
+    ],
+    [
+      "techcrunch.com",
+      5
+    ],
+    [
+      "blog.google",
+      4
+    ],
+    [
+      "developers.openai.com",
+      4
+    ],
+    [
+      "news.ycombinator.com",
+      4
+    ],
+    [
+      "openai.com",
+      4
+    ],
+    [
+      "ai.google.dev",
+      3
+    ],
+    [
+      "anthropic.com",
+      3
+    ],
+    [
+      "api-docs.deepseek.com",
+      3
+    ],
+    [
+      "cnbc.com",
+      3
+    ],
+    [
+      "deepmind.google",
+      3
+    ],
+    [
+      "deepseek.com",
+      3
+    ],
+    [
+      "developer.ant-ling.com",
+      3
+    ],
+    [
+      "en.wikipedia.org",
+      3
+    ],
+    [
+      "flaviocopes.com",
+      3
+    ],
+    [
+      "marktechpost.com",
+      3
+    ],
+    [
+      "reddit.com",
+      3
+    ],
+    [
+      "siliconangle.com",
+      3
+    ],
+    [
+      "theregister.com",
+      3
+    ],
+    [
+      "venturebeat.com",
+      3
+    ],
+    [
+      "agents.md",
+      2
+    ],
+    [
+      "axios.com",
+      2
+    ],
+    [
+      "cellcog.ai",
+      2
+    ],
+    [
+      "claude.ai",
+      2
+    ],
+    [
+      "community.openai.com",
+      2
+    ],
+    [
+      "cve.threatint.com",
+      2
+    ],
+    [
+      "dev.to",
+      2
+    ],
+    [
+      "developersdigest.tech",
+      2
+    ],
+    [
+      "docs.typesafe.ai",
+      2
+    ],
+    [
+      "engadget.com",
+      2
+    ],
+    [
+      "evals.typesafe.ai",
+      2
+    ]
+  ],
+  "firstCited": [
+    [
+      "github.com",
+      50
+    ],
+    [
+      "youtube.com",
+      31
+    ],
+    [
+      "huggingface.co",
+      25
+    ],
+    [
+      "x.com",
+      5
+    ],
+    [
+      "youtu.be",
+      3
+    ],
+    [
+      "blog.google",
+      2
+    ],
+    [
+      "claude.ai",
+      2
+    ],
+    [
+      "t.co",
+      2
+    ],
+    [
+      "z.ai",
+      2
+    ],
+    [
+      "852wa.github.io",
+      1
+    ],
+    [
+      "accessnow.org",
+      1
+    ],
+    [
+      "ai.google.dev",
+      1
+    ],
+    [
+      "anthropic.com",
+      1
+    ],
+    [
+      "antigravity.google",
+      1
+    ],
+    [
+      "arxiv.org",
+      1
+    ]
+  ],
+  "owners": [
+    [
+      "github.com/nace-ai",
+      18
+    ],
+    [
+      "github.com/Niko1221",
+      10
+    ],
+    [
+      "github.com/storytold",
+      10
+    ],
+    [
+      "huggingface.co/LiquidAI",
+      10
+    ],
+    [
+      "huggingface.co/Qwen",
+      8
+    ],
+    [
+      "huggingface.co/collections",
+      7
+    ],
+    [
+      "huggingface.co/inclusionAI",
+      7
+    ],
+    [
+      "huggingface.co/orcarouter",
+      7
+    ],
+    [
+      "github.com/aardappel",
+      6
+    ],
+    [
+      "github.com/OpenSenseNova",
+      6
+    ],
+    [
+      "huggingface.co/BoldingBuilds",
+      6
+    ],
+    [
+      "huggingface.co/ccore",
+      6
+    ],
+    [
+      "github.com/MistVVK",
+      5
+    ],
+    [
+      "huggingface.co/deepseek-ai",
+      5
+    ],
+    [
+      "huggingface.co/ornith-ai",
+      5
+    ],
+    [
+      "huggingface.co/spaces/hugging-apps",
+      5
+    ],
+    [
+      "github.com/dream-num",
+      4
+    ],
+    [
+      "github.com/RandoTeam",
+      4
+    ],
+    [
+      "github.com/thesysdev",
+      4
+    ],
+    [
+      "github.com/timoncool",
+      4
+    ],
+    [
+      "github.com/vinnylarouge",
+      4
+    ],
+    [
+      "huggingface.co/datasets/nvidia",
+      4
+    ],
+    [
+      "huggingface.co/google",
+      4
+    ],
+    [
+      "huggingface.co/mradermacher",
+      4
+    ],
+    [
+      "x.com/opencode",
+      4
+    ],
+    [
+      "x.com/yusuke_kizuna",
+      4
+    ],
+    [
+      "github.com/852wa",
+      3
+    ],
+    [
+      "github.com/Anil-matcha",
+      3
+    ],
+    [
+      "github.com/anthropics",
+      3
+    ],
+    [
+      "github.com/carloslfu",
+      3
+    ],
+    [
+      "github.com/drumih",
+      3
+    ],
+    [
+      "github.com/Friedrich-M",
+      3
+    ],
+    [
+      "github.com/ibisjp",
+      3
+    ],
+    [
+      "github.com/indexable-inc",
+      3
+    ],
+    [
+      "github.com/mobile-next",
+      3
+    ],
+    [
+      "github.com/mrdoob",
+      3
+    ],
+    [
+      "github.com/NVIDIA",
+      3
+    ],
+    [
+      "github.com/shinshin86",
+      3
+    ],
+    [
+      "github.com/TheoLeeCJ",
+      3
+    ],
+    [
+      "github.com/unreallabsai",
+      3
+    ]
+  ],
+  "adsExcluded": [
+    [
+      "green-japan.com",
+      315
+    ]
+  ],
+  "followedRepos": [
+    [
+      "Niko1221/Strata",
+      3
+    ],
+    [
+      "RandoTeam/4gbVramStrata",
+      2
+    ]
+  ],
+  "postsWithoutLinks": 58,
+  "postsWithVideoEmbed": 69
+}

@@ -15,5 +15,9 @@ jobs:
           node-version: '22'
       - name: Offline checks
         run: node scripts/selftest.mjs
+      - name: Forge (tmux kanban) end-to-end
+        run: |
+          command -v tmux >/dev/null || sudo apt-get install -y tmux
+          node forge/test.mjs
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

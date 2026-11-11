@@ -1,0 +1,99 @@
+{
+  "_comment": "Forge の既定設定。~/.forge/config.json に同じ形で書けば項目ごとに上書きできる。agents の cmd は bash で実行され、{prompt}（プロンプトファイルのパス）と {model} が置き換わる。全部、無料枠か手持ちのサブスクで動くものだけ。",
+  "maxParallel": 3,
+  "pollSeconds": 4,
+  "runTimeoutMinutes": 40,
+  "verifyTimeoutMinutes": 10,
+  "maxAttempts": 3,
+  "ladder": [
+    "light",
+    "standard",
+    "heavy"
+  ],
+  "tiers": {
+    "light": {
+      "about": "小さな修正・定型作業",
+      "agents": [
+        "opencode",
+        "qwen",
+        "gemini",
+        "aider"
+      ]
+    },
+    "standard": {
+      "about": "ふつうの実装",
+      "agents": [
+        "qwen",
+        "gemini",
+        "opencode",
+        "aider",
+        "claude"
+      ]
+    },
+    "heavy": {
+      "about": "設計・難しい修正・最後の砦",
+      "agents": [
+        "claude",
+        "gemini",
+        "qwen"
+      ]
+    }
+  },
+  "review": {
+    "_comment": "when: free-only = 無料エージェントが書いたものだけ審査 / always / never。審査役の判定は人の承認の参考に付くだけで、マージは必ず人が決める。",
+    "when": "free-only",
+    "agents": [
+      "claude",
+      "gemini",
+      "qwen"
+    ]
+  },
+  "agents": {
+    "claude": {
+      "label": "Claude Code（上位・サブスク）",
+      "bin": "claude",
+      "free": false,
+      "dailyRuns": 30,
+      "cmd": "claude -p \"$(cat {prompt})\" --permission-mode acceptEdits --allowedTools \"Bash(npm test:*)\" \"Bash(npm run test:*)\" \"Bash(bun test:*)\" \"Bash(bun run test:*)\" \"Bash(pnpm test:*)\" \"Bash(pytest:*)\" \"Bash(cargo test:*)\" \"Bash(go test:*)\" \"Bash(git diff:*)\" \"Bash(git status:*)\" {modelFlag}",
+      "modelFlag": "--model {model}",
+      "model": "",
+      "_comment": "編集は自動で許可。シェルはテストと差分の確認だけ許可（ほかのコマンドは承認待ちで止まるので、Forge の検証に任せる）"
+    },
+    "opencode": {
+      "label": "OpenCode（無料モデル）",
+      "bin": "opencode",
+      "free": true,
+      "dailyRuns": 60,
+      "cmd": "opencode run {modelFlag} \"$(cat {prompt})\"",
+      "modelFlag": "-m {model}",
+      "model": ""
+    },
+    "gemini": {
+      "label": "Gemini CLI（無料枠）",
+      "bin": "gemini",
+      "free": true,
+      "dailyRuns": 80,
+      "cmd": "gemini --yolo {modelFlag} -p \"$(cat {prompt})\"",
+      "modelFlag": "-m {model}",
+      "model": ""
+    },
+    "qwen": {
+      "label": "Qwen Code（無料枠）",
+      "bin": "qwen",
+      "free": true,
+      "dailyRuns": 80,
+      "cmd": "qwen --yolo {modelFlag} -p \"$(cat {prompt})\"",
+      "modelFlag": "-m {model}",
+      "model": ""
+    },
+    "aider": {
+      "label": "Aider + OpenRouter の :free モデル",
+      "bin": "aider",
+      "free": true,
+      "dailyRuns": 40,
+      "cmd": "aider --yes-always --no-auto-commits --no-show-model-warnings {modelFlag} --message-file {prompt}",
+      "modelFlag": "--model {model}",
+      "model": "openrouter/deepseek/deepseek-chat-v3.1:free"
+    }
+  }
+}

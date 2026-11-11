@@ -138,6 +138,32 @@ https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb/shards/2026-
 
 ---
 
+## Forge（手元で、コードを書かせる側）
+
+クラウドの Issue カンバンが「調べる・下書きする」口なら、[`forge/`](./forge/) は手元の PC で「コードを書かせる」口。
+
+```
+Claude Code（リーダー）──MCP: forge_add_cards──▶ カード（tier 付き）
+                                                   │
+          ~/.forge/board.json ◀──────── forge tick（serve / watch / cron）
+                                                   │  空きと予算があれば
+                                                   ▼
+          git worktree（カード専用ブランチ） ＋ tmux -L forge のセッション
+                                                   │  無料エージェントが作業
+                                                   ▼
+          決定論の検証（npm test 等）──×──▶ 理由を添えて一段上のエージェントへ
+                                                   │ ○
+                                                   ▼
+          別のエージェント（Claude Code）が差分を審査 ──差し戻し──▶ 指摘を添えてやり直し
+                                                   │ OK
+                                                   ▼
+          人が承認 ──▶ squash で1コミットとして main へ。worktree とブランチを片づけ
+```
+
+ここでも配車の考え方は同じ。重さで決め、安い方から試し、上位の力は難所と審査に残す。違いは、こちらは **API ではなく CLI のエージェントを tmux の中で動かす**こと。だから Claude Code のサブスクや、Gemini CLI・Qwen Code の無料枠のように、API キーが要らない枠も使える。
+
+---
+
 ## まだやっていないこと
 
 - 動画・音声の生成はここには入れていない。スライドと同じく「原稿 → 別の形」の口として足すのが筋

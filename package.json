@@ -20,7 +20,12 @@
     "test": "node scripts/selftest.mjs",
     "slides": "node scripts/slides/build.mjs",
     "harness": "node scripts/harness/status.mjs",
-    "task": "node scripts/harness/task.mjs"
+    "task": "node scripts/harness/task.mjs",
+    "forge": "node forge/forge.mjs",
+    "test:forge": "node forge/test.mjs"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "forge": "forge/forge.mjs"
+  }
 }

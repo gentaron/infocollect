@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Forge</title>
+<meta name="theme-color" content="#0f1115">
+<style>
+  :root {
+    --bg: #f4f4f1; --panel: #ffffff; --panel-2: #f0efea; --line: #dddbd3; --ink: #17181b; --muted: #6b6d74;
+    --accent: #2b59d9; --ok: #1d8a4e; --warn: #b26a00; --bad: #c2362f; --run: #6a3fd6;
+    --radius: 8px; --font: "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", system-ui, sans-serif; --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --panel: #171a20; --panel-2: #1e222a; --line: #2a2f39; --ink: #e9ebf0; --muted: #969bab; --accent: #7fa2ff; --ok: #4fc483; --warn: #e0a243; --bad: #f07368; --run: #a98bff; }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body { margin: 0; font-family: var(--font); color: var(--ink); font-size: 14px; line-height: 1.5; -webkit-text-size-adjust: 100%; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  header { position: sticky; top: 0; z-index: 3; background: var(--bg); border-bottom: 1px solid var(--line); padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+  header h1 { margin: 0; font-size: 16px; letter-spacing: .06em; }
+  .agents { display: flex; flex-wrap: wrap; gap: 6px; flex: 1 1 320px; }
+  .agent { font-size: 12px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .agent.on { color: var(--ink); border-color: var(--muted); }
+  .agent.on.free::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--ok); margin-right: 5px; vertical-align: 1px; }
+  .agent.on.paid::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--run); margin-right: 5px; vertical-align: 1px; }
+  .btn { border: 1px solid var(--line); background: var(--panel); border-radius: 6px; padding: 6px 12px; white-space: nowrap; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.ok { border-color: var(--ok); color: var(--ok); }
+  .btn.bad { border-color: var(--bad); color: var(--bad); }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .conn { font-size: 12px; color: var(--muted); }
+  .conn.off { color: var(--bad); }
+
+  main { padding: 16px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; align-items: start; }
+  @media (max-width: 1100px) { main { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 720px) { main { grid-template-columns: minmax(0, 1fr); } }
+  .col { background: var(--panel-2); border-radius: var(--radius); padding: 10px; min-height: 80px; }
+  .col h2 { margin: 0 0 8px; font-size: 12px; letter-spacing: .08em; color: var(--muted); display: flex; justify-content: space-between; font-weight: 600; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 9px 10px; margin: 0 0 8px; width: 100%; text-align: left; display: block; }
+  .card:hover { border-color: var(--muted); }
+  .card .t { font-weight: 600; overflow-wrap: anywhere; }
+  .card .m { font-size: 12px; color: var(--muted); margin-top: 3px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+  .card .note { font-size: 12px; margin-top: 4px; overflow-wrap: anywhere; }
+  .note.bad { color: var(--bad); } .note.warn { color: var(--warn); } .note.ok { color: var(--ok); }
+  .tier { font-size: 11px; padding: 0 6px; border-radius: 3px; border: 1px solid currentColor; }
+  .tier.light { color: var(--ok); } .tier.standard { color: var(--accent); } .tier.heavy { color: var(--run); }
+  .trail { display: inline-flex; gap: 3px; }
+  .trail i { width: 8px; height: 8px; border-radius: 50%; background: var(--line); display: inline-block; }
+  .trail i.pass, .trail i.approve { background: var(--ok); } .trail i.fail, .trail i.reject { background: var(--bad); } .trail i.steered { background: var(--warn); } .trail i.live { background: var(--run); animation: pulse 1.2s infinite; }
+  @keyframes pulse { 50% { opacity: .35; } }
+  @media (prefers-reduced-motion: reduce) { .trail i.live { animation: none; } }
+  .empty { font-size: 12px; color: var(--muted); padding: 6px 2px; }
+
+  dialog { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); padding: 0; width: min(760px, calc(100vw - 24px)); max-height: calc(100vh - 24px); }
+  dialog::backdrop { background: rgba(0, 0, 0, .45); }
+  .dlg { padding: 16px; display: grid; gap: 12px; }
+  .dlg h3 { margin: 0; font-size: 16px; overflow-wrap: anywhere; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .kv { font-size: 12px; color: var(--muted); }
+  .kv b { color: var(--ink); font-weight: 600; }
+  pre { margin: 0; font-family: var(--mono); font-size: 12px; line-height: 1.45; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 10px; max-height: 42vh; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 12px; }
+  .steps li { display: flex; gap: 8px; align-items: baseline; }
+  .steps .when { color: var(--muted); font-variant-numeric: tabular-nums; flex: none; }
+  label { display: grid; gap: 4px; font-size: 12px; color: var(--muted); }
+  input[type=text], select, textarea { width: 100%; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; font-size: 14px; }
+  textarea { min-height: 110px; resize: vertical; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .tabs { display: flex; gap: 6px; }
+  .tabs button[aria-pressed=true] { border-color: var(--accent); color: var(--accent); }
+  .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 6px; font-size: 13px; max-width: calc(100vw - 32px); z-index: 9; }
+  .feed { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+  .feed summary { cursor: pointer; }
+  .feed ol { margin: 6px 0 0; padding-left: 18px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>FORGE</h1>
+  <div class="agents" id="agents" aria-label="エージェント"></div>
+  <span class="conn" id="conn">接続中…</span>
+  <button class="btn primary" id="new" type="button">＋ カード</button>
+</header>
+<main id="board" aria-live="polite"></main>
+
+<dialog id="detail"><div class="dlg" id="detail-body"></div></dialog>
+<dialog id="create">
+  <form class="dlg" id="create-form" method="dialog">
+    <h3>新しいカード</h3>
+    <div class="grid2">
+      <label>リポジトリ<select name="repo" id="repo-select" required></select></label>
+      <label>最初の重さ<select name="tier" id="tier-select"></select></label>
+    </div>
+    <label>タイトル<input type="text" name="title" required maxlength="120" placeholder="例: RAG サーバーの検索が遅いのを直す"></label>
+    <label>依頼（詳しく書くほど安いエージェントで通る）<textarea name="prompt" placeholder="何を、どこまで、どうなったら完成か"></textarea></label>
+    <div class="grid2">
+      <label>主に触るファイル（カンマ区切り）<input type="text" name="files" placeholder="src/search.ts, test/search.test.ts"></label>
+      <label>この番号が終わってから（カンマ区切り）<input type="text" name="deps" placeholder="3, 4"></label>
+    </div>
+    <div class="row">
+      <label class="row" style="color:var(--ink)"><input type="checkbox" name="kb"> ナレッジベースの資料を添える</label>
+      <label class="row" style="color:var(--ink)"><input type="checkbox" name="hold"> 保留で作る</label>
+    </div>
+    <div class="row" style="justify-content:flex-end">
+      <button class="btn" value="cancel" formnovalidate>やめる</button>
+      <button class="btn primary" value="ok" id="create-ok">追加</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+(() => {
+  'use strict';
+  const T = new URLSearchParams(location.search).get('t') || '';
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const api = async (path, body) => {
+    const res = await fetch(`${path}${path.includes('?') ? '&' : '?'}t=${encodeURIComponent(T)}`, body === undefined ? {} : { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+    return data;
+  };
+  const toast = (msg) => {
+    const el = document.createElement('div');
+    el.className = 'toast'; el.textContent = msg; el.setAttribute('role', 'status');
+    document.body.appendChild(el); setTimeout(() => el.remove(), 2600);
+  };
+
+  const COLS = [
+    { key: 'wait', label: '待機・保留', has: ['queued', 'starting', 'backlog'] },
+    { key: 'run', label: '実行中・審査中', has: ['running', 'verifying', 'needs-review', 'starting-review', 'reviewing', 'judging'] },
+    { key: 'review', label: '承認待ち', has: ['review'] },
+    { key: 'failed', label: '失敗', has: ['failed'] },
+    { key: 'done', label: '完了', has: ['done'] },
+  ];
+  const STATUS = { backlog: '保留', queued: '待機', starting: '起動中', running: '実行中', verifying: '検証中', 'needs-review': '審査待ち', 'starting-review': '審査準備', reviewing: '審査中', judging: '判定中', review: '承認待ち', failed: '失敗', done: '完了', cancelled: '取り消し' };
+  const LIVE = new Set(['running', 'reviewing', 'verifying', 'judging']);
+  let snap = null, openId = null, logTimer = null, tab = 'log';
+
+  const trail = (c) => `<span class="trail" aria-hidden="true">${c.attempts.map((a, i) => {
+    const live = i === c.attempts.length - 1 && LIVE.has(c.status);
+    return `<i class="${live ? 'live' : esc(a.result)}" title="${esc(`${a.kind === 'review' ? '審査' : '実装'} ${a.agent} ${a.result || ''}`)}"></i>`;
+  }).join('')}</span>`;
+
+  function cardNote(c) {
+    if (c.status === 'queued' && c.blocked) return `<div class="note warn">⏸ ${esc(c.blocked)}</div>`;
+    if (c.status === 'failed') return `<div class="note bad">✗ ${esc(c.failReason || '失敗')}</div>`;
+    if (c.status === 'review' && c.review) {
+      const cls = c.review.verdict === 'approve' ? 'ok' : c.review.verdict === 'reject' ? 'bad' : 'warn';
+      return `<div class="note ${cls}">審査 ${esc(c.review.agent || '—')}: ${esc(c.review.verdict)}</div>`;
+    }
+    if (c.summary) return `<div class="note">${esc(c.summary)}</div>`;
+    return '';
+  }
+
+  function renderBoard() {
+    $('agents').innerHTML = snap.agents.map((a) => `<span class="agent ${a.installed ? 'on' : ''} ${a.free ? 'free' : 'paid'}" title="${esc(a.label)}">${esc(a.id)} ${a.installed ? `${a.used}/${a.limit ?? '∞'}` : '未導入'}</span>`).join('');
+    const doneCut = 12;
+    $('board').innerHTML = COLS.map((col) => {
+      let cards = snap.cards.filter((c) => col.has.includes(c.status));
+      cards.sort((a, b) => col.key === 'done' ? b.updatedAt.localeCompare(a.updatedAt) : (b.priority - a.priority || a.id - b.id));
+      const more = col.key === 'done' && cards.length > doneCut ? cards.length - doneCut : 0;
+      if (more) cards = cards.slice(0, doneCut);
+      return `<section class="col" aria-label="${esc(col.label)}"><h2><span>${esc(col.label)}</span><span>${cards.length + more}</span></h2>${
+        cards.map((c) => `<button type="button" class="card" data-id="${c.id}">
+          <div class="t">#${c.id} ${esc(c.title)}</div>
+          <div class="m"><span class="tier ${esc(c.tier)}">${esc(c.tier)}</span><span>${esc(c.repo)}</span><span>${esc(STATUS[c.status] || c.status)}</span>${trail(c)}</div>
+          ${cardNote(c)}
+        </button>`).join('') || '<div class="empty">なし</div>'}${more ? `<div class="empty">ほか ${more} 件</div>` : ''}</section>`;
+    }).join('') + `<details class="feed"><summary>最近の出来事</summary><ol>${snap.events.slice(0, 25).map((e) => `<li>${esc(e.t.slice(5, 16).replace('T', ' '))} ${esc(e.type)} ${e.id ? `#${e.id}` : ''} ${esc(e.agent || e.reason || e.title || e.verdict || '')}</li>`).join('')}</ol></details>`;
+    // Don't redraw the panel under someone's fingers.
+    if (openId && !$('detail-body').contains(document.activeElement?.closest('input, textarea'))) renderDetail();
+  }
+
+  function actionsFor(c) {
+    const b = [];
+    if (c.status === 'review') b.push('<button class="btn ok" data-act="approve">承認してマージ</button>', '<button class="btn bad" data-act="reject">差し戻す</button>');
+    if (c.status === 'failed') b.push('<button class="btn" data-act="reject">指示を足して再挑戦</button>');
+    if (c.status === 'queued') b.push('<button class="btn" data-act="hold">保留</button>');
+    if (c.status === 'backlog') b.push('<button class="btn primary" data-act="go">待機列へ</button>');
+    if (!['done', 'cancelled'].includes(c.status)) b.push('<button class="btn bad" data-act="cancel">取り消す</button>');
+    return b.join('');
+  }
+
+  function renderDetail() {
+    const c = snap.cards.find((x) => x.id === openId);
+    if (!c) { $('detail').close(); return; }
+    const body = $('detail-body');
+    const keepLog = body.querySelector('#log-pre')?.textContent || '';
+    body.innerHTML = `
+      <div class="row" style="justify-content:space-between"><h3>#${c.id} ${esc(c.title)}</h3><button class="btn" data-act="close" aria-label="閉じる">閉じる</button></div>
+      <div class="kv">${esc(c.repo)} · <b>${esc(STATUS[c.status] || c.status)}</b> · 今の重さ <b>${esc(c.tier)}</b>${c.startTier !== c.tier ? `（${esc(c.startTier)} から昇格）` : ''}${c.deps.length ? ` · 依存 ${c.deps.map((d) => `#${d}`).join(' ')}` : ''}${c.merged ? ` · マージ ${esc(c.merged)}` : ''}${c.issue ? ` · Issue #${c.issue}` : ''}</div>
+      ${c.prompt ? `<pre>${esc(c.prompt)}</pre>` : ''}
+      ${c.summary ? `<div class="kv">要約: <b>${esc(c.summary)}</b></div>` : ''}
+      ${c.diff ? `<div class="kv">変更: <b>${esc(c.diff.stat)}</b> ${esc(c.diff.files.slice(0, 8).join(', '))}</div>` : ''}
+      ${c.review ? `<div class="kv">審査 ${esc(c.review.agent || '—')} → <b>${esc(c.review.verdict)}</b></div>${c.review.notes ? `<pre>${esc(c.review.notes)}</pre>` : ''}` : ''}
+      ${c.attempts.length ? `<ol class="steps">${c.attempts.map((a, i) => `<li><span class="when">${esc((a.startedAt || '').slice(11, 16))}</span><span>${i + 1}. ${a.kind === 'review' ? '審査' : '実装'} <b>${esc(a.agent)}</b>${a.tier ? ` (${esc(a.tier)})` : ''} — ${esc(a.result || (LIVE.has(c.status) && i === c.attempts.length - 1 ? '実行中' : ''))}${a.reason ? `：${esc(a.reason)}` : ''}</span></li>`).join('')}</ol>` : ''}
+      <div class="row">${actionsFor(c)}</div>
+      ${c.attempts.length ? `<div class="tabs" role="group" aria-label="表示"><button class="btn" data-tab="log" aria-pressed="${tab === 'log'}">画面・ログ</button><button class="btn" data-tab="diff" aria-pressed="${tab === 'diff'}">差分</button></div><pre id="log-pre" tabindex="0">${esc(keepLog || '読み込み中…')}</pre>` : ''}
+      ${c.status === 'running' ? '<form class="row" id="say-form"><input type="text" name="text" placeholder="方向を変える: 止めて、この指示を足してやり直させる" style="flex:1 1 240px" aria-label="追加の指示"><button class="btn">止めて指示</button></form>' : ''}`;
+  }
+
+  async function refreshLog() {
+    const pre = $('log-pre');
+    if (!pre || !openId) return;
+    try {
+      const r = await api(`/api/cards/${openId}/${tab}${tab === 'log' ? '?n=200' : ''}`);
+      const atBottom = pre.scrollTop + pre.clientHeight >= pre.scrollHeight - 30;
+      pre.textContent = r.text || '（まだ何も出ていない）';
+      if (atBottom || tab === 'log') pre.scrollTop = pre.scrollHeight;
+    } catch (e) { pre.textContent = e.message; }
+  }
+
+  function openCard(id) {
+    openId = id; tab = 'log';
+    renderDetail();
+    $('detail').showModal();
+    refreshLog();
+    clearInterval(logTimer);
+    logTimer = setInterval(() => { const c = snap.cards.find((x) => x.id === openId); if (c && LIVE.has(c.status) && tab === 'log') refreshLog(); }, 2000);
+  }
+
+  $('board').addEventListener('click', (e) => { const el = e.target.closest('.card'); if (el) openCard(Number(el.dataset.id)); });
+  $('detail').addEventListener('close', () => { openId = null; clearInterval(logTimer); });
+  $('detail-body').addEventListener('click', async (e) => {
+    const t = e.target.closest('[data-tab]');
+    if (t) { tab = t.dataset.tab; renderDetail(); refreshLog(); return; }
+    const b = e.target.closest('[data-act]');
+    if (!b) return;
+    const act = b.dataset.act;
+    if (act === 'close') return $('detail').close();
+    const body = { id: openId };
+    if (act === 'reject') {
+      const note = prompt('直してほしいこと（エージェントにそのまま渡す）');
+      if (note === null) return;
+      body.note = note;
+    }
+    if (act === 'cancel' && !confirm('取り消すと worktree とブランチも消えます。よい？')) return;
+    b.disabled = true;
+    try {
+      const r = await api(`/api/${act}`, body);
+      toast(act === 'approve' ? `マージした ${r.result.merged}` : '送った');
+    } catch (err) { toast(err.message); b.disabled = false; }
+  });
+  $('detail-body').addEventListener('submit', async (e) => {
+    if (e.target.id !== 'say-form') return;
+    e.preventDefault();
+    const text = e.target.text.value.trim();
+    if (!text) return;
+    try { await api('/api/steer', { id: openId, text }); e.target.reset(); toast('止めて指示を足した。次の順番で再開する'); } catch (err) { toast(err.message); }
+  });
+
+  $('new').addEventListener('click', () => {
+    if (!snap) return;
+    if (!snap.repos.length) { toast('先に forge repo add <path> でリポジトリを登録して'); return; }
+    $('repo-select').innerHTML = snap.repos.map((r) => `<option>${esc(r.name)}</option>`).join('');
+    $('tier-select').innerHTML = snap.tiers.map((t) => `<option>${esc(t)}</option>`).join('');
+    $('create').showModal();
+  });
+  $('create-form').addEventListener('submit', async (e) => {
+    if (e.submitter?.value !== 'ok') return;
+    e.preventDefault();
+    const f = new FormData(e.target);
+    const list = (v) => String(v || '').split(',').map((s) => s.trim()).filter(Boolean);
+    try {
+      const r = await api('/api/add', { repo: f.get('repo'), title: f.get('title'), prompt: f.get('prompt'), tier: f.get('tier'), files: list(f.get('files')), deps: list(f.get('deps')).map(Number), kb: f.get('kb') === 'on', hold: f.get('hold') === 'on' });
+      $('create').close(); e.target.reset(); toast(`#${r.result.id} を追加`);
+    } catch (err) { toast(err.message); }
+  });
+
+  function connect() {
+    const es = new EventSource(`/api/stream?t=${encodeURIComponent(T)}`);
+    es.onopen = () => { $('conn').textContent = '接続中 ●'; $('conn').classList.remove('off'); };
+    es.onmessage = (m) => { snap = JSON.parse(m.data); renderBoard(); };
+    es.onerror = () => { $('conn').textContent = '切断（再接続を待っています）'; $('conn').classList.add('off'); };
+  }
+  connect();
+})();
+</script>
+</body>
+</html>

@@ -29,6 +29,7 @@ scripts/mcp/server.mjs     MCP サーバー（stdio・依存ゼロ）
 scripts/harness/           AIハーネス（配車 router / 審査 review / Issueカンバン task / status）
 scripts/slides/build.mjs   記事やテーマから静的スライドを作る
 config/harness.json        tier ごとの配車表と1日の予算
+forge/                     手元の AI 開発カンバン（tmux × git worktree × 無料エージェント）
 scripts/selftest.mjs       ネットワーク不要の自己テスト
 scripts/gen-icons.mjs      PWAアイコン生成（依存パッケージ無し）
 scripts/pack.mjs           docs/ を infocollect-pwa.zip に固める
@@ -175,6 +176,24 @@ node scripts/slides/build.mjs --from <記事.txt> --no-llm       # モデルな�
 | `tier:light` / `tier:standard` / `tier:heavy` | 使うモデルの重さを上書き |
 
 リポジトリの持ち主が開いた Issue だけを処理します（公開リポジトリなので）。
+
+---
+
+## Forge（手元の AI 開発カンバン）
+
+[`forge/`](./forge/) は、tmux の上で AI コーディングエージェントを何体も並べて動かすカンバンです。InfoCollect に限らず、手元のどのリポジトリにも使えます（詳しくは [forge/README.md](./forge/README.md)）。
+
+- カードごとに git worktree と tmux セッションを作り、無料のエージェント（Qwen Code / Gemini CLI / OpenCode / Aider）から先に試す
+- テストが落ちたら一段上へ（最後は Claude Code）。通ったものは別のエージェントが審査し、マージは人が承認
+- Web のボード（スマホ対応）と MCP サーバー付き。Claude Code をリーダーにして、仕事を割って配らせることができる
+
+上の「Issue がカンバンになる」は**クラウドで調べ物や下書き**をする口、Forge は**手元でコードを書かせる**口です。`forge sync <repo>` で `forge` ラベルの Issue を Forge のカードに取り込めます。
+
+```bash
+node forge/forge.mjs repo scan ~/code
+node forge/forge.mjs add infocollect "直したいこと" -m "詳しい依頼" --tier light
+node forge/forge.mjs serve
+```
 
 ---
 

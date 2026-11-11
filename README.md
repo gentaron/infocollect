@@ -207,6 +207,13 @@ node forge/forge.mjs serve
 - README の「つながり」節と AGENTS.md の「エコシステム」節: 人と AI が作業前に読む
 - `.mcp.json`: ナレッジベース（`infocollect-kb`）と Forge（`forge`）。`npx -p github:gentaron/infocollect` で起動するので、どのリポジトリで Claude Code を開いても同じ知識と同じカンバンにつながる
 
+残りのリポジトリ（アーカイブや非公開のもの）は、手元でまとめて流せます。未コミットの変更があるリポジトリは飛ばします。
+
+```bash
+node scripts/ecosystem/propagate.mjs --scan ~/code --commit --push                       # 公開の台帳にあるもの全部
+node scripts/ecosystem/propagate.mjs --scan ~/code --extra ~/private-repos.json --commit  # 非公開の台帳を足す（公開しない）
+```
+
 ナレッジベースにも台帳が入っているので、`kb_search "スライドを作るリポジトリ"` のように聞けば、どのリポジトリの担当かが返ります。
 
 ---

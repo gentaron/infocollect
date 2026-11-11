@@ -46,20 +46,76 @@
     "take": 12,
     "maxAgeDays": 3,
     "feeds": [
-      { "name": "OpenAI", "url": "https://openai.com/news/rss.xml", "weight": 18 },
-      { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "weight": 15 },
-      { "name": "Google (AI)", "url": "https://blog.google/technology/ai/rss/", "weight": 14 },
-      { "name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "weight": 14 },
-      { "name": "Meta AI", "url": "https://ai.meta.com/blog/rss/", "weight": 13 },
-      { "name": "Microsoft AI", "url": "https://blogs.microsoft.com/ai/feed/", "weight": 11 },
-      { "name": "AWS Machine Learning", "url": "https://aws.amazon.com/blogs/machine-learning/feed/", "weight": 10 },
-      { "name": "NVIDIA", "url": "https://blogs.nvidia.com/feed/", "weight": 9 },
-      { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "weight": 10 },
-      { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/", "weight": 8 },
-      { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "weight": 7 },
-      { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/", "weight": 6 },
-      { "name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "weight": 6 },
-      { "name": "MIT Technology Review AI", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "weight": 6 }
+      {
+        "name": "OpenAI",
+        "url": "https://openai.com/news/rss.xml",
+        "weight": 18
+      },
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/rss.xml",
+        "weight": 15
+      },
+      {
+        "name": "Google (AI)",
+        "url": "https://blog.google/technology/ai/rss/",
+        "weight": 14
+      },
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "weight": 14
+      },
+      {
+        "name": "Meta AI",
+        "url": "https://ai.meta.com/blog/rss/",
+        "weight": 13
+      },
+      {
+        "name": "Microsoft AI",
+        "url": "https://blogs.microsoft.com/ai/feed/",
+        "weight": 11
+      },
+      {
+        "name": "AWS Machine Learning",
+        "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "weight": 10
+      },
+      {
+        "name": "NVIDIA",
+        "url": "https://blogs.nvidia.com/feed/",
+        "weight": 9
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
+        "weight": 10
+      },
+      {
+        "name": "Ars Technica AI",
+        "url": "https://arstechnica.com/ai/feed/",
+        "weight": 8
+      },
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "weight": 7
+      },
+      {
+        "name": "VentureBeat AI",
+        "url": "https://venturebeat.com/category/ai/feed/",
+        "weight": 6
+      },
+      {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "weight": 6
+      },
+      {
+        "name": "MIT Technology Review AI",
+        "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+        "weight": 6
+      }
     ],
     "hackerNewsQueries": [
       "AI release",
@@ -69,6 +125,145 @@
     ],
     "sourceWeights": {
       "GitHub Releases": 12
+    }
+  },
+  "kb": {
+    "_comment": "ナレッジベース（RAG）に溜める“広い網”。ダイジェストの上位だけでなく、ここで拾ったものも全部 docs/kb/ に蓄積して、ブログ生成・MCP・PWA検索から引ける。どれが落ちても他は止まらない。",
+    "maxBodyChars": 700,
+    "keepMonths": 24,
+    "embed": {
+      "maxNewPerRun": 300,
+      "dimensions": 768
+    },
+    "feeds": [
+      {
+        "name": "arXiv cs.CL",
+        "url": "https://rss.arxiv.org/rss/cs.CL",
+        "tags": [
+          "paper"
+        ],
+        "limit": 40
+      },
+      {
+        "name": "arXiv cs.AI",
+        "url": "https://rss.arxiv.org/rss/cs.AI",
+        "tags": [
+          "paper"
+        ],
+        "limit": 40
+      },
+      {
+        "name": "arXiv cs.LG",
+        "url": "https://rss.arxiv.org/rss/cs.LG",
+        "tags": [
+          "paper"
+        ],
+        "limit": 30
+      },
+      {
+        "name": "Qwen Blog",
+        "url": "https://qwenlm.github.io/blog/index.xml",
+        "tags": [
+          "model",
+          "china"
+        ]
+      },
+      {
+        "name": "Lobsters AI",
+        "url": "https://lobste.rs/t/ai.rss",
+        "tags": [
+          "community"
+        ]
+      },
+      {
+        "name": "Zenn LLM",
+        "url": "https://zenn.dev/topics/llm/feed",
+        "tags": [
+          "ja"
+        ]
+      },
+      {
+        "name": "Zenn 生成AI",
+        "url": "https://zenn.dev/topics/%E7%94%9F%E6%88%90ai/feed",
+        "tags": [
+          "ja"
+        ]
+      },
+      {
+        "name": "Qiita LLM",
+        "url": "https://qiita.com/tags/llm/feed",
+        "tags": [
+          "ja"
+        ]
+      },
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/rss/",
+        "tags": [
+          "infra"
+        ]
+      },
+      {
+        "name": "Google Security Blog",
+        "url": "https://security.googleblog.com/feeds/posts/default",
+        "tags": [
+          "security"
+        ]
+      },
+      {
+        "name": "Project Zero",
+        "url": "https://googleprojectzero.blogspot.com/feeds/posts/default",
+        "tags": [
+          "security"
+        ]
+      },
+      {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/feed/",
+        "tags": [
+          "devtools"
+        ]
+      },
+      {
+        "name": "LangChain Blog",
+        "url": "https://blog.langchain.dev/rss/",
+        "tags": [
+          "agent"
+        ]
+      },
+      {
+        "name": "Latent Space",
+        "url": "https://www.latent.space/feed",
+        "tags": [
+          "agent",
+          "podcast"
+        ]
+      }
+    ],
+    "huggingFace": {
+      "dailyPapers": true,
+      "trendingModels": true,
+      "limit": 30
+    },
+    "reddit": {
+      "subs": [
+        "LocalLLaMA",
+        "MachineLearning",
+        "singularity"
+      ],
+      "minScore": 80,
+      "limit": 25
+    },
+    "hackerNews": {
+      "queries": [
+        "LLM",
+        "AI agent",
+        "open source model",
+        "RAG",
+        "MCP",
+        "inference"
+      ],
+      "minPoints": 30
     }
   }
 }

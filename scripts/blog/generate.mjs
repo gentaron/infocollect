@@ -4,6 +4,7 @@
 //   node scripts/blog/generate.mjs --slot 0700
 //   node scripts/blog/generate.mjs --slot 1800 --no-search
 //   node scripts/blog/generate.mjs --slot 1100 --dry-run
+//   node scripts/blog/generate.mjs --slot 0900 --no-kb       # skip knowledge-base RAG
 //
 // Flow:
 //   1. load the slot's prompt (rules are verbatim in prompts/blog/)
@@ -35,6 +36,7 @@ import {
 } from './lib/core.mjs';
 import { generateArticleText } from './lib/llm.mjs';
 import { formatCandidates, searchCandidates } from './lib/search.mjs';
+import { openKb } from '../kb/lib/retrieve.mjs';
 import { log, timeInZone, truncate, warn } from '../lib/util.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -42,7 +44,7 @@ const BLOG_DIR = path.join(ROOT, 'docs', 'blog');
 const MEMORY = path.join(ROOT, 'memory');
 
 function parseArgs(argv) {
-  const args = { slot: null, date: null, search: true, dryRun: false };
+  const args = { slot: null, date: null, search: true, dryRun: false, kb: true };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
     if (arg === '--slot') args.slot = argv[++i];
@@ -50,6 +52,7 @@ function parseArgs(argv) {
     else if (arg === '--no-search') args.search = false;
     else if (arg === '--search') args.search = true;
     else if (arg === '--dry-run') args.dryRun = true;
+    else if (arg === '--no-kb') args.kb = false;
     else {
       console.error(`不明な引数: ${arg}`);
       process.exit(2);
@@ -124,7 +127,7 @@ async function main() {
 
   if (!slot) {
     console.error([
-      '使い方: node scripts/blog/generate.mjs --slot <id> [--date YYYY-MM-DD] [--no-search] [--dry-run]',
+      '使い方: node scripts/blog/generate.mjs --slot <id> [--date YYYY-MM-DD] [--no-search] [--no-kb] [--dry-run]',
       `枠の指定は必須です。次のいずれか: ${SLOT_ORDER.join(', ')}`,
       ...SLOT_ORDER.map((id) => `  ${SLOTS[id].label}  →  --slot ${id}`),
     ].join('\n'));
@@ -162,7 +165,27 @@ async function main() {
   } else {
     log('blog: --no-search のため検索をスキップ');
   }
-  const candidates = formatCandidates({ tools: digest.tools, news: digest.news, search });
+  let candidates = formatCandidates({ tools: digest.tools, news: digest.news, search });
+
+  // 3b. RAG: pull related material from the knowledge base (docs/kb/) under a
+  // fixed character budget, plus our own similar past posts so the model can
+  // avoid repeating itself. Best effort — an empty or missing KB changes nothing.
+  if (args.kb) {
+    try {
+      const kb = await openKb();
+      const query = [slot.label, ...slot.queries].join(' ');
+      const since = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+      const related = await kb.query(query, { k: 10, filter: (d) => d.sourceType !== 'own' && d.date >= since });
+      const own = await kb.query(query, { k: 5, filter: (d) => d.sourceType === 'own' });
+      const relatedBlock = kb.pack(related, { budget: 2800, perDoc: 360 }).text;
+      const ownBlock = own.map(({ doc }) => `- ${doc.date} ${doc.title}`).join('\n');
+      if (relatedBlock) candidates += `\n▼ ナレッジベースから（過去30日・関連度順。番号つきの出典はURLごと信用してよい）\n${relatedBlock}`;
+      if (ownBlock) candidates += `\n▼ うちが前に書いた近い記事（同じ切り口を繰り返さない）\n${ownBlock}`;
+      log(`blog: KB ${kb.size} 件から関連 ${related.length} 件 / 過去記事 ${own.length} 件を追加`);
+    } catch (error) {
+      warn(`blog: KB を使えませんでした（続行） — ${error.message}`);
+    }
+  }
 
   // 4. Generate (one retry when the model hands back a stub).
   const system = buildSystemPrompt();

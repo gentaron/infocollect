@@ -21,6 +21,10 @@ import {
   sanitizeArticle,
 } from './blog/lib/core.mjs';
 
+import { spawnSync } from 'node:child_process';
+import { buildIndex, cosine, dequantize, docId, expandQuery, mergeDoc, packContext, parseJsonl, quantize, rrf, search, tokenize } from '../docs/kb/kb-core.js';
+import { plain, toDoc } from './kb/ingest.mjs';
+
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 let passed = 0;
 
@@ -244,6 +248,90 @@ test('every slot has a scheduled workflow with the right cron', () => {
     assert.ok(yaml.includes(`'${cron}'`), `blog-${slotId}.yml should schedule '${cron}' (MYT ${slotId.slice(0, 2)}:00)`);
     assert.ok(yaml.includes(`--slot ${slotId}`), `blog-${slotId}.yml should run --slot ${slotId}`);
   }
+});
+
+// ---------------------------------------------------------------- knowledge base
+test('kb tokenize: latin words + CJK bigrams + dotted names', () => {
+  const t = tokenize('Qwen3.5-Coder をローカルで推論する');
+  for (const want of ['qwen3.5-coder', 'qwen3.5', 'coder', 'ロー', 'ーカ', '推論']) assert.ok(t.includes(want), `missing ${want} in ${t}`);
+});
+test('kb expandQuery bridges Japanese questions to English docs', () => {
+  const t = expandQuery('MCP サーバー');
+  assert.ok(t.includes('modelcontextprotocol') && t.includes('server'));
+});
+test('kb search ranks relevant first, caps one repo, honours filters', () => {
+  const now = Date.parse('2026-11-11T00:00:00Z');
+  const docs = [
+    { id: 'a', title: 'ollama/ollama v1', url: 'https://github.com/ollama/ollama/releases/tag/v1', body: 'local inference', date: '2026-11-10', sourceType: 'release' },
+    { id: 'b', title: 'ollama/ollama v2', url: 'https://github.com/ollama/ollama/releases/tag/v2', body: 'local inference', date: '2026-11-09', sourceType: 'release' },
+    { id: 'c', title: 'ollama/ollama v3', url: 'https://github.com/ollama/ollama/releases/tag/v3', body: 'local inference', date: '2026-11-08', sourceType: 'release' },
+    { id: 'd', title: 'Speculative decoding for local inference', url: 'https://arxiv.org/abs/1', body: 'inference speedup', date: '2026-11-01', sourceType: 'paper' },
+    { id: 'e', title: 'Cooking pasta', url: 'https://example.com/p', body: 'tomato', date: '2026-11-10', sourceType: 'feed' },
+  ];
+  const index = buildIndex(docs);
+  const hits = search(index, 'ローカル 推論', { k: 10, now });
+  const ids = hits.map((h) => h.doc.id);
+  assert.ok(!ids.includes('e'), 'irrelevant doc must not match');
+  assert.equal(ids.filter((id) => 'abc'.includes(id)).length, 2, 'one GitHub repo is capped at 2 hits');
+  assert.ok(ids.includes('d'));
+  const papers = search(index, 'inference', { now, filter: (d) => d.sourceType === 'paper' });
+  assert.deepEqual(papers.map((h) => h.doc.id), ['d']);
+});
+test('kb quantize keeps cosine and RRF fuses two rankings', () => {
+  const a = [0.1, -0.4, 0.9, 0.05];
+  const b = [0.12, -0.38, 0.88, 0.0];
+  const qa = dequantize(quantize(a));
+  assert.ok(Math.abs(cosine(qa, b) - cosine(a, b)) < 0.01);
+  const fused = rrf([[{ i: 1 }, { i: 2 }], [{ i: 2 }, { i: 3 }]]);
+  assert.equal(fused[0].i, 2, 'item ranked by both lists wins');
+});
+test('kb packContext never exceeds its budget and numbers sources', () => {
+  const docs = Array.from({ length: 20 }, (_, n) => ({ doc: { id: String(n), title: `doc ${n}`, url: `https://x/${n}`, source: 's', date: '2026-11-01', body: 'x'.repeat(900) } }));
+  const { text, used, ids } = packContext(docs, { budget: 1500 });
+  assert.ok(text.length <= 1500 && used <= 1500 + 2, `packed ${text.length}`);
+  assert.ok(text.startsWith('[1] doc 0') && ids.length >= 2);
+});
+test('kb docs: stable ids, merge counts sightings, markdown stripped', () => {
+  assert.equal(docId('https://a.example/x'), docId('https://a.example/x'));
+  assert.notEqual(docId('https://a.example/x'), docId('https://a.example/y'));
+  const merged = mergeDoc({ id: 'x', title: 't', tags: ['a'], summary: 'short', seen: 1 }, { id: 'x', title: 't', tags: ['b'], summary: 'a longer one' });
+  assert.equal(merged.seen, 2);
+  assert.deepEqual(merged.tags, ['a', 'b']);
+  assert.equal(merged.summary, 'a longer one');
+  assert.equal(plain('## New **fast** [docs](https://x) and `code`'), 'New fast docs and code');
+  const doc = toDoc({ title: 'T', url: 'https://ex.com/a?utm_source=x', body: '# hi', publishedAt: '2026-11-10T20:00:00Z' }, { collectedAt: '2026-11-11T00:00:00Z', tz: 'Asia/Kuala_Lumpur' });
+  assert.equal(doc.url, 'https://ex.com/a');
+  assert.equal(doc.date, '2026-11-11', 'date is local (MYT)');
+  assert.equal(doc.body, 'hi');
+});
+test('kb committed shards parse and match the manifest', () => {
+  const dir = path.join(ROOT, 'docs', 'kb');
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  let total = 0;
+  for (const { key, count } of manifest.shards) {
+    const docs = parseJsonl(fs.readFileSync(path.join(dir, 'shards', `${key}.jsonl`), 'utf8'));
+    assert.equal(docs.length, count, `shard ${key}`);
+    total += count;
+  }
+  assert.equal(total, manifest.total);
+});
+test('mcp server: initialize, tools/list, kb_search round-trip', () => {
+  const lines = [
+    { jsonrpc: '2.0', id: 1, method: 'initialize', params: { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'selftest', version: '0' } } },
+    { jsonrpc: '2.0', method: 'notifications/initialized' },
+    { jsonrpc: '2.0', id: 2, method: 'tools/list' },
+    { jsonrpc: '2.0', id: 3, method: 'tools/call', params: { name: 'kb_search', arguments: { query: 'release', k: 3 } } },
+    { jsonrpc: '2.0', id: 4, method: 'nope' },
+  ].map((m) => JSON.stringify(m)).join('\n');
+  const env = { ...process.env, KB_EMBED_PROVIDER: 'none' };
+  delete env.INFOCOLLECT_KB_URL;
+  const res = spawnSync(process.execPath, [path.join(ROOT, 'scripts', 'mcp', 'server.mjs')], { input: `${lines}\n`, encoding: 'utf8', timeout: 20000, env });
+  const out = Object.fromEntries(res.stdout.trim().split('\n').map((l) => JSON.parse(l)).map((m) => [m.id, m]));
+  assert.equal(out[1].result.protocolVersion, '2025-06-18');
+  assert.deepEqual(out[2].result.tools.map((t) => t.name).sort(), ['digest_latest', 'kb_context', 'kb_get', 'kb_search', 'kb_stats']);
+  assert.equal(out[3].result.isError, false);
+  assert.ok(out[3].result.structuredContent.results.length > 0);
+  assert.equal(out[4].error.code, -32601);
 });
 
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures)' : ''}`);

@@ -1,7 +1,7 @@
 // Service worker: precaches the app shell so InfoCollect opens instantly and
 // keeps working offline, and keeps the newest data JSON in a separate cache.
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL_CACHE = `infocollect-shell-${VERSION}`;
 const DATA_CACHE = `infocollect-data-${VERSION}`;
 
@@ -84,7 +84,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (url.pathname.includes('/data/')) {
+  if (url.pathname.includes('/data/') || url.pathname.includes('/kb/')) {
     event.respondWith(networkFirst(request, DATA_CACHE));
     return;
   }

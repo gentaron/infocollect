@@ -24,6 +24,8 @@ scripts/blog/lib/          core（純粋関数）・llm（プロバイダ）・s
 prompts/blog/              5枠の執筆ルール（common.md + slot-XXXX.md）
 memory/                    生成時に読み込むメモ（PC・環境・ログ）
 docs/blog/                 生成された記事とブログ一覧ページ
+scripts/kb/                ナレッジベース（ingest / query / 広い網 / 埋め込み）
+scripts/mcp/server.mjs     MCP サーバー（stdio・依存ゼロ）
 scripts/selftest.mjs       ネットワーク不要の自己テスト
 scripts/gen-icons.mjs      PWAアイコン生成（依存パッケージ無し）
 scripts/pack.mjs           docs/ を infocollect-pwa.zip に固める
@@ -32,6 +34,7 @@ docs/                      PWA本体（GitHub Pages の配信ディレクトリ�
   ├─ index.html / app.js / styles.css
   ├─ manifest.webmanifest / sw.js / icons/
   ├─ blog/index.html + blog/index.json + blog/YYYY-MM-DD/*.txt
+  ├─ kb/index.html（検索）+ kb/kb-core.js + kb/manifest.json + kb/shards/YYYY-MM.jsonl
   └─ data/latest.json, data/index.json, data/archive/YYYY-MM-DD.json
 .github/workflows/daily.yml      Cron（0 1 * * * UTC = 09:00 MYT）
 .github/workflows/blog-*.yml     5枠のブログ執筆 Cron（下記）
@@ -95,6 +98,27 @@ Actions タブの「Blog 7時枠（AIモデル）」など → **Run workflow** 
 - `memory/areas/github-trending-blog.md` — 扱った題材のログ（スクリプトが自動追記、新しい行が上）。容量が増えたら古い行を `blog-log-archive.md` へ移す。アーカイブも重複チェックに使われる
 - `memory/people/humble-bobcat51.md` — 先に走っている書き手の関心・読者層のメモ。ここを埋めると「先回り選定」が効いてくる（記事に名前は出ない）
 - `memory/note-titles.txt` — システム導入前の記事タイトルがあれば1行ずつ追記（重複チェック用）
+
+---
+
+## ナレッジベース（RAG）と MCP
+
+毎日集めたものを **捨てずに溜めて、あとから引ける** ようにしてあります。設計の全体は [ARCHITECTURE.md](./ARCHITECTURE.md)。
+
+- `docs/kb/` に月ごとの JSONL で蓄積（ダイジェスト＋arXiv・HF 論文・Reddit・Zenn/Qiita・セキュリティ系などの“広い網”＋自分のブログ）
+- 検索は **BM25（日本語は bigram）＋任意のベクトル（RRF で融合）＋新しさ＋多様性**。中身は `docs/kb/kb-core.js` 1枚で、Node とブラウザが同じものを使う
+- ブログ5枠は、過去30日の関連資料を **文字数予算の中だけ** 同梱して書く（`--no-kb` で無効）
+- **MCP サーバー**で、Claude Code などの AI から直接たたける（`kb_search` / `kb_context` / `kb_get` / `kb_stats` / `digest_latest`）
+- PWA の **「検索」**（`/kb/`）は端末の中だけで検索。結果を「AIに渡す形でコピー」できる
+
+```bash
+node scripts/kb/ingest.mjs --backfill          # 既存アーカイブから一気に溜める
+node scripts/kb/query.mjs "ローカルLLM 量子化"   # ターミナルから検索
+node scripts/kb/query.mjs "MCP" --pack 3000     # AI に渡す文脈ブロックを作る
+claude mcp add infocollect -- node scripts/mcp/server.mjs   # Claude Code から使う
+```
+
+ベクトルは任意です。`CLOUDFLARE_ACCOUNT_ID`+`CLOUDFLARE_API_TOKEN`（`@cf/baai/bge-m3`）か `GEMINI_API_KEY` があれば自動で使い、無ければ BM25 だけで動きます。自分の PC では `KB_EMBED_PROVIDER=ollama`（既定 `bge-m3`）でローカル埋め込みもできます。
 
 ---
 

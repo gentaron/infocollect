@@ -1,8 +1,12 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-11T14:59:07.673Z",
-  "total": 473,
+  "updatedAt": "2026-11-11T15:54:20.468Z",
+  "total": 531,
   "shards": [
+    {
+      "key": "2026-01",
+      "count": 58
+    },
     {
       "key": "2026-09",
       "count": 166
@@ -19,6 +23,7 @@
   "sources": {
     "GitHub Releases": 235,
     "Simon Willison": 61,
+    "Ecosystem": 58,
     "Hacker News": 52,
     "GitHub Trending": 29,
     "TechCrunch AI": 23,

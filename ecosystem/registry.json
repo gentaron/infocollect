@@ -1,0 +1,625 @@
+{
+  "_comment": "gentaron の公開リポジトリの台帳（手で書く正本）。scripts/ecosystem/propagate.mjs がここから各リポジトリの ecosystem.json・AGENTS.md・README・.mcp.json の「つなぎ」を作る。非公開リポジトリはこの公開ファイルには載せない（ローカルで --private-registry を使う）。",
+  "schema": 1,
+  "owner": "gentaron",
+  "hub": "infocollect",
+  "groups": {
+    "hub": {
+      "label": "ハブ",
+      "about": "集める・溜める・配る。ナレッジベース、AIハーネス、Forge"
+    },
+    "pipeline": {
+      "label": "発信パイプライン",
+      "about": "題材を選び、書き、絵・スライド・動画にして出す"
+    },
+    "data": {
+      "label": "データと研究",
+      "about": "毎日の計測と、検証できる研究"
+    },
+    "edu": {
+      "label": "EDU 宇宙",
+      "about": "Eternal Dominion Universe。edutext が原典、ほかはその表現"
+    },
+    "play": {
+      "label": "遊びと実験",
+      "about": "ゲーム・WebGL・ビューア"
+    },
+    "tools": {
+      "label": "道具",
+      "about": "単体で使える小さなアプリ"
+    },
+    "archive": {
+      "label": "アーカイブ",
+      "about": "試作・学習用。新しい作業は後継で"
+    }
+  },
+  "repos": [
+    {
+      "name": "infocollect",
+      "group": "hub",
+      "status": "active",
+      "role": "毎朝の AI 情報収集、ナレッジベース（RAG・MCP）、無料モデルの配車ハーネス、手元の AI 開発カンバン Forge",
+      "stack": "Node（依存ゼロ）· GitHub Actions · PWA",
+      "produces": [
+        "kb",
+        "digest",
+        "blog",
+        "slides",
+        "forge"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "IDEAZ",
+      "group": "pipeline",
+      "status": "active",
+      "role": "1日5枠のブログ・フォーマットと題材。コピーして AI に渡せば記事が立ち上がる",
+      "stack": "Node · Netlify · PWA",
+      "produces": [
+        "formats",
+        "topics"
+      ],
+      "consumes": [
+        "kb"
+      ]
+    },
+    {
+      "name": "genesisvault",
+      "group": "pipeline",
+      "status": "active",
+      "role": "Mina Eureka Ernst の日記ブログ。12体のエージェント（Liminal Forge）が毎日書く",
+      "stack": "Astro · Bun · Vercel",
+      "produces": [
+        "blog"
+      ],
+      "consumes": [
+        "kb",
+        "formats",
+        "market"
+      ],
+      "site": "https://genesisvault.vercel.app"
+    },
+    {
+      "name": "Gentarog",
+      "group": "pipeline",
+      "status": "active",
+      "role": "毎日自動で投稿されるブログ",
+      "stack": "Astro",
+      "produces": [
+        "blog"
+      ],
+      "consumes": [
+        "kb",
+        "formats"
+      ]
+    },
+    {
+      "name": "VAIZ",
+      "group": "pipeline",
+      "status": "active",
+      "role": "完全無料の動画生成ループ。企画 → 画像 → 音声 → 動画",
+      "stack": "Bun",
+      "produces": [
+        "video"
+      ],
+      "consumes": [
+        "blog",
+        "kb"
+      ]
+    },
+    {
+      "name": "SAIZ",
+      "group": "pipeline",
+      "status": "maintained",
+      "role": "テキストからスライドを作るツール",
+      "stack": "Vite",
+      "produces": [
+        "slides"
+      ],
+      "consumes": [
+        "blog"
+      ]
+    },
+    {
+      "name": "genimage",
+      "group": "pipeline",
+      "status": "active",
+      "role": "Eureka Thumb — 記事を貼るだけの文字サムネメーカー",
+      "stack": "Next.js · Netlify",
+      "produces": [
+        "thumbnails"
+      ],
+      "consumes": [
+        "blog"
+      ]
+    },
+    {
+      "name": "seo",
+      "group": "pipeline",
+      "status": "maintained",
+      "role": "Suggest Radar — 日本語検索のキーワード探索",
+      "stack": "Node · Netlify",
+      "produces": [
+        "keywords"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "QAIZ",
+      "group": "data",
+      "status": "active",
+      "role": "地域 × セクターの株式を一流の指標で横断分析するターミナル＋日本株クオンツ研究ラボ",
+      "stack": "Cloudflare Workers · Python",
+      "produces": [
+        "market"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "hazerader",
+      "group": "data",
+      "status": "active",
+      "role": "Cyberjaya の大気汚染指数（US AQI）を AI アンサンブルで毎日予測する PWA",
+      "stack": "Node · Netlify · GitHub Actions",
+      "produces": [
+        "aqi"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "Mathematical-Physics-Lab-",
+      "group": "data",
+      "status": "active",
+      "role": "無料の OSS で数理物理の構造を探索し、計算で候補を検証する研究ラボ",
+      "stack": "Python",
+      "produces": [
+        "research"
+      ],
+      "consumes": [
+        "kb"
+      ]
+    },
+    {
+      "name": "edutext",
+      "group": "edu",
+      "status": "active",
+      "role": "EDU の物語と設定の原典（テキスト）",
+      "stack": "Markdown",
+      "produces": [
+        "lore"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "image",
+      "group": "edu",
+      "status": "active",
+      "role": "EDU のキャラクターアートの置き場（URL で参照される）",
+      "stack": "画像",
+      "produces": [
+        "art"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "edu",
+      "group": "edu",
+      "status": "active",
+      "role": "EDU — E16 連星系を舞台とするオリジナル SF ユニバースの本体サイト",
+      "stack": "Next.js · Bun · Netlify",
+      "produces": [
+        "site"
+      ],
+      "consumes": [
+        "lore",
+        "art"
+      ]
+    },
+    {
+      "name": "eurekaspace",
+      "group": "edu",
+      "status": "maintained",
+      "role": "EDU ユニバース百科事典",
+      "stack": "Next.js · Bun",
+      "produces": [
+        "site"
+      ],
+      "consumes": [
+        "lore",
+        "art"
+      ]
+    },
+    {
+      "name": "irisworlds",
+      "group": "edu",
+      "status": "maintained",
+      "role": "Iris（The Blue Phantom）のキャラクターサイト",
+      "stack": "Next.js · Netlify",
+      "produces": [
+        "site"
+      ],
+      "consumes": [
+        "lore",
+        "art"
+      ]
+    },
+    {
+      "name": "laylaland",
+      "group": "edu",
+      "status": "maintained",
+      "role": "Layla Virel Nova（Pink Voltage）のファンサイト",
+      "stack": "Next.js · Netlify",
+      "produces": [
+        "site"
+      ],
+      "consumes": [
+        "lore",
+        "art"
+      ]
+    },
+    {
+      "name": "edunft",
+      "group": "edu",
+      "status": "maintained",
+      "role": "EDU の NFT カードのメタデータ",
+      "stack": "JSON",
+      "produces": [
+        "nft"
+      ],
+      "consumes": [
+        "lore",
+        "art"
+      ]
+    },
+    {
+      "name": "gamemina",
+      "group": "edu",
+      "status": "active",
+      "role": "GAMEMINA CHRONICLE — EDU をなぞる本格ファンタジー RPG（PWA・内蔵QA）",
+      "stack": "素の JS · PWA",
+      "produces": [
+        "game"
+      ],
+      "consumes": [
+        "lore",
+        "art"
+      ]
+    },
+    {
+      "name": "fpsgame",
+      "group": "play",
+      "status": "maintained",
+      "role": "Three.js / React Three Fiber の FPS",
+      "stack": "Next.js · R3F",
+      "produces": [
+        "game"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "1million",
+      "group": "play",
+      "status": "maintained",
+      "role": "1億の観測者 — 1億体のエージェントが創発する世界を観測する WebGL2",
+      "stack": "Next.js · WebGL2",
+      "produces": [
+        "game"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "hennanotes",
+      "group": "play",
+      "status": "maintained",
+      "role": "画像を自由にスライドできる PWA ビューア",
+      "stack": "素の HTML · PWA",
+      "produces": [
+        "viewer"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "minagal",
+      "group": "play",
+      "status": "maintained",
+      "role": "青い髪のヒロインのイラストギャラリー",
+      "stack": "素の HTML",
+      "produces": [
+        "site"
+      ],
+      "consumes": [
+        "art"
+      ]
+    },
+    {
+      "name": "game-of-mina",
+      "group": "play",
+      "status": "maintained",
+      "role": "キャラクターサイトの試作",
+      "stack": "素の HTML",
+      "produces": [
+        "site"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "OCAI",
+      "group": "play",
+      "status": "maintained",
+      "role": "単一ページの実験",
+      "stack": "素の HTML",
+      "produces": [
+        "site"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "pk3",
+      "group": "tools",
+      "status": "maintained",
+      "role": "StellarKnowledge — ローカルファーストのナレッジベース（サーバー不要）",
+      "stack": "Vite · React",
+      "produces": [
+        "notes"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "recordlog",
+      "group": "tools",
+      "status": "maintained",
+      "role": "話す → 文字になる → 1日1回 AI が整理して積む音声メモ",
+      "stack": "Vite · PWA",
+      "produces": [
+        "notes"
+      ],
+      "consumes": []
+    },
+    {
+      "name": "Bubble",
+      "group": "tools",
+      "status": "maintained",
+      "role": "project_aether の試作",
+      "stack": "-",
+      "produces": [],
+      "consumes": []
+    },
+    {
+      "name": "veile-bot",
+      "group": "tools",
+      "status": "maintained",
+      "role": "Jupyter ノートブックのボット試作",
+      "stack": "Python · Jupyter",
+      "produces": [],
+      "consumes": []
+    },
+    {
+      "name": "webportal",
+      "group": "tools",
+      "status": "maintained",
+      "role": "React + Vite のポータル試作",
+      "stack": "Vite · React",
+      "produces": [],
+      "consumes": []
+    },
+    {
+      "name": "presentationgen",
+      "group": "archive",
+      "status": "archive",
+      "role": "PptxGenJS のプレゼン生成",
+      "successor": "SAIZ"
+    },
+    {
+      "name": "aiblogmaker",
+      "group": "archive",
+      "status": "archive",
+      "role": "AI ブログ生成の試作",
+      "successor": "genesisvault"
+    },
+    {
+      "name": "nextjs-gens-notes",
+      "group": "archive",
+      "status": "archive",
+      "role": "Gens Notes（Next.js）の試作",
+      "successor": "genesisvault"
+    },
+    {
+      "name": "nextjs-gensnotes",
+      "group": "archive",
+      "status": "archive",
+      "role": "Gens Notes の Sanity スタジオ",
+      "successor": "genesisvault"
+    },
+    {
+      "name": "gensnotes",
+      "group": "archive",
+      "status": "archive",
+      "role": "Gens Notes の初期版",
+      "successor": "genesisvault"
+    },
+    {
+      "name": "genesisone",
+      "group": "archive",
+      "status": "archive",
+      "role": "Genesis の初期ページ",
+      "successor": "genesisvault"
+    },
+    {
+      "name": "image-manage",
+      "group": "archive",
+      "status": "archive",
+      "role": "AI タグ付きの画像管理",
+      "successor": "image"
+    },
+    {
+      "name": "dreamy-image-gallery-paradise",
+      "group": "archive",
+      "status": "archive",
+      "role": "画像ギャラリー（Lovable）",
+      "successor": "minagal"
+    },
+    {
+      "name": "imgprompt",
+      "group": "archive",
+      "status": "archive",
+      "role": "画像プロンプトの試作",
+      "successor": "genimage"
+    },
+    {
+      "name": "game3d",
+      "group": "archive",
+      "status": "archive",
+      "role": "Three.js の 3D FPS（初期版）",
+      "successor": "fpsgame"
+    },
+    {
+      "name": "hentaigame",
+      "group": "archive",
+      "status": "archive",
+      "role": "Rhythm Rush — 背景が変わるリズムゲーム",
+      "successor": "hennanotes"
+    },
+    {
+      "name": "sakuranovel",
+      "group": "archive",
+      "status": "archive",
+      "role": "Web 小説アプリ（sakura.txt から生成）",
+      "successor": "edutext"
+    },
+    {
+      "name": "yelanwiki",
+      "group": "archive",
+      "status": "archive",
+      "role": "Wiki の試作",
+      "successor": "eurekaspace"
+    },
+    {
+      "name": "nebura",
+      "group": "archive",
+      "status": "archive",
+      "role": "単一ページの試作",
+      "successor": null
+    },
+    {
+      "name": "neburas",
+      "group": "archive",
+      "status": "archive",
+      "role": "nebura の Vite 版",
+      "successor": null
+    },
+    {
+      "name": "newnebura",
+      "group": "archive",
+      "status": "archive",
+      "role": "nebura の作り直し",
+      "successor": null
+    },
+    {
+      "name": "aieducate",
+      "group": "archive",
+      "status": "archive",
+      "role": "React + TypeScript の学習用",
+      "successor": null
+    },
+    {
+      "name": "qrtng",
+      "group": "archive",
+      "status": "archive",
+      "role": "React + Vite の試作",
+      "successor": null
+    },
+    {
+      "name": "CryptoMemeCoin",
+      "group": "archive",
+      "status": "archive",
+      "role": "ミームコインのページ試作",
+      "successor": "edunft"
+    },
+    {
+      "name": "calculator",
+      "group": "archive",
+      "status": "archive",
+      "role": "電卓",
+      "successor": null
+    },
+    {
+      "name": "first-app",
+      "group": "archive",
+      "status": "archive",
+      "role": "最初のアプリ",
+      "successor": null
+    },
+    {
+      "name": "nandl",
+      "group": "archive",
+      "status": "archive",
+      "role": "単一ページの試作",
+      "successor": null
+    },
+    {
+      "name": "vercel",
+      "group": "archive",
+      "status": "archive",
+      "role": "Vercel の試作",
+      "successor": null
+    },
+    {
+      "name": "openfg",
+      "group": "archive",
+      "status": "archive",
+      "role": "試作",
+      "successor": null
+    },
+    {
+      "name": "windsurf",
+      "group": "archive",
+      "status": "archive",
+      "role": "Windsurf の試作",
+      "successor": null
+    },
+    {
+      "name": "project-ant",
+      "group": "archive",
+      "status": "archive",
+      "role": "試作",
+      "successor": null
+    },
+    {
+      "name": "intro-html",
+      "group": "archive",
+      "status": "archive",
+      "role": "GitHub Learning Lab（HTML 入門）",
+      "successor": null
+    },
+    {
+      "name": "github-slideshow",
+      "group": "archive",
+      "status": "archive",
+      "role": "GitHub Learning Lab（GitHub 入門）",
+      "successor": null
+    }
+  ],
+  "flows": {
+    "_comment": "produces/consumes に使うキーと、その短い呼び名。つなぎの線はここから引く。",
+    "kb": "ナレッジベース",
+    "digest": "毎朝のダイジェスト",
+    "formats": "書き方の型",
+    "topics": "今日の題材",
+    "blog": "記事",
+    "slides": "スライド",
+    "video": "動画",
+    "thumbnails": "サムネイル",
+    "keywords": "検索キーワード",
+    "market": "相場の地形",
+    "aqi": "大気の予測",
+    "research": "研究ノート",
+    "lore": "EDU の原典",
+    "art": "キャラクターアート",
+    "site": "公開サイト",
+    "nft": "NFT メタデータ",
+    "game": "ゲーム",
+    "viewer": "ビューア",
+    "notes": "メモ",
+    "forge": "AI 開発カンバン"
+  }
+}

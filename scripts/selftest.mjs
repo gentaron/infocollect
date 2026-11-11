@@ -28,6 +28,8 @@ import { parseLooseJson, plan } from './harness/router.mjs';
 import { providerById } from './harness/providers.mjs';
 import { lintArticle, titleSimilarity } from './harness/review.mjs';
 import { classify as classifyTask } from './harness/task.mjs';
+import { BEGIN, END, agentsBlock, manifest, mergeMcp, readmeBlock, relations, upsertBlock, validate as validateRegistry } from './ecosystem/kit.mjs';
+import { plan as planLinks } from './ecosystem/propagate.mjs';
 import { normalizeOutline, outlineFromText, parseArticle, renderDeck } from './slides/build.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -424,6 +426,43 @@ test('slides: model outlines are validated before rendering', () => {
   const ok = normalizeOutline({ title: 't', slides: [{ title: 'a', bullets: ['1', '2', '3', '4', '5'] }, { title: 'b', bullets: ['1'] }, { title: '', bullets: ['x'] }] });
   assert.equal(ok.slides.length, 2);
   assert.equal(ok.slides[0].bullets.length, 4);
+});
+
+// ---------------------------------------------------------------- ecosystem
+const REGISTRY = JSON.parse(fs.readFileSync(path.join(ROOT, 'ecosystem', 'registry.json'), 'utf8'));
+test('ecosystem registry is valid and every consumed flow has a producer', () => {
+  assert.deepEqual(validateRegistry(REGISTRY), []);
+  assert.ok(REGISTRY.repos.length >= 50);
+  assert.ok(REGISTRY.repos.some((r) => r.name === REGISTRY.hub));
+});
+test('ecosystem relations: IDEAZ is fed by the hub and feeds the blogs', () => {
+  const rel = relations(REGISTRY, 'ideaz');
+  assert.ok(rel.upstream.some((u) => u.repo === 'infocollect' && u.flow === 'kb'));
+  assert.ok(rel.downstream.some((d) => d.repo === 'genesisvault' && d.flow === 'formats'));
+  const m = manifest(REGISTRY, 'IDEAZ');
+  assert.equal(m.hub.kb, 'https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb');
+  assert.ok(m.downstream.every((d) => d.url.startsWith('https://github.com/gentaron/')));
+  assert.match(readmeBlock(REGISTRY, 'presentationgen'), /アーカイブ[\s\S]*SAIZ/);
+});
+test('ecosystem blocks are idempotent and never touch text outside the markers', () => {
+  const before = '# x\n\nmy own words\n';
+  const once = upsertBlock(before, agentsBlock(REGISTRY, 'gamemina'));
+  assert.ok(once.startsWith('# x\n\nmy own words\n\n' + BEGIN));
+  assert.equal(upsertBlock(once, agentsBlock(REGISTRY, 'gamemina')), once, 'rerun is a no-op');
+  const edited = once.replace('my own words', 'edited by hand') + '\ntrailing note\n';
+  const again = upsertBlock(edited, agentsBlock(REGISTRY, 'gamemina').replace('役割', 'ROLE'));
+  assert.ok(again.includes('edited by hand') && again.includes('trailing note') && again.includes('ROLE'));
+  assert.equal((again.match(new RegExp(END, 'g')) || []).length, 1, 'exactly one block');
+});
+test('ecosystem .mcp.json merge keeps the repo own servers', () => {
+  const merged = JSON.parse(mergeMcp('{"mcpServers":{"mine":{"command":"x"}},"other":1}', { 'infocollect-kb': { command: 'npx' } }));
+  assert.deepEqual(Object.keys(merged.mcpServers).sort(), ['infocollect-kb', 'mine']);
+  assert.equal(merged.other, 1);
+  assert.throws(() => mergeMcp('{broken', {}), /JSON/);
+});
+test('ecosystem: the hub itself is linked and up to date', () => {
+  const p = planLinks(REGISTRY, ROOT, 'infocollect');
+  assert.deepEqual(p.files.map((f) => f.file), [], `stale: ${p.files.map((f) => f.file).join(', ')} — run node scripts/ecosystem/propagate.mjs .`);
 });
 
 await Promise.all(pending);

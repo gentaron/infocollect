@@ -22,10 +22,13 @@
     "harness": "node scripts/harness/status.mjs",
     "task": "node scripts/harness/task.mjs",
     "forge": "node forge/forge.mjs",
-    "test:forge": "node forge/test.mjs"
+    "test:forge": "node forge/test.mjs",
+    "ecosystem": "node scripts/ecosystem/propagate.mjs",
+    "ecosystem:map": "node scripts/ecosystem/propagate.mjs --map"
   },
   "license": "MIT",
   "bin": {
-    "forge": "forge/forge.mjs"
+    "forge": "forge/forge.mjs",
+    "infocollect-kb": "scripts/mcp/server.mjs"
   }
 }

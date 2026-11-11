@@ -90,6 +90,28 @@ function digestItems(payload) {
   return [...tools, ...(payload.news || [])];
 }
 
+/** Every repository in the ecosystem registry, so the KB can answer "which repo does X?". */
+function ecosystemItems() {
+  const registry = readJson(path.join(ROOT, 'ecosystem', 'registry.json'), null);
+  if (!registry) return [];
+  const label = (f) => registry.flows?.[f] || f;
+  return registry.repos.map((r) => ({
+    title: `${r.name} — ${r.role}`,
+    url: `https://github.com/${registry.owner}/${r.name}`,
+    body: [
+      `${registry.groups?.[r.group]?.label || r.group}。${r.stack || ''}`,
+      r.produces?.length ? `渡す: ${r.produces.map(label).join('、')}` : '',
+      r.consumes?.length ? `受け取る: ${r.consumes.map(label).join('、')}` : '',
+      r.successor ? `後継: ${r.successor}` : '',
+      r.site ? `サイト: ${r.site}` : '',
+    ].filter(Boolean).join(' '),
+    source: 'Ecosystem',
+    sourceType: 'own',
+    publishedAt: '2026-01-01T00:00:00+08:00',
+    tags: ['repo', r.group, r.status],
+  }));
+}
+
 function blogItems() {
   const index = readJson(path.join(ROOT, 'docs', 'blog', 'index.json'), []);
   const out = [];
@@ -161,6 +183,7 @@ async function main() {
     }
   }
   items.push(...blogItems());
+  items.push(...ecosystemItems());
   if (!OFFLINE) items.push(...(await collectWideNet(kbConfig)));
 
   let added = 0;

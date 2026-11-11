@@ -119,7 +119,7 @@ Actions タブの「Blog 7時枠（AIモデル）」など → **Run workflow** 
 node scripts/kb/ingest.mjs --backfill          # 既存アーカイブから一気に溜める
 node scripts/kb/query.mjs "ローカルLLM 量子化"   # ターミナルから検索
 node scripts/kb/query.mjs "MCP" --pack 3000     # AI に渡す文脈ブロックを作る
-claude mcp add infocollect -- node scripts/mcp/server.mjs   # Claude Code から使う
+claude mcp add infocollect-kb -- node scripts/mcp/server.mjs   # Claude Code から使う
 ```
 
 ベクトルは任意です。`CLOUDFLARE_ACCOUNT_ID`+`CLOUDFLARE_API_TOKEN`（`@cf/baai/bge-m3`）か `GEMINI_API_KEY` があれば自動で使い、無ければ BM25 だけで動きます。自分の PC では `KB_EMBED_PROVIDER=ollama`（既定 `bge-m3`）でローカル埋め込みもできます。
@@ -194,6 +194,20 @@ node forge/forge.mjs repo scan ~/code
 node forge/forge.mjs add infocollect "直したいこと" -m "詳しい依頼" --tier light
 node forge/forge.mjs serve
 ```
+
+---
+
+## エコシステム（全リポジトリのつなぎ）
+
+[`ecosystem/registry.json`](./ecosystem/registry.json) が、gentaron の公開リポジトリ全部の台帳です。役割、島（グループ）、何を渡して何を受け取るか、アーカイブの後継を書いてあります。地図は [ecosystem/README.md](./ecosystem/README.md)。
+
+`node scripts/ecosystem/propagate.mjs <repo-dir>...` を実行すると、各リポジトリに次のものが入ります（何度実行しても同じ結果になり、目印の外は触りません）。
+
+- `ecosystem.json`: そのリポジトリの上流・下流・ハブの入口（機械向け）
+- README の「つながり」節と AGENTS.md の「エコシステム」節: 人と AI が作業前に読む
+- `.mcp.json`: ナレッジベース（`infocollect-kb`）と Forge（`forge`）。`npx -p github:gentaron/infocollect` で起動するので、どのリポジトリで Claude Code を開いても同じ知識と同じカンバンにつながる
+
+ナレッジベースにも台帳が入っているので、`kb_search "スライドを作るリポジトリ"` のように聞けば、どのリポジトリの担当かが返ります。
 
 ---
 
@@ -359,3 +373,15 @@ GitHub には「トレンド」API が無いため、次の方法で近似して
 ## ライセンス
 
 MIT
+
+<!-- ecosystem:begin (自動生成: gentaron/infocollect の ecosystem/registry.json から。手で直さない) -->
+
+## つながり
+
+gentaron のリポジトリ群のうち **ハブ** の一つ。毎朝の AI 情報収集、ナレッジベース（RAG・MCP）、無料モデルの配車ハーネス、手元の AI 開発カンバン Forge。
+
+- **渡す**: [IDEAZ](https://github.com/gentaron/IDEAZ)（ナレッジベース）、[genesisvault](https://github.com/gentaron/genesisvault)（ナレッジベース）、[Gentarog](https://github.com/gentaron/Gentarog)（ナレッジベース）、[VAIZ](https://github.com/gentaron/VAIZ)（ナレッジベース・記事）、[Mathematical-Physics-Lab-](https://github.com/gentaron/Mathematical-Physics-Lab-)（ナレッジベース）、[SAIZ](https://github.com/gentaron/SAIZ)（記事）、[genimage](https://github.com/gentaron/genimage)（記事）
+
+全体の地図 → [ecosystem](https://github.com/gentaron/infocollect/blob/HEAD/ecosystem/README.md)
+
+<!-- ecosystem:end -->

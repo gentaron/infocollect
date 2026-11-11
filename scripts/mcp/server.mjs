@@ -5,7 +5,7 @@
 // Cursor, Codex, Gemini CLI, a local Ollama agent — so the AI asks the KB
 // instead of you pasting links into the chat.
 //
-//   claude mcp add infocollect -- node /path/to/infocollect/scripts/mcp/server.mjs
+//   claude mcp add infocollect-kb -- node /path/to/infocollect/scripts/mcp/server.mjs
 //
 // With no local checkout (e.g. from another repo), point it at the published copy:
 //   INFOCOLLECT_KB_URL=https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb
@@ -16,6 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import readline from 'node:readline';
+import { fileURLToPath } from 'node:url';
 
 import { makeFilter, openKb } from '../kb/lib/retrieve.mjs';
 import { ROOT } from '../kb/lib/store.mjs';
@@ -213,7 +214,11 @@ export function startServer(input = process.stdin) {
   return rl;
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// npx / npm link run us through a symlink in node_modules/.bin, so compare real paths.
+const isMain = (() => {
+  try { return fs.realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; }
+})();
+if (isMain) {
   log('started (stdio)');
   startServer();
 }

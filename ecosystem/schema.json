@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "gentaron ecosystem manifest",
+  "description": "各リポジトリの ecosystem.json。gentaron/infocollect の ecosystem/registry.json から生成される。",
+  "type": "object",
+  "required": ["schema", "name", "group", "status", "role", "produces", "consumes", "hub"],
+  "properties": {
+    "schema": { "const": 1 },
+    "name": { "type": "string" },
+    "group": { "type": "string" },
+    "groupLabel": { "type": "string" },
+    "status": { "enum": ["active", "maintained", "archive"] },
+    "role": { "type": "string" },
+    "stack": { "type": "string" },
+    "site": { "type": "string", "format": "uri" },
+    "produces": { "type": "array", "items": { "type": "string" } },
+    "consumes": { "type": "array", "items": { "type": "string" } },
+    "upstream": { "type": "array", "items": { "type": "object", "required": ["repo", "flows", "url"] } },
+    "downstream": { "type": "array", "items": { "type": "object", "required": ["repo", "flows", "url"] } },
+    "siblings": { "type": "array", "items": { "type": "string" } },
+    "successor": { "type": "string" },
+    "predecessors": { "type": "array", "items": { "type": "string" } },
+    "hub": { "type": "object", "required": ["repo", "map", "kb", "mcp"] }
+  }
+}

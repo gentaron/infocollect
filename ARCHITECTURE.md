@@ -68,7 +68,7 @@
 ```bash
 # このリポジトリの中で Claude Code を開けば .mcp.json で自動的に見える
 # よそのリポジトリから使うとき:
-claude mcp add infocollect -e INFOCOLLECT_KB_URL=https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb -- node /path/to/infocollect/scripts/mcp/server.mjs
+claude mcp add infocollect-kb -e INFOCOLLECT_KB_URL=https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb -- node /path/to/infocollect/scripts/mcp/server.mjs
 ```
 
 | ツール | 使いどころ |

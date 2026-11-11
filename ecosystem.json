@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/gentaron/infocollect/HEAD/ecosystem/schema.json",
+  "schema": 1,
+  "name": "infocollect",
+  "group": "hub",
+  "groupLabel": "ハブ",
+  "status": "active",
+  "role": "毎朝の AI 情報収集、ナレッジベース（RAG・MCP）、無料モデルの配車ハーネス、手元の AI 開発カンバン Forge",
+  "stack": "Node（依存ゼロ）· GitHub Actions · PWA",
+  "produces": [
+    "kb",
+    "digest",
+    "blog",
+    "slides",
+    "forge"
+  ],
+  "consumes": [],
+  "upstream": [],
+  "downstream": [
+    {
+      "repo": "IDEAZ",
+      "flows": [
+        "kb"
+      ],
+      "url": "https://github.com/gentaron/IDEAZ"
+    },
+    {
+      "repo": "genesisvault",
+      "flows": [
+        "kb"
+      ],
+      "url": "https://github.com/gentaron/genesisvault"
+    },
+    {
+      "repo": "Gentarog",
+      "flows": [
+        "kb"
+      ],
+      "url": "https://github.com/gentaron/Gentarog"
+    },
+    {
+      "repo": "VAIZ",
+      "flows": [
+        "kb",
+        "blog"
+      ],
+      "url": "https://github.com/gentaron/VAIZ"
+    },
+    {
+      "repo": "Mathematical-Physics-Lab-",
+      "flows": [
+        "kb"
+      ],
+      "url": "https://github.com/gentaron/Mathematical-Physics-Lab-"
+    },
+    {
+      "repo": "SAIZ",
+      "flows": [
+        "blog"
+      ],
+      "url": "https://github.com/gentaron/SAIZ"
+    },
+    {
+      "repo": "genimage",
+      "flows": [
+        "blog"
+      ],
+      "url": "https://github.com/gentaron/genimage"
+    }
+  ],
+  "siblings": [],
+  "hub": {
+    "repo": "https://github.com/gentaron/infocollect",
+    "map": "https://github.com/gentaron/infocollect/blob/HEAD/ecosystem/README.md",
+    "kb": "https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb",
+    "mcp": [
+      "infocollect-kb",
+      "forge"
+    ]
+  }
+}

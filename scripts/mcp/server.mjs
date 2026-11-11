@@ -8,7 +8,7 @@
 //   claude mcp add infocollect -- node /path/to/infocollect/scripts/mcp/server.mjs
 //
 // With no local checkout (e.g. from another repo), point it at the published copy:
-//   INFOCOLLECT_KB_URL=https://raw.githubusercontent.com/gentaron/infocollect/main/docs/kb
+//   INFOCOLLECT_KB_URL=https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb
 //
 // Tools: kb_search, kb_context, kb_get, kb_stats, digest_latest.
 // Protocol: JSON-RPC 2.0, one message per line on stdin/stdout. Logs → stderr.
@@ -103,7 +103,7 @@ const slim = ({ doc, score }) => ({
 async function readLatestDigest() {
   const local = path.join(ROOT, 'docs', 'data', 'latest.json');
   if (!process.env.INFOCOLLECT_KB_URL && fs.existsSync(local)) return JSON.parse(fs.readFileSync(local, 'utf8'));
-  const base = (process.env.INFOCOLLECT_KB_URL || 'https://raw.githubusercontent.com/gentaron/infocollect/main/docs/kb').replace(/\/kb\/?$/, '');
+  const base = (process.env.INFOCOLLECT_KB_URL || 'https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb').replace(/\/kb\/?$/, '');
   const res = await fetch(`${base}/data/latest.json`);
   if (!res.ok) throw new Error(`latest.json HTTP ${res.status}`);
   return res.json();

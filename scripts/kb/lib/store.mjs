@@ -18,7 +18,7 @@ export const KB_DIR = path.join(ROOT, 'docs', 'kb');
 const SHARD_DIR = (dir) => path.join(dir, 'shards');
 
 /** Default remote copy, used by the MCP server when no local checkout exists. */
-export const DEFAULT_REMOTE = 'https://raw.githubusercontent.com/gentaron/infocollect/main/docs/kb';
+export const DEFAULT_REMOTE = 'https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb';
 
 /** Load every shard from a local directory. Returns Map<id, doc>. */
 export function loadLocal(dir = KB_DIR, { months = Infinity } = {}) {

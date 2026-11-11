@@ -68,7 +68,7 @@
 ```bash
 # このリポジトリの中で Claude Code を開けば .mcp.json で自動的に見える
 # よそのリポジトリから使うとき:
-claude mcp add infocollect -e INFOCOLLECT_KB_URL=https://raw.githubusercontent.com/gentaron/infocollect/main/docs/kb -- node /path/to/infocollect/scripts/mcp/server.mjs
+claude mcp add infocollect -e INFOCOLLECT_KB_URL=https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb -- node /path/to/infocollect/scripts/mcp/server.mjs
 ```
 
 | ツール | 使いどころ |
@@ -84,8 +84,8 @@ claude mcp add infocollect -e INFOCOLLECT_KB_URL=https://raw.githubusercontent.c
 Genesis Vault が IDEAZ の `memory/` を raw で取り寄せているのと同じやり方。
 
 ```
-https://raw.githubusercontent.com/gentaron/infocollect/main/docs/kb/manifest.json
-https://raw.githubusercontent.com/gentaron/infocollect/main/docs/kb/shards/2026-11.jsonl
+https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb/manifest.json
+https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb/shards/2026-11.jsonl
 ```
 
 `kb-core.js` も同じ場所にあるので、Bun / Node / Deno / Workers からそのまま `import` できる。

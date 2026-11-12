@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-12T07:56:49.150Z",
+  "generatedAtLocal": "2026-11-12 15:56",
+  "dateLocal": "2026-11-12",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-12 15:56 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、ZhuLinsen/daily_stock_analysis の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 453572,
+      "starsDelta": 2749,
+      "starsPerDay": 2696.7,
+      "measured": true,
+      "forks": 111480,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-12T02:45:58Z",
+      "openIssues": 1719,
+      "score": 2673.6,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +2749 スター。TypeScript 製。最終更新 2026-11-12。"
+    },
+    {
+      "rank": 2,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 70581,
+      "starsDelta": 1389,
+      "starsPerDay": 1362.6,
+      "measured": true,
+      "forks": 1913,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-11T09:33:36Z",
+      "openIssues": 171,
+      "score": 1642.5,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1389 スター。JavaScript 製。最終更新 2026-11-11。"
+    },
+    {
+      "rank": 3,
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "homepage": "https://dsa.zhulinsen.tech",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "stars": 70767,
+      "starsDelta": 1125,
+      "starsPerDay": 1103.6,
+      "measured": true,
+      "forks": 57010,
+      "language": "Python",
+      "topics": [
+        "a-stock",
+        "ai-agent",
+        "aigc",
+        "llm",
+        "quant",
+        "quantitative-finance",
+        "quantitative-trading"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-01-10T06:43:20Z",
+      "pushedAt": "2026-11-12T07:36:12Z",
+      "openIssues": 52,
+      "score": 1102.94,
+      "headline": "daily_stock_analysis",
+      "summary": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashb…",
+      "why": "前回計測から +1125 スター。Python 製。最終更新 2026-11-12。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "langchain-ai/langchain langchain-typesafe==0.1.0",
+      "titleJa": "langchain-ai/langchain langchain-typesafe==0.1.0",
+      "summary": "**`langchain-typesafe` 0.1.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.1.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T16:14:24.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 76.1
+    },
+    {
+      "rank": 2,
+      "title": "langchain-ai/langchain langchain==1.5.0",
+      "titleJa": "langchain-ai/langchain langchain==1.5.0",
+      "summary": "**`langchain` 1.5.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchai…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T15:47:22.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 75.9
+    },
+    {
+      "rank": 3,
+      "title": "langchain-ai/langchain langchain-core==1.8.0",
+      "titleJa": "langchain-ai/langchain langchain-core==1.8.0",
+      "summary": "**`langchain-core` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11. Users on Python 3.10…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T15:22:07.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 75.7
+    },
+    {
+      "rank": 4,
+      "title": "modelcontextprotocol/servers v2.4.0",
+      "titleJa": "modelcontextprotocol/servers v2.4.0",
+      "summary": "## Security fixes\n\nv2.4.0 fixes six vulnerabilities in three servers. Upgrade `@modelcontextprotocol/server-filesystem` to 2.3.0,\nand `mcp-server-git` and `mcp…",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.4.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T07:07:16.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 75.6
+    },
+    {
+      "rank": 5,
+      "title": "comfyanonymous/ComfyUI v0.45.0",
+      "titleJa": "comfyanonymous/ComfyUI v0.45.0",
+      "summary": "## What's Changed\r\n* Bump comfyui-frontend-package to 1.58.5 by @comfy-pr-bot in https://github.com/Comfy-Org/ComfyUI/pull/17442\r\n* Add better error for when p…",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-10T21:42:42.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 66.9
+    },
+    {
+      "rank": 6,
+      "title": "n8n-io/n8n n8n@1.123.94",
+      "titleJa": "n8n-io/n8n n8n@1.123.94",
+      "summary": "## [1.123.94](https://github.com/n8n-io/n8n/compare/n8n@1.123.93...n8n@1.123.94) (2026-11-11)\n\n\n### Bug Fixes\n\n* **core:** Keep retry backoff when a trigger fa…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.94",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T09:11:40.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.6
+    },
+    {
+      "rank": 7,
+      "title": "n8n-io/n8n n8n@2.47.4",
+      "titleJa": "n8n-io/n8n n8n@2.47.4",
+      "summary": "## [2.47.4](https://github.com/n8n-io/n8n/compare/n8n@2.47.3...n8n@2.47.4) (2026-11-11)\n\n\n### Bug Fixes\n\n* **core:** Keep expression transfers working after bu…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.4",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T08:40:16.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.4
+    },
+    {
+      "rank": 8,
+      "title": "ollama/ollama v0.40.16",
+      "titleJa": "ollama/ollama v0.40.16",
+      "summary": "## Ripple Preview\r\n\r\n[Ripple Preview](https://ollama.com/library/ripple-preview) from Ricursive Intelligence is a 65B dense model built for agentic coding.…",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-09T18:21:19.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 61.2
+    },
+    {
+      "rank": 9,
+      "title": "llm-gemini 0.36",
+      "titleJa": "llm-gemini 0.36",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.36\">llm-gemini 0.36</a></p> <p>Gemini 4 Carbon was announced <a href=…",
+      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-10T20:09:44.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 58.1
+    },
+    {
+      "rank": 10,
+      "title": "llm 0.37.2",
+      "titleJa": "llm 0.37.2",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37.2\">llm 0.37.2</a></p> <p>Fixes a security issue reported by <a href=\"http…",
+      "url": "https://simonwillison.net/2026/Nov/11/llm",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-11T17:19:52.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 56.7
+    },
+    {
+      "rank": 11,
+      "title": "anthropics/anthropic-sdk-python v2.8.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.8.0",
+      "summary": "### Features\n\n* **api:** add Claude Tag metrics to the analytics summaries and users reports\n* **api:** add reply_mode to Claude Tag Slack channel settings\n\n\n#…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-10T16:32:58.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 56.3
+    },
+    {
+      "rank": 12,
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "titleJa": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "summary": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
+      "discussion": "https://news.ycombinator.com/item?id=50458900",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-11T21:24:35Z",
+      "tags": [
+        "news"
+      ],
+      "score": 54.7
+    }
+  ],
+  "stats": {
+    "repoCandidates": 275,
+    "newsCandidates": 2567,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

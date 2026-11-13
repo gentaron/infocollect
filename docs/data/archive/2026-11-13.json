@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-13T07:35:54.129Z",
+  "generatedAtLocal": "2026-11-13 15:35",
+  "dateLocal": "2026-11-13",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-13 15:35 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、janestreet/agent_skills、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 456013,
+      "starsDelta": 2441,
+      "starsPerDay": 2477,
+      "measured": true,
+      "forks": 111985,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-13T05:52:37Z",
+      "openIssues": 1797,
+      "score": 2469.93,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +2441 スター。TypeScript 製。最終更新 2026-11-13。"
+    },
+    {
+      "rank": 2,
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "homepage": null,
+      "description": "Agent skills",
+      "stars": 7939,
+      "starsDelta": 1579,
+      "starsPerDay": 1602.3,
+      "measured": true,
+      "forks": 516,
+      "language": null,
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-11-03T16:50:21Z",
+      "pushedAt": "2026-11-03T18:14:13Z",
+      "openIssues": 9,
+      "score": 1509.81,
+      "headline": "agent_skills",
+      "summary": "Agent skills",
+      "why": "前回計測から +1579 スター。最終更新 2026-11-03。"
+    },
+    {
+      "rank": 3,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 71832,
+      "starsDelta": 1251,
+      "starsPerDay": 1269.5,
+      "measured": true,
+      "forks": 1964,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-11T09:33:36Z",
+      "openIssues": 171,
+      "score": 1476.03,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1251 スター。JavaScript 製。最終更新 2026-11-11。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "llm-gemini 0.37",
+      "titleJa": "llm-gemini 0.37",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.37\">llm-gemini 0.37</a></p> <p>Google launched <a href=\"https://blog.…",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-12T22:55:19.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 71.7
+    },
+    {
+      "rank": 2,
+      "title": "openai/openai-python v3.50.0",
+      "titleJa": "openai/openai-python v3.50.0",
+      "summary": "## [3.50.0](https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expose reasoning input transformations o…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.50.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-12T19:26:07.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 69.9
+    },
+    {
+      "rank": 3,
+      "title": "n8n-io/n8n n8n@1.123.95",
+      "titleJa": "n8n-io/n8n n8n@1.123.95",
+      "summary": "## [1.123.95](https://github.com/n8n-io/n8n/compare/n8n@1.123.94...n8n@1.123.95) (2026-11-12)\n\n<!-- This is an auto-generated description by cubic. -->\n<a href…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.95",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-12T08:44:47.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.6
+    },
+    {
+      "rank": 4,
+      "title": "n8n-io/n8n n8n@2.47.5",
+      "titleJa": "n8n-io/n8n n8n@2.47.5",
+      "summary": "## [2.47.5](https://github.com/n8n-io/n8n/compare/n8n@2.47.4...n8n@2.47.5) (2026-11-12)\n\n\n### Bug Fixes\n\n* **API:** Reject edits to read-only credential nodes…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.5",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-12T08:34:10.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 64.5
+    },
+    {
+      "rank": 5,
+      "title": "langchain-ai/langchain langchain-typesafe==0.1.0",
+      "titleJa": "langchain-ai/langchain langchain-typesafe==0.1.0",
+      "summary": "**`langchain-typesafe` 0.1.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.1.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T16:14:24.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 64.3
+    },
+    {
+      "rank": 6,
+      "title": "langchain-ai/langchain langchain==1.5.0",
+      "titleJa": "langchain-ai/langchain langchain==1.5.0",
+      "summary": "**`langchain` 1.5.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchai…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T15:47:22.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 64.1
+    },
+    {
+      "rank": 7,
+      "title": "langchain-ai/langchain langchain-core==1.8.0",
+      "titleJa": "langchain-ai/langchain langchain-core==1.8.0",
+      "summary": "**`langchain-core` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11. Users on Python 3.10…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T15:22:07.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 63.9
+    },
+    {
+      "rank": 8,
+      "title": "modelcontextprotocol/servers v2.4.0",
+      "titleJa": "modelcontextprotocol/servers v2.4.0",
+      "summary": "## Security fixes\n\nv2.4.0 fixes six vulnerabilities in three servers. Upgrade `@modelcontextprotocol/server-filesystem` to 2.3.0,\nand `mcp-server-git` and `mcp…",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.4.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-11T07:07:16.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 63.8
+    },
+    {
+      "rank": 9,
+      "title": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+      "titleJa": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+      "summary": "Gemini 4 Hydrogen isn't getting a slow, security-conscious release like Carbon and Argon.",
+      "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash",
+      "discussion": null,
+      "source": "Ars Technica AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-12T19:23:03.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 59.9
+    },
+    {
+      "rank": 10,
+      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "titleJa": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "summary": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "discussion": null,
+      "source": "Hugging Face",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-12T19:07:35.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 57.8
+    },
+    {
+      "rank": 11,
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "titleJa": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measure…",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "discussion": null,
+      "source": "OpenAI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-12T20:00:00.000Z",
+      "tags": [
+        "model"
+      ],
+      "score": 56.2
+    },
+    {
+      "rank": 12,
+      "title": "Jensen Huang resigns",
+      "titleJa": "Jensen Huang resigns",
+      "summary": "https:&#x2F;&#x2F;nvidianews.nvidia.com&#x2F;news&#x2F;nvidia-announces-ceo-tran... https:&#x2F;&#x2F;www.reuters.com&#x2F;business&#x2F;retail-consumer&#x2F;n…",
+      "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+      "discussion": "https://news.ycombinator.com/item?id=50467087",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-12T13:52:29Z",
+      "tags": [
+        "release"
+      ],
+      "score": 55.1
+    }
+  ],
+  "stats": {
+    "repoCandidates": 275,
+    "newsCandidates": 2571,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

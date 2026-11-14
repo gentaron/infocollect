@@ -4,13 +4,17 @@
   "private": true,
   "type": "module",
   "description": "Daily AI tools & news collector with an installable PWA front-end",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "collect": "node scripts/collect.mjs",
     "blog": "node scripts/blog/generate.mjs",
     "icons": "node scripts/gen-icons.mjs",
     "pack": "node scripts/pack.mjs",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "export:brief": "node scripts/export-brief.mjs",
+    "test:brief": "node --test scripts/export-brief.test.mjs"
   },
   "license": "MIT"
 }

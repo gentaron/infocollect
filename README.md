@@ -260,3 +260,14 @@ GitHub には「トレンド」API が無いため、次の方法で近似して
 ## ライセンス
 
 MIT
+
+## 制作ツールへ渡す企画ファイル
+
+収集したニュースやツールを1件選び、出典付きの`creative-brief` JSONとして書き出せます。AIキーや通知サービスは不要です。
+
+```bash
+npm run export:brief -- --kind news --rank 1 --output brief.json
+npm run test:brief
+```
+
+出力形式、上書き防止、`--input`での過去データ指定は[docs/BRIEF.md](docs/BRIEF.md)を参照してください。書き出した時点では`draft`で、目的・対象読者・要点を確認してから他の制作ツールへ渡します。

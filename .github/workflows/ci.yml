@@ -15,5 +15,7 @@ jobs:
           node-version: '22'
       - name: Offline checks
         run: node scripts/selftest.mjs
+      - name: Portable brief tests
+        run: node --test scripts/export-brief.test.mjs
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

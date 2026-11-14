@@ -80,6 +80,59 @@
       },
       "lastVerifiedCI": "https://github.com/gentaron/presentationgen/actions/runs/43651855068",
       "runtimeVerification": "pending"
+    },
+    {
+      "id": "qaiz.market-overview",
+      "name": "市場地形の公開概要",
+      "repository": "gentaron/QAIZ",
+      "purpose": "地域・セクター・レジームの観測値を渡す",
+      "execution": "cloudflare-worker-api",
+      "input": {
+        "type": "none",
+        "endpoint": "GET /api/overview"
+      },
+      "output": {
+        "type": "market-overview",
+        "consumer": "genesisvault.finance-pulse"
+      },
+      "runtimeVerification": "pending; endpoint base URL is configured in consumer"
+    },
+    {
+      "id": "genesisvault.finance-pulse",
+      "name": "公開市場から記事の材料を作る",
+      "repository": "gentaron/genesisvault",
+      "purpose": "QAIZの市場概要を市場記号と記事ブリーフへ変換する",
+      "execution": "github-actions-repository-workflow",
+      "workflow": "https://github.com/gentaron/genesisvault/actions/workflows/daily-post.yml",
+      "input": {
+        "type": "qaiz-market-overview",
+        "source": "GET /api/overview",
+        "configuration": "QAIZ_BASE_URL"
+      },
+      "output": {
+        "paths": [
+          "data/finance-pulse.json",
+          "src/content/posts/"
+        ],
+        "handoff": "market.* → theme selection"
+      },
+      "runtimeVerification": "CI pending; runtime requires QAIZ_BASE_URL"
+    },
+    {
+      "id": "edu.wiki-canon",
+      "name": "EDU世界設定の正典",
+      "repository": "gentaron/edu",
+      "purpose": "SF世界のWikiエントリを参照する",
+      "execution": "repository-data-read",
+      "input": {
+        "type": "none"
+      },
+      "output": {
+        "path": "src/domains/wiki/wiki.data.ts",
+        "type": "fictional-wiki-canon"
+      },
+      "runtimeVerification": "source confirmed; cross-repository export pending"
     }
-  ]
+  ],
+  "network": "ecosystem/registry.json"
 }

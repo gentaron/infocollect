@@ -14,7 +14,9 @@
     "pack": "node scripts/pack.mjs",
     "serve": "node scripts/serve.mjs",
     "export:brief": "node scripts/export-brief.mjs",
-    "test:brief": "node --test scripts/export-brief.test.mjs"
+    "test:brief": "node --test scripts/export-brief.test.mjs",
+    "kb:build": "node scripts/build-kb.mjs",
+    "kb:test": "node --test scripts/build-kb.test.mjs"
   },
   "license": "MIT"
 }

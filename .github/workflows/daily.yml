@@ -43,6 +43,9 @@ jobs:
           CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
         run: node scripts/collect.mjs
 
+      - name: Build source-linked knowledge shards
+        run: node scripts/build-kb.mjs
+
       - name: Build the downloadable PWA bundle
         run: node scripts/pack.mjs
 
@@ -50,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data
+          git add docs/data docs/kb
           if git diff --cached --quiet; then
             echo "変更なし: コミットをスキップします"
             exit 0

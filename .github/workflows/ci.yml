@@ -17,5 +17,9 @@ jobs:
         run: node scripts/selftest.mjs
       - name: Portable brief tests
         run: node --test scripts/export-brief.test.mjs
+      - name: Test knowledge shard builder
+        run: node --test scripts/build-kb.test.mjs
+      - name: Build knowledge shards from the real archive
+        run: node scripts/build-kb.mjs
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

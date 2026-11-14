@@ -1,0 +1,17 @@
+# リポジトリ間の受け渡し
+
+[registry.json](registry.json) は QAIZ・genesisvault・edu を含む入出力の地図です。各リポジトリの `ecosystem.json` の参照先になる [schema.json](schema.json) もここに置きます。
+
+| 経路 | 渡す結果 | 状態 |
+|---|---|---|
+| QAIZ → genesisvault | `GET /api/overview` の公開市場概要 → `market.*` 記号・記事ブリーフ | 実装済み。接続 URL が必要 |
+| genesisvault → VAIZ | 公開記事 → 動画企画 | 宣言済み。実行経路は未検証 |
+| infocollect → genesisvault | 出典付き KB → 執筆文脈 | 宣言済み。実行時の読込は未検証 |
+| edu → infocollect | 公開 Wiki 正典 → 出典付き KB | 設計中。正典の公開エクスポートと検証が必要 |
+| infocollect → edu | 出典付き KB → 調査補助 | 宣言済み。MCP の実行は未検証 |
+
+`implemented` はコードの受け渡し口を確認した状態、`declared` はリポジトリの構成に記されている状態、`planned` はまだコードがない状態です。実行成功まで検証していない経路を稼働中と見なしません。
+
+Assetlog は単独運用です。自動受け渡し網に入れず、個人資産のデータを公開 KB、記事、企画へ流しません。EDU の架空世界の設定と現実の市場・ニュースも出典種別で分離します。
+
+[agent-hub のツール台帳](../agent-hub/registry.json) は具体的な実行入口を記録します。PC へのチェックアウトや成果物保存は運用条件ではありません。

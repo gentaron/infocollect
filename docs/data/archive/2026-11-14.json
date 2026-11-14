@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-14T07:19:50.502Z",
+  "generatedAtLocal": "2026-11-14 15:19",
+  "dateLocal": "2026-11-14",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-14 15:19 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、vercel-labs/ui、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "homepage": "https://rea.tools",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 458219,
+      "starsDelta": 2206,
+      "starsPerDay": 2230.9,
+      "measured": true,
+      "forks": 112400,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-11-14T07:17:52Z",
+      "openIssues": 1697,
+      "score": 2230.78,
+      "headline": "rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "why": "前回計測から +2206 スター。TypeScript 製。最終更新 2026-11-14。"
+    },
+    {
+      "rank": 2,
+      "name": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "homepage": "https://ui-sdk.dev",
+      "description": "A library of behaviors for agents to build the next generation of user interfaces.",
+      "stars": 4028,
+      "starsDelta": 1651,
+      "starsPerDay": 1669.6,
+      "measured": true,
+      "forks": 104,
+      "language": "TypeScript",
+      "topics": [
+        "accessibility",
+        "agent",
+        "agents",
+        "aria",
+        "behaviors",
+        "component",
+        "component-library",
+        "headless"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2026-10-26T17:39:27Z",
+      "pushedAt": "2026-11-14T07:18:26Z",
+      "openIssues": 46,
+      "score": 2086.96,
+      "headline": "ui",
+      "summary": "A library of behaviors for agents to build the next generation of user interfaces.",
+      "why": "前回計測から +1651 スター。TypeScript 製。最終更新 2026-11-14。"
+    },
+    {
+      "rank": 3,
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "homepage": null,
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "stars": 73237,
+      "starsDelta": 1405,
+      "starsPerDay": 1420.9,
+      "measured": true,
+      "forks": 2028,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-09-24T16:17:19Z",
+      "pushedAt": "2026-11-13T07:47:23Z",
+      "openIssues": 177,
+      "score": 1709.7,
+      "headline": "dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+      "why": "前回計測から +1405 スター。JavaScript 製。最終更新 2026-11-13。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "huggingface/transformers v5.23.0",
+      "titleJa": "huggingface/transformers v5.23.0",
+      "summary": "# Release v5.23.0\r\n\r\n\r\n## New Model additions\r\n\r\n### Inkling2\r\n\r\n<img width=\"1200\" height=\"675\" alt=\"image\" src=\"https://github.com/user-attachments/assets/911…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.23.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-13T14:10:57.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 91.4
+    },
+    {
+      "rank": 2,
+      "title": "ggml-org/llama.cpp v1.0.0",
+      "titleJa": "ggml-org/llama.cpp v1.0.0",
+      "summary": "<img width=\"1600\" height=\"900\" alt=\"llama-cpp-v1\" src=\"https://github.com/user-attachments/assets/ed94ed55-ebe2-4aee-bdfc-81bdaa3a3f59\" />\r\n\r\nBlog post: https:…",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-13T10:20:19.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 89.5
+    },
+    {
+      "rank": 3,
+      "title": "langchain-ai/langchain langchain-openai==1.8.0",
+      "titleJa": "langchain-ai/langchain langchain-openai==1.8.0",
+      "summary": "**`langchain-openai` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `l…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-13T16:48:27.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 80.7
+    },
+    {
+      "rank": 4,
+      "title": "run-llama/llama_index v0.14.26",
+      "titleJa": "run-llama/llama_index v0.14.26",
+      "summary": "# Release Notes\n\n## [2026-11-13]\n\n### llama-index-agent-agentmesh [0.3.0]\n\n- Python security relock: all integration uv.lock files (lock files only, no Python…",
+      "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.26",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-13T22:38:15.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 79.6
+    },
+    {
+      "rank": 5,
+      "title": "openai/openai-python v3.51.0",
+      "titleJa": "openai/openai-python v3.51.0",
+      "summary": "## [3.51.0](https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expand agent, image, Live, and external…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.51.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-13T21:12:49.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 70.9
+    },
+    {
+      "rank": 6,
+      "title": "n8n-io/n8n n8n@2.47.7",
+      "titleJa": "n8n-io/n8n n8n@2.47.7",
+      "summary": "## [2.47.7](https://github.com/n8n-io/n8n/compare/n8n@2.47.6...n8n@2.47.7) (2026-11-13)\n\n\n### Bug Fixes\n\n* **core:** Stop redacting executions that use global…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.7",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-13T09:44:36.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 65.2
+    },
+    {
+      "rank": 7,
+      "title": "n8n-io/n8n n8n@2.47.6",
+      "titleJa": "n8n-io/n8n n8n@2.47.6",
+      "summary": "## [2.47.6](https://github.com/n8n-io/n8n/compare/n8n@2.47.5...n8n@2.47.6) (2026-11-13)\n\n\n### Bug Fixes\n\n* **core:** Keep trusted-source cache keys in one Redi…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.6",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-13T08:24:14.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 64.5
+    },
+    {
+      "rank": 8,
+      "title": "datasette-cluster-map 0.19",
+      "titleJa": "datasette-cluster-map 0.19",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-cluster-map/releases/tag/0.19\">datasette-cluster-map 0.19</a></p> <p>One of the oldes…",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-13T23:02:45.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 59.9
+    },
+    {
+      "rank": 9,
+      "title": "llm-gemini 0.37",
+      "titleJa": "llm-gemini 0.37",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.37\">llm-gemini 0.37</a></p> <p>Google launched <a href=\"https://blog.…",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-12T22:55:19.000Z",
+      "tags": [
+        "version",
+        "model",
+        "research"
+      ],
+      "score": 59.8
+    },
+    {
+      "rank": 10,
+      "title": "datasette-leaflet 0.3",
+      "titleJa": "datasette-leaflet 0.3",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-leaflet/releases/tag/0.3\">datasette-leaflet 0.3</a></p> <p>OpenStreetMap have a very…",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-13T22:30:54.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 59.6
+    },
+    {
+      "rank": 11,
+      "title": "openai/openai-python v3.50.0",
+      "titleJa": "openai/openai-python v3.50.0",
+      "summary": "## [3.50.0](https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expose reasoning input transformations o…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.50.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-12T19:26:07.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 58
+    },
+    {
+      "rank": 12,
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "titleJa": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "summary": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "discussion": null,
+      "source": "Hugging Face",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-13T14:05:22.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 55.4
+    }
+  ],
+  "stats": {
+    "repoCandidates": 273,
+    "newsCandidates": 2564,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

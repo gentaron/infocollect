@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "gentaron ecosystem repository manifest",
+  "type": "object",
+  "required": [
+    "schema",
+    "name",
+    "role",
+    "produces",
+    "consumes",
+    "upstream",
+    "downstream"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "name": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "groupLabel": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "stack": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "feed": {
+      "type": "string"
+    },
+    "produces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "consumes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "upstream": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/link"
+      }
+    },
+    "downstream": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/link"
+      }
+    },
+    "siblings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "predecessors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hub": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "link": {
+      "type": "object",
+      "required": [
+        "repo",
+        "flows",
+        "url"
+      ],
+      "properties": {
+        "repo": {
+          "type": "string"
+        },
+        "flows": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

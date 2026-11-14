@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-15",
+  "scope": "Repository production, testing, deployment, and publication workflows only. No arbitrary compute jobs.",
+  "tools": [
+    {
+      "id": "infocollect.digest",
+      "name": "AI情報収集",
+      "repository": "gentaron/infocollect",
+      "purpose": "AIツールとニュースのダイジェストを更新する",
+      "execution": "github-actions-repository-workflow",
+      "workflow": "https://github.com/gentaron/infocollect/actions/workflows/daily.yml",
+      "input": {
+        "type": "none"
+      },
+      "output": {
+        "paths": [
+          "docs/data/latest.json",
+          "docs/data/archive/",
+          "docs/kb/manifest.json"
+        ]
+      },
+      "lastVerifiedRun": "https://github.com/gentaron/infocollect/actions/runs/43570575470"
+    },
+    {
+      "id": "infocollect.kb-rebuild",
+      "name": "出典付きKB再生成",
+      "repository": "gentaron/infocollect",
+      "purpose": "コミット済みの収集アーカイブから静的KBを作り直す",
+      "execution": "github-actions-repository-workflow",
+      "workflow": "https://github.com/gentaron/infocollect/actions/workflows/kb-backfill.yml",
+      "input": {
+        "type": "committed-files",
+        "paths": [
+          "docs/data/archive/"
+        ]
+      },
+      "output": {
+        "paths": [
+          "docs/kb/manifest.json",
+          "docs/kb/shards/"
+        ]
+      },
+      "lastVerifiedCommit": "https://github.com/gentaron/infocollect/commit/b49ac02b34e56d4eebdffff556dfee56678f62ee"
+    },
+    {
+      "id": "vaiz.brief-draft",
+      "name": "企画から動画下書き",
+      "repository": "gentaron/VAIZ",
+      "purpose": "公開企画JSONから動画下書きを作り、公開前にArtifactで止める",
+      "execution": "github-actions-repository-workflow",
+      "workflow": "https://github.com/gentaron/VAIZ/actions/workflows/brief-draft.yml",
+      "input": {
+        "type": "reviewed-public-file",
+        "pathPattern": "briefs/[A-Za-z0-9._-]+.json",
+        "example": "briefs/from-infocollect.json"
+      },
+      "output": {
+        "artifact": "brief-draft-*",
+        "files": [
+          "out/plan.json",
+          "out/final.mp4"
+        ],
+        "retentionDays": 7
+      },
+      "lastVerifiedRun": "https://github.com/gentaron/VAIZ/actions/runs/43651319742"
+    },
+    {
+      "id": "presentationgen.brief-import",
+      "name": "企画から編集可能なスライド",
+      "repository": "gentaron/presentationgen",
+      "purpose": "同じcreative-briefをブラウザに読み込み編集可能なスライドを作る",
+      "execution": "browser-ui",
+      "input": {
+        "type": "public-creative-brief",
+        "url": "https://github.com/gentaron/VAIZ/blob/main/briefs/from-infocollect.json"
+      },
+      "output": {
+        "type": "editable-slides"
+      },
+      "lastVerifiedCI": "https://github.com/gentaron/presentationgen/actions/runs/43651855068",
+      "runtimeVerification": "pending"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-15",
+  "policy": {
+    "assetlog": "standalone; excluded from automated cross-tool input and output",
+    "privacy": "Only public, reviewed outputs cross repository boundaries. No credentials, holdings, or raw personal data.",
+    "execution": "Each GitHub Actions workflow serves its own repository development or publication."
+  },
+  "nodes": [
+    {
+      "id": "infocollect",
+      "repository": "gentaron/infocollect",
+      "outputs": [
+        "docs/data/latest.json",
+        "docs/kb/manifest.json"
+      ],
+      "role": "hub-and-sourced-kb"
+    },
+    {
+      "id": "QAIZ",
+      "repository": "gentaron/QAIZ",
+      "visibility": "private",
+      "outputs": [
+        "GET /api/overview"
+      ],
+      "role": "market-observation"
+    },
+    {
+      "id": "genesisvault",
+      "repository": "gentaron/genesisvault",
+      "outputs": [
+        "data/finance-pulse.json",
+        "src/content/posts/"
+      ],
+      "role": "daily-publishing-pipeline"
+    },
+    {
+      "id": "edu",
+      "repository": "gentaron/edu",
+      "outputs": [
+        "src/domains/wiki/wiki.data.ts",
+        "public site"
+      ],
+      "role": "fictional-universe-canon"
+    },
+    {
+      "id": "VAIZ",
+      "repository": "gentaron/VAIZ",
+      "outputs": [
+        "brief-draft artifact"
+      ],
+      "role": "reviewed-video-draft"
+    },
+    {
+      "id": "presentationgen",
+      "repository": "gentaron/presentationgen",
+      "outputs": [
+        "editable-slides"
+      ],
+      "role": "reviewed-slide-draft"
+    }
+  ],
+  "edges": [
+    {
+      "from": "QAIZ",
+      "output": "GET /api/overview",
+      "to": "genesisvault",
+      "input": "src/lib/finance/qaiz.ts → finance/pulse.ts",
+      "status": "implemented",
+      "condition": "QAIZ_BASE_URL configured; fail-soft if absent",
+      "evidence": "https://github.com/gentaron/genesisvault/blob/main/src/lib/finance/pulse.ts"
+    },
+    {
+      "from": "genesisvault",
+      "output": "market.* predicates",
+      "to": "genesisvault",
+      "input": "src/lib/selection/candidates.ts",
+      "status": "implemented",
+      "evidence": "https://github.com/gentaron/genesisvault/blob/main/src/lib/selection/candidates.ts"
+    },
+    {
+      "from": "infocollect",
+      "output": "docs/data/archive/",
+      "to": "infocollect",
+      "input": "scripts/build-kb.mjs",
+      "status": "implemented",
+      "evidence": "https://github.com/gentaron/infocollect/blob/claude/github-ai-tools-pwa-77pbbx/scripts/build-kb.mjs"
+    },
+    {
+      "from": "infocollect",
+      "output": "docs/kb/manifest.json and shards",
+      "to": "genesisvault",
+      "input": "knowledge context",
+      "status": "declared",
+      "condition": "Runtime consumption not verified",
+      "evidence": "https://github.com/gentaron/genesisvault/blob/main/ecosystem.json"
+    },
+    {
+      "from": "genesisvault",
+      "output": "published blog",
+      "to": "VAIZ",
+      "input": "video brief",
+      "status": "declared",
+      "condition": "Runtime handoff not verified",
+      "evidence": "https://github.com/gentaron/genesisvault/blob/main/ecosystem.json"
+    },
+    {
+      "from": "VAIZ",
+      "output": "reviewed creative brief",
+      "to": "presentationgen",
+      "input": "browser brief import",
+      "status": "implemented",
+      "condition": "Build verified; browser import not yet verified",
+      "evidence": "https://github.com/gentaron/infocollect/blob/claude/github-ai-tools-pwa-77pbbx/agent-hub/registry.json"
+    },
+    {
+      "from": "edu",
+      "output": "public wiki canon",
+      "to": "infocollect",
+      "input": "sourced KB adapter",
+      "status": "planned",
+      "condition": "Requires a public, versioned export and ingest validation; never mix fictional facts with real-world news"
+    },
+    {
+      "from": "infocollect",
+      "output": "sourced KB context",
+      "to": "edu",
+      "input": "research assistant context",
+      "status": "declared",
+      "condition": "MCP configuration/use not verified",
+      "evidence": "https://github.com/gentaron/edu/blob/main/AGENTS.md"
+    }
+  ]
+}

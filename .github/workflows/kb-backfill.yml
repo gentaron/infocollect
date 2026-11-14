@@ -1,0 +1,51 @@
+name: Rebuild source-linked KB
+
+on:
+  push:
+    branches:
+      - claude/github-ai-tools-pwa-77pbbx
+    paths:
+      - '.github/workflows/kb-backfill.yml'
+      - 'scripts/build-kb.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test KB builder
+        run: node scripts/build-kb.test.mjs
+      - name: Rebuild KB from committed archives
+        run: |
+          node scripts/build-kb.mjs
+          test -s docs/kb/manifest.json
+      - name: Commit KB files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/kb
+          if git diff --cached --quiet; then
+            echo "KB is already current"
+            exit 0
+          fi
+          git commit -m "chore(kb): rebuild source-linked knowledge shards"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              exit 0
+            fi
+            git pull --rebase origin ${{ github.ref_name }}
+            sleep $((attempt * 5))
+          done
+          exit 1

@@ -15,5 +15,5 @@ test('rejects double installation proposals and incorrect claims about author no
   fake.toolCount++;
   fake.tools[0].source='SELF';
   assert.ok(validateCatalog(fake).some(x=>x.includes('duplicate')));
-  assert.ok(validateCatalog(fake).some(x=>x.includes('candidate')));
+  assert.ok(validateCatalog(fake).some(x=>x.includes('false author claim')));
 });

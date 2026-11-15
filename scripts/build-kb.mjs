@@ -15,8 +15,8 @@ export function canonicalSourceUrl(value) {
   if (url.protocol !== 'https:' || url.username || url.password) return null;
   const host = url.hostname.toLowerCase();
   if (!host.includes('.') || host === 'localhost' || host.endsWith('.localhost')
-      || /^(?:127|10|0|192\\.168|169\\.254)\\./.test(host)
-      || /^172\\.(?:1[6-9]|2[0-9]|3[01])\\./.test(host)
+      || /^(?:127|10|0|192\.168|169\.254)\./.test(host)
+      || /^172\.(?:1[6-9]|2[0-9]|3[01])\./.test(host)
       || host === '[::1]') return null;
   url.hash = '';
   for (const key of [...url.searchParams.keys()]) {
@@ -25,7 +25,7 @@ export function canonicalSourceUrl(value) {
     }
   }
   url.searchParams.sort();
-  if (url.pathname.length > 1) url.pathname = url.pathname.replace(/\\/+$/, '');
+  if (url.pathname.length > 1) url.pathname = url.pathname.replace(/\/+$/, '');
   return url.toString();
 }
 

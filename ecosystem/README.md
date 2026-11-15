@@ -1,6 +1,6 @@
 # リポジトリ間の受け渡し
 
-[registry.json](registry.json) は QAIZ・genesisvault・edu を含む入出力の地図です。各リポジトリの `ecosystem.json` の参照先になる [schema.json](schema.json) もここに置きます。
+[registry.json](registry.json) は公開可能な入出力の地図です。各リポジトリの `ecosystem.json` の参照先になる [schema.json](schema.json) もここに置きます。
 
 | 経路 | 渡す結果 | 状態 |
 |---|---|---|

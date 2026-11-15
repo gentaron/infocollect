@@ -123,15 +123,38 @@
       "name": "EDU世界設定の正典",
       "repository": "gentaron/edu",
       "purpose": "SF世界のWikiエントリを参照する",
-      "execution": "repository-data-read",
+      "execution": "public-read-api",
       "input": {
         "type": "none"
       },
       "output": {
-        "path": "src/domains/wiki/wiki.data.ts",
-        "type": "fictional-wiki-canon"
+        "endpoint": "GET /api/integrations/wiki-index",
+        "fields": [
+          "id",
+          "name",
+          "nameEn",
+          "category",
+          "url"
+        ],
+        "classification": "fictional"
       },
-      "runtimeVerification": "source confirmed; cross-repository export pending"
+      "runtimeVerification": "CI passed; deployed endpoint not yet verified"
+    },
+    {
+      "id": "infocollect.edu-wiki-sync",
+      "name": "EDU公開Wiki索引の同期",
+      "repository": "gentaron/infocollect",
+      "purpose": "EDUの公開ページ索引を架空世界専用のKBに保存する",
+      "execution": "github-actions-repository-workflow",
+      "workflow": "https://github.com/gentaron/infocollect/actions/workflows/daily.yml",
+      "input": {
+        "type": "edu-public-wiki-index",
+        "endpoint": "GET /api/integrations/wiki-index"
+      },
+      "output": {
+        "path": "docs/kb/fiction/edu.json"
+      },
+      "runtimeVerification": "pending deployment and scheduled run"
     }
   ],
   "network": "ecosystem/registry.json"

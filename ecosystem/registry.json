@@ -12,7 +12,8 @@
       "repository": "gentaron/infocollect",
       "outputs": [
         "docs/data/latest.json",
-        "docs/kb/manifest.json"
+        "docs/kb/manifest.json",
+        "docs/kb/fiction/edu.json"
       ],
       "role": "hub-and-sourced-kb"
     },
@@ -39,7 +40,8 @@
       "repository": "gentaron/edu",
       "outputs": [
         "src/domains/wiki/wiki.data.ts",
-        "public site"
+        "public site",
+        "GET /api/integrations/wiki-index"
       ],
       "role": "fictional-universe-canon"
     },
@@ -115,11 +117,12 @@
     },
     {
       "from": "edu",
-      "output": "public wiki canon",
+      "output": "GET /api/integrations/wiki-index",
       "to": "infocollect",
-      "input": "sourced KB adapter",
-      "status": "planned",
-      "condition": "Requires a public, versioned export and ingest validation; never mix fictional facts with real-world news"
+      "input": "scripts/sync-edu-wiki.mjs → docs/kb/fiction/edu.json",
+      "status": "implemented",
+      "condition": "Code merged in both repositories; deployed endpoint and first successful sync not yet verified",
+      "evidence": "https://github.com/gentaron/edu/blob/main/src/app/api/integrations/wiki-index/route.ts"
     },
     {
       "from": "infocollect",

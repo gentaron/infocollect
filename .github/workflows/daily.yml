@@ -43,6 +43,11 @@ jobs:
           CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
         run: node scripts/collect.mjs
 
+      - name: Sync public EDU wiki links into fiction index
+        env:
+          EDU_WIKI_INDEX_URL: ${{ vars.EDU_WIKI_INDEX_URL }}
+        run: node scripts/sync-edu-wiki.mjs
+
       - name: Build source-linked knowledge shards
         run: node scripts/build-kb.mjs
 

@@ -7,7 +7,7 @@
 | QAIZ → genesisvault | `GET /api/overview` の公開市場概要 → `market.*` 記号・記事ブリーフ | 実装済み。接続 URL が必要 |
 | genesisvault → VAIZ | 公開記事 → 動画企画 | 宣言済み。実行経路は未検証 |
 | infocollect → genesisvault | 出典付き KB → 執筆文脈 | 宣言済み。実行時の読込は未検証 |
-| edu → infocollect | 公開 Wiki 正典 → 出典付き KB | 設計中。正典の公開エクスポートと検証が必要 |
+| edu → infocollect | 公開Wikiのリンク索引 → 架空世界専用 `docs/kb/fiction/edu.json` | コード実装済み。公開先と初回同期は未確認 |
 | infocollect → edu | 出典付き KB → 調査補助 | 宣言済み。MCP の実行は未検証 |
 
 `implemented` はコードの受け渡し口を確認した状態、`declared` はリポジトリの構成に記されている状態、`planned` はまだコードがない状態です。実行成功まで検証していない経路を稼働中と見なしません。

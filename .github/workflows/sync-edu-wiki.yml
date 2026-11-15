@@ -1,0 +1,57 @@
+name: Sync EDU public wiki index
+
+on:
+  push:
+    branches:
+      - claude/github-ai-tools-pwa-77pbbx
+    paths:
+      - '.github/workflows/sync-edu-wiki.yml'
+      - 'scripts/sync-edu-wiki.mjs'
+  schedule:
+    - cron: '30 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test the EDU handoff contract
+        run: node --test scripts/sync-edu-wiki.test.mjs
+      - name: Fetch public wiki links
+        env:
+          EDU_WIKI_INDEX_URL: ${{ vars.EDU_WIKI_INDEX_URL }}
+        run: node scripts/sync-edu-wiki.mjs
+      - name: Commit changed fiction index
+        run: |
+          if [ ! -f docs/kb/fiction/edu.json ]; then
+            echo "EDU endpoint is not ready; no snapshot to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/kb/fiction/edu.json
+          if git diff --cached --quiet; then
+            echo "EDU index is already current"
+            exit 0
+          fi
+          git commit -m "chore(kb): sync public EDU wiki links"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              exit 0
+            fi
+            git pull --rebase origin ${{ github.ref_name }}
+            sleep $((attempt * 5))
+          done
+          exit 1

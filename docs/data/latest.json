@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T07:19:50.502Z",
-  "generatedAtLocal": "2026-11-14 15:19",
-  "dateLocal": "2026-11-14",
+  "generatedAt": "2026-11-15T07:31:57.936Z",
+  "generatedAtLocal": "2026-11-15 15:31",
+  "dateLocal": "2026-11-15",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-14 15:19 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、vercel-labs/ui、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-15 15:31 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、vercel-labs/ui の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 458219,
-      "starsDelta": 2206,
-      "starsPerDay": 2230.9,
+      "stars": 460441,
+      "starsDelta": 2222,
+      "starsPerDay": 2203.4,
       "measured": true,
-      "forks": 112400,
+      "forks": 112841,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,55 +36,24 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-11-14T07:17:52Z",
-      "openIssues": 1697,
-      "score": 2230.78,
+      "pushedAt": "2026-11-15T07:31:50Z",
+      "openIssues": 1622,
+      "score": 2203.4,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +2206 スター。TypeScript 製。最終更新 2026-11-14。"
+      "why": "前回計測から +2222 スター。TypeScript 製。最終更新 2026-11-15。"
     },
     {
       "rank": 2,
-      "name": "vercel-labs/ui",
-      "url": "https://github.com/vercel-labs/ui",
-      "homepage": "https://ui-sdk.dev",
-      "description": "A library of behaviors for agents to build the next generation of user interfaces.",
-      "stars": 4028,
-      "starsDelta": 1651,
-      "starsPerDay": 1669.6,
-      "measured": true,
-      "forks": 104,
-      "language": "TypeScript",
-      "topics": [
-        "accessibility",
-        "agent",
-        "agents",
-        "aria",
-        "behaviors",
-        "component",
-        "component-library",
-        "headless"
-      ],
-      "license": "Apache-2.0",
-      "createdAt": "2026-10-26T17:39:27Z",
-      "pushedAt": "2026-11-14T07:18:26Z",
-      "openIssues": 46,
-      "score": 2086.96,
-      "headline": "ui",
-      "summary": "A library of behaviors for agents to build the next generation of user interfaces.",
-      "why": "前回計測から +1651 スター。TypeScript 製。最終更新 2026-11-14。"
-    },
-    {
-      "rank": 3,
       "name": "Ebony-Vinyl/dsh-our-free-model",
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 73237,
-      "starsDelta": 1405,
-      "starsPerDay": 1420.9,
+      "stars": 74863,
+      "starsDelta": 1626,
+      "starsPerDay": 1612.4,
       "measured": true,
-      "forks": 2028,
+      "forks": 2094,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -98,12 +67,43 @@
       ],
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-11-13T07:47:23Z",
-      "openIssues": 177,
-      "score": 1709.7,
+      "pushedAt": "2026-11-15T03:42:29Z",
+      "openIssues": 180,
+      "score": 2002.75,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1405 スター。JavaScript 製。最終更新 2026-11-13。"
+      "why": "前回計測から +1626 スター。JavaScript 製。最終更新 2026-11-15。"
+    },
+    {
+      "rank": 3,
+      "name": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "homepage": "https://ui-sdk.dev",
+      "description": "A library of behaviors for agents to build the next generation of user interfaces.",
+      "stars": 4669,
+      "starsDelta": 641,
+      "starsPerDay": 635.6,
+      "measured": true,
+      "forks": 142,
+      "language": "TypeScript",
+      "topics": [
+        "accessibility",
+        "agent",
+        "agents",
+        "aria",
+        "behaviors",
+        "component",
+        "component-library",
+        "headless"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2026-10-26T17:39:27Z",
+      "pushedAt": "2026-11-15T07:08:59Z",
+      "openIssues": 107,
+      "score": 794.04,
+      "headline": "ui",
+      "summary": "A library of behaviors for agents to build the next generation of user interfaces.",
+      "why": "前回計測から +641 スター。TypeScript 製。最終更新 2026-11-15。"
     }
   ],
   "news": [
@@ -123,28 +123,10 @@
         "model",
         "business"
       ],
-      "score": 91.4
+      "score": 79.3
     },
     {
       "rank": 2,
-      "title": "ggml-org/llama.cpp v1.0.0",
-      "titleJa": "ggml-org/llama.cpp v1.0.0",
-      "summary": "<img width=\"1600\" height=\"900\" alt=\"llama-cpp-v1\" src=\"https://github.com/user-attachments/assets/ed94ed55-ebe2-4aee-bdfc-81bdaa3a3f59\" />\r\n\r\nBlog post: https:…",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-13T10:20:19.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 89.5
-    },
-    {
-      "rank": 3,
       "title": "langchain-ai/langchain langchain-openai==1.8.0",
       "titleJa": "langchain-ai/langchain langchain-openai==1.8.0",
       "summary": "**`langchain-openai` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `l…",
@@ -158,10 +140,10 @@
         "feature",
         "model"
       ],
-      "score": 80.7
+      "score": 68.6
     },
     {
-      "rank": 4,
+      "rank": 3,
       "title": "run-llama/llama_index v0.14.26",
       "titleJa": "run-llama/llama_index v0.14.26",
       "summary": "# Release Notes\n\n## [2026-11-13]\n\n### llama-index-agent-agentmesh [0.3.0]\n\n- Python security relock: all integration uv.lock files (lock files only, no Python…",
@@ -176,10 +158,10 @@
         "model",
         "business"
       ],
-      "score": 79.6
+      "score": 67.5
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "openai/openai-python v3.51.0",
       "titleJa": "openai/openai-python v3.51.0",
       "summary": "## [3.51.0](https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expand agent, image, Live, and external…",
@@ -192,7 +174,22 @@
         "version",
         "feature"
       ],
-      "score": 70.9
+      "score": 58.8
+    },
+    {
+      "rank": 5,
+      "title": "datasette-vega 0.7",
+      "titleJa": "datasette-vega 0.7",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-vega/releases/tag/0.7\">datasette-vega 0.7</a></p> <p>A new release of Datasette's lon…",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-vega",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-14T17:09:09.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 56.8
     },
     {
       "rank": 6,
@@ -207,10 +204,26 @@
       "tags": [
         "version"
       ],
-      "score": 65.2
+      "score": 53.1
     },
     {
       "rank": 7,
+      "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+      "titleJa": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+      "summary": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+      "discussion": "https://news.ycombinator.com/item?id=50497155",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-14T14:09:25Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 52.6
+    },
+    {
+      "rank": 8,
       "title": "n8n-io/n8n n8n@2.47.6",
       "titleJa": "n8n-io/n8n n8n@2.47.6",
       "summary": "## [2.47.6](https://github.com/n8n-io/n8n/compare/n8n@2.47.5...n8n@2.47.6) (2026-11-13)\n\n\n### Bug Fixes\n\n* **core:** Keep trusted-source cache keys in one Redi…",
@@ -223,10 +236,27 @@
         "version",
         "feature"
       ],
-      "score": 64.5
+      "score": 52.4
     },
     {
-      "rank": 8,
+      "rank": 9,
+      "title": "datasette-llm 0.1a11",
+      "titleJa": "datasette-llm 0.1a11",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a11\">datasette-llm 0.1a11</a></p> <p><code>datasette-llm</code…",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-14T23:59:28.000Z",
+      "tags": [
+        "release",
+        "feature",
+        "model"
+      ],
+      "score": 50.2
+    },
+    {
+      "rank": 10,
       "title": "datasette-cluster-map 0.19",
       "titleJa": "datasette-cluster-map 0.19",
       "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-cluster-map/releases/tag/0.19\">datasette-cluster-map 0.19</a></p> <p>One of the oldes…",
@@ -238,10 +268,10 @@
       "tags": [
         "version"
       ],
-      "score": 59.9
+      "score": 47.8
     },
     {
-      "rank": 9,
+      "rank": 11,
       "title": "llm-gemini 0.37",
       "titleJa": "llm-gemini 0.37",
       "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.37\">llm-gemini 0.37</a></p> <p>Google launched <a href=\"https://blog.…",
@@ -255,10 +285,10 @@
         "model",
         "research"
       ],
-      "score": 59.8
+      "score": 47.7
     },
     {
-      "rank": 10,
+      "rank": 12,
       "title": "datasette-leaflet 0.3",
       "titleJa": "datasette-leaflet 0.3",
       "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-leaflet/releases/tag/0.3\">datasette-leaflet 0.3</a></p> <p>OpenStreetMap have a very…",
@@ -270,44 +300,12 @@
       "tags": [
         "version"
       ],
-      "score": 59.6
-    },
-    {
-      "rank": 11,
-      "title": "openai/openai-python v3.50.0",
-      "titleJa": "openai/openai-python v3.50.0",
-      "summary": "## [3.50.0](https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expose reasoning input transformations o…",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.50.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-12T19:26:07.000Z",
-      "tags": [
-        "version",
-        "feature"
-      ],
-      "score": 58
-    },
-    {
-      "rank": 12,
-      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "titleJa": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "summary": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-      "discussion": null,
-      "source": "Hugging Face",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-13T14:05:22.000Z",
-      "tags": [
-        "version",
-        "model"
-      ],
-      "score": 55.4
+      "score": 47.5
     }
   ],
   "stats": {
     "repoCandidates": 273,
-    "newsCandidates": 2564,
+    "newsCandidates": 2558,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

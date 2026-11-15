@@ -18,15 +18,6 @@
       "role": "hub-and-sourced-kb"
     },
     {
-      "id": "QAIZ",
-      "repository": "gentaron/QAIZ",
-      "visibility": "private",
-      "outputs": [
-        "GET /api/overview"
-      ],
-      "role": "market-observation"
-    },
-    {
       "id": "genesisvault",
       "repository": "gentaron/genesisvault",
       "outputs": [
@@ -63,15 +54,6 @@
     }
   ],
   "edges": [
-    {
-      "from": "QAIZ",
-      "output": "GET /api/overview",
-      "to": "genesisvault",
-      "input": "src/lib/finance/qaiz.ts → finance/pulse.ts",
-      "status": "implemented",
-      "condition": "QAIZ_BASE_URL configured; fail-soft if absent",
-      "evidence": "https://github.com/gentaron/genesisvault/blob/main/src/lib/finance/pulse.ts"
-    },
     {
       "from": "genesisvault",
       "output": "market.* predicates",
@@ -121,8 +103,8 @@
       "to": "infocollect",
       "input": "scripts/sync-edu-wiki.mjs → docs/kb/fiction/edu.json",
       "status": "implemented",
-      "condition": "Code merged in both repositories; deployed endpoint and first successful sync not yet verified",
-      "evidence": "https://github.com/gentaron/edu/blob/main/src/app/api/integrations/wiki-index/route.ts"
+      "condition": "Verified 2026-11-15: 552 public wiki links fetched and committed; fiction index remains separate from real-world KB",
+      "evidence": "https://github.com/gentaron/infocollect/actions/runs/43704898936"
     },
     {
       "from": "infocollect",

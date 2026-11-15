@@ -16,7 +16,8 @@
     "export:brief": "node scripts/export-brief.mjs",
     "test:brief": "node --test scripts/export-brief.test.mjs",
     "kb:build": "node scripts/build-kb.mjs",
-    "kb:test": "node --test scripts/build-kb.test.mjs"
+    "kb:test": "node --test scripts/build-kb.test.mjs",
+    "fleet:check": "node scripts/validate-hyperfleet-catalog.mjs && node --test scripts/validate-hyperfleet-catalog.test.mjs"
   },
   "license": "MIT"
 }

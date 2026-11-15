@@ -21,8 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
       - name: Test KB builder
@@ -32,6 +32,8 @@ jobs:
           node scripts/build-kb.mjs
           test -s docs/kb/manifest.json
       - name: Commit KB files
+        env:
+          SECURITY_INPUT_1: ${{ github.ref_name }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -42,10 +44,10 @@ jobs:
           fi
           git commit -m "chore(kb): rebuild source-linked knowledge shards"
           for attempt in 1 2 3; do
-            if git push origin HEAD:${{ github.ref_name }}; then
+            if git push origin HEAD:${SECURITY_INPUT_1}; then
               exit 0
             fi
-            git pull --rebase origin ${{ github.ref_name }}
+            git pull --rebase origin ${SECURITY_INPUT_1}
             sleep $((attempt * 5))
           done
           exit 1

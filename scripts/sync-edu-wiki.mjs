@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const DEFAULT_URL = 'https://edu.gentaron.com/api/integrations/wiki-index';
+const DEFAULT_URL = 'https://edu-super.netlify.app/api/integrations/wiki-index';
 
 export function normalizeEduIndex(payload) {
   if (payload?.schemaVersion !== 1 || payload.kind !== 'fictional-wiki-index' || payload.source !== 'gentaron/edu' || !Array.isArray(payload.entries) || payload.entries.length === 0 || payload.entries.length > 5000) {

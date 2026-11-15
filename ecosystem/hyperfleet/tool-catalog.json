@@ -1,0 +1,1933 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-16",
+  "purpose": "Discovery and scoped adoption, not blanket auto-install or proof of runtime availability.",
+  "sourceDefinitions": {
+    "N12": {
+      "title": "2026-11-12 環境構成の再整理",
+      "url": "https://note.com/humble_bobcat51/n/nb9d0f1d0e8ac",
+      "date": "2026-11-12"
+    },
+    "M30": {
+      "title": "2026-05-30 OSS使用環境の棚卸し",
+      "url": "https://note.com/humble_bobcat51/n/na35caa6136b7",
+      "date": "2026-05-30"
+    },
+    "J22": {
+      "title": "2026-07-22 OpenCodeの構成",
+      "url": "https://note.com/humble_bobcat51/n/nc3960d322fdb",
+      "date": "2026-07-22"
+    },
+    "M23": {
+      "title": "2026-03-23 Claude Code拡張の整理",
+      "url": "https://note.com/humble_bobcat51/n/ndf5aba8a5022",
+      "date": "2026-03-23"
+    },
+    "SELF": {
+      "title": "Hyperfleet側の追加候補（ゆいまるの使用状況は未確認）",
+      "url": null,
+      "date": "2026-11-16"
+    }
+  },
+  "statusLegend": {
+    "reported_active": "Listed as in use on the dated first-party article, not independently verified on the author's machine.",
+    "reported_historical": "Listed in an older article, may have changed.",
+    "reported_mentioned": "Mentioned as present or under construction; readiness uncertain.",
+    "reported_not_used": "Author explicitly said not used at source date.",
+    "reported_removed": "Author wrote about uninstalling/removal.",
+    "reported_stopped": "Author wrote about stopping/discontinuing.",
+    "reported_self_built": "Author's own app; no blanket install assumption.",
+    "reported_discussed": "Discussed critically, not proven installed.",
+    "not_confirmed": "Our additional candidate; author's usage unknown."
+  },
+  "adoptionLegend": {
+    "already": "Existing role/capability has been observed in repository, no auto-install.",
+    "optional": "Candidate for relevant specialist after review.",
+    "defer": "Requires external access, licensing or architecture decision.",
+    "excluded": "Do not install automatically.",
+    "candidate": "Independent additional suggestion; not proof of author non-use."
+  },
+  "toolCount": 188,
+  "tools": [
+    {
+      "id": "T001",
+      "name": "OpenCode",
+      "domain": "coding",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "already",
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+    },
+    {
+      "id": "T002",
+      "name": "Claude Code",
+      "domain": "coding",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "already",
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+    },
+    {
+      "id": "T003",
+      "name": "Codex",
+      "domain": "coding",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "already",
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+    },
+    {
+      "id": "T004",
+      "name": "OpenRouter",
+      "domain": "coding",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "already",
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+    },
+    {
+      "id": "T005",
+      "name": "NVIDIA AI API",
+      "domain": "coding",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "already",
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+    },
+    {
+      "id": "T006",
+      "name": "Strata",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T007",
+      "name": "4gbVramStrata",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T008",
+      "name": "Unsloth",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T009",
+      "name": "Qwen3.8-Flash-Next-GSQ-RCO-Coder",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T010",
+      "name": "Ornith-1.5-35B-A3B",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T011",
+      "name": "LFM3-VL-2B",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T012",
+      "name": "d1-2B",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T013",
+      "name": "Needle3",
+      "domain": "inference",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+    },
+    {
+      "id": "T014",
+      "name": "OpenHuman",
+      "domain": "orchestration",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+    },
+    {
+      "id": "T015",
+      "name": "Skales",
+      "domain": "orchestration",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+    },
+    {
+      "id": "T016",
+      "name": "Prefect",
+      "domain": "orchestration",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+    },
+    {
+      "id": "T017",
+      "name": "mobile-mcp",
+      "domain": "orchestration",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+    },
+    {
+      "id": "T018",
+      "name": "obscura",
+      "domain": "orchestration",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+    },
+    {
+      "id": "T019",
+      "name": "Ponytail",
+      "domain": "orchestration",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+    },
+    {
+      "id": "T020",
+      "name": "PhotoCraft",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T021",
+      "name": "LightCraft",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T022",
+      "name": "VectorCraft",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T023",
+      "name": "FigCraft",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T024",
+      "name": "Qwen-Image-2.1",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T025",
+      "name": "sozai-search-mcp",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T026",
+      "name": "see-through",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T027",
+      "name": "Qwen3.5-4B-3D-Coder",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T028",
+      "name": "GridCraft",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T029",
+      "name": "Bento",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T030",
+      "name": "marketing-os",
+      "domain": "design",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Visual tools may require GPU, licenses, and platform checks."
+    },
+    {
+      "id": "T031",
+      "name": "VaizStudio",
+      "domain": "video",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+    },
+    {
+      "id": "T032",
+      "name": "FilmCraft",
+      "domain": "video",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+    },
+    {
+      "id": "T033",
+      "name": "Anicraft",
+      "domain": "video",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+    },
+    {
+      "id": "T034",
+      "name": "OBS",
+      "domain": "video",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+    },
+    {
+      "id": "T035",
+      "name": "ffmpeg-skill",
+      "domain": "video",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+    },
+    {
+      "id": "T036",
+      "name": "Irodori-TTS-v4",
+      "domain": "voice",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Media models require explicit resource/budget validation."
+    },
+    {
+      "id": "T037",
+      "name": "YuE2-Studio",
+      "domain": "voice",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Media models require explicit resource/budget validation."
+    },
+    {
+      "id": "T038",
+      "name": "JIZURA",
+      "domain": "voice",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Media models require explicit resource/budget validation."
+    },
+    {
+      "id": "T039",
+      "name": "Haas-ja",
+      "domain": "voice",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Media models require explicit resource/budget validation."
+    },
+    {
+      "id": "T040",
+      "name": "Plamo-3-Translate",
+      "domain": "voice",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Media models require explicit resource/budget validation."
+    },
+    {
+      "id": "T041",
+      "name": "PierrotKnowledge2",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T042",
+      "name": "Helix Notes",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T043",
+      "name": "LLM Wiki",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T044",
+      "name": "book-to-skill",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T045",
+      "name": "pdf-inspector",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T046",
+      "name": "last30days-skill",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T047",
+      "name": "FreshRSS",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T048",
+      "name": "kensaku",
+      "domain": "knowledge",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+    },
+    {
+      "id": "T049",
+      "name": "Bitwarden",
+      "domain": "security",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "No secret migration or self-host deployment without separate approval."
+    },
+    {
+      "id": "T050",
+      "name": "OpenShell",
+      "domain": "security",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "No secret migration or self-host deployment without separate approval."
+    },
+    {
+      "id": "T051",
+      "name": "security-audit-skill",
+      "domain": "security",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "No secret migration or self-host deployment without separate approval."
+    },
+    {
+      "id": "T052",
+      "name": "SkillSpector",
+      "domain": "security",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "No secret migration or self-host deployment without separate approval."
+    },
+    {
+      "id": "T053",
+      "name": "OSV-Scanner",
+      "domain": "security",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "No secret migration or self-host deployment without separate approval."
+    },
+    {
+      "id": "T054",
+      "name": "instabox.sh",
+      "domain": "security",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "No secret migration or self-host deployment without separate approval."
+    },
+    {
+      "id": "T055",
+      "name": "Vite+",
+      "domain": "coding",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Only adopt when a specific app needs desktop packaging."
+    },
+    {
+      "id": "T056",
+      "name": "ElectroBun",
+      "domain": "coding",
+      "reported": "reported_active",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Only adopt when a specific app needs desktop packaging."
+    },
+    {
+      "id": "T057",
+      "name": "HermesAgent",
+      "domain": "orchestration",
+      "reported": "reported_stopped",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Explicitly discontinued in 2026-11-12 article."
+    },
+    {
+      "id": "T058",
+      "name": "Muse",
+      "domain": "assistant",
+      "reported": "reported_not_used",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation."
+    },
+    {
+      "id": "T059",
+      "name": "GrokBot",
+      "domain": "assistant",
+      "reported": "reported_not_used",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation."
+    },
+    {
+      "id": "T060",
+      "name": "Dots",
+      "domain": "assistant",
+      "reported": "reported_not_used",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation."
+    },
+    {
+      "id": "T061",
+      "name": "Rust slide generator",
+      "domain": "file",
+      "reported": "reported_self_built",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Author's self-built applications, not public reusable packages."
+    },
+    {
+      "id": "T062",
+      "name": "Rust office tools",
+      "domain": "file",
+      "reported": "reported_self_built",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Author's self-built applications, not public reusable packages."
+    },
+    {
+      "id": "T063",
+      "name": "Rust image converter",
+      "domain": "file",
+      "reported": "reported_self_built",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Author's self-built applications, not public reusable packages."
+    },
+    {
+      "id": "T064",
+      "name": "Rust compact OBS",
+      "domain": "file",
+      "reported": "reported_self_built",
+      "source": "N12",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Author's self-built applications, not public reusable packages."
+    },
+    {
+      "id": "T065",
+      "name": "oh-my-opencode",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T066",
+      "name": "OmniRoute",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T067",
+      "name": "SkillCollection",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T068",
+      "name": "SuperMemory",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T069",
+      "name": "DESIGN.md",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T070",
+      "name": "RTK",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T071",
+      "name": "Caveman",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T072",
+      "name": "headroom",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "J22",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+    },
+    {
+      "id": "T073",
+      "name": "OpenClaude",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T074",
+      "name": "pi + ohmypi",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T075",
+      "name": "MistralCode",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T076",
+      "name": "Codebuff",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T077",
+      "name": "NemoCode",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T078",
+      "name": "9Router",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T079",
+      "name": "Gemini CLI",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T080",
+      "name": "Bun",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T081",
+      "name": "Tauri",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T082",
+      "name": "uv",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T083",
+      "name": "Aube",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T084",
+      "name": "AionUI",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "May 2026 tool list is historical, not current installation proof."
+    },
+    {
+      "id": "T085",
+      "name": "ClawCode",
+      "domain": "coding",
+      "reported": "reported_not_used",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "May article says little or no use."
+    },
+    {
+      "id": "T086",
+      "name": "FreeClaudeCode",
+      "domain": "coding",
+      "reported": "reported_not_used",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "May article says little or no use."
+    },
+    {
+      "id": "T087",
+      "name": "Ollama",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T088",
+      "name": "LM Studio",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T089",
+      "name": "Lemonade",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T090",
+      "name": "UnslothStudio",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T091",
+      "name": "llama.cpp",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T092",
+      "name": "Gemma 4 4B",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T093",
+      "name": "LFM2.5-8B-A1B",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T094",
+      "name": "MiniCPM5-1B",
+      "domain": "inference",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "optional",
+      "notes": "Only a named local optional environment may use GPU inference."
+    },
+    {
+      "id": "T095",
+      "name": "Qwen3.6-27B",
+      "domain": "inference",
+      "reported": "reported_removed",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Removal underway in May."
+    },
+    {
+      "id": "T096",
+      "name": "Crawl4AI",
+      "domain": "browser",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Use untrusted content as data only; privacy and terms review."
+    },
+    {
+      "id": "T097",
+      "name": "Chrome",
+      "domain": "browser",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Use untrusted content as data only; privacy and terms review."
+    },
+    {
+      "id": "T098",
+      "name": "LightPanda",
+      "domain": "browser",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Use untrusted content as data only; privacy and terms review."
+    },
+    {
+      "id": "T099",
+      "name": "OpenCLI-rs",
+      "domain": "browser",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Use untrusted content as data only; privacy and terms review."
+    },
+    {
+      "id": "T100",
+      "name": "Telegraf",
+      "domain": "browser",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Use untrusted content as data only; privacy and terms review."
+    },
+    {
+      "id": "T101",
+      "name": "ShareX",
+      "domain": "browser",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Use untrusted content as data only; privacy and terms review."
+    },
+    {
+      "id": "T102",
+      "name": "Openfang",
+      "domain": "assistant",
+      "reported": "reported_stopped",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+    },
+    {
+      "id": "T103",
+      "name": "ml-intern",
+      "domain": "assistant",
+      "reported": "reported_stopped",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+    },
+    {
+      "id": "T104",
+      "name": "ASI-Evolve",
+      "domain": "assistant",
+      "reported": "reported_stopped",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+    },
+    {
+      "id": "T105",
+      "name": "PersonalAIInstructor",
+      "domain": "assistant",
+      "reported": "reported_stopped",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+    },
+    {
+      "id": "T106",
+      "name": "Photo Agents",
+      "domain": "assistant",
+      "reported": "reported_stopped",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+    },
+    {
+      "id": "T107",
+      "name": "VLAA-GUI",
+      "domain": "assistant",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Local GUI is not an agent-runner dependency."
+    },
+    {
+      "id": "T108",
+      "name": "Scales",
+      "domain": "assistant",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Local GUI is not an agent-runner dependency."
+    },
+    {
+      "id": "T109",
+      "name": "RAG-Anything",
+      "domain": "knowledge",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Multimodal knowledge ingestion requires isolation."
+    },
+    {
+      "id": "T110",
+      "name": "Obsidian",
+      "domain": "knowledge",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Multimodal knowledge ingestion requires isolation."
+    },
+    {
+      "id": "T111",
+      "name": "PPT-design-Prompt",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T112",
+      "name": "OpenCodeSign",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T113",
+      "name": "PPT-master",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T114",
+      "name": "OpenSlide",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T115",
+      "name": "oh-my-design",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T116",
+      "name": "Presenton",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T117",
+      "name": "Hallmark",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T118",
+      "name": "stop-slop",
+      "domain": "presentation",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "presentationgen",
+      "adoption": "optional",
+      "notes": "Only draft output is automatic; editable production requires validation."
+    },
+    {
+      "id": "T119",
+      "name": "Clearwing",
+      "domain": "security",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs."
+    },
+    {
+      "id": "T120",
+      "name": "auto-Identity-remove",
+      "domain": "security",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs."
+    },
+    {
+      "id": "T121",
+      "name": "Hackingtool v2.0",
+      "domain": "security",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs."
+    },
+    {
+      "id": "T122",
+      "name": "PaddleOCR",
+      "domain": "security",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "infocollect",
+      "adoption": "optional",
+      "notes": "Local OCR for licensed/documented content only."
+    },
+    {
+      "id": "T123",
+      "name": "Irodori-TTS-lite",
+      "domain": "voice",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "VAIZ",
+      "adoption": "optional",
+      "notes": "Small Japanese voice model, execution optional."
+    },
+    {
+      "id": "T124",
+      "name": "Neko",
+      "domain": "workspace",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Separate local business workspace, not universal agent dependency."
+    },
+    {
+      "id": "T125",
+      "name": "Bizend",
+      "domain": "workspace",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Separate local business workspace, not universal agent dependency."
+    },
+    {
+      "id": "T126",
+      "name": "Paperclip",
+      "domain": "workspace",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Separate local business workspace, not universal agent dependency."
+    },
+    {
+      "id": "T127",
+      "name": "Multica",
+      "domain": "workspace",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Separate local business workspace, not universal agent dependency."
+    },
+    {
+      "id": "T128",
+      "name": "Archon",
+      "domain": "workspace",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Separate local business workspace, not universal agent dependency."
+    },
+    {
+      "id": "T129",
+      "name": "Self-built kanban",
+      "domain": "workspace",
+      "reported": "reported_historical",
+      "source": "M30",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Separate local business workspace, not universal agent dependency."
+    },
+    {
+      "id": "T130",
+      "name": "awesome-claude-code-toolkit",
+      "domain": "security",
+      "reported": "reported_removed",
+      "source": "M23",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+    },
+    {
+      "id": "T131",
+      "name": "everything-claude-code",
+      "domain": "security",
+      "reported": "reported_removed",
+      "source": "M23",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+    },
+    {
+      "id": "T132",
+      "name": "gstack",
+      "domain": "security",
+      "reported": "reported_removed",
+      "source": "M23",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+    },
+    {
+      "id": "T133",
+      "name": "Understand Anything",
+      "domain": "security",
+      "reported": "reported_removed",
+      "source": "M23",
+      "owner": "none",
+      "adoption": "excluded",
+      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+    },
+    {
+      "id": "T134",
+      "name": "Superpowers",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T135",
+      "name": "Plan & Implement",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T136",
+      "name": "Semantic Commit",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T137",
+      "name": "PR Review Checklist",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T138",
+      "name": "Documentation Writer",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T139",
+      "name": "Context7",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T140",
+      "name": "Playwright",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T141",
+      "name": "Filesystem MCP",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T142",
+      "name": "GitHub MCP",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T143",
+      "name": "Sequential Thinking MCP",
+      "domain": "coding",
+      "reported": "reported_historical",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "optional",
+      "notes": "Historical minimal skill selections; avoid loading all globally."
+    },
+    {
+      "id": "T144",
+      "name": "Claude-Mem",
+      "domain": "coding",
+      "reported": "reported_discussed",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Discussed in critical assessment, not proof of current use."
+    },
+    {
+      "id": "T145",
+      "name": "Ralph Loop",
+      "domain": "coding",
+      "reported": "reported_discussed",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Discussed in critical assessment, not proof of current use."
+    },
+    {
+      "id": "T146",
+      "name": "Firecrawl",
+      "domain": "coding",
+      "reported": "reported_discussed",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Discussed in critical assessment, not proof of current use."
+    },
+    {
+      "id": "T147",
+      "name": "Figma MCP",
+      "domain": "coding",
+      "reported": "reported_discussed",
+      "source": "M23",
+      "owner": "agent-runner",
+      "adoption": "defer",
+      "notes": "Discussed in critical assessment, not proof of current use."
+    },
+    {
+      "id": "T148",
+      "name": "actionlint",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T149",
+      "name": "zizmor",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T150",
+      "name": "Betterleaks",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T151",
+      "name": "Semgrep",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T152",
+      "name": "Trivy",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T153",
+      "name": "Renovate",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T154",
+      "name": "Sigstore Cosign",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T155",
+      "name": "SLSA provenance",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T156",
+      "name": "Dependency Review Action",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+    },
+    {
+      "id": "T157",
+      "name": "ast-grep",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Tooling candidates only. Hub stays thin."
+    },
+    {
+      "id": "T158",
+      "name": "tree-sitter",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Tooling candidates only. Hub stays thin."
+    },
+    {
+      "id": "T159",
+      "name": "OpenTelemetry",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Tooling candidates only. Hub stays thin."
+    },
+    {
+      "id": "T160",
+      "name": "GitHub Actions reusable workflow audit",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Tooling candidates only. Hub stays thin."
+    },
+    {
+      "id": "T161",
+      "name": "Lean 4",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Formal and property-based verification, not automatic scientific proof."
+    },
+    {
+      "id": "T162",
+      "name": "mathlib",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Formal and property-based verification, not automatic scientific proof."
+    },
+    {
+      "id": "T163",
+      "name": "SymPy",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Formal and property-based verification, not automatic scientific proof."
+    },
+    {
+      "id": "T164",
+      "name": "Hypothesis",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Formal and property-based verification, not automatic scientific proof."
+    },
+    {
+      "id": "T165",
+      "name": "Ruff",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Formal and property-based verification, not automatic scientific proof."
+    },
+    {
+      "id": "T166",
+      "name": "Z3",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Formal and property-based verification, not automatic scientific proof."
+    },
+    {
+      "id": "T167",
+      "name": "JAX",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Formal and property-based verification, not automatic scientific proof."
+    },
+    {
+      "id": "T168",
+      "name": "DuckDB",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "PIT correctness, independent computation and data-quality audit."
+    },
+    {
+      "id": "T169",
+      "name": "Polars",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "PIT correctness, independent computation and data-quality audit."
+    },
+    {
+      "id": "T170",
+      "name": "Apache Arrow",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "PIT correctness, independent computation and data-quality audit."
+    },
+    {
+      "id": "T171",
+      "name": "Parquet",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "PIT correctness, independent computation and data-quality audit."
+    },
+    {
+      "id": "T172",
+      "name": "Great Expectations",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "PIT correctness, independent computation and data-quality audit."
+    },
+    {
+      "id": "T173",
+      "name": "Evidently AI",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "PIT correctness, independent computation and data-quality audit."
+    },
+    {
+      "id": "T174",
+      "name": "Readability.js",
+      "domain": "browser",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Only approved public sources, no instruction-following from external text."
+    },
+    {
+      "id": "T175",
+      "name": "Trafilatura",
+      "domain": "browser",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Only approved public sources, no instruction-following from external text."
+    },
+    {
+      "id": "T176",
+      "name": "SearXNG",
+      "domain": "browser",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Only approved public sources, no instruction-following from external text."
+    },
+    {
+      "id": "T177",
+      "name": "RSSHub",
+      "domain": "browser",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Only approved public sources, no instruction-following from external text."
+    },
+    {
+      "id": "T178",
+      "name": "Playwright MCP",
+      "domain": "browser",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Only approved public sources, no instruction-following from external text."
+    },
+    {
+      "id": "T179",
+      "name": "FFmpeg",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+    },
+    {
+      "id": "T180",
+      "name": "ffprobe",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+    },
+    {
+      "id": "T181",
+      "name": "Remotion",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+    },
+    {
+      "id": "T182",
+      "name": "Whisper.cpp",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+    },
+    {
+      "id": "T183",
+      "name": "faster-whisper",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+    },
+    {
+      "id": "T184",
+      "name": "Piper TTS",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+    },
+    {
+      "id": "T185",
+      "name": "Blender",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+    },
+    {
+      "id": "T186",
+      "name": "PptxGenJS",
+      "domain": "presentation",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "presentationgen",
+      "adoption": "candidate",
+      "notes": "Editable and render-auditable presentations."
+    },
+    {
+      "id": "T187",
+      "name": "Marp",
+      "domain": "presentation",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "presentationgen",
+      "adoption": "candidate",
+      "notes": "Editable and render-auditable presentations."
+    },
+    {
+      "id": "T188",
+      "name": "Slidev",
+      "domain": "presentation",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "presentationgen",
+      "adoption": "candidate",
+      "notes": "Editable and render-auditable presentations."
+    }
+  ]
+}

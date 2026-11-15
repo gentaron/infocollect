@@ -138,7 +138,7 @@
         ],
         "classification": "fictional"
       },
-      "runtimeVerification": "CI passed; deployed endpoint not yet verified"
+      "runtimeVerification": "deployed and fetched: 552 public links"
     },
     {
       "id": "infocollect.edu-wiki-sync",
@@ -154,7 +154,9 @@
       "output": {
         "path": "docs/kb/fiction/edu.json"
       },
-      "runtimeVerification": "pending deployment and scheduled run"
+      "runtimeVerification": "success",
+      "lastVerifiedRun": "https://github.com/gentaron/infocollect/actions/runs/43704898936",
+      "lastVerifiedOutput": "docs/kb/fiction/edu.json"
     }
   ],
   "network": "ecosystem/registry.json"

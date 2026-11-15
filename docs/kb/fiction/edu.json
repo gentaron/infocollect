@@ -1,0 +1,3871 @@
+{
+  "schemaVersion": 1,
+  "kind": "fictional-wiki-index",
+  "source": "gentaron/edu",
+  "entries": [
+    {
+      "id": "10次元ホラズム理論",
+      "name": "10次元ホラズム理論",
+      "nameEn": "10-Dimensional Horasm Theory",
+      "category": "技術",
+      "url": "/wiki/10%E6%AC%A1%E5%85%83%E3%83%9B%E3%83%A9%E3%82%BA%E3%83%A0%E7%90%86%E8%AB%96"
+    },
+    {
+      "id": "A-Registry",
+      "name": "A-Registry（A籍）",
+      "nameEn": "A-Registry",
+      "category": "組織",
+      "url": "/wiki/A-Registry"
+    },
+    {
+      "id": "Abrivo",
+      "name": "アブリーヴォ",
+      "nameEn": "Abrivo",
+      "category": "地理",
+      "url": "/wiki/Abrivo"
+    },
+    {
+      "id": "AJ",
+      "name": "アルフレッド・ジュース",
+      "nameEn": "Alfred Juce",
+      "category": "キャラクター",
+      "url": "/wiki/AJ"
+    },
+    {
+      "id": "Apolonium",
+      "name": "アポロニウム",
+      "nameEn": "Apolonium",
+      "category": "技術",
+      "url": "/wiki/Apolonium"
+    },
+    {
+      "id": "AURALIS",
+      "name": "オーラリス・コレクティブ",
+      "nameEn": "AURALIS Collective",
+      "category": "組織",
+      "url": "/wiki/AURALIS"
+    },
+    {
+      "id": "Chem",
+      "name": "Chem",
+      "nameEn": "Chem",
+      "category": "地理",
+      "url": "/wiki/Chem"
+    },
+    {
+      "id": "Diana",
+      "name": "ディアナ",
+      "nameEn": "Diana",
+      "category": "キャラクター",
+      "url": "/wiki/Diana"
+    },
+    {
+      "id": "E16連星系",
+      "name": "E16連星系",
+      "nameEn": "E16 Binary System",
+      "category": "地理",
+      "url": "/wiki/E16%E9%80%A3%E6%98%9F%E7%B3%BB"
+    },
+    {
+      "id": "Ea16",
+      "name": "イーエー16",
+      "nameEn": "Ea16",
+      "category": "地理",
+      "url": "/wiki/Ea16"
+    },
+    {
+      "id": "Eb16",
+      "name": "イービー16",
+      "nameEn": "Eb16",
+      "category": "地理",
+      "url": "/wiki/Eb16"
+    },
+    {
+      "id": "Eros-7",
+      "name": "エロス7",
+      "nameEn": "Eros-7",
+      "category": "地理",
+      "url": "/wiki/Eros-7"
+    },
+    {
+      "id": "EVILS",
+      "name": "イビルス",
+      "nameEn": "EVILS",
+      "category": "用語",
+      "url": "/wiki/EVILS"
+    },
+    {
+      "id": "G4ファントムパルス",
+      "name": "G4ファントムパルス",
+      "nameEn": "G4 Phantom Pulse",
+      "category": "技術",
+      "url": "/wiki/G4%E3%83%95%E3%82%A1%E3%83%B3%E3%83%88%E3%83%A0%E3%83%91%E3%83%AB%E3%82%B9"
+    },
+    {
+      "id": "Genesis_Vault",
+      "name": "ジェネシス・ヴォールト",
+      "nameEn": "Genesis Vault",
+      "category": "技術",
+      "url": "/wiki/Genesis_Vault"
+    },
+    {
+      "id": "geo-E16小惑星帯ガイア・リング",
+      "name": "E16小惑星帯ガイア・リング",
+      "nameEn": "Gaia Ring — E16 Asteroid Belt",
+      "category": "地理",
+      "url": "/wiki/geo-E16%E5%B0%8F%E6%83%91%E6%98%9F%E5%B8%AF%E3%82%AC%E3%82%A4%E3%82%A2%E3%83%BB%E3%83%AA%E3%83%B3%E3%82%B0"
+    },
+    {
+      "id": "geo-E16第4惑星クリオ",
+      "name": "E16第4惑星クリオ",
+      "nameEn": "Clio — Fourth Planet of E16",
+      "category": "地理",
+      "url": "/wiki/geo-E16%E7%AC%AC4%E6%83%91%E6%98%9F%E3%82%AF%E3%83%AA%E3%82%AA"
+    },
+    {
+      "id": "geo-E16第5惑星テラ・ノヴァ",
+      "name": "E16第5惑星テラ・ノヴァ",
+      "nameEn": "Terra Nova — Fifth Planet of E16",
+      "category": "地理",
+      "url": "/wiki/geo-E16%E7%AC%AC5%E6%83%91%E6%98%9F%E3%83%86%E3%83%A9%E3%83%BB%E3%83%8E%E3%83%B4%E3%82%A1"
+    },
+    {
+      "id": "geo-E16軌道ステーション・オメガ",
+      "name": "E16軌道ステーション・オメガ",
+      "nameEn": "E16 Orbital Station Omega",
+      "category": "地理",
+      "url": "/wiki/geo-E16%E8%BB%8C%E9%81%93%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%AA%E3%83%A1%E3%82%AC"
+    },
+    {
+      "id": "geo-Solaris工業都市フォージ・タウン",
+      "name": "Solaris工業都市フォージ・タウン",
+      "nameEn": "Forge Town — Industrial City of Solaris",
+      "category": "地理",
+      "url": "/wiki/geo-Solaris%E5%B7%A5%E6%A5%AD%E9%83%BD%E5%B8%82%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B8%E3%83%BB%E3%82%BF%E3%82%A6%E3%83%B3"
+    },
+    {
+      "id": "geo-Solaris第3衛星ヘリオス",
+      "name": "Solaris第3衛星ヘリオス",
+      "nameEn": "Helios — Third Moon of Solaris",
+      "category": "地理",
+      "url": "/wiki/geo-Solaris%E7%AC%AC3%E8%A1%9B%E6%98%9F%E3%83%98%E3%83%AA%E3%82%AA%E3%82%B9"
+    },
+    {
+      "id": "geo-Solaris首都ソーラ・シティ",
+      "name": "Solaris首都ソーラ・シティ",
+      "nameEn": "Solar City — Capital of Solaris",
+      "category": "地理",
+      "url": "/wiki/geo-Solaris%E9%A6%96%E9%83%BD%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3"
+    },
+    {
+      "id": "geo-SSレンジ通信山",
+      "name": "SSレンジ通信山",
+      "nameEn": "SS Range Signal Mountain",
+      "category": "地理",
+      "url": "/wiki/geo-SS%E3%83%AC%E3%83%B3%E3%82%B8%E9%80%9A%E4%BF%A1%E5%B1%B1"
+    },
+    {
+      "id": "geo-アート・ディストリクト",
+      "name": "アート・ディストリクト",
+      "nameEn": "Art District",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%A2%E3%83%BC%E3%83%88%E3%83%BB%E3%83%87%E3%82%A3%E3%82%B9%E3%83%88%E3%83%AA%E3%82%AF%E3%83%88"
+    },
+    {
+      "id": "geo-アイアン峡谷",
+      "name": "アイアン峡谷",
+      "nameEn": "Iron Canyon",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E5%B3%A1%E8%B0%B7"
+    },
+    {
+      "id": "geo-アステロイド・マイニング・プラットフォーム",
+      "name": "アステロイド・マイニング・プラットフォーム",
+      "nameEn": "Asteroid Mining Platform",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%A2%E3%82%B9%E3%83%86%E3%83%AD%E3%82%A4%E3%83%89%E3%83%BB%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0"
+    },
+    {
+      "id": "geo-ウェスト・エンド",
+      "name": "ウェスト・エンド",
+      "nameEn": "West End",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%A6%E3%82%A7%E3%82%B9%E3%83%88%E3%83%BB%E3%82%A8%E3%83%B3%E3%83%89"
+    },
+    {
+      "id": "geo-ヴェルミリオン渓谷",
+      "name": "ヴェルミリオン渓谷",
+      "nameEn": "Vermillion Valley",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3%E6%B8%93%E8%B0%B7"
+    },
+    {
+      "id": "geo-エレシオン聖都ヒエロポリス",
+      "name": "エレシオン聖都ヒエロポリス",
+      "nameEn": "Hieropolis — Holy City of Elyseon",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%A8%E3%83%AC%E3%82%B7%E3%82%AA%E3%83%B3%E8%81%96%E9%83%BD%E3%83%92%E3%82%A8%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%B9"
+    },
+    {
+      "id": "geo-エロス・ステーション",
+      "name": "エロス・ステーション",
+      "nameEn": "Eros Station",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%A8%E3%83%AD%E3%82%B9%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "geo-ギガポリス第8区画イーストエンド",
+      "name": "ギガポリス第8区画イーストエンド",
+      "nameEn": "East End — District 8 of Gigapolis",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%AE%E3%82%AC%E3%83%9D%E3%83%AA%E3%82%B9%E7%AC%AC8%E5%8C%BA%E7%94%BB%E3%82%A4%E3%83%BC%E3%82%B9%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89"
+    },
+    {
+      "id": "geo-グランベル商都マーケット・コア",
+      "name": "グランベル商都マーケット・コア",
+      "nameEn": "Market Core — Commercial Capital of Granbell",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%99%E3%83%AB%E5%95%86%E9%83%BD%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88%E3%83%BB%E3%82%B3%E3%82%A2"
+    },
+    {
+      "id": "geo-クレセント山脈",
+      "name": "クレセント山脈",
+      "nameEn": "Crescent Mountain Range",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%AF%E3%83%AC%E3%82%BB%E3%83%B3%E3%83%88%E5%B1%B1%E8%84%88"
+    },
+    {
+      "id": "geo-クロセヴィア密林",
+      "name": "クロセヴィア密林",
+      "nameEn": "Crosevia Dense Forest",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%AF%E3%83%AD%E3%82%BB%E3%83%B4%E3%82%A3%E3%82%A2%E5%AF%86%E6%9E%97"
+    },
+    {
+      "id": "geo-サウス・マーケット",
+      "name": "サウス・マーケット",
+      "nameEn": "South Market",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%82%B5%E3%82%A6%E3%82%B9%E3%83%BB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88"
+    },
+    {
+      "id": "geo-ディオクレニス首都ノウス",
+      "name": "ディオクレニス首都ノウス",
+      "nameEn": "Nous — Capital of Dioclenis",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%87%E3%82%A3%E3%82%AA%E3%82%AF%E3%83%AC%E3%83%8B%E3%82%B9%E9%A6%96%E9%83%BD%E3%83%8E%E3%82%A6%E3%82%B9"
+    },
+    {
+      "id": "geo-ティレリア海上都市フローティング・ハーバー",
+      "name": "ティレリア海上都市フローティング・ハーバー",
+      "nameEn": "Floating Harbor — Ocean City of Tyeria",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%86%E3%82%A3%E3%83%AC%E3%83%AA%E3%82%A2%E6%B5%B7%E4%B8%8A%E9%83%BD%E5%B8%82%E3%83%95%E3%83%AD%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%90%E3%83%BC"
+    },
+    {
+      "id": "geo-テック・コリドー",
+      "name": "テック・コリドー",
+      "nameEn": "Tech Corridor",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%86%E3%83%83%E3%82%AF%E3%83%BB%E3%82%B3%E3%83%AA%E3%83%89%E3%83%BC"
+    },
+    {
+      "id": "geo-ノース・サイド",
+      "name": "ノース・サイド",
+      "nameEn": "North Side",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%8E%E3%83%BC%E3%82%B9%E3%83%BB%E3%82%B5%E3%82%A4%E3%83%89"
+    },
+    {
+      "id": "geo-ビブリオ港町ポート・ロレンツィオ",
+      "name": "ビブリオ港町ポート・ロレンツィオ",
+      "nameEn": "Port Lorenzio — Harbor Town of Biblio",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%93%E3%83%96%E3%83%AA%E3%82%AA%E6%B8%AF%E7%94%BA%E3%83%9D%E3%83%BC%E3%83%88%E3%83%BB%E3%83%AD%E3%83%AC%E3%83%B3%E3%83%84%E3%82%A3%E3%82%AA"
+    },
+    {
+      "id": "geo-ビブリオ第2衛星ルナ",
+      "name": "ビブリオ第2衛星ルナ",
+      "nameEn": "Luna — Second Moon of Biblio",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%93%E3%83%96%E3%83%AA%E3%82%AA%E7%AC%AC2%E8%A1%9B%E6%98%9F%E3%83%AB%E3%83%8A"
+    },
+    {
+      "id": "geo-ビブリオ首都アカデミア",
+      "name": "ビブリオ首都アカデミア",
+      "nameEn": "Academia — Capital of Biblio",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%93%E3%83%96%E3%83%AA%E3%82%AA%E9%A6%96%E9%83%BD%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%82%A2"
+    },
+    {
+      "id": "geo-ファールージャ砂漠",
+      "name": "ファールージャ砂漠",
+      "nameEn": "Faruja Desert",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A3%E7%A0%82%E6%BC%A0"
+    },
+    {
+      "id": "geo-ファルージャ砂漠都市オアシス・ハブ",
+      "name": "ファルージャ砂漠都市オアシス・ハブ",
+      "nameEn": "Oasis Hub — Desert City of Fallujah",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%95%E3%82%A1%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A3%E7%A0%82%E6%BC%A0%E9%83%BD%E5%B8%82%E3%82%AA%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%BB%E3%83%8F%E3%83%96"
+    },
+    {
+      "id": "geo-ブルーローズ平原",
+      "name": "ブルーローズ平原",
+      "nameEn": "Blue Rose Plains",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%BA%E5%B9%B3%E5%8E%9F"
+    },
+    {
+      "id": "geo-ポート・ディストリクト",
+      "name": "ポート・ディストリクト",
+      "nameEn": "Port District",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%9D%E3%83%BC%E3%83%88%E3%83%BB%E3%83%87%E3%82%A3%E3%82%B9%E3%83%88%E3%83%AA%E3%82%AF%E3%83%88"
+    },
+    {
+      "id": "geo-ミエルテンガ湖",
+      "name": "ミエルテンガ湖",
+      "nameEn": "Lake Mielteunga",
+      "category": "地理",
+      "url": "/wiki/geo-%E3%83%9F%E3%82%A8%E3%83%AB%E3%83%86%E3%83%B3%E3%82%AC%E6%B9%96"
+    },
+    {
+      "id": "geo-宇宙港スペースポート",
+      "name": "宇宙港スペースポート",
+      "nameEn": "Spaceport — E16 Interplanetary Spaceport",
+      "category": "地理",
+      "url": "/wiki/geo-%E5%AE%87%E5%AE%99%E6%B8%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88"
+    },
+    {
+      "id": "geo-次元ブリッジ・ターミナル",
+      "name": "次元ブリッジ・ターミナル",
+      "nameEn": "Dimensional Bridge Terminal",
+      "category": "地理",
+      "url": "/wiki/geo-%E6%AC%A1%E5%85%83%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E3%83%BB%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB"
+    },
+    {
+      "id": "hist-AURALISの誕生",
+      "name": "AURALISの誕生",
+      "nameEn": "Birth of AURALIS",
+      "category": "歴史",
+      "url": "/wiki/hist-AURALIS%E3%81%AE%E8%AA%95%E7%94%9F"
+    },
+    {
+      "id": "hist-AURALIS弾圧と逮捕",
+      "name": "AURALIS弾圧とメンバー逮捕",
+      "nameEn": "AURALIS Suppression and Arrests",
+      "category": "歴史",
+      "url": "/wiki/hist-AURALIS%E5%BC%BE%E5%9C%A7%E3%81%A8%E9%80%AE%E6%8D%95"
+    },
+    {
+      "id": "hist-AURALIS正式設立",
+      "name": "AURALIS正式設立",
+      "nameEn": "Official Establishment of AURALIS",
+      "category": "歴史",
+      "url": "/wiki/hist-AURALIS%E6%AD%A3%E5%BC%8F%E8%A8%AD%E7%AB%8B"
+    },
+    {
+      "id": "hist-AURALIS第二世代の設立",
+      "name": "AURALIS Collective第二世代の設立",
+      "nameEn": "Establishment of AURALIS Collective 2nd Gen",
+      "category": "歴史",
+      "url": "/wiki/hist-AURALIS%E7%AC%AC%E4%BA%8C%E4%B8%96%E4%BB%A3%E3%81%AE%E8%A8%AD%E7%AB%8B"
+    },
+    {
+      "id": "hist-G4ファントムパルスと勝利",
+      "name": "G4ファントムパルスと大戦勝利",
+      "nameEn": "G4 Phantom Pulse and War Victory",
+      "category": "歴史",
+      "url": "/wiki/hist-G4%E3%83%95%E3%82%A1%E3%83%B3%E3%83%88%E3%83%A0%E3%83%91%E3%83%AB%E3%82%B9%E3%81%A8%E5%8B%9D%E5%88%A9"
+    },
+    {
+      "id": "hist-V7設立",
+      "name": "V7（Vital Seven）の設立",
+      "nameEn": "Founding of V7 (Vital Seven)",
+      "category": "歴史",
+      "url": "/wiki/hist-V7%E8%A8%AD%E7%AB%8B"
+    },
+    {
+      "id": "hist-ZAMLT設立",
+      "name": "ZAMLT設立と5企業覇権",
+      "nameEn": "Establishment of ZAMLT",
+      "category": "歴史",
+      "url": "/wiki/hist-ZAMLT%E8%A8%AD%E7%AB%8B"
+    },
+    {
+      "id": "hist-Σ-Unitの設立",
+      "name": "Σ-Unit (Sigma Unit)",
+      "nameEn": "Establishment of Sigma Unit",
+      "category": "歴史",
+      "url": "/wiki/hist-%CE%A3-Unit%E3%81%AE%E8%A8%AD%E7%AB%8B"
+    },
+    {
+      "id": "hist-アポロンとの同盟拒絶と開戦",
+      "name": "アポロンとの同盟拒絶と開戦",
+      "nameEn": "Rejection of Apollon Alliance and Outbreak of War",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3%E3%81%A8%E3%81%AE%E5%90%8C%E7%9B%9F%E6%8B%92%E7%B5%B6%E3%81%A8%E9%96%8B%E6%88%A6"
+    },
+    {
+      "id": "hist-アルファ・ヴェノムの台頭",
+      "name": "アルファ・ヴェノムの台頭",
+      "nameEn": "Rise of Alpha Venom",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%8E%E3%83%A0%E3%81%AE%E5%8F%B0%E9%A0%AD"
+    },
+    {
+      "id": "hist-アルファ・ケインの覚醒",
+      "name": "アルファ・ケインの覚醒",
+      "nameEn": "Awakening of Alpha Kane",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BB%E3%82%B1%E3%82%A4%E3%83%B3%E3%81%AE%E8%A6%9A%E9%86%92"
+    },
+    {
+      "id": "hist-エヴァトロンによるGigapolis占領",
+      "name": "エヴァトロンによるGigapolis占領",
+      "nameEn": "Evatron Occupation of Gigapolis",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%88%E3%83%AD%E3%83%B3%E3%81%AB%E3%82%88%E3%82%8BGigapolis%E5%8D%A0%E9%A0%98"
+    },
+    {
+      "id": "hist-エヴァトロン崩壊",
+      "name": "エヴァトロン崩壊",
+      "nameEn": "Fall of Evatron",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%88%E3%83%AD%E3%83%B3%E5%B4%A9%E5%A3%8A"
+    },
+    {
+      "id": "hist-ギガポリス都市計画",
+      "name": "ギガポリス都市計画",
+      "nameEn": "Gigapolis Urban Planning",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%AE%E3%82%AC%E3%83%9D%E3%83%AA%E3%82%B9%E9%83%BD%E5%B8%82%E8%A8%88%E7%94%BB"
+    },
+    {
+      "id": "hist-コーポラタムパブリカ設立",
+      "name": "コーポラタムパブリカの設立",
+      "nameEn": "Founding of Corporatumpublica",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%A9%E3%82%BF%E3%83%A0%E3%83%91%E3%83%96%E3%83%AA%E3%82%AB%E8%A8%AD%E7%AB%8B"
+    },
+    {
+      "id": "hist-シルバー・ヴェノムの台頭",
+      "name": "シルバー・ヴェノムの台頭",
+      "nameEn": "Rise of Silver Venom",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%8E%E3%83%A0%E3%81%AE%E5%8F%B0%E9%A0%AD"
+    },
+    {
+      "id": "hist-シルバープラント攻略戦",
+      "name": "シルバープラント攻略戦",
+      "nameEn": "Silver Plant Assault",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E3%83%97%E3%83%A9%E3%83%B3%E3%83%88%E6%94%BB%E7%95%A5%E6%88%A6"
+    },
+    {
+      "id": "hist-スライム危機の収束",
+      "name": "スライム危機の収束",
+      "nameEn": "Resolution of Slime Crisis",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%A0%E5%8D%B1%E6%A9%9F%E3%81%AE%E5%8F%8E%E6%9D%9F"
+    },
+    {
+      "id": "hist-セリアによるSelinopolis宣言",
+      "name": "セリアによるSelinopolis宣言",
+      "nameEn": "Celia's Selinopolis Declaration",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%82%BB%E3%83%AA%E3%82%A2%E3%81%AB%E3%82%88%E3%82%8BSelinopolis%E5%AE%A3%E8%A8%80"
+    },
+    {
+      "id": "hist-ダイアナの台頭",
+      "name": "ダイアナの台頭",
+      "nameEn": "Rise of Diana",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%80%E3%82%A4%E3%82%A2%E3%83%8A%E3%81%AE%E5%8F%B0%E9%A0%AD"
+    },
+    {
+      "id": "hist-テクノ宗教運動の台頭",
+      "name": "テクノ宗教運動の台頭",
+      "nameEn": "Rise of Techno-Religious Movement",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%86%E3%82%AF%E3%83%8E%E5%AE%97%E6%95%99%E9%81%8B%E5%8B%95%E3%81%AE%E5%8F%B0%E9%A0%AD"
+    },
+    {
+      "id": "hist-テクノ文化ルネサンスの始まり",
+      "name": "テクノ文化ルネサンスの始まり",
+      "nameEn": "Beginning of Techno-Cultural Renaissance",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%86%E3%82%AF%E3%83%8E%E6%96%87%E5%8C%96%E3%83%AB%E3%83%8D%E3%82%B5%E3%83%B3%E3%82%B9%E3%81%AE%E5%A7%8B%E3%81%BE%E3%82%8A"
+    },
+    {
+      "id": "hist-テリアン処刑",
+      "name": "テリアン処刑",
+      "nameEn": "Execution of Elios Wald",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%86%E3%83%AA%E3%82%A2%E3%83%B3%E5%87%A6%E5%88%91"
+    },
+    {
+      "id": "hist-トリニティ・アライアンス結成",
+      "name": "トリニティ・アライアンス結成",
+      "nameEn": "Formation of Trinity Alliance",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BB%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9%E7%B5%90%E6%88%90"
+    },
+    {
+      "id": "hist-ネオクラン同盟の台頭",
+      "name": "ネオクラン同盟の台頭",
+      "nameEn": "Rise of Neo-Clan Alliance",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%8D%E3%82%AA%E3%82%AF%E3%83%A9%E3%83%B3%E5%90%8C%E7%9B%9F%E3%81%AE%E5%8F%B0%E9%A0%AD"
+    },
+    {
+      "id": "hist-パクス・ロンバルディカの成立",
+      "name": "パクス・ロンバルディカの成立",
+      "nameEn": "Establishment of Pax Lombardica",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%91%E3%82%AF%E3%82%B9%E3%83%BB%E3%83%AD%E3%83%B3%E3%83%90%E3%83%AB%E3%83%87%E3%82%A3%E3%82%AB%E3%81%AE%E6%88%90%E7%AB%8B"
+    },
+    {
+      "id": "hist-ファランクスによる統一",
+      "name": "ファランクスによる統一戦争",
+      "nameEn": "Phalanx Unification Wars",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%95%E3%82%A1%E3%83%A9%E3%83%B3%E3%82%AF%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E4%B8%80"
+    },
+    {
+      "id": "hist-フェルミ音楽の最盛期",
+      "name": "フェルミ音楽の最盛期",
+      "nameEn": "Peak of Fermi Music",
+      "category": "歴史",
+      "url": "/wiki/hist-%E3%83%95%E3%82%A7%E3%83%AB%E3%83%9F%E9%9F%B3%E6%A5%BD%E3%81%AE%E6%9C%80%E7%9B%9B%E6%9C%9F"
+    },
+    {
+      "id": "hist-入植船団の到達",
+      "name": "入植船団の到達",
+      "nameEn": "Arrival of the Colonization Fleet",
+      "category": "歴史",
+      "url": "/wiki/hist-%E5%85%A5%E6%A4%8D%E8%88%B9%E5%9B%A3%E3%81%AE%E5%88%B0%E9%81%94"
+    },
+    {
+      "id": "hist-初期入植者社会",
+      "name": "初期入植者社会",
+      "nameEn": "Early Settler Society",
+      "category": "歴史",
+      "url": "/wiki/hist-%E5%88%9D%E6%9C%9F%E5%85%A5%E6%A4%8D%E8%80%85%E7%A4%BE%E4%BC%9A"
+    },
+    {
+      "id": "hist-帝国内乱と分裂",
+      "name": "帝国内乱と分裂",
+      "nameEn": "Imperial Civil War and Fragmentation",
+      "category": "歴史",
+      "url": "/wiki/hist-%E5%B8%9D%E5%9B%BD%E5%86%85%E4%B9%B1%E3%81%A8%E5%88%86%E8%A3%82"
+    },
+    {
+      "id": "hist-惑星ビブリオの建設",
+      "name": "惑星ビブリオの建設",
+      "nameEn": "Construction of Planet Biblio",
+      "category": "歴史",
+      "url": "/wiki/hist-%E6%83%91%E6%98%9F%E3%83%93%E3%83%96%E3%83%AA%E3%82%AA%E3%81%AE%E5%BB%BA%E8%A8%AD"
+    },
+    {
+      "id": "hist-現代のE16連星系",
+      "name": "現代のE16連星系",
+      "nameEn": "Modern E16 Binary System",
+      "category": "歴史",
+      "url": "/wiki/hist-%E7%8F%BE%E4%BB%A3%E3%81%AEE16%E9%80%A3%E6%98%9F%E7%B3%BB"
+    },
+    {
+      "id": "hist-第一回宇宙連合会合",
+      "name": "第一回宇宙連合会合",
+      "nameEn": "First Universal Federation Summit",
+      "category": "歴史",
+      "url": "/wiki/hist-%E7%AC%AC%E4%B8%80%E5%9B%9E%E5%AE%87%E5%AE%99%E9%80%A3%E5%90%88%E4%BC%9A%E5%90%88"
+    },
+    {
+      "id": "hist-第一次星間航海",
+      "name": "第一次星間航海",
+      "nameEn": "First Interstellar Voyages",
+      "category": "歴史",
+      "url": "/wiki/hist-%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%98%9F%E9%96%93%E8%88%AA%E6%B5%B7"
+    },
+    {
+      "id": "hist-第二次移民波の到達",
+      "name": "第二次移民波の到達",
+      "nameEn": "Second Wave of Immigration",
+      "category": "歴史",
+      "url": "/wiki/hist-%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%A7%BB%E6%B0%91%E6%B3%A2%E3%81%AE%E5%88%B0%E9%81%94"
+    },
+    {
+      "id": "hist-銀河系コンソーシアム設立",
+      "name": "銀河系コンソーシアム設立",
+      "nameEn": "Establishment of Galactic Consortium",
+      "category": "歴史",
+      "url": "/wiki/hist-%E9%8A%80%E6%B2%B3%E7%B3%BB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0%E8%A8%AD%E7%AB%8B"
+    },
+    {
+      "id": "Iris_Worlds",
+      "name": "アイリス・ワールズ",
+      "nameEn": "Iris Worlds",
+      "category": "用語",
+      "url": "/wiki/Iris_Worlds"
+    },
+    {
+      "id": "Jen",
+      "name": "ジェン",
+      "nameEn": "Jen",
+      "category": "キャラクター",
+      "url": "/wiki/Jen"
+    },
+    {
+      "id": "Kate Claudia",
+      "name": "ケイト・クラウディア",
+      "nameEn": "Kate Claudia",
+      "category": "キャラクター",
+      "url": "/wiki/Kate%20Claudia"
+    },
+    {
+      "id": "Kate Patton",
+      "name": "ケイト・パットン",
+      "nameEn": "Kate Patton",
+      "category": "キャラクター",
+      "url": "/wiki/Kate%20Patton"
+    },
+    {
+      "id": "Lille",
+      "name": "リール",
+      "nameEn": "Lille",
+      "category": "地理",
+      "url": "/wiki/Lille"
+    },
+    {
+      "id": "Lillie Ardent",
+      "name": "リリー・アーデント",
+      "nameEn": "Lillie Ardent",
+      "category": "キャラクター",
+      "url": "/wiki/Lillie%20Ardent"
+    },
+    {
+      "id": "Lily Steiner",
+      "name": "リリー・スタイナー",
+      "nameEn": "Lily Steiner",
+      "category": "キャラクター",
+      "url": "/wiki/Lily%20Steiner"
+    },
+    {
+      "id": "M104銀河",
+      "name": "M104銀河",
+      "nameEn": "M104 Galaxy",
+      "category": "地理",
+      "url": "/wiki/M104%E9%8A%80%E6%B2%B3"
+    },
+    {
+      "id": "Ninny Offenbach",
+      "name": "ニニー・オッフェンバッハ",
+      "nameEn": "Ninny Offenbach",
+      "category": "キャラクター",
+      "url": "/wiki/Ninny%20Offenbach"
+    },
+    {
+      "id": "nトークン",
+      "name": "nトークン",
+      "nameEn": "n-Token",
+      "category": "組織",
+      "url": "/wiki/n%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3"
+    },
+    {
+      "id": "org-E16大学連合",
+      "name": "E16大学学術連合",
+      "nameEn": "E16 University Consortium",
+      "category": "組織",
+      "url": "/wiki/org-E16%E5%A4%A7%E5%AD%A6%E9%80%A3%E5%90%88"
+    },
+    {
+      "id": "org-E16放送協会",
+      "name": "E16放送協会",
+      "nameEn": "E16 Broadcasting Association",
+      "category": "組織",
+      "url": "/wiki/org-E16%E6%94%BE%E9%80%81%E5%8D%94%E4%BC%9A"
+    },
+    {
+      "id": "org-Eros-7採掘公社",
+      "name": "Eros-7エネルギー採掘公社",
+      "nameEn": "Eros-7 Energy Mining Corporation",
+      "category": "組織",
+      "url": "/wiki/org-Eros-7%E6%8E%A1%E6%8E%98%E5%85%AC%E7%A4%BE"
+    },
+    {
+      "id": "org-ギガポリス地下市場",
+      "name": "ギガポリス地下市場",
+      "nameEn": "Gigapolis Underground Market",
+      "category": "組織",
+      "url": "/wiki/org-%E3%82%AE%E3%82%AC%E3%83%9D%E3%83%AA%E3%82%B9%E5%9C%B0%E4%B8%8B%E5%B8%82%E5%A0%B4"
+    },
+    {
+      "id": "org-ギガポリス建設ギルド",
+      "name": "ギガポリス建設者ギルド",
+      "nameEn": "Gigapolis Builders Guild",
+      "category": "組織",
+      "url": "/wiki/org-%E3%82%AE%E3%82%AC%E3%83%9D%E3%83%AA%E3%82%B9%E5%BB%BA%E8%A8%AD%E3%82%AE%E3%83%AB%E3%83%89"
+    },
+    {
+      "id": "org-クレセント国際法廷",
+      "name": "クレセント国際法廷",
+      "nameEn": "Crescent International Court",
+      "category": "組織",
+      "url": "/wiki/org-%E3%82%AF%E3%83%AC%E3%82%BB%E3%83%B3%E3%83%88%E5%9B%BD%E9%9A%9B%E6%B3%95%E5%BB%B7"
+    },
+    {
+      "id": "org-バーズ帝国官庁",
+      "name": "バーズ帝国中央官庁",
+      "nameEn": "Birds Empire Central Bureau",
+      "category": "組織",
+      "url": "/wiki/org-%E3%83%90%E3%83%BC%E3%82%BA%E5%B8%9D%E5%9B%BD%E5%AE%98%E5%BA%81"
+    },
+    {
+      "id": "org-惑星間条約機構",
+      "name": "惑星間条約機構",
+      "nameEn": "Interplanetary Treaty Organization",
+      "category": "組織",
+      "url": "/wiki/org-%E6%83%91%E6%98%9F%E9%96%93%E6%9D%A1%E7%B4%84%E6%A9%9F%E6%A7%8B"
+    },
+    {
+      "id": "org-次元境界監視機構",
+      "name": "次元境界監視機構",
+      "nameEn": "Dimension Boundary Watch",
+      "category": "組織",
+      "url": "/wiki/org-%E6%AC%A1%E5%85%83%E5%A2%83%E7%95%8C%E7%9B%A3%E8%A6%96%E6%A9%9F%E6%A7%8B"
+    },
+    {
+      "id": "org-第一移民評議会",
+      "name": "第一移民評議会",
+      "nameEn": "First Immigration Council",
+      "category": "組織",
+      "url": "/wiki/org-%E7%AC%AC%E4%B8%80%E7%A7%BB%E6%B0%91%E8%A9%95%E8%AD%B0%E4%BC%9A"
+    },
+    {
+      "id": "Persepolis",
+      "name": "ペルセポリス",
+      "nameEn": "Persepolis",
+      "category": "地理",
+      "url": "/wiki/Persepolis"
+    },
+    {
+      "id": "Poitiers",
+      "name": "Poitiers",
+      "nameEn": "Poitiers",
+      "category": "地理",
+      "url": "/wiki/Poitiers"
+    },
+    {
+      "id": "Ronve",
+      "name": "ロンヴ",
+      "nameEn": "Ronve",
+      "category": "地理",
+      "url": "/wiki/Ronve"
+    },
+    {
+      "id": "Selinopolis",
+      "name": "Selinopolis（ドミニオン）",
+      "nameEn": "Selinopolis / Dominion",
+      "category": "用語",
+      "url": "/wiki/Selinopolis"
+    },
+    {
+      "id": "Selinopolis（西大陸都市）",
+      "name": "セリノポリス",
+      "nameEn": "Selinopolis",
+      "category": "地理",
+      "url": "/wiki/Selinopolis%EF%BC%88%E8%A5%BF%E5%A4%A7%E9%99%B8%E9%83%BD%E5%B8%82%EF%BC%89"
+    },
+    {
+      "id": "Slime_Woman",
+      "name": "スライム・ウーマン",
+      "nameEn": "Slime Woman",
+      "category": "キャラクター",
+      "url": "/wiki/Slime_Woman"
+    },
+    {
+      "id": "SSレンジ",
+      "name": "SSレンジ",
+      "nameEn": "SS Range",
+      "category": "地理",
+      "url": "/wiki/SS%E3%83%AC%E3%83%B3%E3%82%B8"
+    },
+    {
+      "id": "SUDOM",
+      "name": "スードム",
+      "nameEn": "SUDOM",
+      "category": "地理",
+      "url": "/wiki/SUDOM"
+    },
+    {
+      "id": "tech-antimatter-engine",
+      "name": "反物質エンジン",
+      "nameEn": "Antimatter Engine",
+      "category": "技術",
+      "url": "/wiki/tech-antimatter-engine"
+    },
+    {
+      "id": "tech-antimatter-power",
+      "name": "反物質発電",
+      "nameEn": "Antimatter Power Generation",
+      "category": "技術",
+      "url": "/wiki/tech-antimatter-power"
+    },
+    {
+      "id": "tech-artificial-general-intelligence",
+      "name": "人工一般知能",
+      "nameEn": "Artificial General Intelligence",
+      "category": "技術",
+      "url": "/wiki/tech-artificial-general-intelligence"
+    },
+    {
+      "id": "tech-artificial-hibernation",
+      "name": "人工冬眠",
+      "nameEn": "Artificial Hibernation",
+      "category": "技術",
+      "url": "/wiki/tech-artificial-hibernation"
+    },
+    {
+      "id": "tech-asteroid-mining",
+      "name": "小惑星採掘",
+      "nameEn": "Asteroid Mining",
+      "category": "技術",
+      "url": "/wiki/tech-asteroid-mining"
+    },
+    {
+      "id": "tech-atmo-terra-conversion",
+      "name": "大気変換",
+      "nameEn": "Atmospheric Transformation",
+      "category": "技術",
+      "url": "/wiki/tech-atmo-terra-conversion"
+    },
+    {
+      "id": "tech-atmosphere-converter",
+      "name": "大気変換装置",
+      "nameEn": "Atmosphere Converter",
+      "category": "技術",
+      "url": "/wiki/tech-atmosphere-converter"
+    },
+    {
+      "id": "tech-biometric-auth",
+      "name": "生体認証",
+      "nameEn": "Biometric Authentication",
+      "category": "技術",
+      "url": "/wiki/tech-biometric-auth"
+    },
+    {
+      "id": "tech-closed-ecosystem",
+      "name": "閉鎖循環生態系",
+      "nameEn": "Closed-Loop Ecosystem",
+      "category": "技術",
+      "url": "/wiki/tech-closed-ecosystem"
+    },
+    {
+      "id": "tech-consciousness-transfer",
+      "name": "意識転送",
+      "nameEn": "Consciousness Transfer",
+      "category": "技術",
+      "url": "/wiki/tech-consciousness-transfer"
+    },
+    {
+      "id": "tech-cryopreservation",
+      "name": "人体冷凍保存",
+      "nameEn": "Human Cryopreservation",
+      "category": "技術",
+      "url": "/wiki/tech-cryopreservation"
+    },
+    {
+      "id": "tech-cyber-defense",
+      "name": "サイバー防御システム",
+      "nameEn": "Cyber Defense System",
+      "category": "技術",
+      "url": "/wiki/tech-cyber-defense"
+    },
+    {
+      "id": "tech-dark-matter-detector",
+      "name": "ダークマター検出器",
+      "nameEn": "Dark Matter Detector",
+      "category": "技術",
+      "url": "/wiki/tech-dark-matter-detector"
+    },
+    {
+      "id": "tech-defense-shield",
+      "name": "防衛シールド",
+      "nameEn": "Defense Shield",
+      "category": "技術",
+      "url": "/wiki/tech-defense-shield"
+    },
+    {
+      "id": "tech-dimensional-comm",
+      "name": "次元穿越通信",
+      "nameEn": "Dimensional Transit Communication",
+      "category": "技術",
+      "url": "/wiki/tech-dimensional-comm"
+    },
+    {
+      "id": "tech-dome-city",
+      "name": "ドーム都市建設",
+      "nameEn": "Dome City Construction",
+      "category": "技術",
+      "url": "/wiki/tech-dome-city"
+    },
+    {
+      "id": "tech-dyson-sphere",
+      "name": "ダイソン・スフィア",
+      "nameEn": "Dyson Sphere",
+      "category": "技術",
+      "url": "/wiki/tech-dyson-sphere"
+    },
+    {
+      "id": "tech-ecosystem-engineering",
+      "name": "エコシステム工学",
+      "nameEn": "Ecosystem Engineering",
+      "category": "技術",
+      "url": "/wiki/tech-ecosystem-engineering"
+    },
+    {
+      "id": "tech-emp-weapon",
+      "name": "電磁パルス兵器",
+      "nameEn": "EMP Weapon",
+      "category": "技術",
+      "url": "/wiki/tech-emp-weapon"
+    },
+    {
+      "id": "tech-fusion-reactor",
+      "name": "核融合炉",
+      "nameEn": "Fusion Reactor",
+      "category": "技術",
+      "url": "/wiki/tech-fusion-reactor"
+    },
+    {
+      "id": "tech-gas-giant-extraction",
+      "name": "ガス巨人大気採取",
+      "nameEn": "Gas Giant Atmospheric Extraction",
+      "category": "技術",
+      "url": "/wiki/tech-gas-giant-extraction"
+    },
+    {
+      "id": "tech-gene-editing",
+      "name": "遺伝子編集",
+      "nameEn": "Gene Editing",
+      "category": "技術",
+      "url": "/wiki/tech-gene-editing"
+    },
+    {
+      "id": "tech-gravitational-wave-comm",
+      "name": "重力波通信",
+      "nameEn": "Gravitational Wave Communication",
+      "category": "技術",
+      "url": "/wiki/tech-gravitational-wave-comm"
+    },
+    {
+      "id": "tech-gravity-slingshot",
+      "name": "重力アシスト・スリングショット",
+      "nameEn": "Gravity Assist Slingshot",
+      "category": "技術",
+      "url": "/wiki/tech-gravity-slingshot"
+    },
+    {
+      "id": "tech-ion-thruster",
+      "name": "イオンスラスター",
+      "nameEn": "Ion Thruster",
+      "category": "技術",
+      "url": "/wiki/tech-ion-thruster"
+    },
+    {
+      "id": "tech-kinetic-orbital-strike",
+      "name": "キネティック軌道打撃",
+      "nameEn": "Kinetic Orbital Strike",
+      "category": "技術",
+      "url": "/wiki/tech-kinetic-orbital-strike"
+    },
+    {
+      "id": "tech-mass-driver",
+      "name": "マスドライバー",
+      "nameEn": "Mass Driver",
+      "category": "技術",
+      "url": "/wiki/tech-mass-driver"
+    },
+    {
+      "id": "tech-nanomachine-therapy",
+      "name": "ナノマシン治療",
+      "nameEn": "Nanomachine Therapy",
+      "category": "技術",
+      "url": "/wiki/tech-nanomachine-therapy"
+    },
+    {
+      "id": "tech-neural-interface",
+      "name": "ニューラルインターフェース",
+      "nameEn": "Neural Interface",
+      "category": "技術",
+      "url": "/wiki/tech-neural-interface"
+    },
+    {
+      "id": "tech-neutrino-comm",
+      "name": "ニュートリノ通信",
+      "nameEn": "Neutrino Communication",
+      "category": "技術",
+      "url": "/wiki/tech-neutrino-comm"
+    },
+    {
+      "id": "tech-nuclear-transmutation",
+      "name": "核変換技術",
+      "nameEn": "Nuclear Transmutation",
+      "category": "技術",
+      "url": "/wiki/tech-nuclear-transmutation"
+    },
+    {
+      "id": "tech-orbital-elevator",
+      "name": "軌道エレベーター",
+      "nameEn": "Orbital Elevator",
+      "category": "技術",
+      "url": "/wiki/tech-orbital-elevator"
+    },
+    {
+      "id": "tech-orbital-habitat",
+      "name": "軌道ハビタット",
+      "nameEn": "Orbital Habitat",
+      "category": "技術",
+      "url": "/wiki/tech-orbital-habitat"
+    },
+    {
+      "id": "tech-orbital-transfer",
+      "name": "軌道トランスファー",
+      "nameEn": "Orbital Transfer",
+      "category": "技術",
+      "url": "/wiki/tech-orbital-transfer"
+    },
+    {
+      "id": "tech-particle-beam-weapon",
+      "name": "粒子ビーム砲",
+      "nameEn": "Particle Beam Weapon",
+      "category": "技術",
+      "url": "/wiki/tech-particle-beam-weapon"
+    },
+    {
+      "id": "tech-photon-rocket",
+      "name": "光子ロケット",
+      "nameEn": "Photon Rocket",
+      "category": "技術",
+      "url": "/wiki/tech-photon-rocket"
+    },
+    {
+      "id": "tech-plasma-wakefield",
+      "name": "プラズマウェイクフィールド加速器",
+      "nameEn": "Plasma Wakefield Accelerator",
+      "category": "技術",
+      "url": "/wiki/tech-plasma-wakefield"
+    },
+    {
+      "id": "tech-quantum-computing",
+      "name": "量子コンピューティング",
+      "nameEn": "Quantum Computing",
+      "category": "技術",
+      "url": "/wiki/tech-quantum-computing"
+    },
+    {
+      "id": "tech-quantum-cryptography",
+      "name": "量子暗号",
+      "nameEn": "Quantum Cryptography",
+      "category": "技術",
+      "url": "/wiki/tech-quantum-cryptography"
+    },
+    {
+      "id": "tech-quantum-entangle-comm",
+      "name": "量子もつれ通信",
+      "nameEn": "Quantum Entanglement Communication",
+      "category": "技術",
+      "url": "/wiki/tech-quantum-entangle-comm"
+    },
+    {
+      "id": "tech-radiation-protection",
+      "name": "放射線防護",
+      "nameEn": "Radiation Protection",
+      "category": "技術",
+      "url": "/wiki/tech-radiation-protection"
+    },
+    {
+      "id": "tech-self-healing-materials",
+      "name": "自己修復材料",
+      "nameEn": "Self-Healing Materials",
+      "category": "技術",
+      "url": "/wiki/tech-self-healing-materials"
+    },
+    {
+      "id": "tech-solar-sail",
+      "name": "太陽帆推進",
+      "nameEn": "Solar Sail Propulsion",
+      "category": "技術",
+      "url": "/wiki/tech-solar-sail"
+    },
+    {
+      "id": "tech-stealth-field",
+      "name": "ステルス・フィールド",
+      "nameEn": "Stealth Field",
+      "category": "技術",
+      "url": "/wiki/tech-stealth-field"
+    },
+    {
+      "id": "tech-sublight-interstellar",
+      "name": "亜光速星間輸送",
+      "nameEn": "Sublight Interstellar Transport",
+      "category": "技術",
+      "url": "/wiki/tech-sublight-interstellar"
+    },
+    {
+      "id": "tech-swarm-intelligence",
+      "name": "群知能",
+      "nameEn": "Swarm Intelligence",
+      "category": "技術",
+      "url": "/wiki/tech-swarm-intelligence"
+    },
+    {
+      "id": "tech-teleporter-gate",
+      "name": "テレポーターゲート",
+      "nameEn": "Teleporter Gate",
+      "category": "技術",
+      "url": "/wiki/tech-teleporter-gate"
+    },
+    {
+      "id": "tech-terraforming",
+      "name": "テラフォーミング",
+      "nameEn": "Terraforming",
+      "category": "技術",
+      "url": "/wiki/tech-terraforming"
+    },
+    {
+      "id": "tech-vacuum-energy",
+      "name": "真空エネルギー抽出",
+      "nameEn": "Vacuum Energy Extraction",
+      "category": "技術",
+      "url": "/wiki/tech-vacuum-energy"
+    },
+    {
+      "id": "tech-warp-drive",
+      "name": "空間歪曲推進",
+      "nameEn": "Space Warp Drive",
+      "category": "技術",
+      "url": "/wiki/tech-warp-drive"
+    },
+    {
+      "id": "tech-weather-control",
+      "name": "気象制御",
+      "nameEn": "Weather Control",
+      "category": "技術",
+      "url": "/wiki/tech-weather-control"
+    },
+    {
+      "id": "tech-zero-point-energy",
+      "name": "ゼロ点エネルギー",
+      "nameEn": "Zero-Point Energy",
+      "category": "技術",
+      "url": "/wiki/tech-zero-point-energy"
+    },
+    {
+      "id": "term-A籍制度",
+      "name": "A籍制度",
+      "nameEn": "A-Registry System",
+      "category": "用語",
+      "url": "/wiki/term-A%E7%B1%8D%E5%88%B6%E5%BA%A6"
+    },
+    {
+      "id": "term-E0の定義",
+      "name": "E0の定義",
+      "nameEn": "Definition of E0",
+      "category": "用語",
+      "url": "/wiki/term-E0%E3%81%AE%E5%AE%9A%E7%BE%A9"
+    },
+    {
+      "id": "term-E16の度量衡",
+      "name": "E16の度量衡",
+      "nameEn": "E16 Weights and Measures",
+      "category": "用語",
+      "url": "/wiki/term-E16%E3%81%AE%E5%BA%A6%E9%87%8F%E8%A1%A1"
+    },
+    {
+      "id": "term-IRISランキングシステム",
+      "name": "IRISランキングシステム",
+      "nameEn": "IRIS Ranking System",
+      "category": "用語",
+      "url": "/wiki/term-IRIS%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0"
+    },
+    {
+      "id": "term-IRIS世界観",
+      "name": "IRIS世界観",
+      "nameEn": "IRIS Worldview",
+      "category": "用語",
+      "url": "/wiki/term-IRIS%E4%B8%96%E7%95%8C%E8%A6%B3"
+    },
+    {
+      "id": "term-nトークン経済",
+      "name": "nトークン経済",
+      "nameEn": "n-Token Economy",
+      "category": "用語",
+      "url": "/wiki/term-n%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E7%B5%8C%E6%B8%88"
+    },
+    {
+      "id": "term-エヴァトロン体制の法体系",
+      "name": "エヴァトロン体制の法体系",
+      "nameEn": "Evatron Legal System",
+      "category": "用語",
+      "url": "/wiki/term-%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%88%E3%83%AD%E3%83%B3%E4%BD%93%E5%88%B6%E3%81%AE%E6%B3%95%E4%BD%93%E7%B3%BB"
+    },
+    {
+      "id": "term-ギガポリス通貨システム",
+      "name": "ギガポリス通貨システム",
+      "nameEn": "Gigapolis Currency System",
+      "category": "用語",
+      "url": "/wiki/term-%E3%82%AE%E3%82%AC%E3%83%9D%E3%83%AA%E3%82%B9%E9%80%9A%E8%B2%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0"
+    },
+    {
+      "id": "term-スポーツ競技",
+      "name": "スポーツ競技",
+      "nameEn": "Sports and Athletic Competitions of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E7%AB%B6%E6%8A%80"
+    },
+    {
+      "id": "term-セリア黄金期の社会制度",
+      "name": "セリア黄金期の社会制度",
+      "nameEn": "Social System of Celia Golden Age",
+      "category": "用語",
+      "url": "/wiki/term-%E3%82%BB%E3%83%AA%E3%82%A2%E9%BB%84%E9%87%91%E6%9C%9F%E3%81%AE%E7%A4%BE%E4%BC%9A%E5%88%B6%E5%BA%A6"
+    },
+    {
+      "id": "term-ポスト・エヴァトロン秩序",
+      "name": "ポスト・エヴァトロン秩序",
+      "nameEn": "Post-Evatron Order",
+      "category": "用語",
+      "url": "/wiki/term-%E3%83%9D%E3%82%B9%E3%83%88%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%88%E3%83%AD%E3%83%B3%E7%A7%A9%E5%BA%8F"
+    },
+    {
+      "id": "term-レア度分類",
+      "name": "レア度分類",
+      "nameEn": "Rarity Classification System",
+      "category": "用語",
+      "url": "/wiki/term-%E3%83%AC%E3%82%A2%E5%BA%A6%E5%88%86%E9%A1%9E"
+    },
+    {
+      "id": "term-報道自由",
+      "name": "報道自由",
+      "nameEn": "Freedom of Press in E16",
+      "category": "用語",
+      "url": "/wiki/term-%E5%A0%B1%E9%81%93%E8%87%AA%E7%94%B1"
+    },
+    {
+      "id": "term-宗教観・世界観",
+      "name": "宗教観・世界観",
+      "nameEn": "Religious and Worldview of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E5%AE%97%E6%95%99%E8%A6%B3%E3%83%BB%E4%B8%96%E7%95%8C%E8%A6%B3"
+    },
+    {
+      "id": "term-惑星間条約",
+      "name": "惑星間条約",
+      "nameEn": "Interplanetary Treaties",
+      "category": "用語",
+      "url": "/wiki/term-%E6%83%91%E6%98%9F%E9%96%93%E6%9D%A1%E7%B4%84"
+    },
+    {
+      "id": "term-戦闘力指数",
+      "name": "戦闘力指数",
+      "nameEn": "Combat Power Index",
+      "category": "用語",
+      "url": "/wiki/term-%E6%88%A6%E9%97%98%E5%8A%9B%E6%8C%87%E6%95%B0"
+    },
+    {
+      "id": "term-教育制度",
+      "name": "教育制度",
+      "nameEn": "Education System of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E6%95%99%E8%82%B2%E5%88%B6%E5%BA%A6"
+    },
+    {
+      "id": "term-料理・食文化",
+      "name": "料理・食文化",
+      "nameEn": "Cuisine and Food Culture of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E6%96%99%E7%90%86%E3%83%BB%E9%A3%9F%E6%96%87%E5%8C%96"
+    },
+    {
+      "id": "term-暦変換規則",
+      "name": "暦変換規則",
+      "nameEn": "Calendar Conversion Rules",
+      "category": "用語",
+      "url": "/wiki/term-%E6%9A%A6%E5%A4%89%E6%8F%9B%E8%A6%8F%E5%89%87"
+    },
+    {
+      "id": "term-東暦紀年法",
+      "name": "東暦紀年法",
+      "nameEn": "Eastern Calendar System",
+      "category": "用語",
+      "url": "/wiki/term-%E6%9D%B1%E6%9A%A6%E7%B4%80%E5%B9%B4%E6%B3%95"
+    },
+    {
+      "id": "term-特許・知的財産制度",
+      "name": "特許・知的財産制度",
+      "nameEn": "Patent and Intellectual Property System",
+      "category": "用語",
+      "url": "/wiki/term-%E7%89%B9%E8%A8%B1%E3%83%BB%E7%9F%A5%E7%9A%84%E8%B2%A1%E7%94%A3%E5%88%B6%E5%BA%A6"
+    },
+    {
+      "id": "term-犯罪と刑罰体系",
+      "name": "犯罪と刑罰体系",
+      "nameEn": "Crime and Punishment System",
+      "category": "用語",
+      "url": "/wiki/term-%E7%8A%AF%E7%BD%AA%E3%81%A8%E5%88%91%E7%BD%B0%E4%BD%93%E7%B3%BB"
+    },
+    {
+      "id": "term-環境保護法",
+      "name": "環境保護法",
+      "nameEn": "Environmental Protection Law of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E7%92%B0%E5%A2%83%E4%BF%9D%E8%AD%B7%E6%B3%95"
+    },
+    {
+      "id": "term-祝祭・記念日",
+      "name": "祝祭・記念日",
+      "nameEn": "Festivals and Memorial Days of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E7%A5%9D%E7%A5%AD%E3%83%BB%E8%A8%98%E5%BF%B5%E6%97%A5"
+    },
+    {
+      "id": "term-芸術・文化運動",
+      "name": "芸術・文化運動",
+      "nameEn": "Art and Cultural Movements of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E8%8A%B8%E8%A1%93%E3%83%BB%E6%96%87%E5%8C%96%E9%81%8B%E5%8B%95"
+    },
+    {
+      "id": "term-言語体系",
+      "name": "言語体系",
+      "nameEn": "Language System of E16",
+      "category": "用語",
+      "url": "/wiki/term-%E8%A8%80%E8%AA%9E%E4%BD%93%E7%B3%BB"
+    },
+    {
+      "id": "term-通商路の定義",
+      "name": "通商路の定義",
+      "nameEn": "Definition of Trade Routes",
+      "category": "用語",
+      "url": "/wiki/term-%E9%80%9A%E5%95%86%E8%B7%AF%E3%81%AE%E5%AE%9A%E7%BE%A9"
+    },
+    {
+      "id": "term-銀河系コンソーシアム",
+      "name": "銀河系コンソーシアム",
+      "nameEn": "Galactic Consortium",
+      "category": "用語",
+      "url": "/wiki/term-%E9%8A%80%E6%B2%B3%E7%B3%BB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0"
+    },
+    {
+      "id": "Tina/Gue",
+      "name": "ティナ/グエ",
+      "nameEn": "Tina / Gue",
+      "category": "キャラクター",
+      "url": "/wiki/Tina%2FGue"
+    },
+    {
+      "id": "Troyane",
+      "name": "Troyane",
+      "nameEn": "Troyane",
+      "category": "地理",
+      "url": "/wiki/Troyane"
+    },
+    {
+      "id": "UECO",
+      "name": "ユーエコー",
+      "nameEn": "UECO",
+      "category": "組織",
+      "url": "/wiki/UECO"
+    },
+    {
+      "id": "V7",
+      "name": "V7（Vital Seven）",
+      "nameEn": "V7 (Vital Seven)",
+      "category": "組織",
+      "url": "/wiki/V7"
+    },
+    {
+      "id": "Valoria",
+      "name": "ヴァロリア",
+      "nameEn": "Valoria",
+      "category": "地理",
+      "url": "/wiki/Valoria"
+    },
+    {
+      "id": "ZAMLT",
+      "name": "ザムルト",
+      "nameEn": "ZAMLT",
+      "category": "組織",
+      "url": "/wiki/ZAMLT"
+    },
+    {
+      "id": "ZAMLT本部",
+      "name": "ZAMLT本部",
+      "nameEn": "ZAMLT Headquarters",
+      "category": "地理",
+      "url": "/wiki/ZAMLT%E6%9C%AC%E9%83%A8"
+    },
+    {
+      "id": "Σ-Unit",
+      "name": "シグマ・ユニット",
+      "nameEn": "Sigma Unit",
+      "category": "組織",
+      "url": "/wiki/%CE%A3-Unit"
+    },
+    {
+      "id": "アーキアン",
+      "name": "アーキアン",
+      "nameEn": "Archian",
+      "category": "用語",
+      "url": "/wiki/%E3%82%A2%E3%83%BC%E3%82%AD%E3%82%A2%E3%83%B3"
+    },
+    {
+      "id": "アーサー・グリム",
+      "name": "アーサー・グリム",
+      "nameEn": "Arthur Grim",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%BB%E3%82%B0%E3%83%AA%E3%83%A0"
+    },
+    {
+      "id": "アイアン・シンジケート",
+      "name": "アイアン・シンジケート",
+      "nameEn": "Iron Syndicate",
+      "category": "地理",
+      "url": "/wiki/%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%B7%E3%83%B3%E3%82%B8%E3%82%B1%E3%83%BC%E3%83%88"
+    },
+    {
+      "id": "アイク・ロペス",
+      "name": "アイク・ロペス",
+      "nameEn": "Ike Lopez",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%82%A4%E3%82%AF%E3%83%BB%E3%83%AD%E3%83%9A%E3%82%B9"
+    },
+    {
+      "id": "アイナ",
+      "name": "アイナ・フォン・リースフェルト",
+      "nameEn": "Aina von Riesfeldt",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%82%A4%E3%83%8A"
+    },
+    {
+      "id": "アイリス",
+      "name": "アイリス",
+      "nameEn": "Iris",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9"
+    },
+    {
+      "id": "アイリス・ノヴァ",
+      "name": "アイリス・ノヴァ",
+      "nameEn": "Iris Nova",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%8E%E3%83%B4%E3%82%A1"
+    },
+    {
+      "id": "アザゼル",
+      "name": "アザゼル・ヘクトパス",
+      "nameEn": "Azazel Hectopass",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%82%B6%E3%82%BC%E3%83%AB"
+    },
+    {
+      "id": "アドミラル・フロスト",
+      "name": "アドミラル・フロスト",
+      "nameEn": "Admiral Frost",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%89%E3%83%9F%E3%83%A9%E3%83%AB%E3%83%BB%E3%83%95%E3%83%AD%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "アビサル・ドレイン",
+      "name": "アビサル・ドレイン",
+      "nameEn": "Abyssal Drain",
+      "category": "用語",
+      "url": "/wiki/%E3%82%A2%E3%83%93%E3%82%B5%E3%83%AB%E3%83%BB%E3%83%89%E3%83%AC%E3%82%A4%E3%83%B3"
+    },
+    {
+      "id": "アフター戦争",
+      "name": "アフター戦争",
+      "nameEn": "After War",
+      "category": "歴史",
+      "url": "/wiki/%E3%82%A2%E3%83%95%E3%82%BF%E3%83%BC%E6%88%A6%E4%BA%89"
+    },
+    {
+      "id": "アポロン・Dominion大戦",
+      "name": "アポロン・Dominion大戦",
+      "nameEn": "Apollon Dominion War",
+      "category": "用語",
+      "url": "/wiki/%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3%E3%83%BBDominion%E5%A4%A7%E6%88%A6"
+    },
+    {
+      "id": "アポロン・セントラリス",
+      "name": "アポロン・セントラリス",
+      "nameEn": "Apollon Centralis",
+      "category": "用語",
+      "url": "/wiki/%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3%E3%83%BB%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AA%E3%82%B9"
+    },
+    {
+      "id": "アポロン文明圏",
+      "name": "アポロン文明圏",
+      "nameEn": "Apollon",
+      "category": "用語",
+      "url": "/wiki/%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3%E6%96%87%E6%98%8E%E5%9C%8F"
+    },
+    {
+      "id": "アヤカ・リン",
+      "name": "アヤカ・リン",
+      "nameEn": "Ayaka Rin",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%A4%E3%82%AB%E3%83%BB%E3%83%AA%E3%83%B3"
+    },
+    {
+      "id": "アリア・ソル",
+      "name": "アリア・ソル",
+      "nameEn": "Aria Sol",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%AA%E3%82%A2%E3%83%BB%E3%82%BD%E3%83%AB"
+    },
+    {
+      "id": "アルキテクト・ゼン",
+      "name": "アルキテクト・ゼン",
+      "nameEn": "Architect Zen",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%AB%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88%E3%83%BB%E3%82%BC%E3%83%B3"
+    },
+    {
+      "id": "アルゼン・カーリーン",
+      "name": "アルゼン・カーリーン",
+      "nameEn": "Alzen Carine",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%AB%E3%82%BC%E3%83%B3%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%AA%E3%83%BC%E3%83%B3"
+    },
+    {
+      "id": "アルファ・ヴェノム",
+      "name": "アルファ・ヴェノム",
+      "nameEn": "Alpha Venom",
+      "category": "組織",
+      "url": "/wiki/%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%8E%E3%83%A0"
+    },
+    {
+      "id": "アルファ・ケイン",
+      "name": "アルファ・ケイン",
+      "nameEn": "Alpha Kane",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BB%E3%82%B1%E3%82%A4%E3%83%B3"
+    },
+    {
+      "id": "アレン",
+      "name": "アレン",
+      "nameEn": "Allen",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%AC%E3%83%B3"
+    },
+    {
+      "id": "アロエオイル・コーポレーション",
+      "name": "アロエオイル・コーポレーション",
+      "nameEn": "Aloe Oil Corporation",
+      "category": "組織",
+      "url": "/wiki/%E3%82%A2%E3%83%AD%E3%82%A8%E3%82%AA%E3%82%A4%E3%83%AB%E3%83%BB%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "アンダーグラウンド・フィクサー・シャドウ",
+      "name": "アンダーグラウンド・フィクサー・シャドウ",
+      "nameEn": "Underground Fixer Shadow",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%83%BB%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B5%E3%83%BC%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6"
+    },
+    {
+      "id": "アンダーグリッド",
+      "name": "アンダーグリッド",
+      "nameEn": "Undergrid",
+      "category": "地理",
+      "url": "/wiki/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89"
+    },
+    {
+      "id": "アンバサダー・エレシオン",
+      "name": "アンバサダー・エレシオン",
+      "nameEn": "Ambassador Erecion",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%B3%E3%83%90%E3%82%B5%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A8%E3%83%AC%E3%82%B7%E3%82%AA%E3%83%B3"
+    },
+    {
+      "id": "アンバサダー・グランベル",
+      "name": "アンバサダー・グランベル",
+      "nameEn": "Ambassador Granbel",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%B3%E3%83%90%E3%82%B5%E3%83%80%E3%83%BC%E3%83%BB%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%99%E3%83%AB"
+    },
+    {
+      "id": "アンバサダー・ディオクレニス",
+      "name": "アンバサダー・ディオクレニス",
+      "nameEn": "Ambassador Dioclenis",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%B3%E3%83%90%E3%82%B5%E3%83%80%E3%83%BC%E3%83%BB%E3%83%87%E3%82%A3%E3%82%AA%E3%82%AF%E3%83%AC%E3%83%8B%E3%82%B9"
+    },
+    {
+      "id": "アンバサダー・ティレリア",
+      "name": "アンバサダー・ティレリア",
+      "nameEn": "Ambassador Tirelia",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%B3%E3%83%90%E3%82%B5%E3%83%80%E3%83%BC%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AC%E3%83%AA%E3%82%A2"
+    },
+    {
+      "id": "アンバサダー・ファルージャ",
+      "name": "アンバサダー・ファルージャ",
+      "nameEn": "Ambassador Faruja",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A2%E3%83%B3%E3%83%90%E3%82%B5%E3%83%80%E3%83%BC%E3%83%BB%E3%83%95%E3%82%A1%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A3"
+    },
+    {
+      "id": "イェシバトー",
+      "name": "イェシバトー",
+      "nameEn": "Yeshibato",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A4%E3%82%A7%E3%82%B7%E3%83%90%E3%83%88%E3%83%BC"
+    },
+    {
+      "id": "イサベラ・コルネリウス",
+      "name": "イサベラ・コルネリウス",
+      "nameEn": "Isabella Cornelius",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A4%E3%82%B5%E3%83%99%E3%83%A9%E3%83%BB%E3%82%B3%E3%83%AB%E3%83%8D%E3%83%AA%E3%82%A6%E3%82%B9"
+    },
+    {
+      "id": "イズミ",
+      "name": "イズミ",
+      "nameEn": "Izumi",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A4%E3%82%BA%E3%83%9F"
+    },
+    {
+      "id": "イルミーゼ",
+      "name": "イルミーゼ",
+      "nameEn": "Ilmise",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A4%E3%83%AB%E3%83%9F%E3%83%BC%E3%82%BC"
+    },
+    {
+      "id": "ヴァーミリオン",
+      "name": "ヴァーミリオン",
+      "nameEn": "Vermillion",
+      "category": "地理",
+      "url": "/wiki/%E3%83%B4%E3%82%A1%E3%83%BC%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3"
+    },
+    {
+      "id": "ヴァイロン・デアクス",
+      "name": "ヴァイロン・デアクス",
+      "nameEn": "Vylon Deax",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%B4%E3%82%A1%E3%82%A4%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%87%E3%82%A2%E3%82%AF%E3%82%B9"
+    },
+    {
+      "id": "ヴァレリア・トルクアタ",
+      "name": "ヴァレリア・トルクアタ",
+      "nameEn": "Valeria Torquata",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%B4%E3%82%A1%E3%83%AC%E3%83%AA%E3%82%A2%E3%83%BB%E3%83%88%E3%83%AB%E3%82%AF%E3%82%A2%E3%82%BF"
+    },
+    {
+      "id": "ヴィヴィエッタ",
+      "name": "ヴィヴィエッタ",
+      "nameEn": "四楓院ヴィヴィエッタ",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%B4%E3%82%A3%E3%83%B4%E3%82%A3%E3%82%A8%E3%83%83%E3%82%BF"
+    },
+    {
+      "id": "ウィリー",
+      "name": "ウィリー",
+      "nameEn": "Willy",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A6%E3%82%A3%E3%83%AA%E3%83%BC"
+    },
+    {
+      "id": "ヴェズレル",
+      "name": "ヴェズレル",
+      "nameEn": "Vezrel",
+      "category": "地理",
+      "url": "/wiki/%E3%83%B4%E3%82%A7%E3%82%BA%E3%83%AC%E3%83%AB"
+    },
+    {
+      "id": "ヴェル・ナイアード",
+      "name": "ヴェル・ナイアード",
+      "nameEn": "Vel Naiad",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%BB%E3%83%8A%E3%82%A4%E3%82%A2%E3%83%BC%E3%83%89"
+    },
+    {
+      "id": "ヴェルリット一族",
+      "name": "ヴェルリット一族",
+      "nameEn": "Verlit Clan",
+      "category": "組織",
+      "url": "/wiki/%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%AA%E3%83%83%E3%83%88%E4%B8%80%E6%97%8F"
+    },
+    {
+      "id": "ウォーター・オーブ",
+      "name": "ウォーター・オーブ",
+      "nameEn": "Water Orb",
+      "category": "技術",
+      "url": "/wiki/%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%AA%E3%83%BC%E3%83%96"
+    },
+    {
+      "id": "エヴァトロン",
+      "name": "エヴァトロン",
+      "nameEn": "Evatron",
+      "category": "組織",
+      "url": "/wiki/%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%88%E3%83%AD%E3%83%B3"
+    },
+    {
+      "id": "エヴァポリス",
+      "name": "エヴァポリス",
+      "nameEn": "Evapolis",
+      "category": "地理",
+      "url": "/wiki/%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%9D%E3%83%AA%E3%82%B9"
+    },
+    {
+      "id": "エコノミスト・ゴールド",
+      "name": "エコノミスト・ゴールド",
+      "nameEn": "Economist Gold",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%82%B3%E3%83%8E%E3%83%9F%E3%82%B9%E3%83%88%E3%83%BB%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89"
+    },
+    {
+      "id": "エスパー能力",
+      "name": "エスパー能力",
+      "nameEn": "Esper Ability",
+      "category": "技術",
+      "url": "/wiki/%E3%82%A8%E3%82%B9%E3%83%91%E3%83%BC%E8%83%BD%E5%8A%9B"
+    },
+    {
+      "id": "エリオス・ウォルド",
+      "name": "エリオス・ウォルド",
+      "nameEn": "Elios Wald",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AA%E3%82%AA%E3%82%B9%E3%83%BB%E3%82%A6%E3%82%A9%E3%83%AB%E3%83%89"
+    },
+    {
+      "id": "エリオット・シュトラス",
+      "name": "エリオット・シュトラス",
+      "nameEn": "Elliot Strauss",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AA%E3%82%AA%E3%83%83%E3%83%88%E3%83%BB%E3%82%B7%E3%83%A5%E3%83%88%E3%83%A9%E3%82%B9"
+    },
+    {
+      "id": "エリザベス・リンドバーグ",
+      "name": "エリザベス・リンドバーグ",
+      "nameEn": "Elizabeth Lindberg",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AA%E3%82%B6%E3%83%99%E3%82%B9%E3%83%BB%E3%83%AA%E3%83%B3%E3%83%89%E3%83%90%E3%83%BC%E3%82%B0"
+    },
+    {
+      "id": "エル・フォルハウス",
+      "name": "エル・フォルハウス",
+      "nameEn": "El Folhaus",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A9%E3%83%AB%E3%83%8F%E3%82%A6%E3%82%B9"
+    },
+    {
+      "id": "エルダー・イーグル",
+      "name": "エルダー・イーグル",
+      "nameEn": "Elder Eagle",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AB%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A4%E3%83%BC%E3%82%B0%E3%83%AB"
+    },
+    {
+      "id": "エルダー・ウィロー",
+      "name": "エルダー・ウィロー",
+      "nameEn": "Elder Willow",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AB%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A6%E3%82%A3%E3%83%AD%E3%83%BC"
+    },
+    {
+      "id": "エルダー・タイガー",
+      "name": "エルダー・タイガー",
+      "nameEn": "Elder Tiger",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AB%E3%83%80%E3%83%BC%E3%83%BB%E3%82%BF%E3%82%A4%E3%82%AC%E3%83%BC"
+    },
+    {
+      "id": "エルトナ戦争",
+      "name": "エルトナ戦争",
+      "nameEn": "Eltna War",
+      "category": "歴史",
+      "url": "/wiki/%E3%82%A8%E3%83%AB%E3%83%88%E3%83%8A%E6%88%A6%E4%BA%89"
+    },
+    {
+      "id": "エレシオン",
+      "name": "エレシオン",
+      "nameEn": "Elyseon",
+      "category": "用語",
+      "url": "/wiki/%E3%82%A8%E3%83%AC%E3%82%B7%E3%82%AA%E3%83%B3"
+    },
+    {
+      "id": "エレシュ",
+      "name": "エレシュ",
+      "nameEn": "Eresh",
+      "category": "組織",
+      "url": "/wiki/%E3%82%A8%E3%83%AC%E3%82%B7%E3%83%A5"
+    },
+    {
+      "id": "エレシュ・サンクチュアリ",
+      "name": "エレシュ・サンクチュアリ",
+      "nameEn": "Eresh Sanctuary",
+      "category": "組織",
+      "url": "/wiki/%E3%82%A8%E3%83%AC%E3%82%B7%E3%83%A5%E3%83%BB%E3%82%B5%E3%83%B3%E3%82%AF%E3%83%81%E3%83%A5%E3%82%A2%E3%83%AA"
+    },
+    {
+      "id": "エレナ",
+      "name": "エレナ",
+      "nameEn": "Elena",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%AC%E3%83%8A"
+    },
+    {
+      "id": "エンジニア・スター",
+      "name": "エンジニア・スター",
+      "nameEn": "Engineer Star",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC"
+    },
+    {
+      "id": "エンジニア・ピラー",
+      "name": "エンジニア・ピラー",
+      "nameEn": "Engineer Pillar",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%BB%E3%83%94%E3%83%A9%E3%83%BC"
+    },
+    {
+      "id": "エンジニア・ボルト",
+      "name": "エンジニア・ボルト",
+      "nameEn": "Engineer Bolt",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%BB%E3%83%9C%E3%83%AB%E3%83%88"
+    },
+    {
+      "id": "オーギュスト・ゴールド",
+      "name": "オーギュスト・ゴールド",
+      "nameEn": "August Gold",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AA%E3%83%BC%E3%82%AE%E3%83%A5%E3%82%B9%E3%83%88%E3%83%BB%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89"
+    },
+    {
+      "id": "オアシス・ハウス",
+      "name": "オアシス・ハウス",
+      "nameEn": "Oasis House",
+      "category": "地理",
+      "url": "/wiki/%E3%82%AA%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9"
+    },
+    {
+      "id": "オペレーター・コスモ",
+      "name": "オペレーター・コスモ",
+      "nameEn": "Operator Cosmo",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AA%E3%83%9A%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%B3%E3%82%B9%E3%83%A2"
+    },
+    {
+      "id": "オムニバス・エンジン",
+      "name": "オムニバス・エンジン",
+      "nameEn": "Omnibus Engine",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AA%E3%83%A0%E3%83%8B%E3%83%90%E3%82%B9%E3%83%BB%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3"
+    },
+    {
+      "id": "オメガ＝ユリシス",
+      "name": "オメガ＝ユリシス",
+      "nameEn": "Omega=Ulysses",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AA%E3%83%A1%E3%82%AC%EF%BC%9D%E3%83%A6%E3%83%AA%E3%82%B7%E3%82%B9"
+    },
+    {
+      "id": "オラクル",
+      "name": "オラクル",
+      "nameEn": "Oracle",
+      "category": "組織",
+      "url": "/wiki/%E3%82%AA%E3%83%A9%E3%82%AF%E3%83%AB"
+    },
+    {
+      "id": "オルタ・フィールド",
+      "name": "オルタ・フィールド",
+      "nameEn": "Altera Field",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AA%E3%83%AB%E3%82%BF%E3%83%BB%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89"
+    },
+    {
+      "id": "オルダシティ",
+      "name": "オルダシティ",
+      "nameEn": "Olda City",
+      "category": "用語",
+      "url": "/wiki/%E3%82%AA%E3%83%AB%E3%83%80%E3%82%B7%E3%83%86%E3%82%A3"
+    },
+    {
+      "id": "カーラ・ヴェルム",
+      "name": "カーラ・ヴェルム",
+      "nameEn": "Cara Verm",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AB%E3%83%BC%E3%83%A9%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%A0"
+    },
+    {
+      "id": "カイ・アシュフォード",
+      "name": "カイ・アシュフォード",
+      "nameEn": "Kai Ashford",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AB%E3%82%A4%E3%83%BB%E3%82%A2%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89"
+    },
+    {
+      "id": "カイ・エコー",
+      "name": "カイ・エコー",
+      "nameEn": "Kai Echo",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AB%E3%82%A4%E3%83%BB%E3%82%A8%E3%82%B3%E3%83%BC"
+    },
+    {
+      "id": "ガイウス・セプティムス",
+      "name": "ガイウス・セプティムス",
+      "nameEn": "Gaius Septimus",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AC%E3%82%A4%E3%82%A6%E3%82%B9%E3%83%BB%E3%82%BB%E3%83%97%E3%83%86%E3%82%A3%E3%83%A0%E3%82%B9"
+    },
+    {
+      "id": "カウパー波",
+      "name": "カウパー波",
+      "nameEn": "Couper Wave",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AB%E3%82%A6%E3%83%91%E3%83%BC%E6%B3%A2"
+    },
+    {
+      "id": "カスチーナ・テンペスト",
+      "name": "カスチーナ・テンペスト",
+      "nameEn": "Castina Tempest",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AB%E3%82%B9%E3%83%81%E3%83%BC%E3%83%8A%E3%83%BB%E3%83%86%E3%83%B3%E3%83%9A%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "カステリア・グレンヴェルト",
+      "name": "カステリア・グレンヴェルト",
+      "nameEn": "Casteria Grenvelt",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AB%E3%82%B9%E3%83%86%E3%83%AA%E3%82%A2%E3%83%BB%E3%82%B0%E3%83%AC%E3%83%B3%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%88"
+    },
+    {
+      "id": "カタリスト・コア",
+      "name": "カタリスト・コア",
+      "nameEn": "Catalyst Core",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AB%E3%82%BF%E3%83%AA%E3%82%B9%E3%83%88%E3%83%BB%E3%82%B3%E3%82%A2"
+    },
+    {
+      "id": "カタリナ",
+      "name": "カタリナ",
+      "nameEn": "Catalina",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AB%E3%82%BF%E3%83%AA%E3%83%8A"
+    },
+    {
+      "id": "カルロス・ヴァンダム",
+      "name": "カルロス・ヴァンダム",
+      "nameEn": "Carlos Vandam",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AB%E3%83%AB%E3%83%AD%E3%82%B9%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%80%E3%83%A0"
+    },
+    {
+      "id": "ガレス",
+      "name": "ガレス",
+      "nameEn": "Gareth",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AC%E3%83%AC%E3%82%B9"
+    },
+    {
+      "id": "ガロ",
+      "name": "ガロ",
+      "nameEn": "Garo",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AC%E3%83%AD"
+    },
+    {
+      "id": "ギガポリス",
+      "name": "ギガポリス",
+      "nameEn": "Gigapolis",
+      "category": "地理",
+      "url": "/wiki/%E3%82%AE%E3%82%AC%E3%83%9D%E3%83%AA%E3%82%B9"
+    },
+    {
+      "id": "ギガポリス解放戦",
+      "name": "ギガポリス解放戦",
+      "nameEn": "Gigapolis Liberation War",
+      "category": "歴史",
+      "url": "/wiki/%E3%82%AE%E3%82%AC%E3%83%9D%E3%83%AA%E3%82%B9%E8%A7%A3%E6%94%BE%E6%88%A6"
+    },
+    {
+      "id": "ギャビー",
+      "name": "フレデリック・ギャビー",
+      "nameEn": "Frederick Gabby",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AE%E3%83%A3%E3%83%93%E3%83%BC"
+    },
+    {
+      "id": "キャプテン・テクロサス東方支隊",
+      "name": "東方支隊キャプテン",
+      "nameEn": "Captain of Tekrosus Eastern Division",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3%E3%83%BB%E3%83%86%E3%82%AF%E3%83%AD%E3%82%B5%E3%82%B9%E6%9D%B1%E6%96%B9%E6%94%AF%E9%9A%8A"
+    },
+    {
+      "id": "キャプテン・テクロサス特殊部隊",
+      "name": "特殊部隊キャプテン",
+      "nameEn": "Captain of Tekrosus Special Forces",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3%E3%83%BB%E3%83%86%E3%82%AF%E3%83%AD%E3%82%B5%E3%82%B9%E7%89%B9%E6%AE%8A%E9%83%A8%E9%9A%8A"
+    },
+    {
+      "id": "キャプテン・テクロサス第1支隊",
+      "name": "第1支隊キャプテン",
+      "nameEn": "Captain of Tekrosus 1st Division",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3%E3%83%BB%E3%83%86%E3%82%AF%E3%83%AD%E3%82%B5%E3%82%B9%E7%AC%AC1%E6%94%AF%E9%9A%8A"
+    },
+    {
+      "id": "キャプテン・テクロサス第2支隊",
+      "name": "第2支隊キャプテン",
+      "nameEn": "Captain of Tekrosus 2nd Division",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3%E3%83%BB%E3%83%86%E3%82%AF%E3%83%AD%E3%82%B5%E3%82%B9%E7%AC%AC2%E6%94%AF%E9%9A%8A"
+    },
+    {
+      "id": "キャプテン・テクロサス第3支隊",
+      "name": "第3支隊キャプテン",
+      "nameEn": "Captain of Tekrosus 3rd Division",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3%E3%83%BB%E3%83%86%E3%82%AF%E3%83%AD%E3%82%B5%E3%82%B9%E7%AC%AC3%E6%94%AF%E9%9A%8A"
+    },
+    {
+      "id": "キャプテン・ノヴァ",
+      "name": "キャプテン・ノヴァ",
+      "nameEn": "Captain Nova",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3%E3%83%BB%E3%83%8E%E3%83%B4%E3%82%A1"
+    },
+    {
+      "id": "ギル",
+      "name": "ギル",
+      "nameEn": "Gil",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AE%E3%83%AB"
+    },
+    {
+      "id": "クアンタ",
+      "name": "クアンタ・ラボ",
+      "nameEn": "Quanta Lab",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BF"
+    },
+    {
+      "id": "クオリア・コア",
+      "name": "クオリア・コア",
+      "nameEn": "Qualia Core",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AF%E3%82%AA%E3%83%AA%E3%82%A2%E3%83%BB%E3%82%B3%E3%82%A2"
+    },
+    {
+      "id": "クラン・フォーラム",
+      "name": "クラン・フォーラム",
+      "nameEn": "Clan Forum",
+      "category": "組織",
+      "url": "/wiki/%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0"
+    },
+    {
+      "id": "グランベル",
+      "name": "グランベル",
+      "nameEn": "Granbell",
+      "category": "用語",
+      "url": "/wiki/%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%99%E3%83%AB"
+    },
+    {
+      "id": "クリストッフェル次元",
+      "name": "クリストッフェル次元",
+      "nameEn": "Christoffel Dimension",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88%E3%83%83%E3%83%95%E3%82%A7%E3%83%AB%E6%AC%A1%E5%85%83"
+    },
+    {
+      "id": "グリム・ダルゴス",
+      "name": "グリム・ダルゴス",
+      "nameEn": "Grim Dargos",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B0%E3%83%AA%E3%83%A0%E3%83%BB%E3%83%80%E3%83%AB%E3%82%B4%E3%82%B9"
+    },
+    {
+      "id": "グレイモンド・ハウザー",
+      "name": "グレイモンド・ハウザー",
+      "nameEn": "Greymond Hauser",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B0%E3%83%AC%E3%82%A4%E3%83%A2%E3%83%B3%E3%83%89%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B6%E3%83%BC"
+    },
+    {
+      "id": "クレセント大地方",
+      "name": "クレセント大地方",
+      "nameEn": "Crescent Region",
+      "category": "地理",
+      "url": "/wiki/%E3%82%AF%E3%83%AC%E3%82%BB%E3%83%B3%E3%83%88%E5%A4%A7%E5%9C%B0%E6%96%B9"
+    },
+    {
+      "id": "クロセヴィア",
+      "name": "クロセヴィア",
+      "nameEn": "Crosevia",
+      "category": "地理",
+      "url": "/wiki/%E3%82%AF%E3%83%AD%E3%82%BB%E3%83%B4%E3%82%A3%E3%82%A2"
+    },
+    {
+      "id": "クロニクル・ネーム",
+      "name": "クロニクル・ネーム",
+      "nameEn": "Chronicle Name",
+      "category": "用語",
+      "url": "/wiki/%E3%82%AF%E3%83%AD%E3%83%8B%E3%82%AF%E3%83%AB%E3%83%BB%E3%83%8D%E3%83%BC%E3%83%A0"
+    },
+    {
+      "id": "クロノ・ヴァーレント",
+      "name": "クロノ・ヴァーレント",
+      "nameEn": "Chrono Valeint",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%AF%E3%83%AD%E3%83%8E%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%88"
+    },
+    {
+      "id": "クロノキャスト",
+      "name": "クロノキャスト",
+      "nameEn": "Chronocast",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AF%E3%83%AD%E3%83%8E%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "クロマ・アーカイブ",
+      "name": "クロマ・アーカイブ",
+      "nameEn": "Chroma Archive",
+      "category": "技術",
+      "url": "/wiki/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%BB%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96"
+    },
+    {
+      "id": "クワンナラ革命",
+      "name": "クワンナラ革命",
+      "nameEn": "Kwannara Revolution",
+      "category": "歴史",
+      "url": "/wiki/%E3%82%AF%E3%83%AF%E3%83%B3%E3%83%8A%E3%83%A9%E9%9D%A9%E5%91%BD"
+    },
+    {
+      "id": "ケンタウロスレーザー",
+      "name": "ケンタウロスレーザー",
+      "nameEn": "Centaur Laser",
+      "category": "技術",
+      "url": "/wiki/%E3%82%B1%E3%83%B3%E3%82%BF%E3%82%A6%E3%83%AD%E3%82%B9%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC"
+    },
+    {
+      "id": "コーポラタムパブリカ",
+      "name": "コーポラタムパブリカ",
+      "nameEn": "Corporatum Publica",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%A9%E3%82%BF%E3%83%A0%E3%83%91%E3%83%96%E3%83%AA%E3%82%AB"
+    },
+    {
+      "id": "コーポラトクラシー",
+      "name": "コーポラトクラシー",
+      "nameEn": "Corporatocracy",
+      "category": "用語",
+      "url": "/wiki/%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%A9%E3%83%88%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%BC"
+    },
+    {
+      "id": "コーラの疫病",
+      "name": "コーラの疫病",
+      "nameEn": "Corra Plague",
+      "category": "歴史",
+      "url": "/wiki/%E3%82%B3%E3%83%BC%E3%83%A9%E3%81%AE%E7%96%AB%E7%97%85"
+    },
+    {
+      "id": "ゴールデン・ヴェノム",
+      "name": "ゴールデン・ヴェノム",
+      "nameEn": "Golden Venom",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%8E%E3%83%A0"
+    },
+    {
+      "id": "ゴヴァナー・キーン",
+      "name": "ゴヴァナー・キーン",
+      "nameEn": "Governor Keen",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B4%E3%83%B4%E3%82%A1%E3%83%8A%E3%83%BC%E3%83%BB%E3%82%AD%E3%83%BC%E3%83%B3"
+    },
+    {
+      "id": "コマース",
+      "name": "コマース・ディヴィジョン",
+      "nameEn": "Commerce Division",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%BC%E3%82%B9"
+    },
+    {
+      "id": "コマンダー・SSレンジ警備隊長",
+      "name": "SSレンジ警備隊長",
+      "nameEn": "Commander of SS Range Security",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BBSS%E3%83%AC%E3%83%B3%E3%82%B8%E8%AD%A6%E5%82%99%E9%9A%8A%E9%95%B7"
+    },
+    {
+      "id": "コマンダー・アーチャー",
+      "name": "コマンダー・アーチャー",
+      "nameEn": "Commander Archer",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A2%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC"
+    },
+    {
+      "id": "コマンダー・アイアン・シンジケート軍事顧問",
+      "name": "アイアン・シンジケート軍事顧問",
+      "nameEn": "Iron Syndicate Military Advisor",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%B7%E3%83%B3%E3%82%B8%E3%82%B1%E3%83%BC%E3%83%88%E8%BB%8D%E4%BA%8B%E9%A1%A7%E5%95%8F"
+    },
+    {
+      "id": "コマンダー・ヴェルミリオン守備隊長",
+      "name": "ヴェルミリオン守備隊長",
+      "nameEn": "Commander of Vermilion Defense",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3%E5%AE%88%E5%82%99%E9%9A%8A%E9%95%B7"
+    },
+    {
+      "id": "コマンダー・クロセヴィア防衛長",
+      "name": "クロセヴィア防衛長",
+      "nameEn": "Commander of Crocevia Defense",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%82%AF%E3%83%AD%E3%82%BB%E3%83%B4%E3%82%A3%E3%82%A2%E9%98%B2%E8%A1%9B%E9%95%B7"
+    },
+    {
+      "id": "コマンダー・ファールージャ社軍事部長",
+      "name": "ファールージャ社軍事部長",
+      "nameEn": "Faruja Corp Military Director",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A3%E7%A4%BE%E8%BB%8D%E4%BA%8B%E9%83%A8%E9%95%B7"
+    },
+    {
+      "id": "コマンダー・ブルーローズ衛兵長",
+      "name": "ブルーローズ衛兵長",
+      "nameEn": "Commander of Blue Rose Guard",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%83%96%E3%83%AB%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%BA%E8%A1%9B%E5%85%B5%E9%95%B7"
+    },
+    {
+      "id": "コマンダー・ミエルテンガ護衛隊長",
+      "name": "ミエルテンガ護衛隊長",
+      "nameEn": "Commander of Mieltenga Escort",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%83%9F%E3%82%A8%E3%83%AB%E3%83%86%E3%83%B3%E3%82%AC%E8%AD%B7%E8%A1%9B%E9%9A%8A%E9%95%B7"
+    },
+    {
+      "id": "ゴルディロックス",
+      "name": "ゴルディロックス",
+      "nameEn": "Goldilocks",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B4%E3%83%AB%E3%83%87%E3%82%A3%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B9"
+    },
+    {
+      "id": "サイケデリック・コスモロジー",
+      "name": "サイケデリック・コスモロジー",
+      "nameEn": "Psychedelic Cosmology",
+      "category": "用語",
+      "url": "/wiki/%E3%82%B5%E3%82%A4%E3%82%B1%E3%83%87%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%82%B3%E3%82%B9%E3%83%A2%E3%83%AD%E3%82%B8%E3%83%BC"
+    },
+    {
+      "id": "ジーン・カタログ",
+      "name": "ジーン・カタログ",
+      "nameEn": "Gene Catalogue",
+      "category": "用語",
+      "url": "/wiki/%E3%82%B8%E3%83%BC%E3%83%B3%E3%83%BB%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0"
+    },
+    {
+      "id": "ジェネラル・テラ",
+      "name": "ジェネラル・テラ",
+      "nameEn": "General Terra",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AB%E3%83%BB%E3%83%86%E3%83%A9"
+    },
+    {
+      "id": "シェリフ・ブラス",
+      "name": "シェリフ・ブラス",
+      "nameEn": "Sheriff Brass",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%95%E3%83%BB%E3%83%96%E3%83%A9%E3%82%B9"
+    },
+    {
+      "id": "シェロン",
+      "name": "シェロン・ジェラス",
+      "nameEn": "Sheron Jeras",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B7%E3%82%A7%E3%83%AD%E3%83%B3"
+    },
+    {
+      "id": "シギル・アフェクト",
+      "name": "シギル・アフェクト",
+      "nameEn": "Sigil Affect",
+      "category": "用語",
+      "url": "/wiki/%E3%82%B7%E3%82%AE%E3%83%AB%E3%83%BB%E3%82%A2%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88"
+    },
+    {
+      "id": "シグナル",
+      "name": "シグナル・オペレーション",
+      "nameEn": "Signal Operation",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB"
+    },
+    {
+      "id": "シトラ・セレス",
+      "name": "シトラ・セレス",
+      "nameEn": "Sitra Celes",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B7%E3%83%88%E3%83%A9%E3%83%BB%E3%82%BB%E3%83%AC%E3%82%B9"
+    },
+    {
+      "id": "シャーマン・スネーク",
+      "name": "シャーマン・スネーク",
+      "nameEn": "Shaman Snake",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%B3%E3%83%BB%E3%82%B9%E3%83%8D%E3%83%BC%E3%82%AF"
+    },
+    {
+      "id": "シャーマン・フォックス",
+      "name": "シャーマン・フォックス",
+      "nameEn": "Shaman Fox",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%B3%E3%83%BB%E3%83%95%E3%82%A9%E3%83%83%E3%82%AF%E3%82%B9"
+    },
+    {
+      "id": "シャドウ・ユニオン",
+      "name": "シャドウ・ユニオン",
+      "nameEn": "Shadow Union",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6%E3%83%BB%E3%83%A6%E3%83%8B%E3%82%AA%E3%83%B3"
+    },
+    {
+      "id": "シャドウ・リベリオン",
+      "name": "シャドウ・リベリオン",
+      "nameEn": "Shadow Rebellion",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6%E3%83%BB%E3%83%AA%E3%83%99%E3%83%AA%E3%82%AA%E3%83%B3"
+    },
+    {
+      "id": "ジュン",
+      "name": "ジュン",
+      "nameEn": "Jun",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B8%E3%83%A5%E3%83%B3"
+    },
+    {
+      "id": "シルヴィア・クロウ",
+      "name": "シルヴィア・クロウ",
+      "nameEn": "Sylvia Crow",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B7%E3%83%AB%E3%83%B4%E3%82%A3%E3%82%A2%E3%83%BB%E3%82%AF%E3%83%AD%E3%82%A6"
+    },
+    {
+      "id": "シルバー・ヴェノム",
+      "name": "シルバー・ヴェノム",
+      "nameEn": "Silver Venom",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%8E%E3%83%A0"
+    },
+    {
+      "id": "シルバープラント",
+      "name": "シルバープラント",
+      "nameEn": "Silver Plant",
+      "category": "地理",
+      "url": "/wiki/%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E3%83%97%E3%83%A9%E3%83%B3%E3%83%88"
+    },
+    {
+      "id": "シンフォニー・オブ・スターズ",
+      "name": "シンフォニー・オブ・スターズ",
+      "nameEn": "Symphony of Stars",
+      "category": "地理",
+      "url": "/wiki/%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%BC%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA"
+    },
+    {
+      "id": "スクイーズ・アビス",
+      "name": "スクイーズ・アビス",
+      "nameEn": "Squeeze Abyss",
+      "category": "地理",
+      "url": "/wiki/%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%BC%E3%82%BA%E3%83%BB%E3%82%A2%E3%83%93%E3%82%B9"
+    },
+    {
+      "id": "スターク三国",
+      "name": "スターク三国",
+      "nameEn": "Stark Triad Nations",
+      "category": "地理",
+      "url": "/wiki/%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%AF%E4%B8%89%E5%9B%BD"
+    },
+    {
+      "id": "ステーション・マスター・オルビット",
+      "name": "ステーション・マスター・オルビット",
+      "nameEn": "Station Master Orbit",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%AA%E3%83%AB%E3%83%93%E3%83%83%E3%83%88"
+    },
+    {
+      "id": "スティル・アレーナ",
+      "name": "スティル・アレーナ",
+      "nameEn": "Steel Arena",
+      "category": "用語",
+      "url": "/wiki/%E3%82%B9%E3%83%86%E3%82%A3%E3%83%AB%E3%83%BB%E3%82%A2%E3%83%AC%E3%83%BC%E3%83%8A"
+    },
+    {
+      "id": "ストロベリー",
+      "name": "ストロベリー",
+      "nameEn": "Strawberry",
+      "category": "組織",
+      "url": "/wiki/%E3%82%B9%E3%83%88%E3%83%AD%E3%83%99%E3%83%AA%E3%83%BC"
+    },
+    {
+      "id": "スライム危機",
+      "name": "スライム危機",
+      "nameEn": "Slime Crisis",
+      "category": "歴史",
+      "url": "/wiki/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%A0%E5%8D%B1%E6%A9%9F"
+    },
+    {
+      "id": "セクスタス連合",
+      "name": "セクスタス連合",
+      "nameEn": "Sextus Alliance",
+      "category": "組織",
+      "url": "/wiki/%E3%82%BB%E3%82%AF%E3%82%B9%E3%82%BF%E3%82%B9%E9%80%A3%E5%90%88"
+    },
+    {
+      "id": "ゼナ",
+      "name": "ゼナ",
+      "nameEn": "Zena",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BC%E3%83%8A"
+    },
+    {
+      "id": "セバスチャン・ヴァレリウス",
+      "name": "セバスチャン・ヴァレリウス",
+      "nameEn": "Sebastian Valerius",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%90%E3%82%B9%E3%83%81%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%AC%E3%83%AA%E3%82%A6%E3%82%B9"
+    },
+    {
+      "id": "ゼブラ・コーポレーション",
+      "name": "ゼブラ・コーポレーション",
+      "nameEn": "Zebra Corporation",
+      "category": "組織",
+      "url": "/wiki/%E3%82%BC%E3%83%96%E3%83%A9%E3%83%BB%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "セラ・ムーンライト",
+      "name": "セラ・ムーンライト",
+      "nameEn": "Cera Moonlight",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%A9%E3%83%BB%E3%83%A0%E3%83%BC%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%88"
+    },
+    {
+      "id": "セラフィム",
+      "name": "セラフィム",
+      "nameEn": "Seraphim",
+      "category": "組織",
+      "url": "/wiki/%E3%82%BB%E3%83%A9%E3%83%95%E3%82%A3%E3%83%A0"
+    },
+    {
+      "id": "セリア・ドミニクス",
+      "name": "セリア・ドミニクス",
+      "nameEn": "Celia Dminix",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%AA%E3%82%A2%E3%83%BB%E3%83%89%E3%83%9F%E3%83%8B%E3%82%AF%E3%82%B9"
+    },
+    {
+      "id": "セリア黄金期",
+      "name": "セリア黄金期",
+      "nameEn": "Celia Golden Age",
+      "category": "歴史",
+      "url": "/wiki/%E3%82%BB%E3%83%AA%E3%82%A2%E9%BB%84%E9%87%91%E6%9C%9F"
+    },
+    {
+      "id": "セル・ウィーヴ",
+      "name": "セル・ウィーヴ",
+      "nameEn": "Cell Weave",
+      "category": "技術",
+      "url": "/wiki/%E3%82%BB%E3%83%AB%E3%83%BB%E3%82%A6%E3%82%A3%E3%83%BC%E3%83%B4"
+    },
+    {
+      "id": "セル・リーダー・イースト",
+      "name": "セル・リーダー・イースト",
+      "nameEn": "Cell Leader East",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%AB%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A4%E3%83%BC%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "セル・リーダー・ウエスト",
+      "name": "セル・リーダー・ウエスト",
+      "nameEn": "Cell Leader West",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%AB%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A6%E3%82%A8%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "セル・リーダー・サウス",
+      "name": "セル・リーダー・サウス",
+      "nameEn": "Cell Leader South",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%AB%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E3%82%B5%E3%82%A6%E3%82%B9"
+    },
+    {
+      "id": "セル・リーダー・ノース",
+      "name": "セル・リーダー・ノース",
+      "nameEn": "Cell Leader North",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%AB%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E3%83%8E%E3%83%BC%E3%82%B9"
+    },
+    {
+      "id": "セルヴァ・ドーン",
+      "name": "セルヴァ・ドーン",
+      "nameEn": "Selva Dawn",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BB%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%BB%E3%83%89%E3%83%BC%E3%83%B3"
+    },
+    {
+      "id": "セントラル・タワー",
+      "name": "セントラル・タワー",
+      "nameEn": "Central Tower",
+      "category": "地理",
+      "url": "/wiki/%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%83%BB%E3%82%BF%E3%83%AF%E3%83%BC"
+    },
+    {
+      "id": "ソル・ハーモニー",
+      "name": "ソル・ハーモニー",
+      "nameEn": "Sol Harmony",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BD%E3%83%AB%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%A2%E3%83%8B%E3%83%BC"
+    },
+    {
+      "id": "ソル・ブレイズ",
+      "name": "ソル・ブレイズ",
+      "nameEn": "Sol Blaze",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%BD%E3%83%AB%E3%83%BB%E3%83%96%E3%83%AC%E3%82%A4%E3%82%BA"
+    },
+    {
+      "id": "チーフ・グリズリー",
+      "name": "チーフ・グリズリー",
+      "nameEn": "Chief Grizzly",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%81%E3%83%BC%E3%83%95%E3%83%BB%E3%82%B0%E3%83%AA%E3%82%BA%E3%83%AA%E3%83%BC"
+    },
+    {
+      "id": "チーフ・ドラゴン",
+      "name": "チーフ・ドラゴン",
+      "nameEn": "Chief Dragon",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%81%E3%83%BC%E3%83%95%E3%83%BB%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3"
+    },
+    {
+      "id": "チョンクォン戦争",
+      "name": "チョンクォン戦争",
+      "nameEn": "Chonkwon War",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%81%E3%83%A7%E3%83%B3%E3%82%AF%E3%82%A9%E3%83%B3%E6%88%A6%E4%BA%89"
+    },
+    {
+      "id": "ティエリア",
+      "name": "ティエリア",
+      "nameEn": "Tyeria",
+      "category": "用語",
+      "url": "/wiki/%E3%83%86%E3%82%A3%E3%82%A8%E3%83%AA%E3%82%A2"
+    },
+    {
+      "id": "ディオクレニス",
+      "name": "ディオクレニス",
+      "nameEn": "Dioclenis",
+      "category": "用語",
+      "url": "/wiki/%E3%83%87%E3%82%A3%E3%82%AA%E3%82%AF%E3%83%AC%E3%83%8B%E3%82%B9"
+    },
+    {
+      "id": "ティムール・シャー",
+      "name": "ティムール・シャー",
+      "nameEn": "Timur Shah",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%86%E3%82%A3%E3%83%A0%E3%83%BC%E3%83%AB%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%BC"
+    },
+    {
+      "id": "ディメンション・ブリッジ",
+      "name": "ディメンション・ブリッジ",
+      "nameEn": "Dimension Bridge",
+      "category": "技術",
+      "url": "/wiki/%E3%83%87%E3%82%A3%E3%83%A1%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8"
+    },
+    {
+      "id": "テクニシャン・クオンタム",
+      "name": "テクニシャン・クオンタム",
+      "nameEn": "Technician Quantum",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%86%E3%82%AF%E3%83%8B%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%BB%E3%82%AF%E3%82%AA%E3%83%B3%E3%82%BF%E3%83%A0"
+    },
+    {
+      "id": "テクニシャン・ディメンション",
+      "name": "テクニシャン・ディメンション",
+      "nameEn": "Technician Dimension",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%86%E3%82%AF%E3%83%8B%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%87%E3%82%A3%E3%83%A1%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "テクニシャン・テンポラル",
+      "name": "テクニシャン・テンポラル",
+      "nameEn": "Technician Temporal",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%86%E3%82%AF%E3%83%8B%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%83%B3%E3%83%9D%E3%83%A9%E3%83%AB"
+    },
+    {
+      "id": "テクノ宗教運動",
+      "name": "テクノ宗教運動",
+      "nameEn": "Techno-Religious Movement",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%86%E3%82%AF%E3%83%8E%E5%AE%97%E6%95%99%E9%81%8B%E5%8B%95"
+    },
+    {
+      "id": "テクノ文化ルネサンス",
+      "name": "テクノ文化ルネサンス",
+      "nameEn": "Techno-Cultural Renaissance",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%86%E3%82%AF%E3%83%8E%E6%96%87%E5%8C%96%E3%83%AB%E3%83%8D%E3%82%B5%E3%83%B3%E3%82%B9"
+    },
+    {
+      "id": "テクロサス",
+      "name": "テクロサス",
+      "nameEn": "Tekrosas",
+      "category": "組織",
+      "url": "/wiki/%E3%83%86%E3%82%AF%E3%83%AD%E3%82%B5%E3%82%B9"
+    },
+    {
+      "id": "デザーター・ミスト",
+      "name": "デザーター・ミスト",
+      "nameEn": "Deserter Mist",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%87%E3%82%B6%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%9F%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "デザーター・レイ",
+      "name": "デザーター・レイ",
+      "nameEn": "Deserter Ray",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%87%E3%82%B6%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%A4"
+    },
+    {
+      "id": "デザイナー・ルナ",
+      "name": "デザイナー・ルナ",
+      "nameEn": "Designer Luna",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%83%BC%E3%83%BB%E3%83%AB%E3%83%8A"
+    },
+    {
+      "id": "テスラ地区",
+      "name": "テスラ地区",
+      "nameEn": "Tesla District",
+      "category": "地理",
+      "url": "/wiki/%E3%83%86%E3%82%B9%E3%83%A9%E5%9C%B0%E5%8C%BA"
+    },
+    {
+      "id": "テミルタロン",
+      "name": "テミルタロン",
+      "nameEn": "Temirtalon",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%86%E3%83%9F%E3%83%AB%E3%82%BF%E3%83%AD%E3%83%B3"
+    },
+    {
+      "id": "テラン朝共和制",
+      "name": "テラン朝共和制",
+      "nameEn": "Terran Republic",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%86%E3%83%A9%E3%83%B3%E6%9C%9D%E5%85%B1%E5%92%8C%E5%88%B6"
+    },
+    {
+      "id": "テリアン反乱",
+      "name": "テリアン反乱",
+      "nameEn": "Terrian Rebellion",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%86%E3%83%AA%E3%82%A2%E3%83%B3%E5%8F%8D%E4%B9%B1"
+    },
+    {
+      "id": "テリアン反乱軍",
+      "name": "テリアン反乱軍",
+      "nameEn": "Terrian Rebel Army",
+      "category": "組織",
+      "url": "/wiki/%E3%83%86%E3%83%AA%E3%82%A2%E3%83%B3%E5%8F%8D%E4%B9%B1%E8%BB%8D"
+    },
+    {
+      "id": "テンプル・オブ・ホライゾン",
+      "name": "テンプル・オブ・ホライゾン",
+      "nameEn": "Temple of Horizon",
+      "category": "組織",
+      "url": "/wiki/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AB%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%9B%E3%83%A9%E3%82%A4%E3%82%BE%E3%83%B3"
+    },
+    {
+      "id": "ドクター・SSレンジ通信研究員",
+      "name": "SSレンジ通信研究員",
+      "nameEn": "SS Range Communication Researcher",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BBSS%E3%83%AC%E3%83%B3%E3%82%B8%E9%80%9A%E4%BF%A1%E7%A0%94%E7%A9%B6%E5%93%A1"
+    },
+    {
+      "id": "ドクター・アイアン・シンジケート材料学者",
+      "name": "アイアン・シンジケート材料学者",
+      "nameEn": "Iron Syndicate Materials Scientist",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%B7%E3%83%B3%E3%82%B8%E3%82%B1%E3%83%BC%E3%83%88%E6%9D%90%E6%96%99%E5%AD%A6%E8%80%85"
+    },
+    {
+      "id": "ドクター・ヴェルミリオン主席研究員",
+      "name": "ヴェルミリオン主席研究員",
+      "nameEn": "Chief Researcher of Vermilion",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3%E4%B8%BB%E5%B8%AD%E7%A0%94%E7%A9%B6%E5%93%A1"
+    },
+    {
+      "id": "ドクター・オクタヴィア",
+      "name": "ドクター・オクタヴィア",
+      "nameEn": "Doctor Octavia",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%AA%E3%82%AF%E3%82%BF%E3%83%B4%E3%82%A3%E3%82%A2"
+    },
+    {
+      "id": "ドクター・クロセヴィア生物学者",
+      "name": "クロセヴィア生物学者",
+      "nameEn": "Crocevia Biologist",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%AF%E3%83%AD%E3%82%BB%E3%83%B4%E3%82%A3%E3%82%A2%E7%94%9F%E7%89%A9%E5%AD%A6%E8%80%85"
+    },
+    {
+      "id": "ドクター・ファールージャ社次元物理学者",
+      "name": "ファールージャ社次元物理学者",
+      "nameEn": "Faruja Corp Dimensional Physicist",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A3%E7%A4%BE%E6%AC%A1%E5%85%83%E7%89%A9%E7%90%86%E5%AD%A6%E8%80%85"
+    },
+    {
+      "id": "ドクター・ブルーローズ技術顧問",
+      "name": "ブルーローズ技術顧問",
+      "nameEn": "Blue Rose Technical Advisor",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%96%E3%83%AB%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%BA%E6%8A%80%E8%A1%93%E9%A1%A7%E5%95%8F"
+    },
+    {
+      "id": "ドクター・ミエルテンガ医務官",
+      "name": "ミエルテンガ医務官",
+      "nameEn": "Mieltenga Medical Officer",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%9F%E3%82%A8%E3%83%AB%E3%83%86%E3%83%B3%E3%82%AC%E5%8C%BB%E5%8B%99%E5%AE%98"
+    },
+    {
+      "id": "トリスタン・スターク",
+      "name": "トリスタン・スターク",
+      "nameEn": "Tristan Stark",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%88%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%AF"
+    },
+    {
+      "id": "トリニティ・アライアンス",
+      "name": "トリニティ・アライアンス",
+      "nameEn": "Trinity Alliance",
+      "category": "組織",
+      "url": "/wiki/%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BB%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9"
+    },
+    {
+      "id": "トレーダー・ブロンズ",
+      "name": "トレーダー・ブロンズ",
+      "nameEn": "Trader Bronze",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%88%E3%83%AC%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E3%83%96%E3%83%AD%E3%83%B3%E3%82%BA"
+    },
+    {
+      "id": "トロン・コーポレーション",
+      "name": "トロン・コーポレーション",
+      "nameEn": "Tron Corporation",
+      "category": "組織",
+      "url": "/wiki/%E3%83%88%E3%83%AD%E3%83%B3%E3%83%BB%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "ナノハッキング技術",
+      "name": "ナノハッキング技術",
+      "nameEn": "Nano-Hacking Technology",
+      "category": "技術",
+      "url": "/wiki/%E3%83%8A%E3%83%8E%E3%83%8F%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E6%8A%80%E8%A1%93"
+    },
+    {
+      "id": "ナノファイバーブーツ",
+      "name": "ナノファイバーブーツ",
+      "nameEn": "Nanofiber Boots",
+      "category": "技術",
+      "url": "/wiki/%E3%83%8A%E3%83%8E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%90%E3%83%BC%E3%83%96%E3%83%BC%E3%83%84"
+    },
+    {
+      "id": "ナノメディシン",
+      "name": "ナノメディシン",
+      "nameEn": "Nanomedicine",
+      "category": "技術",
+      "url": "/wiki/%E3%83%8A%E3%83%8E%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B7%E3%83%B3"
+    },
+    {
+      "id": "ナビゲーター・セイラ",
+      "name": "ナビゲーター・セイラ",
+      "nameEn": "Navigator Seira",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%BB%E3%82%A4%E3%83%A9"
+    },
+    {
+      "id": "ニニギス",
+      "name": "ニニギス・カラス",
+      "nameEn": "Ninigisu Karasu",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%8B%E3%83%8B%E3%82%AE%E3%82%B9"
+    },
+    {
+      "id": "ニューロリンク・インターフェース",
+      "name": "ニューロリンク・インターフェース",
+      "nameEn": "Neurolink Interface",
+      "category": "技術",
+      "url": "/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%AD%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%BB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9"
+    },
+    {
+      "id": "ネイ・フューチャー",
+      "name": "ネイ・フューチャー",
+      "nameEn": "Ney Future",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%8D%E3%82%A4%E3%83%BB%E3%83%95%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC"
+    },
+    {
+      "id": "ネイサン・コリンド",
+      "name": "ネイサン・コリンド",
+      "nameEn": "Nathan Corlind",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%8D%E3%82%A4%E3%82%B5%E3%83%B3%E3%83%BB%E3%82%B3%E3%83%AA%E3%83%B3%E3%83%89"
+    },
+    {
+      "id": "ネイト・クロス",
+      "name": "ネイト・クロス",
+      "nameEn": "Nate Cross",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%8D%E3%82%A4%E3%83%88%E3%83%BB%E3%82%AF%E3%83%AD%E3%82%B9"
+    },
+    {
+      "id": "ネオクラン同盟",
+      "name": "ネオクラン同盟",
+      "nameEn": "Neoclan Alliance",
+      "category": "組織",
+      "url": "/wiki/%E3%83%8D%E3%82%AA%E3%82%AF%E3%83%A9%E3%83%B3%E5%90%8C%E7%9B%9F"
+    },
+    {
+      "id": "ネオンクレーター宮殿",
+      "name": "ネオンクレーター宮殿",
+      "nameEn": "Neon Crater Palace",
+      "category": "地理",
+      "url": "/wiki/%E3%83%8D%E3%82%AA%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC%E5%AE%AE%E6%AE%BF"
+    },
+    {
+      "id": "ネオンコロシアム",
+      "name": "ネオンコロシアム",
+      "nameEn": "Neon Colosseum",
+      "category": "地理",
+      "url": "/wiki/%E3%83%8D%E3%82%AA%E3%83%B3%E3%82%B3%E3%83%AD%E3%82%B7%E3%82%A2%E3%83%A0"
+    },
+    {
+      "id": "ノスタルジア・コロニー",
+      "name": "ノスタルジア・コロニー",
+      "nameEn": "Nostalgia Colony",
+      "category": "地理",
+      "url": "/wiki/%E3%83%8E%E3%82%B9%E3%82%BF%E3%83%AB%E3%82%B8%E3%82%A2%E3%83%BB%E3%82%B3%E3%83%AD%E3%83%8B%E3%83%BC"
+    },
+    {
+      "id": "バーズ帝国",
+      "name": "バーズ帝国",
+      "nameEn": "Birds Empire",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%90%E3%83%BC%E3%82%BA%E5%B8%9D%E5%9B%BD"
+    },
+    {
+      "id": "パイオニア・オーロラ",
+      "name": "パイオニア・オーロラ",
+      "nameEn": "Pioneer Aurora",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%91%E3%82%A4%E3%82%AA%E3%83%8B%E3%82%A2%E3%83%BB%E3%82%AA%E3%83%BC%E3%83%AD%E3%83%A9"
+    },
+    {
+      "id": "パイオニア・ネビュラ",
+      "name": "パイオニア・ネビュラ",
+      "nameEn": "Pioneer Nebula",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%91%E3%82%A4%E3%82%AA%E3%83%8B%E3%82%A2%E3%83%BB%E3%83%8D%E3%83%93%E3%83%A5%E3%83%A9"
+    },
+    {
+      "id": "パイオニア・フロンティア",
+      "name": "パイオニア・フロンティア",
+      "nameEn": "Pioneer Frontier",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%91%E3%82%A4%E3%82%AA%E3%83%8B%E3%82%A2%E3%83%BB%E3%83%95%E3%83%AD%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2"
+    },
+    {
+      "id": "パイオニア・ホライズン",
+      "name": "パイオニア・ホライズン",
+      "nameEn": "Pioneer Horizon",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%91%E3%82%A4%E3%82%AA%E3%83%8B%E3%82%A2%E3%83%BB%E3%83%9B%E3%83%A9%E3%82%A4%E3%82%BA%E3%83%B3"
+    },
+    {
+      "id": "バイオリアクター",
+      "name": "バイオリアクター",
+      "nameEn": "Bioreactor",
+      "category": "技術",
+      "url": "/wiki/%E3%83%90%E3%82%A4%E3%82%AA%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC"
+    },
+    {
+      "id": "パクス・ロンバルディカ",
+      "name": "パクス・ロンバルディカ",
+      "nameEn": "Pax Lombardica",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%91%E3%82%AF%E3%82%B9%E3%83%BB%E3%83%AD%E3%83%B3%E3%83%90%E3%83%AB%E3%83%87%E3%82%A3%E3%82%AB"
+    },
+    {
+      "id": "バザール",
+      "name": "バザール・ネットワーク",
+      "nameEn": "Bazaar Network",
+      "category": "組織",
+      "url": "/wiki/%E3%83%90%E3%82%B6%E3%83%BC%E3%83%AB"
+    },
+    {
+      "id": "ハシーム・ファティマ",
+      "name": "ハシーム・ファティマ",
+      "nameEn": "Hashim Fatima",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%8F%E3%82%B7%E3%83%BC%E3%83%A0%E3%83%BB%E3%83%95%E3%82%A1%E3%83%86%E3%82%A3%E3%83%9E"
+    },
+    {
+      "id": "パラトン",
+      "name": "パラトン",
+      "nameEn": "Palaton",
+      "category": "地理",
+      "url": "/wiki/%E3%83%91%E3%83%A9%E3%83%88%E3%83%B3"
+    },
+    {
+      "id": "バンカー・シルバー",
+      "name": "バンカー・シルバー",
+      "nameEn": "Banker Silver",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%90%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%BB%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC"
+    },
+    {
+      "id": "ヒーローエージェンシー",
+      "name": "ヒーローエージェンシー",
+      "nameEn": "Hero Agency",
+      "category": "組織",
+      "url": "/wiki/%E3%83%92%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%82%B7%E3%83%BC"
+    },
+    {
+      "id": "ピアトリーノ",
+      "name": "ピアトリーノ",
+      "nameEn": "Piatorino",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%94%E3%82%A2%E3%83%88%E3%83%AA%E3%83%BC%E3%83%8E"
+    },
+    {
+      "id": "ビキニバリア",
+      "name": "ビキニバリア",
+      "nameEn": "Bikini Barrier",
+      "category": "技術",
+      "url": "/wiki/%E3%83%93%E3%82%AD%E3%83%8B%E3%83%90%E3%83%AA%E3%82%A2"
+    },
+    {
+      "id": "ビューロクラット・アルファ",
+      "name": "ビューロクラット・アルファ",
+      "nameEn": "Bureaucrat Alpha",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%93%E3%83%A5%E3%83%BC%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%83%E3%83%88%E3%83%BB%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1"
+    },
+    {
+      "id": "ビューロクラット・ガンマ",
+      "name": "ビューロクラット・ガンマ",
+      "nameEn": "Bureaucrat Gamma",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%93%E3%83%A5%E3%83%BC%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%83%E3%83%88%E3%83%BB%E3%82%AC%E3%83%B3%E3%83%9E"
+    },
+    {
+      "id": "ビューロクラット・デルタ",
+      "name": "ビューロクラット・デルタ",
+      "nameEn": "Bureaucrat Delta",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%93%E3%83%A5%E3%83%BC%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83%AB%E3%82%BF"
+    },
+    {
+      "id": "ビューロクラット・ベータ",
+      "name": "ビューロクラット・ベータ",
+      "nameEn": "Bureaucrat Beta",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%93%E3%83%A5%E3%83%BC%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%83%E3%83%88%E3%83%BB%E3%83%99%E3%83%BC%E3%82%BF"
+    },
+    {
+      "id": "ファールージャ社",
+      "name": "ファールージャ社",
+      "nameEn": "Faruja Corporation",
+      "category": "組織",
+      "url": "/wiki/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A3%E7%A4%BE"
+    },
+    {
+      "id": "ファティマ連邦",
+      "name": "ファティマ連邦",
+      "nameEn": "Fatima Federation",
+      "category": "地理",
+      "url": "/wiki/%E3%83%95%E3%82%A1%E3%83%86%E3%82%A3%E3%83%9E%E9%80%A3%E9%82%A6"
+    },
+    {
+      "id": "ファランクス",
+      "name": "ファランクス",
+      "nameEn": "Phalanx",
+      "category": "組織",
+      "url": "/wiki/%E3%83%95%E3%82%A1%E3%83%A9%E3%83%B3%E3%82%AF%E3%82%B9"
+    },
+    {
+      "id": "ファランクス（初代皇帝）",
+      "name": "ファランクス（初代皇帝）",
+      "nameEn": "Phalanx",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%95%E3%82%A1%E3%83%A9%E3%83%B3%E3%82%AF%E3%82%B9%EF%BC%88%E5%88%9D%E4%BB%A3%E7%9A%87%E5%B8%9D%EF%BC%89"
+    },
+    {
+      "id": "ファリエル",
+      "name": "ファリエル",
+      "nameEn": "Fariel",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%95%E3%82%A1%E3%83%AA%E3%82%A8%E3%83%AB"
+    },
+    {
+      "id": "ファルージャ",
+      "name": "ファルージャ",
+      "nameEn": "Fallujah",
+      "category": "用語",
+      "url": "/wiki/%E3%83%95%E3%82%A1%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A3"
+    },
+    {
+      "id": "フィオナ",
+      "name": "フィオナ",
+      "nameEn": "Klaus Fiona",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%95%E3%82%A3%E3%82%AA%E3%83%8A"
+    },
+    {
+      "id": "フェルミ音楽",
+      "name": "フェルミ音楽",
+      "nameEn": "Fermi Music",
+      "category": "用語",
+      "url": "/wiki/%E3%83%95%E3%82%A7%E3%83%AB%E3%83%9F%E9%9F%B3%E6%A5%BD"
+    },
+    {
+      "id": "フェンドラ人",
+      "name": "フェンドラ人",
+      "nameEn": "Fendra",
+      "category": "用語",
+      "url": "/wiki/%E3%83%95%E3%82%A7%E3%83%B3%E3%83%89%E3%83%A9%E4%BA%BA"
+    },
+    {
+      "id": "プラズマカノン",
+      "name": "プラズマカノン",
+      "nameEn": "Plasma Cannon",
+      "category": "技術",
+      "url": "/wiki/%E3%83%97%E3%83%A9%E3%82%BA%E3%83%9E%E3%82%AB%E3%83%8E%E3%83%B3"
+    },
+    {
+      "id": "ブラックダイス",
+      "name": "ブラックダイス",
+      "nameEn": "Black Dice",
+      "category": "技術",
+      "url": "/wiki/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%80%E3%82%A4%E3%82%B9"
+    },
+    {
+      "id": "プランナー・アクア",
+      "name": "プランナー・アクア",
+      "nameEn": "Planner Aqua",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%97%E3%83%A9%E3%83%B3%E3%83%8A%E3%83%BC%E3%83%BB%E3%82%A2%E3%82%AF%E3%82%A2"
+    },
+    {
+      "id": "フリーダム・ファイター・ストーム",
+      "name": "フリーダム・ファイター・ストーム",
+      "nameEn": "Freedom Fighter Storm",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%83%80%E3%83%A0%E3%83%BB%E3%83%95%E3%82%A1%E3%82%A4%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A0"
+    },
+    {
+      "id": "ブルーローズ",
+      "name": "ブルーローズ",
+      "nameEn": "Blue Rose",
+      "category": "地理",
+      "url": "/wiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%BA"
+    },
+    {
+      "id": "ブルーワイヤ",
+      "name": "ブルーワイヤ",
+      "nameEn": "Blue Wire",
+      "category": "技術",
+      "url": "/wiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%A4"
+    },
+    {
+      "id": "プロキオ",
+      "name": "プロキオ",
+      "nameEn": "Prokio",
+      "category": "組織",
+      "url": "/wiki/%E3%83%97%E3%83%AD%E3%82%AD%E3%82%AA"
+    },
+    {
+      "id": "プロキオ・クリア",
+      "name": "プロキオ・クリア",
+      "nameEn": "Prokio Clear",
+      "category": "技術",
+      "url": "/wiki/%E3%83%97%E3%83%AD%E3%82%AD%E3%82%AA%E3%83%BB%E3%82%AF%E3%83%AA%E3%82%A2"
+    },
+    {
+      "id": "プロキオ・ネクサス",
+      "name": "プロキオ・ネクサス",
+      "nameEn": "Prokio Nexus",
+      "category": "地理",
+      "url": "/wiki/%E3%83%97%E3%83%AD%E3%82%AD%E3%82%AA%E3%83%BB%E3%83%8D%E3%82%AF%E3%82%B5%E3%82%B9"
+    },
+    {
+      "id": "プロトコルX",
+      "name": "プロトコルX",
+      "nameEn": "Protocol X",
+      "category": "技術",
+      "url": "/wiki/%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%ABX"
+    },
+    {
+      "id": "プロフェッサー・クイントゥス",
+      "name": "プロフェッサー・クイントゥス",
+      "nameEn": "Professor Quintus",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%97%E3%83%AD%E3%83%95%E3%82%A7%E3%83%83%E3%82%B5%E3%83%BC%E3%83%BB%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%88%E3%82%A5%E3%82%B9"
+    },
+    {
+      "id": "ヘクトル・ヴァン",
+      "name": "ヘクトル・ヴァン",
+      "nameEn": "Hector Van",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%B3"
+    },
+    {
+      "id": "ヘゲモニー・パラドックス",
+      "name": "ヘゲモニー・パラドックス",
+      "nameEn": "Hegemony Paradox",
+      "category": "用語",
+      "url": "/wiki/%E3%83%98%E3%82%B2%E3%83%A2%E3%83%8B%E3%83%BC%E3%83%BB%E3%83%91%E3%83%A9%E3%83%89%E3%83%83%E3%82%AF%E3%82%B9"
+    },
+    {
+      "id": "ヘゲモニー・パラドックス（概要）",
+      "name": "ヘゲモニー・パラドックス",
+      "nameEn": "Hegemony Paradox",
+      "category": "用語",
+      "url": "/wiki/%E3%83%98%E3%82%B2%E3%83%A2%E3%83%8B%E3%83%BC%E3%83%BB%E3%83%91%E3%83%A9%E3%83%89%E3%83%83%E3%82%AF%E3%82%B9%EF%BC%88%E6%A6%82%E8%A6%81%EF%BC%89"
+    },
+    {
+      "id": "ペルセポネ",
+      "name": "ペルセポネ",
+      "nameEn": "Persephone",
+      "category": "技術",
+      "url": "/wiki/%E3%83%9A%E3%83%AB%E3%82%BB%E3%83%9D%E3%83%8D"
+    },
+    {
+      "id": "ボグダス・ジャベリン",
+      "name": "ボグダス・ジャベリン",
+      "nameEn": "Bogdas Javelin",
+      "category": "組織",
+      "url": "/wiki/%E3%83%9C%E3%82%B0%E3%83%80%E3%82%B9%E3%83%BB%E3%82%B8%E3%83%A3%E3%83%99%E3%83%AA%E3%83%B3"
+    },
+    {
+      "id": "ボブリスティ",
+      "name": "ボブリスティ",
+      "nameEn": "Boblisti",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9C%E3%83%96%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3"
+    },
+    {
+      "id": "ホライゾン・ゲート",
+      "name": "ホライゾン・ゲート",
+      "nameEn": "Horizon Gate",
+      "category": "技術",
+      "url": "/wiki/%E3%83%9B%E3%83%A9%E3%82%A4%E3%82%BE%E3%83%B3%E3%83%BB%E3%82%B2%E3%83%BC%E3%83%88"
+    },
+    {
+      "id": "ポロンポロ",
+      "name": "ポロンポロ",
+      "nameEn": "Polonpolo",
+      "category": "用語",
+      "url": "/wiki/%E3%83%9D%E3%83%AD%E3%83%B3%E3%83%9D%E3%83%AD"
+    },
+    {
+      "id": "ホワイトノイズ",
+      "name": "ホワイトノイズ",
+      "nameEn": "White Noise",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%8E%E3%82%A4%E3%82%BA"
+    },
+    {
+      "id": "マーストリヒト革命",
+      "name": "マーストリヒト革命",
+      "nameEn": "Maastricht Revolution",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%9E%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%92%E3%83%88%E9%9D%A9%E5%91%BD"
+    },
+    {
+      "id": "マイナー・クラスト",
+      "name": "マイナー・クラスト",
+      "nameEn": "Miner Crust",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%BC%E3%83%BB%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "マイナー・コア",
+      "name": "マイナー・コア",
+      "nameEn": "Miner Core",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%BC%E3%83%BB%E3%82%B3%E3%82%A2"
+    },
+    {
+      "id": "マイナー・ディープ",
+      "name": "マイナー・ディープ",
+      "nameEn": "Miner Deep",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%BC%E3%83%BB%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97"
+    },
+    {
+      "id": "マスター・ヴェノム",
+      "name": "マスター・ヴェノム",
+      "nameEn": "Master Venom",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%B4%E3%82%A7%E3%83%8E%E3%83%A0"
+    },
+    {
+      "id": "マスター・クインシアス",
+      "name": "マスター・クインシアス",
+      "nameEn": "Master Quinsias",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%B7%E3%82%A2%E3%82%B9"
+    },
+    {
+      "id": "マトリカル・カウンシル",
+      "name": "マトリカル・カウンシル",
+      "nameEn": "Matrical Council",
+      "category": "組織",
+      "url": "/wiki/%E3%83%9E%E3%83%88%E3%83%AA%E3%82%AB%E3%83%AB%E3%83%BB%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%B7%E3%83%AB"
+    },
+    {
+      "id": "マトリカル・リフォーム運動",
+      "name": "マトリカル・リフォーム運動",
+      "nameEn": "Matrical Reform Movement",
+      "category": "組織",
+      "url": "/wiki/%E3%83%9E%E3%83%88%E3%83%AA%E3%82%AB%E3%83%AB%E3%83%BB%E3%83%AA%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E9%81%8B%E5%8B%95"
+    },
+    {
+      "id": "マドリス・カーネル",
+      "name": "マドリス・カーネル",
+      "nameEn": "Madrisernel",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%83%89%E3%83%AA%E3%82%B9%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB"
+    },
+    {
+      "id": "マモン・コーポレーション",
+      "name": "マモン・コーポレーション",
+      "nameEn": "Mammon Corporation",
+      "category": "組織",
+      "url": "/wiki/%E3%83%9E%E3%83%A2%E3%83%B3%E3%83%BB%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "マリーナ・ボビン",
+      "name": "マリーナ・ボビン",
+      "nameEn": "Marina Bobbin",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BB%E3%83%9C%E3%83%93%E3%83%B3"
+    },
+    {
+      "id": "マルクス・アウレリウス",
+      "name": "マルクス・アウレリウス",
+      "nameEn": "Marcus Aurelius",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9E%E3%83%AB%E3%82%AF%E3%82%B9%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%AC%E3%83%AA%E3%82%A6%E3%82%B9"
+    },
+    {
+      "id": "マルチバース開拓",
+      "name": "マルチバース開拓",
+      "nameEn": "Multiverse Exploration",
+      "category": "技術",
+      "url": "/wiki/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%90%E3%83%BC%E3%82%B9%E9%96%8B%E6%8B%93"
+    },
+    {
+      "id": "ミエルテンガ",
+      "name": "ミエルテンガ",
+      "nameEn": "Mielteunga",
+      "category": "地理",
+      "url": "/wiki/%E3%83%9F%E3%82%A8%E3%83%AB%E3%83%86%E3%83%B3%E3%82%AC"
+    },
+    {
+      "id": "ミカエル・ガブリエリ",
+      "name": "ミカエル・ガブリエリ",
+      "nameEn": "Mikael Gabrieli",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9F%E3%82%AB%E3%82%A8%E3%83%AB%E3%83%BB%E3%82%AC%E3%83%96%E3%83%AA%E3%82%A8%E3%83%AA"
+    },
+    {
+      "id": "ミナ・エウレカ・エルンスト",
+      "name": "ミナ・エウレカ・エルンスト",
+      "nameEn": "Mina Eureka Ernst",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9F%E3%83%8A%E3%83%BB%E3%82%A8%E3%82%A6%E3%83%AC%E3%82%AB%E3%83%BB%E3%82%A8%E3%83%AB%E3%83%B3%E3%82%B9%E3%83%88"
+    },
+    {
+      "id": "ミュー",
+      "name": "ミュー",
+      "nameEn": "Myu",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9F%E3%83%A5%E3%83%BC"
+    },
+    {
+      "id": "ミユシャリ",
+      "name": "ミユシャリ",
+      "nameEn": "Miyushari",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9F%E3%83%A6%E3%82%B7%E3%83%A3%E3%83%AA"
+    },
+    {
+      "id": "ミラ・レゾナンス",
+      "name": "ミラ・レゾナンス",
+      "nameEn": "Mira Resonance",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%9F%E3%83%A9%E3%83%BB%E3%83%AC%E3%82%BE%E3%83%8A%E3%83%B3%E3%82%B9"
+    },
+    {
+      "id": "メイヤー・ストーン",
+      "name": "メイヤー・ストーン",
+      "nameEn": "Mayor Stone",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%A1%E3%82%A4%E3%83%A4%E3%83%BC%E3%83%BB%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3"
+    },
+    {
+      "id": "メルディア戦争",
+      "name": "メルディア戦争",
+      "nameEn": "Meldia War",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%A1%E3%83%AB%E3%83%87%E3%82%A3%E3%82%A2%E6%88%A6%E4%BA%89"
+    },
+    {
+      "id": "ヨニック",
+      "name": "ヨニック",
+      "nameEn": "Yonick",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%A8%E3%83%8B%E3%83%83%E3%82%AF"
+    },
+    {
+      "id": "ラストマン",
+      "name": "ラストマン",
+      "nameEn": "Lastman",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%A9%E3%82%B9%E3%83%88%E3%83%9E%E3%83%B3"
+    },
+    {
+      "id": "ラファエル・ドレイク",
+      "name": "ラファエル・ドレイク",
+      "nameEn": "Rafael Drake",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%A9%E3%83%95%E3%82%A1%E3%82%A8%E3%83%AB%E3%83%BB%E3%83%89%E3%83%AC%E3%82%A4%E3%82%AF"
+    },
+    {
+      "id": "リーチ・ドレイン",
+      "name": "リーチ・ドレイン",
+      "nameEn": "Leechdrain",
+      "category": "技術",
+      "url": "/wiki/%E3%83%AA%E3%83%BC%E3%83%81%E3%83%BB%E3%83%89%E3%83%AC%E3%82%A4%E3%83%B3"
+    },
+    {
+      "id": "リサーチャー・アルファ",
+      "name": "リサーチャー・アルファ",
+      "nameEn": "Researcher Alpha",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1"
+    },
+    {
+      "id": "リサーチャー・ガンマ",
+      "name": "リサーチャー・ガンマ",
+      "nameEn": "Researcher Gamma",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%AC%E3%83%B3%E3%83%9E"
+    },
+    {
+      "id": "リサーチャー・ベータ",
+      "name": "リサーチャー・ベータ",
+      "nameEn": "Researcher Beta",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%99%E3%83%BC%E3%82%BF"
+    },
+    {
+      "id": "リック・ウォーデン",
+      "name": "リック・ウォーデン",
+      "nameEn": "Rick Warden",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%87%E3%83%B3"
+    },
+    {
+      "id": "リベリオン・リーダー・アッシュ",
+      "name": "リベリオン・リーダー・アッシュ",
+      "nameEn": "Rebellion Leader Ash",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AA%E3%83%99%E3%83%AA%E3%82%AA%E3%83%B3%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E3%82%A2%E3%83%83%E3%82%B7%E3%83%A5"
+    },
+    {
+      "id": "リミナル・フォージ",
+      "name": "リミナル・フォージ",
+      "nameEn": "Liminal Forge",
+      "category": "技術",
+      "url": "/wiki/%E3%83%AA%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B8"
+    },
+    {
+      "id": "リリス・ヴェイン",
+      "name": "リリス・ヴェイン",
+      "nameEn": "Lilith Vaine",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AA%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%B4%E3%82%A7%E3%82%A4%E3%83%B3"
+    },
+    {
+      "id": "リンク",
+      "name": "リンク・プロトコル",
+      "nameEn": "Link Protocol",
+      "category": "組織",
+      "url": "/wiki/%E3%83%AA%E3%83%B3%E3%82%AF"
+    },
+    {
+      "id": "リンダ",
+      "name": "リンダ",
+      "nameEn": "Linda",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AA%E3%83%B3%E3%83%80"
+    },
+    {
+      "id": "ルシア・ネオ",
+      "name": "ルシア・ネオ",
+      "nameEn": "Lucia Neo",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AB%E3%82%B7%E3%82%A2%E3%83%BB%E3%83%8D%E3%82%AA"
+    },
+    {
+      "id": "ルナ・サバイバー",
+      "name": "ルナ・サバイバー",
+      "nameEn": "Luna Survivor",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AB%E3%83%8A%E3%83%BB%E3%82%B5%E3%83%90%E3%82%A4%E3%83%90%E3%83%BC"
+    },
+    {
+      "id": "ルナ・ノヴァ三世",
+      "name": "ルナ・ノヴァ三世",
+      "nameEn": "Luna Nova III",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AB%E3%83%8A%E3%83%BB%E3%83%8E%E3%83%B4%E3%82%A1%E4%B8%89%E4%B8%96"
+    },
+    {
+      "id": "ルレンツ・コーポレーション",
+      "name": "ルレンツ・コーポレーション",
+      "nameEn": "Lulentz Corporation",
+      "category": "組織",
+      "url": "/wiki/%E3%83%AB%E3%83%AC%E3%83%B3%E3%83%84%E3%83%BB%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "レーン",
+      "name": "レーン・システム",
+      "nameEn": "Lane System",
+      "category": "技術",
+      "url": "/wiki/%E3%83%AC%E3%83%BC%E3%83%B3"
+    },
+    {
+      "id": "レイ・ヴァンデルト",
+      "name": "レイ・ヴァンデルト",
+      "nameEn": "Ray Vandelte",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%A4%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%87%E3%83%AB%E3%83%88"
+    },
+    {
+      "id": "レイド・カキザキ",
+      "name": "レイド・カキザキ",
+      "nameEn": "Raid Kakizaki",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%A4%E3%83%89%E3%83%BB%E3%82%AB%E3%82%AD%E3%82%B6%E3%82%AD"
+    },
+    {
+      "id": "レイラ・ヴィレル・ノヴァ",
+      "name": "レイラ・ヴィレル・ノヴァ",
+      "nameEn": "Layla Virell Nova",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%A4%E3%83%A9%E3%83%BB%E3%83%B4%E3%82%A3%E3%83%AC%E3%83%AB%E3%83%BB%E3%83%8E%E3%83%B4%E3%82%A1"
+    },
+    {
+      "id": "レヴィリア・サーペンティナ",
+      "name": "レヴィリア・サーペンティナ",
+      "nameEn": "Levilia Serpentina",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%83%B4%E3%82%A3%E3%83%AA%E3%82%A2%E3%83%BB%E3%82%B5%E3%83%BC%E3%83%9A%E3%83%B3%E3%83%86%E3%82%A3%E3%83%8A"
+    },
+    {
+      "id": "レオン",
+      "name": "レオン",
+      "nameEn": "Leon",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%AA%E3%83%B3"
+    },
+    {
+      "id": "レジスタンス・コマンダー・フレイム",
+      "name": "レジスタンス・コマンダー・フレイム",
+      "nameEn": "Resistance Commander Flame",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%BB%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC%E3%83%BB%E3%83%95%E3%83%AC%E3%82%A4%E3%83%A0"
+    },
+    {
+      "id": "レジスタンス・スリー",
+      "name": "レジスタンス・スリー",
+      "nameEn": "Resistance Three",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%BB%E3%82%B9%E3%83%AA%E3%83%BC"
+    },
+    {
+      "id": "レジスタンス・ツー",
+      "name": "レジスタンス・ツー",
+      "nameEn": "Resistance Two",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%84%E3%83%BC"
+    },
+    {
+      "id": "レジスタンス・フォー",
+      "name": "レジスタンス・フォー",
+      "nameEn": "Resistance Four",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC"
+    },
+    {
+      "id": "レジスタンス・ワン",
+      "name": "レジスタンス・ワン",
+      "nameEn": "Resistance One",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%AF%E3%83%B3"
+    },
+    {
+      "id": "レックス・ドラコ",
+      "name": "レックス・ドラコ",
+      "nameEn": "Rex Draco",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%83%89%E3%83%A9%E3%82%B3"
+    },
+    {
+      "id": "レン・ブラックウッド",
+      "name": "レン・ブラックウッド",
+      "nameEn": "Ren Blackwood",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AC%E3%83%B3%E3%83%BB%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%82%A6%E3%83%83%E3%83%89"
+    },
+    {
+      "id": "ロースター",
+      "name": "ロースター",
+      "nameEn": "Roastar",
+      "category": "組織",
+      "url": "/wiki/%E3%83%AD%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC"
+    },
+    {
+      "id": "ロースター・コア",
+      "name": "ロースター・コア",
+      "nameEn": "Roastar Core",
+      "category": "地理",
+      "url": "/wiki/%E3%83%AD%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%B3%E3%82%A2"
+    },
+    {
+      "id": "ロナン・アーサ",
+      "name": "ロナン・アーサ",
+      "nameEn": "Ronan Arthur",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AD%E3%83%8A%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%BC%E3%82%B5"
+    },
+    {
+      "id": "ロレンツィオ国際大学",
+      "name": "ロレンツィオ国際大学",
+      "nameEn": "Lorenzio International University",
+      "category": "地理",
+      "url": "/wiki/%E3%83%AD%E3%83%AC%E3%83%B3%E3%83%84%E3%82%A3%E3%82%AA%E5%9B%BD%E9%9A%9B%E5%A4%A7%E5%AD%A6"
+    },
+    {
+      "id": "ロンバルディア帝国",
+      "name": "ロンバルディア帝国",
+      "nameEn": "Lombardia Empire",
+      "category": "組織",
+      "url": "/wiki/%E3%83%AD%E3%83%B3%E3%83%90%E3%83%AB%E3%83%87%E3%82%A3%E3%82%A2%E5%B8%9D%E5%9B%BD"
+    },
+    {
+      "id": "ロンバルディア戦争",
+      "name": "ロンバルディア戦争",
+      "nameEn": "Lombardia War",
+      "category": "歴史",
+      "url": "/wiki/%E3%83%AD%E3%83%B3%E3%83%90%E3%83%AB%E3%83%87%E3%82%A3%E3%82%A2%E6%88%A6%E4%BA%89"
+    },
+    {
+      "id": "ワドリナ",
+      "name": "ワドリナ",
+      "nameEn": "Wadorina",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%83%AF%E3%83%89%E3%83%AA%E3%83%8A"
+    },
+    {
+      "id": "伴共役",
+      "name": "伴共役",
+      "nameEn": "Ban-Kyōyaku",
+      "category": "技術",
+      "url": "/wiki/%E4%BC%B4%E5%85%B1%E5%BD%B9"
+    },
+    {
+      "id": "副官・エメラルド",
+      "name": "副官・エメラルド",
+      "nameEn": "Vice Commander Emerald",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%89%AF%E5%AE%98%E3%83%BB%E3%82%A8%E3%83%A1%E3%83%A9%E3%83%AB%E3%83%89"
+    },
+    {
+      "id": "副官・クリムゾン",
+      "name": "副官・クリムゾン",
+      "nameEn": "Vice Commander Crimson",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%89%AF%E5%AE%98%E3%83%BB%E3%82%AF%E3%83%AA%E3%83%A0%E3%82%BE%E3%83%B3"
+    },
+    {
+      "id": "副官・サファイア",
+      "name": "副官・サファイア",
+      "nameEn": "Vice Commander Sapphire",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%89%AF%E5%AE%98%E3%83%BB%E3%82%B5%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2"
+    },
+    {
+      "id": "医療官・ヘイズ",
+      "name": "医療官・ヘイズ",
+      "nameEn": "Medical Officer Haze",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%8C%BB%E7%99%82%E5%AE%98%E3%83%BB%E3%83%98%E3%82%A4%E3%82%BA"
+    },
+    {
+      "id": "商工会議長",
+      "name": "商工会議長",
+      "nameEn": "Chamber of Commerce Chairman",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%95%86%E5%B7%A5%E4%BC%9A%E8%AD%B0%E9%95%B7"
+    },
+    {
+      "id": "地下街",
+      "name": "地下街",
+      "nameEn": "Underground City",
+      "category": "地理",
+      "url": "/wiki/%E5%9C%B0%E4%B8%8B%E8%A1%97"
+    },
+    {
+      "id": "大司教",
+      "name": "大司教",
+      "nameEn": "Archbishop",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%A4%A7%E5%8F%B8%E6%95%99"
+    },
+    {
+      "id": "大広場",
+      "name": "大広場",
+      "nameEn": "Grand Square",
+      "category": "地理",
+      "url": "/wiki/%E5%A4%A7%E5%BA%83%E5%A0%B4"
+    },
+    {
+      "id": "女王リアナ・ソリス",
+      "name": "女王リアナ・ソリス",
+      "nameEn": "Queen Liana Solis",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%A5%B3%E7%8E%8B%E3%83%AA%E3%82%A2%E3%83%8A%E3%83%BB%E3%82%BD%E3%83%AA%E3%82%B9"
+    },
+    {
+      "id": "宇宙連合会合",
+      "name": "宇宙連合会合",
+      "nameEn": "Universal Federation Summit",
+      "category": "用語",
+      "url": "/wiki/%E5%AE%87%E5%AE%99%E9%80%A3%E5%90%88%E4%BC%9A%E5%90%88"
+    },
+    {
+      "id": "弦太郎",
+      "name": "弦太郎",
+      "nameEn": "Gentaro",
+      "category": "キャラクター",
+      "url": "/wiki/%E5%BC%A6%E5%A4%AA%E9%83%8E"
+    },
+    {
+      "id": "強化グローブ",
+      "name": "強化グローブ",
+      "nameEn": "Power Glove",
+      "category": "技術",
+      "url": "/wiki/%E5%BC%B7%E5%8C%96%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%96"
+    },
+    {
+      "id": "惑星Solaris",
+      "name": "惑星Solaris",
+      "nameEn": "Planet Solaris",
+      "category": "地理",
+      "url": "/wiki/%E6%83%91%E6%98%9FSolaris"
+    },
+    {
+      "id": "惑星ビブリオ",
+      "name": "惑星ビブリオ",
+      "nameEn": "Planet Biblio",
+      "category": "地理",
+      "url": "/wiki/%E6%83%91%E6%98%9F%E3%83%93%E3%83%96%E3%83%AA%E3%82%AA"
+    },
+    {
+      "id": "技術啓蒙時代",
+      "name": "技術啓蒙時代",
+      "nameEn": "Technological Enlightenment Era",
+      "category": "歴史",
+      "url": "/wiki/%E6%8A%80%E8%A1%93%E5%95%93%E8%92%99%E6%99%82%E4%BB%A3"
+    },
+    {
+      "id": "搾取バクテリア",
+      "name": "搾取バクテリア",
+      "nameEn": "Extraction Bacteria",
+      "category": "技術",
+      "url": "/wiki/%E6%90%BE%E5%8F%96%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2"
+    },
+    {
+      "id": "搾取ヒル",
+      "name": "搾取ヒル",
+      "nameEn": "Extraction Leech",
+      "category": "技術",
+      "url": "/wiki/%E6%90%BE%E5%8F%96%E3%83%92%E3%83%AB"
+    },
+    {
+      "id": "搾取プラズマ弾",
+      "name": "搾取プラズマ弾",
+      "nameEn": "Extraction Plasma Shell",
+      "category": "技術",
+      "url": "/wiki/%E6%90%BE%E5%8F%96%E3%83%97%E3%83%A9%E3%82%BA%E3%83%9E%E5%BC%BE"
+    },
+    {
+      "id": "搾取触手",
+      "name": "搾取触手",
+      "nameEn": "Extraction Tentacle",
+      "category": "技術",
+      "url": "/wiki/%E6%90%BE%E5%8F%96%E8%A7%A6%E6%89%8B"
+    },
+    {
+      "id": "新ヘルシンキ宣言",
+      "name": "新ヘルシンキ宣言",
+      "nameEn": "New Helsinki Declaration",
+      "category": "歴史",
+      "url": "/wiki/%E6%96%B0%E3%83%98%E3%83%AB%E3%82%B7%E3%83%B3%E3%82%AD%E5%AE%A3%E8%A8%80"
+    },
+    {
+      "id": "曲率航法",
+      "name": "曲率航法",
+      "nameEn": "Warp Navigation",
+      "category": "技術",
+      "url": "/wiki/%E6%9B%B2%E7%8E%87%E8%88%AA%E6%B3%95"
+    },
+    {
+      "id": "東暦",
+      "name": "東暦（E暦）",
+      "nameEn": "Eastern Calendar (E Calendar)",
+      "category": "歴史",
+      "url": "/wiki/%E6%9D%B1%E6%9A%A6"
+    },
+    {
+      "id": "次元の塔",
+      "name": "次元の塔",
+      "nameEn": "Dimensional Tower",
+      "category": "地理",
+      "url": "/wiki/%E6%AC%A1%E5%85%83%E3%81%AE%E5%A1%94"
+    },
+    {
+      "id": "次元の塔（ZAMLT本社）",
+      "name": "シルバープラント",
+      "nameEn": "Silver Plant",
+      "category": "地理",
+      "url": "/wiki/%E6%AC%A1%E5%85%83%E3%81%AE%E5%A1%94%EF%BC%88ZAMLT%E6%9C%AC%E7%A4%BE%EF%BC%89"
+    },
+    {
+      "id": "次元兵器",
+      "name": "次元兵器",
+      "nameEn": "Dimension Weapon",
+      "category": "技術",
+      "url": "/wiki/%E6%AC%A1%E5%85%83%E5%85%B5%E5%99%A8"
+    },
+    {
+      "id": "次元極地平",
+      "name": "次元極地平",
+      "nameEn": "Dimension Horizon",
+      "category": "技術",
+      "url": "/wiki/%E6%AC%A1%E5%85%83%E6%A5%B5%E5%9C%B0%E5%B9%B3"
+    },
+    {
+      "id": "次元階梯パンディクト",
+      "name": "次元階梯パンディクト",
+      "nameEn": "Pandict Dimension Ladder",
+      "category": "技術",
+      "url": "/wiki/%E6%AC%A1%E5%85%83%E9%9A%8E%E6%A2%AF%E3%83%91%E3%83%B3%E3%83%87%E3%82%A3%E3%82%AF%E3%83%88"
+    },
+    {
+      "id": "男性指令省",
+      "name": "男性指令省",
+      "nameEn": "Male Directive Ministry",
+      "category": "組織",
+      "url": "/wiki/%E7%94%B7%E6%80%A7%E6%8C%87%E4%BB%A4%E7%9C%81"
+    },
+    {
+      "id": "科学官・アリス",
+      "name": "科学官・アリス",
+      "nameEn": "Science Officer Alice",
+      "category": "キャラクター",
+      "url": "/wiki/%E7%A7%91%E5%AD%A6%E5%AE%98%E3%83%BB%E3%82%A2%E3%83%AA%E3%82%B9"
+    },
+    {
+      "id": "第五次繁栄期",
+      "name": "第五次繁栄期",
+      "nameEn": "Fifth Prosperity Period",
+      "category": "歴史",
+      "url": "/wiki/%E7%AC%AC%E4%BA%94%E6%AC%A1%E7%B9%81%E6%A0%84%E6%9C%9F"
+    },
+    {
+      "id": "虚無の塔",
+      "name": "虚無の塔",
+      "nameEn": "Tower of Void",
+      "category": "地理",
+      "url": "/wiki/%E8%99%9A%E7%84%A1%E3%81%AE%E5%A1%94"
+    },
+    {
+      "id": "通信長官",
+      "name": "通信長官",
+      "nameEn": "Communications Commissioner",
+      "category": "キャラクター",
+      "url": "/wiki/%E9%80%9A%E4%BF%A1%E9%95%B7%E5%AE%98"
+    },
+    {
+      "id": "重力崩壊弾頭",
+      "name": "重力崩壊弾頭",
+      "nameEn": "Gravity Collapse Warhead",
+      "category": "技術",
+      "url": "/wiki/%E9%87%8D%E5%8A%9B%E5%B4%A9%E5%A3%8A%E5%BC%BE%E9%A0%AD"
+    },
+    {
+      "id": "量子テレポーテーション",
+      "name": "量子テレポーテーション",
+      "nameEn": "Quantum Teleportation",
+      "category": "技術",
+      "url": "/wiki/%E9%87%8F%E5%AD%90%E3%83%86%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+    },
+    {
+      "id": "量子演算コア",
+      "name": "量子演算コア",
+      "nameEn": "Quantum Computing Core",
+      "category": "技術",
+      "url": "/wiki/%E9%87%8F%E5%AD%90%E6%BC%94%E7%AE%97%E3%82%B3%E3%82%A2"
+    },
+    {
+      "id": "銀河系コンソーシアム",
+      "name": "銀河系コンソーシアム",
+      "nameEn": "Galactic Consortium",
+      "category": "組織",
+      "url": "/wiki/%E9%8A%80%E6%B2%B3%E7%B3%BB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0"
+    }
+  ]
+}

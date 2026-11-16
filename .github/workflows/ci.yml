@@ -23,5 +23,11 @@ jobs:
         run: node --test scripts/sync-edu-wiki.test.mjs
       - name: Build knowledge shards from the real archive
         run: node scripts/build-kb.mjs
+      - name: Validate Hyperfleet tool inventory and unverified statuses
+        run: |
+          node scripts/validate-hyperfleet-catalog.mjs
+          node --test scripts/validate-hyperfleet-catalog.test.mjs
+          node --test scripts/hyperfleet-free-stack.test.mjs
+          node scripts/hyperfleet-free-stack.mjs --repo infocollect
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

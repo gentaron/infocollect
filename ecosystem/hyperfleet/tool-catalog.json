@@ -24,9 +24,19 @@
       "date": "2026-03-23"
     },
     "SELF": {
-      "title": "Hyperfleet側の追加候補（ゆいまるの使用状況は未確認）",
+      "title": "独立した無料・OSS代替候補（本人使用状況は不明）",
       "url": null,
       "date": "2026-11-16"
+    },
+    "AWESOME": {
+      "title": "無料ツールの比較紹介（導入実績ではない）",
+      "url": "https://note.com/humble_bobcat51/n/n55bf6a004255",
+      "date": "2026-05-30"
+    },
+    "REM": {
+      "title": "REMのOSS調査・紹介（使用を主張しない）",
+      "url": "https://note.com/humble_bobcat51/n/naa276858275e",
+      "date": "2026-11-14"
     }
   },
   "statusLegend": {
@@ -47,7 +57,7 @@
     "excluded": "Do not install automatically.",
     "candidate": "Independent additional suggestion; not proof of author non-use."
   },
-  "toolCount": 188,
+  "toolCount": 284,
   "tools": [
     {
       "id": "T001",
@@ -57,7 +67,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "already",
-      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement.",
+      "officialUrl": "https://github.com/anomalyco/opencode",
+      "runtime": "existing-capability-observed",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T002",
@@ -66,8 +80,12 @@
       "reported": "reported_active",
       "source": "N12",
       "owner": "agent-runner",
-      "adoption": "already",
-      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+      "adoption": "defer",
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement. Proprietary/cloud account costs; exclude from zero-budget baseline.",
+      "officialUrl": "https://github.com/anthropics/claude-code",
+      "runtime": "catalog-only",
+      "freeMode": "not-zero-cost-by-default",
+      "autoInstall": false
     },
     {
       "id": "T003",
@@ -76,8 +94,12 @@
       "reported": "reported_active",
       "source": "N12",
       "owner": "agent-runner",
-      "adoption": "already",
-      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+      "adoption": "defer",
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement. Proprietary/cloud account costs; exclude from zero-budget baseline.",
+      "officialUrl": "https://github.com/openai/codex",
+      "runtime": "catalog-only",
+      "freeMode": "not-zero-cost-by-default",
+      "autoInstall": false
     },
     {
       "id": "T004",
@@ -87,7 +109,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "already",
-      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement.",
+      "officialUrl": "https://openrouter.ai/",
+      "runtime": "existing-capability-observed",
+      "freeMode": "limited-free-quota",
+      "autoInstall": false
     },
     {
       "id": "T005",
@@ -97,7 +123,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "already",
-      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement."
+      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement.",
+      "officialUrl": null,
+      "runtime": "existing-capability-observed",
+      "freeMode": "limited-free-quota",
+      "autoInstall": false
     },
     {
       "id": "T006",
@@ -107,7 +137,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://github.com/Niko1221/Strata",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T007",
@@ -117,7 +151,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://github.com/RandoTeam/4gbVramStrata",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T008",
@@ -127,7 +165,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://github.com/unslothai/unsloth",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T009",
@@ -137,7 +179,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T010",
@@ -147,7 +193,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T011",
@@ -157,7 +207,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T012",
@@ -167,7 +221,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://huggingface.co/LiquidAI/d1-2B",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T013",
@@ -177,7 +235,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout."
+      "notes": "GPU local runtime optional; only existing small decision gate is in hub, no large GPU rollout.",
+      "officialUrl": "https://cactuscompute.com/needle",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T014",
@@ -187,7 +249,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only.",
+      "officialUrl": "https://github.com/tinyhumansai/openhuman",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T015",
@@ -197,7 +263,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only.",
+      "officialUrl": "https://github.com/skalesapp/skales",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T016",
@@ -207,7 +277,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only.",
+      "officialUrl": "https://github.com/PrefectHQ/prefect",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T017",
@@ -217,7 +291,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only.",
+      "officialUrl": "https://github.com/mobile-next/mobile-mcp",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T018",
@@ -227,7 +305,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only.",
+      "officialUrl": "https://github.com/h4ckf0r0day/obscura",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T019",
@@ -237,7 +319,11 @@
       "source": "N12",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only."
+      "notes": "Local orchestration never added to thin agent-runner; evaluate in specialist runners only.",
+      "officialUrl": "https://github.com/DietrichGebert/ponytail",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T020",
@@ -247,7 +333,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/storytold/photocraft",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T021",
@@ -257,7 +347,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/storytold/lightcraft",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T022",
@@ -267,7 +361,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/storytold/vectorcraft",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T023",
@@ -277,7 +375,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/storytold/figcraft",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T024",
@@ -287,7 +389,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T025",
@@ -297,7 +403,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/kanaworksai-hue/sozai-search-mcp",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T026",
@@ -307,7 +417,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/shitagaki-lab/see-through",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T027",
@@ -317,7 +431,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T028",
@@ -327,7 +445,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/storytold/gridcraft",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T029",
@@ -337,7 +459,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/nyblnet/bento",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T030",
@@ -347,7 +473,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Visual tools may require GPU, licenses, and platform checks."
+      "notes": "Visual tools may require GPU, licenses, and platform checks.",
+      "officialUrl": "https://github.com/Yuzzyuk/marketing-os",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T031",
@@ -357,7 +487,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T032",
@@ -367,7 +501,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages.",
+      "officialUrl": "https://github.com/storytold/filmcraft",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T033",
@@ -377,7 +515,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages.",
+      "officialUrl": "https://github.com/storytold/anicraft",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T034",
@@ -387,7 +529,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T035",
@@ -397,7 +543,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages."
+      "notes": "VaizStudio and small Rust OBS are self-built and not distributable as generic packages.",
+      "officialUrl": "https://github.com/kajisho5/ffmpeg-skill",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T036",
@@ -407,7 +557,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Media models require explicit resource/budget validation."
+      "notes": "Media models require explicit resource/budget validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T037",
@@ -417,7 +571,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Media models require explicit resource/budget validation."
+      "notes": "Media models require explicit resource/budget validation.",
+      "officialUrl": "https://github.com/timoncool/YuE2-Studio",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T038",
@@ -427,7 +585,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Media models require explicit resource/budget validation."
+      "notes": "Media models require explicit resource/budget validation.",
+      "officialUrl": "https://github.com/852wa/JIZURA",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T039",
@@ -437,7 +599,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Media models require explicit resource/budget validation."
+      "notes": "Media models require explicit resource/budget validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T040",
@@ -447,7 +613,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Media models require explicit resource/budget validation."
+      "notes": "Media models require explicit resource/budget validation.",
+      "officialUrl": "https://huggingface.co/collections/pfnet/plamo-3-translate",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T041",
@@ -457,7 +627,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": "https://github.com/yuimaruofbook/PierrotKnowledge2",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T042",
@@ -467,7 +641,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": "https://helixnotes.com/",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T043",
@@ -477,7 +655,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T044",
@@ -487,7 +669,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": "https://github.com/virgiliojr94/book-to-skill",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T045",
@@ -497,7 +683,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": "https://github.com/firecrawl/pdf-inspector",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T046",
@@ -507,7 +697,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": "https://github.com/mvanhorn/last30days-skill",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T047",
@@ -517,7 +711,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": "https://github.com/FreshRSS/FreshRSS",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T048",
@@ -527,7 +725,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused."
+      "notes": "PierrotKnowledge2 is an external author's custom project; FreshRSS automation reportedly paused.",
+      "officialUrl": "https://github.com/yjid/kensaku",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T049",
@@ -537,7 +739,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval."
+      "notes": "No secret migration or self-host deployment without separate approval.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T050",
@@ -547,7 +753,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval."
+      "notes": "No secret migration or self-host deployment without separate approval.",
+      "officialUrl": "https://github.com/NVIDIA/OpenShell",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T051",
@@ -557,7 +767,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval."
+      "notes": "No secret migration or self-host deployment without separate approval.",
+      "officialUrl": "https://github.com/cloudflare/security-audit-skill",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T052",
@@ -567,7 +781,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval."
+      "notes": "No secret migration or self-host deployment without separate approval.",
+      "officialUrl": "https://github.com/NVIDIA/skillspector",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T053",
@@ -577,7 +795,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval."
+      "notes": "No secret migration or self-host deployment without separate approval.",
+      "officialUrl": "https://github.com/google/osv-scanner",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T054",
@@ -587,7 +809,11 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval."
+      "notes": "No secret migration or self-host deployment without separate approval.",
+      "officialUrl": "https://instabox.sh/",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T055",
@@ -597,7 +823,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Only adopt when a specific app needs desktop packaging."
+      "notes": "Only adopt when a specific app needs desktop packaging.",
+      "officialUrl": "https://viteplus.dev/",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T056",
@@ -607,7 +837,11 @@
       "source": "N12",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Only adopt when a specific app needs desktop packaging."
+      "notes": "Only adopt when a specific app needs desktop packaging.",
+      "officialUrl": "https://github.com/blackboardsh/electrobun",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T057",
@@ -617,7 +851,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Explicitly discontinued in 2026-11-12 article."
+      "notes": "Explicitly discontinued in 2026-11-12 article.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T058",
@@ -627,7 +865,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation."
+      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T059",
@@ -637,7 +879,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation."
+      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T060",
@@ -647,7 +893,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation."
+      "notes": "Explicitly not used in 2026-11-12 article; not a negative technical evaluation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T061",
@@ -657,7 +907,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Author's self-built applications, not public reusable packages."
+      "notes": "Author's self-built applications, not public reusable packages.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T062",
@@ -667,7 +921,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Author's self-built applications, not public reusable packages."
+      "notes": "Author's self-built applications, not public reusable packages.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T063",
@@ -677,7 +935,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Author's self-built applications, not public reusable packages."
+      "notes": "Author's self-built applications, not public reusable packages.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T064",
@@ -687,7 +949,11 @@
       "source": "N12",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Author's self-built applications, not public reusable packages."
+      "notes": "Author's self-built applications, not public reusable packages.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T065",
@@ -697,7 +963,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T066",
@@ -707,7 +977,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T067",
@@ -717,7 +991,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T068",
@@ -727,7 +1005,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T069",
@@ -737,7 +1019,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T070",
@@ -747,7 +1033,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T071",
@@ -757,7 +1047,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T072",
@@ -767,7 +1061,11 @@
       "source": "J22",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Earlier setup; avoid double orchestration and plugin bloat."
+      "notes": "Earlier setup; avoid double orchestration and plugin bloat.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T073",
@@ -777,7 +1075,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T074",
@@ -787,7 +1089,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T075",
@@ -797,7 +1103,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T076",
@@ -807,7 +1117,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T077",
@@ -817,7 +1131,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T078",
@@ -827,7 +1145,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T079",
@@ -837,7 +1159,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T080",
@@ -847,7 +1173,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T081",
@@ -857,7 +1187,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T082",
@@ -867,7 +1201,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T083",
@@ -877,7 +1215,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T084",
@@ -887,7 +1229,11 @@
       "source": "M30",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "May 2026 tool list is historical, not current installation proof."
+      "notes": "May 2026 tool list is historical, not current installation proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T085",
@@ -897,7 +1243,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "May article says little or no use."
+      "notes": "May article says little or no use.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T086",
@@ -907,7 +1257,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "May article says little or no use."
+      "notes": "May article says little or no use.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T087",
@@ -917,7 +1271,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T088",
@@ -927,7 +1285,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T089",
@@ -937,7 +1299,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T090",
@@ -947,7 +1313,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": "https://github.com/unslothai/unsloth",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T091",
@@ -957,7 +1327,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T092",
@@ -967,7 +1341,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T093",
@@ -977,7 +1355,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T094",
@@ -987,7 +1369,11 @@
       "source": "M30",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "optional",
-      "notes": "Only a named local optional environment may use GPU inference."
+      "notes": "Only a named local optional environment may use GPU inference.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T095",
@@ -997,7 +1383,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Removal underway in May."
+      "notes": "Removal underway in May.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T096",
@@ -1007,7 +1397,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Use untrusted content as data only; privacy and terms review."
+      "notes": "Use untrusted content as data only; privacy and terms review.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T097",
@@ -1017,7 +1411,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Use untrusted content as data only; privacy and terms review."
+      "notes": "Use untrusted content as data only; privacy and terms review.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T098",
@@ -1027,7 +1425,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Use untrusted content as data only; privacy and terms review."
+      "notes": "Use untrusted content as data only; privacy and terms review.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T099",
@@ -1037,7 +1439,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Use untrusted content as data only; privacy and terms review."
+      "notes": "Use untrusted content as data only; privacy and terms review.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T100",
@@ -1047,7 +1453,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Use untrusted content as data only; privacy and terms review."
+      "notes": "Use untrusted content as data only; privacy and terms review.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T101",
@@ -1057,7 +1467,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Use untrusted content as data only; privacy and terms review."
+      "notes": "Use untrusted content as data only; privacy and terms review.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T102",
@@ -1067,7 +1481,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+      "notes": "Reported stopped, unused, scheduled for removal or inactive.",
+      "officialUrl": "https://github.com/RightNow-AI/openfang",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T103",
@@ -1077,7 +1495,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+      "notes": "Reported stopped, unused, scheduled for removal or inactive.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T104",
@@ -1087,7 +1509,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+      "notes": "Reported stopped, unused, scheduled for removal or inactive.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T105",
@@ -1097,7 +1523,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+      "notes": "Reported stopped, unused, scheduled for removal or inactive.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T106",
@@ -1107,7 +1537,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported stopped, unused, scheduled for removal or inactive."
+      "notes": "Reported stopped, unused, scheduled for removal or inactive.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T107",
@@ -1117,7 +1551,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Local GUI is not an agent-runner dependency."
+      "notes": "Local GUI is not an agent-runner dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T108",
@@ -1127,7 +1565,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Local GUI is not an agent-runner dependency."
+      "notes": "Local GUI is not an agent-runner dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T109",
@@ -1137,7 +1579,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Multimodal knowledge ingestion requires isolation."
+      "notes": "Multimodal knowledge ingestion requires isolation.",
+      "officialUrl": "https://github.com/HKUDS/RAG-Anything",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T110",
@@ -1147,7 +1593,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Multimodal knowledge ingestion requires isolation."
+      "notes": "Multimodal knowledge ingestion requires isolation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T111",
@@ -1157,7 +1607,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T112",
@@ -1167,7 +1621,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T113",
@@ -1177,7 +1635,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T114",
@@ -1187,7 +1649,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T115",
@@ -1197,7 +1663,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T116",
@@ -1207,7 +1677,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T117",
@@ -1217,7 +1691,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T118",
@@ -1227,7 +1705,11 @@
       "source": "M30",
       "owner": "presentationgen",
       "adoption": "optional",
-      "notes": "Only draft output is automatic; editable production requires validation."
+      "notes": "Only draft output is automatic; editable production requires validation.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T119",
@@ -1237,7 +1719,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs."
+      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T120",
@@ -1247,7 +1733,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs."
+      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T121",
@@ -1257,7 +1747,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs."
+      "notes": "Security scanner candidates need permissions review; hacking tools are excluded from unattended runs.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T122",
@@ -1267,7 +1761,11 @@
       "source": "M30",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "Local OCR for licensed/documented content only."
+      "notes": "Local OCR for licensed/documented content only.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T123",
@@ -1277,7 +1775,11 @@
       "source": "M30",
       "owner": "VAIZ",
       "adoption": "optional",
-      "notes": "Small Japanese voice model, execution optional."
+      "notes": "Small Japanese voice model, execution optional.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T124",
@@ -1287,7 +1789,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Separate local business workspace, not universal agent dependency."
+      "notes": "Separate local business workspace, not universal agent dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T125",
@@ -1297,7 +1803,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Separate local business workspace, not universal agent dependency."
+      "notes": "Separate local business workspace, not universal agent dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T126",
@@ -1307,7 +1817,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Separate local business workspace, not universal agent dependency."
+      "notes": "Separate local business workspace, not universal agent dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T127",
@@ -1317,7 +1831,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Separate local business workspace, not universal agent dependency."
+      "notes": "Separate local business workspace, not universal agent dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T128",
@@ -1327,7 +1845,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Separate local business workspace, not universal agent dependency."
+      "notes": "Separate local business workspace, not universal agent dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T129",
@@ -1337,7 +1859,11 @@
       "source": "M30",
       "owner": "none",
       "adoption": "defer",
-      "notes": "Separate local business workspace, not universal agent dependency."
+      "notes": "Separate local business workspace, not universal agent dependency.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T130",
@@ -1347,7 +1873,11 @@
       "source": "M23",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+      "notes": "Reported excessive conflicting plugin stack removed or reduced.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T131",
@@ -1357,7 +1887,11 @@
       "source": "M23",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+      "notes": "Reported excessive conflicting plugin stack removed or reduced.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T132",
@@ -1367,7 +1901,11 @@
       "source": "M23",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+      "notes": "Reported excessive conflicting plugin stack removed or reduced.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T133",
@@ -1377,7 +1915,11 @@
       "source": "M23",
       "owner": "none",
       "adoption": "excluded",
-      "notes": "Reported excessive conflicting plugin stack removed or reduced."
+      "notes": "Reported excessive conflicting plugin stack removed or reduced.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T134",
@@ -1387,7 +1929,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T135",
@@ -1397,7 +1943,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T136",
@@ -1407,7 +1957,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T137",
@@ -1417,7 +1971,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T138",
@@ -1427,7 +1985,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T139",
@@ -1437,7 +1999,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T140",
@@ -1447,7 +2013,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T141",
@@ -1457,7 +2027,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T142",
@@ -1467,7 +2041,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T143",
@@ -1477,7 +2055,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "optional",
-      "notes": "Historical minimal skill selections; avoid loading all globally."
+      "notes": "Historical minimal skill selections; avoid loading all globally.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T144",
@@ -1487,7 +2069,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Discussed in critical assessment, not proof of current use."
+      "notes": "Discussed in critical assessment, not proof of current use.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T145",
@@ -1497,7 +2083,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Discussed in critical assessment, not proof of current use."
+      "notes": "Discussed in critical assessment, not proof of current use.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T146",
@@ -1507,7 +2097,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Discussed in critical assessment, not proof of current use."
+      "notes": "Discussed in critical assessment, not proof of current use.",
+      "officialUrl": "https://github.com/firecrawl/firecrawl",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T147",
@@ -1517,7 +2111,11 @@
       "source": "M23",
       "owner": "agent-runner",
       "adoption": "defer",
-      "notes": "Discussed in critical assessment, not proof of current use."
+      "notes": "Discussed in critical assessment, not proof of current use.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T148",
@@ -1527,7 +2125,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T149",
@@ -1537,7 +2139,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T150",
@@ -1547,7 +2153,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T151",
@@ -1557,7 +2167,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T152",
@@ -1567,7 +2181,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T153",
@@ -1577,7 +2195,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T154",
@@ -1587,7 +2209,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T155",
@@ -1597,7 +2223,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T156",
@@ -1607,7 +2237,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning."
+      "notes": "Read-only scanning, supply-chain provenance and CI audit; enable one at a time with tested version pinning.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T157",
@@ -1617,7 +2251,11 @@
       "source": "SELF",
       "owner": "agent-runner",
       "adoption": "candidate",
-      "notes": "Tooling candidates only. Hub stays thin."
+      "notes": "Tooling candidates only. Hub stays thin.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T158",
@@ -1627,7 +2265,11 @@
       "source": "SELF",
       "owner": "agent-runner",
       "adoption": "candidate",
-      "notes": "Tooling candidates only. Hub stays thin."
+      "notes": "Tooling candidates only. Hub stays thin.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T159",
@@ -1637,7 +2279,11 @@
       "source": "SELF",
       "owner": "agent-runner",
       "adoption": "candidate",
-      "notes": "Tooling candidates only. Hub stays thin."
+      "notes": "Tooling candidates only. Hub stays thin.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T160",
@@ -1647,7 +2293,11 @@
       "source": "SELF",
       "owner": "agent-runner",
       "adoption": "candidate",
-      "notes": "Tooling candidates only. Hub stays thin."
+      "notes": "Tooling candidates only. Hub stays thin.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T161",
@@ -1657,7 +2307,11 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof."
+      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T162",
@@ -1667,7 +2321,11 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof."
+      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T163",
@@ -1677,7 +2335,11 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof."
+      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T164",
@@ -1687,7 +2349,11 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof."
+      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T165",
@@ -1697,7 +2363,11 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof."
+      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T166",
@@ -1707,7 +2377,11 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof."
+      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T167",
@@ -1717,7 +2391,11 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof."
+      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T168",
@@ -1727,7 +2405,11 @@
       "source": "SELF",
       "owner": "QAIZ",
       "adoption": "candidate",
-      "notes": "PIT correctness, independent computation and data-quality audit."
+      "notes": "PIT correctness, independent computation and data-quality audit.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T169",
@@ -1737,7 +2419,11 @@
       "source": "SELF",
       "owner": "QAIZ",
       "adoption": "candidate",
-      "notes": "PIT correctness, independent computation and data-quality audit."
+      "notes": "PIT correctness, independent computation and data-quality audit.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T170",
@@ -1747,7 +2433,11 @@
       "source": "SELF",
       "owner": "QAIZ",
       "adoption": "candidate",
-      "notes": "PIT correctness, independent computation and data-quality audit."
+      "notes": "PIT correctness, independent computation and data-quality audit.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T171",
@@ -1757,7 +2447,11 @@
       "source": "SELF",
       "owner": "QAIZ",
       "adoption": "candidate",
-      "notes": "PIT correctness, independent computation and data-quality audit."
+      "notes": "PIT correctness, independent computation and data-quality audit.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T172",
@@ -1767,7 +2461,11 @@
       "source": "SELF",
       "owner": "QAIZ",
       "adoption": "candidate",
-      "notes": "PIT correctness, independent computation and data-quality audit."
+      "notes": "PIT correctness, independent computation and data-quality audit.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T173",
@@ -1777,7 +2475,11 @@
       "source": "SELF",
       "owner": "QAIZ",
       "adoption": "candidate",
-      "notes": "PIT correctness, independent computation and data-quality audit."
+      "notes": "PIT correctness, independent computation and data-quality audit.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T174",
@@ -1787,7 +2489,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Only approved public sources, no instruction-following from external text."
+      "notes": "Only approved public sources, no instruction-following from external text.",
+      "officialUrl": "https://github.com/mozilla/readability",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T175",
@@ -1797,7 +2503,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Only approved public sources, no instruction-following from external text."
+      "notes": "Only approved public sources, no instruction-following from external text.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T176",
@@ -1807,7 +2517,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Only approved public sources, no instruction-following from external text."
+      "notes": "Only approved public sources, no instruction-following from external text.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T177",
@@ -1817,7 +2531,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Only approved public sources, no instruction-following from external text."
+      "notes": "Only approved public sources, no instruction-following from external text.",
+      "officialUrl": "https://github.com/DIYgod/RSSHub",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T178",
@@ -1827,7 +2545,11 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Only approved public sources, no instruction-following from external text."
+      "notes": "Only approved public sources, no instruction-following from external text.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T179",
@@ -1837,7 +2559,11 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "officialUrl": "https://github.com/FFmpeg/FFmpeg",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T180",
@@ -1847,7 +2573,11 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "officialUrl": "https://ffmpeg.org/ffprobe.html",
+      "runtime": "catalog-only",
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false
     },
     {
       "id": "T181",
@@ -1857,7 +2587,11 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T182",
@@ -1867,7 +2601,11 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "officialUrl": "https://github.com/ggml-org/whisper.cpp",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T183",
@@ -1877,7 +2615,11 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T184",
@@ -1887,7 +2629,11 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T185",
@@ -1897,7 +2643,11 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives."
+      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "officialUrl": "https://github.com/blender/blender",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T186",
@@ -1907,7 +2657,11 @@
       "source": "SELF",
       "owner": "presentationgen",
       "adoption": "candidate",
-      "notes": "Editable and render-auditable presentations."
+      "notes": "Editable and render-auditable presentations.",
+      "officialUrl": "https://github.com/gitbrent/PptxGenJS",
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T187",
@@ -1917,7 +2671,11 @@
       "source": "SELF",
       "owner": "presentationgen",
       "adoption": "candidate",
-      "notes": "Editable and render-auditable presentations."
+      "notes": "Editable and render-auditable presentations.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
     },
     {
       "id": "T188",
@@ -1927,7 +2685,1368 @@
       "source": "SELF",
       "owner": "presentationgen",
       "adoption": "candidate",
-      "notes": "Editable and render-auditable presentations."
+      "notes": "Editable and render-auditable presentations.",
+      "officialUrl": null,
+      "runtime": "catalog-only",
+      "freeMode": "verify-before-enable",
+      "autoInstall": false
+    },
+    {
+      "id": "T189",
+      "name": "craft-anything",
+      "domain": "coding",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://github.com/storytold/craft-anything",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T190",
+      "name": "OGAM",
+      "domain": "automation",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://github.com/off-grid-ai/OGAM",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T191",
+      "name": "NectarLink",
+      "domain": "automation",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://github.com/thtbee/nectarlink",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T192",
+      "name": "Gander",
+      "domain": "automation",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://github.com/mokshablr/gander",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T193",
+      "name": "OpenLogi",
+      "domain": "automation",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://github.com/AprilNEA/OpenLogi",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T194",
+      "name": "Claude-Code-Game-Studios",
+      "domain": "game",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T195",
+      "name": "Rmux",
+      "domain": "orchestration",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": null,
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T196",
+      "name": "Irodori-TTS-v4-Small",
+      "domain": "voice",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://huggingface.co/Aratako/Irodori-TTS-v4-Small",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T197",
+      "name": "OpenShell NVIDIA",
+      "domain": "security",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://github.com/NVIDIA/OpenShell",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T198",
+      "name": "Haas-ja-v1.0",
+      "domain": "voice",
+      "reported": "reported_mentioned",
+      "source": "N12",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Direct primary-source mention, actual free usability/licensing requires review.",
+      "officialUrl": "https://huggingface.co/third-intelligence/Haas-ja-v1.0",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T199",
+      "name": "Open WebUI",
+      "domain": "assistant",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/open-webui/open-webui",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T200",
+      "name": "LibreChat",
+      "domain": "assistant",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/danny-avila/LibreChat",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T201",
+      "name": "LocalAI",
+      "domain": "inference",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "none",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/mudler/LocalAI",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T202",
+      "name": "Jan",
+      "domain": "inference",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "none",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/janhq/jan",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T203",
+      "name": "vLLM",
+      "domain": "inference",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "none",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/vllm-project/vllm",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T204",
+      "name": "SGLang",
+      "domain": "inference",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "none",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/sgl-project/sglang",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T205",
+      "name": "Continue",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/continuedev/continue",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T206",
+      "name": "Cline",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/cline/cline",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T207",
+      "name": "Aider",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/Aider-AI/aider",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T208",
+      "name": "OpenHands",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/All-Hands-AI/OpenHands",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T209",
+      "name": "SWE-Agent",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/SWE-agent/SWE-agent",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T210",
+      "name": "PydanticAI",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/pydantic/pydantic-ai",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T211",
+      "name": "LangGraph",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/langchain-ai/langgraph",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T212",
+      "name": "LlamaIndex",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/run-llama/llama_index",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T213",
+      "name": "Haystack",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/deepset-ai/haystack",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T214",
+      "name": "DSPy",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/stanfordnlp/dspy",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T215",
+      "name": "smolagents",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/huggingface/smolagents",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T216",
+      "name": "AutoGen",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/microsoft/autogen",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T217",
+      "name": "CrewAI",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/crewAIInc/crewAI",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T218",
+      "name": "Dify",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/langgenius/dify",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T219",
+      "name": "Flowise",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/FlowiseAI/Flowise",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T220",
+      "name": "n8n",
+      "domain": "orchestration",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/n8n-io/n8n",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T221",
+      "name": "Docling",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/docling-project/docling",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T222",
+      "name": "Marker",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/datalab-to/marker",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T223",
+      "name": "Tesseract OCR",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/tesseract-ocr/tesseract",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T224",
+      "name": "OCRmyPDF",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/ocrmypdf/OCRmyPDF",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T225",
+      "name": "Apache Tika",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/apache/tika",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T226",
+      "name": "Surya OCR",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/datalab-to/surya",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T227",
+      "name": "Qdrant",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/qdrant/qdrant",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T228",
+      "name": "Chroma",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/chroma-core/chroma",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T229",
+      "name": "LanceDB",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/lancedb/lancedb",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T230",
+      "name": "sqlite-vec",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/asg017/sqlite-vec",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T231",
+      "name": "pgvector",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/pgvector/pgvector",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T232",
+      "name": "Meilisearch",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/meilisearch/meilisearch",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T233",
+      "name": "Typesense",
+      "domain": "knowledge",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/typesense/typesense",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T234",
+      "name": "Browser Use",
+      "domain": "browser",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/browser-use/browser-use",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T235",
+      "name": "PostgreSQL",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/postgres/postgres",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T236",
+      "name": "Pandera",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/unionai-oss/pandera",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T237",
+      "name": "Datasette",
+      "domain": "data",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/simonw/datasette",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T238",
+      "name": "Ragas",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/explodinggradients/ragas",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T239",
+      "name": "DeepEval",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/confident-ai/deepeval",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T240",
+      "name": "Langfuse",
+      "domain": "observability",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/langfuse/langfuse",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T241",
+      "name": "Arize Phoenix",
+      "domain": "observability",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/Arize-ai/phoenix",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T242",
+      "name": "MLflow",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/mlflow/mlflow",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T243",
+      "name": "Prometheus",
+      "domain": "observability",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/prometheus/prometheus",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T244",
+      "name": "Grafana OSS",
+      "domain": "observability",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/grafana/grafana",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T245",
+      "name": "Loki",
+      "domain": "observability",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/grafana/loki",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T246",
+      "name": "Jaeger",
+      "domain": "observability",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/jaegertracing/jaeger",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T247",
+      "name": "Syft",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/anchore/syft",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T248",
+      "name": "Grype",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/anchore/grype",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T249",
+      "name": "OpenSSF Scorecard",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/ossf/scorecard",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T250",
+      "name": "TruffleHog",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/trufflesecurity/trufflehog",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T251",
+      "name": "Checkov",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/bridgecrewio/checkov",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T252",
+      "name": "Dependabot",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/dependabot/dependabot-core",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T253",
+      "name": "Penpot",
+      "domain": "design",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/penpot/penpot",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T254",
+      "name": "ImageMagick",
+      "domain": "design",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/ImageMagick/ImageMagick",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T255",
+      "name": "Sharp",
+      "domain": "design",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/lovell/sharp",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T256",
+      "name": "Satori",
+      "domain": "design",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/vercel/satori",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T257",
+      "name": "Godot",
+      "domain": "game",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/godotengine/godot",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T258",
+      "name": "Kdenlive",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/KDE/kdenlive",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T259",
+      "name": "OBS Studio",
+      "domain": "video",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/obsproject/obs-studio",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T260",
+      "name": "Audacity",
+      "domain": "voice",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/audacity/audacity",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T261",
+      "name": "Krita",
+      "domain": "design",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/KDE/krita",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T262",
+      "name": "Inkscape",
+      "domain": "design",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://gitlab.com/inkscape/inkscape",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T263",
+      "name": "MeloTTS",
+      "domain": "voice",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/myshell-ai/MeloTTS",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T264",
+      "name": "OpenVoice",
+      "domain": "voice",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/myshell-ai/OpenVoice",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T265",
+      "name": "SOPS",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/getsops/sops",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T266",
+      "name": "age",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/FiloSottile/age",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T267",
+      "name": "KeePassXC",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/keepassxreboot/keepassxc",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T268",
+      "name": "Authentik",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/goauthentik/authentik",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T269",
+      "name": "Headscale",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/juanfont/headscale",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T270",
+      "name": "WireGuard",
+      "domain": "security",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://www.wireguard.com/",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T271",
+      "name": "restic",
+      "domain": "file",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/restic/restic",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T272",
+      "name": "rclone",
+      "domain": "file",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/rclone/rclone",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T273",
+      "name": "Syncthing",
+      "domain": "file",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/syncthing/syncthing",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T274",
+      "name": "Uptime Kuma",
+      "domain": "observability",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/louislam/uptime-kuma",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T275",
+      "name": "Caddy",
+      "domain": "deployment",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/caddyserver/caddy",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T276",
+      "name": "PyMC",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/pymc-devs/pymc",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T277",
+      "name": "ArviZ",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "QAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/arviz-devs/arviz",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T278",
+      "name": "NetworkX",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/networkx/networkx",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T279",
+      "name": "SageMath",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/sagemath/sage",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T280",
+      "name": "OpenFOAM",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/OpenFOAM/OpenFOAM-dev",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T281",
+      "name": "LilyPond",
+      "domain": "voice",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "VAIZ",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://gitlab.com/lilypond/lilypond",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T282",
+      "name": "Gnuplot",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "Mathematical-Physics-Lab-",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://sourceforge.net/projects/gnuplot/",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T283",
+      "name": "Elephant-Goldfish Model",
+      "domain": "coding",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "agent-runner",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": null,
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
+    },
+    {
+      "id": "T284",
+      "name": "reverse-engineer-marketing",
+      "domain": "research",
+      "reported": "not_confirmed",
+      "source": "SELF",
+      "owner": "infocollect",
+      "adoption": "candidate",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "officialUrl": "https://github.com/dansugc/reverse-engineer-marketing",
+      "freeMode": "verify-license-and-local-runtime",
+      "runtime": "catalog-only",
+      "autoInstall": false
     }
-  ]
+  ],
+  "policies": {
+    "hardBudget": "0 paid API calls, no GPU/cloud provisioning, no purchase, no deployment, no automatic model downloading.",
+    "meaningOfFree": "OSS source availability does not guarantee zero compute cost; public GitHub Actions may be free within product terms, private runners and commercial providers can bill.",
+    "activation": "Only installed/validated tools in the target specialized repository can execute. Inventory never auto-installs a tool.",
+    "runtimeScope": "No additional orchestration engines installed into gentaron/agent-runner.",
+    "freeModes": [
+      "open-source-self-host-or-review",
+      "limited-free-quota",
+      "verify-before-enable",
+      "verify-license-and-local-runtime",
+      "not-zero-cost-by-default"
+    ]
+  }
 }

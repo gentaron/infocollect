@@ -27,5 +27,7 @@ jobs:
         run: |
           node scripts/validate-hyperfleet-catalog.mjs
           node --test scripts/validate-hyperfleet-catalog.test.mjs
+          node --test scripts/hyperfleet-free-stack.test.mjs
+          node scripts/hyperfleet-free-stack.mjs --repo infocollect
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

@@ -30,7 +30,7 @@ class OfflineKnowledgeSearchTest(unittest.TestCase):
             ]
             for month, items in [("2026-10", october), ("2026-11", november)]:
                 (root / "shards" / f"{month}.jsonl").write_text(
-                    "".join(json.dumps(item, ensure_ascii=False) + "\\n" for item in items),
+                    "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in items),
                     encoding="utf-8",
                 )
             db = Path(tmp) / "kb.sqlite"

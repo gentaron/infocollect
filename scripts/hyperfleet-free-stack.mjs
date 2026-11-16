@@ -3,6 +3,7 @@
 // This is a human-readable shortlist, NOT evidence that a candidate is installed.
 import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
+import {resolve} from 'node:path';
 
 const db=JSON.parse(fs.readFileSync(new URL('../ecosystem/hyperfleet/tool-catalog.json',import.meta.url),'utf8'));
 export const specialistNames=['agent-runner','infocollect','IDEAZ','VAIZ','QAIZ','Mathematical-Physics-Lab-','genesisvault','presentationgen'];
@@ -26,9 +27,10 @@ export function buildZeroBudgetPlan(catalog,repo,limit=12) {
     const t=byName.get(name.toLowerCase());
     if(!t)continue;
     const installed=t.runtime==='existing-capability-observed' && t.owner===repo;
+    const owned=t.owner===repo;
     const free=allowedModes.has(t.freeMode) && Boolean(t.officialUrl);
-    const status=installed?'ready':free?'review-candidate':'blocked-until-reviewed';
-    rows.push({name:t.name,status,repo,provenance:t.source,freeMode:t.freeMode,officialUrl:t.officialUrl,why:installed?'Repository implementation observed':free?'OSS/source and licensing review required':'No verified zero-cost activation path'});
+    const status=installed?'ready':!owned?'delegated-specialist':free?'review-candidate':'blocked-until-reviewed';
+    rows.push({name:t.name,status,repo,owner:t.owner,provenance:t.source,freeMode:t.freeMode,officialUrl:t.officialUrl,why:installed?'Repository implementation observed':!owned?'Capability belongs to another specialist; consume outputs instead':free?'OSS/source and licensing review required':'No verified zero-cost activation path'});
   }
   return {repo,budgetUSD:0,autoInstall:false,tools:rows.slice(0,limit),eligible:rows.filter(t=>t.status==='ready'||t.status==='review-candidate').length};
 }
@@ -46,6 +48,6 @@ function cli(args) {
   }
 }
 
-if(process.argv[1]&&fileURLToPath(import.meta.url)===fileURLToPath(new URL('file://'+process.argv[1]))){
+if(process.argv[1]&&fileURLToPath(import.meta.url)===resolve(process.argv[1])){
   try{cli(process.argv.slice(2));}catch(err){console.error(err.message);process.exitCode=2;}
 }

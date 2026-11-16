@@ -29,5 +29,10 @@ jobs:
           node --test scripts/validate-hyperfleet-catalog.test.mjs
           node --test scripts/hyperfleet-free-stack.test.mjs
           node scripts/hyperfleet-free-stack.mjs --repo infocollect
+      - name: Offline Python SQLite FTS5 tests and live KB index
+        run: |
+          python3 scripts/test_kb_fts.py
+          python3 scripts/kb-fts.py --db "$RUNNER_TEMP/infocollect-kb.sqlite" build
+          python3 scripts/kb-fts.py --db "$RUNNER_TEMP/infocollect-kb.sqlite" search "AI" --limit 3
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

@@ -43,6 +43,20 @@ index.html                    Vercel 用フォールバック（/ から docs/ �
 
 Node.js 20 以上があれば動きます。**npm install は不要**（依存パッケージゼロ）。
 
+## 完全無料・オフライン知識検索（SQLite FTS5）
+
+外部LLM、GPU、埋め込みAPIを使わず、収集済みの `docs/kb/shards/*.jsonl` をPython標準ライブラリのSQLite FTS5（三文字検索）で検索できます。検索結果は記事タイトル・出典URL・日付・抜粋を返します。公開KBからの取得時に未検証の事実を「検証済み」に格上げしません。
+
+```bash
+node scripts/build-kb.mjs
+python3 scripts/kb-fts.py build
+python3 scripts/kb-fts.py search "量子幾何"
+python3 scripts/kb-fts.py search "OpenCode" --limit 5
+python3 scripts/test_kb_fts.py
+```
+
+ローカルの `.cache/kb.sqlite` は一時索引で、GitHubへコミットしません。CIが実データから索引を再構築・検索し、独立したテストも実行します。SQLiteのFTS5/trigramを備えるPython 3環境が必要です。
+
 ---
 
 ## 自動ブログ生成（毎日5枠）

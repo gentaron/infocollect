@@ -6,6 +6,29 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
+// Canonical, public HTTPS evidence links only. Remove tracking while preserving
+// meaningful query parameters (e.g. paper ids and release tags).
+export function canonicalSourceUrl(value) {
+  if (typeof value !== 'string') return null;
+  let url;
+  try { url = new URL(value); } catch { return null; }
+  if (url.protocol !== 'https:' || url.username || url.password) return null;
+  const host = url.hostname.toLowerCase();
+  if (!host.includes('.') || host === 'localhost' || host.endsWith('.localhost')
+      || /^(?:127|10|0|192\.168|169\.254)\./.test(host)
+      || /^172\.(?:1[6-9]|2[0-9]|3[01])\./.test(host)
+      || host === '[::1]') return null;
+  url.hash = '';
+  for (const key of [...url.searchParams.keys()]) {
+    if (/^(?:utm_|mc_)/i.test(key) || /^(?:fbclid|gclid|igshid|ref_src)$/i.test(key)) {
+      url.searchParams.delete(key);
+    }
+  }
+  url.searchParams.sort();
+  if (url.pathname.length > 1) url.pathname = url.pathname.replace(/\/+$/, '');
+  return url.toString();
+}
+
 function clean(text) {
   return String(text || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 500);
 }
@@ -16,22 +39,27 @@ export function buildKnowledgeBase(archives) {
     .sort((a, b) => b.dateLocal.localeCompare(a.dateLocal));
   for (const archive of ordered) {
     for (const item of archive.news || []) {
-      if (typeof item.url !== 'string' || !/^https:\/\/[^\s]+$/.test(item.url) || !item.title) continue;
-      if (items.has(item.url)) continue;
-      items.set(item.url, {
+      const evidenceUrl = canonicalSourceUrl(item.url);
+      if (!evidenceUrl || !item.title) continue;
+      if (items.has(evidenceUrl)) continue;
+      items.set(evidenceUrl, {
         title: clean(item.title), titleJa: clean(item.titleJa || item.title),
-        summary: clean(item.summary), url: item.url,
+        summary: clean(item.summary), url: evidenceUrl,
         source: clean(item.source || 'News'), date: archive.dateLocal,
+        provenance: { evidence: 'observed-link', collectedAt: archive.generatedAt || null },
         tags: ['collected', ...(Array.isArray(item.tags) ? item.tags.filter((tag) => typeof tag === 'string') : [])],
       });
     }
     for (const item of archive.tools || []) {
-      if (typeof item.url !== 'string' || !/^https:\/\/[^\s]+$/.test(item.url) || !item.name) continue;
-      if (items.has(item.url)) continue;
-      items.set(item.url, {
+      const evidenceUrl = canonicalSourceUrl(item.url);
+      if (!evidenceUrl || !item.name) continue;
+      if (items.has(evidenceUrl)) continue;
+      items.set(evidenceUrl, {
         title: clean(item.name), titleJa: clean(item.headline || item.name),
-        summary: clean(item.summary || item.description), url: item.url,
-        source: 'GitHub', date: archive.dateLocal, tags: ['collected', 'tool'],
+        summary: clean(item.summary || item.description), url: evidenceUrl,
+        source: 'GitHub', date: archive.dateLocal,
+        provenance: { evidence: 'observed-link', collectedAt: archive.generatedAt || null },
+        tags: ['collected', 'tool'],
       });
     }
   }

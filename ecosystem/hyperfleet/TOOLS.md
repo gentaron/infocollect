@@ -196,7 +196,7 @@
 | T158 | tree-sitter | coding | 独自提案／使用不明 | agent-runner | verify-before-enable | catalog-only |
 | T159 | OpenTelemetry | coding | 独自提案／使用不明 | agent-runner | verify-before-enable | catalog-only |
 | T160 | GitHub Actions reusable workflow audit | coding | 独自提案／使用不明 | agent-runner | verify-before-enable | catalog-only |
-| T161 | Lean 4 | research | 独自提案／使用不明 | Mathematical-Physics-Lab- | verify-before-enable | catalog-only |
+| T161 | Lean 4 | research | 独自提案／使用不明 | Mathematical-Physics-Lab- | open-source-self-host-or-review | catalog-only |
 | T162 | mathlib | research | 独自提案／使用不明 | Mathematical-Physics-Lab- | verify-before-enable | catalog-only |
 | T163 | SymPy | research | 独自提案／使用不明 | Mathematical-Physics-Lab- | verify-before-enable | catalog-only |
 | T164 | Hypothesis | research | 独自提案／使用不明 | Mathematical-Physics-Lab- | verify-before-enable | catalog-only |
@@ -211,7 +211,7 @@
 | T173 | Evidently AI | data | 独自提案／使用不明 | QAIZ | verify-before-enable | catalog-only |
 | T174 | [Readability.js](https://github.com/mozilla/readability) | browser | 独自提案／使用不明 | infocollect | verify-before-enable | catalog-only |
 | T175 | Trafilatura | browser | 独自提案／使用不明 | infocollect | verify-before-enable | catalog-only |
-| T176 | SearXNG | browser | 独自提案／使用不明 | infocollect | verify-before-enable | catalog-only |
+| T176 | SearXNG | browser | 独自提案／使用不明 | infocollect | open-source-self-host-or-review | catalog-only |
 | T177 | [RSSHub](https://github.com/DIYgod/RSSHub) | browser | 独自提案／使用不明 | infocollect | verify-before-enable | catalog-only |
 | T178 | Playwright MCP | browser | 独自提案／使用不明 | infocollect | verify-before-enable | catalog-only |
 | T179 | [FFmpeg](https://github.com/FFmpeg/FFmpeg) | video | 独自提案／使用不明 | VAIZ | open-source-self-host-or-review | existing-capability-observed |
@@ -221,9 +221,9 @@
 | T183 | faster-whisper | video | 独自提案／使用不明 | VAIZ | verify-before-enable | catalog-only |
 | T184 | Piper TTS | video | 独自提案／使用不明 | VAIZ | verify-before-enable | catalog-only |
 | T185 | [Blender](https://github.com/blender/blender) | video | 独自提案／使用不明 | VAIZ | verify-before-enable | catalog-only |
-| T186 | [PptxGenJS](https://github.com/gitbrent/PptxGenJS) | presentation | 独自提案／使用不明 | presentationgen | verify-before-enable | catalog-only |
-| T187 | Marp | presentation | 独自提案／使用不明 | presentationgen | verify-before-enable | catalog-only |
-| T188 | Slidev | presentation | 独自提案／使用不明 | presentationgen | verify-before-enable | catalog-only |
+| T186 | [PptxGenJS](https://github.com/gitbrent/PptxGenJS) | presentation | 独自提案／使用不明 | presentationgen | open-source-self-host-or-review | catalog-only |
+| T187 | Marp | presentation | 独自提案／使用不明 | presentationgen | open-source-self-host-or-review | catalog-only |
+| T188 | Slidev | presentation | 独自提案／使用不明 | presentationgen | open-source-self-host-or-review | catalog-only |
 | T189 | [craft-anything](https://github.com/storytold/craft-anything) | coding | [N12](https://note.com/humble_bobcat51/n/nb9d0f1d0e8ac) · reported_mentioned | VAIZ | verify-license-and-local-runtime | catalog-only |
 | T190 | [OGAM](https://github.com/off-grid-ai/OGAM) | automation | [N12](https://note.com/humble_bobcat51/n/nb9d0f1d0e8ac) · reported_mentioned | infocollect | verify-license-and-local-runtime | catalog-only |
 | T191 | [NectarLink](https://github.com/thtbee/nectarlink) | automation | [N12](https://note.com/humble_bobcat51/n/nb9d0f1d0e8ac) · reported_mentioned | infocollect | verify-license-and-local-runtime | catalog-only |
@@ -256,22 +256,22 @@
 | T218 | [Dify](https://github.com/langgenius/dify) | orchestration | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T219 | [Flowise](https://github.com/FlowiseAI/Flowise) | orchestration | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T220 | [n8n](https://github.com/n8n-io/n8n) | orchestration | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
-| T221 | [Docling](https://github.com/docling-project/docling) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
+| T221 | [Docling](https://github.com/docling-project/docling) | knowledge | 独自提案／使用不明 | infocollect | open-source-self-host-or-review | catalog-only |
 | T222 | [Marker](https://github.com/datalab-to/marker) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T223 | [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T224 | [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T225 | [Apache Tika](https://github.com/apache/tika) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T226 | [Surya OCR](https://github.com/datalab-to/surya) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
-| T227 | [Qdrant](https://github.com/qdrant/qdrant) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
+| T227 | [Qdrant](https://github.com/qdrant/qdrant) | knowledge | 独自提案／使用不明 | infocollect | open-source-self-host-or-review | catalog-only |
 | T228 | [Chroma](https://github.com/chroma-core/chroma) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T229 | [LanceDB](https://github.com/lancedb/lancedb) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
-| T230 | [sqlite-vec](https://github.com/asg017/sqlite-vec) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
+| T230 | [sqlite-vec](https://github.com/asg017/sqlite-vec) | knowledge | 独自提案／使用不明 | infocollect | open-source-self-host-or-review | catalog-only |
 | T231 | [pgvector](https://github.com/pgvector/pgvector) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T232 | [Meilisearch](https://github.com/meilisearch/meilisearch) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T233 | [Typesense](https://github.com/typesense/typesense) | knowledge | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T234 | [Browser Use](https://github.com/browser-use/browser-use) | browser | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T235 | [PostgreSQL](https://github.com/postgres/postgres) | data | 独自提案／使用不明 | QAIZ | verify-license-and-local-runtime | catalog-only |
-| T236 | [Pandera](https://github.com/unionai-oss/pandera) | data | 独自提案／使用不明 | QAIZ | verify-license-and-local-runtime | catalog-only |
+| T236 | [Pandera](https://github.com/unionai-oss/pandera) | data | 独自提案／使用不明 | QAIZ | open-source-self-host-or-review | catalog-only |
 | T237 | [Datasette](https://github.com/simonw/datasette) | data | 独自提案／使用不明 | QAIZ | verify-license-and-local-runtime | catalog-only |
 | T238 | [Ragas](https://github.com/explodinggradients/ragas) | research | 独自提案／使用不明 | QAIZ | verify-license-and-local-runtime | catalog-only |
 | T239 | [DeepEval](https://github.com/confident-ai/deepeval) | research | 独自提案／使用不明 | QAIZ | verify-license-and-local-runtime | catalog-only |
@@ -293,15 +293,15 @@
 | T255 | [Sharp](https://github.com/lovell/sharp) | design | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
 | T256 | [Satori](https://github.com/vercel/satori) | design | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
 | T257 | [Godot](https://github.com/godotengine/godot) | game | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
-| T258 | [Kdenlive](https://github.com/KDE/kdenlive) | video | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
-| T259 | [OBS Studio](https://github.com/obsproject/obs-studio) | video | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
+| T258 | [Kdenlive](https://github.com/KDE/kdenlive) | video | 独自提案／使用不明 | VAIZ | open-source-self-host-or-review | catalog-only |
+| T259 | [OBS Studio](https://github.com/obsproject/obs-studio) | video | 独自提案／使用不明 | VAIZ | open-source-self-host-or-review | catalog-only |
 | T260 | [Audacity](https://github.com/audacity/audacity) | voice | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
-| T261 | [Krita](https://github.com/KDE/krita) | design | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
+| T261 | [Krita](https://github.com/KDE/krita) | design | 独自提案／使用不明 | VAIZ | open-source-self-host-or-review | catalog-only |
 | T262 | [Inkscape](https://gitlab.com/inkscape/inkscape) | design | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
 | T263 | [MeloTTS](https://github.com/myshell-ai/MeloTTS) | voice | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
 | T264 | [OpenVoice](https://github.com/myshell-ai/OpenVoice) | voice | 独自提案／使用不明 | VAIZ | verify-license-and-local-runtime | catalog-only |
 | T265 | [SOPS](https://github.com/getsops/sops) | security | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
-| T266 | [age](https://github.com/FiloSottile/age) | security | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
+| T266 | [age](https://github.com/FiloSottile/age) | security | 独自提案／使用不明 | infocollect | open-source-self-host-or-review | catalog-only |
 | T267 | [KeePassXC](https://github.com/keepassxreboot/keepassxc) | security | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T268 | [Authentik](https://github.com/goauthentik/authentik) | security | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |
 | T269 | [Headscale](https://github.com/juanfont/headscale) | security | 独自提案／使用不明 | infocollect | verify-license-and-local-runtime | catalog-only |

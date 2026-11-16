@@ -1,32 +1,47 @@
-# 2026-11-15 の AI ダイジェスト
+# 2026-11-16 の AI ダイジェスト
 
-2026-11-15 15:31 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、vercel-labs/ui の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。
+2026-11-16 15:38 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、pingdotgg/t3code の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。
 
 ## 注目の GitHub AI ツール
 
-### 1. [morluto/rea](https://github.com/morluto/rea) — ★460,441
+### 1. [morluto/rea](https://github.com/morluto/rea) — ★462,614
 
 Reverse engineer anything with agents, from app behavior down to native binaries.
 
-- 伸び: +2222 スター
-- 選定理由: 前回計測から +2222 スター。TypeScript 製。最終更新 2026-11-15。
+- 伸び: +2173 スター
+- 選定理由: 前回計測から +2173 スター。TypeScript 製。最終更新 2026-11-16。
 
-### 2. [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) — ★74,863
+### 2. [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) — ★76,418
 
 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…
 
-- 伸び: +1626 スター
-- 選定理由: 前回計測から +1626 スター。JavaScript 製。最終更新 2026-11-15。
+- 伸び: +1555 スター
+- 選定理由: 前回計測から +1555 スター。JavaScript 製。最終更新 2026-11-16。
 
-### 3. [vercel-labs/ui](https://github.com/vercel-labs/ui) — ★4,669
+### 3. [pingdotgg/t3code](https://github.com/pingdotgg/t3code) — ★61,897
 
-A library of behaviors for agents to build the next generation of user interfaces.
+The best way to control Claude Code, Codex and more from any computer or phone
 
-- 伸び: +641 スター
-- 選定理由: 前回計測から +641 スター。TypeScript 製。最終更新 2026-11-15。
+- 伸び: +1058 スター
+- 選定理由: 前回計測から +1058 スター。TypeScript 製。最終更新 2026-11-16。
 
 ## AI ニュース（新機能・新バージョン中心）
 
+- [langchain-ai/langchain langchain-groq==1.2.0](https://github.com/langchain-ai/langchain/releases/tag/langchain-groq%3D%3D1.2.0) — GitHub Releases｜Changes since langchain-groq==1.1.3
+
+fix(groq): specify reasoning_effort in integration tests (#41886)
+fix(groq,mistralai,xai): bump deps (#41884)
+release(groq…
+- [langchain-ai/langchain langchain-mistralai==1.2.0](https://github.com/langchain-ai/langchain/releases/tag/langchain-mistralai%3D%3D1.2.0) — GitHub Releases｜Changes since langchain-mistralai==1.1.6
+
+fix(mistralai): fix streaming behavior for reasoning models (#41887)
+fix(groq,mistralai,xai): bump deps (#41884)
+chor…
+- [langchain-ai/langchain langchain-xai==1.4.0](https://github.com/langchain-ai/langchain/releases/tag/langchain-xai%3D%3D1.4.0) — GitHub Releases｜Changes since langchain-xai==1.3.0
+
+fix(groq,mistralai,xai): bump deps (#41884)
+release(xai): 1.4.0 (#41857)
+feat(xai): route `ChatXAI` through LangSmith gatew…
 - [huggingface/transformers v5.23.0](https://github.com/huggingface/transformers/releases/tag/v5.23.0) — GitHub Releases｜# Release v5.23.0
 
 
@@ -35,7 +50,7 @@ A library of behaviors for agents to build the next generation of user interface
 ### Inkling2
 
 <img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/911…
-- [langchain-ai/langchain langchain-openai==1.8.0](https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.0) — GitHub Releases｜**`langchain-openai` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `l…
+- [datasette 0.65.6](https://simonwillison.net/2026/Nov/15/datasette-2) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette/releases/tag/0.65.6">datasette 0.65.6</a></p> <p>I backported a minor security fix fr…
 - [run-llama/llama_index v0.14.26](https://github.com/run-llama/llama_index/releases/tag/v0.14.26) — GitHub Releases｜# Release Notes
 
 ## [2026-11-13]
@@ -43,29 +58,11 @@ A library of behaviors for agents to build the next generation of user interface
 ### llama-index-agent-agentmesh [0.3.0]
 
 - Python security relock: all integration uv.lock files (lock files only, no Python…
-- [openai/openai-python v3.51.0](https://github.com/openai/openai-python/releases/tag/v3.51.0) — GitHub Releases｜## [3.51.0](https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0) (2026-11-12)
+- [datasette-maplibre 0.1a0](https://simonwillison.net/2026/Nov/15/datasette-maplibre) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-maplibre/releases/tag/0.1a0">datasette-maplibre 0.1a0</a></p> <p>The first new Dat…
+- [A step toward defining the Standard Model on a lattice](https://openai.com/index/step-toward-defining-the-standard-model) — OpenAI｜Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.
+- [Our new blog for science](https://openai.com/index/our-new-blog-for-science) — OpenAI｜The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.
+- [Apple launches new app to study how people use AI for health](https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health) — TechCrunch AI｜Apple's new app for a study will answer everyday medical questions
+- [datasette 1.0a43](https://simonwillison.net/2026/Nov/15/datasette) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette/releases/tag/1.0a43">datasette 1.0a43</a></p> <p>I've been leaning hard into Claude F…
+- [Understanding Positional Embeddings in Modern LLMs](https://magazine.sebastianraschka.com/p/understanding-positional-embeddings) — Hacker News｜Understanding Positional Embeddings in Modern LLMs
 
-
-### Features
-
-* **api:** expand agent, image, Live, and external…
-- [datasette-vega 0.7](https://simonwillison.net/2026/Nov/14/datasette-vega) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette-vega/releases/tag/0.7">datasette-vega 0.7</a></p> <p>A new release of Datasette's lon…
-- [n8n-io/n8n n8n@2.47.7](https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.7) — GitHub Releases｜## [2.47.7](https://github.com/n8n-io/n8n/compare/n8n@2.47.6...n8n@2.47.7) (2026-11-13)
-
-
-### Bug Fixes
-
-* **core:** Stop redacting executions that use global…
-- [Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm) — Hacker News｜Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM
-- [n8n-io/n8n n8n@2.47.6](https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.6) — GitHub Releases｜## [2.47.6](https://github.com/n8n-io/n8n/compare/n8n@2.47.5...n8n@2.47.6) (2026-11-13)
-
-
-### Bug Fixes
-
-* **core:** Keep trusted-source cache keys in one Redi…
-- [datasette-llm 0.1a11](https://simonwillison.net/2026/Nov/14/datasette-llm) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/datasette/datasette-llm/releases/tag/0.1a11">datasette-llm 0.1a11</a></p> <p><code>datasette-llm</code…
-- [datasette-cluster-map 0.19](https://simonwillison.net/2026/Nov/13/datasette-cluster-map) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette-cluster-map/releases/tag/0.19">datasette-cluster-map 0.19</a></p> <p>One of the oldes…
-- [llm-gemini 0.37](https://simonwillison.net/2026/Nov/12/llm-gemini) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/llm-gemini/releases/tag/0.37">llm-gemini 0.37</a></p> <p>Google launched <a href="https://blog.…
-- [datasette-leaflet 0.3](https://simonwillison.net/2026/Nov/13/datasette-leaflet) — Simon Willison｜<p><strong>Release:</strong> <a href="https://github.com/simonw/datasette-leaflet/releases/tag/0.3">datasette-leaflet 0.3</a></p> <p>OpenStreetMap have a very…
-
-_生成: 2026-11-15 15:31 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_
+_生成: 2026-11-16 15:38 (Asia/Kuala_Lumpur) / 要約: ルールベース要約（AIキー未設定）_

@@ -23,5 +23,10 @@ jobs:
         run: node --test scripts/sync-edu-wiki.test.mjs
       - name: Build knowledge shards from the real archive
         run: node scripts/build-kb.mjs
+      - name: Offline Python SQLite FTS5 tests and live KB index
+        run: |
+          python3 scripts/test_kb_fts.py
+          python3 scripts/kb-fts.py --db "$RUNNER_TEMP/infocollect-kb.sqlite" build
+          python3 scripts/kb-fts.py --db "$RUNNER_TEMP/infocollect-kb.sqlite" search "AI" --limit 3
       - name: Regenerate the PWA bundle
         run: node scripts/pack.mjs

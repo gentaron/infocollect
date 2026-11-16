@@ -107,9 +107,9 @@
       "domain": "coding",
       "reported": "reported_active",
       "source": "N12",
-      "owner": "agent-runner",
+      "owner": "VAIZ",
       "adoption": "already",
-      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement.",
+      "notes": "Actual OpenRouter-free model selection in VAIZ (staged as strict zero-price gate PR); rate limited, do not use paid fallback.",
       "officialUrl": "https://openrouter.ai/",
       "runtime": "existing-capability-observed",
       "freeMode": "limited-free-quota",
@@ -121,11 +121,11 @@
       "domain": "coding",
       "reported": "reported_active",
       "source": "N12",
-      "owner": "agent-runner",
-      "adoption": "already",
-      "notes": "OpenCode already executes in GitHub Actions; cloud/free tiers require separate entitlement.",
+      "owner": "none",
+      "adoption": "defer",
+      "notes": "Author reports NVIDIA free tier; this fleet has no verified NVIDIA API integration and will not install it.",
       "officialUrl": null,
-      "runtime": "existing-capability-observed",
+      "runtime": "catalog-only",
       "freeMode": "limited-free-quota",
       "autoInstall": false
     },
@@ -794,10 +794,10 @@
       "reported": "reported_active",
       "source": "N12",
       "owner": "infocollect",
-      "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval.",
+      "adoption": "candidate",
+      "notes": "Google OSV Scanner reusable GitHub action installed only in draft PRs in public specialist repos; no claim about prod until merged.",
       "officialUrl": "https://github.com/google/osv-scanner",
-      "runtime": "catalog-only",
+      "runtime": "staged-in-draft-pr",
       "freeMode": "open-source-self-host-or-review",
       "autoInstall": false
     },
@@ -2558,10 +2558,10 @@
       "reported": "not_confirmed",
       "source": "SELF",
       "owner": "VAIZ",
-      "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "adoption": "already",
+      "notes": "VAIZ renderer directly invokes ffmpeg in workflows.",
       "officialUrl": "https://github.com/FFmpeg/FFmpeg",
-      "runtime": "catalog-only",
+      "runtime": "existing-capability-observed",
       "freeMode": "open-source-self-host-or-review",
       "autoInstall": false
     },
@@ -2572,10 +2572,10 @@
       "reported": "not_confirmed",
       "source": "SELF",
       "owner": "VAIZ",
-      "adoption": "candidate",
-      "notes": "FFmpeg/ffprobe already used by VAIZ; evaluate others as alternatives.",
+      "adoption": "already",
+      "notes": "VAIZ renderer invokes ffprobe; stricter release gate staged in PR.",
       "officialUrl": "https://ffmpeg.org/ffprobe.html",
-      "runtime": "catalog-only",
+      "runtime": "existing-capability-observed",
       "freeMode": "open-source-self-host-or-review",
       "autoInstall": false
     },
@@ -4047,6 +4047,7 @@
       "verify-before-enable",
       "verify-license-and-local-runtime",
       "not-zero-cost-by-default"
-    ]
+    ],
+    "adoptionProof": "Runtime fields are evidence labels (observed code, draft PR, catalog only) and must not be inferred from user reports."
   }
 }

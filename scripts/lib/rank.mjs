@@ -30,6 +30,7 @@ export function classify(item) {
   if (/model|llm|gpt|claude|gemini|llama|mistral|qwen/.test(haystack)) tags.push('model');
   if (/fund|raise|acquisition|valuation|ipo|買収|資金調達/.test(haystack)) tags.push('business');
   if (/paper|research|benchmark|arxiv|論文/.test(haystack)) tags.push('research');
+  if (/\bmqtt\b|mosquitto/.test(haystack)) tags.push('mqtt');
   return tags.length ? [...new Set(tags)] : ['news'];
 }
 

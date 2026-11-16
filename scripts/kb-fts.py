@@ -15,7 +15,7 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SHARD_RE = re.compile(r"^\\d{4}-\\d{2}$")
+SHARD_RE = re.compile(r"^\d{4}-\d{2}$")
 
 
 def _read_docs(source: Path):

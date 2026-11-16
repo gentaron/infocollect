@@ -2,7 +2,7 @@
 // keeps working offline, and keeps the newest data JSON in a separate cache.
 
 const VERSION = 'v1';
-const SHELL_CACHE = `infocollect-shell-${VERSION}`;
+const SHELL_CACHE = `infocollect-shell-v2`;
 const DATA_CACHE = `infocollect-data-${VERSION}`;
 
 const SHELL_ASSETS = [
@@ -12,6 +12,8 @@ const SHELL_ASSETS = [
   './app.js',
   './manifest.webmanifest',
   './icons/favicon.svg',
+  './icons/favicon.ico',
+  './icons/apple-touch-icon.png',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/maskable-512.png',

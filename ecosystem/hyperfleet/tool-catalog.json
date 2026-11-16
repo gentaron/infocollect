@@ -781,11 +781,14 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "optional",
-      "notes": "No secret migration or self-host deployment without separate approval.",
+      "notes": "No secret migration or self-host deployment without separate approval. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/NVIDIA/skillspector",
       "runtime": "catalog-only",
       "freeMode": "open-source-self-host-or-review",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "Apache-2.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T053",
@@ -795,11 +798,14 @@
       "source": "N12",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Google OSV Scanner reusable GitHub action installed only in draft PRs in public specialist repos; no claim about prod until merged.",
+      "notes": "Google OSV Scanner reusable GitHub action installed only in draft PRs in public specialist repos; no claim about prod until merged. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/google/osv-scanner",
       "runtime": "staged-in-draft-pr",
       "freeMode": "open-source-self-host-or-review",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "Apache-2.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T054",
@@ -2307,11 +2313,14 @@
       "source": "SELF",
       "owner": "Mathematical-Physics-Lab-",
       "adoption": "candidate",
-      "notes": "Formal and property-based verification, not automatic scientific proof.",
+      "notes": "Formal and property-based verification, not automatic scientific proof. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": null,
       "runtime": "catalog-only",
-      "freeMode": "verify-before-enable",
-      "autoInstall": false
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false,
+      "licenseSpdx": "Apache-2.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T162",
@@ -2517,11 +2526,14 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Only approved public sources, no instruction-following from external text.",
+      "notes": "Only approved public sources, no instruction-following from external text. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": null,
       "runtime": "catalog-only",
-      "freeMode": "verify-before-enable",
-      "autoInstall": false
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T177",
@@ -2657,11 +2669,14 @@
       "source": "SELF",
       "owner": "presentationgen",
       "adoption": "candidate",
-      "notes": "Editable and render-auditable presentations.",
+      "notes": "Editable and render-auditable presentations. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/gitbrent/PptxGenJS",
       "runtime": "catalog-only",
-      "freeMode": "verify-before-enable",
-      "autoInstall": false
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false,
+      "licenseSpdx": "MIT",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T187",
@@ -2671,11 +2686,14 @@
       "source": "SELF",
       "owner": "presentationgen",
       "adoption": "candidate",
-      "notes": "Editable and render-auditable presentations.",
+      "notes": "Editable and render-auditable presentations. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": null,
       "runtime": "catalog-only",
-      "freeMode": "verify-before-enable",
-      "autoInstall": false
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false,
+      "licenseSpdx": "MIT",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T188",
@@ -2685,11 +2703,14 @@
       "source": "SELF",
       "owner": "presentationgen",
       "adoption": "candidate",
-      "notes": "Editable and render-auditable presentations.",
+      "notes": "Editable and render-auditable presentations. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": null,
       "runtime": "catalog-only",
-      "freeMode": "verify-before-enable",
-      "autoInstall": false
+      "freeMode": "open-source-self-host-or-review",
+      "autoInstall": false,
+      "licenseSpdx": "MIT",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T189",
@@ -3147,11 +3168,14 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/docling-project/docling",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "MIT",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T222",
@@ -3231,11 +3255,14 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/qdrant/qdrant",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "Apache-2.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T228",
@@ -3273,11 +3300,14 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/asg017/sqlite-vec",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "Apache-2.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T231",
@@ -3357,11 +3387,14 @@
       "source": "SELF",
       "owner": "QAIZ",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/unionai-oss/pandera",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "MIT",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T237",
@@ -3665,11 +3698,14 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/KDE/kdenlive",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "GPL-3.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T259",
@@ -3679,11 +3715,14 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/obsproject/obs-studio",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "GPL-2.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T260",
@@ -3707,11 +3746,14 @@
       "source": "SELF",
       "owner": "VAIZ",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/KDE/krita",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "GPL-3.0",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T262",
@@ -3777,11 +3819,14 @@
       "source": "SELF",
       "owner": "infocollect",
       "adoption": "candidate",
-      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost.",
+      "notes": "Independent stack candidate; author adoption not known. Verify license and real operating cost. Source-code license verified via public GitHub metadata, NOT deployment readiness.",
       "officialUrl": "https://github.com/FiloSottile/age",
-      "freeMode": "verify-license-and-local-runtime",
+      "freeMode": "open-source-self-host-or-review",
       "runtime": "catalog-only",
-      "autoInstall": false
+      "autoInstall": false,
+      "licenseSpdx": "BSD-3-Clause",
+      "licenseCheckedAt": "2026-11-16",
+      "licenseSource": "GitHub repository metadata"
     },
     {
       "id": "T267",
@@ -4048,6 +4093,7 @@
       "verify-license-and-local-runtime",
       "not-zero-cost-by-default"
     ],
-    "adoptionProof": "Runtime fields are evidence labels (observed code, draft PR, catalog only) and must not be inferred from user reports."
+    "adoptionProof": "Runtime fields are evidence labels (observed code, draft PR, catalog only) and must not be inferred from user reports.",
+    "licenseDisclaimer": "GitHub license metadata is advisory and can miss multi-license restrictions. Check actual files, model weights, and dependencies before install."
   }
 }

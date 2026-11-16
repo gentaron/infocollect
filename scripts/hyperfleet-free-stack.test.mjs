@@ -9,7 +9,7 @@ test('every specialist has an offline zero-budget plan',()=>{
     assert.equal(result.budgetUSD,0);
     assert.equal(result.autoInstall,false);
     assert.ok(result.tools.length>0);
-    assert.ok(result.tools.every(x=>['ready','review-candidate','blocked-until-reviewed'].includes(x.status)));
+    assert.ok(result.tools.every(x=>['ready','review-candidate','blocked-until-reviewed','delegated-specialist'].includes(x.status)));
   }
 });
 test('paid, quota-only and unreviewed models can never be marked ready',()=>{

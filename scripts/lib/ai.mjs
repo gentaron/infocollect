@@ -2,7 +2,7 @@
 // whole layer is optional: with no API key at all the collector falls back to
 // deterministic, rule-based summaries so the daily run never breaks.
 
-import { fetchWithRetry, log, truncate, warn } from './util.mjs';
+import { fetchWithRetry, log, sleep, truncate, warn } from './util.mjs';
 
 const PROVIDERS = [
   {
@@ -180,37 +180,92 @@ ${newsLines.join('\n\n')}
 "index" は上記の候補番号に必ず対応させ、全ての候補を1件ずつ含めてください。`;
 }
 
-/**
- * Ask the detected free-tier model to write the Japanese summaries.
- * Returns { provider, model, digest, tools: Map, news: Map } or null.
- */
-export async function summarise(tools, news, env = process.env) {
+/** Run one prompt through the detected provider and parse a JSON reply. */
+async function generateJson(prompt, env) {
   const provider = detectProvider(env);
-  if (!provider) {
-    log('AIプロバイダの認証情報なし → ルールベース要約にフォールバック');
-    return null;
-  }
-
-  const prompt = buildPrompt(tools, news);
+  if (!provider) return null;
   for (const model of provider.models(env)) {
     try {
       log(`要約中: ${provider.id} / ${model}`);
       const raw = await provider.call(prompt, model, env);
       const parsed = parseJsonLoose(raw);
       if (!parsed) throw new Error('モデル出力をJSONとして解釈できませんでした');
-      return {
-        provider: provider.id,
-        providerLabel: provider.label,
-        model,
-        digest: typeof parsed.digest === 'string' ? parsed.digest.trim() : '',
-        tools: indexBy(parsed.tools),
-        news: indexBy(parsed.news),
-      };
+      return { provider, model, parsed };
     } catch (error) {
       warn(`${provider.id}/${model} 失敗: ${error.message}`);
     }
   }
   return null;
+}
+
+/**
+ * Ask the detected free-tier model to write the Japanese summaries.
+ * Returns { provider, model, digest, tools: Map, news: Map } or null.
+ */
+export async function summarise(tools, news, env = process.env) {
+  if (!detectProvider(env)) {
+    log('AIプロバイダの認証情報なし → ルールベース要約にフォールバック');
+    return null;
+  }
+  const result = await generateJson(buildPrompt(tools, news), env);
+  if (!result) return null;
+  const { provider, model, parsed } = result;
+  return {
+    provider: provider.id,
+    providerLabel: provider.label,
+    model,
+    digest: typeof parsed.digest === 'string' ? parsed.digest.trim() : '',
+    tools: indexBy(parsed.tools),
+    news: indexBy(parsed.news),
+  };
+}
+
+const TIER_JA = { oss: 'オープンソース', bigtech: '大手', hybrid: 'どっちつかず（大手のオープン公開・研究所・論文・専門メディア）' };
+
+export function buildFrontierPrompt(domain) {
+  const lines = domain.entries.map((entry, index) =>
+    [
+      `[${index + 1}] (${entry.kind} / ${TIER_JA[entry.tier] || entry.tier}) ${entry.title}`,
+      `source: ${entry.source}${entry.stars != null ? ` / stars: ${entry.stars}` : ''}`,
+      `body: ${truncate(entry.body || '', 400)}`,
+    ].join('\n'),
+  );
+  return `あなたは最先端の科学技術を日本語で伝える編集者です。分野「${domain.label}」の今日の候補を、以下の一次データだけを根拠に要約し、JSONを1つ返してください。
+
+# 厳守事項
+- データに無い事実・数値を足さない。推測で盛らない。査読前の論文はそうと分かるように書く。
+- 専門用語は残し、必要ならひとことで言い換える。
+- 出力はJSONのみ。
+
+# 候補
+${lines.join('\n\n')}
+
+# 出力するJSONの形
+{
+  "digest": "この分野の今日の動きを、オープンソース／大手／どっちつかずの違いが分かるように日本語100〜160字で",
+  "items": [ { "index": 1, "titleJa": "日本語タイトル", "summary": "何が新しいのかを日本語60〜120字で" } ]
+}
+"index" は候補番号に対応させ、全候補を含めてください。`;
+}
+
+/**
+ * 分野ごとに1回ずつ要約を頼む（無料枠のレート制限に配慮して直列）。
+ * Returns Map<domainId, {digest, items: Map}>（AIが使えない分野は入らない）。
+ */
+export async function summariseFrontier(domains, env = process.env) {
+  const out = new Map();
+  if (!detectProvider(env)) return out;
+  for (const domain of domains) {
+    if (!domain.entries.length) continue;
+    if (out.size) await sleep(4000); // 無料枠の分間レート上限に当たらないよう間隔を空ける
+    const result = await generateJson(buildFrontierPrompt(domain), env);
+    if (!result) continue;
+    out.set(domain.id, {
+      digest: typeof result.parsed.digest === 'string' ? result.parsed.digest.trim() : '',
+      items: indexBy(result.parsed.items),
+    });
+  }
+  return out;
 }
 
 function indexBy(list) {

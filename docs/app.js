@@ -18,7 +18,15 @@ const els = {
   install: document.getElementById('install-btn'),
   offline: document.getElementById('offline-banner'),
   buildNote: document.getElementById('build-note'),
+  frontierSection: document.getElementById('frontier-section'),
+  frontier: document.getElementById('frontier'),
+  frontierCount: document.getElementById('frontier-count'),
+  domainFilters: document.getElementById('domain-filters'),
+  tierFilters: document.getElementById('tier-filters'),
 };
+
+const TIER_ORDER = ['oss', 'hybrid', 'bigtech'];
+const KIND_LABELS = { repo: 'GitHub', model: 'HFモデル', news: '記事' };
 
 const CACHE_KEY = 'infocollect:last-payload';
 const TAG_LABELS = {
@@ -33,6 +41,8 @@ const TAG_LABELS = {
 
 let payload = null;
 let activeFilter = 'all';
+let activeDomain = 'all';
+let activeTier = 'all';
 
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>"']/g, (char) =>
@@ -161,9 +171,86 @@ function renderNews() {
     .join('');
 }
 
+function tierLabel(tier) {
+  return payload.frontier?.tiers?.[tier]?.label || tier;
+}
+
+function renderFrontierFilters(domains) {
+  const total = domains.reduce((sum, domain) => sum + domain.entries.length, 0);
+  const domainButtons = [['all', 'すべての分野', total]]
+    .concat(domains.map((domain) => [domain.id, domain.short || domain.label.replace(/（.*$/, ''), domain.entries.length]));
+  els.domainFilters.innerHTML = domainButtons
+    .map(([id, label, count]) =>
+      `<button class="filter" type="button" data-domain="${escapeHtml(id)}" aria-pressed="${id === activeDomain}">${escapeHtml(label)} ${count}</button>`)
+    .join('');
+  const scope = activeDomain === 'all' ? domains : domains.filter((domain) => domain.id === activeDomain);
+  const tierCounts = { all: 0 };
+  for (const domain of scope) {
+    for (const entry of domain.entries) {
+      tierCounts.all++;
+      tierCounts[entry.tier] = (tierCounts[entry.tier] || 0) + 1;
+    }
+  }
+  els.tierFilters.innerHTML = ['all', ...TIER_ORDER]
+    .map((tier) => {
+      const label = tier === 'all' ? '全部門' : tierLabel(tier);
+      const note = tier === 'all' ? '' : escapeHtml(payload.frontier.tiers?.[tier]?.note || '');
+      return `<button class="filter tier-filter tier-${tier}" type="button" data-tier="${tier}" title="${note}" aria-pressed="${tier === activeTier}">${escapeHtml(label)} ${tierCounts[tier] || 0}</button>`;
+    })
+    .join('');
+}
+
+function renderFrontier() {
+  const domains = payload.frontier?.domains || [];
+  els.frontierSection.hidden = !domains.length;
+  if (!domains.length) return;
+  renderFrontierFilters(domains);
+  const scope = activeDomain === 'all' ? domains : domains.filter((domain) => domain.id === activeDomain);
+  let shown = 0;
+  els.frontier.innerHTML = scope
+    .map((domain) => {
+      const entries = domain.entries.filter((entry) => activeTier === 'all' || entry.tier === activeTier);
+      shown += entries.length;
+      // 「すべての分野」表示では、該当ゼロの分野カードは出さない。
+      if (!entries.length && activeDomain === 'all') return '';
+      const items = entries
+        .map((entry) => {
+          const stats = [];
+          if (entry.kind === 'repo' && entry.stars != null) stats.push(`★ ${formatNumber(entry.stars)}`);
+          if (entry.kind === 'repo' && entry.starsDelta != null) stats.push(`<span class="up">+${formatNumber(entry.starsDelta)}</span>`);
+          if (entry.kind === 'model' && entry.likes != null) stats.push(`♥ ${formatNumber(entry.likes)}`);
+          if (entry.publishedAt && entry.kind === 'news') stats.push(escapeHtml(relativeTime(entry.publishedAt)));
+          const original = entry.titleJa && entry.titleJa !== entry.title
+            ? `<div class="news-links">原題: ${escapeHtml(entry.title)}</div>` : '';
+          return `
+          <li class="news-item frontier-item">
+            <h4><a href="${safeUrl(entry.url)}" rel="noopener" target="_blank">${escapeHtml(entry.titleJa || entry.title)}</a></h4>
+            <div class="news-meta">
+              <span class="tier-badge tier-${escapeHtml(entry.tier)}">${escapeHtml(tierLabel(entry.tier))}</span>
+              <span>${escapeHtml([...new Set([KIND_LABELS[entry.kind] || entry.kind, entry.source].filter(Boolean))].join('・'))}</span>
+              ${stats.map((stat) => `<span>${stat}</span>`).join('')}
+            </div>
+            <p class="news-summary">${escapeHtml(entry.summary || '')}</p>
+            ${original}
+          </li>`;
+        })
+        .join('');
+      return `
+      <article class="domain-card">
+        <h3>${escapeHtml(domain.label)}</h3>
+        ${domain.digest ? `<p class="domain-digest">${escapeHtml(domain.digest)}</p>` : ''}
+        ${items ? `<ul class="news-list">${items}</ul>` : '<div class="empty">この部門の動きは今日は拾えませんでした。</div>'}
+      </article>`;
+    })
+    .join('');
+  if (!shown) els.frontier.innerHTML = '<div class="empty">この条件に当てはまる動きは今日は拾えませんでした。</div>';
+  els.frontierCount.textContent = `${shown} 件`;
+}
+
 function render() {
   if (!payload) return;
   renderMeta();
+  renderFrontier();
   renderTools();
   renderFilters();
   renderNews();
@@ -229,6 +316,19 @@ els.filters.addEventListener('click', (event) => {
   activeFilter = button.dataset.tag;
   renderFilters();
   renderNews();
+});
+
+els.domainFilters.addEventListener('click', (event) => {
+  const button = event.target.closest('.filter');
+  if (!button) return;
+  activeDomain = button.dataset.domain;
+  renderFrontier();
+});
+els.tierFilters.addEventListener('click', (event) => {
+  const button = event.target.closest('.filter');
+  if (!button) return;
+  activeTier = button.dataset.tier;
+  renderFrontier();
 });
 
 window.addEventListener('online', () => {

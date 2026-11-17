@@ -1,0 +1,202 @@
+{
+  "$comment": "分野別『最先端マップ』の収集設定。domains に分野を、tiers にOSS／大手／どっちつかずの定義を置く。フィードやクエリはここを編集するだけで増減できる。",
+  "perDomain": { "repos": 3, "news": 6, "models": 3, "maxPerSource": 2 },
+  "maxAgeDays": 4,
+  "tiers": {
+    "oss": { "label": "オープンソース", "short": "OSS", "note": "コミュニティ・大学・個人が出していて、誰でも中身（コード・重み・データ）を使えるもの" },
+    "bigtech": { "label": "大手", "short": "大手", "note": "巨大テック企業・国家級ラボの公式発表。中身はクローズド中心" },
+    "hybrid": { "label": "どっちつかず", "short": "中間", "note": "大手のオープンウェイト／OSS、研究所・スタートアップ、査読前論文・学術誌・専門メディアなど、OSSとも大手とも言い切れないもの" }
+  },
+  "bigOrgs": [
+    "google", "google-deepmind", "google-research", "googleapis", "deepmind", "tensorflow",
+    "facebookresearch", "facebook", "meta-llama", "pytorch", "microsoft", "azure", "nvidia", "nvidia-cosmos", "NVIDIA",
+    "openai", "anthropics", "amazon-science", "aws", "awslabs", "apple", "ibm", "ibm-granite", "qiskit", "Qiskit",
+    "intel", "amd", "salesforce", "alibaba", "Qwen", "QwenLM", "deepseek-ai", "baidu", "PaddlePaddle", "tencent", "Tencent",
+    "bytedance", "ByteDance-Seed", "moonshotai", "zai-org", "THUDM", "xai-org", "mistralai", "huawei-noah", "samsung", "sony",
+    "quantinuum", "CQCL", "rigetti", "ionq", "dwavesystems", "quantumlib", "isomorphiclabs", "neuralink"
+  ],
+  "bigNames": [
+    "openai", "anthropic", "google", "deepmind", "meta ", "microsoft", "nvidia", "amazon", "aws", "apple", "ibm",
+    "alibaba", "qwen", "deepseek", "baidu", "tencent", "bytedance", "xai", "mistral", "huawei", "samsung", "intel", "tsmc",
+    "quantinuum", "ionq", "rigetti", "d-wave", "psiquantum", "neuralink", "synchron", "isomorphic", "medtronic"
+  ],
+  "openHints": [
+    "open source", "open-source", "open sourced", "open-sources", "open weights", "open-weight", "openweight",
+    "apache 2.0", "apache-2.0", "mit license", "github.com", "hugging face", "huggingface", "released the code",
+    "code is available", "weights are available", "オープンソース", "オープンウェイト", "公開した重み"
+  ],
+  "domains": [
+    {
+      "id": "ai-models",
+      "short": "基盤モデル",
+      "label": "基盤モデル（LLM・マルチモーダル）",
+      "keywords": ["llm", "language model", "gpt", "claude", "gemini", "llama", "qwen", "deepseek", "mistral", "kimi", "glm", "multimodal", "reasoning model", "foundation model", "tokens", "context window", "moe", "mixture of experts", "diffusion model", "text-to-video", "video generation", "言語モデル", "推論モデル"],
+      "github": [
+        "topic:llm pushed:>={active} stars:>={minStars}",
+        "topic:large-language-models created:>={recent} stars:>=80"
+      ],
+      "hfPipelines": ["text-generation", "image-text-to-text", "any-to-any", "text-to-video"],
+      "feeds": [
+        { "name": "arXiv cs.CL", "url": "https://rss.arxiv.org/rss/cs.CL", "tier": "hybrid", "weight": 4 },
+        { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "tier": "hybrid", "weight": 10 },
+        { "name": "OpenAI", "url": "https://openai.com/news/rss.xml", "tier": "bigtech", "weight": 14 },
+        { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "tier": "bigtech", "weight": 12 },
+        { "name": "Meta AI", "url": "https://ai.meta.com/blog/rss/", "tier": "bigtech", "weight": 10 }
+      ],
+      "hn": ["open weights model", "LLM release"]
+    },
+    {
+      "id": "ai-agents",
+      "short": "エージェント",
+      "label": "エージェント・開発ハーネス（MCP・コーディングAI）",
+      "keywords": ["agent", "agentic", "mcp", "model context protocol", "coding assistant", "claude code", "codex", "cursor", "copilot", "harness", "tool use", "computer use", "browser agent", "workflow", "sdk", "cli", "エージェント", "ハーネス"],
+      "github": [
+        "topic:ai-agents pushed:>={active} stars:>={minStars}",
+        "topic:mcp created:>={recent} stars:>=50",
+        "topic:coding-agent pushed:>={active} stars:>=50"
+      ],
+      "feeds": [
+        { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "tier": "oss", "weight": 9 },
+        { "name": "GitHub Blog (AI/ML)", "url": "https://github.blog/ai-and-ml/feed/", "tier": "bigtech", "weight": 8 },
+        { "name": "LangChain Blog", "url": "https://blog.langchain.com/rss/", "tier": "hybrid", "weight": 6 }
+      ],
+      "hn": ["AI agent", "MCP server", "coding agent"]
+    },
+    {
+      "id": "ai-interp",
+      "short": "解釈・安全性",
+      "label": "解釈可能性・安全性・ステアリング",
+      "keywords": ["interpretability", "mechanistic", "sparse autoencoder", "sae", "steering", "activation steering", "representation engineering", "circuit", "alignment", "safety", "red team", "jailbreak", "evals", "eval", "sycophancy", "deception", "解釈可能性", "アライメント", "ステアリング"],
+      "github": [
+        "topic:interpretability pushed:>={active} stars:>=30",
+        "topic:mechanistic-interpretability pushed:>={active} stars:>=10",
+        "\"activation steering\" OR \"sparse autoencoder\" in:name,description pushed:>={active} stars:>=20"
+      ],
+      "feeds": [
+        { "name": "Alignment Forum", "url": "https://www.alignmentforum.org/feed.xml", "tier": "oss", "weight": 7 },
+        { "name": "arXiv cs.LG", "url": "https://rss.arxiv.org/rss/cs.LG", "tier": "hybrid", "weight": 2, "requireKeywords": true }
+      ],
+      "hn": ["interpretability", "AI alignment research"]
+    },
+    {
+      "id": "world-models",
+      "short": "ワールドモデル",
+      "label": "ワールドモデル・フィジカルAI・ロボティクス",
+      "keywords": ["world model", "world simulator", "physical ai", "embodied", "robot", "robotics", "humanoid", "vla", "vision-language-action", "jepa", "cosmos", "genie", "simulation", "autonomous driving", "manipulation", "locomotion", "sim2real", "ワールドモデル", "ロボット", "身体性"],
+      "github": [
+        "topic:world-model pushed:>={active} stars:>=20",
+        "topic:robotics pushed:>={active} stars:>={minStars}",
+        "topic:embodied-ai pushed:>={active} stars:>=30",
+        "\"world model\" in:name,description created:>={recent} stars:>=30"
+      ],
+      "hfPipelines": ["robotics", "image-to-video"],
+      "feeds": [
+        { "name": "arXiv cs.RO", "url": "https://rss.arxiv.org/rss/cs.RO", "tier": "hybrid", "weight": 3 },
+        { "name": "IEEE Spectrum Robotics", "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss", "tier": "hybrid", "weight": 7 },
+        { "name": "The Robot Report", "url": "https://www.therobotreport.com/feed/", "tier": "hybrid", "weight": 5 },
+        { "name": "NVIDIA Blog", "url": "https://blogs.nvidia.com/feed/", "tier": "bigtech", "weight": 6, "requireKeywords": true }
+      ],
+      "hn": ["world model", "humanoid robot", "robotics foundation model"]
+    },
+    {
+      "id": "quantum",
+      "short": "量子",
+      "label": "量子コンピュータ・量子情報",
+      "keywords": ["quantum", "qubit", "qubits", "error correction", "logical qubit", "fault-tolerant", "superconducting", "trapped ion", "neutral atom", "photonic", "qiskit", "cirq", "entanglement", "quantum advantage", "post-quantum", "量子"],
+      "github": [
+        "topic:quantum-computing pushed:>={active} stars:>=50",
+        "topic:quantum created:>={recent} stars:>=20",
+        "topic:quantum-error-correction pushed:>={active} stars:>=10"
+      ],
+      "feeds": [
+        { "name": "arXiv quant-ph", "url": "https://rss.arxiv.org/rss/quant-ph", "tier": "hybrid", "weight": 4 },
+        { "name": "The Quantum Insider", "url": "https://thequantuminsider.com/feed/", "tier": "hybrid", "weight": 8 },
+        { "name": "Phys.org Quantum", "url": "https://phys.org/rss-feed/physics-news/quantum-physics/", "tier": "hybrid", "weight": 6 },
+        { "name": "Google Research", "url": "https://research.google/blog/rss/", "tier": "bigtech", "weight": 6, "requireKeywords": true },
+        { "name": "IBM Research", "url": "https://research.ibm.com/rss", "tier": "bigtech", "weight": 6, "requireKeywords": true }
+      ],
+      "hn": ["quantum computing", "logical qubits"]
+    },
+    {
+      "id": "math-physics",
+      "short": "数理物理",
+      "label": "数理物理・理論物理・AI×数学",
+      "keywords": ["mathematical physics", "theoretical physics", "string theory", "quantum gravity", "holography", "ads/cft", "topological", "conjecture", "theorem", "proof", "lean", "formal verification", "erdős", "erdos", "number theory", "geometry", "category theory", "renormalization", "black hole", "cosmology", "数理", "定理", "証明", "予想"],
+      "github": [
+        "topic:lean4 pushed:>={active} stars:>=30",
+        "topic:theorem-proving pushed:>={active} stars:>=30",
+        "topic:physics-informed-neural-networks pushed:>={active} stars:>=30"
+      ],
+      "feeds": [
+        { "name": "arXiv math-ph", "url": "https://rss.arxiv.org/rss/math-ph", "tier": "hybrid", "weight": 4 },
+        { "name": "arXiv hep-th", "url": "https://rss.arxiv.org/rss/hep-th", "tier": "hybrid", "weight": 3 },
+        { "name": "Quanta Magazine", "url": "https://www.quantamagazine.org/feed/", "tier": "hybrid", "weight": 10 },
+        { "name": "Terence Tao", "url": "https://terrytao.wordpress.com/feed/", "tier": "oss", "weight": 9 }
+      ],
+      "hn": ["Lean proof", "mathematicians AI proof"]
+    },
+    {
+      "id": "bio",
+      "short": "バイオ",
+      "label": "バイオ・合成生物学・AI創薬",
+      "keywords": ["protein", "genome", "genomic", "dna", "rna", "crispr", "gene editing", "base editing", "synthetic biology", "cell", "antibody", "drug discovery", "alphafold", "evo", "esm", "single-cell", "biology", "biotech", "aging", "reprogramming", "合成生物学", "タンパク質", "ゲノム", "創薬"],
+      "github": [
+        "topic:bioinformatics pushed:>={active} stars:>={minStars}",
+        "topic:protein-design pushed:>={active} stars:>=30",
+        "topic:computational-biology created:>={recent} stars:>=30"
+      ],
+      "hfPipelines": [],
+      "feeds": [
+        { "name": "bioRxiv Synthetic Biology", "url": "https://connect.biorxiv.org/biorxiv_xml/synthetic_biology", "tier": "hybrid", "weight": 4 },
+        { "name": "bioRxiv Bioinformatics", "url": "https://connect.biorxiv.org/biorxiv_xml/bioinformatics", "tier": "hybrid", "weight": 3 },
+        { "name": "arXiv q-bio.BM", "url": "https://rss.arxiv.org/rss/q-bio.BM", "tier": "hybrid", "weight": 3 },
+        { "name": "Nature Biotechnology", "url": "https://www.nature.com/nbt.rss", "tier": "hybrid", "weight": 8 },
+        { "name": "GEN News", "url": "https://www.genengnews.com/feed/", "tier": "hybrid", "weight": 6 },
+        { "name": "STAT News", "url": "https://www.statnews.com/feed/", "tier": "hybrid", "weight": 5, "requireKeywords": true }
+      ],
+      "hn": ["protein design AI", "synthetic biology"]
+    },
+    {
+      "id": "neuro",
+      "short": "ニューロ・BCI",
+      "label": "ニューロサイエンス・BCI・ニューロモジュレーション",
+      "keywords": ["neuro", "neuron", "neural recording", "brain", "bci", "brain-computer", "neuralink", "synchron", "neuromodulation", "deep brain stimulation", "dbs", "closed-loop", "focused ultrasound", "optogenetic", "connectome", "eeg", "fmri", "cortex", "neural decoding", "脳", "神経", "ニューロ"],
+      "github": [
+        "topic:neuroscience pushed:>={active} stars:>=30",
+        "topic:brain-computer-interface pushed:>={active} stars:>=20",
+        "topic:eeg pushed:>={active} stars:>=50"
+      ],
+      "feeds": [
+        { "name": "bioRxiv Neuroscience", "url": "https://connect.biorxiv.org/biorxiv_xml/neuroscience", "tier": "hybrid", "weight": 3 },
+        { "name": "arXiv q-bio.NC", "url": "https://rss.arxiv.org/rss/q-bio.NC", "tier": "hybrid", "weight": 4 },
+        { "name": "The Transmitter", "url": "https://www.thetransmitter.org/feed/", "tier": "hybrid", "weight": 8 },
+        { "name": "Nature Neuroscience", "url": "https://www.nature.com/neuro.rss", "tier": "hybrid", "weight": 7 },
+        { "name": "ScienceDaily Neuroscience", "url": "https://www.sciencedaily.com/rss/mind_brain/neuroscience.xml", "tier": "hybrid", "weight": 4 }
+      ],
+      "hn": ["brain-computer interface", "neuroscience"]
+    },
+    {
+      "id": "hardware",
+      "short": "半導体・素材",
+      "label": "半導体・AIチップ・新素材",
+      "keywords": ["semiconductor", "chip", "gpu", "tpu", "asic", "tsmc", "lithography", "euv", "2nm", "packaging", "chiplet", "hbm", "photonic", "neuromorphic", "materials", "superconductor", "battery", "fab", "半導体", "チップ", "新素材"],
+      "github": [
+        "topic:fpga pushed:>={active} stars:>={minStars}",
+        "topic:risc-v pushed:>={active} stars:>={minStars}",
+        "topic:materials-science pushed:>={active} stars:>=30"
+      ],
+      "feeds": [
+        { "name": "IEEE Spectrum Semiconductors", "url": "https://spectrum.ieee.org/feeds/topic/semiconductors.rss", "tier": "hybrid", "weight": 7 },
+        { "name": "SemiAnalysis", "url": "https://semianalysis.com/feed/", "tier": "hybrid", "weight": 7 },
+        { "name": "arXiv cond-mat.mtrl-sci", "url": "https://rss.arxiv.org/rss/cond-mat.mtrl-sci", "tier": "hybrid", "weight": 2, "requireKeywords": true }
+      ],
+      "hn": ["semiconductor", "AI chip"]
+    }
+  ],
+  "sharedFeeds": [
+    { "name": "Nature News", "url": "https://www.nature.com/nature.rss", "tier": "hybrid", "weight": 6 },
+    { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/", "tier": "hybrid", "weight": 5 },
+    { "name": "Ars Technica Science", "url": "https://feeds.arstechnica.com/arstechnica/science", "tier": "hybrid", "weight": 4 },
+    { "name": "Microsoft Research", "url": "https://www.microsoft.com/en-us/research/feed/", "tier": "bigtech", "weight": 6 }
+  ]
+}

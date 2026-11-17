@@ -62,6 +62,19 @@ export function buildKnowledgeBase(archives) {
         tags: ['collected', 'tool'],
       });
     }
+    for (const domain of archive.frontier?.domains || []) {
+      for (const item of domain.entries || []) {
+        const evidenceUrl = canonicalSourceUrl(item.url);
+        if (!evidenceUrl || !item.title || items.has(evidenceUrl)) continue;
+        items.set(evidenceUrl, {
+          title: clean(item.title), titleJa: clean(item.titleJa || item.title),
+          summary: clean(item.summary || item.body), url: evidenceUrl,
+          source: clean(item.source || 'Frontier'), date: archive.dateLocal,
+          provenance: { evidence: 'observed-link', collectedAt: archive.generatedAt || null },
+          tags: ['collected', 'frontier', `domain:${clean(domain.id)}`, `tier:${clean(item.tier)}`, clean(item.kind || 'news')],
+        });
+      }
+    }
   }
   const byMonth = new Map();
   for (const item of items.values()) {

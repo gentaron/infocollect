@@ -66,7 +66,16 @@ function safeRead(file) {
   }
 }
 
-function readDigestCandidates() {
+// 枠ごとに「最先端マップ」のどの分野を題材候補に混ぜるか。
+const FRONTIER_FOR_SLOT = {
+  '0700': ['ai-models', 'world-models'],
+  '0900': ['ai-agents', 'ai-interp'],
+  '1100': ['ai-agents', 'ai-models', 'world-models'],
+  '1400': ['ai-interp', 'math-physics', 'world-models', 'quantum'],
+  '1800': ['bio', 'neuro', 'quantum', 'hardware', 'math-physics'],
+};
+
+function readDigestCandidates(slotId = '') {
   const file = path.join(ROOT, 'docs', 'data', 'latest.json');
   let data;
   try {
@@ -86,6 +95,18 @@ function readDigestCandidates() {
     url: item.url,
     summary: item.summary,
   }));
+  const wanted = FRONTIER_FOR_SLOT[slotId] || [];
+  for (const domain of data.frontier?.domains || []) {
+    if (!wanted.includes(domain.id)) continue;
+    for (const entry of (domain.entries || []).slice(0, 4)) {
+      news.push({
+        title: `[${domain.label}] ${entry.title}`,
+        titleJa: entry.titleJa,
+        url: entry.url,
+        summary: entry.summary,
+      });
+    }
+  }
   return { tools, news, date: data.dateLocal || '' };
 }
 
@@ -154,7 +175,7 @@ async function main() {
   const todayTitles = readTodayTitles(date);
 
   // 3. Candidates: daily digest + optional web search.
-  const digest = readDigestCandidates();
+  const digest = readDigestCandidates(args.slot);
   if (digest.date) log(`blog: ダイジェスト候補 (${digest.date}) — tools ${digest.tools.length} / news ${digest.news.length}`);
   let search = [];
   if (args.search) {

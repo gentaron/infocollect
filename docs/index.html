@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>InfoCollect — 今日のAIツールとニュース</title>
+<title>InfoCollect — 今日のAIと最先端科学</title>
 <meta name="description" content="毎朝9時（マレーシア時間）に、GitHubで伸びているAIツールとAIの新機能・新バージョンのニュースをまとめて配信するPWA。" />
 <meta name="theme-color" content="#0b1020" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -22,7 +22,7 @@
     <img src="./icons/favicon.svg" alt="" width="34" height="34" />
     <div>
       <h1>InfoCollect</h1>
-      <p class="tagline">今日のAIツール &amp; ニュース</p>
+      <p class="tagline">今日のAI &amp; 最先端マップ</p>
     </div>
   </div>
   <div class="header-actions">
@@ -53,6 +53,17 @@
     <p id="digest-text"></p>
   </section>
 
+  <section id="frontier-section" aria-labelledby="frontier-heading" hidden>
+    <div class="section-head">
+      <h2 id="frontier-heading">最先端マップ（分野別）</h2>
+      <span id="frontier-count" class="count"></span>
+    </div>
+    <p class="section-note">AI・量子・数理物理・バイオ・ニューロ・ワールドモデル・半導体を、<strong>オープンソース</strong>／<strong>どっちつかず</strong>／<strong>大手</strong>の3部門で並べています。</p>
+    <div id="domain-filters" class="filters" role="group" aria-label="分野の絞り込み"></div>
+    <div id="tier-filters" class="filters" role="group" aria-label="部門の絞り込み"></div>
+    <div id="frontier" class="frontier"></div>
+  </section>
+
   <section aria-labelledby="tools-heading">
     <div class="section-head">
       <h2 id="tools-heading">GitHubで伸びているAIツール</h2>
@@ -75,6 +86,7 @@
     <ul>
       <li>毎日 <strong>09:00（マレーシア時間 / UTC+8）</strong> に GitHub Actions が自動収集します。</li>
       <li>ツールは「直近のスター増加ペース × 更新の新しさ」で順位付けしています。</li>
+      <li>最先端マップは arXiv・bioRxiv・専門メディア・各社ブログ・GitHub・Hugging Face から分野ごとに拾い、部門ごとに最低1件は載るよう選んでいます。論文は査読前のものを含みます。</li>
       <li>要約は無料枠のAI（Gemini / Groq / OpenRouter / Cloudflare）。キーが無い場合はルールベースで動きます。</li>
       <li>ホーム画面に追加するとオフラインでも最後に取得した内容を読めます。</li>
     </ul>

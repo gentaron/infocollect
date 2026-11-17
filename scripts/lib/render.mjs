@@ -48,6 +48,32 @@ export function toMarkdown(payload) {
     lines.push(`- [${item.titleJa}](${item.url}) — ${item.source}｜${item.summary}`);
   }
   if (!payload.news.length) lines.push('_該当なし_');
+  lines.push(...frontierMarkdown(payload.frontier));
   lines.push('', `_生成: ${payload.generatedAtLocal} (${payload.timezone}) / 要約: ${payload.ai.label}_`);
   return `${lines.join('\n')}\n`;
+}
+
+const KIND_JA = { repo: 'GitHub', model: 'HFモデル', news: '記事' };
+
+/** 分野別「最先端マップ」を Markdown に。frontier が無い日は何も出さない。 */
+export function frontierMarkdown(frontier) {
+  if (!frontier?.domains?.length) return [];
+  const tiers = frontier.tiers || {};
+  const lines = ['', '## 最先端マップ（分野別 × オープンソース／大手／どっちつかず）', ''];
+  for (const domain of frontier.domains) {
+    lines.push(`### ${domain.label}`, '');
+    if (domain.digest) lines.push(domain.digest, '');
+    for (const tier of ['oss', 'hybrid', 'bigtech']) {
+      const entries = domain.entries.filter((entry) => entry.tier === tier);
+      if (!entries.length) continue;
+      lines.push(`**${tiers[tier]?.label || tier}**`, '');
+      for (const entry of entries) {
+        const extra = entry.kind === 'repo' && entry.stars != null ? ` ★${Number(entry.stars).toLocaleString('en-US')}` : '';
+        lines.push(`- [${entry.titleJa || entry.title}](${entry.url}) — ${KIND_JA[entry.kind] || entry.kind}・${entry.source}${extra}｜${entry.summary}`);
+      }
+      lines.push('');
+    }
+    if (!domain.entries.length) lines.push('_今日は該当なし_', '');
+  }
+  return lines;
 }

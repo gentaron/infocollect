@@ -59,7 +59,7 @@ export async function collectTrendingRepos(config, previousSnapshot, token) {
       if (!candidates.has(repo.full_name)) candidates.set(repo.full_name, repo);
     }
     // Search API allows 30 req/min authenticated; stay well under it.
-    await sleep(1200);
+    await sleep(config.pauseMs ?? 1200);
   }
 
   const now = Date.now();

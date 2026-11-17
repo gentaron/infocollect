@@ -2,7 +2,7 @@
 // keeps working offline, and keeps the newest data JSON in a separate cache.
 
 const VERSION = 'v1';
-const SHELL_CACHE = `infocollect-shell-v2`;
+const SHELL_CACHE = `infocollect-shell-v3`;
 const DATA_CACHE = `infocollect-data-${VERSION}`;
 
 const SHELL_ASSETS = [

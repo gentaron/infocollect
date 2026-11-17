@@ -10,6 +10,8 @@ import { fileURLToPath } from 'node:url';
 import { parseJsonLoose } from './lib/ai.mjs';
 import { parseFeed } from './lib/feeds.mjs';
 import { classify, rankNews } from './lib/rank.mjs';
+import { balancedTake, buildFrontier, classifyDomain, classifyTier, fallbackFrontier, keywordHits } from './lib/frontier.mjs';
+import { frontierMarkdown } from './lib/render.mjs';
 import { buildDigest, fallbackNewsSummary, fallbackToolSummary, toMarkdown } from './lib/render.mjs';
 import { canonicalUrl, dateInZone, stripHtml, timeInZone, truncate } from './lib/util.mjs';
 import {
@@ -244,6 +246,78 @@ test('every slot has a scheduled workflow with the right cron', () => {
     assert.ok(yaml.includes(`'${cron}'`), `blog-${slotId}.yml should schedule '${cron}' (MYT ${slotId.slice(0, 2)}:00)`);
     assert.ok(yaml.includes(`--slot ${slotId}`), `blog-${slotId}.yml should run --slot ${slotId}`);
   }
+});
+
+
+console.log('frontier');
+const FRONTIER = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'frontier.json'), 'utf8'));
+test('frontier config: every domain and feed is well-formed', () => {
+  const ids = new Set();
+  for (const domain of FRONTIER.domains) {
+    assert.ok(domain.id && domain.label && domain.keywords.length, `domain ${domain.id} incomplete`);
+    assert.ok(!ids.has(domain.id), `duplicate domain ${domain.id}`);
+    ids.add(domain.id);
+    for (const feed of domain.feeds || []) {
+      assert.ok(/^https:\/\//.test(feed.url), `${feed.name} must be https`);
+      assert.ok(['oss', 'bigtech', 'hybrid'].includes(feed.tier), `${feed.name} has an unknown tier`);
+    }
+  }
+  for (const id of ['ai-models', 'world-models', 'quantum', 'math-physics', 'bio', 'neuro']) assert.ok(ids.has(id), `${id} missing`);
+  assert.deepEqual(Object.keys(FRONTIER.tiers).sort(), ['bigtech', 'hybrid', 'oss']);
+});
+test('keywordHits matches short ascii terms only on word boundaries', () => {
+  assert.equal(keywordHits('New MCP server for agents', ['mcp']), 1);
+  assert.equal(keywordHits('the mcpherson report', ['mcp']), 0);
+  assert.equal(keywordHits('量子誤り訂正の新手法', ['量子']), 1);
+});
+test('classifyDomain routes by keywords and respects requireKeywords', () => {
+  const domains = FRONTIER.domains;
+  assert.equal(classifyDomain({ title: 'Logical qubits with neutral atom arrays', body: 'quantum error correction' }, domains).id, 'quantum');
+  assert.equal(classifyDomain({ title: 'Closed-loop deep brain stimulation trial', body: 'neuromodulation of cortex' }, domains).id, 'neuro');
+  assert.equal(classifyDomain({ title: 'Quarterly earnings', domainHint: 'quantum', requireKeywords: true }, domains), null);
+  assert.equal(classifyDomain({ title: 'Anything at all', domainHint: 'bio' }, domains).id, 'bio');
+  assert.equal(classifyDomain({ title: 'A protein story' }, domains), null, 'one weak hit is not enough for a general item');
+});
+test('classifyTier separates OSS, big tech and the in-between', () => {
+  assert.equal(classifyTier({ kind: 'repo', title: 'someone/cool-qec' }, FRONTIER), 'oss');
+  assert.equal(classifyTier({ kind: 'repo', title: 'google-deepmind/alphagenome' }, FRONTIER), 'hybrid');
+  assert.equal(classifyTier({ kind: 'news', tier: 'bigtech', title: 'Introducing a new model', url: 'https://openai.com/x' }, FRONTIER), 'bigtech');
+  assert.equal(classifyTier({ kind: 'news', tier: 'bigtech', title: 'We open-source our weights', url: 'https://ai.meta.com/x' }, FRONTIER), 'hybrid');
+  assert.equal(classifyTier({ kind: 'news', title: 'Show HN', url: 'https://github.com/alice/tool' }, FRONTIER), 'oss');
+  assert.equal(classifyTier({ kind: 'news', title: 'Nvidia unveils a chip', url: 'https://example.com' }, FRONTIER), 'bigtech');
+});
+test('balancedTake keeps at least one item per tier when available', () => {
+  const items = [
+    { tier: 'bigtech', score: 90, source: 'a' }, { tier: 'bigtech', score: 80, source: 'b' },
+    { tier: 'bigtech', score: 70, source: 'c' }, { tier: 'oss', score: 5, source: 'd' }, { tier: 'hybrid', score: 4, source: 'e' },
+  ];
+  const picked = balancedTake(items, 3);
+  assert.deepEqual(picked.map((item) => item.tier).sort(), ['bigtech', 'hybrid', 'oss']);
+  const capped = balancedTake([{ tier: 'oss', score: 9, source: 'x' }, { tier: 'oss', score: 8, source: 'x' }, { tier: 'oss', score: 1, source: 'y' }], 2, { maxPerSource: 1 });
+  assert.deepEqual(capped.map((item) => item.source), ['x', 'y']);
+});
+test('buildFrontier groups by domain, drops stale items and renders', () => {
+  const now = Date.parse('2026-11-17T01:00:00Z');
+  const raw = {
+    repos: [{ title: 'lab/qec-decoder', url: 'https://github.com/lab/qec-decoder', source: 'GitHub', body: 'quantum error correction decoder', domainHint: 'quantum', stars: 500, score: 12 }],
+    models: [],
+    news: [
+      { title: 'Entangled logical qubits', url: 'https://example.com/q1', source: 'The Quantum Insider', tier: 'hybrid', domainHint: 'quantum', publishedAt: '2026-11-16T10:00:00Z', weight: 8 },
+      { title: 'Old qubit news', url: 'https://example.com/q0', source: 'The Quantum Insider', tier: 'hybrid', domainHint: 'quantum', publishedAt: '2026-10-01T10:00:00Z' },
+      { title: 'Closed-loop brain-computer interface for walking', url: 'https://example.com/n1', source: 'The Transmitter', tier: 'hybrid', domainHint: 'neuro', publishedAt: '2026-11-16T00:00:00Z' },
+    ],
+  };
+  const domains = buildFrontier(raw, FRONTIER, now);
+  const quantum = domains.find((domain) => domain.id === 'quantum');
+  assert.equal(quantum.entries.length, 2);
+  assert.ok(quantum.entries.some((entry) => entry.kind === 'repo' && entry.tier === 'oss'));
+  assert.ok(!quantum.entries.some((entry) => entry.title === 'Old qubit news'));
+  const filled = fallbackFrontier(quantum, FRONTIER.tiers);
+  assert.ok(filled.digest.includes('OSS 1件'));
+  const md = frontierMarkdown({ tiers: FRONTIER.tiers, domains: domains.map((domain) => fallbackFrontier(domain, FRONTIER.tiers)) }).join('\n');
+  assert.ok(md.includes('### 量子コンピュータ・量子情報'));
+  assert.ok(md.includes('**オープンソース**'));
+  assert.deepEqual(frontierMarkdown(null), []);
 });
 
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures)' : ''}`);

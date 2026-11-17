@@ -6,71 +6,71 @@
         "rank": 1,
         "name": "qybaihe/bla",
         "url": "https://github.com/qybaihe/bla",
-        "score": 98,
+        "score": 99,
         "theme": "harness"
       },
       {
         "rank": 2,
         "name": "Graphify-Labs/graphify",
         "url": "https://github.com/Graphify-Labs/graphify",
-        "score": 98,
+        "score": 99,
         "theme": "harness"
       },
       {
         "rank": 3,
         "name": "hitkeeen/blender-ai-mcp-addon",
         "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-        "score": 98,
+        "score": 99,
         "theme": "harness"
       },
       {
         "rank": 4,
-        "name": "youssofal/MTPLX",
-        "url": "https://github.com/youssofal/MTPLX",
-        "score": 91,
-        "theme": "lightweight-model"
+        "name": "wquguru/cicada",
+        "url": "https://github.com/wquguru/cicada",
+        "score": 95,
+        "theme": "device-util"
       },
       {
         "rank": 5,
-        "name": "wangzan101/Mika",
-        "url": "https://github.com/wangzan101/Mika",
-        "score": 91,
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "score": 94,
         "theme": "lightweight-model"
       },
       {
         "rank": 6,
-        "name": "Verlintas/NOIR",
-        "url": "https://github.com/Verlintas/NOIR",
-        "score": 90,
-        "theme": "device-util"
+        "name": "wangzan101/Mika",
+        "url": "https://github.com/wangzan101/Mika",
+        "score": 94,
+        "theme": "lightweight-model"
       },
       {
         "rank": 7,
-        "name": "affifuddin-hazam/ghost-infer",
-        "url": "https://github.com/affifuddin-hazam/ghost-infer",
-        "score": 86,
+        "name": "synchopate/llama-modchip",
+        "url": "https://github.com/synchopate/llama-modchip",
+        "score": 93,
         "theme": "lightweight-model"
       },
       {
         "rank": 8,
-        "name": "jev-chat/jev-chat-jarvis",
-        "url": "https://github.com/jev-chat/jev-chat-jarvis",
-        "score": 75,
-        "theme": "device-util"
+        "name": "joeseesun/qiaomu-clipper",
+        "url": "https://github.com/joeseesun/qiaomu-clipper",
+        "score": 84,
+        "theme": "pkm"
       },
       {
         "rank": 9,
-        "name": "rtk-ai/rtk",
-        "url": "https://github.com/rtk-ai/rtk",
-        "score": 72,
-        "theme": "reverse"
+        "name": "joeseesun/qiaomu-jot",
+        "url": "https://github.com/joeseesun/qiaomu-jot",
+        "score": 84,
+        "theme": "pkm"
       },
       {
         "rank": 10,
-        "name": "The-Vibe-Company/quivr",
-        "url": "https://github.com/The-Vibe-Company/quivr",
-        "score": 72,
-        "theme": "context"
+        "name": "PathGao/MoonDigest",
+        "url": "https://github.com/PathGao/MoonDigest",
+        "score": 84,
+        "theme": "pkm"
       }
     ]
   }

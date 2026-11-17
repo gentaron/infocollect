@@ -53,20 +53,24 @@
     <p id="digest-text"></p>
   </section>
 
-  <section id="frontier-section" aria-labelledby="frontier-heading" hidden>
+
+  <section id="yuimaru-section" aria-labelledby="yuimaru-heading" hidden>
     <div class="section-head">
-      <h2 id="frontier-heading">最先端マップ（分野別）</h2>
-      <span id="frontier-count" class="count"></span>
+      <h2 id="yuimaru-heading">ゆいまるが次に書きそうなもの</h2>
+      <span id="yuimaru-count" class="count"></span>
     </div>
-    <p class="section-note">AI・量子・数理物理・バイオ・ニューロ・ワールドモデル・半導体を、<strong>オープンソース</strong>／<strong>どっちつかず</strong>／<strong>大手</strong>の3部門で並べています。</p>
-    <div id="domain-filters" class="filters" role="group" aria-label="分野の絞り込み"></div>
-    <div id="tier-filters" class="filters" role="group" aria-label="部門の絞り込み"></div>
-    <div id="frontier" class="frontier"></div>
+    <p id="yuimaru-note" class="section-note"></p>
+    <div id="yuimaru-eval" class="yui-eval"></div>
+    <ol id="yuimaru" class="yui-list"></ol>
+    <details id="yuimaru-more" class="yui-more">
+      <summary>予測の根拠（学習した関心語・記事化済みで除外したもの）</summary>
+      <div id="yuimaru-detail"></div>
+    </details>
   </section>
 
   <section aria-labelledby="tools-heading">
     <div class="section-head">
-      <h2 id="tools-heading">GitHubで伸びているAIツール</h2>
+      <h2 id="tools-heading">GitHubで伸びているAIツール（ゆいまる目線）</h2>
       <span id="tools-count" class="count"></span>
     </div>
     <div id="tools" class="tool-grid"></div>
@@ -81,11 +85,23 @@
     <ul id="news" class="news-list"></ul>
   </section>
 
+  <section id="frontier-section" aria-labelledby="frontier-heading" hidden>
+    <div class="section-head">
+      <h2 id="frontier-heading">最先端マップ（分野別）</h2>
+      <span id="frontier-count" class="count"></span>
+    </div>
+    <p class="section-note">AI・量子・数理物理・バイオ・ニューロ・ワールドモデル・半導体を、<strong>オープンソース</strong>／<strong>どっちつかず</strong>／<strong>大手</strong>の3部門で並べています。</p>
+    <div id="domain-filters" class="filters" role="group" aria-label="分野の絞り込み"></div>
+    <div id="tier-filters" class="filters" role="group" aria-label="部門の絞り込み"></div>
+    <div id="frontier" class="frontier"></div>
+  </section>
+
   <section class="how">
     <h2>このアプリについて</h2>
     <ul>
       <li>毎日 <strong>09:00（マレーシア時間 / UTC+8）</strong> に GitHub Actions が自動収集します。</li>
-      <li>ツールは「直近のスター増加ペース × 更新の新しさ」で順位付けしています。</li>
+      <li><strong>ゆいまる予測</strong>：note の書き手ゆいまるさんの直近記事（RSS）から関心を毎日学習し、当日の全候補（GitHub・HF・ニュース・論文）を採点して「次に記事にしそうなもの」を並べます。既に記事化したものは除外し、翌日以降に実際に記事になったかを自動で答え合わせします。</li>
+      <li>ツールは「予測スコア 65% × スター増加ペース 35%」で順位付けしています。ニュースと最先端マップも予測スコアで並べ替えています。</li>
       <li>最先端マップは arXiv・bioRxiv・専門メディア・各社ブログ・GitHub・Hugging Face から分野ごとに拾い、部門ごとに最低1件は載るよう選んでいます。論文は査読前のものを含みます。</li>
       <li>要約は無料枠のAI（Gemini / Groq / OpenRouter / Cloudflare）。キーが無い場合はルールベースで動きます。</li>
       <li>ホーム画面に追加するとオフラインでも最後に取得した内容を読めます。</li>

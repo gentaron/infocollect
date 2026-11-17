@@ -1,0 +1,110 @@
+{
+  "$comment": "『ゆいまる予測』の設定。note の書き手（humble_bobcat51）が次に記事にしそうなものを予測してキュレーションする。themes の重みは2026-11時点の直近記事10本から手で起こした初期値（日付は検索で確認できた1本以外は null）で、毎日の収集で本人の新着記事（RSS）から語の重みを学習して上書き補正する。",
+  "author": {
+    "label": "ゆいまる",
+    "note": "https://note.com/humble_bobcat51",
+    "rss": "https://note.com/humble_bobcat51/rss"
+  },
+  "take": 10,
+  "maxPerTheme": 3,
+  "learning": {
+    "halfLifeDays": 21,
+    "maxTermBonus": 18,
+    "perTermWeight": 6
+  },
+  "seedPosts": [
+    { "title": "Opencode に Jev が来たら開発に使うしかない。イラレみたいなツールを作らせてみる", "date": null },
+    { "title": "DeepSeek-V4.1-Flash-1017 軽量・爆速・低コストでフロンティア級エージェント性能の正体", "date": null },
+    { "title": "Obsidian が重いので OKF 準拠 LLM wiki 階層の軽量 RAG ノートアプリ Pierrot Knowledge を作った", "date": null },
+    { "title": "Universal Android Debloater Next Generation (UAD-ng) で Android 端末の真価を引き出す", "date": null },
+    { "title": "AI が書く『動くけど古い Web コード』を根絶する Chrome Edge Firefox MDN 連合の Modern Web Guidance", "date": "2026-11-17" },
+    { "title": "LLM モデル Bonsai 徹底解説 1-bit 革命がもたらすエッジAIの未来 低スペックPCの救世主", "date": null },
+    { "title": "フォルダ構造で AI エージェントを制御する新常識 icm-architect", "date": null },
+    { "title": "REA 絶望するエンジニアを救う AI×リバースエンジニアリングツール", "date": null },
+    { "title": "Claude Code Game Studios とは ゲーム開発も AI エージェントの時代 実装例つき", "date": null },
+    { "title": "Fable 5 を一日使った感想と公式ベストプラクティス effort 設定 自律エージェント オーケストレーション", "date": null }
+  ],
+  "themes": [
+    {
+      "id": "harness",
+      "label": "コーディングエージェント／ハーネス",
+      "weight": 26,
+      "keywords": ["claude code", "opencode", "codex", "cursor", "cline", "roo code", "aider", "gemini cli", "harness", "dsh", "dsh-plugin", "subagent", "sub-agent", "orchestrat*", "agent skills", "skills", "slash command", "hooks", "mcp", "coding agent", "agentic coding", "fleet of", "multi-agent", "autonomous agent", "エージェント", "ハーネス"]
+    },
+    {
+      "id": "context",
+      "label": "コンテキスト設計（フォルダ構造・AGENTS.md・ガイド）",
+      "weight": 22,
+      "keywords": ["agents.md", "claude.md", "folder structure", "directory structure", "context engineering", "prompt engineering", "best practice", "best-practice", "guidance", "guidelines", "llms.txt", "spec-driven", "spec driven", "rules", "architect", "playbook", "memory", "knowledge graph", "フォルダ構造", "ベストプラクティス"]
+    },
+    {
+      "id": "lightweight-model",
+      "label": "軽量・爆速・低コストのモデル",
+      "weight": 24,
+      "keywords": ["flash", "lightweight", "light-weight", "1-bit", "1bit", "bitnet", "ternary", "gguf", "quantiz*", "small model", "tiny", "edge ai", "on-device", "on device", "local llm", "run locally", "cpu-only", "cpu only", "low vram", "low-cost", "cheap", "free tier", "for free", "completely free", "no api key", "open-weight", "open weights", "mit license", "distill*", "mtp", "speculative", "軽量", "爆速", "低コスト", "無料"]
+    },
+    {
+      "id": "pkm",
+      "label": "ノート／ナレッジ／RAG アプリ",
+      "weight": 16,
+      "keywords": ["obsidian", "notion", "logseq", "note app", "note-taking", "notes", "knowledge base", "second brain", "wiki", "rag", "markdown", "pkm", "zettelkasten", "graphify", "ナレッジ", "ノート"]
+    },
+    {
+      "id": "device-util",
+      "label": "端末・OS を快適にする実用ツール",
+      "weight": 15,
+      "keywords": ["android", "debloat", "bloatware", "adb", "windows", "powershell", "winget", "macos", "linux desktop", "phone", "mobile", "termux", "privacy", "utility", "optimizer", "端末", "スマホ"]
+    },
+    {
+      "id": "reverse",
+      "label": "リバースエンジニアリング／解析",
+      "weight": 14,
+      "keywords": ["reverse engineer*", "reverse-engineer*", "decompil*", "disassembl*", "ghidra", "ida pro", "binary", "frida", "apk", "firmware", "jadx", "radare", "リバースエンジニアリング"]
+    },
+    {
+      "id": "web-dev",
+      "label": "AI が書く Web コードの品質",
+      "weight": 13,
+      "keywords": ["mdn", "web platform", "baseline", "modern web", "browser", "chrome", "firefox", "css", "html", "web components", "frontend", "lint", "accessibility", "web standards"]
+    },
+    {
+      "id": "creative",
+      "label": "AI でつくる（ゲーム・デザイン・画像）",
+      "weight": 13,
+      "keywords": ["game", "game dev*", "game engine", "godot", "unity", "illustrator", "vector", "svg", "figma", "design tool", "image editor", "drawing", "paint", "text-to-cad", "cad", "3d", "ゲーム", "デザイン"]
+    },
+    {
+      "id": "frontier-model",
+      "label": "話題の新モデル（使ってみた系）",
+      "weight": 12,
+      "keywords": ["deepseek", "kimi", "qwen", "fable", "claude", "gpt-6", "gemini", "glm", "minimax", "mistral", "new model", "benchmark"]
+    }
+  ],
+  "boosts": {
+    "practical": { "weight": 10, "keywords": ["cli", "app", "desktop", "tool", "plugin", "extension", "install", "self-hosted", "one command", "npx", "brew", "pip install", "gui"] },
+    "japanese": { "weight": 6, "keywords": ["日本語", "japanese"] },
+    "fresh": { "weight": 10 },
+    "rising": { "weight": 14 },
+    "oss": { "weight": 6 }
+  },
+  "penalties": {
+    "paper": { "weight": 22, "sources": ["arXiv", "bioRxiv"] },
+    "corporate": { "weight": 18, "keywords": ["partnership", "partners with", "nato", "government", "policy", "funding", "raises", "valuation", "acquisition", "earnings", "customers", "enterprise", "bank", "tier-one", "academic researchers", "child safety", "lvmh"] },
+    "offtopic": { "weight": 20, "keywords": ["quantum", "qubit", "protein", "antibody", "gene", "crispr", "cell", "clinical", "drug", "psychedelic", "neuron", "fmri", "eeg", "alloy", "semiconductor fab", "wafer", "photon", "superconduct", "sickle"] },
+    "collection": { "weight": 25, "keywords": ["awesome", "curated list", "papers", "course", "roadmap", "interview", "tutorial", "cheatsheet", "book"] },
+    "uncensored": { "weight": 8, "keywords": ["uncensored", "abliterated", "heretic"] },
+    "covered": { "weight": 60 }
+  },
+  "queries": [
+    "topic:claude-code pushed:>={active} stars:>=50",
+    "topic:opencode pushed:>={active} stars:>=30",
+    "topic:agent-skills pushed:>={active} stars:>=50",
+    "topic:dsh-plugin pushed:>={active} stars:>=30",
+    "topic:obsidian created:>={recent} stars:>=50",
+    "topic:android created:>={recent} stars:>=100",
+    "topic:reverse-engineering created:>={recent} stars:>=50",
+    "topic:local-llm pushed:>={active} stars:>=50",
+    "gguf OR 1-bit OR bitnet in:name,description created:>={recent} stars:>=50",
+    "\"claude code\" OR opencode OR codex in:name,description created:>={recent} stars:>=80"
+  ]
+}

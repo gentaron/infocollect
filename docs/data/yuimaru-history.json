@@ -1,0 +1,77 @@
+[
+  {
+    "date": "2026-11-17",
+    "picks": [
+      {
+        "rank": 1,
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "score": 98,
+        "theme": "harness"
+      },
+      {
+        "rank": 2,
+        "name": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "score": 98,
+        "theme": "harness"
+      },
+      {
+        "rank": 3,
+        "name": "hitkeeen/blender-ai-mcp-addon",
+        "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+        "score": 98,
+        "theme": "harness"
+      },
+      {
+        "rank": 4,
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "score": 91,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 5,
+        "name": "wangzan101/Mika",
+        "url": "https://github.com/wangzan101/Mika",
+        "score": 91,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 6,
+        "name": "Verlintas/NOIR",
+        "url": "https://github.com/Verlintas/NOIR",
+        "score": 90,
+        "theme": "device-util"
+      },
+      {
+        "rank": 7,
+        "name": "affifuddin-hazam/ghost-infer",
+        "url": "https://github.com/affifuddin-hazam/ghost-infer",
+        "score": 86,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 8,
+        "name": "jev-chat/jev-chat-jarvis",
+        "url": "https://github.com/jev-chat/jev-chat-jarvis",
+        "score": 75,
+        "theme": "device-util"
+      },
+      {
+        "rank": 9,
+        "name": "rtk-ai/rtk",
+        "url": "https://github.com/rtk-ai/rtk",
+        "score": 72,
+        "theme": "reverse"
+      },
+      {
+        "rank": 10,
+        "name": "The-Vibe-Company/quivr",
+        "url": "https://github.com/The-Vibe-Company/quivr",
+        "score": 72,
+        "theme": "context"
+      }
+    ]
+  }
+]

@@ -6,3 +6,4 @@ docs/infocollect-pwa.zip
 
 # Ephemeral offline SQLite FTS5 knowledge cache (not published)
 .cache/
+__pycache__/

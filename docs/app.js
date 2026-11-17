@@ -23,6 +23,12 @@ const els = {
   frontierCount: document.getElementById('frontier-count'),
   domainFilters: document.getElementById('domain-filters'),
   tierFilters: document.getElementById('tier-filters'),
+  yuiSection: document.getElementById('yuimaru-section'),
+  yuiList: document.getElementById('yuimaru'),
+  yuiCount: document.getElementById('yuimaru-count'),
+  yuiNote: document.getElementById('yuimaru-note'),
+  yuiEval: document.getElementById('yuimaru-eval'),
+  yuiDetail: document.getElementById('yuimaru-detail'),
 };
 
 const TIER_ORDER = ['oss', 'hybrid', 'bigtech'];
@@ -86,6 +92,65 @@ function renderMeta() {
   }
 }
 
+function scorePill(score) {
+  if (score == null) return '';
+  const level = score >= 80 ? 'hi' : score >= 55 ? 'mid' : 'lo';
+  return `<span class="yui-pill yui-${level}" title="ゆいまる予測スコア（0〜100）">予測 ${escapeHtml(score)}</span>`;
+}
+
+function renderYuimaru() {
+  const y = payload.yuimaru;
+  if (!y?.picks?.length) {
+    els.yuiSection.hidden = true;
+    return;
+  }
+  els.yuiSection.hidden = false;
+  els.yuiCount.textContent = `${y.picks.length} 件 / 候補 ${formatNumber(y.poolSize)}`;
+  const latest = (y.latestPosts || [])[0];
+  els.yuiNote.innerHTML = y.rssOk
+    ? `最新記事「${latest ? `<a href="${safeUrl(latest.url)}" target="_blank" rel="noopener">${escapeHtml(latest.title)}</a>` : '—'}」まで学習済み。既に記事化したものは除外しています。`
+    : 'note の RSS が取れなかったため、登録済みの過去記事だけで予測しています。';
+  const e = y.evaluation;
+  if (e?.predicted) {
+    const hits = (e.hits || []).slice(0, 5)
+      .map((h) => `<li>${escapeHtml(h.date)} に ${escapeHtml(h.rank)} 位で予測 → <a href="${safeUrl(h.post.url)}" target="_blank" rel="noopener">${escapeHtml(h.name)}</a></li>`)
+      .join('');
+    els.yuiEval.innerHTML = `
+      <div class="yui-stats">
+        <span class="stat">的中率 <strong>${e.precision ?? '-'}%</strong></span>
+        <span class="stat">新記事の事前予測率 <strong>${e.recall ?? '-'}%</strong></span>
+        <span class="stat">${escapeHtml(e.days)} 日分・${escapeHtml(e.predicted)} 件を答え合わせ</span>
+      </div>${hits ? `<ul class="yui-hits">${hits}</ul>` : ''}`;
+  } else {
+    els.yuiEval.innerHTML = '<div class="yui-stats"><span class="stat">答え合わせは明日から始まります（予測を日ごとに保存して、ゆいまるさんの新記事と照合します）</span></div>';
+  }
+  els.yuiList.innerHTML = y.picks
+    .map((pick) => {
+      const reasons = (pick.reasons || []).map((r) => `<span class="chip">${escapeHtml(r)}</span>`).join('');
+      const stars = pick.stars != null ? `<span class="stat">★ <strong>${formatNumber(pick.stars)}</strong></span>` : '';
+      return `
+      <li class="yui-card">
+        <div class="yui-top">
+          <span class="rank">${escapeHtml(pick.rank)}</span>
+          <div class="yui-main">
+            <h3 class="tool-title"><a href="${safeUrl(pick.url)}" target="_blank" rel="noopener">${escapeHtml(pick.name)}</a></h3>
+            <div class="stat-row">${scorePill(pick.score)}<span class="stat">${escapeHtml(pick.themeLabel || '')}</span>${stars}<span class="stat">${escapeHtml(KIND_LABELS[pick.kind] || pick.source || '')}</span></div>
+          </div>
+        </div>
+        ${pick.description ? `<p class="tool-body">${escapeHtml(pick.description)}</p>` : ''}
+        ${reasons ? `<div class="chips">${reasons}</div>` : ''}
+      </li>`;
+    })
+    .join('');
+  const terms = (y.learnedTerms || []).map((t) => `<span class="chip">${escapeHtml(t.term)}</span>`).join('');
+  const covered = (y.covered || [])
+    .map((c) => `<li><a href="${safeUrl(c.url)}" target="_blank" rel="noopener">${escapeHtml(c.name)}</a> ← 「${escapeHtml(c.post?.title || '')}」で記事化済み</li>`)
+    .join('');
+  els.yuiDetail.innerHTML = `
+    <p class="section-note">最近の記事から学習した関心語</p><div class="chips">${terms || '—'}</div>
+    <p class="section-note">記事化済みなので除外</p><ul class="yui-hits">${covered || '<li>なし</li>'}</ul>`;
+}
+
 function renderTools() {
   const tools = payload.tools || [];
   els.toolsCount.textContent = tools.length ? `${tools.length} 件` : '';
@@ -110,7 +175,9 @@ function renderTools() {
         </div>
         <p class="tool-body">${escapeHtml(tool.summary || tool.description || '')}</p>
         <p class="tool-why">${escapeHtml(tool.why || '')}</p>
+        ${tool.yuimaruReasons?.length ? `<p class="tool-why">ゆいまる目線: ${escapeHtml(tool.yuimaruReasons.join(' / '))}</p>` : ''}
         <div class="stat-row">
+          ${scorePill(tool.yuimaruScore)}
           <span class="stat">★ <strong>${formatNumber(tool.stars)}</strong></span>
           <span class="stat">${growth}</span>
           ${tool.language ? `<span class="stat">${escapeHtml(tool.language)}</span>` : ''}
@@ -161,6 +228,7 @@ function renderNews() {
           <span>${escapeHtml(item.source || '')}</span>
           <span>${escapeHtml(relativeTime(item.publishedAt))}</span>
           <span>${tags}</span>
+          ${scorePill(item.yuimaruScore)}
         </div>
         <p class="news-summary">${escapeHtml(item.summary || '')}</p>
         ${item.titleJa && item.title && item.titleJa !== item.title
@@ -216,6 +284,7 @@ function renderFrontier() {
       const items = entries
         .map((entry) => {
           const stats = [];
+          if (entry.yuimaruScore != null) stats.push(scorePill(entry.yuimaruScore));
           if (entry.kind === 'repo' && entry.stars != null) stats.push(`★ ${formatNumber(entry.stars)}`);
           if (entry.kind === 'repo' && entry.starsDelta != null) stats.push(`<span class="up">+${formatNumber(entry.starsDelta)}</span>`);
           if (entry.kind === 'model' && entry.likes != null) stats.push(`♥ ${formatNumber(entry.likes)}`);
@@ -250,6 +319,7 @@ function renderFrontier() {
 function render() {
   if (!payload) return;
   renderMeta();
+  renderYuimaru();
   renderFrontier();
   renderTools();
   renderFilters();

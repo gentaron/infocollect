@@ -118,7 +118,7 @@ export async function collectTrendingRepos(config, previousSnapshot, token) {
 
   scored.sort((a, b) => b.score - a.score);
   const tools = scored.slice(0, take).map((tool, index) => ({ rank: index + 1, ...tool }));
-  return { tools, snapshot, candidates: candidates.size };
+  return { tools, snapshot, candidates: candidates.size, all: scored };
 }
 
 /** Latest releases of the repos we track — the clearest "new version" signal. */

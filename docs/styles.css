@@ -306,3 +306,25 @@ footer {
 .tier-filter.tier-oss[aria-pressed="true"] { background: #16a34a; border-color: #16a34a; color: #fff; }
 .tier-filter.tier-hybrid[aria-pressed="true"] { background: #c2780a; border-color: #c2780a; color: #fff; }
 .tier-filter.tier-bigtech[aria-pressed="true"] { background: #2563eb; border-color: #2563eb; color: #fff; }
+
+/* ── ゆいまる予測 ── */
+.yui-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.yui-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+.yui-card:first-child { border-color: var(--accent); }
+.yui-top { display: flex; gap: 12px; align-items: flex-start; }
+.yui-main { min-width: 0; flex: 1; }
+.yui-main .tool-title { overflow-wrap: anywhere; }
+.yui-pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; border: 1px solid currentColor; }
+.yui-hi { color: var(--accent-2); }
+.yui-mid { color: var(--accent); }
+.yui-lo { color: var(--muted); }
+.yui-eval { margin: 4px 0 12px; }
+.yui-stats { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); }
+.yui-stats strong { color: var(--text); }
+.yui-hits { margin: 6px 0 0; padding-left: 18px; font-size: 13px; color: var(--muted); }
+.yui-more { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.yui-more summary { cursor: pointer; }
+
+/* 長い英単語・URL・Markdown 断片でスマホ幅からはみ出さないように */
+.news-item, .domain-card, .tool-card, .yui-card, .digest { min-width: 0; overflow-wrap: anywhere; }
+.news-list, .tool-grid, .frontier { min-width: 0; }

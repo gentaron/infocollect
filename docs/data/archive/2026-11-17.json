@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-17 20:59 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/deepseek-harness、morluto/rea、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
+  "digest": "ゆいまるが次に取り上げそうなのは qybaihe/bla、Graphify-Labs/graphify、hitkeeen/blender-ai-mcp-addon。2026-11-17 20:59 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/deepseek-harness、morluto/rea、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -1632,6 +1632,286 @@
       "Meta AI",
       "Microsoft AI",
       "VentureBeat AI"
-    ]
+    ],
+    "predictionPool": 440
+  },
+  "yuimaru": {
+    "author": {
+      "label": "ゆいまる",
+      "note": "https://note.com/humble_bobcat51",
+      "rss": "https://note.com/humble_bobcat51/rss"
+    },
+    "picks": [
+      {
+        "rank": 1,
+        "kind": "repo",
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+        "source": "GitHub",
+        "stars": 6021,
+        "starsPerDay": 154.9,
+        "score": 98,
+        "theme": "harness",
+        "themeLabel": "コーディングエージェント／ハーネス",
+        "reasons": [
+          "コーディングエージェント／ハーネス（codex・cursor・mcp）",
+          "最近の記事と地続き（android・rea・claude）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約155★/日）"
+        ]
+      },
+      {
+        "rank": 2,
+        "kind": "repo",
+        "name": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "source": "GitHub",
+        "stars": 149343,
+        "starsPerDay": 393.2,
+        "score": 98,
+        "theme": "harness",
+        "themeLabel": "コーディングエージェント／ハーネス",
+        "reasons": [
+          "コーディングエージェント／ハーネス（claude code・codex・cursor）",
+          "最近の記事と地続き（edge・knowledge・claude）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約393★/日）"
+        ]
+      },
+      {
+        "rank": 3,
+        "kind": "repo",
+        "name": "hitkeeen/blender-ai-mcp-addon",
+        "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+        "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+        "source": "GitHub",
+        "stars": 2389,
+        "starsPerDay": 289.7,
+        "score": 98,
+        "theme": "harness",
+        "themeLabel": "コーディングエージェント／ハーネス",
+        "reasons": [
+          "コーディングエージェント／ハーネス（opencode・mcp・multi-agent）",
+          "最近の記事と地続き（opencode・claude）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約290★/日）",
+          "出たばかり"
+        ]
+      },
+      {
+        "rank": 4,
+        "kind": "repo",
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "description": "The fastest way to run Qwen 3.8 Flash Next, Qwen 3.8 27B and Ternary Bonsai 2 27B on a Mac: 125 tok/s in OpenCode on an M5 Max, and a 27B model on 16 GB Macs. Native MTP speculative decoding on Apple Silicon, exact at any temperature. Open…",
+        "source": "GitHub",
+        "stars": 2719,
+        "starsPerDay": 8.2,
+        "score": 91,
+        "theme": "lightweight-model",
+        "themeLabel": "軽量・爆速・低コストのモデル",
+        "reasons": [
+          "軽量・爆速・低コストのモデル（flash・ternary・mtp）",
+          "最近の記事と地続き（opencode・bonsai・claude）"
+        ]
+      },
+      {
+        "rank": 5,
+        "kind": "repo",
+        "name": "wangzan101/Mika",
+        "url": "https://github.com/wangzan101/Mika",
+        "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+        "source": "GitHub",
+        "stars": 8935,
+        "starsPerDay": 283,
+        "score": 91,
+        "theme": "lightweight-model",
+        "themeLabel": "軽量・爆速・低コストのモデル",
+        "reasons": [
+          "軽量・爆速・低コストのモデル（on-device）",
+          "最近の記事と地続き（android）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約283★/日）"
+        ]
+      },
+      {
+        "rank": 6,
+        "kind": "repo",
+        "name": "Verlintas/NOIR",
+        "url": "https://github.com/Verlintas/NOIR",
+        "description": "手机隐私审计：用 adb 扫出 Android 应用的权限、上报端点与数据流向，并给出可回滚的处置。Desktop Android leak audit: permissions, endpoints, data flows, reversible fixes.",
+        "source": "GitHub",
+        "stars": 3615,
+        "starsPerDay": 130.2,
+        "score": 90,
+        "theme": "device-util",
+        "themeLabel": "端末・OS を快適にする実用ツール",
+        "reasons": [
+          "端末・OS を快適にする実用ツール（android・bloatware・adb）",
+          "最近の記事と地続き（android）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約130★/日）"
+        ]
+      },
+      {
+        "rank": 7,
+        "kind": "repo",
+        "name": "affifuddin-hazam/ghost-infer",
+        "url": "https://github.com/affifuddin-hazam/ghost-infer",
+        "description": "Fast local LLM inference for the GPU you already have: one Rust binary, GGUF models, an OpenAI-compatible server and a chat page with a ghost.",
+        "source": "GitHub",
+        "stars": 241,
+        "starsPerDay": 6.9,
+        "score": 86,
+        "theme": "lightweight-model",
+        "themeLabel": "軽量・爆速・低コストのモデル",
+        "reasons": [
+          "軽量・爆速・低コストのモデル（gguf・local llm）",
+          "すぐ試せる実用ツール"
+        ]
+      },
+      {
+        "rank": 8,
+        "kind": "repo",
+        "name": "jev-chat/jev-chat-jarvis",
+        "url": "https://github.com/jev-chat/jev-chat-jarvis",
+        "description": "The chat decision assistant: before you reply, Jev reads the chat, judges intent and risk, and drafts replies you fill in with one tap. You press send. Android · Windows · macOS · iOS | 聊天辅助决策工具：先看懂对方再回复，发不发由你。",
+        "source": "GitHub",
+        "stars": 8429,
+        "starsPerDay": 88.6,
+        "score": 75,
+        "theme": "device-util",
+        "themeLabel": "端末・OS を快適にする実用ツール",
+        "reasons": [
+          "端末・OS を快適にする実用ツール（android・windows・macos）",
+          "最近の記事と地続き（jev・android）",
+          "急上昇中（約89★/日）"
+        ]
+      },
+      {
+        "rank": 9,
+        "kind": "repo",
+        "name": "rtk-ai/rtk",
+        "url": "https://github.com/rtk-ai/rtk",
+        "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+        "source": "GitHub",
+        "stars": 86868,
+        "starsPerDay": 174.4,
+        "score": 72,
+        "theme": "reverse",
+        "themeLabel": "リバースエンジニアリング／解析",
+        "reasons": [
+          "リバースエンジニアリング／解析（binary）",
+          "最近の記事と地続き（claude）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約174★/日）"
+        ]
+      },
+      {
+        "rank": 10,
+        "kind": "repo",
+        "name": "The-Vibe-Company/quivr",
+        "url": "https://github.com/The-Vibe-Company/quivr",
+        "description": "An open-source engine that turns continuous content streams into search and monitoring. Durable ingestion, hybrid search, alerts, and plugins for formats, models and business rules.",
+        "source": "GitHub",
+        "stars": 39656,
+        "starsPerDay": 18.5,
+        "score": 72,
+        "theme": "context",
+        "themeLabel": "コンテキスト設計（フォルダ構造・AGENTS.md・ガイド）",
+        "reasons": [
+          "コンテキスト設計（フォルダ構造・AGENTS.md・ガイド）（rules）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約19★/日）"
+        ]
+      }
+    ],
+    "learnedTerms": [
+      {
+        "term": "エージェント",
+        "weight": 2
+      },
+      {
+        "term": "chrome",
+        "weight": 0.98
+      },
+      {
+        "term": "edge",
+        "weight": 0.98
+      },
+      {
+        "term": "firefox",
+        "weight": 0.98
+      },
+      {
+        "term": "mdn",
+        "weight": 0.98
+      },
+      {
+        "term": "modern",
+        "weight": 0.98
+      },
+      {
+        "term": "guidance",
+        "weight": 0.98
+      },
+      {
+        "term": "コード",
+        "weight": 0.98
+      },
+      {
+        "term": "opencode",
+        "weight": 0.5
+      },
+      {
+        "term": "jev",
+        "weight": 0.5
+      },
+      {
+        "term": "イラレ",
+        "weight": 0.5
+      },
+      {
+        "term": "deepseek-v4.1-flash-1017",
+        "weight": 0.5
+      }
+    ],
+    "covered": [
+      {
+        "name": "morluto/rea",
+        "url": "https://github.com/morluto/rea",
+        "post": {
+          "title": "REA 絶望するエンジニアを救う AI×リバースエンジニアリングツール",
+          "url": null
+        }
+      },
+      {
+        "name": "Donchitos/Claude-Code-Game-Studios",
+        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+        "post": {
+          "title": "Claude Code Game Studios とは ゲーム開発も AI エージェントの時代 実装例つき",
+          "url": null
+        }
+      }
+    ],
+    "latestPosts": [
+      {
+        "title": "AI が書く『動くけど古い Web コード』を根絶する Chrome Edge Firefox MDN 連合の Modern Web Guidance",
+        "url": null,
+        "publishedAt": "2026-11-17T00:00:00Z"
+      }
+    ],
+    "rssOk": false,
+    "evaluation": {
+      "days": 0,
+      "predicted": 0,
+      "hits": [],
+      "precision": null,
+      "postsSince": 0,
+      "recall": null
+    },
+    "poolSize": 440
   }
 }

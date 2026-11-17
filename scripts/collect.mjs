@@ -16,11 +16,14 @@ import { collectReleases, collectTrendingRepos } from './lib/github.mjs';
 import { rankNews } from './lib/rank.mjs';
 import { buildDigest, fallbackNewsSummary, fallbackToolSummary, toMarkdown } from './lib/render.mjs';
 import { dateInZone, log, timeInZone, warn } from './lib/util.mjs';
+import { evaluate, fetchAuthorPosts, mergePosts, poolFromPayload, predict, rerankNews, rerankTools } from './lib/yuimaru.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'docs', 'data');
 const ARCHIVE_DIR = path.join(DATA_DIR, 'archive');
 const SNAPSHOT_FILE = path.join(DATA_DIR, 'stars.json');
+const YUIMARU_HISTORY = path.join(DATA_DIR, 'yuimaru-history.json');
+const KEEP_PREDICTION_DAYS = 60;
 const KEEP_ARCHIVE_DAYS = 60;
 
 const args = new Set(process.argv.slice(2));
@@ -55,8 +58,20 @@ async function main() {
   if (!token) warn('GITHUB_TOKEN 未設定 — 匿名アクセスのため検索が制限される場合があります');
 
   const previousSnapshot = await readJson(SNAPSHOT_FILE, {});
-  const { tools, snapshot, candidates } = await collectTrendingRepos(config.tools, previousSnapshot, token);
-  log(`候補 ${candidates} 件 → 上位 ${tools.length} 件を採用`);
+  const trending = await collectTrendingRepos(config.tools, previousSnapshot, token);
+  const { snapshot } = trending;
+
+  // ゆいまる予測用に、本人が好む領域（Claude Code / Opencode / Obsidian / Android / 1-bit …）も追加で探す
+  const yuimaru = await readJson(path.join(ROOT, 'config', 'yuimaru.json'), null);
+  const repoByName = new Map(trending.all.map((repo) => [repo.name, repo]));
+  if (yuimaru?.queries?.length) {
+    const extra = await collectTrendingRepos({ ...config.tools, queries: yuimaru.queries, take: 0, pauseMs: 2200 }, previousSnapshot, token);
+    Object.assign(snapshot, extra.snapshot);
+    for (const repo of extra.all) if (!repoByName.has(repo.name)) repoByName.set(repo.name, repo);
+  }
+  const allRepos = [...repoByName.values()];
+  const candidates = allRepos.length;
+  log(`リポジトリ候補 ${candidates} 件`);
 
   const [feedResult, hnItems, releaseItems] = await Promise.all([
     collectFeeds(config.news.feeds),
@@ -67,12 +82,11 @@ async function main() {
   const sourceWeights = { ...(config.news.sourceWeights || {}) };
   for (const feed of config.news.feeds) if (feed.weight) sourceWeights[feed.name] = feed.weight;
 
-  const news = rankNews([...feedResult.items, ...hnItems, ...releaseItems], {
+  const newsPool = rankNews([...feedResult.items, ...hnItems, ...releaseItems], {
     sourceWeights,
-    take: config.news.take,
+    take: Math.max(80, config.news.take),
     maxAgeDays: config.news.maxAgeDays,
   });
-  log(`ニュース候補 ${feedResult.items.length + hnItems.length + releaseItems.length} 件 → 上位 ${news.length} 件`);
 
   // 分野別「最先端マップ」（量子・数理物理・バイオ・ニューロ・ワールドモデル …）
   const frontierConfig = NO_FRONTIER ? null : await readJson(path.join(ROOT, 'config', 'frontier.json'), null);
@@ -115,6 +129,48 @@ async function main() {
     }
   }
 
+  // ── ゆいまる予測：本人の新着記事から学習し、当日の全候補を採点 ──
+  let prediction = null;
+  let tools = trending.tools;
+  let news = newsPool.slice(0, config.news.take);
+  if (yuimaru) {
+    const rssPosts = await fetchAuthorPosts(yuimaru.author?.rss);
+    const posts = mergePosts(rssPosts, yuimaru.seedPosts);
+    log(`ゆいまるの記事 ${posts.length} 本（RSS ${rssPosts.length} 本）から関心を学習`);
+    const pool = poolFromPayload({ repos: allRepos, news: newsPool, frontier });
+    const result = predict(pool, yuimaru, { posts, now: now.getTime() });
+    const scoreByUrl = new Map(result.scored.map((c) => [c.url, c]));
+
+    tools = rerankTools(allRepos, scoreByUrl, config.tools.take);
+    news = rerankNews(newsPool, scoreByUrl, config.news.take);
+    if (frontier) {
+      for (const domain of frontier.domains) {
+        for (const entry of domain.entries) entry.yuimaruScore = scoreByUrl.get(entry.url)?.score ?? null;
+        domain.entries.sort((a, b) => (b.yuimaruScore ?? 0) - (a.yuimaruScore ?? 0));
+      }
+    }
+
+    const history = (await readJson(YUIMARU_HISTORY, [])).filter((day) => day.date !== dateLocal);
+    history.unshift({ date: dateLocal, picks: result.picks.map(({ rank, name, url, score, theme }) => ({ rank, name, url, score, theme })) });
+    const trimmedHistory = history.slice(0, KEEP_PREDICTION_DAYS);
+    // 今日の分は今日の記事でしか答え合わせできないので、評価は前日までの予測で行う
+    const evaluation = evaluate(trimmedHistory.filter((day) => day.date < dateLocal), rssPosts);
+
+    prediction = {
+      author: yuimaru.author,
+      picks: result.picks,
+      learnedTerms: result.learnedTerms,
+      covered: result.covered.slice(0, 10),
+      latestPosts: posts.filter((p) => p.publishedAt).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 5)
+        .map(({ title, url, publishedAt }) => ({ title, url, publishedAt })),
+      rssOk: rssPosts.length > 0,
+      evaluation,
+      poolSize: pool.length,
+    };
+    if (!DRY_RUN) await writeJson(YUIMARU_HISTORY, trimmedHistory);
+    log(`ゆいまる予測: ${result.picks.length} 件（的中 ${evaluation.hits.length} / 予測 ${evaluation.predicted}）`);
+  }
+
   const summary = NO_AI ? null : await summarise(tools, news, process.env);
   const ai = summary
     ? { enabled: true, provider: summary.provider, model: summary.model, label: `${summary.providerLabel} / ${summary.model}` }
@@ -146,6 +202,7 @@ async function main() {
       publishedAt: item.publishedAt,
       tags: item.tags,
       score: item.score,
+      yuimaruScore: item.yuimaruScore ?? null,
     };
   });
 
@@ -156,13 +213,17 @@ async function main() {
     dateLocal,
     timezone,
     ai,
-    digest: summary?.digest || buildDigest(decoratedTools, decoratedNews, generatedAtLocal),
+    digest: summary?.digest
+      ? `${prediction?.picks?.length ? `ゆいまるが次に取り上げそうなのは ${prediction.picks.slice(0, 3).map((pick) => pick.name).join('、')}。` : ''}${summary.digest}`
+      : buildDigest(decoratedTools, decoratedNews, generatedAtLocal, prediction),
     tools: decoratedTools,
     news: decoratedNews,
     frontier,
+    yuimaru: prediction,
     stats: {
       repoCandidates: candidates,
       newsCandidates: feedResult.items.length + hnItems.length + releaseItems.length,
+      predictionPool: prediction?.poolSize ?? null,
       feedsFailed: feedResult.failed,
     },
   };

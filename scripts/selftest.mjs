@@ -13,6 +13,19 @@ import { classify, rankNews } from './lib/rank.mjs';
 import { balancedTake, buildFrontier, classifyDomain, classifyTier, fallbackFrontier, keywordHits } from './lib/frontier.mjs';
 import { frontierMarkdown } from './lib/render.mjs';
 import { buildDigest, fallbackNewsSummary, fallbackToolSummary, toMarkdown } from './lib/render.mjs';
+import {
+  alreadyCovered,
+  evaluate,
+  extractTerms,
+  learnTerms,
+  mergePosts,
+  poolFromPayload,
+  predict,
+  rerankNews,
+  rerankTools,
+  scoreCandidate,
+} from './lib/yuimaru.mjs';
+import { yuimaruMarkdown } from './lib/render.mjs';
 import { canonicalUrl, dateInZone, stripHtml, timeInZone, truncate } from './lib/util.mjs';
 import {
   SLOTS,
@@ -318,6 +331,97 @@ test('buildFrontier groups by domain, drops stale items and renders', () => {
   assert.ok(md.includes('### 量子コンピュータ・量子情報'));
   assert.ok(md.includes('**オープンソース**'));
   assert.deepEqual(frontierMarkdown(null), []);
+});
+
+console.log('yuimaru');
+const YUI = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'yuimaru.json'), 'utf8'));
+const YNOW = Date.parse('2026-11-17T12:00:00Z');
+const repo = (name, description, extra = {}) => ({ name, url: `https://github.com/${name}`, description, topics: [], stars: 2000,
+  starsPerDay: 150, createdAt: '2026-11-10T00:00:00Z', pushedAt: '2026-11-17T00:00:00Z', license: 'MIT', score: 10, ...extra });
+
+test('yuimaru config is valid and every theme has keywords', () => {
+  assert.ok(YUI.themes.length >= 6);
+  for (const theme of YUI.themes) assert.ok(theme.id && theme.weight > 0 && theme.keywords.length, theme.id);
+  assert.ok(YUI.author.rss.startsWith('https://note.com/'));
+});
+test('extractTerms keeps product words and drops filler', () => {
+  const terms = extractTerms('REA: Saving desperate engineers with Obsidian and ギャラクシー');
+  assert.ok(terms.includes('rea') && terms.includes('obsidian') && terms.includes('ギャラクシー'));
+  assert.ok(!terms.includes('saving') && !terms.includes('with'));
+});
+test('learnTerms weights recent posts more heavily', () => {
+  const w = learnTerms([
+    { title: 'Ghidra deep dive', publishedAt: '2026-11-16T00:00:00Z' },
+    { title: 'Termux guide', publishedAt: '2026-08-01T00:00:00Z' },
+  ], { now: YNOW, halfLifeDays: 21 });
+  assert.ok(w.get('ghidra') > w.get('termux'));
+});
+test('a harness tool outranks a quantum paper and a corporate PR', () => {
+  const learned = new Map();
+  const a = scoreCandidate({ kind: 'repo', ...repo('x/agent-fleet', 'Run a fleet of coding agents like Claude Code and Opencode. CLI app.') }, YUI, { learned, now: YNOW });
+  const b = scoreCandidate({ kind: 'news', name: 'Rate-1/2 Quantum LDPC Codes', description: 'qubit error correction', source: 'arXiv quant-ph', publishedAt: '2026-11-17T00:00:00Z' }, YUI, { learned, now: YNOW });
+  const c = scoreCandidate({ kind: 'news', name: 'BigCo partners with NATO', description: 'partnership with government', source: 'OpenAI', publishedAt: '2026-11-17T00:00:00Z' }, YUI, { learned, now: YNOW });
+  assert.ok(a.score > 70, `harness ${a.score}`);
+  assert.ok(a.score > b.score + 40 && a.score > c.score + 40);
+  assert.equal(a.theme, 'harness');
+});
+test('keyword matching is whole-word ("rea" does not hit "reasoning")', () => {
+  const r = scoreCandidate({ kind: 'news', name: 'Reasoning traces', description: 'reasoning', source: 'X' }, YUI, { learned: new Map([['rea', 1]]), now: YNOW });
+  assert.ok(!r.reasons.some((x) => x.includes('地続き')));
+});
+test('alreadyCovered finds a repo the author already wrote about', () => {
+  const posts = [{ title: '[REA] AI x Reverse Engineering Tool', url: 'https://note.com/a/n/1' }];
+  assert.ok(alreadyCovered({ name: 'morluto/rea' }, posts));
+  assert.equal(alreadyCovered({ name: 'someone/reader' }, posts), null);
+});
+test('predict skips covered items, caps a theme and ranks rising practical tools', () => {
+  const repos = [
+    repo('morluto/rea', 'Reverse engineer anything with agents'),
+    repo('a/claude-skills', 'Agent skills for Claude Code'),
+    repo('b/opencode-plugin', 'Opencode plugin for coding agent'),
+    repo('c/codex-hooks', 'Codex hooks and slash command toolkit'),
+    repo('d/cursor-rules', 'Cursor coding agent harness rules'),
+    repo('e/bitnet-cpu', '1-bit GGUF model that runs locally on CPU only', { starsPerDay: 400 }),
+    repo('f/awesome-llm', 'awesome curated list of papers'),
+  ];
+  const pool = poolFromPayload({ repos });
+  const posts = mergePosts([], [{ title: 'REA 絶望するエンジニアを救う', date: null }]);
+  const { picks, covered, scored } = predict(pool, { ...YUI, maxPerTheme: 2 }, { posts, now: YNOW, take: 5 });
+  assert.ok(!picks.some((p) => p.name === 'morluto/rea'));
+  assert.ok(covered.some((c) => c.name === 'morluto/rea'));
+  assert.ok(picks.filter((p) => p.theme === 'harness').length <= 2);
+  assert.ok(picks.some((p) => p.name === 'e/bitnet-cpu'));
+  assert.ok(!picks.some((p) => p.name === 'f/awesome-llm'));
+  const byUrl = new Map(scored.map((c) => [c.url, c]));
+  const tools = rerankTools(repos, byUrl, 3);
+  assert.equal(tools.length, 3);
+  assert.ok(!tools.some((t) => t.name === 'morluto/rea'));
+  assert.ok(tools.every((t, i) => t.rank === i + 1 && typeof t.yuimaruScore === 'number'));
+});
+test('rerankNews keeps take and adds yuimaruScore', () => {
+  const items = [{ title: 'a', url: 'https://x/a', score: 50 }, { title: 'b', url: 'https://x/b', score: 40 }];
+  const out = rerankNews(items, new Map([['https://x/b', { score: 100 }]]), 2);
+  assert.equal(out[0].title, 'b');
+  assert.equal(out[1].yuimaruScore, null);
+});
+test('evaluate counts hits only for posts published after the prediction', () => {
+  const history = [{ date: '2026-11-10', picks: [{ rank: 1, name: 'x/bonsai' }, { rank: 2, name: 'y/nothing-here' }] }];
+  const posts = [
+    { title: 'Bonsai 徹底解説', url: 'https://note.com/a/n/2', publishedAt: '2026-11-12T00:00:00Z' },
+    { title: 'Unrelated', url: 'https://note.com/a/n/3', publishedAt: '2026-11-13T00:00:00Z' },
+    { title: 'Bonsai old', url: 'https://note.com/a/n/0', publishedAt: '2026-11-01T00:00:00Z' },
+  ];
+  const e = evaluate(history, posts);
+  assert.equal(e.predicted, 2);
+  assert.equal(e.hits.length, 1);
+  assert.equal(e.precision, 50);
+  assert.equal(e.recall, 50);
+  assert.deepEqual(evaluate([], posts).precision, null);
+});
+test('yuimaruMarkdown renders picks and stays empty without them', () => {
+  const md = yuimaruMarkdown({ picks: [{ rank: 1, name: 'a/b', url: 'https://github.com/a/b', score: 90, stars: 10, reasons: ['r'] }], evaluation: { predicted: 0 } }).join('\n');
+  assert.ok(md.includes('ゆいまるが次に書きそうなもの') && md.includes('[a/b]'));
+  assert.deepEqual(yuimaruMarkdown(null), []);
 });
 
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures)' : ''}`);

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T07:38:15.243Z",
-  "generatedAtLocal": "2026-11-16 15:38",
-  "dateLocal": "2026-11-16",
+  "generatedAt": "2026-11-17T08:47:49.106Z",
+  "generatedAtLocal": "2026-11-17 16:47",
+  "dateLocal": "2026-11-17",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,7 +10,7 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-16 15:38 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、pingdotgg/t3code の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-17 16:47 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、kajisho5/ffmpeg-skill の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 462614,
-      "starsDelta": 2173,
-      "starsPerDay": 2163.5,
+      "stars": 464942,
+      "starsDelta": 2328,
+      "starsPerDay": 2220.6,
       "measured": true,
-      "forks": 113274,
+      "forks": 113821,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,12 +36,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-11-16T06:48:40Z",
-      "openIssues": 1506,
-      "score": 2160.53,
+      "pushedAt": "2026-11-17T08:21:44Z",
+      "openIssues": 1551,
+      "score": 2219,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +2173 スター。TypeScript 製。最終更新 2026-11-16。"
+      "why": "前回計測から +2328 スター。TypeScript 製。最終更新 2026-11-17。"
     },
     {
       "rank": 2,
@@ -49,11 +49,11 @@
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 76418,
-      "starsDelta": 1555,
-      "starsPerDay": 1548.2,
+      "stars": 77905,
+      "starsDelta": 1487,
+      "starsPerDay": 1418.4,
       "measured": true,
-      "forks": 2150,
+      "forks": 2202,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -68,47 +68,99 @@
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
       "pushedAt": "2026-11-16T03:20:57Z",
-      "openIssues": 189,
-      "score": 1921.55,
+      "openIssues": 199,
+      "score": 1691.11,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1555 スター。JavaScript 製。最終更新 2026-11-16。"
+      "why": "前回計測から +1487 スター。JavaScript 製。最終更新 2026-11-16。"
     },
     {
       "rank": 3,
-      "name": "pingdotgg/t3code",
-      "url": "https://github.com/pingdotgg/t3code",
-      "homepage": "https://t3.codes",
-      "description": "The best way to control Claude Code, Codex and more from any computer or phone",
-      "stars": 61897,
-      "starsDelta": 1058,
-      "starsPerDay": 1053.4,
+      "name": "kajisho5/ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "stars": 7317,
+      "starsDelta": 1245,
+      "starsPerDay": 1187.6,
       "measured": true,
-      "forks": 11067,
-      "language": "TypeScript",
+      "forks": 664,
+      "language": "Python",
       "topics": [
-        "agent-orchestration",
-        "agents",
-        "ai",
-        "chatgpt",
-        "claude",
+        "agent-skills",
+        "ai-agents",
+        "audio-processing",
+        "captions",
         "claude-code",
-        "code",
-        "vibe-coding"
+        "codex",
+        "coding-agent",
+        "cursor"
       ],
       "license": "MIT",
-      "createdAt": "2026-02-08T23:46:22Z",
-      "pushedAt": "2026-11-16T07:34:14Z",
-      "openIssues": 3499,
-      "score": 1053.26,
-      "headline": "t3code",
-      "summary": "The best way to control Claude Code, Codex and more from any computer or phone",
-      "why": "前回計測から +1058 スター。TypeScript 製。最終更新 2026-11-16。"
+      "createdAt": "2026-09-03T14:33:38Z",
+      "pushedAt": "2026-11-16T01:08:43Z",
+      "openIssues": 35,
+      "score": 1411.09,
+      "headline": "ffmpeg-skill",
+      "summary": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, ref…",
+      "why": "前回計測から +1245 スター。Python 製。最終更新 2026-11-16。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "vllm-project/vllm v0.34.0",
+      "titleJa": "vllm-project/vllm v0.34.0",
+      "summary": "# v0.34.0\r\n\r\n**1,061 commits from 412 contributors (120 new).** Thank you!\r\n\r\n## TL;DR\r\n\r\n- **10 new models** (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-16T23:22:00.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 99.3
+    },
+    {
+      "rank": 2,
+      "title": "anthropics/anthropic-sdk-python v2.9.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.9.0",
+      "summary": "### Features\n\n* **api:** add source and error codes to the RBAC Role read endpoints\n* **api:** add Update Bundle, which sets a Claude Tag Bundle's instructions…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-16T16:47:17.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 80
+    },
+    {
+      "rank": 3,
+      "title": "openai/openai-python v3.52.0",
+      "titleJa": "openai/openai-python v3.52.0",
+      "summary": "## [3.52.0](https://github.com/openai/openai-python/compare/v3.51.0...v3.52.0) (2026-11-16)\n\n\n### Features\n\n* **api:** add schedule pause reasons ([#4278](http…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.52.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-16T22:40:22.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 70.9
+    },
+    {
+      "rank": 4,
       "title": "langchain-ai/langchain langchain-groq==1.2.0",
       "titleJa": "langchain-ai/langchain langchain-groq==1.2.0",
       "summary": "Changes since langchain-groq==1.1.3\n\nfix(groq): specify reasoning_effort in integration tests (#41886)\nfix(groq,mistralai,xai): bump deps (#41884)\nrelease(groq…",
@@ -121,10 +173,41 @@
         "version",
         "model"
       ],
-      "score": 83.1
+      "score": 70.5
     },
     {
-      "rank": 2,
+      "rank": 5,
+      "title": "llm 0.37.3",
+      "titleJa": "llm 0.37.3",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37.3\">llm 0.37.3</a></p> <p>A bug fix release for <a href=\"https://llm.datas…",
+      "url": "https://simonwillison.net/2026/Nov/16/llm",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-16T23:57:26.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 67.6
+    },
+    {
+      "rank": 6,
+      "title": "n8n-io/n8n n8n@1.123.97",
+      "titleJa": "n8n-io/n8n n8n@1.123.97",
+      "summary": "## [1.123.97](https://github.com/n8n-io/n8n/compare/n8n@1.123.96...n8n@1.123.97) (2026-11-16)\n\n<!-- This is an auto-generated description by cubic. -->\n<a href…",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.97",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-16T08:36:16.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 63.9
+    },
+    {
+      "rank": 7,
       "title": "langchain-ai/langchain langchain-mistralai==1.2.0",
       "titleJa": "langchain-ai/langchain langchain-mistralai==1.2.0",
       "summary": "Changes since langchain-mistralai==1.1.6\n\nfix(mistralai): fix streaming behavior for reasoning models (#41887)\nfix(groq,mistralai,xai): bump deps (#41884)\nchor…",
@@ -137,10 +220,10 @@
         "version",
         "model"
       ],
-      "score": 75.5
+      "score": 62.9
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "langchain-ai/langchain langchain-xai==1.4.0",
       "titleJa": "langchain-ai/langchain langchain-xai==1.4.0",
       "summary": "Changes since langchain-xai==1.3.0\n\nfix(groq,mistralai,xai): bump deps (#41884)\nrelease(xai): 1.4.0 (#41857)\nfeat(xai): route `ChatXAI` through LangSmith gatew…",
@@ -153,157 +236,74 @@
         "version",
         "model"
       ],
-      "score": 75
-    },
-    {
-      "rank": 4,
-      "title": "huggingface/transformers v5.23.0",
-      "titleJa": "huggingface/transformers v5.23.0",
-      "summary": "# Release v5.23.0\r\n\r\n\r\n## New Model additions\r\n\r\n### Inkling2\r\n\r\n<img width=\"1200\" height=\"675\" alt=\"image\" src=\"https://github.com/user-attachments/assets/911…",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.23.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-13T14:10:57.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 67.3
-    },
-    {
-      "rank": 5,
-      "title": "datasette 0.65.6",
-      "titleJa": "datasette 0.65.6",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/0.65.6\">datasette 0.65.6</a></p> <p>I backported a minor security fix fr…",
-      "url": "https://simonwillison.net/2026/Nov/15/datasette-2",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-15T23:18:17.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 59.8
-    },
-    {
-      "rank": 6,
-      "title": "run-llama/llama_index v0.14.26",
-      "titleJa": "run-llama/llama_index v0.14.26",
-      "summary": "# Release Notes\n\n## [2026-11-13]\n\n### llama-index-agent-agentmesh [0.3.0]\n\n- Python security relock: all integration uv.lock files (lock files only, no Python…",
-      "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.26",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-13T22:38:15.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model",
-        "business"
-      ],
-      "score": 55.5
-    },
-    {
-      "rank": 7,
-      "title": "datasette-maplibre 0.1a0",
-      "titleJa": "datasette-maplibre 0.1a0",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-maplibre/releases/tag/0.1a0\">datasette-maplibre 0.1a0</a></p> <p>The first new Dat…",
-      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
-      "discussion": null,
-      "source": "Simon Willison",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-15T23:58:36.000Z",
-      "tags": [
-        "release",
-        "feature",
-        "model"
-      ],
-      "score": 54.2
-    },
-    {
-      "rank": 8,
-      "title": "A step toward defining the Standard Model on a lattice",
-      "titleJa": "A step toward defining the Standard Model on a lattice",
-      "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
-      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
-      "discussion": null,
-      "source": "OpenAI",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-15T22:00:01.000Z",
-      "tags": [
-        "model"
-      ],
-      "score": 53.2
+      "score": 62.4
     },
     {
       "rank": 9,
-      "title": "Our new blog for science",
-      "titleJa": "Our new blog for science",
-      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
-      "url": "https://openai.com/index/our-new-blog-for-science",
+      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "titleJa": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
+      "url": "https://openai.com/index/strengthening-online-child-safety",
       "discussion": null,
       "source": "OpenAI",
       "sourceType": "feed",
-      "publishedAt": "2026-11-15T22:00:00.000Z",
+      "publishedAt": "2026-11-16T17:00:00.000Z",
       "tags": [
-        "research"
+        "news"
       ],
-      "score": 53.2
+      "score": 54.1
     },
     {
       "rank": 10,
-      "title": "Apple launches new app to study how people use AI for health",
-      "titleJa": "Apple launches new app to study how people use AI for health",
-      "summary": "Apple's new app for a study will answer everyday medical questions",
-      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "titleJa": "Strengthening NATO and allied cyber defenses with AI",
+      "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
       "discussion": null,
-      "source": "TechCrunch AI",
+      "source": "OpenAI",
       "sourceType": "feed",
-      "publishedAt": "2026-11-16T01:30:00.000Z",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
       "tags": [
-        "release"
+        "news"
       ],
-      "score": 51.9
+      "score": 53.6
     },
     {
       "rank": 11,
-      "title": "datasette 1.0a43",
-      "titleJa": "datasette 1.0a43",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a43\">datasette 1.0a43</a></p> <p>I've been leaning hard into Claude F…",
-      "url": "https://simonwillison.net/2026/Nov/15/datasette",
+      "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+      "titleJa": "Apple is testing daily usage limits for more complex Siri AI interactions",
+      "summary": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Sir…",
+      "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
       "discussion": null,
-      "source": "Simon Willison",
+      "source": "The Verge AI",
       "sourceType": "feed",
-      "publishedAt": "2026-11-15T23:20:27.000Z",
+      "publishedAt": "2026-11-16T19:24:40.000Z",
       "tags": [
         "release",
-        "feature",
-        "model"
+        "feature"
       ],
-      "score": 49.8
+      "score": 51.3
     },
     {
       "rank": 12,
-      "title": "Understanding Positional Embeddings in Modern LLMs",
-      "titleJa": "Understanding Positional Embeddings in Modern LLMs",
-      "summary": "Understanding Positional Embeddings in Modern LLMs",
-      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-      "discussion": "https://news.ycombinator.com/item?id=50506376",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "publishedAt": "2026-11-15T12:14:06Z",
+      "title": "Broadening access to AI for scientists",
+      "titleJa": "Broadening access to AI for scientists",
+      "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "discussion": null,
+      "source": "OpenAI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-16T17:00:00.000Z",
       "tags": [
-        "model"
+        "model",
+        "research"
       ],
-      "score": 49.1
+      "score": 50.1
     }
   ],
   "stats": {
-    "repoCandidates": 272,
-    "newsCandidates": 2561,
+    "repoCandidates": 275,
+    "newsCandidates": 2572,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

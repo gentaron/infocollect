@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T08:47:49.106Z",
-  "generatedAtLocal": "2026-11-17 16:47",
+  "generatedAt": "2026-11-17T12:59:55.487Z",
+  "generatedAtLocal": "2026-11-17 20:59",
   "dateLocal": "2026-11-17",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
@@ -10,19 +10,46 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-17 16:47 時点の収集結果です。GitHub で伸びている AI ツールは morluto/rea、Ebony-Vinyl/dsh-our-free-model、kajisho5/ffmpeg-skill の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-17 20:59 時点の収集結果です。GitHub で伸びている AI ツールは deepseek-ai/deepseek-harness、morluto/rea、Ebony-Vinyl/dsh-our-free-model の 3 件。AI ニュースは 12 件を収集し、うち 9 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
       "rank": 1,
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "homepage": "https://deepseek.com/harness",
+      "description": "DeepSeek Harness: Everything is a Plugin.",
+      "stars": 282774,
+      "starsDelta": null,
+      "starsPerDay": 1766.5,
+      "measured": false,
+      "forks": 35037,
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "cordis",
+        "dsh",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13T11:56:32Z",
+      "pushedAt": "2026-11-13T07:56:25Z",
+      "openIssues": 0,
+      "score": 1904.59,
+      "headline": "deepseek-harness",
+      "summary": "DeepSeek Harness: Everything is a Plugin.",
+      "why": "平均 1766.5 スター/日ペース。TypeScript 製。最終更新 2026-11-13。"
+    },
+    {
+      "rank": 2,
       "name": "morluto/rea",
       "url": "https://github.com/morluto/rea",
       "homepage": "https://rea.tools",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 464942,
-      "starsDelta": 2328,
-      "starsPerDay": 2220.6,
-      "measured": true,
-      "forks": 113821,
+      "stars": 465355,
+      "starsDelta": null,
+      "starsPerDay": 1283.7,
+      "measured": false,
+      "forks": 113902,
       "language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -36,24 +63,24 @@
       ],
       "license": "MIT",
       "createdAt": "2026-04-14T00:51:32Z",
-      "pushedAt": "2026-11-17T08:21:44Z",
+      "pushedAt": "2026-11-17T12:51:24Z",
       "openIssues": 1551,
-      "score": 2219,
+      "score": 1283.38,
       "headline": "rea",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "why": "前回計測から +2328 スター。TypeScript 製。最終更新 2026-11-17。"
+      "why": "平均 1283.7 スター/日ペース。TypeScript 製。最終更新 2026-11-17。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "Ebony-Vinyl/dsh-our-free-model",
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "homepage": null,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "stars": 77905,
-      "starsDelta": 1487,
-      "starsPerDay": 1418.4,
-      "measured": true,
-      "forks": 2202,
+      "stars": 78181,
+      "starsDelta": null,
+      "starsPerDay": 870.9,
+      "measured": false,
+      "forks": 2205,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -67,43 +94,12 @@
       ],
       "license": "MIT",
       "createdAt": "2026-09-24T16:17:19Z",
-      "pushedAt": "2026-11-16T03:20:57Z",
-      "openIssues": 199,
-      "score": 1691.11,
+      "pushedAt": "2026-11-17T11:19:14Z",
+      "openIssues": 200,
+      "score": 1085.56,
       "headline": "dsh-our-free-model",
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-      "why": "前回計測から +1487 スター。JavaScript 製。最終更新 2026-11-16。"
-    },
-    {
-      "rank": 3,
-      "name": "kajisho5/ffmpeg-skill",
-      "url": "https://github.com/kajisho5/ffmpeg-skill",
-      "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
-      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-      "stars": 7317,
-      "starsDelta": 1245,
-      "starsPerDay": 1187.6,
-      "measured": true,
-      "forks": 664,
-      "language": "Python",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "audio-processing",
-        "captions",
-        "claude-code",
-        "codex",
-        "coding-agent",
-        "cursor"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-09-03T14:33:38Z",
-      "pushedAt": "2026-11-16T01:08:43Z",
-      "openIssues": 35,
-      "score": 1411.09,
-      "headline": "ffmpeg-skill",
-      "summary": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, ref…",
-      "why": "前回計測から +1245 スター。Python 製。最終更新 2026-11-16。"
+      "why": "平均 870.9 スター/日ペース。JavaScript 製。最終更新 2026-11-17。"
     }
   ],
   "news": [
@@ -123,7 +119,7 @@
         "model",
         "business"
       ],
-      "score": 99.3
+      "score": 97.2
     },
     {
       "rank": 2,
@@ -141,7 +137,7 @@
         "model",
         "business"
       ],
-      "score": 80
+      "score": 77.9
     },
     {
       "rank": 3,
@@ -157,7 +153,7 @@
         "version",
         "feature"
       ],
-      "score": 70.9
+      "score": 68.8
     },
     {
       "rank": 4,
@@ -173,7 +169,7 @@
         "version",
         "model"
       ],
-      "score": 70.5
+      "score": 68.4
     },
     {
       "rank": 5,
@@ -189,25 +185,10 @@
         "version",
         "model"
       ],
-      "score": 67.6
+      "score": 65.5
     },
     {
       "rank": 6,
-      "title": "n8n-io/n8n n8n@1.123.97",
-      "titleJa": "n8n-io/n8n n8n@1.123.97",
-      "summary": "## [1.123.97](https://github.com/n8n-io/n8n/compare/n8n@1.123.96...n8n@1.123.97) (2026-11-16)\n\n<!-- This is an auto-generated description by cubic. -->\n<a href…",
-      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.97",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-16T08:36:16.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 63.9
-    },
-    {
-      "rank": 7,
       "title": "langchain-ai/langchain langchain-mistralai==1.2.0",
       "titleJa": "langchain-ai/langchain langchain-mistralai==1.2.0",
       "summary": "Changes since langchain-mistralai==1.1.6\n\nfix(mistralai): fix streaming behavior for reasoning models (#41887)\nfix(groq,mistralai,xai): bump deps (#41884)\nchor…",
@@ -220,10 +201,10 @@
         "version",
         "model"
       ],
-      "score": 62.9
+      "score": 60.8
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "langchain-ai/langchain langchain-xai==1.4.0",
       "titleJa": "langchain-ai/langchain langchain-xai==1.4.0",
       "summary": "Changes since langchain-xai==1.3.0\n\nfix(groq,mistralai,xai): bump deps (#41884)\nrelease(xai): 1.4.0 (#41857)\nfeat(xai): route `ChatXAI` through LangSmith gatew…",
@@ -236,10 +217,10 @@
         "version",
         "model"
       ],
-      "score": 62.4
+      "score": 60.3
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "Strengthening the fight against online child sexual abuse with new tools and support",
       "titleJa": "Strengthening the fight against online child sexual abuse with new tools and support",
       "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
@@ -251,10 +232,10 @@
       "tags": [
         "news"
       ],
-      "score": 54.1
+      "score": 52
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "Strengthening NATO and allied cyber defenses with AI",
       "titleJa": "Strengthening NATO and allied cyber defenses with AI",
       "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
@@ -266,10 +247,10 @@
       "tags": [
         "news"
       ],
-      "score": 53.6
+      "score": 51.5
     },
     {
-      "rank": 11,
+      "rank": 10,
       "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
       "titleJa": "Apple is testing daily usage limits for more complex Siri AI interactions",
       "summary": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Sir…",
@@ -282,10 +263,10 @@
         "release",
         "feature"
       ],
-      "score": 51.3
+      "score": 49.2
     },
     {
-      "rank": 12,
+      "rank": 11,
       "title": "Broadening access to AI for scientists",
       "titleJa": "Broadening access to AI for scientists",
       "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
@@ -298,12 +279,1355 @@
         "model",
         "research"
       ],
-      "score": 50.1
+      "score": 48
+    },
+    {
+      "rank": 12,
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "titleJa": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+      "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "discussion": null,
+      "source": "OpenAI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-16T09:00:00.000Z",
+      "tags": [
+        "release",
+        "model"
+      ],
+      "score": 48
     }
   ],
+  "frontier": {
+    "tiers": {
+      "oss": {
+        "label": "オープンソース",
+        "short": "OSS",
+        "note": "コミュニティ・大学・個人が出していて、誰でも中身（コード・重み・データ）を使えるもの"
+      },
+      "bigtech": {
+        "label": "大手",
+        "short": "大手",
+        "note": "巨大テック企業・国家級ラボの公式発表。中身はクローズド中心"
+      },
+      "hybrid": {
+        "label": "どっちつかず",
+        "short": "中間",
+        "note": "大手のオープンウェイト／OSS、研究所・スタートアップ、査読前論文・学術誌・専門メディアなど、OSSとも大手とも言い切れないもの"
+      }
+    },
+    "domains": [
+      {
+        "id": "ai-models",
+        "label": "基盤モデル（LLM・マルチモーダル）",
+        "short": "基盤モデル",
+        "digest": "OSS 6件・中間 5件・大手 1件。いちばん強いシグナルは「Ebony-Vinyl/dsh-our-free-model」（GitHub）。",
+        "tierCounts": {
+          "oss": 6,
+          "hybrid": 5,
+          "bigtech": 1
+        },
+        "candidates": 536,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "Ebony-Vinyl/dsh-our-free-model",
+            "titleJa": "Ebony-Vinyl/dsh-our-free-model",
+            "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+            "body": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+            "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T11:19:14Z",
+            "score": 1085.5,
+            "stars": 78181,
+            "starsDelta": null,
+            "starsPerDay": 870.9,
+            "language": "JavaScript",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "affaan-m/ECC",
+            "titleJa": "affaan-m/ECC",
+            "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor…",
+            "body": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+            "url": "https://github.com/affaan-m/ECC",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T06:41:46Z",
+            "score": 596.7,
+            "stars": 305023,
+            "starsDelta": null,
+            "starsPerDay": 603,
+            "language": "JavaScript",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "Graphify-Labs/graphify",
+            "titleJa": "Graphify-Labs/graphify",
+            "summary": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemin…",
+            "body": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+            "url": "https://github.com/Graphify-Labs/graphify",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T17:34:46Z",
+            "score": 381,
+            "stars": 149332,
+            "starsDelta": null,
+            "starsPerDay": 393.2,
+            "language": "Python",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "model",
+            "tier": "hybrid",
+            "title": "Qwen/Qwen3.8-27B",
+            "titleJa": "Qwen/Qwen3.8-27B",
+            "summary": "image-text-to-text transformers safetensors qwen3_5 image-text-to-text conversational license:apache-2.0 eval-results endpoints_compatible deploy:azure deploy:…",
+            "body": "image-text-to-text transformers safetensors qwen3_5 image-text-to-text conversational license:apache-2.0 eval-results endpoints_compatible deploy:azure deploy:sagemaker region:us",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-08-05T08:22:59.000Z",
+            "score": 139,
+            "likes": 20337,
+            "downloads": 6942530,
+            "pipeline": "image-text-to-text"
+          },
+          {
+            "kind": "model",
+            "tier": "oss",
+            "title": "thinkingmachines/Inkling-2-Small",
+            "titleJa": "thinkingmachines/Inkling-2-Small",
+            "summary": "image-text-to-text transformers safetensors inkling2 image-text-to-text conversational moe license:apache-2.0 eval-results endpoints_compatible 8-bit modelopt…",
+            "body": "image-text-to-text transformers safetensors inkling2 image-text-to-text conversational moe license:apache-2.0 eval-results endpoints_compatible 8-bit modelopt region:us",
+            "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-11-04T19:51:05.000Z",
+            "score": 135,
+            "likes": 433,
+            "downloads": 18359,
+            "pipeline": "image-text-to-text"
+          },
+          {
+            "kind": "model",
+            "tier": "oss",
+            "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+            "titleJa": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+            "summary": "image-text-to-text gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3_8 qwen3_6 qwen3_5",
+            "body": "image-text-to-text gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3_8 qwen3_6 qwen3_5",
+            "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-09-01T07:01:09.000Z",
+            "score": 129.6,
+            "likes": 3265,
+            "downloads": 1759757,
+            "pipeline": "image-text-to-text"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Read, Route, Patch: Robust Test-Time Evolution for LLM Agents",
+            "titleJa": "Read, Route, Patch: Robust Test-Time Evolution for LLM Agents",
+            "summary": "arXiv:2611.18585v1 Announce Type: new Abstract: Large Language Model (LLM)-based agents can improve long- horizon interactive decision-making through test-time…",
+            "body": "arXiv:2611.18585v1 Announce Type: new Abstract: Large Language Model (LLM)-based agents can improve long- horizon interactive decision-making through test-time evolu- tion, yet existing methods face three information bottlenecks: memory retrieval overemphasizes textual similarity, candi- date harnesses are often behaviorally redundant, and whole- harness rewriting may overwrite useful evidence or introduce cross-component inconsistency. We introduce Trident, which improves experience utilization, behavioral exploration, and harness evolution through boundary-aware memory reading, diversity-aw…",
+            "url": "https://arxiv.org/abs/2611.18585",
+            "source": "arXiv cs.CL",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 46.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+            "titleJa": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+            "summary": "arXiv:2611.21449v1 Announce Type: new Abstract: Researchers at MIT recently reported that GPT-6 Astra, a frontier large language model (LLM), can write the wei…",
+            "body": "arXiv:2611.21449v1 Announce Type: new Abstract: Researchers at MIT recently reported that GPT-6 Astra, a frontier large language model (LLM), can write the weights of small neural networks directly in a single reply, and can read the raw weights of small networks to say what they were trained to do. In a three-day sprint, we replicated and extended these results. Our four findings: (1) Writing weights reproduces. Astra's networks for the game Breakout scored 514, 550 and 307 (versus MIT's 517), and scored just as well on two modified versions of Breakout. Claude Opus 5.5 can also write workin…",
+            "url": "https://arxiv.org/abs/2611.21449",
+            "source": "arXiv cs.CL",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 46.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Probing the Trajectories of Reasoning Traces in Large Language Models",
+            "titleJa": "Probing the Trajectories of Reasoning Traces in Large Language Models",
+            "summary": "arXiv:2601.23163v2 Announce Type: replace Abstract: Large language models (LLMs) increasingly solve difficult problems by producing reasoning traces before emi…",
+            "body": "arXiv:2601.23163v2 Announce Type: replace Abstract: Large language models (LLMs) increasingly solve difficult problems by producing reasoning traces before emitting a final response. However, it remains unclear how accuracy and decision commitment evolve along a reasoning trajectory, and whether intermediate trace segments provide answer-relevant information beyond generic length or stylistic effects. Here, we propose a trajectory-probing protocol for evaluating how a reasoning model's predicted answer evolves along a partial reasoning trace. The protocol (1) generates a model's full reasonin…",
+            "url": "https://arxiv.org/abs/2601.23163",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 44.3
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "vllm-project/vllm v0.34.0",
+            "titleJa": "vllm-project/vllm v0.34.0",
+            "summary": "# v0.34.0\r\n\r\n**1,061 commits from 412 contributors (120 new).** Thank you!\r\n\r\n## TL;DR\r\n\r\n- **10 new models** (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.…",
+            "body": "# v0.34.0\r\n\r\n**1,061 commits from 412 contributors (120 new).** Thank you!\r\n\r\n## TL;DR\r\n\r\n- **10 new models** (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.5-Transcribe, and more!)\r\n- **Extensible KV cache is on by default:** vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput.\r\n- **Model Runner V1 is gone.** Model Runner V2 is now the only GPU runner.\r\n- **Big speedups** on Blackwell and MI355X: up to 1.95× decode (Step5 on GB200), 1.6× throughput (GLM-5.3-Flash), 1.24–1.40× faster long-prompt TTFT (GLM-5.3).\r\n- **Upgrade c…",
+            "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
+            "source": "GitHub Releases",
+            "publishedAt": "2026-11-16T23:22:00.000Z",
+            "score": 43.5
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "OpenClassGen: A Large-Scale Corpus of Real-World Python Classes for LLM Research",
+            "titleJa": "OpenClassGen: A Large-Scale Corpus of Real-World Python Classes for LLM Research",
+            "summary": "arXiv:2504.15564v4 Announce Type: replace-cross Abstract: Existing class-level code generation datasets are either synthetic (ClassEval: 100 classes) or insuff…",
+            "body": "arXiv:2504.15564v4 Announce Type: replace-cross Abstract: Existing class-level code generation datasets are either synthetic (ClassEval: 100 classes) or insufficient in scale for modern training needs (RealClassEval: 400 classes), hindering robust evaluation and empirical analysis. We present OpenClassGen, a large-scale corpus of 324,843 Python classes extracted from 2,970 engineered open-source projects. Each entry pairs a human-written class with its corresponding skeleton, which comprises class and method signatures with associated docstrings, and is enriched with 27 static code metrics co…",
+            "url": "https://arxiv.org/abs/2504.15564",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 41.3
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "Strengthening NATO and allied cyber defenses with AI",
+            "titleJa": "Strengthening NATO and allied cyber defenses with AI",
+            "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+            "body": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+            "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+            "source": "OpenAI",
+            "publishedAt": "2026-11-17T00:00:00.000Z",
+            "score": 39.7
+          }
+        ]
+      },
+      {
+        "id": "ai-agents",
+        "label": "エージェント・開発ハーネス（MCP・コーディングAI）",
+        "short": "エージェント",
+        "digest": "OSS 4件・中間 3件・大手 2件。いちばん強いシグナルは「deepseek-ai/deepseek-harness」（GitHub）。",
+        "tierCounts": {
+          "oss": 4,
+          "hybrid": 3,
+          "bigtech": 2
+        },
+        "candidates": 51,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "deepseek-ai/deepseek-harness",
+            "titleJa": "deepseek-ai/deepseek-harness",
+            "summary": "DeepSeek Harness: Everything is a Plugin.",
+            "body": "DeepSeek Harness: Everything is a Plugin.",
+            "url": "https://github.com/deepseek-ai/deepseek-harness",
+            "source": "GitHub",
+            "publishedAt": "2026-11-13T07:56:25Z",
+            "score": 1904.6,
+            "stars": 282776,
+            "starsDelta": null,
+            "starsPerDay": 1766.5,
+            "language": "TypeScript",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "ccch1mneyyy/dsh-Go",
+            "titleJa": "ccch1mneyyy/dsh-Go",
+            "summary": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+            "body": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+            "url": "https://github.com/ccch1mneyyy/dsh-Go",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T08:10:10Z",
+            "score": 820.8,
+            "stars": 25597,
+            "starsDelta": null,
+            "starsPerDay": 661.9,
+            "language": "Dart",
+            "license": "AGPL-3.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "stablyai/orca",
+            "titleJa": "stablyai/orca",
+            "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+            "body": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+            "url": "https://github.com/stablyai/orca",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T13:00:14Z",
+            "score": 311.4,
+            "stars": 127368,
+            "starsDelta": null,
+            "starsPerDay": 311.4,
+            "language": "TypeScript",
+            "license": "MIT"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Interactive Structured Environment Scaling for Large Language Model Agentic Reasoning",
+            "titleJa": "Interactive Structured Environment Scaling for Large Language Model Agentic Reasoning",
+            "summary": "arXiv:2611.19871v1 Announce Type: cross Abstract: Reinforcement learning via environmental interaction is a cornerstone post-training paradigm for evolving lar…",
+            "body": "arXiv:2611.19871v1 Announce Type: cross Abstract: Reinforcement learning via environmental interaction is a cornerstone post-training paradigm for evolving large language models into autonomous agents capable of multi-turn tool use and exploration. Because the environment defines what the policy observes and how actions are verified, its structure directly bounds the capabilities an agent can acquire. Yet existing structured and retrieval environments rely on upstream pre-filtering---extracting a compact subgraph around the gold answer or retrieving fixed passages before the policy acts. We s…",
+            "url": "https://arxiv.org/abs/2611.19871",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 38.3
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "Quoting Go Proverbs",
+            "titleJa": "Quoting Go Proverbs",
+            "summary": "<blockquote cite=\"https://go-proverbs.github.io\"><p>A little copying is better than a little dependency.</p></blockquote> <p class=\"cite\">&mdash; <a href=\"http…",
+            "body": "<blockquote cite=\"https://go-proverbs.github.io\"><p>A little copying is better than a little dependency.</p></blockquote> <p class=\"cite\">&mdash; <a href=\"https://go-proverbs.github.io\">Go Proverbs</a>, <a href=\"https://news.ycombinator.com/item?id=50516689#50526408\">via</a></p> <p>Tags: <a href=\"https://simonwillison.net/tags/go\">go</a>, <a href=\"https://simonwillison.net/tags/programming\">programming</a></p>",
+            "url": "https://simonwillison.net/2026/Nov/17/go-proverbs",
+            "source": "Simon Willison",
+            "publishedAt": "2026-11-17T06:16:26.000Z",
+            "score": 36.8
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Beveridge: Open Weight System One Decision Models with Calibrated Probabilities",
+            "titleJa": "Beveridge: Open Weight System One Decision Models with Calibrated Probabilities",
+            "summary": "arXiv:2611.18655v1 Announce Type: new Abstract: Many production systems need a model to make a narrow decision about a document (route a ticket, check a limit,…",
+            "body": "arXiv:2611.18655v1 Announce Type: new Abstract: Many production systems need a model to make a narrow decision about a document (route a ticket, check a limit, refuse a request, pick the next step of a browser agent) rather than to write text about it. We present Beveridge, a family of open weight System One decision models that take a document and up to 15 typed questions (yes/no, choice among described options, or a level on an ordered scale) and return, in one forward pass without generating text, an answer with a calibrated probability for every option. Beveridge-Large-C (398M parameters)…",
+            "url": "https://arxiv.org/abs/2611.18655",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 35.3
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "llm 0.37.3",
+            "titleJa": "llm 0.37.3",
+            "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37.3\">llm 0.37.3</a></p> <p>A bug fix release for <a href=\"https://llm.datas…",
+            "body": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37.3\">llm 0.37.3</a></p> <p>A bug fix release for <a href=\"https://llm.datasette.io\">LLM</a>, mainly to cover a problem with the most recent Homebrew package of the software.</p> <p>Homebrew now ships the latest SQLite, <a href=\"https://www.sqlite.org/releaselog/3_54_1.html\">3.54.1</a>, which includes <a href=\"https://sqlite.org/bugs/info/2026-10-12T13:52:22Z\">a fix</a> that <a href=\"https://github.com/simonw/llm/issues/1879\">broke LLM's logging code</a>.</p> <p>Short version: in SQLite 3.54.0 the following SQL…",
+            "url": "https://simonwillison.net/2026/Nov/16/llm",
+            "source": "Simon Willison",
+            "publishedAt": "2026-11-16T23:57:26.000Z",
+            "score": 34.7
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+            "titleJa": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+            "summary": "At SC26, an annual supercomputing conference taking place this week in Chicago, NVIDIA is introducing the DGX Spark HPC Developer Kit for researchers, academic…",
+            "body": "At SC26, an annual supercomputing conference taking place this week in Chicago, NVIDIA is introducing the DGX Spark HPC Developer Kit for researchers, academics and developers. The kit is a four-node cluster of NVIDIA DGX Spark systems, each connected directly to its two neighbors in a ring, with an NVIDIA HPC SDK installation playbook coming […]",
+            "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T23:00:05.000Z",
+            "score": 34.3
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "How Duco transforms financial data automation with Amazon Bedrock AgentCore",
+            "titleJa": "How Duco transforms financial data automation with Amazon Bedrock AgentCore",
+            "summary": "Duco, a data automation platform for tier-one banks, rebuilt its agentic AI stack on Amazon Bedrock and Amazon Bedrock AgentCore. With strict per-tenant isolat…",
+            "body": "Duco, a data automation platform for tier-one banks, rebuilt its agentic AI stack on Amazon Bedrock and Amazon Bedrock AgentCore. With strict per-tenant isolation, a multi-model strategy, and an MCP skills architecture that cut context overhead by 90%, Duco cut reconciliation deployment time 10x and onboarding costs 70%.",
+            "url": "https://aws.amazon.com/blogs/machine-learning/how-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore",
+            "source": "AWS Machine Learning",
+            "publishedAt": "2026-11-16T22:06:08.000Z",
+            "score": 34
+          }
+        ]
+      },
+      {
+        "id": "ai-interp",
+        "label": "解釈可能性・安全性・ステアリング",
+        "short": "解釈・安全性",
+        "digest": "OSS 3件・中間 5件・大手 0件。いちばん強いシグナルは「manuelgscom/inside-llm」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 5,
+          "bigtech": 0
+        },
+        "candidates": 104,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "manuelgscom/inside-llm",
+            "titleJa": "manuelgscom/inside-llm",
+            "summary": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+            "body": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+            "url": "https://github.com/manuelgscom/inside-llm",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T17:42:31Z",
+            "score": 37.6,
+            "stars": 91,
+            "starsDelta": null,
+            "starsPerDay": 31,
+            "language": "TypeScript",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "ShutongLiang/Neural-State-OS",
+            "titleJa": "ShutongLiang/Neural-State-OS",
+            "summary": "Calibrated internal-state modulation, readout, and neural observability for local dense language models.",
+            "body": "Calibrated internal-state modulation, readout, and neural observability for local dense language models.",
+            "url": "https://github.com/ShutongLiang/Neural-State-OS",
+            "source": "GitHub",
+            "publishedAt": "2026-11-14T20:45:14Z",
+            "score": 19.1,
+            "stars": 80,
+            "starsDelta": null,
+            "starsPerDay": 16.8,
+            "language": "Python",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "divagr18/qwenputer",
+            "titleJa": "divagr18/qwenputer",
+            "summary": "A computer, compiled into the weights of a language model. An exact CPU inside Qwen3.5-4B, with Gated DeltaNet state as RAM.",
+            "body": "A computer, compiled into the weights of a language model. An exact CPU inside Qwen3.5-4B, with Gated DeltaNet state as RAM.",
+            "url": "https://github.com/divagr18/qwenputer",
+            "source": "GitHub",
+            "publishedAt": "2026-11-09T04:09:57Z",
+            "score": 16.5,
+            "stars": 826,
+            "starsDelta": null,
+            "starsPerDay": 17.1,
+            "language": "Python",
+            "license": null
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Mechanistic Interpretability of Mambas Selective Gate in Financial Markets: A Leakage-Controlled Study",
+            "titleJa": "Mechanistic Interpretability of Mambas Selective Gate in Financial Markets: A Leakage-Controlled Study",
+            "summary": "arXiv:2611.18599v1 Announce Type: new Abstract: Selectively gated state-space models (SSMs), notably Mamba, are increasingly used for financial time series, ye…",
+            "body": "arXiv:2611.18599v1 Announce Type: new Abstract: Selectively gated state-space models (SSMs), notably Mamba, are increasingly used for financial time series, yet how they internally represent market regimes (bull, bear, sideways) remains opaque. This paper applies Mechanistic Interpretability (MI) to a six-layer Mamba trained on approximately twenty-one years of daily data for a point-in-time set of S&P 500 constituents plus macroeconomic and Fama-French factors, decomposing per-layer hidden states with Top-K Sparse Autoencoders (SAEs). Our central contribution is methodological and cautionary…",
+            "url": "https://arxiv.org/abs/2611.18599",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 38.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "But what is your honest answer? Aiding LLM-judges with honest alternatives using steering vectors",
+            "titleJa": "But what is your honest answer? Aiding LLM-judges with honest alternatives using steering vectors",
+            "summary": "arXiv:2505.17760v4 Announce Type: replace Abstract: LLM-as-a-judge is widely used as a scalable substitute for human evaluation, yet judges are least reliable…",
+            "body": "arXiv:2505.17760v4 Announce Type: replace Abstract: LLM-as-a-judge is widely used as a scalable substitute for human evaluation, yet judges are least reliable on subtle dishonesty such as sycophancy and manipulation, where a judge scoring a response in isolation lacks a reference point. We introduce Judge Using Safety-Steered Alternatives (JUSSA), a framework that reduces this evaluator uncertainty using the assessed model's own internal representations. An honesty-promoting steering vector, optimized from a single training example, generates a contrastive alternative against which each respo…",
+            "url": "https://arxiv.org/abs/2505.17760",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 38.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Rashba Effect and Type-III Broken-Gap Band Alignment in MoTe$_2$/HfS$_2$ van der Waals Heterostructures for Tunnel Field-Effect Transistors",
+            "titleJa": "Rashba Effect and Type-III Broken-Gap Band Alignment in MoTe$_2$/HfS$_2$ van der Waals Heterostructures for Tunnel Field-Effect Transistors",
+            "summary": "arXiv:2611.20491v1 Announce Type: new Abstract: Two-dimensional van der Waals heterostructures (vdWHs) based on transition metal dichalcogenides (TMDs) have em…",
+            "body": "arXiv:2611.20491v1 Announce Type: new Abstract: Two-dimensional van der Waals heterostructures (vdWHs) based on transition metal dichalcogenides (TMDs) have emerged as promising platforms for next-generation low-power electronics and spintronics. Here, we investigate the structural, electronic, and spin properties of MoTe$_2$/HfS$_2$ vdWHs using first-principles density functional theory calculations. Our results reveal an intrinsic type-III (broken-gap) band alignment, making this heterostructure highly attractive for tunnel field-effect transistor (TFET) applications. In addition, inversion…",
+            "url": "https://arxiv.org/abs/2611.20491",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 32.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Electronic structure, phase stability, and transport properties of the AlTiVCr lightweight high-entropy alloy: A computational study",
+            "titleJa": "Electronic structure, phase stability, and transport properties of the AlTiVCr lightweight high-entropy alloy: A computational study",
+            "summary": "arXiv:2601.16528v2 Announce Type: replace Abstract: We investigate the thermodynamics and phase stability of the AlTiVCr lightweight high-entropy alloy using a…",
+            "body": "arXiv:2601.16528v2 Announce Type: replace Abstract: We investigate the thermodynamics and phase stability of the AlTiVCr lightweight high-entropy alloy using a combination of ab initio electronic structure calculations, a concentration wave analysis, and atomistic Monte Carlo simulations. In alignment both with experimental data and with results obtained using other computational approaches, we predict a $\\textrm{B2}$ (CsCl) chemical ordering emerging in this alloy at comparatively high temperatures, which is driven by Al and Ti moving to separate sublattices, while V and Cr express weaker si…",
+            "url": "https://arxiv.org/abs/2601.16528",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 32.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "STAT+: Helus’ psychedelic drug improved depression in study but faces safety questions",
+            "titleJa": "STAT+: Helus’ psychedelic drug improved depression in study but faces safety questions",
+            "summary": "A psychedelic drug from Helus Pharma improved depression in a study, but is facing safety questions with a number of serious adverse events reported.",
+            "body": "A psychedelic drug from Helus Pharma improved depression in a study, but is facing safety questions with a number of serious adverse events reported.",
+            "url": "https://www.statnews.com/2026/11/16/helus-psychedelics-depression-phase-3-trial",
+            "source": "STAT News",
+            "publishedAt": "2026-11-16T13:07:47.000Z",
+            "score": 30
+          }
+        ]
+      },
+      {
+        "id": "world-models",
+        "label": "ワールドモデル・フィジカルAI・ロボティクス",
+        "short": "ワールドモデル",
+        "digest": "OSS 4件・中間 6件・大手 1件。いちばん強いシグナルは「HybridRobotics/supermimic」（GitHub）。",
+        "tierCounts": {
+          "oss": 4,
+          "hybrid": 6,
+          "bigtech": 1
+        },
+        "candidates": 258,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "HybridRobotics/supermimic",
+            "titleJa": "HybridRobotics/supermimic",
+            "summary": "Humanoid whole-body motion tracking with one differentiable world model.",
+            "body": "Humanoid whole-body motion tracking with one differentiable world model.",
+            "url": "https://github.com/HybridRobotics/supermimic",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T23:15:47Z",
+            "score": 178.5,
+            "stars": 1727,
+            "starsDelta": null,
+            "starsPerDay": 146.1,
+            "language": "Python",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "earthtojake/text-to-cad",
+            "titleJa": "earthtojake/text-to-cad",
+            "summary": "Design physical products with AI",
+            "body": "Design physical products with AI",
+            "url": "https://github.com/earthtojake/text-to-cad",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T23:46:20Z",
+            "score": 74.5,
+            "stars": 26592,
+            "starsDelta": null,
+            "starsPerDay": 76.2,
+            "language": "Python",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "deeplethe/utopia",
+            "titleJa": "deeplethe/utopia",
+            "summary": "World's first open-source enterprise world model.",
+            "body": "World's first open-source enterprise world model.",
+            "url": "https://github.com/deeplethe/utopia",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T00:19:50Z",
+            "score": 63,
+            "stars": 8728,
+            "starsDelta": null,
+            "starsPerDay": 51.5,
+            "language": "Rust",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "model",
+            "tier": "oss",
+            "title": "Lightricks/LTX-2.5",
+            "titleJa": "Lightricks/LTX-2.5",
+            "summary": "image-to-video diffusion-single-file image-to-video text-to-video video-to-video image-text-to-video audio-to-video text-to-audio video-to-audio audio-to-audio…",
+            "body": "image-to-video diffusion-single-file image-to-video text-to-video video-to-video image-text-to-video audio-to-video text-to-audio video-to-audio audio-to-audio text-to-audio-video image-to-audio-video image-text-to-audio-video",
+            "url": "https://huggingface.co/Lightricks/LTX-2.5",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-07-23T07:55:24.000Z",
+            "score": 138,
+            "likes": 12320,
+            "downloads": 2828071,
+            "pipeline": "image-to-video"
+          },
+          {
+            "kind": "model",
+            "tier": "hybrid",
+            "title": "nvidia/Alpamayo2-Edge",
+            "titleJa": "nvidia/Alpamayo2-Edge",
+            "summary": "robotics safetensors alpamayo2_edge alpamayo autonomous-driving vision-language-action pytorch robotics en dataset:nvidia/PhysicalAI-Autonomous-Vehicles datase…",
+            "body": "robotics safetensors alpamayo2_edge alpamayo autonomous-driving vision-language-action pytorch robotics en dataset:nvidia/PhysicalAI-Autonomous-Vehicles dataset:nvidia/PhysicalAI-Autonomous-Vehicles-NuRec base_model:nvidia/Cosmos3-Edge base_model:finetune:nvidia/Cosmos3-Edge",
+            "url": "https://huggingface.co/nvidia/Alpamayo2-Edge",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-08-12T01:31:29.000Z",
+            "score": 81.8,
+            "likes": 81,
+            "downloads": 2118,
+            "pipeline": "robotics"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+            "titleJa": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+            "summary": "arXiv:2611.18976v1 Announce Type: new Abstract: Recent humanoid loco-manipulation in articulated environments has largely focused on geometry-dominant interact…",
+            "body": "arXiv:2611.18976v1 Announce Type: new Abstract: Recent humanoid loco-manipulation in articulated environments has largely focused on geometry-dominant interactions, where success is primarily determined by geometric alignment and motion execution. In contrast, forceful multi-finger manipulation requires the robot to adapt to real-world uncertainties in contact and interaction dynamics. We present Tactile-Driven Motor Adaptation (TMA) and an integrated whole-body system for zero-shot sim-to-real forceful humanoid manipulation, and study round-doorknob opening as a challenging benchmark requiri…",
+            "url": "https://arxiv.org/abs/2611.18976",
+            "source": "arXiv cs.RO",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 45.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "JEPA4R: Embodied JEPA World Models with 4D Point Planning",
+            "titleJa": "JEPA4R: Embodied JEPA World Models with 4D Point Planning",
+            "summary": "arXiv:2611.19771v1 Announce Type: new Abstract: Joint-embedding predictive architecture (JEPA) world models predict future embeddings instead of pixels and pla…",
+            "body": "arXiv:2611.19771v1 Announce Type: new Abstract: Joint-embedding predictive architecture (JEPA) world models predict future embeddings instead of pixels and plan in latent space. Two challenges remain: 2D images leave the metric geometry that manipulation acts on implicit and entangled with appearance, and what these models imagine stays hidden, as they are mostly judged in simulation by short-horizon latent planning. We present JEPA4R, a JEPA world model that observes single-depth-camera point clouds, predicts and plans in their latent space, and acts through a policy head on its frozen laten…",
+            "url": "https://arxiv.org/abs/2611.19771",
+            "source": "arXiv cs.RO",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 45.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute",
+            "titleJa": "XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute",
+            "summary": "arXiv:2611.20452v1 Announce Type: cross Abstract: We present XMimic and XSoma, which learn humanoid motion tracking and locomotion on rough terrain in under a…",
+            "body": "arXiv:2611.20452v1 Announce Type: cross Abstract: We present XMimic and XSoma, which learn humanoid motion tracking and locomotion on rough terrain in under a minute of training. Both follow SuperMimic, which learns a world model of the robot and optimizes the policy with analytic gradients through short rollouts imagined in this model. Existing implementations of this method do not make use of larger GPUs, as every training iteration is a long chain of small GPU operations that run one after another. XMimic and XSoma therefore shorten this chain and run the steps of every iteration at the sa…",
+            "url": "https://arxiv.org/abs/2611.20452",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 41.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation",
+            "titleJa": "What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation",
+            "summary": "arXiv:2611.16246v2 Announce Type: replace-cross Abstract: Vision-language-action (VLA) models drive the robot directly from camera views, yet a VLA alone shows…",
+            "body": "arXiv:2611.16246v2 Announce Type: replace-cross Abstract: Vision-language-action (VLA) models drive the robot directly from camera views, yet a VLA alone shows three typical failures. It walks past the goal, stops before reaching it, and rarely recovers after going off track. Pairing a VLA with a large language model (LLM) planner fixes these failures, but queries the LLM throughout every episode, adding token costs and latency. We introduce Harness-to-Executor (H2E), a session-level distillation method that pairs an LLM planner and a frozen VLA as a heterogeneous training agent, keeps only s…",
+            "url": "https://arxiv.org/abs/2611.16246",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 41.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+            "titleJa": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+            "summary": "This article is brought to you by VicOne . VicOne identified an initial set of 28 zero-day findings in less than two days using AI-assisted research across sof…",
+            "body": "This article is brought to you by VicOne . VicOne identified an initial set of 28 zero-day findings in less than two days using AI-assisted research across software and tools supporting the Physical AI ecosystem. These include projects developed or maintained by Google, NVIDIA, and Meta, among others. Based on initial validation, all 28 findings are classified as zero-day vulnerabilities. The count may change following vendor and vulnerability-authority review, and some findings do not yet have CVE tracking numbers. Many of these tools help teams train, simulate, test, and operate robots. Wea…",
+            "url": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+            "source": "IEEE Spectrum Robotics",
+            "publishedAt": "2026-11-16T10:00:01.000Z",
+            "score": 37
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+            "titleJa": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+            "summary": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, eng…",
+            "body": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, engineering and analytics workflows. As agents help scientists and engineers explore more candidate materials, molecules and designs, they rely on simulations to test those ideas and guide their next […]",
+            "url": "https://blogs.nvidia.com/blog/rubin-hpc",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:01.000Z",
+            "score": 32
+          }
+        ]
+      },
+      {
+        "id": "quantum",
+        "label": "量子コンピュータ・量子情報",
+        "short": "量子",
+        "digest": "OSS 2件・中間 6件・大手 1件。いちばん強いシグナルは「QuipNetwork/quip-solver」（GitHub）。",
+        "tierCounts": {
+          "oss": 2,
+          "hybrid": 6,
+          "bigtech": 1
+        },
+        "candidates": 304,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "QuipNetwork/quip-solver",
+            "titleJa": "QuipNetwork/quip-solver",
+            "summary": "The quip network mining stack. This includes a coordinator and links all of the official quip network miners.",
+            "body": "The quip network mining stack. This includes a coordinator and links all of the official quip network miners.",
+            "url": "https://github.com/QuipNetwork/quip-solver",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T04:16:55Z",
+            "score": 22.5,
+            "stars": 11589,
+            "starsDelta": null,
+            "starsPerDay": 22.8,
+            "language": "Rust",
+            "license": "AGPL-3.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "QuipNetwork/xquad",
+            "titleJa": "QuipNetwork/xquad",
+            "summary": "A hardware-agnostic SDK for optimization problems: define a problem once, then lower it to any quantum or classical solver",
+            "body": "A hardware-agnostic SDK for optimization problems: define a problem once, then lower it to any quantum or classical solver",
+            "url": "https://github.com/QuipNetwork/xquad",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T00:05:43Z",
+            "score": 14.3,
+            "stars": 5584,
+            "starsDelta": null,
+            "starsPerDay": 14.6,
+            "language": "Python",
+            "license": "AGPL-3.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "Qiskit/qiskit",
+            "titleJa": "Qiskit/qiskit",
+            "summary": "Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.",
+            "body": "Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.",
+            "url": "https://github.com/Qiskit/qiskit",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T12:18:33Z",
+            "score": 1.4,
+            "stars": 7975,
+            "starsDelta": null,
+            "starsPerDay": 1.3,
+            "language": "Python",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Rate-1/2 Quantum LDPC Codes for Multi-tier Superconducting Hardware",
+            "titleJa": "Rate-1/2 Quantum LDPC Codes for Multi-tier Superconducting Hardware",
+            "summary": "arXiv:2611.20410v1 Announce Type: new Abstract: Quantum error correction is essential for scalable quantum computing, while its resource overhead is governed i…",
+            "body": "arXiv:2611.20410v1 Announce Type: new Abstract: Quantum error correction is essential for scalable quantum computing, while its resource overhead is governed in large part by the encoding rate, namely the number of logical qubits encoded per physical data qubit. Recent quantum low-density parity-check (qLDPC) constructions have entered the ultra-high-rate regime with encoding rates above 1/2, but their syndrome-extraction circuits generally rely on reconfigurable connectivity or long-range qubit transport, making them difficult to implement on fixed-connectivity superconducting hardware. Here…",
+            "url": "https://arxiv.org/abs/2611.20410",
+            "source": "arXiv quant-ph",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 46.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Resolving and Suppressing Temporally Correlated Noise in Quantum Error Correction",
+            "titleJa": "Resolving and Suppressing Temporally Correlated Noise in Quantum Error Correction",
+            "summary": "arXiv:2611.21578v1 Announce Type: new Abstract: Scaling fault-tolerant quantum error correction (QEC) requires suppressing errors in both space and time, yet s…",
+            "body": "arXiv:2611.21578v1 Announce Type: new Abstract: Scaling fault-tolerant quantum error correction (QEC) requires suppressing errors in both space and time, yet standard logical memory experiments primarily probe spatial faults. Here, we use a 105-qubit Willow superconducting quantum processor to realize and scale the surface code stability experiment, which is alternatively sensitive to temporal error chains. Scaling from patch sizes of $3 \\times 3$ to $7 \\times 7$, we realize a timelike block suppression factor of $\\mu_T = 1.47 \\pm 0.25$, demonstrating the ability to maintain temporal error su…",
+            "url": "https://arxiv.org/abs/2611.21578",
+            "source": "arXiv quant-ph",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 46.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "NEC and IBM Japan Demonstrate Integrated QKD and PQC Communications",
+            "titleJa": "NEC and IBM Japan Demonstrate Integrated QKD and PQC Communications",
+            "summary": "Insider Brief PRESS RELEASE — NEC Corporation (“NEC“) and IBM Japan, Ltd. (“IBM Japan”) announced that they successfully completed Japan’s first demonstration…",
+            "body": "Insider Brief PRESS RELEASE — NEC Corporation (“NEC“) and IBM Japan, Ltd. (“IBM Japan”) announced that they successfully completed Japan’s first demonstration of a hybrid quantum-safe communication technology combining quantum key distribution (QKD) and post-quantum cryptography (PQC). Specifically, NEC‘s QKD equipment was connected to a proxy-based validation environment utilizing a custom-built version of IBM Quantum […]",
+            "url": "https://thequantuminsider.com/2026/11/17/nec-ibm-japan-integrated-qkd-pqc-communications",
+            "source": "The Quantum Insider",
+            "publishedAt": "2026-11-17T08:44:11.000Z",
+            "score": 42.6
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Hidden defects return a qubit's lost energy",
+            "titleJa": "Hidden defects return a qubit's lost energy",
+            "summary": "Today, many leading quantum computers are built from superconducting circuits. However, the qubits in these circuits can easily lose energy to their surroundin…",
+            "body": "Today, many leading quantum computers are built from superconducting circuits. However, the qubits in these circuits can easily lose energy to their surroundings, scrambling the fragile quantum information they hold.",
+            "url": "https://phys.org/news/2026-11-hidden-defects-qubit-lost-energy.html",
+            "source": "Phys.org Quantum",
+            "publishedAt": "2026-11-16T14:20:08.000Z",
+            "score": 40.4
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "IDEMIA and IonQ Validate QKD Interoperability for Enterprise Security",
+            "titleJa": "IDEMIA and IonQ Validate QKD Interoperability for Enterprise Security",
+            "summary": "Insider Brief PRESS RELEASE — IDEMIA Secure Transactions (IST), a global leader in payment, connectivity and cybersecurity solutions, and IonQ (NYSE: IONQ), th…",
+            "body": "Insider Brief PRESS RELEASE — IDEMIA Secure Transactions (IST), a global leader in payment, connectivity and cybersecurity solutions, and IonQ (NYSE: IONQ), the world’s leading full-stack quantum platform and foundry, today announced a successful validation of interoperability between IonQ’s Quantum Key Distribution (QKD) systems and IST’s cybersecurity offer, IDEMIA Sphere. The demonstration shows how quantum-generated […]",
+            "url": "https://thequantuminsider.com/2026/11/17/idemia-ionq-validate-qkd-interoperability-enterprise-security",
+            "source": "The Quantum Insider",
+            "publishedAt": "2026-11-17T10:18:05.000Z",
+            "score": 40.1
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+            "titleJa": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+            "summary": "Quantum processor deployments at supercomputing centers have grown nearly sevenfold over the past five years, with nearly 30 supercomputing centers around the…",
+            "body": "Quantum processor deployments at supercomputing centers have grown nearly sevenfold over the past five years, with nearly 30 supercomputing centers around the world now in the process of deploying over 50 quantum processors. Many of these centers use Slurm to run scientific supercomputing workloads, so expanding its support for quantum processors builds on familiar workflows […]",
+            "url": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:47.000Z",
+            "score": 32
+          }
+        ]
+      },
+      {
+        "id": "math-physics",
+        "label": "数理物理・理論物理・AI×数学",
+        "short": "数理物理",
+        "digest": "OSS 3件・中間 6件・大手 0件。いちばん強いシグナルは「bendlang/bend」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 6,
+          "bigtech": 0
+        },
+        "candidates": 272,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "bendlang/bend",
+            "titleJa": "bendlang/bend",
+            "summary": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
+            "body": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
+            "url": "https://github.com/bendlang/bend",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T12:34:49Z",
+            "score": 12.8,
+            "stars": 25063,
+            "starsDelta": null,
+            "starsPerDay": 12.8,
+            "language": "TypeScript",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "NyxFoundation/nyxis",
+            "titleJa": "NyxFoundation/nyxis",
+            "summary": "A Lean backend framework whose authorization safety is formally proven. The developer writes only a Cedar schema and policies; handlers are built on Supabase A…",
+            "body": "A Lean backend framework whose authorization safety is formally proven. The developer writes only a Cedar schema and policies; handlers are built on Supabase Auth and PostgreSQL.",
+            "url": "https://github.com/NyxFoundation/nyxis",
+            "source": "GitHub",
+            "publishedAt": "2026-11-11T16:30:48Z",
+            "score": 8.9,
+            "stars": 322,
+            "starsDelta": null,
+            "starsPerDay": 8.6,
+            "language": "Lean",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "google-deepmind/formal-conjectures",
+            "titleJa": "google-deepmind/formal-conjectures",
+            "summary": "A collection of formalized statements of conjectures in Lean.",
+            "body": "A collection of formalized statements of conjectures in Lean.",
+            "url": "https://github.com/google-deepmind/formal-conjectures",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T18:12:47Z",
+            "score": 1.4,
+            "stars": 1361,
+            "starsDelta": null,
+            "starsPerDay": 1.5,
+            "language": "Lean",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Interpreting claims that a theorem is correct because it was checked in Lean",
+            "titleJa": "Interpreting claims that a theorem is correct because it was checked in Lean",
+            "summary": "Interpreting claims that a theorem is correct because it was checked in Lean",
+            "body": "",
+            "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean",
+            "source": "Hacker News",
+            "publishedAt": "2026-11-16T07:38:19Z",
+            "score": 48.2,
+            "discussion": "https://news.ycombinator.com/item?id=50515058"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Lean-Verified No-Go Theorems for $R$-Symmetries and Modular Symmetries in 4D GUTs",
+            "titleJa": "Lean-Verified No-Go Theorems for $R$-Symmetries and Modular Symmetries in 4D GUTs",
+            "summary": "arXiv:2611.20386v1 Announce Type: cross Abstract: $R$-symmetries are instrumental in supersymmetric model building. However, a no-go theorem restricts us from…",
+            "body": "arXiv:2611.20386v1 Announce Type: cross Abstract: $R$-symmetries are instrumental in supersymmetric model building. However, a no-go theorem restricts us from using them in a large class of four-dimensional (4D) grand unified theories (GUTs). Specifically, it has been shown that a supersymmetric 4D GUT based on SU(5), with finitely many chiral multiplets, cannot be broken spontaneously to the exact minimal supersymmetric standard model (MSSM) while preserving a discrete $\\mathbb{Z}_M^R$, with $M \\geq 3$, or continuous U(1) $R$-symmetry. We use Lean 4 to formalize this proof. In the process, w…",
+            "url": "https://arxiv.org/abs/2611.20386",
+            "source": "arXiv hep-th",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 39.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Vertex Operator Algebras in Lean: a formal library and its companion book",
+            "titleJa": "Vertex Operator Algebras in Lean: a formal library and its companion book",
+            "summary": "arXiv:2611.06616v4 Announce Type: replace-cross Abstract: We present LeanVOA, a Lean 4 library for the theory of vertex operator algebras (VOAs), together with…",
+            "body": "arXiv:2611.06616v4 Announce Type: replace-cross Abstract: We present LeanVOA, a Lean 4 library for the theory of vertex operator algebras (VOAs), together with a companion book that sets each formalized result next to its textbook statement. The library constructs the Moonshine module $V^\\natural$ and proves, with no hypotheses, the Conway-Norton moonshine conjecture for every automorphism of $V^\\natural$ (Borcherds' theorem), along Borcherds' route through the Monster Lie algebra. It identifies $\\mathrm{Aut}\\,V^\\natural$ with a formal model of the Monster taken from the AxiomMath library for…",
+            "url": "https://arxiv.org/abs/2611.06616",
+            "source": "arXiv hep-th",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 39.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "K\\\"ahler landscapes for complex neural network descents and guarantees including a search and destroy of the Calabi-Yau manifold",
+            "titleJa": "K\\\"ahler landscapes for complex neural network descents and guarantees including a search and destroy of the Calabi-Yau manifold",
+            "summary": "arXiv:2608.19584v5 Announce Type: replace Abstract: We study landscapes for complex-parameterized networks. Our approach is motivated with an information-theor…",
+            "body": "arXiv:2608.19584v5 Announce Type: replace Abstract: We study landscapes for complex-parameterized networks. Our approach is motivated with an information-theoretic manifold perspective of the parameter and via classical optimization guarantees although of complex geometric variety such as through Dolbeault asymptotics. The descent path admits a K\\\"ahler information metric under a cross-entropy via the Wirtinger Hessian on the log-likelihood potential. We descend according to a differentiated loss scaled by the inverse metric, so the descent path remains in the holomorphic tangent bundle. We e…",
+            "url": "https://arxiv.org/abs/2608.19584",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 38.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Thouless's bandwidth conjecture: a proof by elliptic periods",
+            "titleJa": "Thouless's bandwidth conjecture: a proof by elliptic periods",
+            "summary": "arXiv:2611.19723v1 Announce Type: new Abstract: We prove Thouless's bandwidth conjecture for the critical rational Harper operator: the denominator times the t…",
+            "body": "arXiv:2611.19723v1 Announce Type: new Abstract: We prove Thouless's bandwidth conjecture for the critical rational Harper operator: the denominator times the total bandwidth tends to $32G/\\pi$, uniformly in the reduced numerator, where $G$ is Catalan's constant. We identify a universal limit of the normalized even coarea density. Positive real part and evenness give an integrable endpoint bound, so the local law determines the bandwidth. An exact finite-matrix formula reduces the local law to one normalized period for each fixed odd numerator. Explicit boundary polynomials, point blowups, and…",
+            "url": "https://arxiv.org/abs/2611.19723",
+            "source": "arXiv math-ph",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 37.3
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "Introducing MathHelm: A Place to discuss AI-generated papers",
+            "titleJa": "Introducing MathHelm: A Place to discuss AI-generated papers",
+            "summary": "[This is a guest post by the MathHelm scientific committee, whose membership is listed at the bottom of this post. -T.] Mathematics depends on our regular conv…",
+            "body": "[This is a guest post by the MathHelm scientific committee, whose membership is listed at the bottom of this post. -T.] Mathematics depends on our regular conversations with colleagues and with the wider public. They help us share ideas, deepen our collective understanding, see where the field stands, and decide what to explore next. They […]",
+            "url": "https://terrytao.wordpress.com/2026/11/13/introducing-mathhelm-a-place-to-discuss-ai-generated-papers",
+            "source": "Terence Tao",
+            "publishedAt": "2026-11-14T03:19:00.000Z",
+            "score": 11.8
+          }
+        ]
+      },
+      {
+        "id": "bio",
+        "label": "バイオ・合成生物学・AI創薬",
+        "short": "バイオ",
+        "digest": "OSS 3件・中間 5件・大手 1件。いちばん強いシグナルは「K-Dense-AI/scientific-agent-skills」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 5,
+          "bigtech": 1
+        },
+        "candidates": 45,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "K-Dense-AI/scientific-agent-skills",
+            "titleJa": "K-Dense-AI/scientific-agent-skills",
+            "summary": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus…",
+            "body": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+            "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T09:19:25Z",
+            "score": 83.9,
+            "stars": 57545,
+            "starsDelta": null,
+            "starsPerDay": 87.7,
+            "language": "Python",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "synthetic-sciences/openscience",
+            "titleJa": "synthetic-sciences/openscience",
+            "summary": "The open-source AI workbench for scientific research",
+            "body": "The open-source AI workbench for scientific research",
+            "url": "https://github.com/synthetic-sciences/openscience",
+            "source": "GitHub",
+            "publishedAt": "2026-11-15T17:27:35Z",
+            "score": 18,
+            "stars": 4393,
+            "starsDelta": null,
+            "starsPerDay": 19.3,
+            "language": "TypeScript",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "xuzhougeng/wisp-science",
+            "titleJa": "xuzhougeng/wisp-science",
+            "summary": "Open-source, local-first desktop AI research workbench for scientific computing with Python/R, MCP bioinformatics tools, SSH/WSL/GPU runtimes, and OpenAI/Anthr…",
+            "body": "Open-source, local-first desktop AI research workbench for scientific computing with Python/R, MCP bioinformatics tools, SSH/WSL/GPU runtimes, and OpenAI/Anthropic models.",
+            "url": "https://github.com/xuzhougeng/wisp-science",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T12:53:23Z",
+            "score": 4.6,
+            "stars": 1076,
+            "starsDelta": null,
+            "starsPerDay": 4.6,
+            "language": "Rust",
+            "license": "AGPL-3.0"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Single-Cell Method Reveals On- and Off-Target Effects of Cas9 Edits on Gene Expression",
+            "titleJa": "Single-Cell Method Reveals On- and Off-Target Effects of Cas9 Edits on Gene Expression",
+            "summary": "A new method called Superb-seq pairs Cas9 editing with single-cell RNA sequencing to show which edits, including off-target ones, occur in each cell and how th…",
+            "body": "A new method called Superb-seq pairs Cas9 editing with single-cell RNA sequencing to show which edits, including off-target ones, occur in each cell and how they alter gene expression, offering a clearer view of genome editing’s potential consequences. The post Single-Cell Method Reveals On- and Off-Target Effects of Cas9 Edits on Gene Expression appeared first on GEN - Genetic Engineering and Biotechnology News .",
+            "url": "https://www.genengnews.com/topics/genome-editing/single-cell-method-reveals-on-and-off-target-effects-of-cas9-edits-on-gene-expression",
+            "source": "GEN News",
+            "publishedAt": "2026-11-16T10:00:23.000Z",
+            "score": 39
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Multi-Assay Antibody Developability Prediction with Shared Structure-Language Representations",
+            "titleJa": "Multi-Assay Antibody Developability Prediction with Shared Structure-Language Representations",
+            "summary": "arXiv:2611.18846v1 Announce Type: cross Abstract: Early assessment of antibody developability is critical in drug discovery, but computational approaches remai…",
+            "body": "arXiv:2611.18846v1 Announce Type: cross Abstract: Early assessment of antibody developability is critical in drug discovery, but computational approaches remain limited by the scarcity of experimental data. We explore two strategies for working within that limit. First, we designed per-residue physicochemical descriptors encoding the local structural environment, including new terms such as directional charge asymmetry and screened electrostatic potential. These feed a convolutional network, combined with protein language model (PLM) embeddings in a two-stream architecture: the two are encode…",
+            "url": "https://arxiv.org/abs/2611.18846",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 38.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "UncertainGen: Scalable Uncertainty-Aware Representation Learning of DNA Sequences",
+            "titleJa": "UncertainGen: Scalable Uncertainty-Aware Representation Learning of DNA Sequences",
+            "summary": "arXiv:2509.26116v2 Announce Type: replace Abstract: Learning effective representations of DNA sequences is fundamental to genomic data analysis, especially in…",
+            "body": "arXiv:2509.26116v2 Announce Type: replace Abstract: Learning effective representations of DNA sequences is fundamental to genomic data analysis, especially in the presence of high sequence similarity and inter-species DNA sharing. Existing approaches rely on deterministic embeddings, such as k-mer statistics or representations from large language models, which fail to capture the inherent uncertainty in short and ambiguous DNA fragments. We propose UncertainGen, a lightweight probabilistic representation learning framework that embeds DNA sequences as distributions in a latent space. The lear…",
+            "url": "https://arxiv.org/abs/2509.26116",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 38.3
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+            "titleJa": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+            "summary": "With expanded NVIDIA CUDA-X libraries, including cuPhoton, cuPotential and cuSpa, researchers can sift through vast amounts of data to accelerate research, fro…",
+            "body": "With expanded NVIDIA CUDA-X libraries, including cuPhoton, cuPotential and cuSpa, researchers can sift through vast amounts of data to accelerate research, from astrophysics and materials science to single-cell biology. The speedups are helping scientists analyze larger datasets and model more complex systems. The new libraries give AI agents the tools to help researchers make discoveries […]",
+            "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:16.000Z",
+            "score": 38
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "STAT+: With $173 million, new startup takes aim at sickle cell",
+            "titleJa": "STAT+: With $173 million, new startup takes aim at sickle cell",
+            "summary": "Researchers are seeking a sickle cell treatment as effective as gene therapy, without the drawbacks. This entrepreneur thinks he might have one.",
+            "body": "Researchers are seeking a sickle cell treatment as effective as gene therapy, without the drawbacks. This entrepreneur thinks he might have one.",
+            "url": "https://www.statnews.com/2026/11/17/new-startup-developing-novel-sickle-cell-anemia-infusion-no-gene-therapy",
+            "source": "STAT News",
+            "publishedAt": "2026-11-17T12:00:00.000Z",
+            "score": 37.7
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Enhancer-Targeted CRISPR Turns Up Healthy Gene Copy in Autism Organoid Model",
+            "titleJa": "Enhancer-Targeted CRISPR Turns Up Healthy Gene Copy in Autism Organoid Model",
+            "summary": "In lab-grown human neurons and organoids carrying CHD8 or SCN2A mutations, researchers reduced organoid overgrowth and moved neuronal electrical activity close…",
+            "body": "In lab-grown human neurons and organoids carrying CHD8 or SCN2A mutations, researchers reduced organoid overgrowth and moved neuronal electrical activity closer to wild-type levels. The post Enhancer-Targeted CRISPR Turns Up Healthy Gene Copy in Autism Organoid Model appeared first on GEN - Genetic Engineering and Biotechnology News .",
+            "url": "https://www.genengnews.com/topics/translational-medicine/enhancer-targeted-crispr-turns-up-healthy-gene-copy-in-autism-organoid-model",
+            "source": "GEN News",
+            "publishedAt": "2026-11-16T23:50:32.000Z",
+            "score": 34.6
+          }
+        ]
+      },
+      {
+        "id": "neuro",
+        "label": "ニューロサイエンス・BCI・ニューロモジュレーション",
+        "short": "ニューロ・BCI",
+        "digest": "OSS 2件・中間 7件・大手 0件。いちばん強いシグナルは「patrasc237/EEG-DL」（GitHub）。",
+        "tierCounts": {
+          "oss": 2,
+          "hybrid": 7,
+          "bigtech": 0
+        },
+        "candidates": 52,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "patrasc237/EEG-DL",
+            "titleJa": "patrasc237/EEG-DL",
+            "summary": "A deep learning library for EEG signal classification, with 26 network architectures.",
+            "body": "A deep learning library for EEG signal classification, with 26 network architectures.",
+            "url": "https://github.com/patrasc237/EEG-DL",
+            "source": "GitHub",
+            "publishedAt": "2026-11-05T14:19:48Z",
+            "score": 2.3,
+            "stars": 50,
+            "starsDelta": null,
+            "starsPerDay": 2.5,
+            "language": "Python",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "facebookresearch/neuroai",
+            "titleJa": "facebookresearch/neuroai",
+            "summary": "Python suite for neuroscience research across all modalities.",
+            "body": "Python suite for neuroscience research across all modalities.",
+            "url": "https://github.com/facebookresearch/neuroai",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T11:00:00Z",
+            "score": 1,
+            "stars": 345,
+            "starsDelta": null,
+            "starsPerDay": 1,
+            "language": "Python",
+            "license": "MIT"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "neuropsychology/NeuroKit",
+            "titleJa": "neuropsychology/NeuroKit",
+            "summary": "NeuroKit2: The Python Toolbox for Neurophysiological Signal Processing",
+            "body": "NeuroKit2: The Python Toolbox for Neurophysiological Signal Processing",
+            "url": "https://github.com/neuropsychology/NeuroKit",
+            "source": "GitHub",
+            "publishedAt": "2026-11-11T13:16:06Z",
+            "score": 0.5,
+            "stars": 2430,
+            "starsDelta": null,
+            "starsPerDay": 0.6,
+            "language": "Python",
+            "license": "MIT"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention",
+            "titleJa": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention",
+            "summary": "arXiv:2611.20853v1 Announce Type: new Abstract: Motor imagery (MI) enables a brain-computer interface (BCI) to decode movement intentions without overt movemen…",
+            "body": "arXiv:2611.20853v1 Announce Type: new Abstract: Motor imagery (MI) enables a brain-computer interface (BCI) to decode movement intentions without overt movement. Hybrid electroencephalography (EEG) and functional near-infrared spectroscopy (fNIRS) classification combines complementary signals, but inter-subject variability and the design of information exchange between modalities affect generalization to new subjects. We propose a framework that combines Cross-Subject Class Mixup (CSCM) with Selective Attention. CSCM aims to construct new training data to make the model robust against inter-s…",
+            "url": "https://arxiv.org/abs/2611.20853",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 41.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "The Challenge of Out-Of-Distribution Detection in Motor Imagery BCIs",
+            "titleJa": "The Challenge of Out-Of-Distribution Detection in Motor Imagery BCIs",
+            "summary": "arXiv:2603.13324v2 Announce Type: replace Abstract: Machine Learning classifiers used in Brain-Computer Interfaces make classifications based on the distributi…",
+            "body": "arXiv:2603.13324v2 Announce Type: replace Abstract: Machine Learning classifiers used in Brain-Computer Interfaces make classifications based on the distribution of examples on which they were trained. When exposed to EEG from unfamiliar classes, they can only make blind guesses. Instead of allowing such guesses, these Out-of-Distribution (OOD) samples should be detected and rejected to improve the robustness of BCIs against unfamiliar cognitive states. We study OOD detection in Motor Imagery BCIs by training a model on some classes and observing whether an unfamiliar movement class can be de…",
+            "url": "https://arxiv.org/abs/2603.13324",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 41.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "This paper changed my life: The salience network makes its mark",
+            "titleJa": "This paper changed my life: The salience network makes its mark",
+            "summary": "Vinod Menon’s 2008 PNAS paper found that activity in the salience network allows the brain to switch between different areas that control cognitive processing.…",
+            "body": "Vinod Menon’s 2008 PNAS paper found that activity in the salience network allows the brain to switch between different areas that control cognitive processing. The work drove Uddin to focus her research on large-scale brain networks and interactions among them.",
+            "url": "https://www.thetransmitter.org/this-paper-changed-my-life/this-paper-changed-my-life-the-salience-network-makes-its-mark",
+            "source": "The Transmitter",
+            "publishedAt": "2026-11-17T05:00:31.000Z",
+            "score": 38.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Brain AI Scientist: An Evidence-Based Multi-Agent System for Translational Neuroimaging in Precision Psychiatry",
+            "titleJa": "Brain AI Scientist: An Evidence-Based Multi-Agent System for Translational Neuroimaging in Precision Psychiatry",
+            "summary": "arXiv:2611.18634v1 Announce Type: cross Abstract: Resting-state functional magnetic resonance imaging (rs-fMRI) has revealed widespread brain-network alteratio…",
+            "body": "arXiv:2611.18634v1 Announce Type: cross Abstract: Resting-state functional magnetic resonance imaging (rs-fMRI) has revealed widespread brain-network alterations in psychiatric disorders, yet translating these findings into individualized clinical decision support remains challenging. Here we introduce Brain AI Scientist, an autonomous multi-agent framework that integrates patient-specific fMRI, clinical information, and scientific evidence through retrieval, verification, and prioritization. Guided by Research Domain Criteria and evidence-based medicine, it builds traceable chains linking ph…",
+            "url": "https://arxiv.org/abs/2611.18634",
+            "source": "arXiv q-bio.NC",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 37.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "High-Fidelity 3D Simulator for Synthetic fNIRS Data Generation",
+            "titleJa": "High-Fidelity 3D Simulator for Synthetic fNIRS Data Generation",
+            "summary": "arXiv:2605.30552v3 Announce Type: replace Abstract: Functional near-infrared spectroscopy (fNIRS) provides a noninvasive window into brain activity by measurin…",
+            "body": "arXiv:2605.30552v3 Announce Type: replace Abstract: Functional near-infrared spectroscopy (fNIRS) provides a noninvasive window into brain activity by measuring task-related changes in oxygenated and deoxygenated hemoglobin in the cortex. However, analyzing fNIRS data is challenging because of motion artifacts, physiological noise, and other confounding factors. This challenge is further compounded by the limited availability of annotated datasets, which hinders the development and validation of new analysis pipelines, particularly given the growing use of AI methods. Recognizing these challe…",
+            "url": "https://arxiv.org/abs/2605.30552",
+            "source": "arXiv q-bio.NC",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 37.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "STAT+: After death in gene therapy trial for a brain disease, progress is reported",
+            "titleJa": "STAT+: After death in gene therapy trial for a brain disease, progress is reported",
+            "summary": "An unexpected patient death rattled researchers who sought to pierce the blood-brain barrier. Now some think they have a better way of mitigating risks.",
+            "body": "An unexpected patient death rattled researchers who sought to pierce the blood-brain barrier. Now some think they have a better way of mitigating risks.",
+            "url": "https://www.statnews.com/2026/11/17/capsida-gene-therapy-trial-death-follow-up-investigation",
+            "source": "STAT News",
+            "publishedAt": "2026-11-17T09:30:00.000Z",
+            "score": 36.8
+          }
+        ]
+      },
+      {
+        "id": "hardware",
+        "label": "半導体・AIチップ・新素材",
+        "short": "半導体・素材",
+        "digest": "OSS 3件・中間 5件・大手 1件。いちばん強いシグナルは「k2-fsa/sherpa-onnx」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 5,
+          "bigtech": 1
+        },
+        "candidates": 68,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "k2-fsa/sherpa-onnx",
+            "titleJa": "k2-fsa/sherpa-onnx",
+            "summary": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet conn…",
+            "body": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet connection. Support embedded systems, Android, iOS, HarmonyOS, Raspberry Pi, RISC-V, RK NPU, Axera NPU, Ascend NPU, x86_64 servers, websocket server/client, support 12 programming languages",
+            "url": "https://github.com/k2-fsa/sherpa-onnx",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T12:48:27Z",
+            "score": 6.2,
+            "stars": 16005,
+            "starsDelta": null,
+            "starsPerDay": 6.2,
+            "language": "C++",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "simdjson/simdjson",
+            "titleJa": "simdjson/simdjson",
+            "summary": "Parsing gigabytes of JSON per second : used by Facebook/Meta Velox, the Node.js runtime, ClickHouse, WatermelonDB, Apache Doris, Milvus, StarRocks",
+            "body": "Parsing gigabytes of JSON per second : used by Facebook/Meta Velox, the Node.js runtime, ClickHouse, WatermelonDB, Apache Doris, Milvus, StarRocks",
+            "url": "https://github.com/simdjson/simdjson",
+            "source": "GitHub",
+            "publishedAt": "2026-11-15T22:47:35Z",
+            "score": 4.4,
+            "stars": 24578,
+            "starsDelta": null,
+            "starsPerDay": 4.7,
+            "language": "C++",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "mytechnotalent/Reverse-Engineering",
+            "titleJa": "mytechnotalent/Reverse-Engineering",
+            "summary": "A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit/64-bit ARM, 8-bit AVR and 32-bit RISC-V architectures.",
+            "body": "A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit/64-bit ARM, 8-bit AVR and 32-bit RISC-V architectures.",
+            "url": "https://github.com/mytechnotalent/Reverse-Engineering",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T14:12:47Z",
+            "score": 3.6,
+            "stars": 15200,
+            "starsDelta": null,
+            "starsPerDay": 3.7,
+            "language": "Assembly",
+            "license": "Apache-2.0"
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Normalization States",
+            "titleJa": "LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Normalization States",
+            "summary": "arXiv:2611.20331v1 Announce Type: new Abstract: LayerNorm and attention Softmax are critical operations in Transformers. However, they cannot be efficiently ma…",
+            "body": "arXiv:2611.20331v1 Announce Type: new Abstract: LayerNorm and attention Softmax are critical operations in Transformers. However, they cannot be efficiently mapped to General Matrix Multiplication (GEMM) computations on hardware. Therefore, modern hardware accelerator designs, such as NPUs on ASIC/FPGA, consume a large amount of hardware resources or chip area to implement their specific arithmetic units. Building on previous work about LayerNorm, Softmax, and their alternatives, we introduce Learnable Normalization States (LENS), a framework that reformulates LayerNorm as tiny MLPs by abstra…",
+            "url": "https://arxiv.org/abs/2611.20331",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 35.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "A Temporal Convolutional Network with Multi-Head Attention Model: A Surrogate for Parallel DEVS Semiconductor Fab Simulation",
+            "titleJa": "A Temporal Convolutional Network with Multi-Head Attention Model: A Surrogate for Parallel DEVS Semiconductor Fab Simulation",
+            "summary": "arXiv:2611.20493v1 Announce Type: new Abstract: Semiconductor factories process many kinds of wafers organized into lots of various sizes and configurations. D…",
+            "body": "arXiv:2611.20493v1 Announce Type: new Abstract: Semiconductor factories process many kinds of wafers organized into lots of various sizes and configurations. Different kinds of machines, each with its own operations, process wafers for hours to days, and the wafers undergo many incremental fabrication steps (with re-entry) and flows spanning days to weeks across connected machines. Fast and accurate predictions of throughput ($TH$) and turnaround time ($TA$) dynamics for individual machines and their combinations are essential for factory operations. To use machine learning methods for this p…",
+            "url": "https://arxiv.org/abs/2611.20493",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 35.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Accessing Electrode Edges: Upright Mounting for Site-Specific Cryogenic Atom Probe Tomography of Lithium-Ion Batteries",
+            "titleJa": "Accessing Electrode Edges: Upright Mounting for Site-Specific Cryogenic Atom Probe Tomography of Lithium-Ion Batteries",
+            "summary": "arXiv:2611.21357v1 Announce Type: new Abstract: Cryogenic atom probe tomography (cryo-APT) is increasingly being used to map the three-dimensional distribution…",
+            "body": "arXiv:2611.21357v1 Announce Type: new Abstract: Cryogenic atom probe tomography (cryo-APT) is increasingly being used to map the three-dimensional distribution of highly reactive species in heterogeneous materials, including those found in battery systems. However, site-specific preparation of localised features and liquid-solid interfaces remains challenging, particularly when regions of interest (ROIs) are concentrated along electrode edges that are difficult to access using conventional mounting geometries. Here, we present a cryo-APT workflow incorporating an upright-mounting procedure th…",
+            "url": "https://arxiv.org/abs/2611.21357",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 35.3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Dissipative many-body theory of electron-phonon-photon systems",
+            "titleJa": "Dissipative many-body theory of electron-phonon-photon systems",
+            "summary": "arXiv:2611.18748v1 Announce Type: cross Abstract: Optical cavities offer opportunities to control quantum materials, but radiative leakage and vibrational rela…",
+            "body": "arXiv:2611.18748v1 Announce Type: cross Abstract: Optical cavities offer opportunities to control quantum materials, but radiative leakage and vibrational relaxation call for microscopic theories that treat interactions and dissipation on equal footing. We develop a Keldysh-Lindblad nonequilibrium Green's function framework for interacting electrons coupled to quantized photon and phonon fields. The formulation accommodates boson-number-nonconserving Hamiltonians and dissipative channels that combine electronic transitions with bosonic processes. We derive the mixed electron-boson diagrammati…",
+            "url": "https://arxiv.org/abs/2611.18748",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-17T05:00:00.000Z",
+            "score": 35.3
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+            "titleJa": "CUDA at 20: How the Platform Transformed Scientific Computing",
+            "summary": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for m…",
+            "body": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for modern science and AI. CUDA’s 20th anniversary presents an occasion to reflect across computing eras, from the people who wrote the very first CUDA programs to the AI developers […]",
+            "url": "https://blogs.nvidia.com/blog/20-years-cuda",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:11.000Z",
+            "score": 32
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Advanced Metrology for Defect Detection, Tool Health, and Semiconductor Yield Enhancement",
+            "titleJa": "Advanced Metrology for Defect Detection, Tool Health, and Semiconductor Yield Enhancement",
+            "summary": "In advanced semiconductor manufacturing, small defects can have a large effect on yield. Thin film deposition tools must stay stable and qualified. Process dri…",
+            "body": "In advanced semiconductor manufacturing, small defects can have a large effect on yield. Thin film deposition tools must stay stable and qualified. Process drift must be caught early. When a defect does appear, engineers need to know where it came from and how it affects device performance. This webinar shows how in-line inspection and offline characterization combine into one workflow, from tool monitoring to root-cause analysis. In the first half, Dr. Bitan Chakraborty from Intel, explains how surface scan metrology fits into station monitors for thin film tools. The session shows how basel…",
+            "url": "https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8",
+            "source": "IEEE Spectrum Semiconductors",
+            "publishedAt": "2026-11-16T11:00:03.000Z",
+            "score": 31.3
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "candidates": 7778,
+      "feedsFailed": [
+        "Meta AI",
+        "bioRxiv Synthetic Biology",
+        "bioRxiv Bioinformatics",
+        "bioRxiv Neuroscience"
+      ]
+    }
+  },
   "stats": {
     "repoCandidates": 275,
-    "newsCandidates": 2572,
+    "newsCandidates": 2570,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

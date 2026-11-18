@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-18",
+    "picks": [
+      {
+        "rank": 1,
+        "name": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 2,
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "score": 98,
+        "theme": "harness"
+      },
+      {
+        "rank": 3,
+        "name": "Egonex-AI/Understand-Anything",
+        "url": "https://github.com/Egonex-AI/Understand-Anything",
+        "score": 98,
+        "theme": "harness"
+      },
+      {
+        "rank": 4,
+        "name": "synchopate/llama-modchip",
+        "url": "https://github.com/synchopate/llama-modchip",
+        "score": 93,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 5,
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "score": 92,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 6,
+        "name": "Zfinix/eleven",
+        "url": "https://github.com/Zfinix/eleven",
+        "score": 91,
+        "theme": "device-util"
+      },
+      {
+        "rank": 7,
+        "name": "wangzan101/Mika",
+        "url": "https://github.com/wangzan101/Mika",
+        "score": 90,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 8,
+        "name": "wquguru/cicada",
+        "url": "https://github.com/wquguru/cicada",
+        "score": 90,
+        "theme": "device-util"
+      },
+      {
+        "rank": 9,
+        "name": "CzzzzzzJ/mdldm-maitian-publisher",
+        "url": "https://github.com/CzzzzzzJ/mdldm-maitian-publisher",
+        "score": 88,
+        "theme": "pkm"
+      },
+      {
+        "rank": 10,
+        "name": "3641397194-wq/gpt6-Astra",
+        "url": "https://github.com/3641397194-wq/gpt6-Astra",
+        "score": 85,
+        "theme": "device-util"
+      }
+    ]
+  },
+  {
     "date": "2026-11-17",
     "picks": [
       {

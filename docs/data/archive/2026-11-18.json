@@ -1,0 +1,2045 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-18T08:12:03.503Z",
+  "generatedAtLocal": "2026-11-18 16:12",
+  "dateLocal": "2026-11-18",
+  "timezone": "Asia/Kuala_Lumpur",
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "model": null,
+    "label": "ルールベース要約（AIキー未設定）"
+  },
+  "digest": "2026-11-18 16:12 時点の収集結果です。ゆいまるが次に取り上げそうなのは Graphify-Labs/graphify、qybaihe/bla、Egonex-AI/Understand-Anything。GitHub で伸びている AI ツールは Graphify-Labs/graphify、ccch1mneyyy/dsh-Go、affaan-m/ECC の 3 件。AI ニュースは 12 件を収集し、うち 12 件が新バージョン・新機能の発表でした。",
+  "tools": [
+    {
+      "name": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "homepage": "https://www.graphify.com",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "stars": 149817,
+      "starsDelta": 472,
+      "starsPerDay": 603.2,
+      "measured": true,
+      "forks": 14393,
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "antigravity",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-search",
+        "codex",
+        "cursor"
+      ],
+      "license": "Apache-2.0",
+      "createdAt": "2026-04-03T15:49:07Z",
+      "pushedAt": "2026-11-17T21:21:11Z",
+      "openIssues": 1659,
+      "score": 592.51,
+      "rank": 1,
+      "yuimaruScore": 99,
+      "yuimaruReasons": [
+        "コーディングエージェント／ハーネス（claude code・codex・cursor）",
+        "最近の記事と地続き（edge・gemini・knowledge）",
+        "すぐ試せる実用ツール",
+        "急上昇中（約603★/日）"
+      ],
+      "headline": "graphify",
+      "summary": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemin…",
+      "why": "前回計測から +472 スター。Python 製。最終更新 2026-11-17。"
+    },
+    {
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "homepage": null,
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "stars": 26487,
+      "starsDelta": 867,
+      "starsPerDay": 1107.4,
+      "measured": true,
+      "forks": 1268,
+      "language": "Dart",
+      "topics": [
+        "ai-agent",
+        "android",
+        "android-app",
+        "coding-agent",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin"
+      ],
+      "license": "AGPL-3.0",
+      "createdAt": "2026-10-25T08:09:52Z",
+      "pushedAt": "2026-11-18T07:35:25Z",
+      "openIssues": 710,
+      "score": 1382.8,
+      "rank": 2,
+      "yuimaruScore": 97,
+      "yuimaruReasons": [
+        "コーディングエージェント／ハーネス（harness・dsh・dsh-plugin）",
+        "最近の記事と地続き（android）",
+        "すぐ試せる実用ツール",
+        "急上昇中（約1107★/日）"
+      ],
+      "headline": "dsh-Go",
+      "summary": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "why": "前回計測から +867 スター。Dart 製。最終更新 2026-11-18。"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "homepage": "https://ecc.tools",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "stars": 305872,
+      "starsDelta": 832,
+      "starsPerDay": 1063.2,
+      "measured": true,
+      "forks": 45016,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-01-18T00:51:51Z",
+      "pushedAt": "2026-11-17T06:41:46Z",
+      "openIssues": 162,
+      "score": 1020.35,
+      "rank": 3,
+      "yuimaruScore": 97,
+      "yuimaruReasons": [
+        "コーディングエージェント／ハーネス（claude code・opencode・codex）",
+        "最近の記事と地続き（opencode・claude）",
+        "すぐ試せる実用ツール",
+        "急上昇中（約1063★/日）"
+      ],
+      "headline": "ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor…",
+      "why": "前回計測から +832 スター。JavaScript 製。最終更新 2026-11-17。"
+    }
+  ],
+  "news": [
+    {
+      "rank": 1,
+      "title": "vllm-project/vllm v0.34.0",
+      "titleJa": "vllm-project/vllm v0.34.0",
+      "summary": "# v0.34.0\r\n\r\n**1,061 commits from 412 contributors (120 new).** Thank you!\r\n\r\n## TL;DR\r\n\r\n- **10 new models** (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-16T23:22:00.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 87.6,
+      "yuimaruScore": 82
+    },
+    {
+      "rank": 2,
+      "title": "open-webui/open-webui v0.13.4",
+      "titleJa": "open-webui/open-webui v0.13.4",
+      "summary": "### Added\n\n- **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compa…",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.4",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-17T14:46:26.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 99.3,
+      "yuimaruScore": 43
+    },
+    {
+      "rank": 3,
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "titleJa": "Introducing GPT-6.2 Astra and Sol",
+      "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "discussion": null,
+      "source": "OpenAI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-17T17:45:00.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 64.8,
+      "yuimaruScore": 80
+    },
+    {
+      "rank": 4,
+      "title": "openai/openai-python v3.53.0",
+      "titleJa": "openai/openai-python v3.53.0",
+      "summary": "## [3.53.0](https://github.com/openai/openai-python/compare/v3.52.0...v3.53.0) (2026-11-17)\n\n\n### Features\n\n* **api:** add 2-hour and 8-hour Responses backgrou…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.53.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-17T18:40:24.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 69.2,
+      "yuimaruScore": 65
+    },
+    {
+      "rank": 5,
+      "title": "openai/openai-python v3.55.0",
+      "titleJa": "openai/openai-python v3.55.0",
+      "summary": "## [3.55.0](https://github.com/openai/openai-python/compare/v3.54.0...v3.55.0) (2026-11-18)\n\n\n### Features\n\n* **api:** add Live MCP server configuration ([#428…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.55.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-18T05:21:54.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 74.6,
+      "yuimaruScore": 43
+    },
+    {
+      "rank": 6,
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "titleJa": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "summary": "<p><strong><a href=\"https://openai.com/index/introducing-gpt-6-2-astra-sol/\">GPT‑6.2 Astra and GPT‑6.2 Sol</a></strong></p> OpenAI:</p> <blockquote> <p>We’re i…",
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-17T22:38:52.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 63.2,
+      "yuimaruScore": 67
+    },
+    {
+      "rank": 7,
+      "title": "anthropics/anthropic-sdk-python v2.9.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.9.0",
+      "summary": "### Features\n\n* **api:** add source and error codes to the RBAC Role read endpoints\n* **api:** add Update Bundle, which sets a Claude Tag Bundle's instructions…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-16T16:47:17.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business"
+      ],
+      "score": 68.3,
+      "yuimaruScore": 47
+    },
+    {
+      "rank": 8,
+      "title": "langchain-ai/langchain langchain-openai==1.8.1",
+      "titleJa": "langchain-ai/langchain langchain-openai==1.8.1",
+      "summary": "Changes since langchain-openai==1.8.0\n\nrelease(openai): 1.8.1 (#41924)\nfix(openai): recover function call args from done events (#41923)",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.1",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-17T20:39:43.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 74.2,
+      "yuimaruScore": 10
+    },
+    {
+      "rank": 9,
+      "title": "anthropics/anthropic-sdk-python v2.10.0",
+      "titleJa": "anthropics/anthropic-sdk-python v2.10.0",
+      "summary": "### Features\n\n* **api:** add beta support for the billing_policy request parameter\n* **api:** add contract_spend_limit_reached error code to messages\n* **api:*…",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-17T18:28:13.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model"
+      ],
+      "score": 73.1,
+      "yuimaruScore": 9
+    },
+    {
+      "rank": 10,
+      "title": "langchain-ai/langchain langchain-core==1.8.2",
+      "titleJa": "langchain-ai/langchain langchain-core==1.8.2",
+      "summary": "Changes since langchain-core==1.8.1\n\nfeat(core): add `headers` to `langsmith_gateway` and ignore proxies (#41900)\ndocs(core): clarify when to override `aparse_…",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.2",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-17T22:42:53.000Z",
+      "tags": [
+        "version"
+      ],
+      "score": 71.2,
+      "yuimaruScore": 10
+    },
+    {
+      "rank": 11,
+      "title": "openai/openai-python v3.54.0",
+      "titleJa": "openai/openai-python v3.54.0",
+      "summary": "## [3.54.0](https://github.com/openai/openai-python/compare/v3.53.0...v3.54.0) (2026-11-17)\n\n\n### Features\n\n* **api:** type Managed Agents budget events ([#428…",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.54.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-17T22:42:56.000Z",
+      "tags": [
+        "version",
+        "feature"
+      ],
+      "score": 71.2,
+      "yuimaruScore": 10
+    },
+    {
+      "rank": 12,
+      "title": "External sandboxes for coding agents",
+      "titleJa": "External sandboxes for coding agents",
+      "summary": "<p><strong><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">External sandboxes for coding agents</a></strong></p> I've been explor…",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-17T22:52:29.000Z",
+      "tags": [
+        "release",
+        "model",
+        "research"
+      ],
+      "score": 53.3,
+      "yuimaruScore": 43
+    }
+  ],
+  "frontier": {
+    "tiers": {
+      "oss": {
+        "label": "オープンソース",
+        "short": "OSS",
+        "note": "コミュニティ・大学・個人が出していて、誰でも中身（コード・重み・データ）を使えるもの"
+      },
+      "bigtech": {
+        "label": "大手",
+        "short": "大手",
+        "note": "巨大テック企業・国家級ラボの公式発表。中身はクローズド中心"
+      },
+      "hybrid": {
+        "label": "どっちつかず",
+        "short": "中間",
+        "note": "大手のオープンウェイト／OSS、研究所・スタートアップ、査読前論文・学術誌・専門メディアなど、OSSとも大手とも言い切れないもの"
+      }
+    },
+    "domains": [
+      {
+        "id": "ai-models",
+        "label": "基盤モデル（LLM・マルチモーダル）",
+        "short": "基盤モデル",
+        "digest": "OSS 6件・中間 5件・大手 1件。いちばん強いシグナルは「Ebony-Vinyl/dsh-our-free-model」（GitHub）。",
+        "tierCounts": {
+          "oss": 6,
+          "hybrid": 5,
+          "bigtech": 1
+        },
+        "candidates": 306,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "Graphify-Labs/graphify",
+            "titleJa": "Graphify-Labs/graphify",
+            "summary": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemin…",
+            "body": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+            "url": "https://github.com/Graphify-Labs/graphify",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T21:21:11Z",
+            "score": 592.1,
+            "stars": 149817,
+            "starsDelta": 472,
+            "starsPerDay": 602.8,
+            "language": "Python",
+            "license": "Apache-2.0",
+            "yuimaruScore": 99
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "affaan-m/ECC",
+            "titleJa": "affaan-m/ECC",
+            "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor…",
+            "body": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+            "url": "https://github.com/affaan-m/ECC",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T06:41:46Z",
+            "score": 1020.8,
+            "stars": 305873,
+            "starsDelta": 833,
+            "starsPerDay": 1063.8,
+            "language": "JavaScript",
+            "license": "MIT",
+            "yuimaruScore": 97
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "Ebony-Vinyl/dsh-our-free-model",
+            "titleJa": "Ebony-Vinyl/dsh-our-free-model",
+            "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+            "body": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+            "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T02:24:22Z",
+            "score": 1386.5,
+            "stars": 79086,
+            "starsDelta": 877,
+            "starsPerDay": 1120,
+            "language": "JavaScript",
+            "license": null,
+            "yuimaruScore": 96
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "Introducing GPT-6.2 Astra and Sol",
+            "titleJa": "Introducing GPT-6.2 Astra and Sol",
+            "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+            "body": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+            "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+            "source": "OpenAI",
+            "publishedAt": "2026-11-17T17:45:00.000Z",
+            "score": 42.2,
+            "yuimaruScore": 80
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+            "titleJa": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+            "summary": "Hi HN, Sanchit here from RunAnywhere (YC W26). We just open-sourced TrnRT: Trainium RunTime, our inference engine for AWS Trainium. We started 3 weeks back, an…",
+            "body": "Hi HN, Sanchit here from RunAnywhere (YC W26). We just open-sourced TrnRT: Trainium RunTime, our inference engine for AWS Trainium. We started 3 weeks back, and currently we’re able to serve and run GLM 5.3 flash (FP8) on AWS trn2.48xlarge, and will bring more models support soon. It’s open to contributions :) What it does today: - Serves 2 instances of GLM-5.3 flash on a single box, 8 trn2 with a cache aware router. - Can process 3.57M TPM (tokens per minute) on SemiAnalysis&#x27;s AgentX benchmarks. - Runs decode as one NKI kernel per layer half, or for the 11 sparse-attention layers fuses…",
+            "url": "https://github.com/RunanywhereAI/trnrt",
+            "source": "Hacker News",
+            "publishedAt": "2026-11-17T16:01:04Z",
+            "score": 38.8,
+            "discussion": "https://news.ycombinator.com/item?id=50533270",
+            "yuimaruScore": 72
+          },
+          {
+            "kind": "model",
+            "tier": "oss",
+            "title": "thinkingmachines/Inkling-2-Small",
+            "titleJa": "thinkingmachines/Inkling-2-Small",
+            "summary": "image-text-to-text transformers safetensors inkling2 image-text-to-text conversational moe license:apache-2.0 eval-results endpoints_compatible 8-bit modelopt…",
+            "body": "image-text-to-text transformers safetensors inkling2 image-text-to-text conversational moe license:apache-2.0 eval-results endpoints_compatible 8-bit modelopt region:us",
+            "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-11-04T19:51:05.000Z",
+            "score": 136,
+            "likes": 466,
+            "downloads": 18359,
+            "pipeline": "image-text-to-text",
+            "yuimaruScore": 24
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Can an LLM dream? Testing the overfitted brain hypothesis on an agent with text memory",
+            "titleJa": "Can an LLM dream? Testing the overfitted brain hypothesis on an agent with text memory",
+            "summary": "arXiv:2611.21648v1 Announce Type: new Abstract: Hoel (2021) proposed that dreams distort replayed experience so that the brain does not overfit to recent event…",
+            "body": "arXiv:2611.21648v1 Announce Type: new Abstract: Hoel (2021) proposed that dreams distort replayed experience so that the brain does not overfit to recent events. We test this hypothesis on an LLM agent (Claude Opus 5.5) that stores what it learns in a text memory and rewrites that memory each night from the day's conversation transcript. The agent goes through ten simulated days of conversation built from LongMemEval. We corrupt 5, 10, 20 or 40 percent of the transcript's turns before each nightly rewrite in one of two ways. Detail corruption changes one or two details in a turn to plausible…",
+            "url": "https://arxiv.org/abs/2611.21648",
+            "source": "arXiv cs.CL",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 41.9,
+            "yuimaruScore": 18
+          },
+          {
+            "kind": "model",
+            "tier": "hybrid",
+            "title": "Qwen/Qwen3.8-27B",
+            "titleJa": "Qwen/Qwen3.8-27B",
+            "summary": "image-text-to-text transformers safetensors qwen3_5 image-text-to-text conversational license:apache-2.0 eval-results endpoints_compatible deploy:azure deploy:…",
+            "body": "image-text-to-text transformers safetensors qwen3_5 image-text-to-text conversational license:apache-2.0 eval-results endpoints_compatible deploy:azure deploy:sagemaker region:us",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-08-05T08:22:59.000Z",
+            "score": 139,
+            "likes": 20488,
+            "downloads": 6942530,
+            "pipeline": "image-text-to-text",
+            "yuimaruScore": 16
+          },
+          {
+            "kind": "model",
+            "tier": "oss",
+            "title": "sensenova/SenseNova-Loop-9B",
+            "titleJa": "sensenova/SenseNova-Loop-9B",
+            "summary": "image-text-to-text transformers safetensors sensenova_loop text-generation multimodal image-text-to-text looped-transformer mhc custom_code conversational en zh",
+            "body": "image-text-to-text transformers safetensors sensenova_loop text-generation multimodal image-text-to-text looped-transformer mhc custom_code conversational en zh",
+            "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-11-17T10:16:41.000Z",
+            "score": 134,
+            "likes": 254,
+            "downloads": 0,
+            "pipeline": "image-text-to-text",
+            "yuimaruScore": 10
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Communicate the Change: Efficient Expert Parallelism via Activation Compression",
+            "titleJa": "Communicate the Change: Efficient Expert Parallelism via Activation Compression",
+            "summary": "arXiv:2611.22215v1 Announce Type: new Abstract: Scaling has driven the success of large language models (LLM), with sparse mixture-of-experts (MoE) architectur…",
+            "body": "arXiv:2611.22215v1 Announce Type: new Abstract: Scaling has driven the success of large language models (LLM), with sparse mixture-of-experts (MoE) architectures enabling greater parameter capacity without a proportional increase in computation. At large scales, MoE models rely on expert parallelism to distribute experts across devices. Each MoE layer requires two synchronous collective communication steps during inference: dispatching hidden states to the activated experts and combining the resulting expert outputs. As compute throughput has outpaced interconnect bandwidth, these synchronous…",
+            "url": "https://arxiv.org/abs/2611.22215",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 39.9,
+            "yuimaruScore": 8
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "AfriNORM: An Evaluation Benchmark for Normative Reasoning of LLMs Across African Cultures",
+            "titleJa": "AfriNORM: An Evaluation Benchmark for Normative Reasoning of LLMs Across African Cultures",
+            "summary": "arXiv:2611.22580v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed across various sectors. However, current evaluation benc…",
+            "body": "arXiv:2611.22580v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed across various sectors. However, current evaluation benchmarks are insufficient to assess the applicability of these models in local African contexts, as most focus on linguistic fluency (grammar/translation) rather than cultural competence. The few existing benchmarks that measure general knowledge or social conventions do not capture the African deontic modality, i.e., the strict norms and taboos that govern diverse social interactions. In this paper, we introduce AfriNORM, a scenario-base…",
+            "url": "https://arxiv.org/abs/2611.22580",
+            "source": "arXiv cs.CL",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 44.9,
+            "yuimaruScore": 7
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "When VLMs 'Fix' Students: Identifying and Penalizing Over-Correction in the Evaluation of Multi-line Handwritten Math OCR",
+            "titleJa": "When VLMs 'Fix' Students: Identifying and Penalizing Over-Correction in the Evaluation of Multi-line Handwritten Math OCR",
+            "summary": "arXiv:2604.22774v3 Announce Type: replace-cross Abstract: Accurate transcription of handwritten mathematics is crucial for educational AI systems, yet current…",
+            "body": "arXiv:2604.22774v3 Announce Type: replace-cross Abstract: Accurate transcription of handwritten mathematics is crucial for educational AI systems, yet current benchmarks fail to evaluate this capability properly. Most prior studies focus on single-line expressions and rely on lexical metrics such as BLEU, which fail to assess the semantic reasoning across multi-line student solutions. In this paper, we present the first systematic study of multi-line handwritten math Optical Character Recognition (OCR), revealing a critical failure mode of Vision-Language Models (VLMs): over-correction. Inste…",
+            "url": "https://arxiv.org/abs/2604.22774",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 42.9,
+            "yuimaruScore": 5
+          }
+        ]
+      },
+      {
+        "id": "ai-agents",
+        "label": "エージェント・開発ハーネス（MCP・コーディングAI）",
+        "short": "エージェント",
+        "digest": "OSS 5件・中間 3件・大手 1件。いちばん強いシグナルは「ccch1mneyyy/dsh-Go」（GitHub）。",
+        "tierCounts": {
+          "oss": 5,
+          "hybrid": 3,
+          "bigtech": 1
+        },
+        "candidates": 51,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "ccch1mneyyy/dsh-Go",
+            "titleJa": "ccch1mneyyy/dsh-Go",
+            "summary": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+            "body": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+            "url": "https://github.com/ccch1mneyyy/dsh-Go",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T07:35:25Z",
+            "score": 1383.9,
+            "stars": 26488,
+            "starsDelta": 868,
+            "starsPerDay": 1108.3,
+            "language": "Dart",
+            "license": "AGPL-3.0",
+            "yuimaruScore": 97
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "Tencent/LoopForge",
+            "titleJa": "Tencent/LoopForge",
+            "summary": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows f…",
+            "body": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+            "url": "https://github.com/Tencent/LoopForge",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T08:12:59Z",
+            "score": 1203.4,
+            "stars": 3585,
+            "starsDelta": 754,
+            "starsPerDay": 962.7,
+            "language": "Go",
+            "license": null,
+            "yuimaruScore": 95
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "mdiri-ai/SoduWork",
+            "titleJa": "mdiri-ai/SoduWork",
+            "summary": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+            "body": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+            "url": "https://github.com/mdiri-ai/SoduWork",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T08:10:23Z",
+            "score": 1270.8,
+            "stars": 2278,
+            "starsDelta": 796,
+            "starsPerDay": 1016.7,
+            "language": "JavaScript",
+            "license": "MIT",
+            "yuimaruScore": 92
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+            "titleJa": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+            "summary": "<p><strong><a href=\"https://openai.com/index/introducing-gpt-6-2-astra-sol/\">GPT‑6.2 Astra and GPT‑6.2 Sol</a></strong></p> OpenAI:</p> <blockquote> <p>We’re i…",
+            "body": "<p><strong><a href=\"https://openai.com/index/introducing-gpt-6-2-astra-sol/\">GPT‑6.2 Astra and GPT‑6.2 Sol</a></strong></p> OpenAI:</p> <blockquote> <p>We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work.</p> </blockquote> <p>They're available in the API as <code>gpt-6.2-astra</code> and <code>gpt-6.2-sol</code>. I shipped <a href=\"https://llm.datasette.io/en/stable/changelog.html#v0-38\">LLM 0.38</a> with support for the new models.</p> <p>6.2 Astra is 80% of the price of 6 Astra - $8/MTok input a…",
+            "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+            "source": "Simon Willison",
+            "publishedAt": "2026-11-17T22:38:52.000Z",
+            "score": 38.8,
+            "yuimaruScore": 67
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "open-webui/open-webui v0.13.4",
+            "titleJa": "open-webui/open-webui v0.13.4",
+            "summary": "### Added\n\n- **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compa…",
+            "body": "### Added\n\n- **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and Open Terminal servers that you add in the Tether app now show up just for you in the model selector, the Tools list of the + menu and the terminal menu of any Open WebUI you connect, from whatever device you open it on, and Open WebUI reaches them through Tether, so their addresses, commands and keys never leave your computer. This needs Tether 0.1.14 or later, or 0.1.16 for MCP servers, to…",
+            "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.4",
+            "source": "GitHub Releases",
+            "publishedAt": "2026-11-17T14:46:26.000Z",
+            "score": 42.2,
+            "yuimaruScore": 43
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "External sandboxes for coding agents",
+            "titleJa": "External sandboxes for coding agents",
+            "summary": "<p><strong><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">External sandboxes for coding agents</a></strong></p> I've been explor…",
+            "body": "<p><strong><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">External sandboxes for coding agents</a></strong></p> I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine.</p> <p>I worked on this project with <a href=\"https://primeradiant.com\">Prime Radiant</a>, the AI research lab behind Superpowers and <a href=\"https://github.com/orgs/prime-radiant-inc/repositories\">other project…",
+            "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+            "source": "Simon Willison",
+            "publishedAt": "2026-11-17T22:52:29.000Z",
+            "score": 38.9,
+            "yuimaruScore": 43
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+            "titleJa": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+            "summary": "We’re Yonas and Daniel and we’re building StarSling ( https:&#x2F;&#x2F;starsling.dev ), fast GitHub Actions runners with AI agents that ship PRs to continuous…",
+            "body": "We’re Yonas and Daniel and we’re building StarSling ( https:&#x2F;&#x2F;starsling.dev ), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows. Every CI job gets its own ephemeral sandbox on the fastest Zen 5 machines and NVMe Disk with unlimited concurrency so a burst of agent PRs all run at once. We’re different from other runners because ours come with agents that cut down your CI bill over time. PRs are generated through our CI harness, which runs an agent loop that’s tuned to improve your CI speed and reduce cost. Mastra now merges over…",
+            "url": "https://starsling.dev",
+            "source": "Hacker News",
+            "publishedAt": "2026-11-17T19:01:43Z",
+            "score": 38,
+            "discussion": "https://news.ycombinator.com/item?id=50536468",
+            "yuimaruScore": 43
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "Govern and discover records with common metadata in AWS Agent Registry",
+            "titleJa": "Govern and discover records with common metadata in AWS Agent Registry",
+            "summary": "Custom metadata schemas in AWS Agent Registry let an administrator define typed, validated fields that every agent, MCP server, and skill must carry. This post…",
+            "body": "Custom metadata schemas in AWS Agent Registry let an administrator define typed, validated fields that every agent, MCP server, and skill must carry. This post follows an MCP record from schema definition through registration, enrichment, approval, and discovery, so teams govern and find resources with one shared set of facts.",
+            "url": "https://aws.amazon.com/blogs/machine-learning/govern-and-discover-records-with-common-metadata-in-aws-agent-registry",
+            "source": "AWS Machine Learning",
+            "publishedAt": "2026-11-17T20:31:04.000Z",
+            "score": 35.1,
+            "yuimaruScore": 43
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Regularized Score Centering",
+            "titleJa": "Regularized Score Centering",
+            "summary": "arXiv:2611.21791v1 Announce Type: new Abstract: Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical m…",
+            "body": "arXiv:2611.21791v1 Announce Type: new Abstract: Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To stabilize off-policy learning, score centering (SC) removes the effect of reward baselines on the expected update. Our gradient diagnostics show less extreme gradients with SC than with importance sampling (IS), but SC can still fail when the learner moves far from the behavior policy that generated the data. To limit this policy mismatch, we introduce Regularized Score…",
+            "url": "https://arxiv.org/abs/2611.21791",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 36.9,
+            "yuimaruScore": 2
+          }
+        ]
+      },
+      {
+        "id": "ai-interp",
+        "label": "解釈可能性・安全性・ステアリング",
+        "short": "解釈・安全性",
+        "digest": "OSS 3件・中間 3件・大手 0件。いちばん強いシグナルは「ShutongLiang/Neural-State-OS」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 3,
+          "bigtech": 0
+        },
+        "candidates": 48,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "manuelgscom/inside-llm",
+            "titleJa": "manuelgscom/inside-llm",
+            "summary": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+            "body": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+            "url": "https://github.com/manuelgscom/inside-llm",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T17:42:31Z",
+            "score": 16.5,
+            "stars": 102,
+            "starsDelta": 11,
+            "starsPerDay": 14,
+            "language": "TypeScript",
+            "license": "MIT",
+            "yuimaruScore": 86
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "ShutongLiang/Neural-State-OS",
+            "titleJa": "ShutongLiang/Neural-State-OS",
+            "summary": "Calibrated internal-state modulation, readout, and neural observability for local dense language models.",
+            "body": "Calibrated internal-state modulation, readout, and neural observability for local dense language models.",
+            "url": "https://github.com/ShutongLiang/Neural-State-OS",
+            "source": "GitHub",
+            "publishedAt": "2026-11-14T20:45:14Z",
+            "score": 42.3,
+            "stars": 111,
+            "starsDelta": 30,
+            "starsPerDay": 38.3,
+            "language": "Python",
+            "license": "Apache-2.0",
+            "yuimaruScore": 25
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "MAIF/shapash",
+            "titleJa": "MAIF/shapash",
+            "summary": "🔅 Shapash: User-friendly Explainability and Interpretability to Develop Reliable and Transparent Machine Learning Models",
+            "body": "🔅 Shapash: User-friendly Explainability and Interpretability to Develop Reliable and Transparent Machine Learning Models",
+            "url": "https://github.com/MAIF/shapash",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T09:55:39Z",
+            "score": 15.4,
+            "stars": 3286,
+            "starsDelta": 13,
+            "starsPerDay": 16.6,
+            "language": "Jupyter Notebook",
+            "license": "Apache-2.0",
+            "yuimaruScore": 23
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
+            "titleJa": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
+            "summary": "arXiv:2611.23124v1 Announce Type: new Abstract: GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using ver…",
+            "body": "arXiv:2611.23124v1 Announce Type: new Abstract: GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using verifiable rewards. However, it suffers from a fundamental failure mode: when a training question exceeds the base model's current capability, all generated responses fail and receive zero reward, yielding no gradient signal and stalling further capability expansion. An emerging class of GRPO extensions, termed Hint-Augmented GRPO (HA-GRPO), adds a \"hint\" to the context to reduce the difficulty of the question, thereby producing a usable g…",
+            "url": "https://arxiv.org/abs/2611.23124",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 36.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Bandwidth-tunable thermal emitter via dynamic resonator coupling and loss",
+            "titleJa": "Bandwidth-tunable thermal emitter via dynamic resonator coupling and loss",
+            "summary": "arXiv:2611.21934v1 Announce Type: cross Abstract: We demonstrate a dynamically tunable omnidirectional thermal emitter that can be switched from a narrowband e…",
+            "body": "arXiv:2611.21934v1 Announce Type: cross Abstract: We demonstrate a dynamically tunable omnidirectional thermal emitter that can be switched from a narrowband emission state to a broadband state. The structure is a metal-backed multilayer with subwavelength thickness across the mid-infrared, which forms an angle-insensitive (up to 60{\\deg}) optical cavity with one input port. We used an ultrathin VO2 layer to dynamically switch the coupling and loss coefficients of this optical cavity, resulting in narrowband emission from the vibrational mode of a polar dielectric layer that is part of the mu…",
+            "url": "https://arxiv.org/abs/2611.21934",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 33.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Hybrid Quantum Selection of Learning Rates in Language-Model Training: Termination Criteria and an Interaction-Guided Schedule Oracle",
+            "titleJa": "Hybrid Quantum Selection of Learning Rates in Language-Model Training: Termination Criteria and an Interaction-Guided Schedule Oracle",
+            "summary": "arXiv:2611.21701v1 Announce Type: new Abstract: Learning-rate choices strongly affect language-model fine-tuning, but the best joint profile across layer group…",
+            "body": "arXiv:2611.21701v1 Announce Type: new Abstract: Learning-rate choices strongly affect language-model fine-tuning, but the best joint profile across layer groups is generally unknown. This paper studies quantum minimum finding for layer-group learning-rate selection within a hybrid classical-quantum training framework. It combines Durr-Hoyer minimum finding with BBHT search and compares fixed-budget and confidence-based stopping policies using a lookup oracle built from measured profile scores at fixed training checkpoints. The paper then introduces an Interaction-Guided Schedule Oracle that s…",
+            "url": "https://arxiv.org/abs/2611.21701",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 33.9,
+            "yuimaruScore": 1
+          }
+        ]
+      },
+      {
+        "id": "world-models",
+        "label": "ワールドモデル・フィジカルAI・ロボティクス",
+        "short": "ワールドモデル",
+        "digest": "OSS 3件・中間 7件・大手 1件。いちばん強いシグナルは「earthtojake/text-to-cad」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 7,
+          "bigtech": 1
+        },
+        "candidates": 170,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "earthtojake/text-to-cad",
+            "titleJa": "earthtojake/text-to-cad",
+            "summary": "Design physical products with AI",
+            "body": "Design physical products with AI",
+            "url": "https://github.com/earthtojake/text-to-cad",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T08:00:51Z",
+            "score": 121.3,
+            "stars": 26691,
+            "starsDelta": 95,
+            "starsPerDay": 121.3,
+            "language": "Python",
+            "license": "MIT",
+            "yuimaruScore": 60
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "HybridRobotics/supermimic",
+            "titleJa": "HybridRobotics/supermimic",
+            "summary": "Humanoid whole-body motion tracking with one differentiable world model.",
+            "body": "Humanoid whole-body motion tracking with one differentiable world model.",
+            "url": "https://github.com/HybridRobotics/supermimic",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T23:15:47Z",
+            "score": 74.2,
+            "stars": 1778,
+            "starsDelta": 49,
+            "starsPerDay": 62.6,
+            "language": "Python",
+            "license": "Apache-2.0",
+            "yuimaruScore": 28
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation",
+            "titleJa": "What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation",
+            "summary": "arXiv:2611.16246v3 Announce Type: replace-cross Abstract: Vision-language-action (VLA) models drive the robot directly from camera views, yet a VLA alone shows…",
+            "body": "arXiv:2611.16246v3 Announce Type: replace-cross Abstract: Vision-language-action (VLA) models drive the robot directly from camera views, yet a VLA alone shows three typical failures. It walks past the goal, stops before reaching it, and rarely recovers after going off track. Pairing a VLA with a large language model (LLM) planner fixes these failures, but queries the LLM throughout every episode, adding token costs and latency. We introduce Harness-to-Executor (H2E), a task-level distillation method that pairs an LLM planner and a frozen VLA as a heterogeneous training agent, keeps only sess…",
+            "url": "https://arxiv.org/abs/2611.16246",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 42.9,
+            "yuimaruScore": 27
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Manufacturing Differential Sparsity: Planner-Hardware Co-Design for Efficient World Model Planning",
+            "titleJa": "Manufacturing Differential Sparsity: Planner-Hardware Co-Design for Efficient World Model Planning",
+            "summary": "arXiv:2611.22483v1 Announce Type: cross Abstract: JEPA-style latent world models let embodied agents plan toward new goals with model predictive control, but t…",
+            "body": "arXiv:2611.22483v1 Announce Type: cross Abstract: JEPA-style latent world models let embodied agents plan toward new goals with model predictive control, but they are still too slow for real-life embodied control: sampling-based MPC repeats predictor inference tens of thousands of times per plan, and even on high-end GPUs one planning step can take tens of seconds. We observe substantial latent locality in this repeated-inference workload: the predictor maps close actions to close latents, and inside a quantized predictor this closeness takes a form that hardware can exploit, differential bit…",
+            "url": "https://arxiv.org/abs/2611.22483",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 39.9,
+            "yuimaruScore": 24
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "google-deepmind/mujoco",
+            "titleJa": "google-deepmind/mujoco",
+            "summary": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+            "body": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+            "url": "https://github.com/google-deepmind/mujoco",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T00:20:16Z",
+            "score": 50.4,
+            "stars": 18267,
+            "starsDelta": 40,
+            "starsPerDay": 51.1,
+            "language": "C++",
+            "license": "Apache-2.0",
+            "yuimaruScore": 20
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+            "titleJa": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+            "summary": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, eng…",
+            "body": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, engineering and analytics workflows. As agents help scientists and engineers explore more candidate materials, molecules and designs, they rely on simulations to test those ideas and guide their next […]",
+            "url": "https://blogs.nvidia.com/blog/rubin-hpc",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:01.000Z",
+            "score": 25.6,
+            "yuimaruScore": 20
+          },
+          {
+            "kind": "model",
+            "tier": "hybrid",
+            "title": "nvidia/Alpamayo2-Edge",
+            "titleJa": "nvidia/Alpamayo2-Edge",
+            "summary": "robotics safetensors alpamayo2_edge alpamayo autonomous-driving vision-language-action pytorch robotics en dataset:nvidia/PhysicalAI-Autonomous-Vehicles datase…",
+            "body": "robotics safetensors alpamayo2_edge alpamayo autonomous-driving vision-language-action pytorch robotics en dataset:nvidia/PhysicalAI-Autonomous-Vehicles dataset:nvidia/PhysicalAI-Autonomous-Vehicles-NuRec base_model:nvidia/Cosmos3-Edge base_model:finetune:nvidia/Cosmos3-Edge",
+            "url": "https://huggingface.co/nvidia/Alpamayo2-Edge",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-08-12T01:31:29.000Z",
+            "score": 60.6,
+            "likes": 102,
+            "downloads": 2118,
+            "pipeline": "robotics",
+            "yuimaruScore": 16
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Learn how AI is changing supply chain robotics",
+            "titleJa": "Learn how AI is changing supply chain robotics",
+            "summary": "The live webinar, \"Robots in the Supply Chain,\" will take place Wednesday, November 18, 2026, at 12 P.M. ET. The post Learn how AI is changing supply chain rob…",
+            "body": "The live webinar, \"Robots in the Supply Chain,\" will take place Wednesday, November 18, 2026, at 12 P.M. ET. The post Learn how AI is changing supply chain robotics appeared first on The Robot Report .",
+            "url": "https://www.therobotreport.com/learn-how-ai-is-changing-supply-chain-robotics",
+            "source": "The Robot Report",
+            "publishedAt": "2026-11-17T19:58:18.000Z",
+            "score": 36.9,
+            "yuimaruScore": 10
+          },
+          {
+            "kind": "model",
+            "tier": "oss",
+            "title": "Lightricks/LTX-2.5",
+            "titleJa": "Lightricks/LTX-2.5",
+            "summary": "image-to-video diffusion-single-file image-to-video text-to-video video-to-video image-text-to-video audio-to-video text-to-audio video-to-audio audio-to-audio…",
+            "body": "image-to-video diffusion-single-file image-to-video text-to-video video-to-video image-text-to-video audio-to-video text-to-audio video-to-audio audio-to-audio text-to-audio-video image-to-audio-video image-text-to-audio-video",
+            "url": "https://huggingface.co/Lightricks/LTX-2.5",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-07-23T07:55:24.000Z",
+            "score": 137,
+            "likes": 12458,
+            "downloads": 2828071,
+            "pipeline": "image-to-video",
+            "yuimaruScore": 5
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "PAIR: Bringing Household Robots into the Smart Home",
+            "titleJa": "PAIR: Bringing Household Robots into the Smart Home",
+            "summary": "arXiv:2611.23070v1 Announce Type: new Abstract: Household robots often need to operate appliances, and smart appliances offer both control panels and device AP…",
+            "body": "arXiv:2611.23070v1 Announce Type: new Abstract: Household robots often need to operate appliances, and smart appliances offer both control panels and device APIs. Existing embodied AI simulation environments, however, model appliances solely as physical objects. We introduce PAIR, a smart-home simulation environment grounded in the Matter protocol~\\footnote{https://csa-iot.org/all-solutions/matter/}, the industry standard for smart-home devices. PAIR provides 84 smart-device assets whose functional control panels and APIs act on a shared device state, with ambient conditions that evolve in re…",
+            "url": "https://arxiv.org/abs/2611.23070",
+            "source": "arXiv cs.RO",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 46.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Data Pyramid for Embodied Manipulation: A Survey",
+            "titleJa": "Data Pyramid for Embodied Manipulation: A Survey",
+            "summary": "arXiv:2607.24744v3 Announce Type: replace Abstract: Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents a…",
+            "body": "arXiv:2607.24744v3 Announce Type: replace Abstract: Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions. These signals can be provided, to varying degrees, by multiple data sources. In this work, we organize the embodied data ecosystem as a \"pyramid'' spanning five complementary sources: real-robot data, UMI-style data, egocentric and exocentric data, simulation data, and general vision-language data. We organize the pyramid around the…",
+            "url": "https://arxiv.org/abs/2607.24744",
+            "source": "arXiv cs.RO",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 46.9,
+            "yuimaruScore": 2
+          }
+        ]
+      },
+      {
+        "id": "quantum",
+        "label": "量子コンピュータ・量子情報",
+        "short": "量子",
+        "digest": "OSS 1件・中間 7件・大手 1件。いちばん強いシグナルは「Continuum-AI-Corp/scuttle」（GitHub）。",
+        "tierCounts": {
+          "oss": 1,
+          "hybrid": 7,
+          "bigtech": 1
+        },
+        "candidates": 219,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "Continuum-AI-Corp/scuttle",
+            "titleJa": "Continuum-AI-Corp/scuttle",
+            "summary": "Tiny post-quantum encryption for sensitive data. Write-only by design. ML-KEM-768 + X25519 + AES-256-GCM. Please break it.",
+            "body": "Tiny post-quantum encryption for sensitive data. Write-only by design. ML-KEM-768 + X25519 + AES-256-GCM. Please break it.",
+            "url": "https://github.com/Continuum-AI-Corp/scuttle",
+            "source": "GitHub",
+            "publishedAt": "2026-10-15T11:54:28Z",
+            "score": 5.9,
+            "stars": 713,
+            "starsDelta": 6,
+            "starsPerDay": 7.7,
+            "language": "Go",
+            "license": "Apache-2.0",
+            "yuimaruScore": 30
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "NVIDIA/cuda-quantum",
+            "titleJa": "NVIDIA/cuda-quantum",
+            "summary": "C++ and Python support for the CUDA Quantum programming model for heterogeneous quantum-classical workflows",
+            "body": "C++ and Python support for the CUDA Quantum programming model for heterogeneous quantum-classical workflows",
+            "url": "https://github.com/NVIDIA/cuda-quantum",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T08:03:07Z",
+            "score": 3.8,
+            "stars": 1202,
+            "starsDelta": 3,
+            "starsPerDay": 3.8,
+            "language": "C++",
+            "license": "Apache-2.0",
+            "yuimaruScore": 5
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "Qiskit/qiskit",
+            "titleJa": "Qiskit/qiskit",
+            "summary": "Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.",
+            "body": "Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.",
+            "url": "https://github.com/Qiskit/qiskit",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T03:51:06Z",
+            "score": 5.1,
+            "stars": 7979,
+            "starsDelta": 4,
+            "starsPerDay": 5.1,
+            "language": "Python",
+            "license": "Apache-2.0",
+            "yuimaruScore": 4
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+            "titleJa": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+            "summary": "Quantum processor deployments at supercomputing centers have grown nearly sevenfold over the past five years, with nearly 30 supercomputing centers around the…",
+            "body": "Quantum processor deployments at supercomputing centers have grown nearly sevenfold over the past five years, with nearly 30 supercomputing centers around the world now in the process of deploying over 50 quantum processors. Many of these centers use Slurm to run scientific supercomputing workloads, so expanding its support for quantum processors builds on familiar workflows […]",
+            "url": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:47.000Z",
+            "score": 25.6,
+            "yuimaruScore": 4
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Quantum-gas microscope resolves the 'color' of individual atoms in a single shot",
+            "titleJa": "Quantum-gas microscope resolves the 'color' of individual atoms in a single shot",
+            "summary": "In 2024, researchers at the Ultracold Quantum Gases group at ICFO built a quantum-gas microscope capable of imaging individual atoms in strontium quantum gases…",
+            "body": "In 2024, researchers at the Ultracold Quantum Gases group at ICFO built a quantum-gas microscope capable of imaging individual atoms in strontium quantum gases for the first time, marking a key enabling step for quantum simulation. At that time, the researchers imaged strontium-84, a boson that has no spin.",
+            "url": "https://phys.org/news/2026-11-quantum-gas-microscope-individual-atoms.html",
+            "source": "Phys.org Quantum",
+            "publishedAt": "2026-11-18T00:00:01.000Z",
+            "score": 36.3,
+            "yuimaruScore": 3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Loss-Tolerant Quantum Correlations Between Atomic and Photonic Qubits",
+            "titleJa": "Loss-Tolerant Quantum Correlations Between Atomic and Photonic Qubits",
+            "summary": "arXiv:2611.21753v1 Announce Type: new Abstract: Quantum physics forbids cloning of a qubit. Therefore, a qubit is irreversibly lost upon loss of the informatio…",
+            "body": "arXiv:2611.21753v1 Announce Type: new Abstract: Quantum physics forbids cloning of a qubit. Therefore, a qubit is irreversibly lost upon loss of the information carrier. To mitigate this physical loss, it has been proposed to distribute the logical information across an entangled set of physical qubits, some of which can be lost. Previous experiments illustrated this concept, but failed to demonstrate a gain in the information-retrieval efficiency. Here we address this challenge with photons for which the total loss, from generation to detection, is below the loss-tolerance threshold of $50\\%…",
+            "url": "https://arxiv.org/abs/2611.21753",
+            "source": "arXiv quant-ph",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 47.9,
+            "yuimaruScore": 1
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Teleportation of Logical Qubits using Lattice Surgery with Superconducting Circuits",
+            "titleJa": "Teleportation of Logical Qubits using Lattice Surgery with Superconducting Circuits",
+            "summary": "arXiv:2611.23165v1 Announce Type: new Abstract: Demonstrating a quantum advantage when solving large-scale computational problems on a quantum computer require…",
+            "body": "arXiv:2611.23165v1 Announce Type: new Abstract: Demonstrating a quantum advantage when solving large-scale computational problems on a quantum computer requires the correction of errors that occur due to limitations in control accuracy and coherence. Using the concept of quantum error correction, fault-tolerant logical qubits can be realized and manipulated with logical single- and two-qubit gates. In this paper, we experimentally analyze fault-tolerant lattice-surgery, which is a key primitive that enables operations between logical qubits realized in the surface-code. Using this primitive,…",
+            "url": "https://arxiv.org/abs/2611.23165",
+            "source": "arXiv quant-ph",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 47.9,
+            "yuimaruScore": 1
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "IQM Introduces Upgrade Programme for Halocene Quantum Systems",
+            "titleJa": "IQM Introduces Upgrade Programme for Halocene Quantum Systems",
+            "summary": "Insider Brief PRESS RELEASE — IQM Quantum Computers (Nasdaq: IQMX), a global leader in integrated quantum computing, today announced an upgrade program for IQM…",
+            "body": "Insider Brief PRESS RELEASE — IQM Quantum Computers (Nasdaq: IQMX), a global leader in integrated quantum computing, today announced an upgrade program for IQM Halocene, its error-correction product line, that gives customers a path from the 150-qubit system of today to the over 1,000-qubit system of the future. Customers can run hybrid workloads today alongside […]",
+            "url": "https://thequantuminsider.com/2026/11/17/iqm-halocene-quantum-systems-upgrade-programme",
+            "source": "The Quantum Insider",
+            "publishedAt": "2026-11-17T19:34:26.000Z",
+            "score": 39.8,
+            "yuimaruScore": 1
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "QuiX Quantum and Partners Develop Near-Room-Temperature Detectors for Photonic Quantum",
+            "titleJa": "QuiX Quantum and Partners Develop Near-Room-Temperature Detectors for Photonic Quantum",
+            "summary": "Insider Brief PRESS RELEASE — QuiX Quantum, a Dutch-German developer of universal photonic quantum computers, together with Taiwanese partners Artilux Inc. and…",
+            "body": "Insider Brief PRESS RELEASE — QuiX Quantum, a Dutch-German developer of universal photonic quantum computers, together with Taiwanese partners Artilux Inc. and its affiliate Brillink Inc., has been awarded funding under the TechBridge Taiwan Call 2026 – Photonics Integrated Circuits, a joint programme of the Netherlands Enterprise Agency (RVO) and Taiwan’s Industrial Development Administration (IDA). […]",
+            "url": "https://thequantuminsider.com/2026/11/17/quix-quantum-taiwanese-partners-photonic-detector-project",
+            "source": "The Quantum Insider",
+            "publishedAt": "2026-11-17T12:42:28.000Z",
+            "score": 37.5,
+            "yuimaruScore": 1
+          }
+        ]
+      },
+      {
+        "id": "math-physics",
+        "label": "数理物理・理論物理・AI×数学",
+        "short": "数理物理",
+        "digest": "OSS 2件・中間 7件・大手 0件。いちばん強いシグナルは「bendlang/bend」（GitHub）。",
+        "tierCounts": {
+          "oss": 2,
+          "hybrid": 7,
+          "bigtech": 0
+        },
+        "candidates": 172,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "bendlang/bend",
+            "titleJa": "bendlang/bend",
+            "summary": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
+            "body": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
+            "url": "https://github.com/bendlang/bend",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T12:34:49Z",
+            "score": 405.8,
+            "stars": 25392,
+            "starsDelta": 328,
+            "starsPerDay": 419,
+            "language": "TypeScript",
+            "license": "Apache-2.0",
+            "yuimaruScore": 60
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "leanprover/lean4",
+            "titleJa": "leanprover/lean4",
+            "summary": "Lean 4 programming language and theorem prover",
+            "body": "Lean 4 programming language and theorem prover",
+            "url": "https://github.com/leanprover/lean4",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T08:00:19Z",
+            "score": 14.1,
+            "stars": 10046,
+            "starsDelta": 11,
+            "starsPerDay": 14.1,
+            "language": "Lean",
+            "license": "Apache-2.0",
+            "yuimaruScore": 23
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "google-deepmind/formal-conjectures",
+            "titleJa": "google-deepmind/formal-conjectures",
+            "summary": "A collection of formalized statements of conjectures in Lean.",
+            "body": "A collection of formalized statements of conjectures in Lean.",
+            "url": "https://github.com/google-deepmind/formal-conjectures",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T21:49:44Z",
+            "score": 3.8,
+            "stars": 1364,
+            "starsDelta": 3,
+            "starsPerDay": 3.8,
+            "language": "Lean",
+            "license": "Apache-2.0",
+            "yuimaruScore": 13
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Theory-Scale Auto-Formalization of Logic for Computer Science",
+            "titleJa": "Theory-Scale Auto-Formalization of Logic for Computer Science",
+            "summary": "arXiv:2606.26525v2 Announce Type: replace Abstract: Auto-formalization is critical for scalable formal verification, but existing progress largely focuses on i…",
+            "body": "arXiv:2606.26525v2 Announce Type: replace Abstract: Auto-formalization is critical for scalable formal verification, but existing progress largely focuses on isolated statements, while theory-scale auto-formalization, which coherently translates hundreds of interdependent definitions, lemmas, and theorems, remains open due to challenges in consistency, faithfulness, scalability, and correctness. In this paper, we introduce LCS-Bench, a stand-alone, theory-scale benchmark based on Logic for Computer Science. LCS-Bench is built through a novel semi-automated agentic pipeline that leverages conc…",
+            "url": "https://arxiv.org/abs/2606.26525",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 39.9,
+            "yuimaruScore": 5
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Domain walls of a spin-chirality ferroelectric as tunable quantum particles",
+            "titleJa": "Domain walls of a spin-chirality ferroelectric as tunable quantum particles",
+            "summary": "arXiv:2611.22662v1 Announce Type: cross Abstract: In frustrated spin chains with competing nearest- and next-nearest-neighbor exchange, the vector spin chirali…",
+            "body": "arXiv:2611.22662v1 Announce Type: cross Abstract: In frustrated spin chains with competing nearest- and next-nearest-neighbor exchange, the vector spin chirality sets the electric polarization, so a ferroelectric domain wall is a domain wall of the chirality. The semiclassical picture suggests nonlocal switching dynamics due to topological constraints on the spins, but little is known about such domain walls in a quantum spin chain. Using density-matrix renormalization group calculations for a frustrated spin-1/2 XXZ chain in which a bond alternation $\\delta$ opens a spin gap, we show that th…",
+            "url": "https://arxiv.org/abs/2611.22662",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 36.9,
+            "yuimaruScore": 3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "A no-go theorem for closed timelike curves in globally null-foliated spacetimes",
+            "titleJa": "A no-go theorem for closed timelike curves in globally null-foliated spacetimes",
+            "summary": "arXiv:2610.33706v2 Announce Type: replace-cross Abstract: The study of closed timelike curves has proceeded one spacetime at a time, and the criteria available…",
+            "body": "arXiv:2610.33706v2 Announce Type: replace-cross Abstract: The study of closed timelike curves has proceeded one spacetime at a time, and the criteria available form three families, the time function criteria, the energy condition criteria and the topological criteria. We initiate a fourth family of criteria, elementary in form and resting on a single scalar equation rather than any energy condition. We prove that a spacetime admitting a globally defined function whose gradient is everywhere null and nonzero cannot contain a closed timelike curve, and that the hypothesis is logically independe…",
+            "url": "https://arxiv.org/abs/2610.33706",
+            "source": "arXiv math-ph",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 41.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Holographic covering and the fortuity of black holes",
+            "titleJa": "Holographic covering and the fortuity of black holes",
+            "summary": "arXiv:2402.10129v3 Announce Type: replace Abstract: We propose a classification of BPS states in holographic CFTs into monotone and fortuitous, based on their…",
+            "body": "arXiv:2402.10129v3 Announce Type: replace Abstract: We propose a classification of BPS states in holographic CFTs into monotone and fortuitous, based on their behaviors in the large $N$ limit. Intuitively, monotone BPS states form infinite sequences with increasing rank $N$, while fortuitous ones exist within finite ranges of consecutive ranks. A precise definition is formulated using supercharge cohomology. We conjecture that under the AdS/CFT correspondence, monotone BPS states are dual to smooth horizonless geometries, and fortuitous ones are responsible for typical black hole microstates…",
+            "url": "https://arxiv.org/abs/2402.10129",
+            "source": "arXiv hep-th",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 40.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Existence of a third self-similar solution of the Yang--Mills equation in high even dimensions",
+            "titleJa": "Existence of a third self-similar solution of the Yang--Mills equation in high even dimensions",
+            "summary": "arXiv:2611.21767v1 Announce Type: new Abstract: We prove that the spherically symmetric $SO(d)$ Yang--Mills equation admits a third smooth self-similar profile…",
+            "body": "arXiv:2611.21767v1 Announce Type: new Abstract: We prove that the spherically symmetric $SO(d)$ Yang--Mills equation admits a third smooth self-similar profile, in addition to the two known explicit profiles, in every even dimension $d\\geq 12$. This complements the analogous existence theorem in odd dimensions $d\\geq 11$ (arXiv:2610.36784). In contrast to the odd-dimensional case, where the classification of smooth self-similar profiles reduces to counting roots of an explicit resonance polynomial [Phys. Rev. D 114, 064021 (2026)], the even-dimensional proof requires solving a nonlinear conne…",
+            "url": "https://arxiv.org/abs/2611.21767",
+            "source": "arXiv math-ph",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 38.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Cosmic Censorship in the Landscape of SUSY-Broken AdS Vacua",
+            "titleJa": "Cosmic Censorship in the Landscape of SUSY-Broken AdS Vacua",
+            "summary": "arXiv:2611.21722v1 Announce Type: new Abstract: We investigate signatures of weak cosmic censorship in non-supersymmetric vacua of both IIA and IIB string theo…",
+            "body": "arXiv:2611.21722v1 Announce Type: new Abstract: We investigate signatures of weak cosmic censorship in non-supersymmetric vacua of both IIA and IIB string theory. In particular, we examine the Penrose Inequality, which can be proven holographically using Ryu-Takayanagi, and can be independently proven in SUSY AdS vacua for spherically symmetric initial data. We prove that any EFT of scalars coupled to gravity in AdS, including in particular those of string compactifications, satisfies both the Penrose Inequality and a positive mass theorem if a function that we call a \"weak fake superpotentia…",
+            "url": "https://arxiv.org/abs/2611.21722",
+            "source": "arXiv hep-th",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 37.9,
+            "yuimaruScore": 2
+          }
+        ]
+      },
+      {
+        "id": "bio",
+        "label": "バイオ・合成生物学・AI創薬",
+        "short": "バイオ",
+        "digest": "OSS 3件・中間 5件・大手 1件。いちばん強いシグナルは「K-Dense-AI/scientific-agent-skills」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 5,
+          "bigtech": 1
+        },
+        "candidates": 35,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "K-Dense-AI/scientific-agent-skills",
+            "titleJa": "K-Dense-AI/scientific-agent-skills",
+            "summary": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus…",
+            "body": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+            "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T09:19:25Z",
+            "score": 98.4,
+            "stars": 57632,
+            "starsDelta": 83,
+            "starsPerDay": 105.9,
+            "language": "Python",
+            "license": "MIT",
+            "yuimaruScore": 79
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "huggingface/datasets",
+            "titleJa": "huggingface/datasets",
+            "summary": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools",
+            "body": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools",
+            "url": "https://github.com/huggingface/datasets",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T16:04:28Z",
+            "score": 5.3,
+            "stars": 22156,
+            "starsDelta": null,
+            "starsPerDay": 5.5,
+            "language": "Python",
+            "license": "Apache-2.0",
+            "yuimaruScore": 34
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "plotly/dash",
+            "titleJa": "plotly/dash",
+            "summary": "Data Apps & Dashboards for Python. No JavaScript Required.",
+            "body": "Data Apps & Dashboards for Python. No JavaScript Required.",
+            "url": "https://github.com/plotly/dash",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T20:23:07Z",
+            "score": 3.8,
+            "stars": 24495,
+            "starsDelta": 3,
+            "starsPerDay": 3.8,
+            "language": "Python",
+            "license": "MIT",
+            "yuimaruScore": 33
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Symmetry-reduced k-point sampling and Wannier analysis with localized Gaussian orbitals",
+            "titleJa": "Symmetry-reduced k-point sampling and Wannier analysis with localized Gaussian orbitals",
+            "summary": "arXiv:2611.21801v1 Announce Type: cross Abstract: Brillouin-zone sampling with localized orbitals requires consistent transformations between sparse real-space…",
+            "body": "arXiv:2611.21801v1 Announce Type: cross Abstract: Brillouin-zone sampling with localized orbitals requires consistent transformations between sparse real-space matrices and complex Bloch states. Symmetry reduces the number of reciprocal-space problems, but scalar integration weights alone cannot reconstruct the matrices and wavefunctions needed for densities and orbital analysis. We develop a unified formulation of these transformations for nonorthogonal Gaussian bases and describe its implementation in CP2K. Atom permutations, local orbital rotations, and lattice phases connect irreducible-p…",
+            "url": "https://arxiv.org/abs/2611.21801",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 33.9,
+            "yuimaruScore": 4
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+            "titleJa": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+            "summary": "With expanded NVIDIA CUDA-X libraries, including cuPhoton, cuPotential and cuSpa, researchers can sift through vast amounts of data to accelerate research, fro…",
+            "body": "With expanded NVIDIA CUDA-X libraries, including cuPhoton, cuPotential and cuSpa, researchers can sift through vast amounts of data to accelerate research, from astrophysics and materials science to single-cell biology. The speedups are helping scientists analyze larger datasets and model more complex systems. The new libraries give AI agents the tools to help researchers make discoveries […]",
+            "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:16.000Z",
+            "score": 31.6,
+            "yuimaruScore": 4
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Genetic Barcoding Reveals How Pre-Bone Marrow Transplant Conditioning Impacts Immune System Regeneration",
+            "titleJa": "Genetic Barcoding Reveals How Pre-Bone Marrow Transplant Conditioning Impacts Immune System Regeneration",
+            "summary": "Researchers used genetic barcoding to track human blood-forming stem and progenitor cells transplanted into mice, revealing how the different cell types regene…",
+            "body": "Researchers used genetic barcoding to track human blood-forming stem and progenitor cells transplanted into mice, revealing how the different cell types regenerate the blood and immune system, and how different forms of pretransplant conditioning affected blood and immune cell recovery. The post Genetic Barcoding Reveals How Pre-Bone Marrow Transplant Conditioning Impacts Immune System Regeneration appeared first on GEN - Genetic Engineering and Biotechnology News .",
+            "url": "https://www.genengnews.com/topics/translational-medicine/genetic-barcoding-reveals-how-pre-bone-marrow-transplant-conditioning-impacts-immune-system-regeneration",
+            "source": "GEN News",
+            "publishedAt": "2026-11-17T20:40:51.000Z",
+            "score": 35.2,
+            "yuimaruScore": 3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+            "titleJa": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+            "summary": "arXiv:2611.21959v1 Announce Type: cross Abstract: Predicting the effects of genetic perturbations requires models that generalize beyond observed cell contexts…",
+            "body": "arXiv:2611.21959v1 Announce Type: cross Abstract: Predicting the effects of genetic perturbations requires models that generalize beyond observed cell contexts and gene combinations. We introduce Occam, a multilayer perceptron (MLP) framework for representation learning and perturbation-effect prediction. Occam combines cell representations learned through denoising with gene interaction, text, and protein-sequence features. It achieves the highest aggregate representation scores for perturbation information and cell-type preservation with batch integration. In cross-context few-shot predicti…",
+            "url": "https://arxiv.org/abs/2611.21959",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 39.9,
+            "yuimaruScore": 1
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Quantum Cognition Machine Learning for Forecasting Chromosomal Instability",
+            "titleJa": "Quantum Cognition Machine Learning for Forecasting Chromosomal Instability",
+            "summary": "arXiv:2506.03199v3 Announce Type: replace-cross Abstract: The accurate prediction of chromosomal instability from the morphology of circulating tumor cells (CT…",
+            "body": "arXiv:2506.03199v3 Announce Type: replace-cross Abstract: The accurate prediction of chromosomal instability from the morphology of circulating tumor cells (CTCs) enables real-time detection of CTCs with high metastatic potential in the context of liquid biopsy diagnostics. However, it presents a significant challenge due to the high dimensionality and complexity of single-cell digital pathology data. Here, we introduce the application of Quantum Cognition Machine Learning (QCML), a quantum-inspired computational framework, to estimate morphology-predicted chromosomal instability in CTCs from…",
+            "url": "https://arxiv.org/abs/2506.03199",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 36.9,
+            "yuimaruScore": 1
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Combined magnetic and structural transition state in first-principles calculations",
+            "titleJa": "Combined magnetic and structural transition state in first-principles calculations",
+            "summary": "arXiv:2611.22489v1 Announce Type: new Abstract: We present a generalized nudged elastic band (NEB) implementation within potential-based constrained density-fu…",
+            "body": "arXiv:2611.22489v1 Announce Type: new Abstract: We present a generalized nudged elastic band (NEB) implementation within potential-based constrained density-functional theory (cDFT) for calculating transition pathways that simultaneously optimize atomic, lattice, and magnetic degrees of freedom. Unlike standard fixed-cell NEB calculations restricted to atomic displacements, our framework consistently couples atomic forces, stresses, and spin torques. The method supports fixed- and variable-cell approaches for collinear and non- collinear magnetic configurations, by incorporating magnetic torq…",
+            "url": "https://arxiv.org/abs/2611.22489",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 33.9,
+            "yuimaruScore": 1
+          }
+        ]
+      },
+      {
+        "id": "neuro",
+        "label": "ニューロサイエンス・BCI・ニューロモジュレーション",
+        "short": "ニューロ・BCI",
+        "digest": "OSS 2件・中間 7件・大手 0件。いちばん強いシグナルは「Garinmckayl/anima」（GitHub）。",
+        "tierCounts": {
+          "oss": 2,
+          "hybrid": 7,
+          "bigtech": 0
+        },
+        "candidates": 42,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "Garinmckayl/anima",
+            "titleJa": "Garinmckayl/anima",
+            "summary": "Anima: a Claude Code skill that turns a biology idea into an interactive, sourced, isometric figure. Dopamine receptors, stimulants, addiction circuits, semagl…",
+            "body": "Anima: a Claude Code skill that turns a biology idea into an interactive, sourced, isometric figure. Dopamine receptors, stimulants, addiction circuits, semaglutide.",
+            "url": "https://github.com/Garinmckayl/anima",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T20:57:17Z",
+            "score": 5.7,
+            "stars": 291,
+            "starsDelta": null,
+            "starsPerDay": 4.6,
+            "language": "JavaScript",
+            "license": "MIT",
+            "yuimaruScore": 75
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "psychopy/psychopy",
+            "titleJa": "psychopy/psychopy",
+            "summary": "For running psychology and neuroscience experiments",
+            "body": "For running psychology and neuroscience experiments",
+            "url": "https://github.com/psychopy/psychopy",
+            "source": "GitHub",
+            "publishedAt": "2026-11-16T15:38:06Z",
+            "score": 2.4,
+            "stars": 2131,
+            "starsDelta": 2,
+            "starsPerDay": 2.6,
+            "language": "Python",
+            "license": "GPL-3.0",
+            "yuimaruScore": 18
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "facebookresearch/neuroai",
+            "titleJa": "facebookresearch/neuroai",
+            "summary": "Python suite for neuroscience research across all modalities.",
+            "body": "Python suite for neuroscience research across all modalities.",
+            "url": "https://github.com/facebookresearch/neuroai",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T16:10:21Z",
+            "score": 1.2,
+            "stars": 346,
+            "starsDelta": 1,
+            "starsPerDay": 1.3,
+            "language": "Python",
+            "license": "MIT",
+            "yuimaruScore": 12
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "What makes computation possible in brains?",
+            "titleJa": "What makes computation possible in brains?",
+            "summary": "Nima Dehghani formalizes how computation can arise out of physical systems, such as brains, and describes the “special sauce” for real biological agency.",
+            "body": "Nima Dehghani formalizes how computation can arise out of physical systems, such as brains, and describes the “special sauce” for real biological agency.",
+            "url": "https://www.thetransmitter.org/brain-inspired/what-makes-computation-possible-in-brains",
+            "source": "The Transmitter",
+            "publishedAt": "2026-11-18T05:01:12.000Z",
+            "score": 36.9,
+            "yuimaruScore": 10
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Fish brains follow swimming friends to avoid foes",
+            "titleJa": "Fish brains follow swimming friends to avoid foes",
+            "summary": "A subset of neurons in glassfish activate when the animals see others escape, new research shows, offering clues for how collective behaviors emerge from indiv…",
+            "body": "A subset of neurons in glassfish activate when the animals see others escape, new research shows, offering clues for how collective behaviors emerge from individual neural activity.",
+            "url": "https://www.thetransmitter.org/social-behaviors/fish-brains-follow-swimming-friends-to-avoid-foes",
+            "source": "The Transmitter",
+            "publishedAt": "2026-11-18T05:00:21.000Z",
+            "score": 36.9,
+            "yuimaruScore": 3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "STAT+: After death in gene therapy trial for a brain disease, progress is reported",
+            "titleJa": "STAT+: After death in gene therapy trial for a brain disease, progress is reported",
+            "summary": "An unexpected patient death rattled researchers who sought to pierce the blood-brain barrier. Now some think they have a better way of mitigating risks.",
+            "body": "An unexpected patient death rattled researchers who sought to pierce the blood-brain barrier. Now some think they have a better way of mitigating risks.",
+            "url": "https://www.statnews.com/2026/11/17/capsida-gene-therapy-trial-death-follow-up-investigation",
+            "source": "STAT News",
+            "publishedAt": "2026-11-17T09:30:00.000Z",
+            "score": 30.4,
+            "yuimaruScore": 3
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Overlooked weak structural connections support human cognition under nonlinear connectome scaling",
+            "titleJa": "Overlooked weak structural connections support human cognition under nonlinear connectome scaling",
+            "summary": "arXiv:2505.24125v4 Announce Type: replace Abstract: Human cognition depends on large scale communication constrained by white matter architecture. Although wea…",
+            "body": "arXiv:2505.24125v4 Announce Type: replace Abstract: Human cognition depends on large scale communication constrained by white matter architecture. Although weak connections are abundant in mammalian connectomes, they have long been treated as noise and downweighted because of tractography uncertainty in the human brain, and their relevance to human cognition and large scale functional organization remains unresolved. Across multiple datasets and tractography pipelines, we show that, when tractography derived connection weights are interpreted through a nonlinear weighting framework, weak conn…",
+            "url": "https://arxiv.org/abs/2505.24125",
+            "source": "arXiv q-bio.NC",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 38.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Adapting Generalist Vehicle Models for High-Speed MPC Across Terrains",
+            "titleJa": "Adapting Generalist Vehicle Models for High-Speed MPC Across Terrains",
+            "summary": "arXiv:2607.13319v5 Announce Type: replace-cross Abstract: High-speed off-road autonomy requires precise closed-loop control for a target vehicle while remainin…",
+            "body": "arXiv:2607.13319v5 Announce Type: replace-cross Abstract: High-speed off-road autonomy requires precise closed-loop control for a target vehicle while remaining robust across changing terrains. Recent forward kinodynamic (FKD) prediction foundation models suggest a promising path, starting from a generalist model and specializing it to the target platform. However, effective specialization remains challenging, as it often requires substantial real-world data, and models adapted to one setting can still overfit to specific terrains or driving regimes. We present OptCar (Optimized Car), a recip…",
+            "url": "https://arxiv.org/abs/2607.13319",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 33.9,
+            "yuimaruScore": 2
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "A 1000-hour EEG-EMG-audio dataset of Japanese speech production",
+            "titleJa": "A 1000-hour EEG-EMG-audio dataset of Japanese speech production",
+            "summary": "arXiv:2606.01264v2 Announce Type: replace Abstract: We present a multimodal dataset of 1020 hours of simultaneously recorded scalp electroencephalography (EEG)…",
+            "body": "arXiv:2606.01264v2 Announce Type: replace Abstract: We present a multimodal dataset of 1020 hours of simultaneously recorded scalp electroencephalography (EEG), facial electromyography (EMG), and speech audio from three healthy native Japanese speakers during open-vocabulary overt speech, covert repetition and speech listening. Recordings were acquired in many sessions over several months with three EEG systems of 61-128 channels, an ultra-high-density system (g.Pangolin) and two cap-type systems (g.SCARABEO and eego sports). Each session provides time-synchronized EEG, facial EMG, and audio,…",
+            "url": "https://arxiv.org/abs/2606.01264",
+            "source": "arXiv q-bio.NC",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 38.9,
+            "yuimaruScore": 1
+          }
+        ]
+      },
+      {
+        "id": "hardware",
+        "label": "半導体・AIチップ・新素材",
+        "short": "半導体・素材",
+        "digest": "OSS 3件・中間 4件・大手 2件。いちばん強いシグナルは「k2-fsa/sherpa-onnx」（GitHub）。",
+        "tierCounts": {
+          "oss": 3,
+          "hybrid": 4,
+          "bigtech": 2
+        },
+        "candidates": 43,
+        "entries": [
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "logisim-evolution/logisim-evolution",
+            "titleJa": "logisim-evolution/logisim-evolution",
+            "summary": "Digital logic design tool and simulator",
+            "body": "Digital logic design tool and simulator",
+            "url": "https://github.com/logisim-evolution/logisim-evolution",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T04:13:20Z",
+            "score": 6.3,
+            "stars": 7952,
+            "starsDelta": 5,
+            "starsPerDay": 6.4,
+            "language": "Java",
+            "license": "GPL-3.0",
+            "yuimaruScore": 57
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "k2-fsa/sherpa-onnx",
+            "titleJa": "k2-fsa/sherpa-onnx",
+            "summary": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet conn…",
+            "body": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet connection. Support embedded systems, Android, iOS, HarmonyOS, Raspberry Pi, RISC-V, RK NPU, Axera NPU, Ascend NPU, x86_64 servers, websocket server/client, support 12 programming languages",
+            "url": "https://github.com/k2-fsa/sherpa-onnx",
+            "source": "GitHub",
+            "publishedAt": "2026-11-18T07:55:26Z",
+            "score": 19.2,
+            "stars": 16020,
+            "starsDelta": 15,
+            "starsPerDay": 19.2,
+            "language": "C++",
+            "license": "Apache-2.0",
+            "yuimaruScore": 53
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU",
+            "titleJa": "Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU",
+            "summary": "arXiv:2611.23205v1 Announce Type: new Abstract: Small language models that run on a laptop are attractive for writing signal-processing code offline, but they…",
+            "body": "arXiv:2611.23205v1 Announce Type: new Abstract: Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 signal-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters through OpenVINO. On held-out variants scored by determin…",
+            "url": "https://arxiv.org/abs/2611.23205",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 33.9,
+            "yuimaruScore": 32
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "XM-Sparse: High-Throughput Sparse-Attention LLM Serving over Scale-up Memory Pools",
+            "titleJa": "XM-Sparse: High-Throughput Sparse-Attention LLM Serving over Scale-up Memory Pools",
+            "summary": "arXiv:2611.22280v1 Announce Type: cross Abstract: Sparse attention has been increasingly adopted by production LLMs for long-context inference, yet serving sys…",
+            "body": "arXiv:2611.22280v1 Announce Type: cross Abstract: Sparse attention has been increasingly adopted by production LLMs for long-context inference, yet serving systems must still retain the full KV history, making GPU HBM capacity a key limit on serving concurrency. Existing systems offload the KV cache to host memory, but suffer from the limited bandwidth of PCIe and the limited capacity of host memory. Emerging scale-up memory pools (e.g., X-Mem) relieve both limits and open new opportunities for sparse-attention offloading. In this paper, we first conduct an in-depth analysis and reveal that,…",
+            "url": "https://arxiv.org/abs/2611.22280",
+            "source": "arXiv cs.LG",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 36.9,
+            "yuimaruScore": 29
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+            "titleJa": "CUDA at 20: How the Platform Transformed Scientific Computing",
+            "summary": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for m…",
+            "body": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for modern science and AI. CUDA’s 20th anniversary presents an occasion to reflect across computing eras, from the people who wrote the very first CUDA programs to the AI developers […]",
+            "url": "https://blogs.nvidia.com/blog/20-years-cuda",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-16T16:00:11.000Z",
+            "score": 25.6,
+            "yuimaruScore": 29
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "renode/renode",
+            "titleJa": "renode/renode",
+            "summary": "Renode - Antmicro's open source simulation and virtual development framework for complex embedded systems",
+            "body": "Renode - Antmicro's open source simulation and virtual development framework for complex embedded systems",
+            "url": "https://github.com/renode/renode",
+            "source": "GitHub",
+            "publishedAt": "2026-11-17T11:17:32Z",
+            "score": 6.2,
+            "stars": 3161,
+            "starsDelta": 5,
+            "starsPerDay": 6.4,
+            "language": "RobotFramework",
+            "license": null,
+            "yuimaruScore": 20
+          },
+          {
+            "kind": "news",
+            "tier": "bigtech",
+            "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+            "titleJa": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+            "summary": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and che…",
+            "body": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and check results on researchers’ own systems. In NVIDIA’s special address, Buck announced Nemotron for Science, the Rubin HPC GPU and an expanded Vera CPU platform for high-performance […]",
+            "url": "https://blogs.nvidia.com/blog/ian-buck-sc26",
+            "source": "NVIDIA Blog",
+            "publishedAt": "2026-11-17T14:00:10.000Z",
+            "score": 32.9,
+            "yuimaruScore": 20
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Koopmans spectral functionals for excitons in materials",
+            "titleJa": "Koopmans spectral functionals for excitons in materials",
+            "summary": "arXiv:2611.22524v1 Announce Type: new Abstract: Accurate first-principles characterization of excitons typically relies on the Bethe-Salpeter equation (BSE) co…",
+            "body": "arXiv:2611.22524v1 Announce Type: new Abstract: Accurate first-principles characterization of excitons typically relies on the Bethe-Salpeter equation (BSE) combined with quasiparticle energies from computationally demanding GW calculations. Here, we replace the GW step with quasiparticle energies from Koopmans-compliant spectral functionals, an approach we call BSE@qKI, and implement it in an automated, reproducible AiiDA workflow. For a set of benchmark semiconductors, BSE@qKI reproduces experimental band gaps and first exciton energies with mean absolute relative errors of 13% and 4%, resp…",
+            "url": "https://arxiv.org/abs/2611.22524",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 36.9,
+            "yuimaruScore": 5
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Topological Control of Polaritonic Flatbands in Anisotropic van der Waals Metasurfaces",
+            "titleJa": "Topological Control of Polaritonic Flatbands in Anisotropic van der Waals Metasurfaces",
+            "summary": "arXiv:2509.01258v4 Announce Type: replace-cross Abstract: Anisotropic van der Waals (vdW) materials exhibit direction-dependent optical and electronic properti…",
+            "body": "arXiv:2509.01258v4 Announce Type: replace-cross Abstract: Anisotropic van der Waals (vdW) materials exhibit direction-dependent optical and electronic properties, making them valuable for tailoring directional light-matter interactions. Rhenium disulfide (ReS$_2$) stands out for its strong in-plane anisotropy and its thickness-independent direct-bandgap excitons, which can hybridize with light to form exciton-polaritons. In parallel, metasurfaces, engineered arrays of nanoscale subwavelength resonators, can support ultra-sharp photonic modes in the form of quasi-bound states in the continuum…",
+            "url": "https://arxiv.org/abs/2509.01258",
+            "source": "arXiv cond-mat.mtrl-sci",
+            "publishedAt": "2026-11-18T05:00:00.000Z",
+            "score": 36.9,
+            "yuimaruScore": 2
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "candidates": 6812,
+      "feedsFailed": [
+        "Meta AI",
+        "bioRxiv Synthetic Biology",
+        "bioRxiv Bioinformatics",
+        "bioRxiv Neuroscience"
+      ]
+    }
+  },
+  "yuimaru": {
+    "author": {
+      "label": "ゆいまる",
+      "note": "https://note.com/humble_bobcat51",
+      "rss": "https://note.com/humble_bobcat51/rss"
+    },
+    "picks": [
+      {
+        "rank": 1,
+        "kind": "repo",
+        "name": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "source": "GitHub",
+        "stars": 149817,
+        "starsPerDay": 603.2,
+        "score": 99,
+        "theme": "harness",
+        "themeLabel": "コーディングエージェント／ハーネス",
+        "reasons": [
+          "コーディングエージェント／ハーネス（claude code・codex・cursor）",
+          "最近の記事と地続き（edge・gemini・knowledge）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約603★/日）"
+        ]
+      },
+      {
+        "rank": 2,
+        "kind": "repo",
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+        "source": "GitHub",
+        "stars": 6089,
+        "starsPerDay": 86.9,
+        "score": 98,
+        "theme": "harness",
+        "themeLabel": "コーディングエージェント／ハーネス",
+        "reasons": [
+          "コーディングエージェント／ハーネス（codex・cursor・mcp）",
+          "最近の記事と地続き（android・rea・claude）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約87★/日）"
+        ]
+      },
+      {
+        "rank": 3,
+        "kind": "repo",
+        "name": "Egonex-AI/Understand-Anything",
+        "url": "https://github.com/Egonex-AI/Understand-Anything",
+        "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+        "source": "GitHub",
+        "stars": 93084,
+        "starsPerDay": 159.7,
+        "score": 98,
+        "theme": "harness",
+        "themeLabel": "コーディングエージェント／ハーネス",
+        "reasons": [
+          "コーディングエージェント／ハーネス（claude code・codex・cursor）",
+          "最近の記事と地続き（gemini・knowledge・claude）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約160★/日）"
+        ]
+      },
+      {
+        "rank": 4,
+        "kind": "repo",
+        "name": "synchopate/llama-modchip",
+        "url": "https://github.com/synchopate/llama-modchip",
+        "description": "Run 284B DeepSeek-V4-Flash (<59GiB RAM: 41.1 cold pp, 9.1 N=1 tg, up to 25.3 spec tok/s) & 30B MoEs (22.4 N=1 / 111.6 spec tok/s) on 64GB CPU (0 GPUs).",
+        "source": "GitHub",
+        "stars": 1349,
+        "starsPerDay": 23,
+        "score": 93,
+        "theme": "lightweight-model",
+        "themeLabel": "軽量・爆速・低コストのモデル",
+        "reasons": [
+          "軽量・爆速・低コストのモデル（flash・gguf）",
+          "最近の記事と地続き（moe・gpu・claude）"
+        ]
+      },
+      {
+        "rank": 5,
+        "kind": "repo",
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "description": "The fastest way to run Qwen 3.8 Flash Next, Qwen 3.8 27B and Ternary Bonsai 2 27B on a Mac: 125 tok/s in OpenCode on an M5 Max, and a 27B model on 16 GB Macs. Native MTP speculative decoding on Apple Silicon, exact at any temperature. Open…",
+        "source": "GitHub",
+        "stars": 2721,
+        "starsPerDay": 2.6,
+        "score": 92,
+        "theme": "lightweight-model",
+        "themeLabel": "軽量・爆速・低コストのモデル",
+        "reasons": [
+          "軽量・爆速・低コストのモデル（flash・ternary・mtp）",
+          "最近の記事と地続き（qwen・opencode・bonsai）"
+        ]
+      },
+      {
+        "rank": 6,
+        "kind": "repo",
+        "name": "Zfinix/eleven",
+        "url": "https://github.com/Zfinix/eleven",
+        "description": "Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you.",
+        "source": "GitHub",
+        "stars": 1004,
+        "starsPerDay": 5.1,
+        "score": 91,
+        "theme": "device-util",
+        "themeLabel": "端末・OS を快適にする実用ツール",
+        "reasons": [
+          "端末・OS を快適にする実用ツール（android・windows・macos）",
+          "最近の記事と地続き（gpu・windows・android）",
+          "すぐ試せる実用ツール"
+        ]
+      },
+      {
+        "rank": 7,
+        "kind": "repo",
+        "name": "wangzan101/Mika",
+        "url": "https://github.com/wangzan101/Mika",
+        "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+        "source": "GitHub",
+        "stars": 9010,
+        "starsPerDay": 95.8,
+        "score": 90,
+        "theme": "lightweight-model",
+        "themeLabel": "軽量・爆速・低コストのモデル",
+        "reasons": [
+          "軽量・爆速・低コストのモデル（on-device）",
+          "最近の記事と地続き（android）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約96★/日）"
+        ]
+      },
+      {
+        "rank": 8,
+        "kind": "repo",
+        "name": "wquguru/cicada",
+        "url": "https://github.com/wquguru/cicada",
+        "description": "知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.",
+        "source": "GitHub",
+        "stars": 2394,
+        "starsPerDay": 21.7,
+        "score": 90,
+        "theme": "device-util",
+        "themeLabel": "端末・OS を快適にする実用ツール",
+        "reasons": [
+          "端末・OS を快適にする実用ツール（android・windows・macos）",
+          "最近の記事と地続き（windows・android）",
+          "すぐ試せる実用ツール"
+        ]
+      },
+      {
+        "rank": 9,
+        "kind": "repo",
+        "name": "CzzzzzzJ/mdldm-maitian-publisher",
+        "url": "https://github.com/CzzzzzzJ/mdldm-maitian-publisher",
+        "description": "麦田发布助手：麦田工作台的发布引擎。一期视频一键填写 B站/小红书/抖音/视频号/YouTube/X，Obsidian 笔记写入 X 长文",
+        "source": "GitHub",
+        "stars": 101,
+        "starsPerDay": 37,
+        "score": 88,
+        "theme": "pkm",
+        "themeLabel": "ノート／ナレッジ／RAG アプリ",
+        "reasons": [
+          "ノート／ナレッジ／RAG アプリ（obsidian）",
+          "最近の記事と地続き（chrome・obsidian）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約37★/日）"
+        ]
+      },
+      {
+        "rank": 10,
+        "kind": "repo",
+        "name": "3641397194-wq/gpt6-Astra",
+        "url": "https://github.com/3641397194-wq/gpt6-Astra",
+        "description": "冷咖啡破甲工作台 · GPT-6.2 Astra / Sol · 十五个 AI 模型席位，可视化路由、技能安装与手机中转接入；支持 Windows / macOS / Linux / Android，附 iOS 源码。",
+        "source": "GitHub",
+        "stars": 2299,
+        "starsPerDay": 14.9,
+        "score": 85,
+        "theme": "device-util",
+        "themeLabel": "端末・OS を快適にする実用ツール",
+        "reasons": [
+          "端末・OS を快適にする実用ツール（android・windows・macos）",
+          "最近の記事と地続き（gpt-6.2・astra・sol）"
+        ]
+      }
+    ],
+    "learnedTerms": [
+      {
+        "term": "コード",
+        "weight": 2.87
+      },
+      {
+        "term": "moe",
+        "weight": 2.81
+      },
+      {
+        "term": "エージェント",
+        "weight": 2
+      },
+      {
+        "term": "タスクコスト",
+        "weight": 1.92
+      },
+      {
+        "term": "chrome",
+        "weight": 1.92
+      },
+      {
+        "term": "edge",
+        "weight": 1.92
+      },
+      {
+        "term": "firefox",
+        "weight": 1.92
+      },
+      {
+        "term": "mdn",
+        "weight": 1.92
+      },
+      {
+        "term": "modern",
+        "weight": 1.92
+      },
+      {
+        "term": "guidance",
+        "weight": 1.92
+      },
+      {
+        "term": "セキュリティ",
+        "weight": 1.76
+      },
+      {
+        "term": "サッカー",
+        "weight": 1.76
+      }
+    ],
+    "covered": [
+      {
+        "name": "morluto/rea",
+        "url": "https://github.com/morluto/rea",
+        "post": {
+          "title": "REA 絶望するエンジニアを救う AI×リバースエンジニアリングツール",
+          "url": null
+        }
+      },
+      {
+        "name": "Donchitos/Claude-Code-Game-Studios",
+        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+        "post": {
+          "title": "Claude Code Game Studios とは ゲーム開発も AI エージェントの時代 実装例つき",
+          "url": null
+        }
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "post": {
+          "title": "3年半のローリングリリース時代に終止符。「llama.cpp v1.0.0」初安定版の全貌と破壊的変更・移行ポイント",
+          "url": "https://note.com/humble_bobcat51/n/n81104f59cf2c"
+        }
+      }
+    ],
+    "latestPosts": [
+      {
+        "title": "noteでAIに参照された還元が来るらしい。どれくらい来るのか見てみよう",
+        "url": "https://note.com/humble_bobcat51/n/nd42a7d8f8617",
+        "publishedAt": "2026-11-18T03:56:33.000Z"
+      },
+      {
+        "title": "GPT-6.2 Astra / Sol の全実像：「同じ仕事を、より少ないトークンで」実現した実質コスト革命",
+        "url": "https://note.com/humble_bobcat51/n/n976414fcb05d",
+        "publishedAt": "2026-11-18T03:23:54.000Z"
+      },
+      {
+        "title": "【Edge0-145B 】145Bモデルを1枚のGPUで動かす「Latent MoE」の仕組みと“29GB見出し”の裏側",
+        "url": "https://note.com/humble_bobcat51/n/n3cfb74383df3",
+        "publishedAt": "2026-11-18T02:25:59.000Z"
+      },
+      {
+        "title": "総35B・活性3Bで256K文脈が6.7倍速い？ Block Sparse Attention搭載の新世代MoEモデル『Maxwell-V1.0-Flash』を徹底解剖",
+        "url": "https://note.com/humble_bobcat51/n/n8206edffaeb8",
+        "publishedAt": "2026-11-17T12:27:12.000Z"
+      },
+      {
+        "title": "文章を「生成」せず1回のパスで「判断」する。Liquid AIのオムニモーダル意思決定モデル『d1.2 / d1.2-ultra』が業務自動化の常識を変える",
+        "url": "https://note.com/humble_bobcat51/n/nc91a6279bb4c",
+        "publishedAt": "2026-11-17T11:24:44.000Z"
+      }
+    ],
+    "rssOk": true,
+    "evaluation": {
+      "days": 1,
+      "predicted": 10,
+      "hits": [],
+      "precision": 0,
+      "postsSince": 9,
+      "recall": 0
+    },
+    "poolSize": 765
+  },
+  "stats": {
+    "repoCandidates": 617,
+    "newsCandidates": 2587,
+    "predictionPool": 765,
+    "feedsFailed": [
+      "Meta AI",
+      "Microsoft AI",
+      "VentureBeat AI"
+    ]
+  }
+}

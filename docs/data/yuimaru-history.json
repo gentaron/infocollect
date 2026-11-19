@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-19",
+    "picks": [
+      {
+        "rank": 1,
+        "name": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 2,
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 3,
+        "name": "cheaper-inference/OmniRoute",
+        "url": "https://github.com/cheaper-inference/OmniRoute",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 4,
+        "name": "synchopate/llama-modchip",
+        "url": "https://github.com/synchopate/llama-modchip",
+        "score": 93,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 5,
+        "name": "AbuZar-Ansarii/PocketStrike",
+        "url": "https://github.com/AbuZar-Ansarii/PocketStrike",
+        "score": 92,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 6,
+        "name": "RustingStudio/RustingStrata",
+        "url": "https://github.com/RustingStudio/RustingStrata",
+        "score": 90,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 7,
+        "name": "Akshayykadam/PixelBoard",
+        "url": "https://github.com/Akshayykadam/PixelBoard",
+        "score": 90,
+        "theme": "device-util"
+      },
+      {
+        "rank": 8,
+        "name": "3641397194-wq/gpt6-Astra",
+        "url": "https://github.com/3641397194-wq/gpt6-Astra",
+        "score": 89,
+        "theme": "device-util"
+      },
+      {
+        "rank": 9,
+        "name": "BareBrowser/bare-browser",
+        "url": "https://github.com/BareBrowser/bare-browser",
+        "score": 88,
+        "theme": "device-util"
+      },
+      {
+        "rank": 10,
+        "name": "CzzzzzzJ/mdldm-maitian-publisher",
+        "url": "https://github.com/CzzzzzzJ/mdldm-maitian-publisher",
+        "score": 86,
+        "theme": "pkm"
+      }
+    ]
+  },
+  {
     "date": "2026-11-18",
     "picks": [
       {

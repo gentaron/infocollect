@@ -8,6 +8,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { parseJsonLoose } from './lib/ai.mjs';
+import { testNoveltyEvidence } from './novelty-evidence.mjs';
 import { parseFeed } from './lib/feeds.mjs';
 import { classify, rankNews } from './lib/rank.mjs';
 import { balancedTake, buildFrontier, classifyDomain, classifyTier, fallbackFrontier, keywordHits } from './lib/frontier.mjs';
@@ -151,6 +152,9 @@ test('parseJsonLoose handles fenced and noisy output', () => {
   assert.deepEqual(parseJsonLoose('前置き {"a":[1,2]} 後書き'), { a: [1, 2] });
   assert.equal(parseJsonLoose('not json at all'), null);
 });
+
+console.log('novelty evidence');
+test('noveltyEvidence reports code diffs, ablations and reproduction steps', () => testNoveltyEvidence());
 
 console.log('pwa assets');
 for (const file of ['docs/index.html', 'docs/app.js', 'docs/sw.js', 'docs/manifest.webmanifest', 'docs/data/latest.json']) {

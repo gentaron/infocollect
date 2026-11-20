@@ -17,6 +17,7 @@ import { rankNews } from './lib/rank.mjs';
 import { buildDigest, fallbackNewsSummary, fallbackToolSummary, toMarkdown } from './lib/render.mjs';
 import { dateInZone, log, timeInZone, warn } from './lib/util.mjs';
 import { evaluate, fetchAuthorPosts, mergePosts, poolFromPayload, predict, rerankNews, rerankTools } from './lib/yuimaru.mjs';
+import { noveltyEvidence } from './novelty-evidence.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'docs', 'data');
@@ -171,6 +172,12 @@ async function main() {
     log(`ゆいまる予測: ${result.picks.length} 件（的中 ${evaluation.hits.length} / 予測 ${evaluation.predicted}）`);
   }
 
+  if (frontier) {
+    for (const domain of frontier.domains) {
+      for (const entry of domain.entries) entry.novelty_evidence = noveltyEvidence(entry);
+    }
+  }
+
   const summary = NO_AI ? null : await summarise(tools, news, process.env);
   const ai = summary
     ? { enabled: true, provider: summary.provider, model: summary.model, label: `${summary.providerLabel} / ${summary.model}` }
@@ -203,6 +210,7 @@ async function main() {
       tags: item.tags,
       score: item.score,
       yuimaruScore: item.yuimaruScore ?? null,
+      novelty_evidence: noveltyEvidence(item),
     };
   });
 

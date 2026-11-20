@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-20",
+    "picks": [
+      {
+        "rank": 1,
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 2,
+        "name": "kajisho5/ffmpeg-skill",
+        "url": "https://github.com/kajisho5/ffmpeg-skill",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 3,
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 4,
+        "name": "simplexai-labs/PolyStrata",
+        "url": "https://github.com/simplexai-labs/PolyStrata",
+        "score": 96,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 5,
+        "name": "AbuZar-Ansarii/PocketStrike",
+        "url": "https://github.com/AbuZar-Ansarii/PocketStrike",
+        "score": 95,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 6,
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "score": 94,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 7,
+        "name": "Zfinix/eleven",
+        "url": "https://github.com/Zfinix/eleven",
+        "score": 91,
+        "theme": "device-util"
+      },
+      {
+        "rank": 8,
+        "name": "williamwasen/second-brain-black-hole",
+        "url": "https://github.com/williamwasen/second-brain-black-hole",
+        "score": 88,
+        "theme": "pkm"
+      },
+      {
+        "rank": 9,
+        "name": "BareBrowser/bare-browser",
+        "url": "https://github.com/BareBrowser/bare-browser",
+        "score": 88,
+        "theme": "device-util"
+      },
+      {
+        "rank": 10,
+        "name": "3641397194-wq/gpt6-Astra",
+        "url": "https://github.com/3641397194-wq/gpt6-Astra",
+        "score": 86,
+        "theme": "device-util"
+      }
+    ]
+  },
+  {
     "date": "2026-11-19",
     "picks": [
       {

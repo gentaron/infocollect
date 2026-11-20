@@ -98,6 +98,10 @@ test('classify tags versions and features', () => {
   assert.deepEqual(classify({ title: 'Ollama v0.7.0 released', body: 'adds support for tools' }).includes('version'), true);
   assert.equal(classify({ title: 'Startup raises $50M', body: 'funding round' }).includes('business'), true);
 });
+test('classify tags mqtt/mosquitto topic', () => {
+  const item = classify({ title: 'Eclipse Mosquitto – An open source MQTT broker', body: 'points=79 comments=29' });
+  assert.ok(item.includes('mqtt'), 'expected mqtt tag');
+});
 test('rankNews drops stale items and de-duplicates', () => {
   const now = Date.now();
   const items = [

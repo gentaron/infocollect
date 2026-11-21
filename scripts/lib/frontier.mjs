@@ -15,6 +15,83 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+const SPEC_NUM = '(\\d+|one|two|three|four|five|six|seven|eight|nine|ten|[一二三四五六七八九十])';
+const SPEC_BNUM = '(\\d+(?:\\.\\d+)?)';
+const SPEC_NUMBER_WORDS = {
+  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+  一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10,
+};
+const LOOP_PATTERNS = [
+  new RegExp(`(?:^|[^a-z0-9])(?:loop[_\\s-]*(?:count|num|n)?|num[_\\s-]*loops?|n[_\\s-]*loops?)\\s*[:=≈~]?\\s*${SPEC_NUM}(?![a-z0-9])`, 'gi'),
+  new RegExp(`(?:^|[^a-z0-9])${SPEC_NUM}\\s*(?:passes|times|loops?|回ループ|回繰り返し?)(?![a-z0-9])`, 'gi'),
+];
+const EFFECTIVE_PATTERNS = [
+  new RegExp(`${SPEC_BNUM}\\s*b?\\s*(?:effective\\s+active|active\\s+effective|実効アクティブ)(?:\\s*(?:params|parameters|パラメータ))?`, 'gi'),
+  new RegExp(`(?:effective\\s+active|実効アクティブ)\\s*(?:params|parameters|パラメータ)?\\s*(?:of|about|approx\\.?|≈|~|:|=|約)?\\s*${SPEC_BNUM}\\s*b?`, 'gi'),
+];
+const ACTIVE_PATTERNS = [
+  new RegExp(`${SPEC_BNUM}\\s*b\\s+active(?:\\s+(?:params|parameters))?`, 'gi'),
+  new RegExp(`active\\s+(?:params|parameters)?\\s*(?:of|about|approx\\.?|≈|~|:|=|約)?\\s*${SPEC_BNUM}\\s*b?`, 'gi'),
+  new RegExp(`アクティブパラメータ\\s*(?:約)?\\s*${SPEC_BNUM}`, 'gi'),
+];
+const TABLE_PATTERN = /params\s*\(b\)\s*activated\s*\/\s*total[\s\S]{0,300}?(\d+(?:\.\d+)?)\s*\/\s*\d+(?:\.\d+)?/i;
+
+function specValue(token) {
+  if (/^\d+(?:\.\d+)?$/.test(token)) return Number(token);
+  return SPEC_NUMBER_WORDS[token] ?? null;
+}
+
+function specText(...parts) {
+  return parts
+    .map((part) => (Array.isArray(part) ? part.join(' ') : String(part ?? '')))
+    .join(' ')
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .toLowerCase();
+}
+
+function firstSpecNumber(text, patterns) {
+  for (const pattern of patterns) {
+    pattern.lastIndex = 0;
+    const match = pattern.exec(text);
+    if (match) return specValue(match[1]);
+  }
+  return null;
+}
+
+function maxSpecNumber(text, patterns) {
+  let best = null;
+  for (const pattern of patterns) {
+    pattern.lastIndex = 0;
+    let match;
+    while ((match = pattern.exec(text))) {
+      const value = specValue(match[1]);
+      if (value != null && (best == null || value > best)) best = value;
+    }
+  }
+  return best;
+}
+
+export function extractLoopSpec(tags, description = '') {
+  const text = specText(tags, description);
+  const loopCount = firstSpecNumber(text, LOOP_PATTERNS);
+  const effective = maxSpecNumber(text, EFFECTIVE_PATTERNS);
+  const table = TABLE_PATTERN.exec(text);
+  const active = maxSpecNumber(text, ACTIVE_PATTERNS);
+  const activeParamsB = effective != null ? Math.round(effective) : table ? specValue(table[1]) : active;
+  return { loopCount, activeParamsB };
+}
+
+export function formatModelSpec(summary, spec = {}) {
+  const base = String(summary || '').trim();
+  const parts = [];
+  if (spec.loopCount != null) parts.push(`ループ${spec.loopCount}回`);
+  if (spec.activeParamsB != null) parts.push(`実効アクティブ${spec.activeParamsB}B`);
+  if (!parts.length || parts.every((part) => base.includes(part))) return base;
+  const extra = parts.filter((part) => !base.includes(part)).join('・');
+  return extra ? `${base}（${extra}）`.trim() : base;
+}
+
 const matcherCache = new Map();
 function matcherFor(keyword) {
   const key = keyword.toLowerCase();
@@ -211,7 +288,13 @@ function toEntry(item) {
       ? { stars: item.stars, starsDelta: item.starsDelta, starsPerDay: item.starsPerDay, language: item.language, license: item.license }
       : {}),
     ...(item.kind === 'model'
-      ? { likes: item.likes, downloads: item.downloads, pipeline: item.pipeline || null }
+      ? {
+          likes: item.likes,
+          downloads: item.downloads,
+          pipeline: item.pipeline || null,
+          loopCount: item.loopCount ?? null,
+          activeParamsB: item.activeParamsB ?? null,
+        }
       : {}),
   };
 }
@@ -244,19 +327,25 @@ export async function collectHfTrending(domains, { limit = 100 } = {}) {
     const res = await fetchWithRetry(`https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=${limit}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const models = await res.json();
-    return (Array.isArray(models) ? models : []).map((model, index) => ({
-      title: model.id || model.modelId,
-      url: `https://huggingface.co/${model.id || model.modelId}`,
-      source: 'Hugging Face Trending',
-      body: `${model.pipeline_tag || ''} ${(model.tags || []).slice(0, 12).join(' ')}`,
-      topics: (model.tags || []).slice(0, 12),
-      pipeline: model.pipeline_tag || null,
-      likes: model.likes ?? null,
-      downloads: model.downloads ?? null,
-      publishedAt: model.createdAt || null,
-      domainHint: pipelineToDomain.get(model.pipeline_tag) || null,
-      score: Math.max(1, 100 - index) + Math.min(40, Number(model.trendingScore || 0) / 5),
-    }));
+    return (Array.isArray(models) ? models : []).map((model, index) => {
+      const spec = extractLoopSpec(model.tags, model.description || model.cardData?.description || '');
+      const specNote = formatModelSpec('', spec);
+      return {
+        title: model.id || model.modelId,
+        url: `https://huggingface.co/${model.id || model.modelId}`,
+        source: 'Hugging Face Trending',
+        body: `${model.pipeline_tag || ''} ${(model.tags || []).slice(0, 12).join(' ')}${specNote ? ` ${specNote}` : ''}`,
+        topics: (model.tags || []).slice(0, 12),
+        pipeline: model.pipeline_tag || null,
+        likes: model.likes ?? null,
+        downloads: model.downloads ?? null,
+        publishedAt: model.createdAt || null,
+        domainHint: pipelineToDomain.get(model.pipeline_tag) || null,
+        score: Math.max(1, 100 - index) + Math.min(40, Number(model.trendingScore || 0) / 5),
+        loopCount: spec.loopCount,
+        activeParamsB: spec.activeParamsB,
+      };
+    });
   } catch (error) {
     warn(`hugging face trending failed: ${error.message}`);
     return [];

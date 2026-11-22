@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { parseJsonLoose } from './lib/ai.mjs';
 import { testNoveltyEvidence } from './novelty-evidence.mjs';
 import { parseFeed } from './lib/feeds.mjs';
-import { classify, rankNews } from './lib/rank.mjs';
+import { classify, downstreamUtility, rankNews } from './lib/rank.mjs';
 import { balancedTake, buildFrontier, classifyDomain, classifyTier, fallbackFrontier, keywordHits } from './lib/frontier.mjs';
 import { frontierMarkdown } from './lib/render.mjs';
 import { buildDigest, fallbackNewsSummary, fallbackToolSummary, toMarkdown } from './lib/render.mjs';
@@ -121,6 +121,36 @@ test('rankNews respects the take limit', () => {
     publishedAt: new Date(Date.now() - i * 60e3).toISOString(), body: 'release',
   }));
   assert.equal(rankNews(items, { take: 12 }).length, 12);
+});
+test('downstreamUtility is deterministic for the same candidate and keywords', () => {
+  const candidate = { title: 'Policy-Aware Data Valuation', summary: 'A paper for planners', tags: ['paper', 'valuation'] };
+  const keywords = ['policy', 'paper', 'planner'];
+  assert.equal(downstreamUtility(candidate, keywords), 0.433);
+  assert.equal(downstreamUtility(candidate, keywords), downstreamUtility({ ...candidate }, [...keywords]));
+});
+test('downstreamUtility stays within 0..1 and handles empty input', () => {
+  assert.equal(downstreamUtility({ title: 'Anything' }, []), 0);
+  assert.equal(downstreamUtility({}, ['paper']), 0);
+  assert.equal(downstreamUtility({ title: 'Unrelated note', summary: 'daily log', tags: ['news'] }, ['policy', 'arxiv']), 0);
+  assert.equal(downstreamUtility({ title: 'policy dataset', summary: 'policy dataset', tags: ['policy', 'dataset'] }, ['policy', 'dataset']), 1);
+});
+test('downstreamUtility weights title, summary and tags consistently', () => {
+  const keywords = ['pad'];
+  assert.equal(downstreamUtility({ title: 'PAD paper', summary: '', tags: [] }, keywords), 0.5);
+  assert.equal(downstreamUtility({ title: '', summary: 'About PAD', tags: [] }, keywords), 0.3);
+  assert.equal(downstreamUtility({ title: '', summary: '', tags: ['pad'] }, keywords), 0.2);
+});
+test('rankNews blends utility with a small weight without replacing recency order', () => {
+  const now = Date.now();
+  const items = [
+    { title: 'Unrelated note', url: 'https://c.test/a', source: 'Blog', sourceType: 'feed', publishedAt: new Date(now - 3600e3).toISOString(), body: 'daily log' },
+    { title: 'Policy aware benchmark dataset', url: 'https://c.test/b', source: 'Blog', sourceType: 'feed', publishedAt: new Date(now - 3600e3).toISOString(), body: 'policy evaluation for planners' },
+  ];
+  const options = { categoryKeywords: { paper: ['policy', 'benchmark', 'dataset'] }, take: 10 };
+  const ranked = rankNews(items, options);
+  assert.equal(ranked[0].title, 'Policy aware benchmark dataset');
+  assert.ok(ranked[0].utilityScore > ranked[1].utilityScore);
+  assert.equal(rankNews(items, { ...options, utilityWeight: 0 })[0].title, 'Unrelated note');
 });
 
 console.log('rendering');

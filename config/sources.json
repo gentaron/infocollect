@@ -69,6 +69,11 @@
     ],
     "sourceWeights": {
       "GitHub Releases": 12
+    },
+    "categoryKeywords": {
+      "paper": ["paper", "arxiv", "benchmark", "ablation", "dataset", "evaluation", "論文", "評価", "データセット"],
+      "model": ["model", "llm", "weights", "checkpoint", "fine tuning", "モデル", "重み"],
+      "tool": ["tool", "library", "sdk", "cli", "framework", "plugin", "release", "open source", "ツール", "ライブラリ", "プラグイン", "公開"]
     }
   }
 }

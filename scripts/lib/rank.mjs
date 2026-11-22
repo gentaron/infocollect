@@ -3,6 +3,23 @@
 
 import { DAY_MS, canonicalUrl, truncate } from './util.mjs';
 
+export const DEFAULT_CATEGORY_KEYWORDS = {
+  paper: ['paper', 'arxiv', 'benchmark', 'ablation', 'dataset', 'evaluation', '論文', '評価', 'データセット'],
+  model: ['model', 'llm', 'weights', 'checkpoint', 'fine tuning', 'モデル', '重み'],
+  tool: ['tool', 'library', 'sdk', 'cli', 'framework', 'plugin', 'release', 'open source', 'ツール', 'ライブラリ', 'プラグイン', '公開'],
+};
+
+const CATEGORY_BY_TAG = {
+  paper: 'paper',
+  research: 'paper',
+  model: 'model',
+  tool: 'tool',
+  version: 'tool',
+  release: 'tool',
+  feature: 'tool',
+};
+const CATEGORY_ORDER = ['paper', 'model', 'tool'];
+
 const RELEASE_HINTS = [
   'release', 'released', 'launch', 'launches', 'launched', 'introducing', 'announc',
   'now available', 'general availability', ' ga ', 'preview', 'update', 'updated',
@@ -17,6 +34,40 @@ function normaliseTitle(title) {
     .toLowerCase()
     .replace(/[^a-z0-9぀-ヿ一-龯]+/g, ' ')
     .trim();
+}
+
+function round(value, digits) {
+  const factor = 10 ** digits;
+  return Math.round(value * factor) / factor;
+}
+
+export function downstreamUtility(candidate, categoryKeywords = []) {
+  const tags = Array.isArray(candidate?.tags) ? candidate.tags : [candidate?.tags].filter(Boolean);
+  const fields = [
+    [normaliseTitle(candidate?.title), 0.5],
+    [normaliseTitle(candidate?.summary || candidate?.body), 0.3],
+    [normaliseTitle(tags.join(' ')), 0.2],
+  ];
+  const keywords = (Array.isArray(categoryKeywords) ? categoryKeywords : [])
+    .map(normaliseTitle)
+    .filter(Boolean);
+  if (!keywords.length) return 0;
+  let total = 0;
+  for (const keyword of keywords) {
+    let hit = 0;
+    for (const [text, weight] of fields) if (text.includes(keyword)) hit += weight;
+    total += Math.min(1, hit);
+  }
+  return round(total / keywords.length, 3);
+}
+
+function keywordsFor(tags, categoryKeywords) {
+  if (Array.isArray(categoryKeywords)) return categoryKeywords;
+  const map = { ...DEFAULT_CATEGORY_KEYWORDS, ...(categoryKeywords || {}) };
+  for (const category of CATEGORY_ORDER) {
+    if (tags.some((tag) => CATEGORY_BY_TAG[tag] === category)) return map[category] || [];
+  }
+  return [];
 }
 
 export function classify(item) {
@@ -34,7 +85,13 @@ export function classify(item) {
   return tags.length ? [...new Set(tags)] : ['news'];
 }
 
-export function rankNews(items, { sourceWeights = {}, take = 12, maxAgeDays = 3 } = {}) {
+export function rankNews(items, {
+  sourceWeights = {},
+  take = 12,
+  maxAgeDays = 3,
+  categoryKeywords = DEFAULT_CATEGORY_KEYWORDS,
+  utilityWeight = 6,
+} = {}) {
   const now = Date.now();
   const seenUrls = new Set();
   const seenTitles = new Set();
@@ -51,6 +108,11 @@ export function rankNews(items, { sourceWeights = {}, take = 12, maxAgeDays = 3 
     if (ageDays > maxAgeDays || ageDays < -0.5) continue;
 
     const haystack = `${item.title} ${item.body || ''}`.toLowerCase();
+    const tags = classify(item);
+    const utility = downstreamUtility(
+      { title: item.title, summary: item.body, tags },
+      keywordsFor(tags, categoryKeywords),
+    );
     let score = 0;
     score += Math.max(0, 40 - ageDays * 12); // freshness dominates
     for (const hint of RELEASE_HINTS) if (haystack.includes(hint)) score += 4;
@@ -58,15 +120,17 @@ export function rankNews(items, { sourceWeights = {}, take = 12, maxAgeDays = 3 
     if (item.sourceType === 'release') score += 14;
     score += sourceWeights[item.source] ?? 0;
     if (item.points) score += Math.min(20, item.points / 12);
+    score += utilityWeight * utility;
 
     seenUrls.add(url);
     seenTitles.add(titleKey);
     ranked.push({
       ...item,
       url,
-      tags: classify(item),
+      tags,
       body: truncate(item.body || '', 700),
-      score: Math.round(score * 10) / 10,
+      utilityScore: utility,
+      score: round(score, 1),
     });
   }
 

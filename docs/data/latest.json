@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T07:57:53.286Z",
-  "generatedAtLocal": "2026-11-21 15:57",
-  "dateLocal": "2026-11-21",
+  "generatedAt": "2026-11-22T07:44:56.941Z",
+  "generatedAtLocal": "2026-11-22 15:44",
+  "dateLocal": "2026-11-22",
   "timezone": "Asia/Kuala_Lumpur",
   "ai": {
     "enabled": false,
@@ -10,56 +10,57 @@
     "model": null,
     "label": "ルールベース要約（AIキー未設定）"
   },
-  "digest": "2026-11-21 15:57 時点の収集結果です。ゆいまるが次に取り上げそうなのは qybaihe/bla、affaan-m/ECC、Graphify-Labs/graphify。GitHub で伸びている AI ツールは mdiri-ai/SoduWork、affaan-m/ECC、xerj-org/xerj の 3 件。AI ニュースは 12 件を収集し、うち 11 件が新バージョン・新機能の発表でした。",
+  "digest": "2026-11-22 15:44 時点の収集結果です。ゆいまるが次に取り上げそうなのは bookwjitchieni1986/blender-ai-mcp-addon、qybaihe/bla、affaan-m/ECC。GitHub で伸びている AI ツールは bookwjitchieni1986/blender-ai-mcp-addon、affaan-m/ECC、ccch1mneyyy/dsh-Go の 3 件。AI ニュースは 12 件を収集し、うち 7 件が新バージョン・新機能の発表でした。",
   "tools": [
     {
-      "name": "mdiri-ai/SoduWork",
-      "url": "https://github.com/mdiri-ai/SoduWork",
-      "homepage": "https://www.soduwork.ai",
-      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
-      "stars": 6158,
-      "starsDelta": 1351,
-      "starsPerDay": 1357,
+      "name": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "homepage": null,
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "stars": 2694,
+      "starsDelta": 821,
+      "starsPerDay": 828.7,
       "measured": true,
-      "forks": 460,
-      "language": "JavaScript",
+      "forks": 36,
+      "language": null,
       "topics": [
-        "agent-harness",
-        "agent-orchestration",
-        "agent-workflows",
         "ai-agents",
-        "ai-workflows",
-        "anti-slop",
-        "claude-code",
-        "codex"
+        "ai-assistant",
+        "blender",
+        "blender-addon",
+        "blender-ai",
+        "blender-automation",
+        "blender-mcp",
+        "blender-plugin"
       ],
       "license": "MIT",
-      "createdAt": "2026-10-29T02:43:14Z",
-      "pushedAt": "2026-11-21T07:46:01Z",
-      "openIssues": 284,
-      "score": 1695.66,
+      "createdAt": "2026-11-19T14:43:10Z",
+      "pushedAt": "2026-11-19T14:44:11Z",
+      "openIssues": 60,
+      "score": 937.49,
       "rank": 1,
-      "yuimaruScore": 98,
+      "yuimaruScore": 99,
       "yuimaruReasons": [
-        "コーディングエージェント／ハーネス（codex・harness・orchestrat）",
-        "最近の記事と地続き（claude・agent）",
+        "コーディングエージェント／ハーネス（opencode・mcp・multi-agent）",
+        "最近の記事と地続き（opencode・claude・agent）",
         "すぐ試せる実用ツール",
-        "急上昇中（約1357★/日）"
+        "急上昇中（約829★/日）",
+        "出たばかり"
       ],
-      "headline": "SoduWork",
-      "summary": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
-      "why": "前回計測から +1351 スター。JavaScript 製。最終更新 2026-11-21。"
+      "headline": "blender-ai-mcp-addon",
+      "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI…",
+      "why": "前回計測から +821 スター。最終更新 2026-11-19。"
     },
     {
       "name": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
       "homepage": "https://ecc.tools",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "stars": 307992,
-      "starsDelta": 567,
-      "starsPerDay": 569.5,
+      "stars": 308524,
+      "starsDelta": 532,
+      "starsPerDay": 537,
       "measured": true,
-      "forks": 45323,
+      "forks": 45396,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -74,62 +75,88 @@
       "license": "MIT",
       "createdAt": "2026-01-18T00:51:51Z",
       "pushedAt": "2026-11-20T01:13:45Z",
-      "openIssues": 150,
-      "score": 542.13,
+      "openIssues": 168,
+      "score": 493.38,
       "rank": 2,
       "yuimaruScore": 99,
       "yuimaruReasons": [
         "コーディングエージェント／ハーネス（claude code・opencode・codex）",
         "最近の記事と地続き（opencode・claude・agent）",
         "すぐ試せる実用ツール",
-        "急上昇中（約570★/日）"
+        "急上昇中（約537★/日）"
       ],
       "headline": "ECC",
       "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor…",
-      "why": "前回計測から +567 スター。JavaScript 製。最終更新 2026-11-20。"
+      "why": "前回計測から +532 スター。JavaScript 製。最終更新 2026-11-20。"
     },
     {
-      "name": "xerj-org/xerj",
-      "url": "https://github.com/xerj-org/xerj",
-      "homepage": "https://xerj.org",
-      "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
-      "stars": 19125,
-      "starsDelta": 1154,
-      "starsPerDay": 1158.6,
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "homepage": null,
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "stars": 29814,
+      "starsDelta": 613,
+      "starsPerDay": 618.6,
       "measured": true,
-      "forks": 1204,
-      "language": "Rust",
+      "forks": 1426,
+      "language": "Dart",
       "topics": [
-        "agent-memory",
-        "ai-agents",
-        "bm25",
-        "claude-code",
-        "cli",
-        "code-search",
-        "cursor",
-        "database"
+        "ai-agent",
+        "android",
+        "android-app",
+        "coding-agent",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin"
       ],
-      "license": "Apache-2.0",
-      "createdAt": "2026-06-30T04:32:45Z",
-      "pushedAt": "2026-11-21T06:55:23Z",
-      "openIssues": 129,
-      "score": 1156.61,
+      "license": "AGPL-3.0",
+      "createdAt": "2026-10-25T08:09:52Z",
+      "pushedAt": "2026-11-22T07:34:10Z",
+      "openIssues": 840,
+      "score": 772.95,
       "rank": 3,
       "yuimaruScore": 98,
       "yuimaruReasons": [
-        "コーディングエージェント／ハーネス（cursor・mcp）",
-        "最近の記事と地続き（claude・rust・agent）",
+        "コーディングエージェント／ハーネス（harness・dsh・dsh-plugin）",
+        "最近の記事と地続き（agent・android）",
         "すぐ試せる実用ツール",
-        "急上昇中（約1159★/日）"
+        "急上昇中（約619★/日）"
       ],
-      "headline": "xerj",
-      "summary": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search,…",
-      "why": "前回計測から +1154 スター。Rust 製。最終更新 2026-11-21。"
+      "headline": "dsh-Go",
+      "summary": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "why": "前回計測から +613 スター。Dart 製。最終更新 2026-11-22。"
     }
   ],
   "news": [
     {
       "rank": 1,
+      "title": "huggingface/transformers v5.24.0",
+      "titleJa": "huggingface/transformers v5.24.0",
+      "summary": "# Release v5.24.0\r\n\r\n## New Model additions\r\n\r\n### Inkling 2 Mini\r\n\r\n<img width=\"80%\" alt=\"image\" src=\"https://github.com/user-attachments/assets/beefb5e0-39a9…",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "discussion": null,
+      "source": "GitHub Releases",
+      "sourceType": "release",
+      "publishedAt": "2026-11-21T12:28:26.000Z",
+      "tags": [
+        "version",
+        "feature",
+        "model",
+        "business",
+        "research"
+      ],
+      "score": 86.4,
+      "yuimaruScore": 50,
+      "novelty_evidence": {
+        "referenceDiff": false,
+        "ablation": false,
+        "reproductionSteps": false,
+        "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+      }
+    },
+    {
+      "rank": 2,
       "title": "anthropics/anthropic-sdk-python v2.11.0",
       "titleJa": "anthropics/anthropic-sdk-python v2.11.0",
       "summary": "### Features\n\n* **api:** add Claude Code managed settings to the Admin API\n* **api:** add the sandbox_egress_restricted error to Admin API plugin methods\n\n\n###…",
@@ -143,8 +170,8 @@
         "feature",
         "model"
       ],
-      "score": 57.6,
-      "yuimaruScore": 76,
+      "score": 45.7,
+      "yuimaruScore": 75,
       "novelty_evidence": {
         "referenceDiff": true,
         "ablation": false,
@@ -153,7 +180,30 @@
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "title": "llm-gemini 0.38.1",
+      "titleJa": "llm-gemini 0.38.1",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.38.1\">llm-gemini 0.38.1</a></p> <p>Gemini 4 Carbon only supports <cod…",
+      "url": "https://simonwillison.net/2026/Nov/20/llm-gemini",
+      "discussion": null,
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-20T03:01:57.000Z",
+      "tags": [
+        "version",
+        "model"
+      ],
+      "score": 45.6,
+      "yuimaruScore": 58,
+      "novelty_evidence": {
+        "referenceDiff": true,
+        "ablation": false,
+        "reproductionSteps": false,
+        "reason": "参照コード差分あり・アブレーションなし・再現手順なし"
+      }
+    },
+    {
+      "rank": 4,
       "title": "n8n-io/n8n n8n@2.48.7",
       "titleJa": "n8n-io/n8n n8n@2.48.7",
       "summary": "## [2.48.7](https://github.com/n8n-io/n8n/compare/n8n@2.48.6...n8n@2.48.7) (2026-11-20)\n\n\n### Bug Fixes\n\n* **core:** End memory guard hold when hold-limit stop…",
@@ -165,8 +215,8 @@
       "tags": [
         "version"
       ],
-      "score": 64.3,
-      "yuimaruScore": 36,
+      "score": 52.4,
+      "yuimaruScore": 35,
       "novelty_evidence": {
         "referenceDiff": false,
         "ablation": false,
@@ -175,21 +225,20 @@
       }
     },
     {
-      "rank": 3,
-      "title": "comfyanonymous/ComfyUI v0.46.0",
-      "titleJa": "comfyanonymous/ComfyUI v0.46.0",
-      "summary": "## What's Changed\r\n* [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/1…",
-      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-18T22:55:32.000Z",
+      "rank": 5,
+      "title": "Pandex – Official European Law for AI Agents, over MCP",
+      "titleJa": "Pandex – Official European Law for AI Agents, over MCP",
+      "summary": "Pandex – Official European Law for AI Agents, over MCP",
+      "url": "https://www.pandex.io",
+      "discussion": "https://news.ycombinator.com/item?id=50593481",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-21T20:47:41Z",
       "tags": [
-        "version",
-        "model"
+        "news"
       ],
-      "score": 59.5,
-      "yuimaruScore": 40,
+      "score": 40.5,
+      "yuimaruScore": 62,
       "novelty_evidence": {
         "referenceDiff": false,
         "ablation": false,
@@ -198,7 +247,7 @@
       }
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "n8n-io/n8n n8n@1.123.100",
       "titleJa": "n8n-io/n8n n8n@1.123.100",
       "summary": "## [1.123.100](https://github.com/n8n-io/n8n/compare/n8n@1.123.99...n8n@1.123.100) (2026-11-20)\n\n<!-- This is an auto-generated description by cubic. -->\n<a hr…",
@@ -210,8 +259,8 @@
       "tags": [
         "version"
       ],
-      "score": 64.4,
-      "yuimaruScore": 23,
+      "score": 52.5,
+      "yuimaruScore": 22,
       "novelty_evidence": {
         "referenceDiff": false,
         "ablation": false,
@@ -220,7 +269,29 @@
       }
     },
     {
-      "rank": 5,
+      "rank": 7,
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "titleJa": "ClawDOS – An AI coding agent for DOS",
+      "summary": "ClawDOS – An AI coding agent for DOS",
+      "url": "http://ricapar.net/ClawDOS",
+      "discussion": "https://news.ycombinator.com/item?id=50586292",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "publishedAt": "2026-11-21T05:38:01Z",
+      "tags": [
+        "news"
+      ],
+      "score": 40.4,
+      "yuimaruScore": 52,
+      "novelty_evidence": {
+        "referenceDiff": false,
+        "ablation": false,
+        "reproductionSteps": false,
+        "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+      }
+    },
+    {
+      "rank": 8,
       "title": "anthropics/anthropic-sdk-python v2.12.0",
       "titleJa": "anthropics/anthropic-sdk-python v2.12.0",
       "summary": "### Features\n\n* **api:** add the image_dimensions_too_large error code\n\n\n### Bug Fixes\n\n* **bedrock:** send the user profile ID in the request body\n\n  Amazon B…",
@@ -234,7 +305,7 @@
         "feature",
         "model"
       ],
-      "score": 68,
+      "score": 56.1,
       "yuimaruScore": 10,
       "novelty_evidence": {
         "referenceDiff": false,
@@ -244,7 +315,7 @@
       }
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Cut self-hosted LLM cost and latency with the distributed KV caching agent skill",
       "titleJa": "Cut self-hosted LLM cost and latency with the distributed KV caching agent skill",
       "summary": "Self-hosting LLMs on GPUs means paying to recompute the same context on every turn. Distributed KV caching with Amazon ElastiCache can cut inference cost by up…",
@@ -256,8 +327,8 @@
       "tags": [
         "model"
       ],
-      "score": 46.1,
-      "yuimaruScore": 62,
+      "score": 34.2,
+      "yuimaruScore": 61,
       "novelty_evidence": {
         "referenceDiff": false,
         "ablation": false,
@@ -266,22 +337,20 @@
       }
     },
     {
-      "rank": 7,
-      "title": "modelcontextprotocol/servers v2.5.0",
-      "titleJa": "modelcontextprotocol/servers v2.5.0",
-      "summary": "## Security fixes\n\nv2.5.0 fixes eight vulnerabilities in three servers. Upgrade `mcp-server-git` to 2026.11.18,\n`@modelcontextprotocol/server-filesystem` to 2.…",
-      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.5.0",
+      "rank": 10,
+      "title": "Muru",
+      "titleJa": "Muru",
+      "summary": "<p><strong><a href=\"https://github.com/muruhq/muru\">Muru</a></strong></p> Graham Dumpleton started <a href=\"https://modwsgi.readthedocs.io/\">mod_wsgi</a> 20 ye…",
+      "url": "https://simonwillison.net/2026/Nov/21/muru",
       "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-18T09:13:14.000Z",
+      "source": "Simon Willison",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-21T23:56:28.000Z",
       "tags": [
-        "version",
-        "model",
-        "business"
+        "news"
       ],
-      "score": 48.6,
-      "yuimaruScore": 52,
+      "score": 46.1,
+      "yuimaruScore": 29,
       "novelty_evidence": {
         "referenceDiff": false,
         "ablation": false,
@@ -290,7 +359,29 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 11,
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "titleJa": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance",
+      "discussion": null,
+      "source": "TechCrunch AI",
+      "sourceType": "feed",
+      "publishedAt": "2026-11-21T21:37:10.000Z",
+      "tags": [
+        "news"
+      ],
+      "score": 41.9,
+      "yuimaruScore": 37,
+      "novelty_evidence": {
+        "referenceDiff": false,
+        "ablation": false,
+        "reproductionSteps": false,
+        "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+      }
+    },
+    {
+      "rank": 12,
       "title": "n8n-io/n8n stable",
       "titleJa": "n8n-io/n8n stable",
       "summary": "## [2.48.7](https://github.com/n8n-io/n8n/compare/n8n@2.48.6...n8n@2.48.7) (2026-11-20)\n\n\n### Bug Fixes\n\n* **core:** End memory guard hold when hold-limit stop…",
@@ -302,98 +393,8 @@
       "tags": [
         "version"
       ],
-      "score": 54.3,
-      "yuimaruScore": 36,
-      "novelty_evidence": {
-        "referenceDiff": false,
-        "ablation": false,
-        "reproductionSteps": false,
-        "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-      }
-    },
-    {
-      "rank": 9,
-      "title": "Introducing enhanced infrastructure observability in Amazon SageMaker HyperPod",
-      "titleJa": "Introducing enhanced infrastructure observability in Amazon SageMaker HyperPod",
-      "summary": "Amazon SageMaker HyperPod now offers enhanced observability to help you diagnose GPU training issues faster. It brings together diagnostic and profiling capabi…",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues",
-      "discussion": null,
-      "source": "AWS Machine Learning",
-      "sourceType": "feed",
-      "publishedAt": "2026-11-20T18:24:06.000Z",
-      "tags": [
-        "release"
-      ],
-      "score": 47.2,
-      "yuimaruScore": 52,
-      "novelty_evidence": {
-        "referenceDiff": false,
-        "ablation": false,
-        "reproductionSteps": false,
-        "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-      }
-    },
-    {
-      "rank": 10,
-      "title": "langchain-ai/langchain langchain-openai==1.8.5",
-      "titleJa": "langchain-ai/langchain langchain-openai==1.8.5",
-      "summary": "Changes since langchain-openai==1.8.4\n\nrelease(openai): 1.8.5 (#41969)\nfix(openai): preserve streamed Responses tool call arguments (#41963)\nfeat(core): standa…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.5",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-19T23:16:20.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 63.6,
-      "yuimaruScore": 10,
-      "novelty_evidence": {
-        "referenceDiff": false,
-        "ablation": false,
-        "reproductionSteps": false,
-        "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-      }
-    },
-    {
-      "rank": 11,
-      "title": "langchain-ai/langchain langchain-openrouter==0.3.0",
-      "titleJa": "langchain-ai/langchain langchain-openrouter==0.3.0",
-      "summary": "**`langchain-openrouter` 0.3.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimu…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.3.0",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-19T15:03:19.000Z",
-      "tags": [
-        "version",
-        "feature",
-        "model"
-      ],
-      "score": 63.5,
-      "yuimaruScore": 10,
-      "novelty_evidence": {
-        "referenceDiff": false,
-        "ablation": true,
-        "reproductionSteps": false,
-        "reason": "参照コード差分なし・アブレーションあり・再現手順なし"
-      }
-    },
-    {
-      "rank": 12,
-      "title": "langchain-ai/langchain langchain-openai==1.8.4",
-      "titleJa": "langchain-ai/langchain langchain-openai==1.8.4",
-      "summary": "Changes since langchain-openai==1.8.3\n\nrelease(openai): 1.8.4 (#41962)\nchore(langchain): require `langgraph` 1.2.16 or newer (#41959)\nfix(openai): classify in-…",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.4",
-      "discussion": null,
-      "source": "GitHub Releases",
-      "sourceType": "release",
-      "publishedAt": "2026-11-19T21:36:51.000Z",
-      "tags": [
-        "version"
-      ],
-      "score": 62.8,
-      "yuimaruScore": 10,
+      "score": 42.4,
+      "yuimaruScore": 35,
       "novelty_evidence": {
         "referenceDiff": false,
         "ablation": false,
@@ -431,25 +432,25 @@
           "hybrid": 3,
           "bigtech": 3
         },
-        "candidates": 160,
+        "candidates": 86,
         "entries": [
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "affaan-m/ECC",
-            "titleJa": "affaan-m/ECC",
-            "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor…",
-            "body": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-            "url": "https://github.com/affaan-m/ECC",
+            "title": "Ebony-Vinyl/dsh-our-free-model",
+            "titleJa": "Ebony-Vinyl/dsh-our-free-model",
+            "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
+            "body": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+            "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
             "source": "GitHub",
-            "publishedAt": "2026-11-20T01:13:45Z",
-            "score": 543.7,
-            "stars": 307994,
-            "starsDelta": 569,
-            "starsPerDay": 571.2,
+            "publishedAt": "2026-11-21T10:49:38Z",
+            "score": 1108.1,
+            "stars": 83373,
+            "starsDelta": 909,
+            "starsPerDay": 917.1,
             "language": "JavaScript",
-            "license": "MIT",
-            "yuimaruScore": 99,
+            "license": null,
+            "yuimaruScore": 97,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -460,20 +461,42 @@
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "Ebony-Vinyl/dsh-our-free-model",
-            "titleJa": "Ebony-Vinyl/dsh-our-free-model",
-            "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API…",
-            "body": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-            "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+            "title": "DietrichGebert/ponytail",
+            "titleJa": "DietrichGebert/ponytail",
+            "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+            "body": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+            "url": "https://github.com/DietrichGebert/ponytail",
             "source": "GitHub",
-            "publishedAt": "2026-11-20T16:23:39Z",
-            "score": 1239.2,
-            "stars": 82466,
-            "starsDelta": 1013,
-            "starsPerDay": 1016.9,
+            "publishedAt": "2026-11-22T02:31:58Z",
+            "score": 715.9,
+            "stars": 196523,
+            "starsDelta": null,
+            "starsPerDay": 722.1,
             "language": "JavaScript",
-            "license": null,
+            "license": "MIT",
             "yuimaruScore": 97,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "model",
+            "tier": "oss",
+            "title": "unsloth/Inkling-2-Mini-GGUF",
+            "titleJa": "unsloth/Inkling-2-Mini-GGUF",
+            "summary": "image-text-to-text gguf conversational image-text-to-text moe unsloth base_model:thinkingmachines/Inkling-2-Mini base_model:quantized:thinkingmachines/Inkling-…",
+            "body": "image-text-to-text gguf conversational image-text-to-text moe unsloth base_model:thinkingmachines/Inkling-2-Mini base_model:quantized:thinkingmachines/Inkling-2-Mini license:apache-2.0 endpoints_compatible region:us imatrix",
+            "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+            "source": "Hugging Face Trending",
+            "publishedAt": "2026-11-20T13:09:48.000Z",
+            "score": 139,
+            "likes": 698,
+            "downloads": 238152,
+            "pipeline": "image-text-to-text",
+            "yuimaruScore": 79,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -490,14 +513,14 @@
             "body": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
             "url": "https://github.com/firecrawl/firecrawl",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T03:40:37Z",
-            "score": 968.4,
-            "stars": 205546,
-            "starsDelta": 972,
-            "starsPerDay": 975.4,
+            "publishedAt": "2026-11-22T06:23:11Z",
+            "score": 891.5,
+            "stars": 206432,
+            "starsDelta": 886,
+            "starsPerDay": 893.6,
             "language": "TypeScript",
             "license": "AGPL-3.0",
-            "yuimaruScore": 77,
+            "yuimaruScore": 76,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -515,33 +538,11 @@
             "url": "https://huggingface.co/tencent/Hy4-flash",
             "source": "Hugging Face Trending",
             "publishedAt": "2026-11-17T03:44:46.000Z",
-            "score": 137,
-            "likes": 558,
-            "downloads": 3949,
+            "score": 138,
+            "likes": 557,
+            "downloads": 5588,
             "pipeline": "image-text-to-text",
-            "yuimaruScore": 57,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "model",
-            "tier": "oss",
-            "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-            "titleJa": "harness-hub/Qwen3.8-27B-pi-adapted",
-            "summary": "image-text-to-text peft safetensors trl grpo async-grpo lora agents harbor openenv pi image-text-to-text conversational",
-            "body": "image-text-to-text peft safetensors trl grpo async-grpo lora agents harbor openenv pi image-text-to-text conversational",
-            "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-            "source": "Hugging Face Trending",
-            "publishedAt": "2026-11-16T06:52:31.000Z",
-            "score": 139,
-            "likes": 830,
-            "downloads": 1874,
-            "pipeline": "image-text-to-text",
-            "yuimaruScore": 51,
+            "yuimaruScore": 56,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -552,15 +553,34 @@
           {
             "kind": "news",
             "tier": "oss",
-            "title": "comfyanonymous/ComfyUI v0.46.0",
-            "titleJa": "comfyanonymous/ComfyUI v0.46.0",
-            "summary": "## What's Changed\r\n* [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/1…",
-            "body": "## What's Changed\r\n* [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17664\r\n* [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17661\r\n* Update workflow templates to v0.11.106 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/17668\r\n* Fix for some workflows not working properly. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17675\r\n* Conform Concatenate Video clips to the first clip's frame rate and audio (FRONT-…",
-            "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0",
+            "title": "huggingface/transformers v5.24.0",
+            "titleJa": "huggingface/transformers v5.24.0",
+            "summary": "# Release v5.24.0\r\n\r\n## New Model additions\r\n\r\n### Inkling 2 Mini\r\n\r\n<img width=\"80%\" alt=\"image\" src=\"https://github.com/user-attachments/assets/beefb5e0-39a9…",
+            "body": "# Release v5.24.0\r\n\r\n## New Model additions\r\n\r\n### Inkling 2 Mini\r\n\r\n<img width=\"80%\" alt=\"image\" src=\"https://github.com/user-attachments/assets/beefb5e0-39a9-4205-ab07-0ee707af95f2\" />\r\n\r\nInkling 2 Mini is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs. It is a smaller sibling of Inkling 2 Small, added in v5.23.0. It has 24 decoder layers instead of 48, and compensates with a looping mechanism in which layers 6 to 17 run three times. A learned message-passing mechanism mixes the residuals of the previous pass into the attention an…",
+            "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
             "source": "GitHub Releases",
-            "publishedAt": "2026-11-18T22:55:32.000Z",
-            "score": 26,
-            "yuimaruScore": 40,
+            "publishedAt": "2026-11-21T12:28:26.000Z",
+            "score": 41.6,
+            "yuimaruScore": 50,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+            "titleJa": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+            "summary": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+            "body": "",
+            "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+            "source": "Hugging Face Blog",
+            "publishedAt": "2026-11-20T00:00:00.000Z",
+            "score": 21.4,
+            "yuimaruScore": 42,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -578,7 +598,7 @@
             "url": "https://openai.com/index/combatting-adversarial-distillation",
             "source": "OpenAI",
             "publishedAt": "2026-11-20T10:00:00.000Z",
-            "score": 36.7,
+            "score": 28.8,
             "yuimaruScore": 39,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -597,8 +617,8 @@
             "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
             "source": "Google Research",
             "publishedAt": "2026-11-20T23:30:30.000Z",
-            "score": 36.2,
-            "yuimaruScore": 38,
+            "score": 28.3,
+            "yuimaruScore": 37,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -616,7 +636,7 @@
             "url": "https://openai.com/business/customer-stories/hebbia",
             "source": "OpenAI",
             "publishedAt": "2026-11-20T00:00:00.000Z",
-            "score": 36.3,
+            "score": 28.4,
             "yuimaruScore": 28,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -628,34 +648,15 @@
           {
             "kind": "news",
             "tier": "hybrid",
-            "title": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
-            "titleJa": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
-            "summary": "arXiv:2611.25387v1 Announce Type: new Abstract: Humans act in the visual world by inferring the 3D layout behind a 2D view, predicting how an action changes it…",
-            "body": "arXiv:2611.25387v1 Announce Type: new Abstract: Humans act in the visual world by inferring the 3D layout behind a 2D view, predicting how an action changes it, and correcting themselves after seeing the result. Can multimodal large language models (MLLMs) do the same? CAPTCHAs offer a natural test, since humans solve them through this very loop, clicking and dragging on the screen and adjusting after each result. Yet existing CAPTCHA benchmarks are largely solved and rarely spatial, while spatial benchmarks rarely require action. We therefore present TuringSpace, a synthetic web environment…",
-            "url": "https://arxiv.org/abs/2611.25387",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 40,
-            "yuimaruScore": 9,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "LLM Complexity: Towards a Computational Complexity View of Large Language Model Inference",
-            "titleJa": "LLM Complexity: Towards a Computational Complexity View of Large Language Model Inference",
-            "summary": "arXiv:2611.24943v1 Announce Type: cross Abstract: Computational complexity theory offers a principled framework for characterizing the efficiency of computatio…",
-            "body": "arXiv:2611.24943v1 Announce Type: cross Abstract: Computational complexity theory offers a principled framework for characterizing the efficiency of computational problems, and Large Language Models (LLMs) can similarly be viewed as computational systems executing a structured process of input, inference-time compute, and output. In this context, the number of generated tokens emerges as a natural and directly observable proxy for inference-time compute. However, we show that the tempting analogy between LLM token length and classical time complexity does not hold. We disprove the hypothesis…",
-            "url": "https://arxiv.org/abs/2611.24943",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 40,
-            "yuimaruScore": 2,
+            "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+            "titleJa": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+            "summary": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+            "body": "",
+            "url": "https://huggingface.co/blog/inkling2mini",
+            "source": "Hugging Face Blog",
+            "publishedAt": "2026-11-20T00:00:00.000Z",
+            "score": 21.4,
+            "yuimaruScore": 27,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -674,8 +675,8 @@
             "source": "Hugging Face Trending",
             "publishedAt": "2026-11-17T00:26:57.000Z",
             "score": 140,
-            "likes": 992,
-            "downloads": 136,
+            "likes": 3312,
+            "downloads": 7944,
             "pipeline": "image-text-to-text",
             "yuimaruScore": 1,
             "novelty_evidence": {
@@ -697,32 +698,8 @@
           "hybrid": 4,
           "bigtech": 1
         },
-        "candidates": 47,
+        "candidates": 26,
         "entries": [
-          {
-            "kind": "repo",
-            "tier": "oss",
-            "title": "mdiri-ai/SoduWork",
-            "titleJa": "mdiri-ai/SoduWork",
-            "summary": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
-            "body": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
-            "url": "https://github.com/mdiri-ai/SoduWork",
-            "source": "GitHub",
-            "publishedAt": "2026-11-21T07:46:01Z",
-            "score": 1694.5,
-            "stars": 6158,
-            "starsDelta": 1351,
-            "starsPerDay": 1356.1,
-            "language": "JavaScript",
-            "license": "MIT",
-            "yuimaruScore": 98,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
           {
             "kind": "repo",
             "tier": "hybrid",
@@ -732,11 +709,11 @@
             "body": "DeepSeek Harness: Everything is a Plugin.",
             "url": "https://github.com/deepseek-ai/deepseek-harness",
             "source": "GitHub",
-            "publishedAt": "2026-11-18T12:48:10Z",
-            "score": 460.8,
-            "stars": 284824,
-            "starsDelta": 407,
-            "starsPerDay": 408.5,
+            "publishedAt": "2026-11-22T03:18:55Z",
+            "score": 518.2,
+            "stars": 285236,
+            "starsDelta": 414,
+            "starsPerDay": 417.6,
             "language": "TypeScript",
             "license": "MIT",
             "yuimaruScore": 96,
@@ -749,17 +726,36 @@
           },
           {
             "kind": "news",
-            "tier": "oss",
-            "title": "Show HN: OpenComputer – an open source alternative to Devin",
-            "titleJa": "Show HN: OpenComputer – an open source alternative to Devin",
-            "summary": "Hi HN! Utpal here, I&#x27;m one of the founders of OpenComputer. OpenComputer is an open source cloud coding agent for teams that can run in your own cloud acc…",
-            "body": "Hi HN! Utpal here, I&#x27;m one of the founders of OpenComputer. OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure). We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]). Two other choices: - One VM per team, scalable horizontally. Sessions are isolated in git worktrees. - Session files are backed up to a repo after every turn, so any session can resume on another VM. We noticed that past ~640…",
-            "url": "https://github.com/diggerhq/opencomputer",
+            "tier": "hybrid",
+            "title": "Pandex – Official European Law for AI Agents, over MCP",
+            "titleJa": "Pandex – Official European Law for AI Agents, over MCP",
+            "summary": "Pandex – Official European Law for AI Agents, over MCP",
+            "body": "",
+            "url": "https://www.pandex.io",
             "source": "Hacker News",
-            "publishedAt": "2026-11-20T20:19:56Z",
-            "score": 41,
-            "discussion": "https://news.ycombinator.com/item?id=50581403",
-            "yuimaruScore": 75,
+            "publishedAt": "2026-11-21T20:47:41Z",
+            "score": 36.1,
+            "discussion": "https://news.ycombinator.com/item?id=50593481",
+            "yuimaruScore": 62,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Use Kimi Code CLI with models on Amazon Bedrock",
+            "titleJa": "Use Kimi Code CLI with models on Amazon Bedrock",
+            "summary": "Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent to models like Kimi K3.1 Pro using your standard AW…",
+            "body": "Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent to models like Kimi K3.1 Pro using your standard AWS credential chain (named profiles or SSO) instead of a separate API key. This post shows how to configure the provider and send your first request.",
+            "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock",
+            "source": "AWS Machine Learning",
+            "publishedAt": "2026-11-20T00:33:30.000Z",
+            "score": 20.6,
+            "yuimaruScore": 62,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -777,9 +773,33 @@
             "url": "http://ricapar.net/ClawDOS",
             "source": "Hacker News",
             "publishedAt": "2026-11-21T05:38:01Z",
-            "score": 36.3,
+            "score": 37.1,
             "discussion": "https://news.ycombinator.com/item?id=50586292",
-            "yuimaruScore": 53,
+            "yuimaruScore": 52,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "stablyai/orca",
+            "titleJa": "stablyai/orca",
+            "summary": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+            "body": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+            "url": "https://github.com/stablyai/orca",
+            "source": "GitHub",
+            "publishedAt": "2026-11-22T07:45:20Z",
+            "score": 949.3,
+            "stars": 132257,
+            "starsDelta": 941,
+            "starsPerDay": 949.3,
+            "language": "TypeScript",
+            "license": "MIT",
+            "yuimaruScore": 45,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -796,14 +816,33 @@
             "body": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
             "url": "https://github.com/BaaRai/ARTEX",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T07:33:59Z",
-            "score": 1940.2,
-            "stars": 14056,
-            "starsDelta": 1547,
-            "starsPerDay": 1553.3,
+            "publishedAt": "2026-11-22T07:40:25Z",
+            "score": 1737.8,
+            "stars": 15434,
+            "starsDelta": 1378,
+            "starsPerDay": 1390.5,
             "language": "Go",
             "license": "AGPL-3.0",
             "yuimaruScore": 33,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "oss",
+            "title": "Muru",
+            "titleJa": "Muru",
+            "summary": "<p><strong><a href=\"https://github.com/muruhq/muru\">Muru</a></strong></p> Graham Dumpleton started <a href=\"https://modwsgi.readthedocs.io/\">mod_wsgi</a> 20 ye…",
+            "body": "<p><strong><a href=\"https://github.com/muruhq/muru\">Muru</a></strong></p> Graham Dumpleton started <a href=\"https://modwsgi.readthedocs.io/\">mod_wsgi</a> 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since.</p> <p>Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production.</p> <p>As <a href=\"https://simonwillison.net/2026/Sep/11/wrapture/\">he did with wrapture</a>, he's been publishing an extraordinarily detailed account of the proje…",
+            "url": "https://simonwillison.net/2026/Nov/21/muru",
+            "source": "Simon Willison",
+            "publishedAt": "2026-11-21T23:56:28.000Z",
+            "score": 36.4,
+            "yuimaruScore": 29,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -821,32 +860,13 @@
             "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
             "source": "The Verge AI",
             "publishedAt": "2026-11-19T22:31:41.000Z",
-            "score": 27.9,
-            "yuimaruScore": 15,
+            "score": 19.9,
+            "yuimaruScore": 14,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": true,
               "reproductionSteps": false,
               "reason": "参照コード差分なし・アブレーションあり・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
-            "titleJa": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
-            "summary": "arXiv:2611.26248v1 Announce Type: cross Abstract: AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities…",
-            "body": "arXiv:2611.26248v1 Announce Type: cross Abstract: AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce…",
-            "url": "https://arxiv.org/abs/2611.26248",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 40,
-            "yuimaruScore": 12,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
             }
           },
           {
@@ -859,27 +879,8 @@
             "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil",
             "source": "Simon Willison",
             "publishedAt": "2026-11-20T19:21:49.000Z",
-            "score": 34.8,
+            "score": 26.9,
             "yuimaruScore": 10,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation",
-            "titleJa": "Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation",
-            "summary": "arXiv:2611.26349v1 Announce Type: cross Abstract: First-principles structural relaxation and band calculations require substantial computation and expertise. H…",
-            "body": "arXiv:2611.26349v1 Announce Type: cross Abstract: First-principles structural relaxation and band calculations require substantial computation and expertise. Here we present Perfumer, a large language model-based agentic framework that couples Quantum ESPRESSO with two predictive models. Across tested structures, pre-relaxation with Perfumer-relax model followed by QE refinement yielded a 2.75-fold overall speedup over QE alone. Perfumer-band model combines a periodic graph neural network with a latent Hermitian spectral head returns 12 band energies at any requested wavevector, preserving re…",
-            "url": "https://arxiv.org/abs/2611.26349",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
-            "yuimaruScore": 1,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -893,31 +894,31 @@
         "id": "ai-interp",
         "label": "解釈可能性・安全性・ステアリング",
         "short": "解釈・安全性",
-        "digest": "OSS 4件・中間 2件・大手 0件。いちばん強いシグナルは「ShutongLiang/Neural-State-OS」（GitHub）。",
+        "digest": "OSS 4件・中間 0件・大手 0件。いちばん強いシグナルは「ShutongLiang/Neural-State-OS」（GitHub）。",
         "tierCounts": {
           "oss": 4,
-          "hybrid": 2,
+          "hybrid": 0,
           "bigtech": 0
         },
-        "candidates": 56,
+        "candidates": 13,
         "entries": [
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "shap/shap",
-            "titleJa": "shap/shap",
-            "summary": "A game theoretic approach to explain the output of any machine learning model.",
-            "body": "A game theoretic approach to explain the output of any machine learning model.",
-            "url": "https://github.com/shap/shap",
+            "title": "manuelgscom/inside-llm",
+            "titleJa": "manuelgscom/inside-llm",
+            "summary": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+            "body": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+            "url": "https://github.com/manuelgscom/inside-llm",
             "source": "GitHub",
-            "publishedAt": "2026-11-20T16:52:06Z",
-            "score": 7.8,
-            "stars": 25883,
+            "publishedAt": "2026-11-16T17:42:31Z",
+            "score": 8.4,
+            "stars": 118,
             "starsDelta": 8,
-            "starsPerDay": 8,
-            "language": "Jupyter Notebook",
+            "starsPerDay": 8.1,
+            "language": "TypeScript",
             "license": "MIT",
-            "yuimaruScore": 46,
+            "yuimaruScore": 78,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -935,8 +936,8 @@
             "url": "https://www.alignmentforum.org/posts/nvrFYAwciyyj9T5ir/solomonoff-induction-with-reflective-oracles",
             "source": "Alignment Forum",
             "publishedAt": "2026-11-19T04:36:27.000Z",
-            "score": 19.9,
-            "yuimaruScore": 46,
+            "score": 12,
+            "yuimaruScore": 45,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -954,13 +955,13 @@
             "url": "https://github.com/csinva/weight-space-programming-autoresearch",
             "source": "GitHub",
             "publishedAt": "2026-11-16T16:19:59Z",
-            "score": 8.6,
-            "stars": 116,
-            "starsDelta": 10,
-            "starsPerDay": 10,
+            "score": 5,
+            "stars": 122,
+            "starsDelta": 6,
+            "starsPerDay": 6.1,
             "language": "Python",
             "license": "MIT",
-            "yuimaruScore": 28,
+            "yuimaruScore": 26,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -978,51 +979,13 @@
             "url": "https://github.com/ShutongLiang/Neural-State-OS",
             "source": "GitHub",
             "publishedAt": "2026-11-14T20:45:14Z",
-            "score": 23.4,
-            "stars": 237,
-            "starsDelta": 23,
-            "starsPerDay": 23.1,
+            "score": 46.8,
+            "stars": 284,
+            "starsDelta": 47,
+            "starsPerDay": 47.4,
             "language": "Python",
             "license": "Apache-2.0",
-            "yuimaruScore": 23,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "Rational Sparse Autoencoder",
-            "titleJa": "Rational Sparse Autoencoder",
-            "summary": "arXiv:2606.14990v4 Announce Type: replace Abstract: Sparse autoencoders (SAEs) are standard tools for mechanistic interpretability, but current SAE families ar…",
-            "body": "arXiv:2606.14990v4 Announce Type: replace Abstract: Sparse autoencoders (SAEs) are standard tools for mechanistic interpretability, but current SAE families are constrained by fixed encoder nonlinearities such as ReLU, JumpReLU, and TopK. This hard-codes a particular sparsity mechanism into the model and can distort the reconstruction-versus-sparsity trade-off. We introduce the Rational Sparse Autoencoder (RSAE), which replaces the fixed encoder activation with a trainable rational function. The design is motivated by a reconstruction advantage that we prove for RSAE at matched expected spars…",
-            "url": "https://arxiv.org/abs/2606.14990",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 43,
-            "yuimaruScore": 3,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "Separating Interpretability and Reconstruction in Sparse Autoencoders",
-            "titleJa": "Separating Interpretability and Reconstruction in Sparse Autoencoders",
-            "summary": "arXiv:2611.25165v1 Announce Type: new Abstract: Sparse Autoencoders (SAEs) are effective tools for mechanistic interpretability by decomposing neural represent…",
-            "body": "arXiv:2611.25165v1 Announce Type: new Abstract: Sparse Autoencoders (SAEs) are effective tools for mechanistic interpretability by decomposing neural representations into sparse and interpretable features. However, a single sparse representation in traditional SAEs is responsible for both reconstruction fidelity and interpretability, which are not guaranteed to align. To separate these objectives, we propose DualSAE, a modular framework that augments standard SAEs with a plug-in Residual Branch. A standard SAE serves as the Sparse Branch, learning a sparse code that contains the dominant sema…",
-            "url": "https://arxiv.org/abs/2611.25165",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 40,
-            "yuimaruScore": 3,
+            "yuimaruScore": 25,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1036,31 +999,31 @@
         "id": "world-models",
         "label": "ワールドモデル・フィジカルAI・ロボティクス",
         "short": "ワールドモデル",
-        "digest": "OSS 3件・中間 6件・大手 1件。いちばん強いシグナルは「earthtojake/text-to-cad」（GitHub）。",
+        "digest": "OSS 3件・中間 5件・大手 1件。いちばん強いシグナルは「cliblacktech/unreal-5-6-win」（GitHub）。",
         "tierCounts": {
           "oss": 3,
-          "hybrid": 6,
+          "hybrid": 5,
           "bigtech": 1
         },
-        "candidates": 52,
+        "candidates": 23,
         "entries": [
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "earthtojake/text-to-cad",
-            "titleJa": "earthtojake/text-to-cad",
-            "summary": "Design physical products with AI",
-            "body": "Design physical products with AI",
-            "url": "https://github.com/earthtojake/text-to-cad",
+            "title": "cliblacktech/unreal-5-6-win",
+            "titleJa": "cliblacktech/unreal-5-6-win",
+            "summary": "Epic Games Unreal Engine 5 - real-time 3D creation engine for game development, virtual production and architectural visualization on Windows 10/11",
+            "body": "Epic Games Unreal Engine 5 - real-time 3D creation engine for game development, virtual production and architectural visualization on Windows 10/11",
+            "url": "https://github.com/cliblacktech/unreal-5-6-win",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T07:46:15Z",
-            "score": 73.3,
-            "stars": 27016,
-            "starsDelta": 73,
-            "starsPerDay": 73.3,
-            "language": "Python",
-            "license": "MIT",
-            "yuimaruScore": 58,
+            "publishedAt": "2026-11-21T15:24:17Z",
+            "score": 124.1,
+            "stars": 170,
+            "starsDelta": null,
+            "starsPerDay": 102,
+            "language": null,
+            "license": null,
+            "yuimaruScore": 80,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1071,20 +1034,20 @@
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "HybridRobotics/supermimic",
-            "titleJa": "HybridRobotics/supermimic",
-            "summary": "Humanoid whole-body motion tracking with one differentiable world model.",
-            "body": "Humanoid whole-body motion tracking with one differentiable world model.",
-            "url": "https://github.com/HybridRobotics/supermimic",
+            "title": "earthtojake/text-to-cad",
+            "titleJa": "earthtojake/text-to-cad",
+            "summary": "Design physical products with AI",
+            "body": "Design physical products with AI",
+            "url": "https://github.com/earthtojake/text-to-cad",
             "source": "GitHub",
-            "publishedAt": "2026-11-19T01:54:58Z",
-            "score": 25.4,
-            "stars": 1907,
-            "starsDelta": 22,
-            "starsPerDay": 22.1,
+            "publishedAt": "2026-11-22T05:13:11Z",
+            "score": 75.4,
+            "stars": 27091,
+            "starsDelta": 75,
+            "starsPerDay": 75.7,
             "language": "Python",
-            "license": "Apache-2.0",
-            "yuimaruScore": 24,
+            "license": "MIT",
+            "yuimaruScore": 58,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1101,33 +1064,14 @@
             "body": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
             "url": "https://github.com/google-deepmind/mujoco",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T05:26:09Z",
-            "score": 23,
-            "stars": 18360,
-            "starsDelta": 23,
-            "starsPerDay": 23.1,
+            "publishedAt": "2026-11-21T23:21:19Z",
+            "score": 21.9,
+            "stars": 18382,
+            "starsDelta": 22,
+            "starsPerDay": 22.2,
             "language": "C++",
             "license": "Apache-2.0",
             "yuimaruScore": 24,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
-            "titleJa": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
-            "summary": "arXiv:2609.39601v3 Announce Type: replace-cross Abstract: Precise grounding matters. It specifies which object is the target and where that object is, even in…",
-            "body": "arXiv:2609.39601v3 Announce Type: replace-cross Abstract: Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and…",
-            "url": "https://arxiv.org/abs/2609.39601",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 43,
-            "yuimaruScore": 18,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1145,8 +1089,46 @@
             "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents",
             "source": "NVIDIA Blog",
             "publishedAt": "2026-11-19T17:00:35.000Z",
-            "score": 26,
-            "yuimaruScore": 15,
+            "score": 18.1,
+            "yuimaruScore": 14,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "The AI Hype Index: AI is everywhere",
+            "titleJa": "The AI Hype Index: AI is everywhere",
+            "summary": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad re…",
+            "body": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up the stairs to clean someone’s rooms. Go to the supermarket, and…",
+            "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere",
+            "source": "MIT Technology Review",
+            "publishedAt": "2026-11-18T14:42:44.000Z",
+            "score": 11.3,
+            "yuimaruScore": 14,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "The manufacturing data gap holding back physical AI",
+            "titleJa": "The manufacturing data gap holding back physical AI",
+            "summary": "Manufacturers looking to deploy autonomous robots must close gaps in industrial data collection, interoperability, and quality feedback to enable reliable deci…",
+            "body": "Manufacturers looking to deploy autonomous robots must close gaps in industrial data collection, interoperability, and quality feedback to enable reliable decision-making and improve production efficiency. The post The manufacturing data gap holding back physical AI appeared first on The Robot Report .",
+            "url": "https://www.therobotreport.com/the-manufacturing-data-gap-holding-back-physical-ai",
+            "source": "The Robot Report",
+            "publishedAt": "2026-11-21T22:25:35.000Z",
+            "score": 37.9,
+            "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1164,26 +1146,7 @@
             "url": "https://www.therobotreport.com/massrobotics-launching-marine-robotics-facility-on-boston-harbor",
             "source": "The Robot Report",
             "publishedAt": "2026-11-20T17:04:28.000Z",
-            "score": 36,
-            "yuimaruScore": 10,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "Medtronic’s Hugo surgical robot ready for bigger operation",
-            "titleJa": "Medtronic’s Hugo surgical robot ready for bigger operation",
-            "summary": "Globally, the Hugo surgical system is on track to surpass 50,000 cumulative procedures by the end of Medtronic's fiscal year. The post Medtronic’s Hugo surgica…",
-            "body": "Globally, the Hugo surgical system is on track to surpass 50,000 cumulative procedures by the end of Medtronic's fiscal year. The post Medtronic’s Hugo surgical robot ready for bigger operation appeared first on The Robot Report .",
-            "url": "https://www.therobotreport.com/medtronics-hugo-surgical-robot-ready-for-bigger-operation",
-            "source": "The Robot Report",
-            "publishedAt": "2026-11-21T00:55:45.000Z",
-            "score": 35.7,
+            "score": 28.1,
             "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1202,30 +1165,11 @@
             "url": "https://huggingface.co/Lightricks/LTX-2.5",
             "source": "Hugging Face Trending",
             "publishedAt": "2026-07-23T07:55:24.000Z",
-            "score": 136,
-            "likes": 12837,
-            "downloads": 2964523,
+            "score": 124,
+            "likes": 12967,
+            "downloads": 3000544,
             "pipeline": "image-to-video",
             "yuimaruScore": 5,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment",
-            "titleJa": "Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment",
-            "summary": "arXiv:2611.18372v2 Announce Type: replace-cross Abstract: Vision-language-action (VLA) models adapt web-pretrained vision-language models to output robot actio…",
-            "body": "arXiv:2611.18372v2 Announce Type: replace-cross Abstract: Vision-language-action (VLA) models adapt web-pretrained vision-language models to output robot actions, so that web knowledge carries over to physical control. In under four years the field has grown from RT-2, the first VLA, to open models that fine-tune on a single consumer GPU and proprietary generalists that clean unseen homes. VLA research joins robotics, computer vision and language modelling, so this survey is written for researchers and practitioners from each of these fields. It reviews 89 works from December 2022 to October…",
-            "url": "https://arxiv.org/abs/2611.18372",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 46,
-            "yuimaruScore": 4,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1243,7 +1187,7 @@
             "url": "https://spectrum.ieee.org/video-friday-morphing-robots-quadrotor",
             "source": "IEEE Spectrum Robotics",
             "publishedAt": "2026-11-20T17:30:03.000Z",
-            "score": 38.2,
+            "score": 30.3,
             "yuimaruScore": 2,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1258,14 +1202,33 @@
         "id": "quantum",
         "label": "量子コンピュータ・量子情報",
         "short": "量子",
-        "digest": "OSS 1件・中間 7件・大手 1件。いちばん強いシグナルは「spideythedev/quantum-reimagined」（GitHub）。",
+        "digest": "OSS 1件・中間 6件・大手 1件。いちばん強いシグナルは「spideythedev/quantum-reimagined」（GitHub）。",
         "tierCounts": {
           "oss": 1,
-          "hybrid": 7,
+          "hybrid": 6,
           "bigtech": 1
         },
-        "candidates": 44,
+        "candidates": 33,
         "entries": [
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Excitons mimic light in atom-thin material, confirming decade-old quantum prediction",
+            "titleJa": "Excitons mimic light in atom-thin material, confirming decade-old quantum prediction",
+            "summary": "Combining their skills in theory and experiment, Yale researchers have observed for the first time a type of energy-carrying composite particle move in a highl…",
+            "body": "Combining their skills in theory and experiment, Yale researchers have observed for the first time a type of energy-carrying composite particle move in a highly unexpected way. It's a finding that could lead to advances in quantum technologies, solar energy, LEDs and other optoelectronic technologies. The work is published in Nature Physics.",
+            "url": "https://phys.org/news/2026-11-excitons-mimic-atom-thin-material.html",
+            "source": "Phys.org Quantum",
+            "publishedAt": "2026-11-20T16:40:08.000Z",
+            "score": 26,
+            "yuimaruScore": 26,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
           {
             "kind": "news",
             "tier": "hybrid",
@@ -1276,7 +1239,7 @@
             "url": "https://phys.org/news/2026-11-quantum-software-classical-benchmark-molecular.html",
             "source": "Phys.org Quantum",
             "publishedAt": "2026-11-21T03:00:01.000Z",
-            "score": 37.3,
+            "score": 29.4,
             "yuimaruScore": 17,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1295,7 +1258,7 @@
             "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer",
             "source": "Google Research",
             "publishedAt": "2026-11-19T20:03:00.000Z",
-            "score": 27,
+            "score": 19.1,
             "yuimaruScore": 15,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1314,13 +1277,13 @@
             "url": "https://github.com/spideythedev/quantum-reimagined",
             "source": "GitHub",
             "publishedAt": "2026-11-17T02:38:51Z",
-            "score": 9.7,
-            "stars": 54,
-            "starsDelta": 9,
-            "starsPerDay": 9,
+            "score": 4.2,
+            "stars": 58,
+            "starsDelta": 4,
+            "starsPerDay": 4,
             "language": null,
             "license": "MIT",
-            "yuimaruScore": 9,
+            "yuimaruScore": 7,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1329,17 +1292,22 @@
             }
           },
           {
-            "kind": "news",
+            "kind": "repo",
             "tier": "hybrid",
-            "title": "Optimal algorithmic complexity of inference in quantum kernel methods",
-            "titleJa": "Optimal algorithmic complexity of inference in quantum kernel methods",
-            "summary": "arXiv:2604.15214v3 Announce Type: replace-cross Abstract: Quantum kernel methods are among the leading candidates for achieving quantum advantage in supervised…",
-            "body": "arXiv:2604.15214v3 Announce Type: replace-cross Abstract: Quantum kernel methods are among the leading candidates for achieving quantum advantage in supervised learning. A key bottleneck is the cost of inference: evaluating a trained model on new data requires estimating a weighted sum $\\sum_{i=1}^N \\alpha_i k(x,x_i)$ of $N$ kernel values to additive precision $\\varepsilon$, where $\\alpha$ is the vector of trained coefficients. The standard approach estimates each term independently via sampling, yielding a query complexity of $O(N\\lVert\\alpha\\rVert_2^2/\\varepsilon^2)$. In this work, we ident…",
-            "url": "https://arxiv.org/abs/2604.15214",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
-            "yuimaruScore": 4,
+            "title": "NVIDIA/cuda-quantum",
+            "titleJa": "NVIDIA/cuda-quantum",
+            "summary": "C++ and Python support for the CUDA Quantum programming model for heterogeneous quantum-classical workflows",
+            "body": "C++ and Python support for the CUDA Quantum programming model for heterogeneous quantum-classical workflows",
+            "url": "https://github.com/NVIDIA/cuda-quantum",
+            "source": "GitHub",
+            "publishedAt": "2026-11-21T20:44:51Z",
+            "score": 2,
+            "stars": 1206,
+            "starsDelta": 2,
+            "starsPerDay": 2,
+            "language": "C++",
+            "license": "Apache-2.0",
+            "yuimaruScore": 3,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1356,35 +1324,11 @@
             "body": "Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.",
             "url": "https://github.com/Qiskit/qiskit",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T00:40:33Z",
-            "score": 2,
-            "stars": 7989,
-            "starsDelta": 2,
-            "starsPerDay": 2,
-            "language": "Python",
-            "license": "Apache-2.0",
-            "yuimaruScore": 3,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "repo",
-            "tier": "hybrid",
-            "title": "quantumlib/Qualtran",
-            "titleJa": "quantumlib/Qualtran",
-            "summary": "Qᴜᴀʟᴛʀᴀɴ is a Python library for expressing and analyzing Fault Tolerant Quantum algorithms.",
-            "body": "Qᴜᴀʟᴛʀᴀɴ is a Python library for expressing and analyzing Fault Tolerant Quantum algorithms.",
-            "url": "https://github.com/quantumlib/Qualtran",
-            "source": "GitHub",
-            "publishedAt": "2026-11-12T17:57:55Z",
-            "score": 1.6,
-            "stars": 455,
-            "starsDelta": 2,
-            "starsPerDay": 2,
+            "publishedAt": "2026-11-22T01:18:40Z",
+            "score": 1,
+            "stars": 7990,
+            "starsDelta": 1,
+            "starsPerDay": 1,
             "language": "Python",
             "license": "Apache-2.0",
             "yuimaruScore": 3,
@@ -1405,7 +1349,7 @@
             "url": "https://thequantuminsider.com/2026/11/20/10-member-team-drawn-from-chinese-institutions-wins-2026-gordon-bell-prize",
             "source": "The Quantum Insider",
             "publishedAt": "2026-11-20T16:13:55.000Z",
-            "score": 35.8,
+            "score": 27.8,
             "yuimaruScore": 3,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1417,34 +1361,15 @@
           {
             "kind": "news",
             "tier": "hybrid",
-            "title": "Scaling classical hardware for accurate real-time quantum error correction",
-            "titleJa": "Scaling classical hardware for accurate real-time quantum error correction",
-            "summary": "arXiv:2611.26447v1 Announce Type: cross Abstract: Fault-tolerant quantum computation requires a classical decoder fast enough to process syndrome measurements…",
-            "body": "arXiv:2611.26447v1 Announce Type: cross Abstract: Fault-tolerant quantum computation requires a classical decoder fast enough to process syndrome measurements at the rate at which they are generated, and to return its decisions with low latency. This is most demanding for superconducting processors, whose fast syndrome cycles force a trade-off between decoding speed and accuracy. Decoders fast enough to keep up sacrifice accuracy, which must be compensated for with larger codes and thus additional physical qubits. Here we introduce Rapids, a streaming neural decoder that is both fast and accu…",
-            "url": "https://arxiv.org/abs/2611.26447",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 46,
-            "yuimaruScore": 1,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "How the Department of Commerce’s Quantum Awards Work and What Companies Give in Return",
-            "titleJa": "How the Department of Commerce’s Quantum Awards Work and What Companies Give in Return",
-            "summary": "Insider Brief The U.S. Department of Commerce’s quantum computing awards combine research funding with government ownership, giving companies access to capital…",
-            "body": "Insider Brief The U.S. Department of Commerce’s quantum computing awards combine research funding with government ownership, giving companies access to capital for specific engineering projects in exchange for shares and commitments governing how the work is completed. Agreements disclosed in SEC filings by Rigetti Computing, D-Wave Quantum and Quantinuum show how the arrangement works. Each […]",
-            "url": "https://thequantuminsider.com/2026/11/20/how-the-department-of-commerces-quantum-awards-work-and-what-companies-give-in-return",
+            "title": "TQI linking test v15 (delete me)",
+            "titleJa": "TQI linking test v15 (delete me)",
+            "summary": "IonQ announced a deal with Mastercard today. Analysts said IonQ’s roadmap is ambitious. Mastercard also commented. D-Wave Quantum and D-Wave were mentioned. Th…",
+            "body": "IonQ announced a deal with Mastercard today. Analysts said IonQ’s roadmap is ambitious. Mastercard also commented. D-Wave Quantum and D-Wave were mentioned. The city of Chattanooga hosted it. Over a long time horizon, Horizon Europe funds research. Horizon Quantum Computing is different from Horizon raising money. IBM , Harvard , HSBC",
+            "url": "https://thequantuminsider.com/2026/11/21/__trashed-5",
             "source": "The Quantum Insider",
-            "publishedAt": "2026-11-20T16:05:47.000Z",
-            "score": 35.7,
-            "yuimaruScore": 1,
+            "publishedAt": "2026-11-21T21:45:27.000Z",
+            "score": 37.7,
+            "yuimaruScore": 0,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1458,31 +1383,31 @@
         "id": "math-physics",
         "label": "数理物理・理論物理・AI×数学",
         "short": "数理物理",
-        "digest": "OSS 4件・中間 5件・大手 0件。いちばん強いシグナルは「bendlang/bend」（GitHub）。",
+        "digest": "OSS 4件・中間 4件・大手 0件。いちばん強いシグナルは「leanprover/lean4」（GitHub）。",
         "tierCounts": {
           "oss": 4,
-          "hybrid": 5,
+          "hybrid": 4,
           "bigtech": 0
         },
-        "candidates": 35,
+        "candidates": 18,
         "entries": [
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "bendlang/bend",
-            "titleJa": "bendlang/bend",
-            "summary": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
-            "body": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
-            "url": "https://github.com/bendlang/bend",
+            "title": "leanprover/lean4",
+            "titleJa": "leanprover/lean4",
+            "summary": "Lean 4 programming language and theorem prover",
+            "body": "Lean 4 programming language and theorem prover",
+            "url": "https://github.com/leanprover/lean4",
             "source": "GitHub",
-            "publishedAt": "2026-11-18T18:05:38Z",
-            "score": 66.6,
-            "stars": 25707,
-            "starsDelta": 73,
-            "starsPerDay": 73.3,
-            "language": "TypeScript",
+            "publishedAt": "2026-11-22T06:40:23Z",
+            "score": 79.6,
+            "stars": 10174,
+            "starsDelta": 79,
+            "starsPerDay": 79.7,
+            "language": "Lean",
             "license": "Apache-2.0",
-            "yuimaruScore": 54,
+            "yuimaruScore": 29,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1493,20 +1418,20 @@
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "leanprover/lean4",
-            "titleJa": "leanprover/lean4",
-            "summary": "Lean 4 programming language and theorem prover",
-            "body": "Lean 4 programming language and theorem prover",
-            "url": "https://github.com/leanprover/lean4",
+            "title": "leanprover-community/mathlib4",
+            "titleJa": "leanprover-community/mathlib4",
+            "summary": "The math library of Lean 4",
+            "body": "The math library of Lean 4",
+            "url": "https://github.com/leanprover-community/mathlib4",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T03:32:29Z",
-            "score": 27.9,
-            "stars": 10095,
-            "starsDelta": 28,
-            "starsPerDay": 28.1,
+            "publishedAt": "2026-11-22T00:42:27Z",
+            "score": 43.9,
+            "stars": 4558,
+            "starsDelta": 44,
+            "starsPerDay": 44.4,
             "language": "Lean",
             "license": "Apache-2.0",
-            "yuimaruScore": 25,
+            "yuimaruScore": 27,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1523,14 +1448,34 @@
             "body": "A collection of formalized statements of conjectures in Lean.",
             "url": "https://github.com/google-deepmind/formal-conjectures",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T06:24:51Z",
-            "score": 3,
-            "stars": 1369,
-            "starsDelta": 3,
-            "starsPerDay": 3,
+            "publishedAt": "2026-11-21T21:30:21Z",
+            "score": 5,
+            "stars": 1374,
+            "starsDelta": 5,
+            "starsPerDay": 5,
             "language": "Lean",
             "license": "Apache-2.0",
-            "yuimaruScore": 18,
+            "yuimaruScore": 19,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Verification files for the Lean proof of the Riemann Hypothesis",
+            "titleJa": "Verification files for the Lean proof of the Riemann Hypothesis",
+            "summary": "Verification files for the Lean proof of the Riemann Hypothesis",
+            "body": "",
+            "url": "https://math.mit.edu/~drew/grh",
+            "source": "Hacker News",
+            "publishedAt": "2026-11-21T15:54:34Z",
+            "score": 40.1,
+            "discussion": "https://news.ycombinator.com/item?id=50590441",
+            "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1548,26 +1493,7 @@
             "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis",
             "source": "Terence Tao",
             "publishedAt": "2026-11-20T17:19:00.000Z",
-            "score": 37.1,
-            "yuimaruScore": 10,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "oss",
-            "title": "Postdoc positions at the Columbia Data Science Institute",
-            "titleJa": "Postdoc positions at the Columbia Data Science Institute",
-            "summary": "[This is a guest post by Ivan Corwin – T.] Dear colleagues, I am writing to encourage applications to the Columbia Data Science Institute’s postdoc program, fo…",
-            "body": "[This is a guest post by Ivan Corwin – T.] Dear colleagues, I am writing to encourage applications to the Columbia Data Science Institute’s postdoc program, for those interested in being involved in Columbia’s AI and Mathematical Foundations research activities. See the (Fun)damental AI & Math description here for some activity in spring 2026 and here […]",
-            "url": "https://terrytao.wordpress.com/2026/11/20/postdoc-positions-at-the-columbia-data-science-institute",
-            "source": "Terence Tao",
-            "publishedAt": "2026-11-20T22:05:50.000Z",
-            "score": 35.7,
+            "score": 29.2,
             "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1586,7 +1512,7 @@
             "url": "https://www.quantamagazine.org/network-researchers-nail-down-theory-of-perfect-resilience-20261120",
             "source": "Quanta Magazine",
             "publishedAt": "2026-11-20T14:50:41.000Z",
-            "score": 34.3,
+            "score": 26.4,
             "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1605,7 +1531,7 @@
             "url": "https://www.quantamagazine.org/how-m-c-eschers-art-creates-bizarre-mathematical-worlds-20261118",
             "source": "Quanta Magazine",
             "publishedAt": "2026-11-18T15:51:40.000Z",
-            "score": 18.6,
+            "score": 10.7,
             "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1616,35 +1542,16 @@
           },
           {
             "kind": "news",
-            "tier": "hybrid",
-            "title": "A Model of Diverse Sampling from Language Models",
-            "titleJa": "A Model of Diverse Sampling from Language Models",
-            "summary": "arXiv:2611.25003v1 Announce Type: new Abstract: Language models often produce high-quality individual samples but poor sets, with repeated samples clustering a…",
-            "body": "arXiv:2611.25003v1 Announce Type: new Abstract: Language models often produce high-quality individual samples but poor sets, with repeated samples clustering around the same semantic modes. We formalize diverse generation as sampling a size-$K$ subset of complete strings from a determinantal point process (DPP), where the likelihood encodes item quality, and the embedding geometry encodes repulsion between similar outputs. Exact inference over all strings is intractable, so we propose PoolDPP: draw a finite candidate pool from a tractable proposal, importance-weight the candidates toward the…",
-            "url": "https://arxiv.org/abs/2611.25003",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 34,
+            "tier": "oss",
+            "title": "Even more posts, opinion pieces, interviews, and position statements",
+            "titleJa": "Even more posts, opinion pieces, interviews, and position statements",
+            "summary": "AHM Statement on the Announced Proof of the Riemann Hypothesis Positionen des Präsidiums der Deutschen Mathematiker-Vereinigung (DMV) zur Bedeutung Künstlicher…",
+            "body": "AHM Statement on the Announced Proof of the Riemann Hypothesis Positionen des Präsidiums der Deutschen Mathematiker-Vereinigung (DMV) zur Bedeutung Künstlicher Intelligenz für die Mathematik (Positions of the Presidium of the German Mathematical Society (DMV) on the importance of artificial intelligence for mathematics) Oxford Mathematics in Conversation on AI – Ben Green and James Maynard with […]",
+            "url": "https://terrytao.wordpress.com/2026/11/21/even-more-posts-opinion-pieces-interviews-and-position-statements",
+            "source": "Terence Tao",
+            "publishedAt": "2026-11-22T01:19:10.000Z",
+            "score": 39.9,
             "yuimaruScore": 2,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "Inverse ECG Reconstruction via a Preconditioned Variational Quantum Linear Solver",
-            "titleJa": "Inverse ECG Reconstruction via a Preconditioned Variational Quantum Linear Solver",
-            "summary": "arXiv:2611.25450v1 Announce Type: new Abstract: Inverse electrocardiography (ECG) reconstructs heart-surface potentials from body-surface measurements, enablin…",
-            "body": "arXiv:2611.25450v1 Announce Type: new Abstract: Inverse electrocardiography (ECG) reconstructs heart-surface potentials from body-surface measurements, enabling noninvasive mapping of cardiac electrical activity. However, the reconstruction requires solving dense and ill-conditioned linear systems, whose computational cost grows rapidly with the refined heart mesh. Quantum computing offers new opportunities for solving such systems. This paper presents a hybrid quantum-classical framework for inverse ECG reconstruction, which, to the best of our knowledge, is the first to apply a quantum line…",
-            "url": "https://arxiv.org/abs/2611.25450",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
-            "yuimaruScore": 1,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1658,13 +1565,13 @@
         "id": "bio",
         "label": "バイオ・合成生物学・AI創薬",
         "short": "バイオ",
-        "digest": "OSS 3件・中間 6件・大手 0件。いちばん強いシグナルは「K-Dense-AI/scientific-agent-skills」（GitHub）。",
+        "digest": "OSS 3件・中間 5件・大手 0件。いちばん強いシグナルは「K-Dense-AI/scientific-agent-skills」（GitHub）。",
         "tierCounts": {
           "oss": 3,
-          "hybrid": 6,
+          "hybrid": 5,
           "bigtech": 0
         },
-        "candidates": 36,
+        "candidates": 26,
         "entries": [
           {
             "kind": "repo",
@@ -1676,10 +1583,10 @@
             "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
             "source": "GitHub",
             "publishedAt": "2026-11-16T09:19:25Z",
-            "score": 69.4,
-            "stars": 57967,
-            "starsDelta": 82,
-            "starsPerDay": 82.3,
+            "score": 74.5,
+            "stars": 58057,
+            "starsDelta": 90,
+            "starsPerDay": 90.7,
             "language": "Python",
             "license": "MIT",
             "yuimaruScore": 89,
@@ -1693,44 +1600,20 @@
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "aipoch/medical-research-skills",
-            "titleJa": "aipoch/medical-research-skills",
-            "summary": "Hundreds of agent skills for medical research, including protocol design, data analysis, evidence insights, and academic writing.",
-            "body": "Hundreds of agent skills for medical research, including protocol design, data analysis, evidence insights, and academic writing.",
-            "url": "https://github.com/aipoch/medical-research-skills",
+            "title": "synthetic-sciences/openscience",
+            "titleJa": "synthetic-sciences/openscience",
+            "summary": "The open-source AI workbench for scientific research",
+            "body": "The open-source AI workbench for scientific research",
+            "url": "https://github.com/synthetic-sciences/openscience",
             "source": "GitHub",
-            "publishedAt": "2026-11-20T06:00:50Z",
-            "score": 3.9,
-            "stars": 2076,
+            "publishedAt": "2026-11-21T20:18:35Z",
+            "score": 4,
+            "stars": 4409,
             "starsDelta": 4,
             "starsPerDay": 4,
-            "language": "Python",
-            "license": "MIT",
-            "yuimaruScore": 80,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "repo",
-            "tier": "oss",
-            "title": "huggingface/datasets",
-            "titleJa": "huggingface/datasets",
-            "summary": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools",
-            "body": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools",
-            "url": "https://github.com/huggingface/datasets",
-            "source": "GitHub",
-            "publishedAt": "2026-11-19T07:54:36Z",
-            "score": 6.5,
-            "stars": 22180,
-            "starsDelta": 7,
-            "starsPerDay": 7,
-            "language": "Python",
+            "language": "TypeScript",
             "license": "Apache-2.0",
-            "yuimaruScore": 35,
+            "yuimaruScore": 19,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1748,8 +1631,51 @@
             "url": "https://www.genengnews.com/topics/genome-editing/genome-writing-inserts-human-x-linked-disease-dna-into-mice",
             "source": "GEN News",
             "publishedAt": "2026-11-20T12:03:02.000Z",
-            "score": 35.4,
+            "score": 27.4,
             "yuimaruScore": 10,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Programmable functional RNA design with a virtual scientist",
+            "titleJa": "Programmable functional RNA design with a virtual scientist",
+            "summary": "Nature Biotechnology, Published online: 19 November 2026; doi:10.1038/s41587-026-03362-3 RhoAgent designs functional RNA molecules by constraining secondary st…",
+            "body": "Nature Biotechnology, Published online: 19 November 2026; doi:10.1038/s41587-026-03362-3 RhoAgent designs functional RNA molecules by constraining secondary structure, base interactions and functional motifs.",
+            "url": "https://www.nature.com/articles/s41587-026-03362-3",
+            "source": "Nature Biotechnology",
+            "publishedAt": "2026-11-19T00:00:00.000Z",
+            "score": 14.4,
+            "yuimaruScore": 10,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "repo",
+            "tier": "oss",
+            "title": "a-r-j/graphein",
+            "titleJa": "a-r-j/graphein",
+            "summary": "Protein Graph Library",
+            "body": "Protein Graph Library",
+            "url": "https://github.com/a-r-j/graphein",
+            "source": "GitHub",
+            "publishedAt": "2026-11-21T15:09:50Z",
+            "score": 3,
+            "stars": 1207,
+            "starsDelta": 3,
+            "starsPerDay": 3,
+            "language": "Jupyter Notebook",
+            "license": "MIT",
+            "yuimaruScore": 5,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1767,26 +1693,7 @@
             "url": "https://www.genengnews.com/topics/cancer/immune-aging-study-in-mice-reveals-clues-to-t-cell-dysfunction-and-cancer-development",
             "source": "GEN News",
             "publishedAt": "2026-11-20T19:04:09.000Z",
-            "score": 37.7,
-            "yuimaruScore": 3,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "From Benchmarks to the Bench: Preference, Correspondence and Selectivity in Bidirectional Drug-Target Screening",
-            "titleJa": "From Benchmarks to the Bench: Preference, Correspondence and Selectivity in Bidirectional Drug-Target Screening",
-            "summary": "arXiv:2611.26369v1 Announce Type: new Abstract: Identifying active molecules for known targets and potential targets for existing drugs is central to drug disc…",
-            "body": "arXiv:2611.26369v1 Announce Type: new Abstract: Identifying active molecules for known targets and potential targets for existing drugs is central to drug discovery and repurposing. Drug-target interaction (DTI) models can rank vast numbers of drug-target pairs, but limited experimental capacity restricts testing to a small number of candidates. We compared the bidirectional recommendations of 13 released systems across 711 molecular structures of FDA-approved drugs and 614 human proteins. For the same target or drug, pairs of models produced completely disjoint Top-10 molecule and protein li…",
-            "url": "https://arxiv.org/abs/2611.26369",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
+            "score": 29.8,
             "yuimaruScore": 3,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1805,27 +1712,8 @@
             "url": "https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy",
             "source": "STAT News",
             "publishedAt": "2026-11-20T23:43:53.000Z",
-            "score": 35.3,
+            "score": 27.3,
             "yuimaruScore": 3,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA",
-            "titleJa": "OpenTME: An Open Dataset of AI-powered H&E Tumor Microenvironment Profiles from TCGA",
-            "summary": "arXiv:2604.12075v2 Announce Type: replace-cross Abstract: The tumor microenvironment (TME) plays a central role in cancer progression, treatment response, and…",
-            "body": "arXiv:2604.12075v2 Announce Type: replace-cross Abstract: The tumor microenvironment (TME) plays a central role in cancer progression, treatment response, and patient outcomes, yet large-scale, consistent, and quantitative TME characterization from routine hematoxylin and eosin (H&E)-stained histopathology remains scarce. We introduce OpenTME, an open-access dataset of pre-computed TME profiles derived from 5,268 H&E-stained whole-slide images across ten cancer types (bladder, breast, colorectal, head and neck, liver, lung, ovarian, pancreatic, prostate, and stomach cancer) from The Cancer Ge…",
-            "url": "https://arxiv.org/abs/2604.12075",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
-            "yuimaruScore": 2,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1843,7 +1731,7 @@
             "url": "https://www.statnews.com/2026/11/19/malaria-monoclonal-antibody-l9ls-vaccine-r21-infant-study-mali",
             "source": "STAT News",
             "publishedAt": "2026-11-19T22:20:00.000Z",
-            "score": 26.8,
+            "score": 18.9,
             "yuimaruScore": 1,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1858,13 +1746,13 @@
         "id": "neuro",
         "label": "ニューロサイエンス・BCI・ニューロモジュレーション",
         "short": "ニューロ・BCI",
-        "digest": "OSS 3件・中間 6件・大手 0件。いちばん強いシグナルは「Garinmckayl/anima」（GitHub）。",
+        "digest": "OSS 2件・中間 6件・大手 0件。いちばん強いシグナルは「Garinmckayl/anima」（GitHub）。",
         "tierCounts": {
-          "oss": 3,
+          "oss": 2,
           "hybrid": 6,
           "bigtech": 0
         },
-        "candidates": 36,
+        "candidates": 21,
         "entries": [
           {
             "kind": "repo",
@@ -1877,7 +1765,7 @@
             "source": "GitHub",
             "publishedAt": "2026-11-17T20:57:17Z",
             "score": 2.2,
-            "stars": 297,
+            "stars": 299,
             "starsDelta": 2,
             "starsPerDay": 2,
             "language": "JavaScript",
@@ -1900,32 +1788,8 @@
             "url": "https://www.sciencedaily.com/releases/2026/11/261118065536.htm",
             "source": "ScienceDaily Neuroscience",
             "publishedAt": "2026-11-20T12:06:07.000Z",
-            "score": 30.4,
-            "yuimaruScore": 36,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "repo",
-            "tier": "oss",
-            "title": "psychopy/psychopy",
-            "titleJa": "psychopy/psychopy",
-            "summary": "For running psychology and neuroscience experiments",
-            "body": "For running psychology and neuroscience experiments",
-            "url": "https://github.com/psychopy/psychopy",
-            "source": "GitHub",
-            "publishedAt": "2026-11-20T22:40:27Z",
-            "score": 2,
-            "stars": 2134,
-            "starsDelta": 2,
-            "starsPerDay": 2,
-            "language": "Python",
-            "license": "GPL-3.0",
-            "yuimaruScore": 18,
+            "score": 22.5,
+            "yuimaruScore": 35,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1943,8 +1807,51 @@
             "url": "https://www.thetransmitter.org/policy/carlos-brody-ice-detainment-neuroscientist",
             "source": "The Transmitter",
             "publishedAt": "2026-11-20T23:11:20.000Z",
-            "score": 35.1,
+            "score": 27.1,
             "yuimaruScore": 15,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "repo",
+            "tier": "hybrid",
+            "title": "facebookresearch/neuroai",
+            "titleJa": "facebookresearch/neuroai",
+            "summary": "Python suite for neuroscience research across all modalities.",
+            "body": "Python suite for neuroscience research across all modalities.",
+            "url": "https://github.com/facebookresearch/neuroai",
+            "source": "GitHub",
+            "publishedAt": "2026-11-20T19:23:10Z",
+            "score": 1,
+            "stars": 347,
+            "starsDelta": 1,
+            "starsPerDay": 1,
+            "language": "Python",
+            "license": "MIT",
+            "yuimaruScore": 12,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "AI may not work like the human brain after all, scientists discover",
+            "titleJa": "AI may not work like the human brain after all, scientists discover",
+            "summary": "AI may not think like the human brain after all, according to a striking new discovery that challenges how scientists understand artificial intelligence. Resea…",
+            "body": "AI may not think like the human brain after all, according to a striking new discovery that challenges how scientists understand artificial intelligence. Researchers found that even AI models that closely predict brain activity may rely on internal processes the brain doesn't use, raising important questions about their reliability in neuroscience research.",
+            "url": "https://www.sciencedaily.com/releases/2026/11/261120075701.htm",
+            "source": "ScienceDaily Neuroscience",
+            "publishedAt": "2026-11-21T15:24:58.000Z",
+            "score": 31.6,
+            "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -1962,7 +1869,7 @@
             "url": "https://www.statnews.com/2026/11/20/ian-burkhart-how-brain-implant-trials-can-serve-patients-better",
             "source": "STAT News",
             "publishedAt": "2026-11-20T09:30:00.000Z",
-            "score": 30.5,
+            "score": 22.6,
             "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1981,7 +1888,7 @@
             "url": "https://www.thetransmitter.org/craft-and-careers/training-graduate-students-as-a-teaching-professor",
             "source": "The Transmitter",
             "publishedAt": "2026-11-20T05:00:06.000Z",
-            "score": 29,
+            "score": 21.1,
             "yuimaruScore": 10,
             "novelty_evidence": {
               "referenceDiff": false,
@@ -1993,58 +1900,20 @@
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "aramis-lab/clinica",
-            "titleJa": "aramis-lab/clinica",
-            "summary": "Software platform for clinical neuroimaging studies",
-            "body": "Software platform for clinical neuroimaging studies",
-            "url": "https://github.com/aramis-lab/clinica",
+            "title": "brainflow-dev/brainflow",
+            "titleJa": "brainflow-dev/brainflow",
+            "summary": "BrainFlow is a library intended to obtain, parse and analyze EEG, EMG, ECG and other kinds of data from biosensors",
+            "body": "BrainFlow is a library intended to obtain, parse and analyze EEG, EMG, ECG and other kinds of data from biosensors",
+            "url": "https://github.com/brainflow-dev/brainflow",
             "source": "GitHub",
-            "publishedAt": "2026-11-16T15:15:50Z",
-            "score": 0.9,
-            "stars": 296,
-            "starsDelta": 1,
-            "starsPerDay": 1,
-            "language": "Python",
+            "publishedAt": "2026-11-10T00:05:24Z",
+            "score": 1.5,
+            "stars": 1798,
+            "starsDelta": 2,
+            "starsPerDay": 2,
+            "language": "C++",
             "license": null,
-            "yuimaruScore": 7,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks",
-            "titleJa": "When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks",
-            "summary": "arXiv:2611.25315v1 Announce Type: cross Abstract: When should a deployed MI decoder spend adaptation resources-not only how to adapt under shift? We study a th…",
-            "body": "arXiv:2611.25315v1 Announce Type: cross Abstract: When should a deployed MI decoder spend adaptation resources-not only how to adapt under shift? We study a thin control layer outside a frozen encoder: a resource ladder (factory -> Bayesian head -> affine map, with full fine-tune as an escape hatch) governed by regime-aware gating under a utility that prices accuracy, fit time, and label cost. The head is Bayesian in the conjugate sense: a Normal-Inverse-Wishart prior over the class conditional Gaussians in embedding space, updated in closed form (no gradients) as labelled trials arrive. Full…",
-            "url": "https://arxiv.org/abs/2611.25315",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
-            "yuimaruScore": 3,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "Disentangling Monitor Hardware Artifacts and Smoothing Lag for Shift-Robust Intraoperative EEG and Hemodynamic Risk Calibration",
-            "titleJa": "Disentangling Monitor Hardware Artifacts and Smoothing Lag for Shift-Robust Intraoperative EEG and Hemodynamic Risk Calibration",
-            "summary": "arXiv:2611.25765v1 Announce Type: new Abstract: Commercial intraoperative electroencephalography (EEG) and blood pressure monitors introduce cyclic impedance p…",
-            "body": "arXiv:2611.25765v1 Announce Type: new Abstract: Commercial intraoperative electroencephalography (EEG) and blood pressure monitors introduce cyclic impedance pulses, smoothing delays, direct-current (DC) drift, and cuff holds that confound risk forecasting and uncertainty calibration. We developed a causal signal-conditioning and shift-robust conformal calibration framework across 5,439 public anesthesia procedures. Streaming filters blank 10.13-min 64-Hz impedance checks, apply unclipped post-notch conditioning, separate 63-s suppression-ratio lag, and distinguish three-channel cuff inflatio…",
-            "url": "https://arxiv.org/abs/2611.25765",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 34,
-            "yuimaruScore": 1,
+            "yuimaruScore": 4,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -2058,31 +1927,50 @@
         "id": "hardware",
         "label": "半導体・AIチップ・新素材",
         "short": "半導体・素材",
-        "digest": "OSS 3件・中間 2件・大手 2件。いちばん強いシグナルは「k2-fsa/sherpa-onnx」（GitHub）。",
+        "digest": "OSS 3件・中間 1件・大手 0件。いちばん強いシグナルは「mytechnotalent/Reverse-Engineering」（GitHub）。",
         "tierCounts": {
           "oss": 3,
-          "hybrid": 2,
-          "bigtech": 2
+          "hybrid": 1,
+          "bigtech": 0
         },
-        "candidates": 23,
+        "candidates": 12,
         "entries": [
+          {
+            "kind": "news",
+            "tier": "hybrid",
+            "title": "Z2RAM Claims SRAM Memory Speeds at Much Greater Density",
+            "titleJa": "Z2RAM Claims SRAM Memory Speeds at Much Greater Density",
+            "summary": "Pat Gelsinger is familiar with the graveyard of failed memory technologies. “We haven’t had a new memory for three decades,” says the former Intel CEO. SRAM, D…",
+            "body": "Pat Gelsinger is familiar with the graveyard of failed memory technologies. “We haven’t had a new memory for three decades,” says the former Intel CEO. SRAM, DRAM, and flash memory still dominate. Gelsinger has witnessed the rise and fall of several potential alternatives—most recently Optane , Intel’s failed attempt to create “universal memory.” But Gelsinger, who is now a general partner at venture capital firm Playground , believes that AI is forcing a rethink of the entire computing stack—and that memory is a key part of that shift. Playground has backed Nagare Labs , a company spun out o…",
+            "url": "https://spectrum.ieee.org/sram-memory-z2ram",
+            "source": "IEEE Spectrum Semiconductors",
+            "publishedAt": "2026-11-21T14:00:02.000Z",
+            "score": 31.1,
+            "yuimaruScore": 73,
+            "novelty_evidence": {
+              "referenceDiff": false,
+              "ablation": false,
+              "reproductionSteps": false,
+              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
+            }
+          },
           {
             "kind": "repo",
             "tier": "oss",
-            "title": "simdutf/simdutf",
-            "titleJa": "simdutf/simdutf",
-            "summary": "Unicode routines (UTF8, UTF16, UTF32) and Base64: billions of characters per second using SSE2, AVX2, NEON, AVX-512, RISC-V Vector Extension, LoongArch64, POWE…",
-            "body": "Unicode routines (UTF8, UTF16, UTF32) and Base64: billions of characters per second using SSE2, AVX2, NEON, AVX-512, RISC-V Vector Extension, LoongArch64, POWER. Part of Node.js, WebKit/Safari, Ladybird, Chromium, Cloudflare Workers,  Ghostty and Bun.",
-            "url": "https://github.com/simdutf/simdutf",
+            "title": "MichaIng/DietPi",
+            "titleJa": "MichaIng/DietPi",
+            "summary": "Lightweight justice for your single-board computer!",
+            "body": "Lightweight justice for your single-board computer!",
+            "url": "https://github.com/MichaIng/DietPi",
             "source": "GitHub",
-            "publishedAt": "2026-11-19T03:17:47Z",
-            "score": 5.6,
-            "stars": 2031,
-            "starsDelta": 6,
-            "starsPerDay": 6,
-            "language": "C++",
-            "license": "Apache-2.0",
-            "yuimaruScore": 66,
+            "publishedAt": "2026-11-22T04:43:58Z",
+            "score": 4,
+            "stars": 6413,
+            "starsDelta": 4,
+            "starsPerDay": 4,
+            "language": "Shell",
+            "license": "GPL-2.0",
+            "yuimaruScore": 57,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -2100,13 +1988,13 @@
             "url": "https://github.com/k2-fsa/sherpa-onnx",
             "source": "GitHub",
             "publishedAt": "2026-11-21T02:21:30Z",
-            "score": 14.9,
-            "stars": 16074,
-            "starsDelta": 15,
-            "starsPerDay": 15.1,
+            "score": 10.6,
+            "stars": 16085,
+            "starsDelta": 11,
+            "starsPerDay": 11.1,
             "language": "C++",
             "license": "Apache-2.0",
-            "yuimaruScore": 52,
+            "yuimaruScore": 51,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": true,
@@ -2115,99 +2003,22 @@
             }
           },
           {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
-            "titleJa": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
-            "summary": "arXiv:2611.26619v1 Announce Type: cross Abstract: Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bou…",
-            "body": "arXiv:2611.26619v1 Announce Type: cross Abstract: Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bounded-state layers maintain heterogeneous caches whose demands vary with context length and concurrency. We present TideCache, a serving system on CPU--GPU superchips with three components for allocating GPU memory among caches and managing their residency across GPU and host memory. The Transparent Cache Pool redistributes physical pages among cache components behind fixed virtual addresses, preserving cache layouts and backend interfac…",
-            "url": "https://arxiv.org/abs/2611.26619",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
-            "yuimaruScore": 39,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "hybrid",
-            "title": "LazyWeights: Decode-on-Demand Edge LLMs",
-            "titleJa": "LazyWeights: Decode-on-Demand Edge LLMs",
-            "summary": "arXiv:2611.17108v3 Announce Type: replace Abstract: Memory determines which large language models (LLMs) an edge device can run and how fast it runs them: capa…",
-            "body": "arXiv:2611.17108v3 Announce Type: replace Abstract: Memory determines which large language models (LLMs) an edge device can run and how fast it runs them: capacity limits a 4 GB Jetson Nano, and bandwidth limits an 8 GB Jetson Orin Nano Super. Deployed weight formats (GPTQ, AWQ, and the GGUF K- and I-quants) spend the same number of bits on every integer code of a matrix, although the codes are far from uniform. We present LazyWeights, which keeps these formats, tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit bet…",
-            "url": "https://arxiv.org/abs/2611.17108",
-            "source": "arXiv cs.LG",
-            "publishedAt": "2026-11-21T05:00:00.000Z",
-            "score": 37,
-            "yuimaruScore": 38,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
             "kind": "repo",
             "tier": "oss",
-            "title": "simdjson/simdjson",
-            "titleJa": "simdjson/simdjson",
-            "summary": "Parsing gigabytes of JSON per second : used by Facebook/Meta Velox, the Node.js runtime, ClickHouse, WatermelonDB, Apache Doris, Milvus, StarRocks",
-            "body": "Parsing gigabytes of JSON per second : used by Facebook/Meta Velox, the Node.js runtime, ClickHouse, WatermelonDB, Apache Doris, Milvus, StarRocks",
-            "url": "https://github.com/simdjson/simdjson",
+            "title": "mytechnotalent/Reverse-Engineering",
+            "titleJa": "mytechnotalent/Reverse-Engineering",
+            "summary": "A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit/64-bit ARM, 8-bit AVR and 32-bit RISC-V architectures.",
+            "body": "A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit/64-bit ARM, 8-bit AVR and 32-bit RISC-V architectures.",
+            "url": "https://github.com/mytechnotalent/Reverse-Engineering",
             "source": "GitHub",
-            "publishedAt": "2026-11-21T00:41:35Z",
-            "score": 6,
-            "stars": 24594,
-            "starsDelta": 6,
-            "starsPerDay": 6,
-            "language": "C++",
+            "publishedAt": "2026-11-22T01:21:14Z",
+            "score": 12,
+            "stars": 15230,
+            "starsDelta": 12,
+            "starsPerDay": 12.1,
+            "language": "Assembly",
             "license": "Apache-2.0",
-            "yuimaruScore": 21,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "bigtech",
-            "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
-            "titleJa": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
-            "summary": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and che…",
-            "body": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and check results on researchers’ own systems. In NVIDIA’s special address, Buck announced Nemotron for Science, the Rubin HPC GPU and an expanded Vera CPU platform for high-performance […]",
-            "url": "https://blogs.nvidia.com/blog/ian-buck-sc26",
-            "source": "NVIDIA Blog",
-            "publishedAt": "2026-11-17T14:00:10.000Z",
-            "score": 9,
-            "yuimaruScore": 20,
-            "novelty_evidence": {
-              "referenceDiff": false,
-              "ablation": false,
-              "reproductionSteps": false,
-              "reason": "参照コード差分なし・アブレーションなし・再現手順なし"
-            }
-          },
-          {
-            "kind": "news",
-            "tier": "bigtech",
-            "title": "Wife of Senior Nvidia Executive Caught Up in Alleged AI Chip Smuggling Scandal",
-            "titleJa": "Wife of Senior Nvidia Executive Caught Up in Alleged AI Chip Smuggling Scandal",
-            "summary": "Wife of Senior Nvidia Executive Caught Up in Alleged AI Chip Smuggling Scandal",
-            "body": "",
-            "url": "https://www.gadgetreview.com/wife-of-senior-nvidia-executive-caught-up-in-alleged-ai-chip-smuggling-scandal",
-            "source": "Hacker News",
-            "publishedAt": "2026-11-19T08:23:41Z",
-            "score": 21.3,
-            "discussion": "https://news.ycombinator.com/item?id=50557420",
-            "yuimaruScore": 10,
+            "yuimaruScore": 15,
             "novelty_evidence": {
               "referenceDiff": false,
               "ablation": false,
@@ -2219,7 +2030,7 @@
       }
     ],
     "stats": {
-      "candidates": 6166,
+      "candidates": 5804,
       "feedsFailed": [
         "Meta AI",
         "bioRxiv Synthetic Biology",
@@ -2238,12 +2049,32 @@
       {
         "rank": 1,
         "kind": "repo",
+        "name": "bookwjitchieni1986/blender-ai-mcp-addon",
+        "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+        "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+        "source": "GitHub",
+        "stars": 2694,
+        "starsPerDay": 828.7,
+        "score": 99,
+        "theme": "harness",
+        "themeLabel": "コーディングエージェント／ハーネス",
+        "reasons": [
+          "コーディングエージェント／ハーネス（opencode・mcp・multi-agent）",
+          "最近の記事と地続き（opencode・claude・agent）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約829★/日）",
+          "出たばかり"
+        ]
+      },
+      {
+        "rank": 2,
+        "kind": "repo",
         "name": "qybaihe/bla",
         "url": "https://github.com/qybaihe/bla",
         "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
         "source": "GitHub",
-        "stars": 6343,
-        "starsPerDay": 103.5,
+        "stars": 6393,
+        "starsPerDay": 50.5,
         "score": 99,
         "theme": "harness",
         "themeLabel": "コーディングエージェント／ハーネス",
@@ -2251,18 +2082,18 @@
           "コーディングエージェント／ハーネス（codex・cursor・mcp）",
           "最近の記事と地続き（claude・agent・mcp）",
           "すぐ試せる実用ツール",
-          "急上昇中（約104★/日）"
+          "急上昇中（約51★/日）"
         ]
       },
       {
-        "rank": 2,
+        "rank": 3,
         "kind": "repo",
         "name": "affaan-m/ECC",
         "url": "https://github.com/affaan-m/ECC",
         "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
         "source": "GitHub",
-        "stars": 307992,
-        "starsPerDay": 569.5,
+        "stars": 308524,
+        "starsPerDay": 537,
         "score": 99,
         "theme": "harness",
         "themeLabel": "コーディングエージェント／ハーネス",
@@ -2270,26 +2101,7 @@
           "コーディングエージェント／ハーネス（claude code・opencode・codex）",
           "最近の記事と地続き（opencode・claude・agent）",
           "すぐ試せる実用ツール",
-          "急上昇中（約570★/日）"
-        ]
-      },
-      {
-        "rank": 3,
-        "kind": "repo",
-        "name": "Graphify-Labs/graphify",
-        "url": "https://github.com/Graphify-Labs/graphify",
-        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-        "source": "GitHub",
-        "stars": 151318,
-        "starsPerDay": 531.3,
-        "score": 99,
-        "theme": "harness",
-        "themeLabel": "コーディングエージェント／ハーネス",
-        "reasons": [
-          "コーディングエージェント／ハーネス（claude code・codex・cursor）",
-          "最近の記事と地続き（edge・claude・lab）",
-          "すぐ試せる実用ツール",
-          "急上昇中（約531★/日）"
+          "急上昇中（約537★/日）"
         ]
       },
       {
@@ -2299,8 +2111,8 @@
         "url": "https://github.com/simplexai-labs/PolyStrata",
         "description": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, Tiel Coder and MiniCPM-V on a second engine written for PolyStrata. One-click install fo…",
         "source": "GitHub",
-        "stars": 1312,
-        "starsPerDay": 44.2,
+        "stars": 1357,
+        "starsPerDay": 45.4,
         "score": 96,
         "theme": "lightweight-model",
         "themeLabel": "軽量・爆速・低コストのモデル",
@@ -2308,24 +2120,25 @@
           "軽量・爆速・低コストのモデル（flash・gguf）",
           "最近の記事と地続き（strata・lab）",
           "すぐ試せる実用ツール",
-          "急上昇中（約44★/日）"
+          "急上昇中（約45★/日）"
         ]
       },
       {
         "rank": 5,
         "kind": "repo",
-        "name": "youssofal/MTPLX",
-        "url": "https://github.com/youssofal/MTPLX",
-        "description": "The fastest way to run Qwen 3.8 Flash Next, Qwen 3.8 27B and Ternary Bonsai 2 27B on a Mac: 125 tok/s in OpenCode on an M5 Max, and a 27B model on 16 GB Macs. Native MTP speculative decoding on Apple Silicon, exact at any temperature. Open…",
+        "name": "affifuddin-hazam/ghost-infer",
+        "url": "https://github.com/affifuddin-hazam/ghost-infer",
+        "description": "Fast local LLM inference for the GPU you already have: one Rust binary, GGUF models, an OpenAI-compatible server and a chat page with a ghost.",
         "source": "GitHub",
-        "stars": 2730,
-        "starsPerDay": 3,
-        "score": 94,
+        "stars": 260,
+        "starsPerDay": 8.1,
+        "score": 95,
         "theme": "lightweight-model",
         "themeLabel": "軽量・爆速・低コストのモデル",
         "reasons": [
-          "軽量・爆速・低コストのモデル（flash・ternary・mtp）",
-          "最近の記事と地続き（opencode・claude・mac）"
+          "軽量・爆速・低コストのモデル（gguf・local llm）",
+          "最近の記事と地続き（rust・gpu）",
+          "すぐ試せる実用ツール"
         ]
       },
       {
@@ -2335,9 +2148,9 @@
         "url": "https://github.com/AbuZar-Ansarii/PocketStrike",
         "description": "PocketStrike is a privacy-first mobile AI workstation. It combines zero-cloud native on-device GGUF inference (ARM NEON accelerated)   │ with frontier cloud LLMs, multi-step ReAct agent tools, Model Context Protocol (MCP) servers, self-evo…",
         "source": "GitHub",
-        "stars": 173,
-        "starsPerDay": 0,
-        "score": 94,
+        "stars": 174,
+        "starsPerDay": 1,
+        "score": 95,
         "theme": "lightweight-model",
         "themeLabel": "軽量・爆速・低コストのモデル",
         "reasons": [
@@ -2349,13 +2162,33 @@
       {
         "rank": 7,
         "kind": "repo",
+        "name": "zephyr4123/snug",
+        "url": "https://github.com/zephyr4123/snug",
+        "description": "让远程 Mac 在任意设备上获得原生级体验。专为 UU远程 打造的显示与触控增强：手机、平板、电脑各有专属屏幕，画面铺满、字号随屏，原生触屏手势，App 资源库。Make UU Remote native on any device: a dedicated screen for every phone, tablet and computer, with native touch gestures and an App Library.",
+        "source": "GitHub",
+        "stars": 1300,
+        "starsPerDay": 156.4,
+        "score": 90,
+        "theme": "device-util",
+        "themeLabel": "端末・OS を快適にする実用ツール",
+        "reasons": [
+          "端末・OS を快適にする実用ツール（android・macos・phone）",
+          "最近の記事と地続き（mac・android）",
+          "すぐ試せる実用ツール",
+          "急上昇中（約156★/日）",
+          "出たばかり"
+        ]
+      },
+      {
+        "rank": 8,
+        "kind": "repo",
         "name": "Zfinix/eleven",
         "url": "https://github.com/Zfinix/eleven",
         "description": "Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you.",
         "source": "GitHub",
-        "stars": 1013,
+        "stars": 1016,
         "starsPerDay": 3,
-        "score": 90,
+        "score": 89,
         "theme": "device-util",
         "themeLabel": "端末・OS を快適にする実用ツール",
         "reasons": [
@@ -2365,14 +2198,14 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "kind": "repo",
         "name": "williamwasen/second-brain-black-hole",
         "url": "https://github.com/williamwasen/second-brain-black-hole",
         "description": "A 3D black-hole map of your notes. One HTML file, rus on the GPU. Includes a Markdown importer. Available with or without Obsidian, on Mac and Windows.",
         "source": "GitHub",
-        "stars": 75,
-        "starsPerDay": 6,
+        "stars": 81,
+        "starsPerDay": 6.1,
         "score": 89,
         "theme": "pkm",
         "themeLabel": "ノート／ナレッジ／RAG アプリ",
@@ -2383,33 +2216,15 @@
         ]
       },
       {
-        "rank": 9,
-        "kind": "repo",
-        "name": "BareBrowser/bare-browser",
-        "url": "https://github.com/BareBrowser/bare-browser",
-        "description": "Bare is a de-Googled Chromium build for Android, built for privacy, control, and freedom on the web. It strips Google tracking, telemetry, and AI integration while keeping browser extensions and uBlock Origin. It adds background video play…",
-        "source": "GitHub",
-        "stars": 1030,
-        "starsPerDay": 14.1,
-        "score": 88,
-        "theme": "device-util",
-        "themeLabel": "端末・OS を快適にする実用ツール",
-        "reasons": [
-          "端末・OS を快適にする実用ツール（android・mobile・privacy）",
-          "最近の記事と地続き（google・block・android）",
-          "すぐ試せる実用ツール"
-        ]
-      },
-      {
         "rank": 10,
         "kind": "repo",
         "name": "wquguru/cicada",
         "url": "https://github.com/wquguru/cicada",
         "description": "知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.",
         "source": "GitHub",
-        "stars": 2437,
-        "starsPerDay": 5,
-        "score": 87,
+        "stars": 2445,
+        "starsPerDay": 8.1,
+        "score": 88,
         "theme": "device-util",
         "themeLabel": "端末・OS を快適にする実用ツール",
         "reasons": [
@@ -2422,51 +2237,51 @@
     "learnedTerms": [
       {
         "term": "エージェント",
-        "weight": 6.78
+        "weight": 6.62
       },
       {
         "term": "strata",
-        "weight": 2.81
-      },
-      {
-        "term": "oss",
-        "weight": 1.95
+        "weight": 3.71
       },
       {
         "term": "ローカル",
+        "weight": 2.88
+      },
+      {
+        "term": "エンジン",
+        "weight": 1.96
+      },
+      {
+        "term": "スター",
         "weight": 1.95
       },
       {
+        "term": "rust",
+        "weight": 1.92
+      },
+      {
+        "term": "oss",
+        "weight": 1.89
+      },
+      {
         "term": "トークン",
-        "weight": 1.81
+        "weight": 1.75
       },
       {
         "term": "moe",
-        "weight": 1.78
+        "weight": 1.72
       },
       {
-        "term": "chrome",
-        "weight": 1.74
+        "term": "opencode",
+        "weight": 1.43
       },
       {
-        "term": "edge",
-        "weight": 1.74
+        "term": "claude",
+        "weight": 1.43
       },
       {
-        "term": "firefox",
-        "weight": 1.74
-      },
-      {
-        "term": "mdn",
-        "weight": 1.74
-      },
-      {
-        "term": "modern",
-        "weight": 1.74
-      },
-      {
-        "term": "guidance",
-        "weight": 1.74
+        "term": "ベストプラクティス",
+        "weight": 1.41
       }
     ],
     "covered": [
@@ -2553,6 +2368,21 @@
     ],
     "latestPosts": [
       {
+        "title": "『Abyss』strata派生でちっちゃいモデルからおっきいモデルまで爆速駆動させるローカル推論エンジンが素晴らしいっ",
+        "url": "https://note.com/humble_bobcat51/n/n0fa6d2806586",
+        "publishedAt": "2026-11-22T05:40:30.000Z"
+      },
+      {
+        "title": "『rust-anything』公開1週間で7,400スター超！既存アプリを「挙動を証明しながら」Rust化する新星ツール徹底解説",
+        "url": "https://note.com/humble_bobcat51/n/n2c79d41232cd",
+        "publishedAt": "2026-11-22T02:54:25.000Z"
+      },
+      {
+        "title": "【2026年11月22日現在】個人的に思うAI課金とAI時代の生き方",
+        "url": "https://note.com/humble_bobcat51/n/ne0a582eb51a3",
+        "publishedAt": "2026-11-22T01:18:06.000Z"
+      },
+      {
         "title": "【個人開発日記】kintone風のツールが一旦できたので、最新のライセンスフリーなOSSで魔改造しておこう",
         "url": "https://note.com/humble_bobcat51/n/nb3fb9838018b",
         "publishedAt": "2026-11-21T05:04:22.000Z"
@@ -2561,27 +2391,12 @@
         "title": "【Inkling 2 Mini】Thinking Machines Lab— 層を3回ループさせてMacで動く26Bモデルが凄い理由",
         "url": "https://note.com/humble_bobcat51/n/n42773eea97cd",
         "publishedAt": "2026-11-21T02:05:13.000Z"
-      },
-      {
-        "title": "AIエージェントに生FFmpegを書かせてはいけない理由 — 8,800スター超えのローカル動画編集エンジン「ffmpeg-skill」のアップデート徹底整理！",
-        "url": "https://note.com/humble_bobcat51/n/nee06b5252fc4",
-        "publishedAt": "2026-11-21T00:43:08.000Z"
-      },
-      {
-        "title": "【2026年最新比較】T3 Code vs Orca — AIコーディングエージェントを束ねる「二大制御層」を徹底解剖",
-        "url": "https://note.com/humble_bobcat51/n/nd0e3d89c9dfe",
-        "publishedAt": "2026-11-20T14:18:41.000Z"
-      },
-      {
-        "title": "【Newtake】AI動画を、生成して終わりにしない次世代AI映像制作プラットフォームが日本向けプレローンチ！特徴・機能・料金・規約を総まとめ【PR】",
-        "url": "https://note.com/humble_bobcat51/n/n0a3e373acf72",
-        "publishedAt": "2026-11-20T10:07:18.000Z"
       }
     ],
     "rssOk": true,
     "evaluation": {
-      "days": 4,
-      "predicted": 40,
+      "days": 5,
+      "predicted": 50,
       "hits": [
         {
           "date": "2026-11-20",
@@ -2593,16 +2408,16 @@
           }
         }
       ],
-      "precision": 2.5,
+      "precision": 2,
       "postsSince": 25,
       "recall": 4
     },
-    "poolSize": 764
+    "poolSize": 758
   },
   "stats": {
-    "repoCandidates": 616,
-    "newsCandidates": 2603,
-    "predictionPool": 764,
+    "repoCandidates": 627,
+    "newsCandidates": 2600,
+    "predictionPool": 758,
     "feedsFailed": [
       "Meta AI",
       "Microsoft AI",

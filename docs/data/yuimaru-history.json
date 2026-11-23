@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-23",
+    "picks": [
+      {
+        "rank": 1,
+        "name": "XinaTian/MROffice",
+        "url": "https://github.com/XinaTian/MROffice",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 2,
+        "name": "bookwjitchieni1986/blender-ai-mcp-addon",
+        "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 3,
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 4,
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "score": 96,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 5,
+        "name": "simplexai-labs/PolyStrata",
+        "url": "https://github.com/simplexai-labs/PolyStrata",
+        "score": 95,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 6,
+        "name": "AbuZar-Ansarii/PocketStrike",
+        "url": "https://github.com/AbuZar-Ansarii/PocketStrike",
+        "score": 95,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 7,
+        "name": "wquguru/cicada",
+        "url": "https://github.com/wquguru/cicada",
+        "score": 93,
+        "theme": "device-util"
+      },
+      {
+        "rank": 8,
+        "name": "Zfinix/eleven",
+        "url": "https://github.com/Zfinix/eleven",
+        "score": 91,
+        "theme": "device-util"
+      },
+      {
+        "rank": 9,
+        "name": "williamwasen/second-brain-black-hole",
+        "url": "https://github.com/williamwasen/second-brain-black-hole",
+        "score": 89,
+        "theme": "pkm"
+      },
+      {
+        "rank": 10,
+        "name": "zephyr4123/snug",
+        "url": "https://github.com/zephyr4123/snug",
+        "score": 88,
+        "theme": "device-util"
+      }
+    ]
+  },
+  {
     "date": "2026-11-22",
     "picks": [
       {

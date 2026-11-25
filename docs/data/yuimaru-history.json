@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-25",
+    "picks": [
+      {
+        "rank": 1,
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 2,
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 3,
+        "name": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 4,
+        "name": "simplexai-labs/PolyStrata",
+        "url": "https://github.com/simplexai-labs/PolyStrata",
+        "score": 96,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 5,
+        "name": "youssofal/MTPLX",
+        "url": "https://github.com/youssofal/MTPLX",
+        "score": 95,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 6,
+        "name": "wquguru/cicada",
+        "url": "https://github.com/wquguru/cicada",
+        "score": 95,
+        "theme": "device-util"
+      },
+      {
+        "rank": 7,
+        "name": "affifuddin-hazam/ghost-infer",
+        "url": "https://github.com/affifuddin-hazam/ghost-infer",
+        "score": 94,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 8,
+        "name": "Zfinix/eleven",
+        "url": "https://github.com/Zfinix/eleven",
+        "score": 93,
+        "theme": "device-util"
+      },
+      {
+        "rank": 9,
+        "name": "williamwasen/second-brain-black-hole",
+        "url": "https://github.com/williamwasen/second-brain-black-hole",
+        "score": 87,
+        "theme": "pkm"
+      },
+      {
+        "rank": 10,
+        "name": "rtk-ai/rtk",
+        "url": "https://github.com/rtk-ai/rtk",
+        "score": 87,
+        "theme": "reverse"
+      }
+    ]
+  },
+  {
     "date": "2026-11-24",
     "picks": [
       {

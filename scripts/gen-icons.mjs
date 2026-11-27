@@ -81,20 +81,31 @@ class Canvas {
     const hy = h / 2 - radius;
     for (let y = Math.floor(y0) - 2; y < Math.ceil(y0 + h) + 2; y++) {
       for (let x = Math.floor(x0) - 2; x < Math.ceil(x0 + w) + 2; x++) {
-        const dx = Math.max(Math.abs(x + 0.5 - cx) - hx, 0);
-        const dy = Math.max(Math.abs(y + 0.5 - cy) - hy, 0);
-        const distance = Math.hypot(dx, dy) - radius;
+        const dx = Math.abs(x + 0.5 - cx) - hx;
+        const dy = Math.abs(y + 0.5 - cy) - hy;
+        const distance = Math.hypot(Math.max(dx, 0), Math.max(dy, 0)) + Math.min(Math.max(dx, dy), 0) - radius;
         const coverage = Math.min(1, Math.max(0, 0.5 - distance));
         if (coverage > 0) this.blend(x, y, colorAt(x, y), coverage);
       }
     }
   }
 
-  circle(cx, cy, radius, color) {
-    for (let y = Math.floor(cy - radius) - 2; y <= Math.ceil(cy + radius) + 2; y++) {
-      for (let x = Math.floor(cx - radius) - 2; x <= Math.ceil(cx + radius) + 2; x++) {
-        const coverage = Math.min(1, Math.max(0, 0.5 - (Math.hypot(x + 0.5 - cx, y + 0.5 - cy) - radius)));
-        if (coverage > 0) this.blend(x, y, color, coverage);
+  outline(points, width, color) {
+    const radius = width / 2;
+    const edges = points.map(([x, y], i) => {
+      const [nx, ny] = points[(i + 1) % points.length];
+      return { x, y, dx: nx - x, dy: ny - y };
+    });
+    for (let y = 0; y < this.size; y++) {
+      for (let x = 0; x < this.size; x++) {
+        let distance = Infinity;
+        for (const edge of edges) {
+          const px = x + 0.5 - edge.x;
+          const py = y + 0.5 - edge.y;
+          const t = Math.max(0, Math.min(1, (px * edge.dx + py * edge.dy) / (edge.dx ** 2 + edge.dy ** 2)));
+          distance = Math.min(distance, Math.hypot(px - t * edge.dx, py - t * edge.dy));
+        }
+        this.blend(x, y, color, radius + 0.5 - distance);
       }
     }
   }
@@ -104,52 +115,49 @@ class Canvas {
   }
 }
 
-const NAVY_TOP = [17, 26, 51];
-const NAVY_BOTTOM = [8, 12, 27];
-const ACCENT = [110, 168, 255];
-const MINT = [124, 224, 192];
+const BACKGROUND = [57, 37, 25];
+const ACCENT = [255, 187, 117];
+const FUNNEL = [[14, 17], [50, 17], [37, 33], [37, 46], [27, 51], [27, 33]];
+const hex = (color) => `#${color.map((channel) => channel.toString(16).padStart(2, '0')).join('')}`;
 
 function drawIcon(size, { maskable = false } = {}) {
+  const scale = size / 64;
   const canvas = new Canvas(size);
-  const backgroundRadius = maskable ? 0 : size * 0.22;
-  canvas.roundedRect(0, 0, size, size, backgroundRadius, (_x, y) => {
-    const t = y / size;
-    return NAVY_TOP.map((value, i) => Math.round(value + (NAVY_BOTTOM[i] - value) * t));
-  });
-
-  // Ascending bars: "signal that keeps growing".
-  const inset = maskable ? size * 0.28 : size * 0.22;
-  const barArea = size - inset * 2;
-  const barWidth = barArea * 0.2;
-  const gap = (barArea - barWidth * 3) / 2;
-  const heights = [0.42, 0.66, 1];
-  for (let i = 0; i < 3; i++) {
-    const height = barArea * heights[i];
-    const x = inset + i * (barWidth + gap);
-    const y = inset + barArea - height;
-    const color = i === 2 ? MINT : ACCENT;
-    canvas.roundedRect(x, y, barWidth, height, barWidth / 2, () => color);
-  }
-
-  // Pulse dot above the tallest bar.
-  const dotRadius = barWidth * 0.42;
-  canvas.circle(inset + 2 * (barWidth + gap) + barWidth / 2, inset - dotRadius * 1.1, dotRadius, MINT);
+  canvas.roundedRect(0, 0, size, size, maskable ? 0 : 14 * scale, () => BACKGROUND);
+  const markScale = maskable ? 0.76 : 1;
+  const points = FUNNEL.map((point) => point.map((coord) => (32 + (coord - 32) * markScale) * scale));
+  canvas.outline(points, 6 * scale * markScale, ACCENT);
   return canvas.toPng();
 }
 
+function encodeIco(sizes) {
+  const directory = Buffer.alloc(6 + sizes.length * 16);
+  directory.writeUInt16LE(1, 2);
+  directory.writeUInt16LE(sizes.length, 4);
+  let offset = directory.length;
+  const images = sizes.map((size, index) => {
+    const png = drawIcon(size);
+    const cursor = 6 + index * 16;
+    directory[cursor] = directory[cursor + 1] = size;
+    directory.writeUInt16LE(1, cursor + 4);
+    directory.writeUInt16LE(32, cursor + 6);
+    directory.writeUInt32LE(png.length, cursor + 8);
+    directory.writeUInt32LE(offset, cursor + 12);
+    offset += png.length;
+    return png;
+  });
+  return Buffer.concat([directory, ...images]);
+}
+
 const SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="InfoCollect">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#111a33"/><stop offset="1" stop-color="#080c1b"/>
-  </linearGradient></defs>
-  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <rect x="14" y="35" width="8" height="15" rx="4" fill="#6ea8ff"/>
-  <rect x="28" y="27" width="8" height="23" rx="4" fill="#6ea8ff"/>
-  <rect x="42" y="14" width="8" height="36" rx="4" fill="#7ce0c0"/>
-  <circle cx="46" cy="8" r="3.4" fill="#7ce0c0"/>
+  <rect width="64" height="64" rx="14" fill="${hex(BACKGROUND)}"/>
+  <polygon points="${FUNNEL.map((point) => point.join(',')).join(' ')}" fill="none" stroke="${hex(ACCENT)}" stroke-width="6" stroke-linejoin="round"/>
 </svg>
 `;
 
 fs.mkdirSync(ICON_DIR, { recursive: true });
+fs.writeFileSync(path.join(ICON_DIR, 'favicon.ico'), encodeIco([16, 32, 48]));
+fs.writeFileSync(path.join(ICON_DIR, 'apple-touch-icon.png'), drawIcon(180));
 fs.writeFileSync(path.join(ICON_DIR, 'icon-192.png'), drawIcon(192));
 fs.writeFileSync(path.join(ICON_DIR, 'icon-512.png'), drawIcon(512));
 fs.writeFileSync(path.join(ICON_DIR, 'maskable-512.png'), drawIcon(512, { maskable: true }));

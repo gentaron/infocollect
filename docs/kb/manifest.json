@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-26T09:09:06.634Z",
+  "updatedAt": "2026-11-27T09:25:19.637Z",
   "shards": [
     {
       "key": "2026-09",
-      "count": 27
+      "count": 14
     },
     {
       "key": "2026-10",
-      "count": 221
+      "count": 220
     },
     {
       "key": "2026-11",
-      "count": 705
+      "count": 735
     }
   ]
 }

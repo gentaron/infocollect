@@ -87,6 +87,7 @@ async function main() {
     sourceWeights,
     take: Math.max(80, config.news.take),
     maxAgeDays: config.news.maxAgeDays,
+    categoryKeywords: config.news.categoryKeywords,
   });
 
   // 分野別「最先端マップ」（量子・数理物理・バイオ・ニューロ・ワールドモデル …）

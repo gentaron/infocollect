@@ -35,6 +35,7 @@ import {
 } from './lib/core.mjs';
 import { generateArticleText } from './lib/llm.mjs';
 import { formatCandidates, searchCandidates } from './lib/search.mjs';
+import { formatModelSpec } from '../lib/frontier.mjs';
 import { log, timeInZone, truncate, warn } from '../lib/util.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -103,7 +104,7 @@ function readDigestCandidates(slotId = '') {
         title: `[${domain.label}] ${entry.title}`,
         titleJa: entry.titleJa,
         url: entry.url,
-        summary: entry.summary,
+        summary: formatModelSpec(entry.summary, entry),
       });
     }
   }

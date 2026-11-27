@@ -11,7 +11,16 @@ import { parseJsonLoose } from './lib/ai.mjs';
 import { testNoveltyEvidence } from './novelty-evidence.mjs';
 import { parseFeed } from './lib/feeds.mjs';
 import { classify, rankNews } from './lib/rank.mjs';
-import { balancedTake, buildFrontier, classifyDomain, classifyTier, fallbackFrontier, keywordHits } from './lib/frontier.mjs';
+import {
+  balancedTake,
+  buildFrontier,
+  classifyDomain,
+  classifyTier,
+  extractLoopSpec,
+  fallbackFrontier,
+  formatModelSpec,
+  keywordHits,
+} from './lib/frontier.mjs';
 import { frontierMarkdown } from './lib/render.mjs';
 import { buildDigest, fallbackNewsSummary, fallbackToolSummary, toMarkdown } from './lib/render.mjs';
 import {
@@ -339,6 +348,42 @@ test('buildFrontier groups by domain, drops stale items and renders', () => {
   assert.ok(md.includes('### 量子コンピュータ・量子情報'));
   assert.ok(md.includes('**オープンソース**'));
   assert.deepEqual(frontierMarkdown(null), []);
+});
+test('extractLoopSpec reads loop passes and effective active parameters from a model card', () => {
+  const tags = ['transformers', 'safetensors', 'inkling2_loop', 'text-generation', 'conversational', 'moe', 'license:apache-2.0'];
+  const description = [
+    'A 24-layer decoder-only transformer with sparse Mixture-of-Experts (MoE) feed-forward layers.',
+    'The middle 12 layers run three times with shared weights, giving 48 layer applications per token from 24 layers of weights.',
+    '26.4B, 3.4B active',
+    'Note: each extra pass through the looped layers adds about 1.0B effective active parameters.',
+    'Since the model runs with three passes, there are 5.4B effective active parameters per token.',
+  ].join(' ');
+  assert.deepEqual(extractLoopSpec(tags, description), { loopCount: 3, activeParamsB: 5 });
+  assert.deepEqual(extractLoopSpec(['sensenova_loop', 'looped-transformer'], '32 layers are repeated 4 times. 12B active parameters.'), { loopCount: 4, activeParamsB: 12 });
+  assert.deepEqual(extractLoopSpec(['moe'], '26.4B, 3.4B active.'), { loopCount: null, activeParamsB: 3.4 });
+  assert.deepEqual(extractLoopSpec([], ''), { loopCount: null, activeParamsB: null });
+});
+test('buildFrontier carries the extracted model spec into entries', () => {
+  const raw = {
+    repos: [],
+    models: [{
+      title: 'thinkingmachines/Inkling-2-Mini',
+      url: 'https://huggingface.co/thinkingmachines/Inkling-2-Mini',
+      source: 'Hugging Face Trending',
+      body: 'image-text-to-text inkling2_loop moe',
+      domainHint: 'ai-models',
+      score: 100,
+      loopCount: 3,
+      activeParamsB: 5,
+    }],
+    news: [],
+  };
+  const domain = buildFrontier(raw, FRONTIER).find((entry) => entry.id === 'ai-models');
+  assert.equal(domain.entries.length, 1);
+  assert.equal(domain.entries[0].loopCount, 3);
+  assert.equal(domain.entries[0].activeParamsB, 5);
+  assert.equal(formatModelSpec(domain.entries[0].summary, domain.entries[0]), '（ループ3回・実効アクティブ5B）');
+  assert.equal(formatModelSpec('既存の要約', {}), '既存の要約');
 });
 
 console.log('yuimaru');

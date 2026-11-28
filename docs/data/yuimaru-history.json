@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-28",
+    "picks": [
+      {
+        "rank": 1,
+        "name": "qybaihe/bla",
+        "url": "https://github.com/qybaihe/bla",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 2,
+        "name": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "score": 99,
+        "theme": "harness"
+      },
+      {
+        "rank": 3,
+        "name": "nexu-io/opengame",
+        "url": "https://github.com/nexu-io/opengame",
+        "score": 98,
+        "theme": "harness"
+      },
+      {
+        "rank": 4,
+        "name": "simplexai-labs/PolyStrata",
+        "url": "https://github.com/simplexai-labs/PolyStrata",
+        "score": 96,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 5,
+        "name": "wquguru/cicada",
+        "url": "https://github.com/wquguru/cicada",
+        "score": 93,
+        "theme": "device-util"
+      },
+      {
+        "rank": 6,
+        "name": "affifuddin-hazam/ghost-infer",
+        "url": "https://github.com/affifuddin-hazam/ghost-infer",
+        "score": 93,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 7,
+        "name": "mw00/project-maya",
+        "url": "https://github.com/mw00/project-maya",
+        "score": 93,
+        "theme": "lightweight-model"
+      },
+      {
+        "rank": 8,
+        "name": "expo/exact",
+        "url": "https://github.com/expo/exact",
+        "score": 92,
+        "theme": "device-util"
+      },
+      {
+        "rank": 9,
+        "name": "Zfinix/eleven",
+        "url": "https://github.com/Zfinix/eleven",
+        "score": 88,
+        "theme": "device-util"
+      },
+      {
+        "rank": 10,
+        "name": "rtk-ai/rtk",
+        "url": "https://github.com/rtk-ai/rtk",
+        "score": 86,
+        "theme": "reverse"
+      }
+    ]
+  },
+  {
     "date": "2026-11-27",
     "picks": [
       {

@@ -1362,13 +1362,6 @@
       "url": "/wiki/term-%E9%8A%80%E6%B2%B3%E7%B3%BB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0"
     },
     {
-      "id": "Tina/Gue",
-      "name": "ティナ/グエ",
-      "nameEn": "Tina / Gue",
-      "category": "キャラクター",
-      "url": "/wiki/Tina%2FGue"
-    },
-    {
       "id": "Troyane",
       "name": "Troyane",
       "nameEn": "Troyane",
@@ -2060,6 +2053,13 @@
       "nameEn": "Quanta Lab",
       "category": "技術",
       "url": "/wiki/%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BF"
+    },
+    {
+      "id": "グエ",
+      "name": "グエ",
+      "nameEn": "Gue",
+      "category": "キャラクター",
+      "url": "/wiki/%E3%82%B0%E3%82%A8"
     },
     {
       "id": "クオリア・コア",
